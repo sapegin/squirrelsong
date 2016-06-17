@@ -31,3 +31,6 @@ Install [Squirrelsong.itermcolors](https://raw.githubusercontent.com/sapegin/squ
 | Selection | 20/15/6 | |
 | Selected Text | 203/188/164 | |
 
+***
+
+You could also like [my dotfiles](https://github.com/sapegin/dotfiles).
