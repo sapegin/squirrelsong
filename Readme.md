@@ -6,11 +6,11 @@ Inspired by [Earthsong](https://github.com/daylerees/colour-schemes/blob/master/
 
 ## Terminal.app
 
-Install [Squirrelsong.terminal](Squirrelsong.terminal).
+Install [Squirrelsong.terminal](https://raw.githubusercontent.com/sapegin/squirrelsong/master/Squirrelsong.itermcolors).
 
 ## iTerm2
 
-Install [Squirrelsong.itermcolors](Squirrelsong.itermcolors)
+Install [Squirrelsong.itermcolors](https://raw.githubusercontent.com/sapegin/squirrelsong/master/Squirrelsong.itermcolors)
 
 ## Colors
 
