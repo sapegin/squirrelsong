@@ -34,3 +34,13 @@ Install [Squirrelsong.itermcolors](https://raw.githubusercontent.com/sapegin/squ
 ***
 
 You could also like [my dotfiles](https://github.com/sapegin/dotfiles).
+
+## Author
+
+* [Artem Sapegin](http://sapegin.me)
+
+---
+
+## License
+
+The MIT License, see the included [License.md](License.md) file.
