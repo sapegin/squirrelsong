@@ -1,0 +1,77 @@
+/* Light */
+
+.white {
+    color: #ffffff
+}
+
+.lighterGray {
+    color: #EFEFEF
+}
+
+.mediumGray {
+    color: #DDDDDD
+}
+
+.gray { /* comment */
+    color: #999999
+}
+
+.darkGray {
+    color: #555555
+}
+
+.black {
+    color: #333333
+}
+
+.red { /* parameter, regexp */
+    color: #CC5C52
+}
+
+.darkRed {
+    color: #B3362D
+}
+
+.lightYellow {
+    color: #F5CFA6;
+}
+
+.yellow {
+    color: #EBCE53
+} 
+
+.darkYellow { /* number, global */
+    color: #DE8E3F
+} 
+
+.green { /* string */
+    color: #A7B386
+}
+
+.darkGreen {
+    color: #838C69
+}
+
+.blue { /* keyword */
+    color: #80A4BE
+}
+
+.darkBlue { /* static */
+    color: #4D7A99
+}
+
+.cyan { /* operator */
+    color: #82B9BB
+}
+
+.darkCyan {
+    color: #639999
+}
+
+.magenta { /* member */
+    color: #B8A4D2
+}
+
+.darkMagenta {
+    color: #8E7CA6
+}
