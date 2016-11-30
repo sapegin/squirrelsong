@@ -22,7 +22,7 @@
 				<key>lineHighlight</key>
 				<string>#EFEFEF</string>
 				<key>selection</key>
-				<string>#EFEFEF</string>
+				<string>#DDDDDD</string>
 			</dict>
 		</dict>
 		<dict>
@@ -51,9 +51,9 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Variable, String Link, Regular Expression, Tag Name</string>
+			<string>Variable, String Link, Regular Expression</string>
 			<key>scope</key>
-			<string>variable, support.other.variable, string.other.link, string.regexp, entity.name.tag, entity.other.attribute-name, meta.tag, declaration.tag</string>
+			<string>variable, support.other.variable, string.other.link, string.regexp</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -70,7 +70,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#DE8E3F</string>
+				<string>#DE9E59</string>
 			</dict>
 		</dict>
 		<dict>
@@ -83,7 +83,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#EBCE53</string>
+				<string>#E6C565</string>
 			</dict>
 		</dict>
 		<dict>
@@ -133,7 +133,20 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#B8A4D2</string>
+				<string>#AF9FC7</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tag Name</string>
+			<key>scope</key>
+			<string>entity.name.tag, entity.other.attribute-name, meta.tag, declaration.tag</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#8E7CA6</string>
 			</dict>
 		</dict>
 		<dict>
