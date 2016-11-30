@@ -33,15 +33,19 @@
 }
 
 .lightYellow {
-    color: #F5CFA6;
+    color: #FAEBAF;
 }
 
 .yellow {
-    color: #EBCE53
+    color: #E6C565
 } 
 
-.darkYellow { /* number, global */
-    color: #DE8E3F
+.lightOrange {
+    color: #FAC894
+}
+
+.orange { /* number, global */
+    color: #DE9E59
 } 
 
 .green { /* string */
@@ -69,7 +73,7 @@
 }
 
 .magenta { /* member */
-    color: #B8A4D2
+    color: #AF9FC7
 }
 
 .darkMagenta {
