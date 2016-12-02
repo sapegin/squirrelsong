@@ -13,16 +13,42 @@
 			<dict>
 				<key>background</key>
 				<string>#FFFFFF</string>
-				<key>caret</key>
-				<string>#333333</string>
 				<key>foreground</key>
 				<string>#555555</string>
+				<key>caret</key>
+				<string>#333333</string>
 				<key>invisibles</key>
+				<string>#DDDDDD</string>
+				<key>guide</key>
 				<string>#DDDDDD</string>
 				<key>lineHighlight</key>
 				<string>#EFEFEF</string>
+				<key>rangeHighlight</key>
+				<string>#FAEBAF</string>
+				<key>hoverHighlight</key>
+				<string>#E6C565</string>
+				<key>referenceHighlight</key>
+				<string>#CC5C52</string>
 				<key>selection</key>
 				<string>#DDDDDD</string>
+				<key>inactiveSelection</key>
+				<string>#EFEFEF</string>
+				<key>selectionHighlight</key>
+				<string>#E6C565</string>
+				<key>findRangeHighlight</key>
+				<string>#B4B4B4</string>
+				<key>findMatchHighlight</key>
+				<string>#DE9E59</string>
+				<key>currentFindMatchHighlight</key>
+				<string>#CC5C52</string>
+				<key>wordHighlight</key>
+				<string>#575757</string>
+				<key>wordHighlightStrong</key>
+				<string>#80A4BE</string>
+				<key>activeLinkForeground</key>
+				<string>#80A4BE</string>
+				<key>gotoDefinitionLinkForeground</key>
+				<string>#80A4BE</string>
 			</dict>
 		</dict>
 		<dict>
@@ -146,7 +172,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#8E7CA6</string>
+				<string>#AF9FC7</string>
 			</dict>
 		</dict>
 		<dict>
