@@ -38,13 +38,13 @@
 				<key>findRangeHighlight</key>
 				<string>#B4B4B4</string>
 				<key>findMatchHighlight</key>
-				<string>#DE9E59</string>
+				<string>#FAC894</string>
 				<key>currentFindMatchHighlight</key>
-				<string>#CC5C52</string>
+				<string>#DE9E59</string>
 				<key>wordHighlight</key>
-				<string>#575757</string>
+				<string>#FAEBAF</string>
 				<key>wordHighlightStrong</key>
-				<string>#80A4BE</string>
+				<string>#E6C565</string>
 				<key>activeLinkForeground</key>
 				<string>#80A4BE</string>
 				<key>gotoDefinitionLinkForeground</key>
