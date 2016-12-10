@@ -177,21 +177,6 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Invalid</string>
-			<key>scope</key>
-			<string>invalid</string>
-			<key>settings</key>
-			<dict>
-				<key>background</key>
-				<string>#B3362D</string>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#FFFFFF</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>Separator</string>
 			<key>scope</key>
 			<string>meta.separator</string>
@@ -203,17 +188,24 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Deprecated</string>
+			<string>Invalid - Deprecated</string>
 			<key>scope</key>
 			<string>invalid.deprecated</string>
 			<key>settings</key>
 			<dict>
-				<key>background</key>
-				<string>#8E7CA6</string>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
-				<string>#FFFFFF</string>
+				<string>#CC5C52</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Invalid - Illegal</string>
+			<key>scope</key>
+			<string>invalid.illegal</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#B3362D</string>
 			</dict>
 		</dict>
 	</array>
