@@ -34,7 +34,7 @@
 				<key>inactiveSelection</key>
 				<string>#EFEFEF</string>
 				<key>selectionHighlight</key>
-				<string>#FAEBAF</string>
+				<string>#FAC894</string>
 				<key>findRangeHighlight</key>
 				<string>#DDDDDD</string>
 				<key>findMatchHighlight</key>
