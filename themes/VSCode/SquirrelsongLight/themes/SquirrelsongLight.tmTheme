@@ -24,27 +24,27 @@
 				<key>lineHighlight</key>
 				<string>#EFEFEF</string>
 				<key>rangeHighlight</key>
-				<string>#FAEBAF</string>
+				<string>#FDF7DD</string>
 				<key>hoverHighlight</key>
-				<string>#E6C565</string>
+				<string>#FAEBAF</string>
 				<key>referenceHighlight</key>
-				<string>#CC5C52</string>
+				<string>#FAC894</string>
 				<key>selection</key>
 				<string>#DDDDDD</string>
 				<key>inactiveSelection</key>
 				<string>#EFEFEF</string>
 				<key>selectionHighlight</key>
-				<string>#E6C565</string>
-				<key>findRangeHighlight</key>
-				<string>#B4B4B4</string>
-				<key>findMatchHighlight</key>
-				<string>#FAC894</string>
-				<key>currentFindMatchHighlight</key>
-				<string>#DE9E59</string>
-				<key>wordHighlight</key>
 				<string>#FAEBAF</string>
+				<key>findRangeHighlight</key>
+				<string>#DDDDDD</string>
+				<key>findMatchHighlight</key>
+				<string>#FAEBAF</string>
+				<key>currentFindMatchHighlight</key>
+				<string>#FAC894</string>
+				<key>wordHighlight</key>
+				<string>#FDF7DD</string>
 				<key>wordHighlightStrong</key>
-				<string>#E6C565</string>
+				<string>#FAEBAF</string>
 				<key>activeLinkForeground</key>
 				<string>#80A4BE</string>
 				<key>gotoDefinitionLinkForeground</key>
