@@ -42,7 +42,7 @@
 				<key>currentFindMatchHighlight</key>
 				<string>#FAC894</string>
 				<key>wordHighlight</key>
-				<string>#FDF7DD</string>
+				<string>#FDF7DDBB</string>
 				<key>wordHighlightStrong</key>
 				<string>#FAEBAF</string>
 				<key>activeLinkForeground</key>
