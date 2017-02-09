@@ -4,5 +4,5 @@
 
 ## More Information
 
-* [Visual Studio Marketplace](https://marketplace.visualstudio.com/items/gerane.Theme-Tomorrow).
+* [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=sapegin.Theme-SquirrelsongLight).
 * [GitHub repository](https://github.com/sapegin/squirrelsong).
