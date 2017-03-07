@@ -1,24 +1,26 @@
 <scheme name="Squirrelsong" version="142" parent_scheme="Default">
+  <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
     <property name="created">2016-11-25T09:38:54</property>
     <property name="ide">Ruby</property>
     <property name="ideVersion">2016.3.0.0</property>
-    <property name="modified">2016-11-28T12:00:14</property>
+    <property name="modified">2017-02-24T16:47:13</property>
     <property name="originalScheme">Tomorrow</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.2" />
   <option name="EDITOR_FONT_SIZE" value="15" />
   <option name="CONSOLE_FONT_NAME" value="Hack" />
-  <option name="CONSOLE_FONT_SIZE" value="13" />
+  <option name="CONSOLE_FONT_SIZE" value="12" />
   <option name="CONSOLE_LINE_SPACING" value="1.7" />
   <option name="EDITOR_FONT_NAME" value="Hack" />
   <colors>
-    <option name="ADDED_LINES_COLOR" value="4d4d4c" />
+    <option name="ADDED_LINES_COLOR" value="faebaf" />
     <option name="ANNOTATIONS_COLOR" value="0" />
     <option name="ANNOTATIONS_MERGED_COLOR" value="0" />
     <option name="CARET_COLOR" value="555555" />
     <option name="CARET_ROW_COLOR" value="efefef" />
     <option name="CONSOLE_BACKGROUND_KEY" value="" />
+    <option name="DELETED_LINES_COLOR" value="cc5c52" />
     <option name="FILESTATUS_HIJACKED" value="de9e59" />
     <option name="GUTTER_BACKGROUND" value="ffffff" />
     <option name="HTML_TAG_TREE_LEVEL0" value="b8a4d2" />
@@ -30,7 +32,7 @@
     <option name="INDENT_GUIDE" value="dddddd" />
     <option name="LINE_NUMBERS_COLOR" value="555555" />
     <option name="METHOD_SEPARATORS_COLOR" value="" />
-    <option name="MODIFIED_LINES_COLOR" value="efefef" />
+    <option name="MODIFIED_LINES_COLOR" value="fdf7dd" />
     <option name="NOTIFICATION_BACKGROUND" value="" />
     <option name="READONLY_BACKGROUND" value="" />
     <option name="READONLY_FRAGMENT_BACKGROUND" value="ebce53" />
@@ -43,6 +45,7 @@
     <option name="SOFT_WRAP_SIGN_COLOR" value="d6d6d6" />
     <option name="TEARLINE_COLOR" value="dddddd" />
     <option name="WHITESPACES" value="d6d6d6" />
+    <option name="WHITESPACES_MODIFIED_LINES_COLOR" value="efefef" />
   </colors>
   <attributes>
     <option name="ABSTRACT_CLASS_NAME_ATTRIBUTES">
@@ -771,26 +774,26 @@
     </option>
     <option name="DIFF_CONFLICT">
       <value>
-        <option name="BACKGROUND" value="0" />
-        <option name="ERROR_STRIPE_COLOR" value="ff0000" />
+        <option name="BACKGROUND" value="fac894" />
+        <option name="ERROR_STRIPE_COLOR" value="cc5c52" />
       </value>
     </option>
     <option name="DIFF_DELETED">
       <value>
-        <option name="BACKGROUND" value="0" />
-        <option name="ERROR_STRIPE_COLOR" value="0" />
+        <option name="BACKGROUND" value="efefef" />
+        <option name="ERROR_STRIPE_COLOR" value="333333" />
       </value>
     </option>
     <option name="DIFF_INSERTED">
       <value>
-        <option name="BACKGROUND" value="0" />
-        <option name="ERROR_STRIPE_COLOR" value="ff00" />
+        <option name="BACKGROUND" value="fdf7dd" />
+        <option name="ERROR_STRIPE_COLOR" value="a7b386" />
       </value>
     </option>
     <option name="DIFF_MODIFIED">
       <value>
-        <option name="BACKGROUND" value="0" />
-        <option name="ERROR_STRIPE_COLOR" value="ff" />
+        <option name="BACKGROUND" value="faebaf" />
+        <option name="ERROR_STRIPE_COLOR" value="80a4be" />
       </value>
     </option>
     <option name="DJANGO_COMMENT">
