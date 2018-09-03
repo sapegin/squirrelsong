@@ -14,22 +14,21 @@ Install [Squirrelsong.itermcolors](https://raw.githubusercontent.com/sapegin/squ
 
 ## Colors
 
-| Color   | RGB Normal  | RGB Bright  |
+| Color   | Normal      | Bright      |
 | ------- | ----------- | ----------- |
-| Black   | 170/121/66  | 209/139/70  | 
-| Red     | 185/71/54   | 224/69/55   |
-| Green   | 55/138/44   | 54/168/34   |
-| Yellow  | 163/117/21  | 201/136/24  |
-| Blue    | 77/126/211  | 77/130/255  |
-| Magenta | 211/86/182  | 255/74/216  |
-| Cyan    | 49/149/156  | 58/185/194  |
-| White   | 196/164/138 | 243/235/212 |
-| Foreground | 151/132/111 | |
-| Background | 47/37/29 | |
-| Bold    | 255/255/255 | |
-| Links   | 0/92/187 | |
-| Selection | 20/15/6 | |
-| Selected Text | 203/188/164 | |
+| Black   | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=6e563e" width="20" height="20" alt="" style="vertical-align:-10%"> #6e563e  | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=aa7942" width="20" height="20" alt="" style="vertical-align:-10%"> #aa7942 | 
+| Red     | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=b94736" width="20" height="20" alt="" style="vertical-align:-10%"> #b94736   | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=e04537" width="20" height="20" alt="" style="vertical-align:-10%"> #e04537  |
+| Green   | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=378a2c" width="20" height="20" alt="" style="vertical-align:-10%"> #378a2c   | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=36a822" width="20" height="20" alt="" style="vertical-align:-10%"> #36a822  |
+| Yellow  | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=6e563e" width="20" height="20" alt="" style="vertical-align:-10%"> #a37515  | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=c98818" width="20" height="20" alt="" style="vertical-align:-10%"> #c98818  |
+| Blue    | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=327fbf" width="20" height="20" alt="" style="vertical-align:-10%"> #327fbf | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=1e99ff" width="20" height="20" alt="" style="vertical-align:-10%"> #1e99ff  |
+| Magenta | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=d356b6" width="20" height="20" alt="" style="vertical-align:-10%"> #d356b6  | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ff4ad8" width="20" height="20" alt="" style="vertical-align:-10%"> #ff4ad8  |
+| Cyan    | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=31959c" width="20" height="20" alt="" style="vertical-align:-10%"> #31959c  | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=3ab9c2" width="20" height="20" alt="" style="vertical-align:-10%"> #3ab9c2  |
+| White   | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=c4a48a" width="20" height="20" alt="" style="vertical-align:-10%"> #c4a48a | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=f3ebd4" width="20" height="20" alt="" style="vertical-align:-10%"> #f3ebd4 |
+| Foreground | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=97846f" width="20" height="20" alt="" style="vertical-align:-10%"> #97846f | |
+| Background | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=2f251d" width="20" height="20" alt="" style="vertical-align:-10%"> #2f251d | |
+| Bold    | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ffffff" width="20" height="20" alt="" style="vertical-align:-10%"> #ffffff | |
+| Selection | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=443527" width="20" height="20" alt="" style="vertical-align:-10%"> #443527 | |
+| Selected Text | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=97846f" width="20" height="20" alt="" style="vertical-align:-10%"> #97846f | |
 
 ***
 
