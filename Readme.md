@@ -1,6 +1,6 @@
 # Squirrelsong Terminal Color Scheme
 
-![Squirrelsong Terminal Color Scheme](http://wow.sapegin.me/1r1B0f1M1q2W/squirrelsong.png)
+![Squirrelsong Terminal Color Scheme](squirrelsong_terminal.png)
 
 Inspired by [Earthsong](https://github.com/daylerees/colour-schemes/blob/master/README.md#earthsong) Sublime Text scheme by [Dayle Rees](https://github.com/daylerees).
 
