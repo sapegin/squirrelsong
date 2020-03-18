@@ -6,10 +6,10 @@
     "publisher": "sapegin",
     "author": {
         "name": "Artem Sapegin",
-        "url": "http://sapegin.me/"
+        "url": "https://sapegin.me/"
     },
     "engines": {
-        "vscode": "^0.10.1"
+        "vscode": "^1.42.0"
     },
     "license": "MIT",
     "categories": [
@@ -26,7 +26,7 @@
             {
                 "label": "Squirrelsong Light",
                 "uiTheme": "vs",
-                "path": "./themes/SquirrelsongLight.tmTheme"
+                "path": "./themes/SquirrelsongLight.color-theme.json"
             }
         ]
     }
