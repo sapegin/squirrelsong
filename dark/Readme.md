@@ -14,6 +14,9 @@ Install [Squirrelsong.itermcolors](https://raw.githubusercontent.com/sapegin/squ
 
 ## Colors
 
+
+
+
 | Color   | Normal      | Bright      |
 | ------- | ----------- | ----------- |
 | Black   | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=6e563e" width="20" height="20" alt=""> #6e563e  | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=aa7942" width="20" height="20" alt=""> #aa7942 | 
@@ -29,3 +32,4 @@ Install [Squirrelsong.itermcolors](https://raw.githubusercontent.com/sapegin/squ
 | Bold    | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ffffff" width="20" height="20" alt=""> #ffffff | |
 | Selection | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=443527" width="20" height="20" alt=""> #443527 | |
 | Selected Text | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=97846f" width="20" height="20" alt=""> #97846f | |
+| Comment | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=71635b" width="20" height="20" alt=""> #71635b | |
