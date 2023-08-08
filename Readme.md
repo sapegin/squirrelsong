@@ -10,7 +10,7 @@
 
 [![Squirrelsong Dark color theme](dark/squirrelsong_terminal.png)](dark)
 
-[Download for Terminal.app or iTerm](light)
+[Download for Terminal.app or iTerm](dark)
 
 ***
 
