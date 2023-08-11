@@ -18,8 +18,8 @@
 		"editor.findMatchHighlightBackground": "#fb408433",
 		"editorBracketMatch.background": "#fb408433",
 		"editorBracketMatch.border": "#ffffff00",
-		"editorIndentGuide.background": "#ffffff00",
-		"editorIndentGuide.activeBackground": "#dddddd88",
+		"editorIndentGuide.background1": "#ffffff00",
+		"editorIndentGuide.activeBackground1": "#dddddd88",
 		"peekViewEditor.matchHighlightBackground": "#fac894",
 		"peekViewResult.matchHighlightBackground": "#faebaf"
 	},
