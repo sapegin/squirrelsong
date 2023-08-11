@@ -26,7 +26,7 @@
             {
                 "label": "Squirrelsong Light",
                 "uiTheme": "vs",
-                "path": "./themes/SquirrelsongLight.color-theme.json"
+                "path": "./SquirrelsongLight.color-theme.json"
             }
         ]
     },
