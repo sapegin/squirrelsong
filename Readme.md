@@ -12,13 +12,13 @@
 
 [Download for Terminal.app or iTerm](dark)
 
-***
+---
 
 You could also like [my dotfiles](https://github.com/sapegin/dotfiles).
 
 ## Author
 
-* [Artem Sapegin](https://sapegin.me)
+- [Artem Sapegin](https://sapegin.me)
 
 ---
 

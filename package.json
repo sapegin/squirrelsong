@@ -1,0 +1,19 @@
+{
+  "name": "squirrelsong",
+  "private": true,
+  "author": {
+    "name": "Artem Sapegin",
+    "url": "https://sapegin.me/"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sapegin/squirrelsong.git"
+  },
+  "scripts": {
+    "format": "prettier --log-level warn --write --ignore-unknown \"**/*.*\""
+  },
+  "devDependencies": {
+    "prettier": "^3.0.1"
+  }
+}

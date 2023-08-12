@@ -1,39 +1,46 @@
 {
-    "name": "Theme-SquirrelsongLight",
-    "displayName": "Squirrelsong Light Theme",
-    "description": "Light theme",
-    "version": "1.0.1",
-    "publisher": "sapegin",
-    "author": {
-        "name": "Artem Sapegin",
-        "url": "https://sapegin.me/"
-    },
-    "engines": {
-        "vscode": "^1.42.0"
-    },
-    "license": "MIT",
-    "categories": [
-        "Themes"
-    ],
-    "icon": "icon.png",
-    "homepage": "https://github.com/sapegin/squirrelsong/blob/master/themes/VSCode/README.md",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/sapegin/squirrelsong.git"
-    },
-    "contributes": {
-        "themes": [
-            {
-                "label": "Squirrelsong Light",
-                "uiTheme": "vs",
-                "path": "./SquirrelsongLight.color-theme.json"
-            }
-        ]
-    },
-    "scripts": {
-        "publish": "vsce publish"
-    },
-    "devDependencies": {
-        "vsce": "^2.15.0"
-    }
+  "name": "Theme-SquirrelsongLight",
+  "displayName": "Squirrelsong Light Theme",
+  "description": "Light theme",
+  "version": "1.0.1",
+  "publisher": "sapegin",
+  "author": {
+    "name": "Artem Sapegin",
+    "url": "https://sapegin.me/"
+  },
+  "engines": {
+    "vscode": "^1.42.0"
+  },
+  "license": "MIT",
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "light theme",
+    "squirrelsong",
+    "low contrast theme",
+    "scheme"
+  ],
+  "icon": "icon.png",
+  "homepage": "https://github.com/sapegin/squirrelsong/blob/master/themes/VSCode/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sapegin/squirrelsong.git"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Squirrelsong Light",
+        "uiTheme": "vs",
+        "path": "./SquirrelsongLight.color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "vsce": "^2.15.0"
+  }
 }
