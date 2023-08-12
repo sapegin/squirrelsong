@@ -1,5 +1,6 @@
-import { Stack, Heading, IconCoffee } from ".";
-import { name, icon } from "./Hola.css";
+import React from 'react';
+import { Stack, Heading, IconCoffee } from '.';
+import { name, icon } from './Hola.css';
 
 export function Hola({ children }) {
   return (

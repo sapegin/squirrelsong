@@ -1,3 +1,8 @@
+import React from 'react';
+import type { ReactNode } from 'react';
+import { Stack, Heading, IconCoffee } from '.';
+import { name, icon } from './Hola.css';
+
 /*
  * Once upon a time...
  */

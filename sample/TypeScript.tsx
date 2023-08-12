@@ -1,6 +1,7 @@
-import type { ReactNode } from "react";
-import { Stack, Heading, IconCoffee } from ".";
-import { name, icon } from "./Hola.css";
+import React from 'react';
+import type { ReactNode } from 'react';
+import { Stack, Heading, IconCoffee } from '.';
+import { name, icon } from './Hola.css';
 
 type Props = {
   children: ReactNode;

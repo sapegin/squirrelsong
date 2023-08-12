@@ -25,6 +25,20 @@ body {
   background: #ff0000 !important;
 }
 
+h1.mystyle:lang(en) {
+  color: blue; /* TODO: change THIS to yellow for next version! */
+  border: rgb(255, 0, 0);
+  background-color: #fafafa;
+  background: url(hello.jpg) !important;
+}
+
+div > p,
+p ~ ul,
+input [type='radio'] {
+  color: green;
+  width: 80%;
+}
+
 @font-face {
   font-family: 'Transylvania';
   src: url('/location/Transylvania.woff2') format('woff2');
