@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="392" height="391" viewBox="0 0 392 391">
+  <title>testing-pyramid</title>
+  <g fill="none" fill-rule="evenodd">
+    <path stroke="#331F06" d="m196 0 195 390H1z"/>
+    <path stroke="#331F06" stroke-linecap="square" d="M131.424 130h128.863M66.204 260h259.469"/>
+    <text fill="#331F06" font-family="Helvetica" font-size="24">
+      <tspan x="185" y="91">UI</tspan>
+    </text>
+    <text fill="#331F06" font-family="Helvetica" font-size="24">
+      <tspan x="155.986" y="201">Service</tspan>
+    </text>
+    <text fill="#331F06" font-family="Helvetica" font-size="24">
+      <tspan x="175.16" y="336">Unit</tspan>
+    </text>
+  </g>
+</svg>

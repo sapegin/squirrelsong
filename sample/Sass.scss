@@ -1,0 +1,55 @@
+/* Some loud comment here */
+// And silent one
+
+@use 'sass:math';
+@use 'base';
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+@mixin theme($theme: DarkGray) {
+  background: $theme;
+  box-shadow: 0 0 1px rgba($theme, 0.25);
+  color: #fff;
+}
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+.info {
+  @include theme;
+}
+
+.alert {
+  @include theme($theme: DarkRed);
+}
+
+%message-shared {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+article[role='main'] {
+  width: math.div(600px, 960px) * 100%;
+}
