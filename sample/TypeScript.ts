@@ -1,7 +1,17 @@
 import React from 'react';
 import type { ReactNode } from 'react';
-import { Stack, Heading, IconCoffee } from '.';
-import { name, icon } from './Hola.css';
+import styled from 'styled-components';
+
+const Li = styled.li<{ isOvernight: boolean }>`
+  && {
+    list-style: none;
+    counter-increment: steps-counter;
+    position: relative;
+    padding: 0 0 0 1.1rem;
+    margin-bottom: ${(p) =>
+      p.isOvernight ? p.theme.space.xl : p.theme.space.m};
+  }
+`;
 
 /*
  * Once upon a time...

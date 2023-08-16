@@ -1,0 +1,47 @@
+---
+import { themeClass } from '../styles/theme.css';
+import '../styles/code.css';
+import { SITE_TITLE } from '../constants';
+import Metatags from '../components/Metatags.astro';
+
+export interface Props {
+	url?: string;
+	title?: string;
+	pageTitle?: string;
+	description?: string;
+}
+
+const getTitle = ({ title, pageTitle }: Pick<Props, 'title' | 'pageTitle'>) => {
+	if (pageTitle) {
+		return pageTitle;
+	}
+
+	if (title) {
+		return `${title} by ${SITE_TITLE}`;
+	}
+
+	return SITE_TITLE;
+};
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>{getTitle(Astro.props)}</title>
+		<Metatags {...Astro.props} />
+	</head>
+	<body class={themeClass}>
+		<slot />
+		<p>
+			I’m a software engineer with 20 years of experience in small startups and
+			large corporations, like Wayfair, Mail.ru, Here Technologies, Omio, and
+			Badoo, I created React Styleguidist (a tool to create React components and
+			share them with your team), among many other open source projects.
+		</p>
+		<p>
+			I’ve been <a href="/">blogging</a> about frontend development for almost
+			as many years. My favorite topics are component-driven development,
+			testing, and accessibility.
+		</p>
+	</body>
+</html>
