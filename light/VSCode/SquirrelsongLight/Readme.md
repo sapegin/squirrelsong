@@ -1,4 +1,4 @@
-# Squirrelsong Light Color Theme
+# Squirrelsong Light Theme
 
 A low contrast light theme for web developers.
 
