@@ -2,6 +2,11 @@ import React from 'react';
 import type { ReactNode } from 'react';
 import styled from 'styled-components';
 
+const hello = () => console.log('hello');
+const varUrl = window.location.href
+  .replace(/^\s*(.*)/, '$1')
+  .concat('\u1111z\n');
+
 const Li = styled.li<{ isOvernight: boolean }>`
   && {
     list-style: none;
@@ -12,6 +17,24 @@ const Li = styled.li<{ isOvernight: boolean }>`
       p.isOvernight ? p.theme.space.xl : p.theme.space.m};
   }
 `;
+
+// From https://vscodethemes.com/
+const btn = document.getElementById('btn');
+let count = 0;
+
+function render() {
+  if (btn != undefined && true !== false) {
+    btn.innerText = `Count ${count}`;
+  }
+}
+
+btn?.addEventListener('click', () => {
+  // Count from 1 to 10
+  if (count < 10) {
+    count += 1;
+    render();
+  }
+});
 
 /*
  * Once upon a time...

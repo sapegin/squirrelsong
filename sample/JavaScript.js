@@ -3,6 +3,11 @@ import styled from 'styled-components';
 import { Stack, Heading, IconCoffee } from '.';
 import { name, icon } from './Hola.css';
 
+const hello = () => console.log('hello');
+const varUrl = window.location.href
+  .replace(/^\s*(.*)/, '$1')
+  .concat('\u1111z\n');
+
 const Li = styled.li`
   && {
     list-style: none;
@@ -16,10 +21,12 @@ const Li = styled.li`
 
 // From https://vscodethemes.com/
 const btn = document.getElementById('btn');
-let conut = 0;
+let count = 0;
 
 function render() {
-  btn.innerText = `Count ${count}`;
+  if (btn) {
+    btn.innerText = `Count ${count}`;
+  }
 }
 
 btn.addEventListener('click', () => {
@@ -57,3 +64,22 @@ const Dracula = new Vampire({
   deathDate: 1476,
   weaknesses: ['Sunlight', 'Garlic'],
 });
+
+export function Hola({ children }) {
+  return (
+    <Heading level={1}>
+      <Stack
+        as="span"
+        display="inline-flex"
+        direction="row"
+        gap="s"
+        alignItems="baseline"
+      >
+        <span className={name}>{children}</span>
+        <span>
+          <IconCoffee className={icon} />
+        </span>
+      </Stack>
+    </Heading>
+  );
+}
