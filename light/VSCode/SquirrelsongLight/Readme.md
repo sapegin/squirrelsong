@@ -2,7 +2,7 @@
 
 A low contrast light theme for web developers.
 
-![Squirrelsong Light](./screenshot.png)
+![Squirrelsong Light](https://github.com/sapegin/squirrelsong/raw/master/light/VSCode/SquirrelsongLight/screenshot.png)
 
 - Low contrast with great readability
 - Made for web developers

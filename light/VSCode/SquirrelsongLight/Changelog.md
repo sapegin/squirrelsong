@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.1
+
+- Fix the screenshot in the readme.
+
 ## 2.0.0
 
 Alsmot complete rebuild of the theme, though most of the colors are the same.
