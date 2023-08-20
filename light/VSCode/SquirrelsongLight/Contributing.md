@@ -15,4 +15,6 @@ Publish a new version:
 
 ```
 npm run publish <patch>
+npm run publish <minor>
+npm run publish <major>
 ```

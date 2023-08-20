@@ -23,7 +23,7 @@
     "scheme"
   ],
   "icon": "icon.png",
-  "homepage": "https://github.com/sapegin/squirrelsong/blob/master/themes/VSCode/README.md",
+  "homepage": "https://github.com/sapegin/squirrelsong",
   "repository": {
     "type": "git",
     "url": "https://github.com/sapegin/squirrelsong.git"

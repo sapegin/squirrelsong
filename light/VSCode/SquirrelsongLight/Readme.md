@@ -1,6 +1,13 @@
-# Squirrelsong Light
+# Squirrelsong Light Color Theme
 
-![Squirrelsong Light](https://user-images.githubusercontent.com/70067/76961997-b08a2400-691e-11ea-97b4-000b2d8bdde5.png)
+A low contrast light theme for web developers.
+
+![Squirrelsong Light](./screenshot.png)
+
+- Low contrast with great readability
+- Made for web developers
+- Monochrome Markdown styles
+- Consistent highlighting for different programming languages
 
 ## More Information
 
