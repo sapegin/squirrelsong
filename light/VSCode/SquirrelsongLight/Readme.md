@@ -1,4 +1,4 @@
-# Squirrelsong Light Theme
+# Squirrelsong Light Theme 🐿️
 
 A low contrast light theme for web developers.
 
@@ -9,7 +9,7 @@ A low contrast light theme for web developers.
 - Monochrome Markdown styles
 - Consistent highlighting for different programming languages
 
-## More Information
+## More information
 
 - [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=sapegin.Theme-SquirrelsongLight).
 - [GitHub repository](https://github.com/sapegin/squirrelsong).
