@@ -8,6 +8,7 @@ A low contrast light theme for web developers.
 - Made for web developers
 - Monochrome Markdown styles
 - Consistent highlighting for different programming languages
+- Non-distracting UI
 
 ## More information
 
