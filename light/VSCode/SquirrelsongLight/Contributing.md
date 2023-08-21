@@ -2,7 +2,7 @@
 
 [Visual Studio Code theme color API](https://code.visualstudio.com/api/references/theme-color)
 
-[Default UI theme](https://github.com/microsoft/vscode/blob/f125afbc800ec611f5a9ab1333c769832ce424b3/src/vs/platform/theme/common/colorRegistry.ts#L330)
+[Default UI theme](https://github.com/microsoft/vscode/blob/f125afbc800ec611f5a9ab1333c769832ce424b3/src/vs/platform/theme/common/colorRegistry.ts)
 
 Install dependencies:
 

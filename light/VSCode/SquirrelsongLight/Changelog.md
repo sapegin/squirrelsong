@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.3
+
+- Fix a few more bright UI colors.
+
 ## 2.0.2
 
 - Significantly more UI color adjustments.
