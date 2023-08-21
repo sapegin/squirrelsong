@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.2
+
+- Significantly more UI color adjustments.
+
 ## 2.0.1
 
 - Fix the screenshot in the readme.
