@@ -175,6 +175,9 @@
     {
       "scope": [
         "comment",
+        "invalid.deprecated",
+        // Diff
+        "meta.diff.range.unified",
         // Markdown
         "markup.underline.link.markdown",
         "markup.underline.link.image.markdown",
@@ -418,6 +421,9 @@
         "constant.keyword.clojure",
         // CSS
         "variable.parameter.url.css",
+        // Diff
+        "meta.diff.header.to-file",
+        "markup.inserted.diff",
         // Sass
         "meta.attribute-selector.scss"
       ],
@@ -595,6 +601,8 @@
         "entity.name.tag.localname.cs",
         // CSS
         "entity.name.tag.css",
+        // Diff
+        "meta.diff.header.git",
         // EditorConfig
         "meta.section.header.editorconfig",
         "keyword.operator.glob.wildcard.editorconfig",
@@ -714,13 +722,12 @@
       }
     },
     {
-      "scope": ["invalid.deprecated"],
-      "settings": {
-        "foreground": "#9b959d"
-      }
-    },
-    {
-      "scope": ["invalid.illegal"],
+      "scope": [
+        "invalid.illegal",
+        // Diff
+        "meta.diff.header.from-file",
+        "markup.deleted.diff"
+      ],
       "settings": {
         "foreground": "#cc5c52"
       }
