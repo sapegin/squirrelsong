@@ -1,0 +1,49 @@
+{
+  "name": "Theme-SquirrelsongDark",
+  "displayName": "Squirrelsong Dark Theme",
+  "description": "Low contrast dark theme",
+  "version": "2.0.0",
+  "publisher": "sapegin",
+  "author": {
+    "name": "Artem Sapegin",
+    "url": "https://sapegin.me/"
+  },
+  "engines": {
+    "vscode": "^1.42.0"
+  },
+  "license": "MIT",
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark theme",
+    "squirrelsong",
+    "low contrast theme",
+    "scheme"
+  ],
+  "icon": "icon.png",
+  "homepage": "https://github.com/sapegin/squirrelsong",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sapegin/squirrelsong.git"
+  },
+  "sponsor": {
+    "url": "https://www.buymeacoffee.com/sapegin"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Squirrelsong Dark",
+        "uiTheme": "vs",
+        "path": "./SquirrelsongDark.color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "vsce": "^2.9.1"
+  }
+}
