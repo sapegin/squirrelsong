@@ -1,0 +1,44 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+  <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+  <id>squirrelsong-light</id>
+  <version>2.0.1</version>
+
+  <!-- Public plugin name should be written in Title Case.
+       Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+  <name>Squirrelsong Light Theme</name>
+  <category>UI</category>
+
+  <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+  <vendor email="artem@sapegin.ru" url="https://sapegin.me/">Artem Sapegin</vendor>
+
+  <idea-version since-build="200"/>
+
+  <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+       Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+       Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+  <description><![CDATA[
+<p>A low contrast light theme for web developers.</p>
+<ul>
+  <li>Low contrast with great readability</li>
+  <li>Made for web developers</li>
+  <li>Monochrome Markdown styles</li>
+  <li>Consistent highlighting for different programming languages</li>
+  <li>Non-distracting UI</li>
+</ul>
+  ]]></description>
+
+  <!-- Short summary of new features and bugfixes in the latest plugin version.
+       Displayed on the Plugin Page and IDE Plugin Manager. Simple HTML elements can be included between <![CDATA[  ]]> tags. -->
+  <change-notes><![CDATA[
+    Initial release of the theme.
+  ]]></change-notes>
+
+  <!-- Product and plugin compatibility requirements.
+       Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <themeProvider id="squirrelsong-light" path="/theme/Squirrelsong Light.theme.json"/>
+  </extensions>
+</idea-plugin>
