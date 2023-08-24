@@ -1,7 +1,7 @@
 {
   "name": "Squirrelsong Dark",
   "type": "dark",
-  "semanticHighlighting": false,
+  "semanticHighlighting": true,
   "semanticTokenColors": {
     "function": { "foreground": "#5d99cb", "fontStyle": "bold" },
     "variable": { "foreground": "#5d99cb", "fontStyle": "italic" },
