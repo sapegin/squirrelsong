@@ -1,14 +1,14 @@
 {
-  "white": "#9e8a74",
-  "whiter": "#c4a389",
-  "whitest": "#dcd5c0",
-  "black": "#352a21",
-  "gray": "#71635b",
-  "gray01": "#896b56",
-  "gray02": "#755945",
-  "gray03": "#6b503c",
-  "gray04": "#574131",
-  "gray05": "#453327",
+  "gray00": "#0a0909",
+  "gray03": "#352a21",
+  "gray04": "#453327",
+  "gray05": "#574131", // Background
+  "gray06": "#6b503c",
+  "gray07": "#755945", // Comment
+  "gray08": "#896b56",
+  "gray09": "#9e8a74", // Text
+  "gray0c": "#c4a389",
+  "gray0d": "#dcd5c0",
   "gren": "#558240",
   "greenLight": "#44603b",
   "greenLighter": "#445536",

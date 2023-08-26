@@ -14,10 +14,10 @@
     "badge.foreground": "#9e8a74",
     "button.background": "#9e8a74",
     "button.foreground": "#352a21",
-    "button.secondaryBackground": "#71635b",
+    "button.secondaryBackground": "#755945",
     "button.secondaryForeground": "#352a21",
     "descriptionForeground": "#896b56",
-    "disabledForeground": "#71635b",
+    "disabledForeground": "#755945",
     "dropdown.background": "#352a21",
     "dropdown.border": "#896b56",
     "editor.background": "#352a21",
@@ -53,7 +53,7 @@
     "editorInfo.foreground": "#5d99cb",
     "editorLineNumber.activeForeground": "#9e8a74",
     "editorLineNumber.dimmedForeground": "#896b56",
-    "editorLineNumber.foreground": "#71635b",
+    "editorLineNumber.foreground": "#755945",
     "editorLink.activeForeground": "#5d99cb",
     "editorRuler.foreground": "#453327",
     "editorUnicodeHighlight.background": "#6b503c",
@@ -67,7 +67,7 @@
     "extensionIcon.starForeground": "#b18433",
     "focusBorder": "#9e8a74",
     "foreground": "#9e8a74",
-    "gitDecoration.ignoredResourceForeground": "#71635b",
+    "gitDecoration.ignoredResourceForeground": "#755945",
     "gitDecoration.modifiedResourceForeground": "#5d99cb",
     "gitDecoration.untrackedResourceForeground": "#438e4f",
     "icon.foreground": "#896b56",
@@ -129,7 +129,7 @@
     "tab.activeForeground": "#9e8a74",
     "tab.border": "#6b503c",
     "tab.inactiveBackground": "#352a21",
-    "tab.inactiveForeground": "#71635b",
+    "tab.inactiveForeground": "#755945",
     "textLink.activeForeground": "#5d99cb",
     "textLink.foreground": "#5d99cb",
     "textPreformat.foreground": "#b18433",
@@ -279,7 +279,7 @@
         "constant.other.reference.link.markdown"
       ],
       "settings": {
-        "foreground": "#71635b",
+        "foreground": "#755945",
         "fontStyle": ""
       }
     },
