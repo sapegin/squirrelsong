@@ -10,6 +10,12 @@
     "type": { "foreground": "#539e9b", "fontStyle": "" }
   },
   "colors": {
+    "activityBar.activeBorder": "#755945",
+    "activityBar.background": "#6b503c",
+    "activityBar.foreground": "#9e8a74",
+    "activityBar.inactiveForeground": "#896b56",
+    "activityBarBadge.background": "#896b56",
+    "activityBarBadge.foreground": "#c4a389",
     "badge.background": "#574131",
     "badge.foreground": "#9e8a74",
     "banner.background": "#453327",
