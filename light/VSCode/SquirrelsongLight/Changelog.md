@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.5
+
+- Style title bar and activity bar.
+- Add bracket highlight colors.
+
 ## 2.0.4
 
 - A few more UI color adjustments.
