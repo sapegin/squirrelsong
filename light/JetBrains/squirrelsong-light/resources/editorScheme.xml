@@ -569,7 +569,7 @@
     <option name="CPP.STATIC_FUNCTION">
       <value>
         <option name="FOREGROUND" value="80a4be" />
-        <option name="FONT_TYPE" value="3" />
+        <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="CPP.STRING">
@@ -863,7 +863,7 @@
     </option>
     <option name="DEFAULT_STATIC_FIELD">
       <value>
-        <option name="EFFECT_COLOR" value="80a4be" />
+        <option name="FOREGROUND" value="80a4be" />
       </value>
     </option>
     <option name="DEFAULT_STATIC_METHOD" baseAttributes="DEFAULT_FUNCTION_DECLARATION" />
@@ -2330,7 +2330,7 @@
     <option name="STATIC_FIELD_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="80a4be" />
-        <option name="FONT_TYPE" value="3" />
+        <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="STATIC_METHOD_ATTRIBUTES">
