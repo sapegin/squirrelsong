@@ -55,7 +55,7 @@
 }
 
 /* CSS */
-.styles-section .simple-selector.selector-matches,
+.styles-section .selector-container .simple-selector.selector-matches,
 .styles-section.keyframe-key {
   color: var(--purple) !important;
   font-weight: bold;
@@ -102,4 +102,13 @@
 }
 .token-atom {
   color: var(--orange) !important;
+}
+
+/* Breadcrumbs */
+.node-label-name.node-label-name {
+  color: var(--purple) !important;
+  font-weight: bold;
+}
+.node-label-class.node-label-class {
+  color: var(--blue) !important;
 }
