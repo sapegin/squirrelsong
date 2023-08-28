@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.7
+
+- Softer focus border, tweak activity bar colors.
+
 ## 2.0.6
 
 - Add progress bar and extension page colors.
