@@ -6,10 +6,19 @@
   --teal: #5b9a8b;
   --green: #a7b386;
   --red: #cc5c52;
+  --redLight: #e5ada8;
+  --redLighter: #f5e3e1;
+  --redContrast: #bc5248;
   --orange: #de9e59;
   --yellow: #e6c565;
+  --yellowLight: #e9d9a8;
+  --yellowLighter: #f7f0de;
+  --yellowContrast: #ac9032;
   --blueContrast: #4e7997;
   --purpleContrast: #856caa;
+  --brightYellow: #faebaf;
+  --gray0d: #d9d7dc;
+  --gray0e: #e9e9ef;
 }
 
 .platform-mac,
@@ -19,12 +28,37 @@
   --monospace-font-size: 12px;
   --source-code-font-family: MonoLisa, Menlo, monospace;
   --source-code-font-size: 12px;
+  /* Syntax highlighting */
+  --color-token-keyword: var(--purple);
+  --color-token-variable: var(--blue);
+  --color-token-property: var(--blue);
+  --color-token-definition: var(--blue);
+  --color-token-string: var(--green);
+  --color-token-number: var(--orange);
+  --color-token-comment: var(--gray);
+  --js-def: var(--blue);
+  --color-syntax-1: var(--green);
+  --color-syntax-3: var(--orange);
   /* Less distracting UI colors */
+  --neutral-foreground-rest: var(--black);
   --tabbed-pane-highlight: var(--black);
   --color-link: var(--blueContrast);
+  --color-text-primary: var(--black);
+  --color-text-disabled: var(--gray);
   --dev-tools-link-rest: var(--blueContrast);
   --dev-tools-link-hover: var(--blueContrast);
   --accent-foreground-rest: var(--blueContrast);
+  --override-node-text-label-color: var(--purple);
+  --override-node-text-class-color: var(--blue);
+  --override-node-text-id-color: var(--blue);
+  --override-error-text-color: var(--redContrast);
+  --override-console-error-background-color: var(--redLighter);
+  --override-error-border-color: var(--redLight);
+  --override-warning-text-color: var(--yellowContrast);
+  --override-console-warning-background-color: var(--yellowLighter);
+  --override-warning-border-color: var(--yellowLight);
+  --color-match-highlight: var(--brightYellow);
+  --legacy-focus-bg-color: var(--gray0e);
 }
 
 /* HTML */
@@ -55,6 +89,10 @@
 }
 
 /* CSS */
+.styles-section .selector-container .simple-selector,
+.styles-section.keyframe-key {
+  color: var(--purple) !important;
+}
 .styles-section .selector-container .simple-selector.selector-matches,
 .styles-section.keyframe-key {
   color: var(--purple) !important;
@@ -75,8 +113,15 @@
   color: var(--orange) !important;
 }
 
+.suiggly::before {
+  --severity-error-color: var(--red);
+  --severity-info-color: var(--gray);
+  --severity-warning-color: var(--orange);
+  --severity-tip-color: var(--blue);
+}
+
 /* CodeMirror */
-.cm-content {
+.cm-editor .cm-content {
   color: var(--black) !important;
 }
 .token-comment {
@@ -105,10 +150,20 @@
 }
 
 /* Breadcrumbs */
-.node-label-name.node-label-name {
+.node-label-name {
   color: var(--purple) !important;
   font-weight: bold;
 }
-.node-label-class.node-label-class {
+.node-label-class {
   color: var(--blue) !important;
+}
+
+/* Console */
+.console-info-level .console-message-text {
+  color: var(--black) !important;
+}
+
+/* Debugger */
+.tree-outline-disclosure {
+  --css-string: var(--green);
 }
