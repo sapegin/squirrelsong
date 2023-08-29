@@ -10,7 +10,7 @@
     "accent color": "#727075",
     "search primary color": "#fae1ea",
     "search secondary color": "#ef6c9c",
-    "highlight color": "#f2e2b2",
+    "highlight color": "#e9d9a8",
     "selection color": "#faebaf"
   },
   "notes": {
@@ -34,16 +34,16 @@
   },
   "sidebar": {
     "text color": "$base.text color",
-    "text secondary color": "#ffffff",
-    "background color": "#e9e9ef",
-    "background secondary color": "#9b959d",
+    "text secondary color": "$base.text color",
+    "background color": "$base.background secondary color",
+    "background secondary color": "#d9d7dc",
     "stroke color": "#cbc9ce",
-    "accent color": "#727075",
-    "icon color": "#9b959d",
-    "selected icon color": "#ffffff",
+    "accent color": "#d9d7dc",
+    "icon color": "$base.text tertiary color",
+    "selected icon color": "$base.text tertiary color",
     "toolbar": {
-      "background color": "$sidebar.background color",
-      "icon color": "$sidebar.icon color",
+      "background color": "$base.background secondary color",
+      "icon color": "$base.text tertiary color",
       "hover color": "#d9d7dc"
     }
   },
