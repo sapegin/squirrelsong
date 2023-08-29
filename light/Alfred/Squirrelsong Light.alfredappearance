@@ -1,0 +1,65 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 5,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#9B959DFF",
+        "font" : "System Light",
+        "color" : "#9B959DFF"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#717075FF",
+        "font" : "System Light",
+        "color" : "#9B959DFF"
+      },
+      "backgroundSelected" : "#D9D7DCFF",
+      "text" : {
+        "size" : 18,
+        "colorSelected" : "#717075FF",
+        "font" : "System Light",
+        "color" : "#717075FF"
+      },
+      "iconPaddingHorizontal" : 4,
+      "roundness" : 0,
+      "paddingVertical" : 3,
+      "iconSize" : 40
+    },
+    "search" : {
+      "backgroundSelected" : "#FAEBAFFF",
+      "paddingHorizontal" : 8,
+      "spacing" : 4,
+      "text" : {
+        "size" : 34,
+        "colorSelected" : "#717075FF",
+        "font" : "System Light",
+        "color" : "#717075FF"
+      },
+      "background" : "#F5F5F700",
+      "roundness" : 0,
+      "paddingVertical" : 4
+    },
+    "window" : {
+      "color" : "#F5F5F7B2",
+      "paddingHorizontal" : 0,
+      "width" : 559,
+      "borderPadding" : 0,
+      "borderColor" : "#0000007F",
+      "blur" : 0,
+      "roundness" : 4,
+      "paddingVertical" : 4
+    },
+    "credit" : "Artem Sapegin",
+    "visualEffectMode" : 1,
+    "separator" : {
+      "color" : "#CBCBCBF3",
+      "thickness" : 0
+    },
+    "scrollbar" : {
+      "color" : "#9B959DFF",
+      "thickness" : 2
+    },
+    "name" : "Squirrelsong Light"
+  }
+}
