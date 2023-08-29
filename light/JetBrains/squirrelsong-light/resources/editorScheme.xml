@@ -19,7 +19,7 @@
     <option name="DOC_COMMENT_GUIDE" value="e9e9ef" />
     <option name="DOC_COMMENT_LINK" value="4e7997" />
     <option name="ERROR_HINT" value="fae1ea" />
-    <option name="FILESTATUS_ADDED" value="6f7a4f"/>
+    <option name="FILESTATUS_ADDED" value="5a7f24"/>
     <option name="FILESTATUS_COPIED" value=""/>
     <option name="FILESTATUS_DELETED" value="cbc9ce"/>
     <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="cbc9ce"/>
@@ -28,15 +28,15 @@
     <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="bc5248"/>
     <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="bc5248"/>
     <option name="FILESTATUS_MERGED" value="856caa"/>
-    <option name="FILESTATUS_MODIFIED" value="5a7f24"/>
+    <option name="FILESTATUS_MODIFIED" value="4e7997"/>
     <option name="FILESTATUS_RENAMED" value=""/>
     <option name="FILESTATUS_NOT_CHANGED" value=""/>
     <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value=""/>
     <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value=""/>
     <option name="FILESTATUS_UNKNOWN" value=""/>
-    <option name="FILESTATUS_addedOutside" value=""/>
+    <option name="FILESTATUS_addedOutside" value="5a7f24"/>
     <option name="FILESTATUS_changelistConflict" value=""/>
-    <option name="FILESTATUS_modifiedOutside" value="5a7f24"/>
+    <option name="FILESTATUS_modifiedOutside" value="4e7997"/>
     <option name="FILESTATUS_HIJACKED" value=""/>
     <option name="FILESTATUS_OBSOLETE" value=""/>
     <option name="FILESTATUS_SWITCHED" value=""/>
@@ -81,8 +81,8 @@
     <option name="VCS_ANNOTATIONS_COLOR_1" value="e9ece1" />
     <option name="VCS_ANNOTATIONS_COLOR_2" value="d9d7dc" />
     <option name="VCS_ANNOTATIONS_COLOR_3" value="dfe8ef" />
-    <option name="VCS_ANNOTATIONS_COLOR_4" value="f9f0d8" />
-    <option name="VCS_ANNOTATIONS_COLOR_5" value="f2d6d4" />
+    <option name="VCS_ANNOTATIONS_COLOR_4" value="f7f0de" />
+    <option name="VCS_ANNOTATIONS_COLOR_5" value="f3dcda" />
     <option name="VISUAL_INDENT_GUIDE" value="e9e9ef" />
     <option name="WARNING_HINT" value="fdf7e1" />
     <option name="WHITESPACES" value="d9d7dc" />
@@ -416,7 +416,7 @@
     </option>
     <option name="CONSOLE_GREEN_BRIGHT_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="5a7f24" />
+        <option name="FOREGROUND" value="4e7997" />
       </value>
     </option>
     <option name="CONSOLE_GREEN_OUTPUT">
@@ -462,7 +462,7 @@
     </option>
     <option name="CONSOLE_YELLOW_BRIGHT_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="8e6b06" />
+        <option name="FOREGROUND" value="ac9032" />
       </value>
     </option>
     <option name="CONSOLE_YELLOW_OUTPUT">
@@ -905,7 +905,7 @@
     </option>
     <option name="DIFF_DELETED">
       <value>
-        <option name="BACKGROUND" value="f2d6d4" />
+        <option name="BACKGROUND" value="f3dcda" />
         <option name="ERROR_STRIPE_COLOR" value="cc5c52" />
       </value>
     </option>
@@ -1206,7 +1206,7 @@
     <option name="INFO_ATTRIBUTES">
       <value>
         <option name="EFFECT_COLOR" value="cbc9ce" />
-        <option name="ERROR_STRIPE_COLOR" value="f2e2b2" />
+        <option name="ERROR_STRIPE_COLOR" value="e9d9a8" />
         <option name="EFFECT_TYPE" value="2" />
       </value>
     </option>
@@ -2589,7 +2589,7 @@
     </option>
     <option name="UNMATCHED_BRACE_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="f2d6d4" />
+        <option name="BACKGROUND" value="f3dcda" />
       </value>
     </option>
     <option name="VELOCITY_BAD_CHARACTER">
