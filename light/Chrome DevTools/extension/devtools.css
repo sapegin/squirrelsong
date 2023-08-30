@@ -4,6 +4,8 @@
   --blue: #80a4be;
   --purple: #af9fc7;
   --teal: #5b9a8b;
+  --tealLight: #adccc5;
+  --tealLighter: #d6e6e2;
   --green: #a7b386;
   --red: #cc5c52;
   --redLight: #e5ada8;
@@ -35,6 +37,7 @@
   --color-token-definition: var(--blue);
   --color-token-string: var(--green);
   --color-token-number: var(--orange);
+  --color-token-atom: var(--orange);
   --color-token-comment: var(--gray);
   --js-def: var(--blue);
   --color-syntax-1: var(--green);
@@ -59,6 +62,8 @@
   --override-warning-border-color: var(--yellowLight);
   --color-match-highlight: var(--brightYellow);
   --legacy-focus-bg-color: var(--gray0e);
+  --color-execution-line-background: var(--tealLighter);
+  --color-execution-line-outline: var(--tealLight);
 }
 
 /* HTML */
