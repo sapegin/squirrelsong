@@ -11,7 +11,7 @@ const stripSharp = (hex) => hex.replace('#', '');
 const swatch = (hex, name) =>
   `<img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=${stripSharp(
     hex,
-  )}" width="${SWATCH_SIZE}" height="${SWATCH_SIZE}" alt=""> ${hex}`;
+  )}" width="${SWATCH_SIZE}" height="${SWATCH_SIZE}" alt="">`;
 
 const hexToRgb = (hex) => {
   const rgb = hexRgb(hex);
@@ -19,10 +19,10 @@ const hexToRgb = (hex) => {
 };
 
 function generateMarkdownTable(palette) {
-  const header = `| Name | Hex | RGB |\n| --- | --- | --- |`;
+  const header = `| | Name | Hex | RGB |\n| --- | --- | --- |`;
 
   const rows = Object.entries(palette).map(
-    ([name, hex]) => `| ${swatch(hex, name)} | ${hex} | ${hexToRgb(hex)} |`,
+    ([name, hex]) => `| ${swatch(hex, name)} | ${name} | ${hex} | ${hexToRgb(hex)} |`,
   );
 
   return [header, ...rows].join('\n');
