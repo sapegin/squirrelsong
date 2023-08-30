@@ -10,10 +10,16 @@
     "type": "git",
     "url": "https://github.com/sapegin/squirrelsong.git"
   },
+  "type": "module",
   "scripts": {
-    "format": "prettier --log-level warn --write --ignore-unknown \"**/*.*\""
+    "format": "prettier --log-level warn --write --ignore-unknown \"**/*.*\"",
+    "update": "node scripts/update.js"
   },
   "devDependencies": {
     "prettier": "^3.0.1"
+  },
+  "dependencies": {
+    "hex-rgb": "^5.0.0",
+    "strip-json-comments": "^5.0.1"
   }
 }
