@@ -15,7 +15,7 @@
 <!-- palette:begin -->
 
 | | Name | Hex | RGB |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4b4a4d" width="20" height="20" alt=""> | gray04 | #4b4a4d | 75, 74, 77 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=727075" width="20" height="20" alt=""> | gray07 | #727075 | 114, 112, 117 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=9b959d" width="20" height="20" alt=""> | gray09 | #9b959d | 155, 149, 157 |

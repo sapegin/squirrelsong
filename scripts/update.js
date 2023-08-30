@@ -19,10 +19,11 @@ const hexToRgb = (hex) => {
 };
 
 function generateMarkdownTable(palette) {
-  const header = `| | Name | Hex | RGB |\n| --- | --- | --- |`;
+  const header = `| | Name | Hex | RGB |\n| --- | --- | --- | --- |`;
 
   const rows = Object.entries(palette).map(
-    ([name, hex]) => `| ${swatch(hex, name)} | ${name} | ${hex} | ${hexToRgb(hex)} |`,
+    ([name, hex]) =>
+      `| ${swatch(hex, name)} | ${name} | ${hex} | ${hexToRgb(hex)} |`,
   );
 
   return [header, ...rows].join('\n');

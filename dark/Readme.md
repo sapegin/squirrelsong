@@ -20,7 +20,7 @@ Install [Squirrelsong.terminal](https://raw.githubusercontent.com/sapegin/squirr
 <!-- palette:begin -->
 
 | | Name | Hex | RGB |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=0a0909" width="20" height="20" alt=""> | gray00 | #0a0909 | 10, 9, 9 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=352a21" width="20" height="20" alt=""> | gray03 | #352a21 | 53, 42, 33 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=453327" width="20" height="20" alt=""> | gray04 | #453327 | 69, 51, 39 |
