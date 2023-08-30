@@ -1,6 +1,6 @@
 # Squirrelsong color themes
 
-A low contrast light & dark themes for web developers.
+Low contrast light & dark themes for web developers.
 
 - Low contrast with great readability
 - Made for web developers
