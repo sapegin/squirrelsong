@@ -1,5 +1,13 @@
 # Squirrelsong color themes
 
+A low contrast light & dark themes for web developers.
+
+- Low contrast with great readability
+- Made for web developers
+- Monochrome Markdown styles
+- Consistent highlighting for different programming languages
+- Non-distracting UI
+
 ## Squirrelsong Light
 
 [![Squirrelsong Light color theme](light/VSCode/SquirrelsongLight/screenshot.png)](light)
