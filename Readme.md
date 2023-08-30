@@ -8,17 +8,13 @@ Low contrast light & dark themes for web developers.
 - Consistent highlighting for different programming languages
 - Non-distracting UI
 
-## Squirrelsong Light
+## [Squirrelsong Light](ligth)
 
 [![Squirrelsong Light color theme](light/VSCode/SquirrelsongLight/screenshot.png)](light)
 
-[Download for Visual Studio Code or JetBrains](light)
+## [Squirrelsong Dark](dark)
 
-## Squirrelsong Dark
-
-[![Squirrelsong Dark color theme](dark/squirrelsong_terminal.png)](dark)
-
-[Download for Terminal.app or iTerm](dark)
+[![Squirrelsong Dark color theme](dark/VSCode/SquirrelsongDark/screenshot.png)](dark)
 
 ---
 
