@@ -38,6 +38,8 @@
     "editor.rangeHighlightBackground": "#fdf7e1",
     "editor.selectionBackground": "#faebaf",
     "editor.selectionHighlightBackground": "#fdf7e1",
+    "editorLightBulb.foreground": "#e6c565",
+    "editorLightBulbAutoFix.foreground": "#de9e59",
     "editorBracketHighlight.foreground1": "#5a7f24",
     "editorBracketHighlight.foreground2": "#3f7d6c",
     "editorBracketHighlight.foreground3": "#4e7997",
