@@ -1,12 +1,12 @@
 {
   "gray04": "#4b4a4d",
-  "gray07": "#727075", // Text
-  "gray09": "#9b959d", // Comment
+  "gray07": "#727075",
+  "gray09": "#9b959d",
   "gray0c": "#cbc9ce",
   "gray0d": "#d9d7dc",
   "gray0e": "#e9e9ef",
   "gray0f": "#f5f5f7",
-  "white": "#ffffff", // Background
+  "white": "#ffffff",
   "gren": "#a7b386",
   "greenLight": "#d3d9c2",
   "greenLighter": "#e9ece1",

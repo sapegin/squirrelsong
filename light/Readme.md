@@ -58,3 +58,28 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=fdf7e1" width="20" height="20" alt=""> | brightYellowLight | #fdf7e1 | 253, 247, 225 |
 
 <!-- palette:end -->
+
+### Code colors
+
+| Where | Color | Hex | Comments |
+| --- | --- | --- | --- |
+| Comment | gray09 | #9b959d | |
+
+### UI colors
+
+| Where | Color | Hex | Comments |
+| --- | --- | --- | --- |
+| Text foreground | gray07 | #727075 | |
+| Secondary foreground | gray07 | #9b959d | |
+| Disabled foreground | gray0c | #cbc9ce | |
+| Accent foreground | gray07 | #727075 | |
+| Match foreground | gray04 | #4b4a4d | |
+| Link foreground | blueContrast | #4e7997 | |
+| Link hover foreground | blue | #80a4be | |
+| Text background | white | #ffffff | |
+| Background | gray0f | #f5f5f7 | Sidebars, popups |
+| Button background | gray07 | #727075 | |
+| Selection background | gray0e | #e9e9ef | |
+| Hover background | gray0d | #d9d7dc | |
+| Border | gray0c | #cbc9ce | |
+| Focus border | gray07 | #727075 | |
