@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.8
+
+- Tweak secondary colors a bit.
+- Add symbol icon and light bulb colors.
+
 ## 2.0.7
 
 - Softer focus border, tweak activity bar colors.
