@@ -45,8 +45,8 @@
     "brightYellow": "#faebaf",
     "brightYellowLight":"#fdf7e1",
 
-    "background": "#e9e9ef",
-    "lightBackground": "#f5f5f7",
+    "background": "#f5f5f7",
+    "secondaryBackground": "#e9e9ef",
     "hoverBackground": "#d9d7dc",
     "selectionBackground": "#e9e9ef",
     "buttonBackground": "#9b959d",
@@ -151,8 +151,9 @@
     "*": {
       "acceleratorForeground": "accent",
       "acceleratorSelectionForeground": "accent",
-      "background": "lightBackground",
+      "background": "background",
       "borderColor": "border",
+      "borderCornerRadius": 4,
       "disabledBackground": "background",
       "disabledBorderColor": "border",
       "errorForeground": "redContrast",
@@ -161,7 +162,7 @@
       "foreground": "text",
       "hoverBackground": "hoverBackground",
       "hoverInactiveBackground": "hoverBackground",
-      "inactiveBackground": "lightBackground",
+      "inactiveBackground": "background",
       "infoForeground": "secondary",
       "selectionBackground": "selectionBackground",
       "selectionBackgroundInactive": "selectionBackground",
@@ -211,7 +212,7 @@
     },
     "ComboBox": {
       "background": "white",
-      "disabledBackground": "background"
+      "disabledBackground": "disabledBackground"
     },
     "ActionButton": {
       "pressedBackground": "hoverBackground"
@@ -243,17 +244,17 @@
       "selectedBackground": "selectionBackground"
     },
     "Popup": {
-      "background": "white",
-      "Advertiser.background": "lightBackground"
+      "background": "background",
+      "Advertiser.background": "background"
     },
     "Panel": {
-      "background": "lightBackground"
+      "background": "background"
     },
     "SidePanel": {
-      "background": "lightBackground"
+      "background": "background"
     },
     "ToolWindow": {
-      "background": "lightBackground",
+      "background": "background",
       "HeaderTab": {
         "underlineHeight": 2,
         "underlineColor": "accent",
@@ -335,6 +336,9 @@
       "warningBorderColor": "orange",
       "warningBackground": "Orange9"
     },
+    "StatusBar": {
+      "borderColor": "background"
+    },
     "ProgressBar": {
       "trackColor": "gray02",
       "progressColor": "gray",
@@ -344,8 +348,8 @@
     "WelcomeScreen": {
       "borderColor": "border",
       "separatorColor": "border",
-      "SidePanel.background": "lightBackground",
-      "Details.background": "lightBackground",
+      "SidePanel.background": "background",
+      "Details.background": "background",
       "Projects": {
         "actions.selectionBackground": "selectionBackground",
         "selectionBackground": "selectionBackground",
