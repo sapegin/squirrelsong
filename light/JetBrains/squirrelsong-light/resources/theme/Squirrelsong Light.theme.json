@@ -22,10 +22,10 @@
     "purpleContrast": "#7f6f96",
     "red": "#cc5c52",
     "redLight": "#e5ada8",
-    "redLighter":  "#f3dcda",
+    "redLighter": "#f3dcda",
     "redContrast": "#bc5248",
     "orange": "#de9e59",
-    "orangeLight":  "#eeceac",
+    "orangeLight": "#eeceac",
     "orangeLighter": "#f7e7d5",
     "orangeContrast": "#9f6221",
     "yellow": "#e6c565",
@@ -41,9 +41,9 @@
     "black": "#727075",
     "white": "#ffffff",
     "brightPink": "#ef6c9c",
-    "brightPinkLight":"#fae1ea",
+    "brightPinkLight": "#fae1ea",
     "brightYellow": "#faebaf",
-    "brightYellowLight":"#fdf7e1",
+    "brightYellowLight": "#fdf7e1",
 
     "background": "#f5f5f7",
     "secondaryBackground": "#e9e9ef",
@@ -356,7 +356,7 @@
       }
     },
     "FileColor": {
-      "Yellow" : "yellowLighter",
+      "Yellow": "yellowLighter",
       "Blue": "blueLighter",
       "Gray": "gray03",
       "Orange": "orangeLighter",
