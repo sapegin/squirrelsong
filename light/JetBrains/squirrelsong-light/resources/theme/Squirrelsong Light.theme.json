@@ -304,6 +304,8 @@
         "installForeground": "text",
         "installBackground": "white",
         "updateBackground": "buttonBackground",
+        "updateForeground": "white",
+        "updateBorderColor": "buttonBackground",
         "installFillForeground": "white",
         "installFillBackground": "buttonBackground",
         "installFocusedBackground": "buttonBackground"

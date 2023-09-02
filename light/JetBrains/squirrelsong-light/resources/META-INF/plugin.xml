@@ -33,6 +33,7 @@
   <change-notes><![CDATA[
 <ul>
   <li>Fix not displaying IDE settings panes</li>
+  <li>Fix blue outline on plugin update button</li>
 </ul>
   ]]></change-notes>
 
