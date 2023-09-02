@@ -211,8 +211,7 @@
       "background": "white"
     },
     "ComboBox": {
-      "background": "white",
-      "disabledBackground": "disabledBackground"
+      "background": "white"
     },
     "ActionButton": {
       "pressedBackground": "hoverBackground"

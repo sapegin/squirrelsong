@@ -2,7 +2,7 @@
 <idea-plugin>
   <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
   <id>squirrelsong-light</id>
-  <version>2.0.3</version>
+  <version>2.0.4</version>
 
   <!-- Public plugin name should be written in Title Case.
        Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
@@ -32,8 +32,7 @@
        Displayed on the Plugin Page and IDE Plugin Manager. Simple HTML elements can be included between <![CDATA[  ]]> tags. -->
   <change-notes><![CDATA[
 <ul>
-  <li>Add more icon color substitutions</li>
-  <li>Add more UI colors</li>
+  <li>Fix not displaying IDE settings panes</li>
 </ul>
   ]]></change-notes>
 

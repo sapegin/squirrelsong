@@ -1,0 +1,44 @@
+{
+
+
+  "ComboBox": {
+    "background": "white",
+    "disabledBackground": "disabledBackground"
+  },
+
+
+
+"ComplexPopup": {
+"Header.background": "background"
+},
+"DefaultTabs": {
+"underlineColor": "accent",
+"inactiveUnderlineColor": "accent",
+"underlineHeight": 2
+},
+
+
+"TabbedPane": {
+"tabSelectionHeight": 2,
+"underlineColor": "accent",
+"disabledUnderlineColor": "disabled",
+"contentAreaColor": "background",
+"hoverColor": "hoverBackground",
+"focusColor": "accent"
+},
+"SearchEverywhere": {
+"Tab": {
+"selectedForeground": "white",
+"selectedBackground": "selectionBackground"
+},
+"SearchField.borderColor": "border"
+},
+"SearchOption": {
+"selectedBackground": "selectionBackground"
+},
+"Popup": {
+"background": "background",
+"Advertiser.background": "background"
+},
+
+}
