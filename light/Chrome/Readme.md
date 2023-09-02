@@ -4,9 +4,10 @@ Also works for Microsoft Edge, and other Chromium-based browsers.
 
 ## Installation from GitHub
 
-1. Clone this repository or download it as a zip file.
-2. Go to [chrome://extensions](chrome://extensions) in your browser.
-3. Turn on **Developer mode**.
-4. Select **Load unpacked** button.
-5. Select the `light/Chrome` folder of this repository.
-6. Activate the theme in [chrome://settings/appearance](chrome://settings/appearance) if it’s not activated automatically.
+1. Clone the repository or [download as a ZIP archive](https://github.com/sapegin/squirrelsong/archive/refs/heads/master.zip).
+2. Unzip the files.
+3. Go to [chrome://extensions](chrome://extensions) in your browser.
+4. Turn on **Developer mode**.
+5. Press **Load unpacked** button.
+6. Select the `light/Chrome/extension` folder.
+7. Activate the theme in [chrome://settings/appearance](chrome://settings/appearance) if wasn’t not activated automatically.
