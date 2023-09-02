@@ -10,9 +10,9 @@ Install [Squirrelsong.terminal](https://raw.githubusercontent.com/sapegin/squirr
 
 ## Available themes
 
-* [iTerm](./iTerm)
-* [Sublime Text](./Sublime Text)
-* [Terminal.app](./Terminal.app)
+* [iTerm2](./iTerm2)
+* [Sublime Text](./Sublime%20Text)
+* [Terminal.app](./Terminal)
 * [Visual Studio Code](./VSCode)
 
 ## Colors

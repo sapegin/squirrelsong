@@ -6,8 +6,11 @@
 
 * [Alfred](./Alfred)
 * [Bear](./Bear)
-* [Chrome DevTools](./Chrome DevTools)
+* [Google Chrome](./Chrome)
+* [Google Chrome DevTools](./Chrome%20DevTools)
 * [JetBrains](./JetBrains)
+* [Slack](./Slack)
+* [Telegram](./Telegram)
 * [Visual Studio Code](./VSCode)
 
 ## Colors
