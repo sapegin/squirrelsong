@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Squirrelsong Dark 2.0.0 by Artem Sapegin
+https://github.com/sapegin/squirrelsong
+MIT license
+-->
+
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
@@ -289,113 +296,6 @@
 	BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARm
 	ZmZmg9lI5j6DIYkKP4PVjKU8AYY=
 	</data>
-	<key>keyMapBoundKeys</key>
-	<dict>
-		<key>$F708</key>
-		<string>[25~</string>
-		<key>$F709</key>
-		<string>[26~</string>
-		<key>$F70A</key>
-		<string>[28~</string>
-		<key>$F70B</key>
-		<string>[29~</string>
-		<key>$F70C</key>
-		<string>[31~</string>
-		<key>$F70D</key>
-		<string>[22~</string>
-		<key>$F70E</key>
-		<string>[33~</string>
-		<key>$F70F</key>
-		<string>[34~</string>
-		<key>F704</key>
-		<string>OP</string>
-		<key>F705</key>
-		<string>OQ</string>
-		<key>F706</key>
-		<string>OR</string>
-		<key>F707</key>
-		<string>OS</string>
-		<key>F708</key>
-		<string>[15~</string>
-		<key>F709</key>
-		<string>[17~</string>
-		<key>F70A</key>
-		<string>[18~</string>
-		<key>F70B</key>
-		<string>[19~</string>
-		<key>F70C</key>
-		<string>[20~</string>
-		<key>F70D</key>
-		<string>[21~</string>
-		<key>F70E</key>
-		<string>[23~</string>
-		<key>F70F</key>
-		<string>[24~</string>
-		<key>F710</key>
-		<string>[25~</string>
-		<key>F711</key>
-		<string>[26~</string>
-		<key>F712</key>
-		<string>[28~</string>
-		<key>F713</key>
-		<string>[29~</string>
-		<key>F714</key>
-		<string>[31~</string>
-		<key>F715</key>
-		<string>[32~</string>
-		<key>F716</key>
-		<string>[33~</string>
-		<key>F717</key>
-		<string>[34~</string>
-		<key>F728</key>
-		<string>[3~</string>
-		<key>F729</key>
-		<string>[1~</string>
-		<key>F72B</key>
-		<string>[4~</string>
-		<key>F72C</key>
-		<string>[5~</string>
-		<key>F72D</key>
-		<string>[6~</string>
-		<key>^F702</key>
-		<string>[1~</string>
-		<key>^F703</key>
-		<string>[4~</string>
-		<key>~F702</key>
-		<string>[1~</string>
-		<key>~F703</key>
-		<string>[4~</string>
-		<key>~F704</key>
-		<string>[17~</string>
-		<key>~F705</key>
-		<string>[18~</string>
-		<key>~F706</key>
-		<string>[19~</string>
-		<key>~F707</key>
-		<string>[20~</string>
-		<key>~F708</key>
-		<string>[21~</string>
-		<key>~F709</key>
-		<string>[23~</string>
-		<key>~F70A</key>
-		<string>[24~</string>
-		<key>~F70B</key>
-		<string>[25~</string>
-		<key>~F70C</key>
-		<string>[26~</string>
-		<key>~F70D</key>
-		<string>[28~</string>
-		<key>~F70E</key>
-		<string>[29~</string>
-		<key>~F70F</key>
-		<string>[31~</string>
-		<key>~F710</key>
-		<string>[32~</string>
-		<key>~F711</key>
-		<string>[33~</string>
-		<key>~F712</key>
-		<string>[34~</string>
-	</dict>
 	<key>magentaColour</key>
 	<data>
 	BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARm
