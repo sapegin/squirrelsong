@@ -80,6 +80,7 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=cc5c52" width="20" height="20" alt=""> | Important | red | #cc5c52 | Bold |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4e7997" width="20" height="20" alt=""> | URL | blueContrast | #4e7997 | |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=fdf7e1" width="20" height="20" alt=""> | Selection background | brightYellowLight | #fdf7e1 | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=f5f5f7" width="20" height="20" alt=""> | Line highlight background | gray0f | #f5f5f7 | |
 
 ### UI colors
 
