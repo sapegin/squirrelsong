@@ -64,25 +64,38 @@
 
 ### Code colors
 
-| Where | Color | Hex | Comments |
-| --- | --- | --- | --- |
-| Comment | gray09 | #9b959d | |
+| | Where | Color | Hex | Style |
+| --- | --- | --- | --- | --- |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=727075" width="20" height="20" alt=""> | Punctuation | gray07 | #727075 | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=9b959d" width="20" height="20" alt=""> | Comment | gray09 | #9b959d | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=af9fc7" width="20" height="20" alt=""> | Keyword, tag name | purple | #af9fc7 | Bold |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=de9e59" width="20" height="20" alt=""> | Number, boolean | orange | #de9e59 | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=80a4be" width="20" height="20" alt=""> | Property, attribute name | blue | #80a4be | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=80a4be" width="20" height="20" alt=""> | Variable | blue | #80a4be | Italic |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=80a4be" width="20" height="20" alt=""> | Function | blue | #80a4be | Bold |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=a7b386" width="20" height="20" alt=""> | String, attribute value, inserted | green | #a7b386 | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=5b9a8b" width="20" height="20" alt=""> | Type, namespace, colon | teal | #5b9a8b | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=5b9a8b" width="20" height="20" alt=""> | Class, at-rule, operator | teal | #5b9a8b | Bold |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=cc5c52" width="20" height="20" alt=""> | Regexp, deleted | red | #cc5c52 | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=cc5c52" width="20" height="20" alt=""> | Important | red | #cc5c52 | Bold |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4e7997" width="20" height="20" alt=""> | URL | blueContrast | #4e7997 | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=fdf7e1" width="20" height="20" alt=""> | Selection background | brightYellowLight | #fdf7e1 | |
 
 ### UI colors
 
-| Where | Color | Hex | Comments |
-| --- | --- | --- | --- |
-| Text foreground | gray07 | #727075 | |
-| Secondary foreground | gray07 | #9b959d | |
-| Disabled foreground | gray0c | #cbc9ce | |
-| Accent foreground | gray07 | #727075 | |
-| Match foreground | gray04 | #4b4a4d | |
-| Link foreground | blueContrast | #4e7997 | |
-| Link hover foreground | blue | #80a4be | |
-| Text background | white | #ffffff | |
-| Background | gray0f | #f5f5f7 | Sidebars, popups |
-| Button background | gray07 | #727075 | |
-| Selection background | gray0e | #e9e9ef | |
-| Hover background | gray0d | #d9d7dc | |
-| Border | gray0c | #cbc9ce | |
-| Focus border | gray07 | #727075 | |
+| | Where | Color | Hex | Comments |
+| --- | --- | --- | --- | --- |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=727075" width="20" height="20" alt=""> | Text foreground | gray07 | #727075 | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=9b959d" width="20" height="20" alt=""> | Secondary foreground | gray07 | #9b959d | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=cbc9ce" width="20" height="20" alt=""> | Disabled foreground | gray0c | #cbc9ce | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=727075" width="20" height="20" alt=""> | Accent foreground | gray07 | #727075 | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4b4a4d" width="20" height="20" alt=""> | Match foreground | gray04 | #4b4a4d | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4e7997" width="20" height="20" alt=""> | Link foreground | blueContrast | #4e7997 | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=80a4be" width="20" height="20" alt=""> | Link hover foreground | blue | #80a4be | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ffffff" width="20" height="20" alt=""> | Text background | white | #ffffff | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=f5f5f7" width="20" height="20" alt=""> | Background | gray0f | #f5f5f7 | Sidebars, popups |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=727075" width="20" height="20" alt=""> | Button background | gray07 | #727075 | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=e9e9ef" width="20" height="20" alt=""> | Selection background | gray0e | #e9e9ef | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=d9d7dc" width="20" height="20" alt=""> | Hover background | gray0d | #d9d7dc | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=cbc9ce" width="20" height="20" alt=""> | Border | gray0c | #cbc9ce | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=727075" width="20" height="20" alt=""> | Focus border | gray07 | #727075 | |
