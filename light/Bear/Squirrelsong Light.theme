@@ -20,7 +20,7 @@
     "date color": "$base.text secondary color",
     "pin color": "$base.accent color",
     "separator color": "$base.background tertiary color",
-    "search background color": "$base.search primary color",
+    "search background color": "$base.search secondary color",
     "attachment background color": "$base.background secondary color",
     "encrypted token color": "$base.background tertiary color",
     "selection background color": "$base.background secondary color",
