@@ -1,0 +1,143 @@
+/**
+ * Squirrelsong Light Theme for Prism
+ * https://github.com/sapegin/squirrelsong
+ * @author Artem Sapegin
+ */
+
+code[class*='language-'],
+pre[class*='language-'] {
+  color: #727075;
+  background: none;
+  font-family: MonoLisa, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*='language-']::-moz-selection,
+pre[class*='language-'] ::-moz-selection,
+code[class*='language-']::-moz-selection,
+code[class*='language-'] ::-moz-selection {
+  background: #fdf7e1;
+}
+
+pre[class*='language-']::selection,
+pre[class*='language-'] ::selection,
+code[class*='language-']::selection,
+code[class*='language-'] ::selection {
+  background: #fdf7e1;
+}
+
+/* Code blocks */
+pre[class*='language-'] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+}
+
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
+  background: #f5f5f7;
+}
+
+/* Inline code */
+:not(pre) > code[class*='language-'] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #9b959d;
+}
+
+.token.punctuation {
+  color: #727075;
+}
+
+.token.operator,
+.token.entity,
+.token.namespace {
+  color: #5b9a8b;
+}
+
+.token.class-name,
+.token.atrule {
+  color: #5b9a8b;
+  font-weight: bold;
+}
+
+.token.keyword,
+.token.builtin,
+.token.tag,
+.token.selector {
+  color: #af9fc7;
+  font-weight: bold;
+}
+
+.token.property,
+.token.attr-name {
+  color: #80a4be;
+}
+
+.token.constant,
+.token.variable,
+.token.symbol {
+  color: #80a4be;
+  font-style: italic;
+}
+
+.token.function {
+  color: #80a4be;
+  font-weight: bold;
+}
+
+.token.boolean,
+.token.number {
+  color: #de9e59;
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.inserted {
+  color: #a7b386;
+}
+
+.token.regex,
+.token.deleted {
+  color: #cc5c52;
+}
+
+.token.important {
+  color: #cc5c52;
+  font-weight: bold;
+}
+
+.token.url {
+  color: #4e7997;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
