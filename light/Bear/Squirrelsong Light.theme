@@ -8,8 +8,8 @@
     "background tertiary color": "#e9e9ef",
     "stroke color": "#e9e9ef",
     "accent color": "#727075",
-    "search primary color": "#fae1ea",
-    "search secondary color": "#ef6c9c",
+    "search primary color": "#ef6c9c",
+    "search secondary color": "#fae1ea",
     "highlight color": "#e9d9a8",
     "selection color": "#faebaf"
   },
