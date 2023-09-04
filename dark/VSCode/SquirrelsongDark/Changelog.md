@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.3
+
+- Make selection background color more visible.
+
 ## 2.0.2
 
 - Style activity bar.
