@@ -62,6 +62,32 @@ Install [Squirrelsong.terminal](https://raw.githubusercontent.com/sapegin/squirr
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ca5a83" width="20" height="20" alt=""> | brightPink | #ca5a83 | 202, 90, 131 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=5b3739" width="20" height="20" alt=""> | brightPinkDark | #5b3739 | 91, 55, 57 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=564538" width="20" height="20" alt=""> | brightYellow | #564538 | 86, 69, 56 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=352a22" width="20" height="20" alt=""> | brightYellowDark | #352a22 | 53, 42, 34 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=41352a" width="20" height="20" alt=""> | brightYellowDark | #41352a | 53, 42, 34 |
 
 <!-- palette:end -->
+
+### Code colors
+
+| | Where | Color | Hex | Style |
+| --- | --- | --- | --- | --- |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=9e8a74" width="20" height="20" alt=""> | Punctuation | gray09 | #9e8a74 | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=755945" width="20" height="20" alt=""> | Comment | gray07 | #755945 | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=7f61b3" width="20" height="20" alt=""> | Keyword, tag name | purple | #7f61b3 | Bold |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=b18433" width="20" height="20" alt=""> | Number, boolean | orange | #b18433 | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=5d99cb" width="20" height="20" alt=""> | Property, attribute name | blue | #5d99cb | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=5d99cb" width="20" height="20" alt=""> | Variable | blue | #5d99cb | Italic |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=5d99cb" width="20" height="20" alt=""> | Function | blue | #5d99cb | Bold |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=558240" width="20" height="20" alt=""> | String, attribute value, inserted | green | #558240 | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=539e9b" width="20" height="20" alt=""> | Type, namespace, colon | teal | #539e9b | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=539e9b" width="20" height="20" alt=""> | Class, at-rule, operator | teal | #539e9b | Bold |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ac493e" width="20" height="20" alt=""> | Regexp, deleted | red | #ac493e | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ac493e" width="20" height="20" alt=""> | Important | red | #ac493e | Bold |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=64a1d3" width="20" height="20" alt=""> | URL | blueContrast | #64a1d3 | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=41352a" width="20" height="20" alt=""> | Selection background | brightYellowDark | #41352a | |
+
+### UI colors
+
+| | Where | Color | Hex | Comments |
+| --- | --- | --- | --- | --- |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=9e8a74" width="20" height="20" alt=""> | Text foreground | gray09 | #9e8a74 | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=352a21" width="20" height="20" alt=""> | Text background | gray03 | #352a21 | |

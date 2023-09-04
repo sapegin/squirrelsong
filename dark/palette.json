@@ -2,11 +2,11 @@
   "gray00": "#0a0909",
   "gray03": "#352a21",
   "gray04": "#453327",
-  "gray05": "#574131", // Background
+  "gray05": "#574131",
   "gray06": "#6b503c",
-  "gray07": "#755945", // Comment
+  "gray07": "#755945",
   "gray08": "#896b56",
-  "gray09": "#9e8a74", // Text
+  "gray09": "#9e8a74",
   "gray0c": "#c4a389",
   "gray0d": "#dcd5c0",
   "gren": "#558240",
@@ -40,5 +40,5 @@
   "brightPink": "#ca5a83",
   "brightPinkDark": "#5b3739",
   "brightYellow": "#564538",
-  "brightYellowDark": "#352a22"
+  "brightYellowDark": "#41352a"
 }
