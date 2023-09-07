@@ -2522,6 +2522,12 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
+    <option name="TODO_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="727075" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
     <option name="TS.PRIMITIVE.TYPES">
       <value>
         <option name="FOREGROUND" value="5b9a8b" />
