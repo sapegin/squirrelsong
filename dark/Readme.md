@@ -90,4 +90,5 @@ Install [Squirrelsong.terminal](https://raw.githubusercontent.com/sapegin/squirr
 | | Where | Color | Hex | Comments |
 | --- | --- | --- | --- | --- |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=9e8a74" width="20" height="20" alt=""> | Text foreground | gray09 | #9e8a74 | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=564538" width="20" height="20" alt=""> | Selection foreground | brightYellow | #564538 | |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=352a21" width="20" height="20" alt=""> | Text background | gray03 | #352a21 | |
