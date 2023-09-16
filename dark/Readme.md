@@ -2,7 +2,7 @@
 
 ![Squirrelsong dark terminal color theme](squirrelsong_terminal.png)
 
-Inspired by [Earthsong](https://github.com/daylerees/colour-schemes/blob/master/README.md#earthsong) Sublime Text scheme by [Dayle Rees](https://github.com/daylerees).
+Inspired by [Earthsong](http://daylerees.github.io/) Sublime Text scheme by [Dayle Rees](https://github.com/daylerees).
 
 ## Terminal.app
 
