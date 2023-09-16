@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.9
+
+- Add terminal colors.
+
 ## 2.0.8
 
 - Tweak secondary colors a bit.

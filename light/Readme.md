@@ -100,3 +100,24 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=d9d7dc" width="20" height="20" alt=""> | Hover background | gray0d | #d9d7dc | |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=cbc9ce" width="20" height="20" alt=""> | Border | gray0c | #cbc9ce | |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=727075" width="20" height="20" alt=""> | Focus border | gray07 | #727075 | |
+
+### ANSI colors
+
+| | Name | Color | Hex |
+| --- | --- | --- | --- |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4b4a4d" width="20" height="20" alt=""> | Black | gray04 | #4b4a4d |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=727075" width="20" height="20" alt=""> | Black bright | gray07 | #727075 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ffffff" width="20" height="20" alt=""> | White | gray0f | #ffffff |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=f5f5f7" width="20" height="20" alt=""> | White bright | gray07 | #f5f5f7 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=80a4be" width="20" height="20" alt=""> | Blue | blue | #80a4be |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=bfd1de" width="20" height="20" alt=""> | Blue bright | blueLight | #bfd1de |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=5b9a8b" width="20" height="20" alt=""> | Cyan | teal | #5b9a8b |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=adccc5" width="20" height="20" alt=""> | Cyan bright | tealLight | #adccc5 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=a7b386" width="20" height="20" alt=""> | Green | green | #a7b386 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=d3d9c2" width="20" height="20" alt=""> | Green bright | greenLight | #d3d9c2 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=af9fc7" width="20" height="20" alt=""> | Magenta | purple | #af9fc7 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=d7cfe3" width="20" height="20" alt=""> | Magenta bright | purpleLight | #d7cfe3 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=cc5c52" width="20" height="20" alt=""> | Red | red | #cc5c52 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=e5ada8" width="20" height="20" alt=""> | Red bright | redLight | #e5ada8 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=e6c565" width="20" height="20" alt=""> | Yellow | yellow | #e6c565 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=e9d9a8" width="20" height="20" alt=""> | Yellow bright | yellowLight | #e9d9a8 |
