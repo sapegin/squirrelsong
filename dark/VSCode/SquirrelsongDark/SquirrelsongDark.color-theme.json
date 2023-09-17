@@ -7,7 +7,7 @@
     "variable": { "foreground": "#5d99cb", "fontStyle": "italic" },
     "module": { "foreground": "#5d99cb", "fontStyle": "italic" },
     "property": { "foreground": "#5d99cb", "fontStyle": "" },
-    "type": { "foreground": "#539e9b", "fontStyle": "" }
+    "type": { "foreground": "#4f9593", "fontStyle": "" }
   },
   "colors": {
     "activityBar.activeBorder": "#755945",
@@ -394,7 +394,7 @@
         "storage.type.tag-handle.yaml"
       ],
       "settings": {
-        "foreground": "#539e9b",
+        "foreground": "#4f9593",
         "fontStyle": "bold"
       }
     },
@@ -504,7 +504,7 @@
         "punctuation.separator.key-value.mapping.yaml"
       ],
       "settings": {
-        "foreground": "#539e9b",
+        "foreground": "#4f9593",
         "fontStyle": ""
       }
     },

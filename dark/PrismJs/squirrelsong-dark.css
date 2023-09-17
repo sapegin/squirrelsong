@@ -74,12 +74,12 @@ pre[class*='language-'] {
 .token.operator,
 .token.entity,
 .token.namespace {
-  color: #539e9b;
+  color: #4f9593;
 }
 
 .token.class-name,
 .token.atrule {
-  color: #539e9b;
+  color: #4f9593;
   font-weight: bold;
 }
 

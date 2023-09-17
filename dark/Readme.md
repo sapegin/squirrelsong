@@ -35,7 +35,7 @@ Install [Squirrelsong.terminal](https://raw.githubusercontent.com/sapegin/squirr
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=44603b" width="20" height="20" alt=""> | greenLight | #44603b | 68, 96, 59 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=445536" width="20" height="20" alt=""> | greenLighter | #445536 | 68, 85, 54 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=73a15c" width="20" height="20" alt=""> | greenContrast | #73a15c | 115, 161, 92 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=539e9b" width="20" height="20" alt=""> | teal | #539e9b | 83, 158, 155 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4f9593" width="20" height="20" alt=""> | teal | #4f9593 | 83, 158, 155 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=41635f" width="20" height="20" alt=""> | tealLight | #41635f | 65, 99, 95 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=3e5550" width="20" height="20" alt=""> | tealLighter | #3e5550 | 62, 85, 80 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=62b0ad" width="20" height="20" alt=""> | tealContrast | #62b0ad | 98, 176, 173 |
@@ -78,8 +78,8 @@ Install [Squirrelsong.terminal](https://raw.githubusercontent.com/sapegin/squirr
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=5d99cb" width="20" height="20" alt=""> | Variable | blue | #5d99cb | Italic |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=5d99cb" width="20" height="20" alt=""> | Function | blue | #5d99cb | Bold |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=558240" width="20" height="20" alt=""> | String, attribute value, inserted | green | #558240 | |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=539e9b" width="20" height="20" alt=""> | Type, namespace, colon | teal | #539e9b | |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=539e9b" width="20" height="20" alt=""> | Class, at-rule, operator | teal | #539e9b | Bold |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4f9593" width="20" height="20" alt=""> | Type, namespace, colon | teal | #4f9593 | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4f9593" width="20" height="20" alt=""> | Class, at-rule, operator | teal | #4f9593 | Bold |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ac493e" width="20" height="20" alt=""> | Regexp, deleted | red | #ac493e | |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ac493e" width="20" height="20" alt=""> | Important | red | #ac493e | Bold |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=64a1d3" width="20" height="20" alt=""> | URL | blueContrast | #64a1d3 | |
@@ -90,5 +90,26 @@ Install [Squirrelsong.terminal](https://raw.githubusercontent.com/sapegin/squirr
 | | Where | Color | Hex | Comments |
 | --- | --- | --- | --- | --- |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=9e8a74" width="20" height="20" alt=""> | Text foreground | gray09 | #9e8a74 | |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=564538" width="20" height="20" alt=""> | Selection foreground | brightYellow | #564538 | |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=352a21" width="20" height="20" alt=""> | Text background | gray03 | #352a21 | |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=564538" width="20" height="20" alt=""> | Selection background | brightYellow | #564538 | |
+
+### ANSI colors
+
+| | Name | Color | Hex |
+| --- | --- | --- | --- |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=352a21" width="20" height="20" alt=""> | Black | gray03 | #352a21 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=6b503c" width="20" height="20" alt=""> | Black bright | gray06 | #6b503c |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=c4a389" width="20" height="20" alt=""> | White | gray0c | #c4a389 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=dcd5c0" width="20" height="20" alt=""> | White bright | gray0d | #dcd5c0 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=5d99cb" width="20" height="20" alt=""> | Blue | blue | #5d99cb |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=64a1d3" width="20" height="20" alt=""> | Blue bright | blueContrast | #64a1d3 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4f9593" width="20" height="20" alt=""> | Cyan | teal | #4f9593 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=adccc5" width="20" height="20" alt=""> | Cyan bright | tealContrast | #adccc5 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=558240" width="20" height="20" alt=""> | Green | green | #558240 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=73a15c" width="20" height="20" alt=""> | Green bright | greenContrast | #73a15c |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=7f61b3" width="20" height="20" alt=""> | Magenta | purple | #7f61b3 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=a08ac2" width="20" height="20" alt=""> | Magenta bright | purpleContrast | #a08ac2 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ac493e" width="20" height="20" alt=""> | Red | red | #ac493e |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=db7666" width="20" height="20" alt=""> | Red bright | redContrast | #db7666 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ceb250" width="20" height="20" alt=""> | Yellow | yellow | #ceb250 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=e2c54c" width="20" height="20" alt=""> | Yellow bright | yellowContrast | #e2c54c |
