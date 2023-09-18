@@ -88,11 +88,11 @@
 
 | | Where | Color | Hex | Comments |
 | --- | --- | --- | --- | --- |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4b4a4d" width="20" height="20" alt=""> | Dark text foreground, match foreground | gray07 | #4b4a4d | |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=727075" width="20" height="20" alt=""> | Text foreground | gray07 | #727075 | |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=9b959d" width="20" height="20" alt=""> | Secondary foreground | gray07 | #9b959d | |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=cbc9ce" width="20" height="20" alt=""> | Disabled foreground | gray0c | #cbc9ce | |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=727075" width="20" height="20" alt=""> | Accent foreground | gray07 | #727075 | |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4b4a4d" width="20" height="20" alt=""> | Match foreground | gray04 | #4b4a4d | |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4e7997" width="20" height="20" alt=""> | Link foreground | blueContrast | #4e7997 | |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=80a4be" width="20" height="20" alt=""> | Link hover foreground | blue | #80a4be | |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ffffff" width="20" height="20" alt=""> | Text background | white | #ffffff | |
