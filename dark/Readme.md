@@ -11,6 +11,7 @@ Install [Squirrelsong.terminal](https://raw.githubusercontent.com/sapegin/squirr
 ## Available themes
 
 * [iTerm2](./iTerm2)
+* [Prism.js](./PrismJs)
 * [Sublime Text](./Sublime%20Text)
 * [Terminal.app](./Terminal)
 * [Visual Studio Code](./VSCode)

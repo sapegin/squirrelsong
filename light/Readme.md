@@ -9,7 +9,9 @@
 * [Google Chrome](./Chrome)
 * [Google Chrome DevTools](./Chrome%20DevTools)
 * [JetBrains](./JetBrains)
+* [Prism.js](./PrismJs)
 * [Slack](./Slack)
+* [Sublime Text](./Sublime%20Text)
 * [Telegram](./Telegram)
 * [Visual Studio Code](./VSCode)
 
