@@ -1,6 +1,6 @@
 # Squirrelsong Dark color theme
 
-![Squirrelsong dark terminal color theme](squirrelsong_terminal.png)
+![Squirrelsong dark terminal color theme](./iTerm2/screenshot.png)
 
 Inspired by [Earthsong](http://daylerees.github.io/) Sublime Text scheme by [Dayle Rees](https://github.com/daylerees).
 
