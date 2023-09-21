@@ -244,7 +244,8 @@
     },
     "Popup": {
       "background": "background",
-      "Advertiser.background": "background"
+      "Advertiser.background": "background",
+      "Header.activeBackground": "background"
     },
     "Panel": {
       "background": "background"
