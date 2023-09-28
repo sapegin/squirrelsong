@@ -4,6 +4,10 @@ Also works for Microsoft Edge, and other Chromium-based browsers.
 
 ![Squirrelsong light theme](./screenshot.jpg)
 
+## Installation from Chrome Web Store
+
+[Follow the instructions](https://chrome.google.com/webstore/detail/squirrelsong-light-theme/djifnfnaealajnoccbifhbgmkholgljn)
+
 ## Installation from GitHub
 
 1. Clone the repository or [download as a ZIP archive](https://github.com/sapegin/squirrelsong/archive/refs/heads/master.zip).
