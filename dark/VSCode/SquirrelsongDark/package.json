@@ -37,6 +37,11 @@
         "label": "Squirrelsong Dark",
         "uiTheme": "vs-dark",
         "path": "./SquirrelsongDark.color-theme.json"
+      },
+      {
+        "label": "Squirrelsong Black",
+        "uiTheme": "vs-dark",
+        "path": "./SquirrelsongBlack.color-theme.json"
       }
     ]
   },

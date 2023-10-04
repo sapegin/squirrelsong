@@ -10,6 +10,11 @@ A low contrast dark theme for web developers.
 - Consistent highlighting for different programming languages
 - Non-distracting UI
 
+Also with black background: Squirrelsong Black:
+
+![Squirrelsong Black](https://github.com/sapegin/squirrelsong/raw/master/dark/VSCode/SquirrelsongDark/screenshot-black.png)
+
+
 ## More information
 
 - [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=sapegin.Theme-SquirrelsongDark).
