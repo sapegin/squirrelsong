@@ -10,4 +10,4 @@
 4. Select `Squirrelsong Light.json`.
 5. Select **Squirrelsong Light** in **Theme** list.
 6. Open **Theme** dropdown at the bottom, and choose **Configure automatic switching...**.
-5. Select **Squirrelsong Light** in **Light theme** dropdown.
+7. Select **Squirrelsong Light** in **Light theme** dropdown.
