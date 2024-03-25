@@ -1,0 +1,53 @@
+{
+  "name" : "Squirrelsong Light",
+  "attributes" : {
+    "color" : "#80a4be"
+  },
+  "background" : {
+    "color" : "#ffffff"
+  },
+  "characters" : {
+    "color" : "#80a4be"
+  },
+  "commands" : {
+    "color" : "#af9fc7"
+  },
+  "comments" : {
+    "color" : "#9b959d"
+  },
+  "insertionPoint" : {
+    "color" : "#727075",
+    "usesSystemSetting" : false
+  },
+  "invisibles" : {
+    "color" : "#cbc9ce"
+  },
+  "keywords" : {
+    "color" : "#af9fc7"
+  },
+  "lineHighlight" : {
+    "color" : "#f5f5f7"
+  },
+  "numbers" : {
+    "color" : "#de9e59"
+  },
+  "selection" : {
+    "color" : "#fff9e5",
+    "usesSystemSetting" : false
+  },
+  "strings" : {
+    "color" : "#a7b386"
+  },
+  "text" : {
+    "color" : "#727075"
+  },
+  "types" : {
+    "color" : "#5b9a8b"
+  },
+  "values" : {
+    "color" : "#de9e59"
+  },
+  "variables" : {
+    "color" : "#80a4be"
+  }
+}
