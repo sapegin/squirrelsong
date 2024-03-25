@@ -1,5 +1,7 @@
 # Squirrelsong Light Theme for [CotEditor](https://coteditor.com/)
 
+![Squirrelsong Light](screenshot.png)
+
 ## Installation from GitHub
 
 1. Download [Squirrelsong Light.cottheme](Squirrelsong%20Light.cottheme).
