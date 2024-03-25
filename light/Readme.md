@@ -109,8 +109,8 @@
 | --- | --- | --- | --- |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4b4a4d" width="20" height="20" alt=""> | Black | gray04 | #4b4a4d |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=727075" width="20" height="20" alt=""> | Black bright | gray07 | #727075 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ffffff" width="20" height="20" alt=""> | White | gray0f | #ffffff |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=f5f5f7" width="20" height="20" alt=""> | White bright | gray07 | #f5f5f7 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=9b959d" width="20" height="20" alt=""> | White | gray0f | #9b959d |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=cbc9ce" width="20" height="20" alt=""> | White bright | gray07 | #cbc9ce |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=80a4be" width="20" height="20" alt=""> | Blue | blue | #80a4be |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=bfd1de" width="20" height="20" alt=""> | Blue bright | blueLight | #bfd1de |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=5b9a8b" width="20" height="20" alt=""> | Cyan | teal | #5b9a8b |
