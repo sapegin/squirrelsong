@@ -64,7 +64,7 @@
     },
     {
       "name": "other",
-      "regular": "#4B494D",
+      "regular": "#4B4A4D",
       "focused": "#F5F5F7"
     }
   ],
@@ -74,7 +74,7 @@
   "terminalBoldForegroundColor": "#CBC9CE",
   "terminalBackgroundColor": "#FFFFFF",
   "terminalCursorColor": "#727075",
-  "terminalAnsiColor0": "#4B494D",
+  "terminalAnsiColor0": "#4B4A4D",
   "terminalAnsiColor1": "#CC5C52",
   "terminalAnsiColor2": "#A7B386",
   "terminalAnsiColor3": "#E6C565",
@@ -94,6 +94,6 @@
   "viewerBackgroundColor": "#FFFFFF",
   "viewerFont": "MonoLisa, 15",
   "viewerOverlayColor": "#FFFFFF",
-  "viewerTextColor": "#4B494D",
+  "viewerTextColor": "#4B4A4D",
   "viewerSelectionColor": "#FDF7E1"
 }
