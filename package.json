@@ -13,13 +13,20 @@
   "type": "module",
   "scripts": {
     "format": "prettier --log-level warn --write --ignore-unknown \"**/*.*\"",
-    "update": "node scripts/update.js"
+    "update": "node scripts/update.js",
+    "prepare-extensions": "node scripts/prepare-extensions.js",
+    "lint": "node scripts/lint.js"
   },
   "devDependencies": {
     "prettier": "^3.0.1"
   },
   "dependencies": {
+    "adm-zip": "^0.5.12",
+    "css-color-names": "^1.0.1",
+    "glob": "^10.3.10",
     "hex-rgb": "^5.0.0",
-    "strip-json-comments": "^5.0.1"
+    "rgb-hex": "^4.1.0",
+    "strip-json-comments": "^5.0.1",
+    "terminal-link": "^3.0.0"
   }
 }
