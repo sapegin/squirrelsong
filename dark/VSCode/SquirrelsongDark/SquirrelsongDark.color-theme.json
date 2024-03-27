@@ -74,13 +74,13 @@
     "editorWidget.background": "#453327",
     "editorWidget.border": "#896b56",
     "errorForeground": "#ac493e",
-    "extensionIcon.preReleaseForeground": "#438e4f",
+    "extensionIcon.preReleaseForeground": "#44603b",
     "extensionIcon.starForeground": "#b18433",
     "focusBorder": "#9e8a74",
     "foreground": "#9e8a74",
     "gitDecoration.ignoredResourceForeground": "#755945",
     "gitDecoration.modifiedResourceForeground": "#5d99cb",
-    "gitDecoration.untrackedResourceForeground": "#438e4f",
+    "gitDecoration.untrackedResourceForeground": "#44603b",
     "icon.foreground": "#896b56",
     "input.background": "#352a21",
     "input.border": "#6b503c",
@@ -159,8 +159,8 @@
     "scrollbarSlider.background": "#9e8a7420",
     "scrollbarSlider.hoverBackground": "#9e8a7440",
     "scrollbarSlider.activeBackground": "#9e8a7460",
-    "widget.shadow": "#00000020",
-    "scrollbar.shadow": "#00000020"
+    "widget.shadow": "#45332720",
+    "scrollbar.shadow": "#45332720"
   },
   "tokenColors": [
     {
