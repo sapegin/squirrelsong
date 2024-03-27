@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.10
+
+- Fix incorrect colors
+- Fix required semi-transparent colors
+
 ## 2.0.9
 
 - Add terminal colors.
@@ -40,9 +45,9 @@
 
 ## 2.0.0
 
-Alsmot complete rebuild of the theme, though most of the colors are the same.
+Almost complete rebuild of the theme, though most of the colors are the same.
 
-- Better code readability: fewer bright colors (red, orange) but more color variation (fewer long pieces of code of the same color), intruduction of bold and italic.
+- Better code readability: fewer bright colors (red, orange) but more color variation (fewer long pieces of code of the same color), introduction of bold and italic.
 - Lots of customizations for different languages to improve readability and to make highlighting more consistent between different languages (for example, “this” in TypeScript is styled the same way as “$this” in PHP and “self” in Python or Rust, variables are styled the same in all languages, and HTML is styled the same way as JSX).
 - Much better and consistent UI colors.
 
