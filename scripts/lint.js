@@ -300,3 +300,5 @@ lint('dark', darkPalette, EXCEPTIONS_DARK);
 
 console.log();
 console.log(`[LINT] ${errorCount} errors found 🦜`);
+
+process.exit(errorCount === 0 ? 0 : 1);
