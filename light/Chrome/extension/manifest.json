@@ -16,11 +16,11 @@
       "background_tab": [233, 233, 239],
       "bookmark_text": [75, 74, 77],
       "button_background": [114, 112, 117],
-      "button_text": [0, 255, 0],
+      "button_text": [75, 74, 77],
       "control_background": [233, 233, 239],
       "frame_inactive": [233, 233, 239],
-      "frame_incognito_inactive": [87, 65, 49],
-      "frame_incognito": [87, 65, 49],
+      "frame_incognito_inactive": [75, 74, 77],
+      "frame_incognito": [75, 74, 77],
       "frame": [233, 233, 239],
       "ntp_background": [255, 255, 255],
       "ntp_header": [75, 74, 77],
@@ -29,7 +29,7 @@
       "ntp_section_link_underline": [78, 121, 151],
       "ntp_section_link": [78, 121, 151],
       "ntp_section_text": [75, 74, 77],
-      "ntp_section": [255, 0, 0],
+      "ntp_section": [75, 74, 77],
       "ntp_text": [75, 74, 77],
       "omnibox_background": [255, 255, 255],
       "omnibox_text": [75, 74, 77],
@@ -42,10 +42,10 @@
       "toolbar_text": [75, 74, 77],
       "toolbar": [245, 245, 247]
     },
-    "tints" : {
-      "frame" : [-1.0, -1.0, -1.0],
-      "buttons" : [-1.0, -1.0, -1.0],
-      "background_tab" : [-1.0, -1.0, -1.0]
+    "tints": {
+      "frame": [-1.0, -1.0, -1.0],
+      "buttons": [-1.0, -1.0, -1.0],
+      "background_tab": [-1.0, -1.0, -1.0]
     },
     "images": {
       "theme_frame": "images/theme_frame.png",
