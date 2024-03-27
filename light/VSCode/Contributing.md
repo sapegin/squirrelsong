@@ -15,7 +15,7 @@ cd light/VSCode/SquirrelsongLight
 npm install
 ```
 
-(If needed.) [Create an access token](https://sapegin.visualstudio.com/_usersSettings/tokens), and log in:
+(If needed.) [Create an access token](https://sapegin.visualstudio.com/_usersSettings/tokens) (you only need Marketplace/Manage permission), and log in:
 
 ```shell
 vsce login sapegin
