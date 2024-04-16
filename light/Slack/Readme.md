@@ -9,6 +9,6 @@
     ```
 
 2. Open **Preferences → Themes** in Slack.
-3. Select **Light** at the top.
-4. In **Colors** section, press **Create a custom theme** if you never created a custom theme.
+3. Select **Light** at the top **Color Mode** section.
+4. Under the **Custom theme** tab, in **Theme colors** section, click on **↑ Import**.
 5. Paste the colors you copied from the previous step in the text field.
