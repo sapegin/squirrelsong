@@ -1,0 +1,137 @@
+name "Squirrelsong Light"
+
+base {
+    appearance "light"
+    background #f5f5f7
+    separator #cbc9ce
+    text #1d1c1c
+}
+
+actionBar {
+    button {
+        background #e9e9ef
+        hotkey #727075
+        text #727075
+    }
+}
+
+asyncProgressBar {
+    border #8d8d8d
+    progress #4e4c4c
+    itemProgress #868383
+}
+
+breadcrumbs {
+    separator #cbc9ce
+    text #4b4a4d
+    background #ffffff
+}
+
+files {
+    background {
+        alternate #fefffe
+        current #9b959d
+        currentSelected #9b959d
+        selected #fae1ea
+    }
+
+    dragDropSelection {
+        color #727075
+        width 0
+    }
+
+    text {
+        current #f5f5f7
+        currentSelected #fae1ea
+        hidden #727075
+        matched #ef6c9c
+        selected #ef6c9c
+
+        highlighting1 #4e7997
+        highlighting2 #5a7f24
+        highlighting3 #e6c565
+        highlighting4 #af9fc7
+    }
+}
+
+searchBar {
+    material "light"
+
+    query {
+        background #e9e9ef
+        placeholder #e9e9ef
+        text #727075
+    }
+
+    results {
+        highlighting #727075
+        selection #d9d7dc
+        subtitle #727075
+        text #727075
+    }
+
+    rowSeparator {
+        color #e9e9ef
+        show false
+    }
+}
+
+statusBar {
+    background #e9e9ef
+    text #727075
+    quickSelectNoResultsHighlighting #e5ada8
+    separator #cbc9ce
+}
+
+tableHeader {
+    separator #cbc9ce
+    text #727075
+
+    pressed {
+        background #e5e5e5
+    }
+}
+
+tabs {
+    background #e9e9ef
+
+    active {
+        background #ffffff
+        text #727075
+    }
+
+    inactive {
+        background #e9e9ef
+        text #727075
+    }
+}
+
+terminal {
+    caret {
+        background #727075
+        text #fffeff
+    }
+}
+
+textEditor {
+    error #cc5c52
+    warning #e6c565
+    keyword #bc5248
+    comment #9b959d
+    identifier #f7f0de
+
+    literal {
+        string #a7b386
+        number #4e7997
+        color #bfd1de
+    }
+
+    gutter {
+        background #eaeaea
+        text #991d1c1c
+    }
+}
+
+titleBar {
+    text #1d1c1c
+}
