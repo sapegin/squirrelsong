@@ -19,6 +19,7 @@ Install [Squirrelsong.terminal](https://raw.githubusercontent.com/sapegin/squirr
 * [Sublime Text](./Sublime%20Text)
 * [Terminal.app](./Terminal)
 * [Visual Studio Code](./VSCode)
+* [Warp](./Warp)
 * [WezTerm](./WezTerm)
 
 ## Colors
