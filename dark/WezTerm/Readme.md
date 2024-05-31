@@ -4,7 +4,7 @@
 
 ## Installation from GitHub
 
-1. Copy the [squirrelsong-dark.lua](squirrelsong-dark.lua) to `~/.config/wezterm/`.
+1. Copy the [squirrelsong-dark.toml](squirrelsong-dark.toml) to `~/.config/wezterm/colors`.
 
 2. Update your WezTerm config, `~/.wezterm.lua`, so it looks something like this:
 
@@ -13,8 +13,7 @@ local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
 -- Colors
-local colors = require 'squirrelsong-dark'
-config.colors = colors
+config.color_scheme = 'Squirrelsong Dark'
 
 config.window_frame = {
 	-- Fancy tab bar
