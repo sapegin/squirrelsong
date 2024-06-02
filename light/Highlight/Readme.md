@@ -1,6 +1,7 @@
 # Squirrelsong Light Theme for Highlight
 
-> [!INFO] Also used in [Syntax Highlight](https://github.com/sbarex/SourceCodeSyntaxHighlight) quick look extension for macOS.
+> [!NOTE]
+> Also used in [Syntax Highlight](https://github.com/sbarex/SourceCodeSyntaxHighlight) quick look extension for macOS.
 
 ## Installation from GitHub
 
