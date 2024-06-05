@@ -1,6 +1,6 @@
 " =============================================================================
-" Name:         squirrelsong
-" Description:  Low contrast light & dark themes for web developers.
+" Name:         Squirrelsong Light
+" Description:  Low contrast light theme for web developers.
 " URL:          https://github.com/sapegin/squirrelsong/
 " License:      MIT
 " =============================================================================
@@ -86,7 +86,7 @@ let s:palette = {
 "   @fg: An array of two values for guifg and ctermfg, respectively
 "   @bg: An array of two values for guibg and ctermbg, respectively
 "   @style: A string for special style, e.g.: 'italic', 'bold', 'reverse'
-function! squirrelsong#hl(group, specs)
+function! s:squirrelsong_hl(group, specs)
   let s:spec_str = ''
 
   if has_key(a:specs, 'link')
@@ -126,7 +126,7 @@ if exists('syntax_on')
   syntax reset
 endif
 
-let g:colors_name = 'squirrelsong'
+let g:colors_name = 'squirrelsong_light'
 " }}}
 
 let colors = {}
@@ -492,7 +492,7 @@ endif
 " }}}
 
 for item in items(colors)
-  call squirrelsong#hl(item[0], item[1])
+  call s:squirrelsong_hl(item[0], item[1])
 endfor
 
 " vim: set filetype=vim foldmethod=marker foldmarker={{{,}}}:
