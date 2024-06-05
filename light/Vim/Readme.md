@@ -1,6 +1,6 @@
 # Squirrelsong Light Theme for [Neovim](https://neovim.io)/[Vim](https://www.vim.org)
 
-In your Vim configuration, use `:colorscheme squirrelsong`.
+In your Vim configuration, use `:colorscheme squirrelsong_light`.
 
 Set `g:squirrelsong_color_only` to `v:true` beforehand to
 disable additional styling like italic, bold, etc. This can
@@ -34,5 +34,5 @@ call plug#end()
 ```
 
 ## Manual Installation
-Put [`squirrelsong.vim`](./colors/squirrelsong.vim)
+Put [`squirrelsong_light.vim`](./colors/squirrelsong_light.vim)
 in a `colors` directory somewhere on your `'rtp'`. `:echo &rtp` will print your `'rtp'`
