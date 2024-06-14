@@ -5,7 +5,7 @@
 import fs from 'fs';
 import ADMZip from 'adm-zip';
 
-console.log(`[BUILD] Building Chrome extension...`);
+console.log(`[BUILD] Building Chrome Light extension...`);
 
 fs.mkdirSync('./dist', { recursive: true });
 
@@ -23,7 +23,7 @@ const chromeLightDotZip = new ADMZip();
 chromeLightDotZip.addLocalFolder('./dist/light-chrome');
 chromeLightDotZip.writeZip(`./dist/light-chrome.zip`);
 
-console.log(`[BUILD] Building Chrome DevTools extension...`);
+console.log(`[BUILD] Building Chrome Dark Deep Purple extension...`);
 
 // Chrome Dark Deep Purple
 fs.mkdirSync('./dist/dark-dp-chrome', { recursive: true });
@@ -39,7 +39,7 @@ const chromeDarkDpDotZip = new ADMZip();
 chromeDarkDpDotZip.addLocalFolder('./dist/dark-dp-chrome');
 chromeDarkDpDotZip.writeZip(`./dist/dark-dp-chrome.zip`);
 
-console.log(`[BUILD] Building Chrome DevTools extension...`);
+console.log(`[BUILD] Building Chrome DevTools Light extension...`);
 
 // Chrome DevTools
 fs.mkdirSync('./dist/light-chrome-devtools', { recursive: true });
