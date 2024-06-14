@@ -6,7 +6,7 @@
 
 code[class*='language-'],
 pre[class*='language-'] {
-  color: #9e8e7e;
+  color: #ad9c8b;
   background: none;
   font-family: MonoLisa, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   font-size: 1em;
@@ -31,14 +31,14 @@ pre[class*='language-']::-moz-selection,
 pre[class*='language-'] ::-moz-selection,
 code[class*='language-']::-moz-selection,
 code[class*='language-'] ::-moz-selection {
-  background: #41352a;
+  background: #352a21;
 }
 
 pre[class*='language-']::selection,
 pre[class*='language-'] ::selection,
 code[class*='language-']::selection,
 code[class*='language-'] ::selection {
-  background: #41352a;
+  background: #352a21;
 }
 
 /* Code blocks */

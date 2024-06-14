@@ -1,7 +1,10 @@
+# Squirrelsong Dark Theme
+# https://sapegin.me/squirrelsong/
+
 accent: '#cfbaa5' # Accent color for UI elements
 background: '#352a21'
 details: darker # Whether the theme is lighter or darker
-foreground: '#9e8e7e'
+foreground: '#ad9c8b'
 terminal_colors: # Ansi escape colors
   bright:
     black: '#6b503c'
@@ -10,7 +13,7 @@ terminal_colors: # Ansi escape colors
     green: '#73a15c'
     magenta: '#ad8fcc'
     red: '#db7666'
-    white: '#dec8b1'
+    white: '#edd5be'
     yellow: '#e2c54c'
 
   normal:

@@ -1,14 +1,8 @@
 # Squirrelsong Dark color theme
 
-![Squirrelsong Dark color theme](./VSCode/SquirrelsongDark/screenshot.png)
+![Squirrelsong dark color theme](./VSCode/SquirrelsongDark/screenshot.png)
 
-![Squirrelsong dark terminal color theme](./iTerm2/screenshot.png)
-
-Inspired by [Earthsong](http://daylerees.github.io/) Sublime Text scheme by [Dayle Rees](https://github.com/daylerees).
-
-## Terminal.app
-
-Install [Squirrelsong.terminal](https://raw.githubusercontent.com/sapegin/squirrelsong/master/Squirrelsong.terminal).
+![Squirrelsong dark terminal color theme](./WezTerm/screenshot.png)
 
 ## Available themes
 
@@ -112,7 +106,6 @@ Install [Squirrelsong.terminal](https://raw.githubusercontent.com/sapegin/squirr
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ac493e" width="20" height="20" alt=""> | Regexp, deleted | red | #ac493e |  |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ac493e" width="20" height="20" alt=""> | Important | red | #ac493e | Bold |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=65a6db" width="20" height="20" alt=""> | URL | blueContrast | #65a6db |  |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=41352a" width="20" height="20" alt=""> | Selection background | brightYellowDark | #41352a |  |
 
 ### UI colors
 
@@ -121,6 +114,7 @@ Install [Squirrelsong.terminal](https://raw.githubusercontent.com/sapegin/squirr
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ad9c8b" width="20" height="20" alt=""> | Text foreground | gray0a | #ad9c8b |  |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=352a21" width="20" height="20" alt=""> | Text background | gray03 | #352a21 |  |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=574131" width="20" height="20" alt=""> | Selection background | gray05 | #574131 |  |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=453327" width="20" height="20" alt=""> | Line highlight background | gray04 | #453327 |  |
 
 ### ANSI colors
 
@@ -142,3 +136,7 @@ Install [Squirrelsong.terminal](https://raw.githubusercontent.com/sapegin/squirr
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=db7666" width="20" height="20" alt=""> | Red bright | redContrast | #db7666 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ceb250" width="20" height="20" alt=""> | Yellow | yellow | #ceb250 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=e2c54c" width="20" height="20" alt=""> | Yellow bright | yellowContrast | #e2c54c |
+
+---
+
+Inspired by [Earthsong](http://daylerees.github.io/) Sublime Text scheme by [Dayle Rees](https://github.com/daylerees).
