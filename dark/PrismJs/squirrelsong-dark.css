@@ -6,7 +6,7 @@
 
 code[class*='language-'],
 pre[class*='language-'] {
-  color: #9e8a74;
+  color: #9e8e7e;
   background: none;
   font-family: MonoLisa, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   font-size: 1em;
@@ -68,7 +68,7 @@ pre[class*='language-'] {
 }
 
 .token.punctuation {
-  color: #9e8a74;
+  color: #9e8e7e;
 }
 
 .token.operator,
@@ -131,7 +131,7 @@ pre[class*='language-'] {
 }
 
 .token.url {
-  color: #64a1d3;
+  color: #65a6db;
 }
 
 .token.bold {

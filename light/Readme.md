@@ -24,7 +24,7 @@
 
 <!-- palette:begin -->
 
-|  | Name | Hex | RGB |
+| | Name | Hex | RGB |
 | --- | --- | --- | --- |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4c4b4e" width="20" height="20" alt=""> | gray04 | #4c4b4e | 76, 75, 78 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=5c595f" width="20" height="20" alt=""> | gray05 | #5c595f | 92, 89, 95 |
