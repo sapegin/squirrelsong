@@ -93,18 +93,18 @@ pre[class*='language-'] {
 
 .token.property,
 .token.attr-name {
-  color: #5d99cb;
+  color: #5993c2;
 }
 
 .token.constant,
 .token.variable,
 .token.symbol {
-  color: #5d99cb;
+  color: #5993c2;
   font-style: italic;
 }
 
 .token.function {
-  color: #5d99cb;
+  color: #5993c2;
   font-weight: bold;
 }
 
@@ -131,7 +131,7 @@ pre[class*='language-'] {
 }
 
 .token.url {
-  color: #65a6db;
+  color: #63a2d6;
 }
 
 .token.bold {
