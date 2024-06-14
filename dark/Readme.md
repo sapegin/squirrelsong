@@ -83,8 +83,8 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=7d683a" width="20" height="20" alt=""> | yellowLighter | #7d683a | 125, 104, 58 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=e2c54c" width="20" height="20" alt=""> | yellowContrast | #e2c54c | 226, 197, 76 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ca5a83" width="20" height="20" alt=""> | brightPink | #ca5a83 | 202, 90, 131 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=5b3739" width="20" height="20" alt=""> | brightPinkDark | #5b3739 | 91, 55, 57 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=564538" width="20" height="20" alt=""> | brightYellow | #564538 | 86, 69, 56 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=97576f" width="20" height="20" alt=""> | brightPinkDark | #97576f | 91, 55, 57 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=574131" width="20" height="20" alt=""> | brightYellow | #574131 | 86, 69, 56 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=41352a" width="20" height="20" alt=""> | brightYellowDark | #41352a | 65, 53, 42 |
 
 <!-- palette:end -->
