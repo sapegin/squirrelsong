@@ -1,6 +1,6 @@
-# Squirrelsong Dark Theme for [Slack](https://slack.com/)
+# Squirrelsong Dark Deep Purple Theme for [Slack](https://slack.com/)
 
-![Squirrelsong Dark theme](screenshot.png)
+![Squirrelsong Dark Deep Purple theme](screenshot.png)
 
 ## Installation
 
