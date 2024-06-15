@@ -22,9 +22,11 @@ const EXTENSIONS = [
   'json',
   'lua',
   'palette',
+  'terminal',
   'theme',
   'tmTheme',
   'toml',
+  'yaml',
 ].join(',');
 
 const IGNORES = [
@@ -213,6 +215,24 @@ const CUSTOM_LINTERS = [
           achtung(`${color} (${r}, ${g}, ${b}, ${a})`);
         }
       });
+    },
+  },
+  {
+    // Terminal
+    condition: (file) => file.endsWith('.terminal'),
+    lintFunction: (file, validColors, exceptions) => {
+      const text = fs.readFileSync(file, 'utf8');
+
+      const matches = text.match(/<data>[^<]*<\/data>/gim);
+      const base64s = matches.map((x) =>
+        x
+          .replace(/<\/?data>/gi, '')
+          .replace(/\n/g, '')
+          .trim(),
+      );
+      const values = base64s.map((x) => new Buffer(x, 'base64').toString());
+
+      // TODO: There are colors somewhere but it needs more work
     },
   },
 ];
