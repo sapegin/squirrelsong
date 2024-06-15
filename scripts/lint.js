@@ -22,11 +22,12 @@ const EXTENSIONS = [
   'json',
   'lua',
   'palette',
-  'terminal',
   'theme',
   'tmTheme',
   'toml',
   'yaml',
+  // TODO: Not supported yet
+  // 'terminal',
 ].join(',');
 
 const IGNORES = [
@@ -331,7 +332,8 @@ function lintText(file, validColors, exceptions) {
 function lint(root, palette, exceptions) {
   const validColors = Object.values(palette);
   const themes = glob.sync(`${root}/*/**/*.{${EXTENSIONS}}`);
-  themes.forEach((file) => {
+  const themesSorted = themes.toSorted((a, b) => a.localeCompare(b, 'en'));
+  themesSorted.forEach((file) => {
     const filename = path.basename(file);
     if (IGNORES.includes(filename) || file.includes('node_modules')) {
       return;
@@ -365,15 +367,18 @@ function lint(root, palette, exceptions) {
 }
 
 console.log();
+console.log();
 console.log('[LINT] Linting light themes... 🌞');
 const lightPalette = readJsonFile('light/palette.json');
 lint('light', lightPalette);
 
 console.log();
+console.log();
 console.log('[LINT] Linting dark themes... 🌚');
 const darkPalette = readJsonFile('dark/palette.json');
 lint('dark', darkPalette);
 
+console.log();
 console.log();
 console.log(`[LINT] ${errorCount} errors found 🦜`);
 
