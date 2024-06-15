@@ -1,5 +1,7 @@
 # Squirrelsong Dark Theme for Terminal.app
 
+![Squirrelsong Dark theme](screenshot.jpg)
+
 ## Installation from GitHub
 
 1. Download [Squirrelsong Dark.terminal](Squirrelsong%20Dark.terminal).

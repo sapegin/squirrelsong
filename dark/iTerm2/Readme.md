@@ -1,6 +1,6 @@
 # Squirrelsong Dark Theme for [iTerm2](https://iterm2.com/)
 
-![Squirrelsong dark terminal color theme](./screenshot.png)
+![Squirrelsong dark terminal color theme](./screenshot.jpg)
 
 ## Installation from GitHub
 
