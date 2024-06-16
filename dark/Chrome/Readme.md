@@ -6,7 +6,7 @@ Also works for Microsoft Edge, and other Chromium-based browsers.
 
 ## Installation from Chrome Web Store
 
-[Follow the instructions](TODO)
+[Follow the instructions](https://chromewebstore.google.com/detail/squirrelsong-dark-deep-pu/oimeikpbfflafafdppijokbhhldplimj)
 
 ## Installation from GitHub
 
