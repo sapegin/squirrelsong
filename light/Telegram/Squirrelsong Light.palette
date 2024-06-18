@@ -8,7 +8,7 @@ isDark = 0
 tinted = 0
 //Fallback for parameters which didn't define. Available values: day, dayClassic, dark, nightAccent
 parent = day
-copyright = Telegram
+copyright = Artem Sapegin
 basicAccent = #4c4b4e
 background = #fdfdfe
 text = #4c4b4e
