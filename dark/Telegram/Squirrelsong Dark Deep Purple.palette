@@ -128,6 +128,6 @@ listGrayText = #987db3
 grayHighlight = #36294d
 focusAnimationColor = #987db3
 vibrant = #987db3:0.10
-premium = #806aa4
+premium = #8465ba
 //Parameter only affects bubble chat mode. Available values: none, builtin, hexColor or url to cloud backgound like a t.me/bg/%slug%
 wallpaper = none
