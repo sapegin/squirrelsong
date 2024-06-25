@@ -17,7 +17,7 @@
     <option name="DIFF_SEPARATOR_WAVE" value="dbd7e0" />
     <option name="DOCUMENTATION_COLOR" value="e8e5eb" />
     <option name="DOC_COMMENT_GUIDE" value="e8e5eb" />
-    <option name="DOC_COMMENT_LINK" value="527B98" />
+    <option name="DOC_COMMENT_LINK" value="527b98" />
     <option name="ERROR_HINT" value="fae1ea" />
     <option name="FILESTATUS_ADDED" value="667e44"/>
     <option name="FILESTATUS_COPIED" value=""/>
@@ -28,7 +28,7 @@
     <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="c06159"/>
     <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="c06159"/>
     <option name="FILESTATUS_MERGED" value="806f9b"/>
-    <option name="FILESTATUS_MODIFIED" value="527B98"/>
+    <option name="FILESTATUS_MODIFIED" value="527b98"/>
     <option name="FILESTATUS_RENAMED" value=""/>
     <option name="FILESTATUS_NOT_CHANGED" value=""/>
     <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value=""/>
@@ -36,7 +36,7 @@
     <option name="FILESTATUS_UNKNOWN" value=""/>
     <option name="FILESTATUS_addedOutside" value="667e44"/>
     <option name="FILESTATUS_changelistConflict" value=""/>
-    <option name="FILESTATUS_modifiedOutside" value="527B98"/>
+    <option name="FILESTATUS_modifiedOutside" value="527b98"/>
     <option name="FILESTATUS_HIJACKED" value=""/>
     <option name="FILESTATUS_OBSOLETE" value=""/>
     <option name="FILESTATUS_SWITCHED" value=""/>
@@ -386,7 +386,7 @@
     </option>
     <option name="CONSOLE_BLUE_BRIGHT_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="527B98" />
+        <option name="FOREGROUND" value="527b98" />
       </value>
     </option>
     <option name="CONSOLE_BLUE_OUTPUT">
@@ -416,7 +416,7 @@
     </option>
     <option name="CONSOLE_GREEN_BRIGHT_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="527B98" />
+        <option name="FOREGROUND" value="527b98" />
       </value>
     </option>
     <option name="CONSOLE_GREEN_OUTPUT">
@@ -631,8 +631,8 @@
     </option>
     <option name="CTRL_CLICKABLE">
       <value>
-        <option name="FOREGROUND" value="527B98" />
-        <option name="EFFECT_COLOR" value="527B98" />
+        <option name="FOREGROUND" value="527b98" />
+        <option name="EFFECT_COLOR" value="527b98" />
         <option name="EFFECT_TYPE" value="5" />
       </value>
     </option>
@@ -1024,8 +1024,8 @@
     </option>
     <option name="FOLLOWED_HYPERLINK_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="527B98" />
-        <option name="EFFECT_COLOR" value="527B98" />
+        <option name="FOREGROUND" value="527b98" />
+        <option name="EFFECT_COLOR" value="527b98" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -1181,8 +1181,8 @@
     </option>
     <option name="HYPERLINK_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="527B98" />
-        <option name="EFFECT_COLOR" value="527B98" />
+        <option name="FOREGROUND" value="527b98" />
+        <option name="EFFECT_COLOR" value="527b98" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -1477,7 +1477,7 @@
     </option>
     <option name="LOG_INFO_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="527B98" />
+        <option name="FOREGROUND" value="527b98" />
       </value>
     </option>
     <option name="LOG_VERBOSE_OUTPUT">

@@ -62,7 +62,7 @@
     "text light color": "$base.text secondary color",
     "accent color": "$base.accent color",
     "cursor color": "#6b676f",
-    "link color": "#527B98",
+    "link color": "#527b98",
     "list marker color": "#9c96a2",
     "marker color": "#9c96a2",
     "selection color": "$base.selection color",

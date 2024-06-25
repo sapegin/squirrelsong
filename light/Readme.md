@@ -50,7 +50,7 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=80a4be" width="20" height="20" alt=""> | blue | #80a4be | 128, 164, 190 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=bfd1de" width="20" height="20" alt=""> | blueLight | #bfd1de | 191, 209, 222 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=dfe8ef" width="20" height="20" alt=""> | blueLighter | #dfe8ef | 223, 232, 239 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=527B98" width="20" height="20" alt=""> | blueContrast | #527B98 | 78, 121, 151 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=527b98" width="20" height="20" alt=""> | blueContrast | #527b98 | 78, 121, 151 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ac9bc5" width="20" height="20" alt=""> | purple | #ac9bc5 | 172, 155, 197 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=d7cfe3" width="20" height="20" alt=""> | purpleLight | #d7cfe3 | 215, 207, 227 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ebe7f1" width="20" height="20" alt=""> | purpleLighter | #ebe7f1 | 235, 231, 241 |
@@ -93,7 +93,7 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=5f9b8d" width="20" height="20" alt=""> | Class, at-rule, operator | teal | #5f9b8d | Bold |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=d67e76" width="20" height="20" alt=""> | Regexp, deleted | red | #d67e76 |  |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=d67e76" width="20" height="20" alt=""> | Important | red | #d67e76 | Bold |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=527B98" width="20" height="20" alt=""> | URL | blueContrast | #527B98 |  |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=527b98" width="20" height="20" alt=""> | URL | blueContrast | #527b98 |  |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=fdf6de" width="20" height="20" alt=""> | Selection background | brightYellowLight | #fdf6de |  |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=f7f6f9" width="20" height="20" alt=""> | Line highlight background | gray0f | #f7f6f9 |  |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=fdfdfe" width="20" height="20" alt=""> | Background | white | #fdfdfe |  |
@@ -107,7 +107,7 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=8c8792" width="20" height="20" alt=""> | Secondary text foreground | gray07 | #8c8792 |  |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=9c96a2" width="20" height="20" alt=""> | Disabled foreground | gray09 | #9c96a2 |  |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4c4b4e" width="20" height="20" alt=""> | Active foreground | gray04 | #4c4b4e |  |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=527B98" width="20" height="20" alt=""> | Link foreground | blueContrast | #527B98 |  |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=527b98" width="20" height="20" alt=""> | Link foreground | blueContrast | #527b98 |  |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=80a4be" width="20" height="20" alt=""> | Link hover foreground | blue | #80a4be |  |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=fdfdfe" width="20" height="20" alt=""> | Text background | white | #fdfdfe |  |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=f7f6f9" width="20" height="20" alt=""> | Background | gray0f | #f7f6f9 | Sidebars, popups |

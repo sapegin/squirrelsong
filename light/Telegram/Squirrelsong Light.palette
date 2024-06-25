@@ -13,7 +13,7 @@ basicAccent = #ac9bc5
 background = #fdfdfe
 text = #4c4b4e
 grayText = #9c96a2
-link = #527B98
+link = #527b98
 // Links, button links, my reactions background
 accent = #806f9b
 // Number of unread messages in the list, dangerous links
@@ -57,7 +57,7 @@ grayIconBubble_incoming = #9c96a2
 grayIconBubble_outgoing = #fdfdfe
 accentIconBubble_incoming = #9c96a2
 accentIconBubble_outgoing = #fdfdfe
-linkBubble_incoming = #527B98
+linkBubble_incoming = #527b98
 linkBubble_outgoing = #fdfdfe
 textBubble_incoming = #4c4b4e
 textBubble_outgoing = #fdfdfe
