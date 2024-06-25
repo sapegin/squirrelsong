@@ -24,9 +24,9 @@
     <option name="FILESTATUS_DELETED" value="9c96a2"/>
     <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="9c96a2"/>
     <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="9c96a2"/>
-    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="ba584f"/>
-    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="ba584f"/>
-    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="ba584f"/>
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="c06159"/>
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="c06159"/>
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="c06159"/>
     <option name="FILESTATUS_MERGED" value="806f9b"/>
     <option name="FILESTATUS_MODIFIED" value="527B98"/>
     <option name="FILESTATUS_RENAMED" value=""/>
@@ -441,7 +441,7 @@
     </option>
     <option name="CONSOLE_RED_BRIGHT_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="ba584f" />
+        <option name="FOREGROUND" value="c06159" />
       </value>
     </option>
     <option name="CONSOLE_RED_OUTPUT">
@@ -462,7 +462,7 @@
     </option>
     <option name="CONSOLE_YELLOW_BRIGHT_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="937210" />
+        <option name="FOREGROUND" value="b39119" />
       </value>
     </option>
     <option name="CONSOLE_YELLOW_OUTPUT">
@@ -1466,7 +1466,7 @@
     </option>
     <option name="LOG_ERROR_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="ba584f" />
+        <option name="FOREGROUND" value="c06159" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -1487,7 +1487,7 @@
     </option>
     <option name="LOG_WARNING_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="a36829" />
+        <option name="FOREGROUND" value="bf8240" />
       </value>
     </option>
     <option name="MARKDOWN_AUTO_LINK">

@@ -23,12 +23,20 @@
         height: 8rem;
         text-align: center;
       }
+      p {
+        margin-bottom: 0.5rem;
+      }
     </style>
   </head>
   <body>
-    <!-- Color converter: https://colord.omgovich.ru -->
-    <!-- Contrast checker: https://webaim.org/resources/contrastchecker/ -->
-    <!-- *Contrast colors have sufficient color contrast for text -->
+    <!--
+    Color converter: https://colord.omgovich.ru
+    Contrast checker: https://webaim.org/resources/contrastchecker/
+
+    - gray04-gray07 must have sufficient color contrast for text: 4:1
+    - *Contrast colors must have sufficient color contrast for text: 4:1
+    - orangeContrast and yellowContrast must have contrast of 3:1 (large text and icons)
+    -->
     <table>
       <tr>
         <td style="background: hsl(260 2% 30% / 1)">gray04<br />#4c4b4e</td>
@@ -68,7 +76,7 @@
         <td style=""></td>
       </tr>
       <tr>
-        <td style="background: #527b98">blueContrast<br />#527B98</td>
+        <td style="background: #527b98">blueContrast<br />#527b98</td>
         <td style="background: #80a4be">blue<br />#80a4be</td>
         <td style="background: #bfd1de">blueLight<br />#bfd1de</td>
         <td style="background: #dfe8ef">blueLighter<br />#dfe8ef</td>
@@ -88,7 +96,7 @@
         <td style=""></td>
       </tr>
       <tr>
-        <td style="background: #ba584f">redContrast<br />#ba584f</td>
+        <td style="background: #c06159">redContrast<br />#c06159</td>
         <td style="background: #d67e76">red<br />#d67e76</td>
         <td style="background: #e5ada8">redLight<br />#e5ada8</td>
         <td style="background: #f3dcda">redLighter<br />#f3dcda</td>
@@ -98,7 +106,7 @@
         <td style=""></td>
       </tr>
       <tr>
-        <td style="background: #a36829">orangeContrast<br />#a36829</td>
+        <td style="background: #bf8240">orangeContrast<br />#bf8240</td>
         <td style="background: #de9e59">orange<br />#de9e59</td>
         <td style="background: #eeceac">orangeLight<br />#eeceac</td>
         <td style="background: #f7e7d5">orangeLighter<br />#f7e7d5</td>
@@ -108,7 +116,7 @@
         <td style=""></td>
       </tr>
       <tr>
-        <td style="background: #937210">yellowContrast<br />#937210</td>
+        <td style="background: #b39119">yellowContrast<br />#b39119</td>
         <td style="background: #e6c565">yellow<br />#e6c565</td>
         <td style="background: #e9d9a8">yellowLight<br />#e9d9a8</td>
         <td style="background: #f7f0de">yellowLighter<br />#f7f0de</td>
@@ -140,5 +148,18 @@
         <td style=""></td>
       </tr>
     </table>
+
+    <p style="color: #4c4b4e">Quick fox jumps over the lazy dog (gray04)</p>
+    <p style="color: #5c595f">Quick fox jumps over the lazy dog (gray05)</p>
+    <p style="color: #6b676f">Quick fox jumps over the lazy dog (gray06)</p>
+    <p style="color: #78737d">Quick fox jumps over the lazy dog (gray07)</p>
+
+    <p style="color: #667e44">Quick fox jumps over the lazy dog (greenContrast)</p>
+    <p style="color: #468173">Quick fox jumps over the lazy dog (tealContrast)</p>
+    <p style="color: #527b98">Quick fox jumps over the lazy dog (blueContrast)</p>
+    <p style="color: #806f9b">Quick fox jumps over the lazy dog (purpleContrast)</p>
+    <p style="color: #c06159">Quick fox jumps over the lazy dog (redContrast)</p>
+    <p style="color: #bf8240">Quick fox jumps over the lazy dog (orangeContrast)</p>
+    <p style="color: #b39119">Quick fox jumps over the lazy dog (yellowContrast)</p>
   </body>
 </html>

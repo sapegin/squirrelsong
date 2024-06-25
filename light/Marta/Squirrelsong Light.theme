@@ -116,7 +116,7 @@ terminal {
 textEditor {
     error #d67e76
     warning #e6c565
-    keyword #ba584f
+    keyword #c06159
     comment #9c96a2
     identifier #f7f0de
 

@@ -47,7 +47,7 @@ monospacedCodeBubble_outgoing = #fdfdfe
 // Selected text in the incoming message bubbles
 selectTextBubble_incoming = #f8e7a0
 // Selected text in the outgoing message bubbles
-selectTextBubble_outgoing = #937210
+selectTextBubble_outgoing = #b39119
 bubbleBackground_incoming = #e8e5eb
 bubbleBorder_incoming = #e8e5eb
 bubbleBorder_outgoing = #9c96a2:0.70
@@ -91,7 +91,7 @@ chatReplyTextEnabledBubble_outgoing = #fdfdfe
 chatReplyTextDisabledBubble_incoming = #9c96a2
 chatReplyTextDisabledBubble_outgoing = #fdfdfe
 groupPeerNameRed = #d67e76
-groupPeerNameOrange = #a36829
+groupPeerNameOrange = #bf8240
 groupPeerNameViolet = #806f9b
 groupPeerNameGreen = #667e44
 groupPeerNameCyan = #468173
