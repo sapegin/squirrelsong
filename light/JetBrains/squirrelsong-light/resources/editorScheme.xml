@@ -17,26 +17,26 @@
     <option name="DIFF_SEPARATOR_WAVE" value="dbd7e0" />
     <option name="DOCUMENTATION_COLOR" value="e8e5eb" />
     <option name="DOC_COMMENT_GUIDE" value="e8e5eb" />
-    <option name="DOC_COMMENT_LINK" value="4e7997" />
+    <option name="DOC_COMMENT_LINK" value="527B98" />
     <option name="ERROR_HINT" value="fae1ea" />
-    <option name="FILESTATUS_ADDED" value="617c3c"/>
+    <option name="FILESTATUS_ADDED" value="667e44"/>
     <option name="FILESTATUS_COPIED" value=""/>
     <option name="FILESTATUS_DELETED" value="9c96a2"/>
     <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="9c96a2"/>
     <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="9c96a2"/>
-    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="bc5248"/>
-    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="bc5248"/>
-    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="bc5248"/>
-    <option name="FILESTATUS_MERGED" value="806aa4"/>
-    <option name="FILESTATUS_MODIFIED" value="4e7997"/>
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="ba584f"/>
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="ba584f"/>
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="ba584f"/>
+    <option name="FILESTATUS_MERGED" value="806f9b"/>
+    <option name="FILESTATUS_MODIFIED" value="527B98"/>
     <option name="FILESTATUS_RENAMED" value=""/>
     <option name="FILESTATUS_NOT_CHANGED" value=""/>
     <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value=""/>
     <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value=""/>
     <option name="FILESTATUS_UNKNOWN" value=""/>
-    <option name="FILESTATUS_addedOutside" value="617c3c"/>
+    <option name="FILESTATUS_addedOutside" value="667e44"/>
     <option name="FILESTATUS_changelistConflict" value=""/>
-    <option name="FILESTATUS_modifiedOutside" value="4e7997"/>
+    <option name="FILESTATUS_modifiedOutside" value="527B98"/>
     <option name="FILESTATUS_HIJACKED" value=""/>
     <option name="FILESTATUS_OBSOLETE" value=""/>
     <option name="FILESTATUS_SWITCHED" value=""/>
@@ -386,7 +386,7 @@
     </option>
     <option name="CONSOLE_BLUE_BRIGHT_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="4e7997" />
+        <option name="FOREGROUND" value="527B98" />
       </value>
     </option>
     <option name="CONSOLE_BLUE_OUTPUT">
@@ -396,7 +396,7 @@
     </option>
     <option name="CONSOLE_CYAN_BRIGHT_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="3f7d6f" />
+        <option name="FOREGROUND" value="468173" />
       </value>
     </option>
     <option name="CONSOLE_CYAN_OUTPUT">
@@ -416,7 +416,7 @@
     </option>
     <option name="CONSOLE_GREEN_BRIGHT_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="4e7997" />
+        <option name="FOREGROUND" value="527B98" />
       </value>
     </option>
     <option name="CONSOLE_GREEN_OUTPUT">
@@ -426,7 +426,7 @@
     </option>
     <option name="CONSOLE_MAGENTA_BRIGHT_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="806aa4" />
+        <option name="FOREGROUND" value="806f9b" />
       </value>
     </option>
     <option name="CONSOLE_MAGENTA_OUTPUT">
@@ -441,7 +441,7 @@
     </option>
     <option name="CONSOLE_RED_BRIGHT_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="bc5248" />
+        <option name="FOREGROUND" value="ba584f" />
       </value>
     </option>
     <option name="CONSOLE_RED_OUTPUT">
@@ -462,7 +462,7 @@
     </option>
     <option name="CONSOLE_YELLOW_BRIGHT_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="917108" />
+        <option name="FOREGROUND" value="937210" />
       </value>
     </option>
     <option name="CONSOLE_YELLOW_OUTPUT">
@@ -631,8 +631,8 @@
     </option>
     <option name="CTRL_CLICKABLE">
       <value>
-        <option name="FOREGROUND" value="4e7997" />
-        <option name="EFFECT_COLOR" value="4e7997" />
+        <option name="FOREGROUND" value="527B98" />
+        <option name="EFFECT_COLOR" value="527B98" />
         <option name="EFFECT_TYPE" value="5" />
       </value>
     </option>
@@ -1024,8 +1024,8 @@
     </option>
     <option name="FOLLOWED_HYPERLINK_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="4e7997" />
-        <option name="EFFECT_COLOR" value="4e7997" />
+        <option name="FOREGROUND" value="527B98" />
+        <option name="EFFECT_COLOR" value="527B98" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -1181,8 +1181,8 @@
     </option>
     <option name="HYPERLINK_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="4e7997" />
-        <option name="EFFECT_COLOR" value="4e7997" />
+        <option name="FOREGROUND" value="527B98" />
+        <option name="EFFECT_COLOR" value="527B98" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -1466,7 +1466,7 @@
     </option>
     <option name="LOG_ERROR_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="bc5248" />
+        <option name="FOREGROUND" value="ba584f" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -1477,7 +1477,7 @@
     </option>
     <option name="LOG_INFO_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="4e7997" />
+        <option name="FOREGROUND" value="527B98" />
       </value>
     </option>
     <option name="LOG_VERBOSE_OUTPUT">
@@ -1487,7 +1487,7 @@
     </option>
     <option name="LOG_WARNING_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="aa6318" />
+        <option name="FOREGROUND" value="a36829" />
       </value>
     </option>
     <option name="MARKDOWN_AUTO_LINK">

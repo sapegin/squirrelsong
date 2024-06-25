@@ -9,34 +9,36 @@ tinted = 0
 //Fallback for parameters which didn't define. Available values: day, dayClassic, dark, nightAccent
 parent = day
 copyright = Artem Sapegin
-basicAccent = #4c4b4e
+basicAccent = #ac9bc5
 background = #fdfdfe
 text = #4c4b4e
 grayText = #9c96a2
-link = #4e7997
+link = #527B98
 // Links, button links, my reactions background
-accent = #806aa4
-// Number of unread messages in the list
-redUI = #ac9bc5
+accent = #806f9b
+// Number of unread messages in the list, dangerous links
+redUI = #806f9b
 greenUI = #9bae7e
 blackTransparent = #4c4b4e:0.60
 grayTransparent = #f7f6f9:0.60
 grayUI = #f7f6f9
-darkGrayText = #4c4b4e
+darkGrayText = #9c96a2
 accentSelect = #ac9bc5
 selectText = #f8e7a0
 border = #e8e5eb
 // Window title, search field, etc.
 grayBackground = #f7f6f9
 grayForeground = #6b676f
+// Inactive toolbar icon
 grayIcon = #9c96a2
-accentIcon = #4c4b4e
+// Active toolbar icon, read indicator checkboxes
+accentIcon = #ac9bc5
 badgeMuted = #dbd7e0
 // Number of unread messages in the list
 badge = #ac9bc5
-indicatorColor = #4c4b4e
+indicatorColor = #ac9bc5
 selectMessage = #e8e5eb
-monospacedPre = #4c4b4e
+monospacedPre = #78737d
 monospacedCode = #78737d
 monospacedPreBubble_incoming = #9c96a2
 monospacedPreBubble_outgoing = #fdfdfe
@@ -45,7 +47,7 @@ monospacedCodeBubble_outgoing = #fdfdfe
 // Selected text in the incoming message bubbles
 selectTextBubble_incoming = #f8e7a0
 // Selected text in the outgoing message bubbles
-selectTextBubble_outgoing = #917108
+selectTextBubble_outgoing = #937210
 bubbleBackground_incoming = #e8e5eb
 bubbleBorder_incoming = #e8e5eb
 bubbleBorder_outgoing = #9c96a2:0.70
@@ -55,7 +57,7 @@ grayIconBubble_incoming = #9c96a2
 grayIconBubble_outgoing = #fdfdfe
 accentIconBubble_incoming = #9c96a2
 accentIconBubble_outgoing = #fdfdfe
-linkBubble_incoming = #4e7997
+linkBubble_incoming = #527B98
 linkBubble_outgoing = #fdfdfe
 textBubble_incoming = #4c4b4e
 textBubble_outgoing = #fdfdfe
@@ -80,7 +82,7 @@ redBubble_outgoing = #e5ada8
 greenBubble_incoming = #d1dac3
 greenBubble_outgoing = #d1dac3
 chatReplyTitle = #80a4be
-chatReplyTextEnabled = #4c4b4e
+chatReplyTextEnabled = #6b676f
 chatReplyTextDisabled = #9c96a2
 chatReplyTitleBubble_incoming = #80a4be
 chatReplyTitleBubble_outgoing = #fdfdfe
@@ -89,10 +91,10 @@ chatReplyTextEnabledBubble_outgoing = #fdfdfe
 chatReplyTextDisabledBubble_incoming = #9c96a2
 chatReplyTextDisabledBubble_outgoing = #fdfdfe
 groupPeerNameRed = #d67e76
-groupPeerNameOrange = #aa6318
-groupPeerNameViolet = #806aa4
-groupPeerNameGreen = #617c3c
-groupPeerNameCyan = #3f7d6f
+groupPeerNameOrange = #a36829
+groupPeerNameViolet = #806f9b
+groupPeerNameGreen = #667e44
+groupPeerNameCyan = #468173
 groupPeerNameLightBlue = #bfd1de
 groupPeerNameBlue = #80a4be
 peerAvatarRedTop = #f3dcda
@@ -134,6 +136,6 @@ listGrayText = #78737d
 grayHighlight = #f7f6f9
 focusAnimationColor = #80a4be
 vibrant = #9c96a2:0.10
-premium = #806aa4
+premium = #e8e5eb
 //Parameter only affects bubble chat mode. Available values: none, builtin, hexColor or url to cloud backgound like a t.me/bg/%slug%
 wallpaper = none

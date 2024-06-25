@@ -47,8 +47,8 @@ files {
         matched #e87da4
         selected #e87da4
 
-        highlighting1 #4e7997
-        highlighting2 #617c3c
+        highlighting1 #527B98
+        highlighting2 #667e44
         highlighting3 #e6c565
         highlighting4 #ac9bc5
     }
@@ -116,13 +116,13 @@ terminal {
 textEditor {
     error #d67e76
     warning #e6c565
-    keyword #bc5248
+    keyword #ba584f
     comment #9c96a2
     identifier #f7f0de
 
     literal {
         string #9bae7e
-        number #4e7997
+        number #527B98
         color #bfd1de
     }
 
