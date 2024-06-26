@@ -152,9 +152,9 @@ const EXCEPTIONS = {
     // Slack system navigation: existing colors look too intense (this color isn't
     // used as is by Slack but is "adjusted" and other colors are made based on
     // this color)
-    '#c3ccd6',
+    '#d2ccdb',
   ],
-  'light/Slack/Readme.md': ['#c3ccd6'],
+  'light/Slack/Readme.md': ['#d2ccdb'],
   'dark/WezTerm/squirrelsong-dark.toml': [
     '#080706',
     '#12100e',
