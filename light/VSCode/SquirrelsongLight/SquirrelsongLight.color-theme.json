@@ -121,9 +121,9 @@
     "editorInfo.foreground": "#9c96a2",
     "editorInlayHint.foreground": "#6b676f",
     "editorInlayHint.background": "#dbd7e0",
-    "editorLightBulb.foreground": "#e6c565",
-    "editorLightBulbAi.foreground": "#e6c565",
-    "editorLightBulbAutoFix.foreground": "#e6c565",
+    "editorLightBulb.foreground": "#e4c158",
+    "editorLightBulbAi.foreground": "#e4c158",
+    "editorLightBulbAutoFix.foreground": "#e4c158",
     "editorLineNumber.activeForeground": "#78737d",
     "editorLineNumber.dimmedForeground": "#c9c4cf",
     "editorLineNumber.foreground": "#b8b1be",
@@ -135,7 +135,7 @@
     "editorOverviewRuler.bracketMatchForeground": "#dbd7e0",
     "editorOverviewRuler.rangeHighlightForeground": "#f5da7044",
     "editorOverviewRuler.selectionHighlightForeground": "#f5da7044",
-    "editorOverviewRuler.warningForeground": "#e6c565",
+    "editorOverviewRuler.warningForeground": "#e4c158",
     "editorOverviewRuler.wordHighlightForeground": "#f5da7022",
     "editorOverviewRuler.wordHighlightStrongForeground": "#f5da7044",
     "editorOverviewRuler.wordHighlightTextForeground": "#f5da7022",
@@ -341,7 +341,7 @@
     "terminal.ansiMagenta": "#ac9bc5",
     "terminal.ansiRed": "#d67e76",
     "terminal.ansiWhite": "#fdfdfe",
-    "terminal.ansiYellow": "#e6c565",
+    "terminal.ansiYellow": "#e4c158",
     "testing.runAction": "#8c8792",
     "testing.iconQueued": "#8c8792",
     "testing.iconUnset": "#8c8792",
@@ -539,7 +539,24 @@
     },
     {
       "scope": [
+        // RegExp quantifiers: .+, .?, .{1,2}
         "keyword.operator.quantifier.regexp",
+        // RegExp back references: \1, \2, etc.
+        "keyword.other.back-reference.regexp",
+        // RegExp no capture group: (?:xxx)
+        "punctuation.definition.group.no-capture.regexp",
+        // RegExp look aheads and look behinds
+        "meta.assertion.look-ahead.regexp",
+        "meta.assertion.negative-look-ahead.regexp",
+        "meta.assertion.look-behind.regexp",
+        "meta.assertion.negative-look-behind.regexp",
+        // Template expression embeds: `... ${foo} ...`
+        "punctuation.definition.template-expression.begin.js",
+        "punctuation.definition.template-expression.end.js",
+        "punctuation.definition.template-expression.begin.ts",
+        "punctuation.definition.template-expression.end.ts",
+        "punctuation.definition.template-expression.begin.tsx",
+        "punctuation.definition.template-expression.end.tsx",
         // C
         "keyword.operator.c",
         // C#
@@ -640,6 +657,7 @@
         "constant.other",
         "keyword.operator",
         "keyword.operator.class",
+        // RegExp group: (xxx)
         "punctuation.definition.group.regexp",
         // C
         "storage.type.built-in.primitive.c",
@@ -974,12 +992,6 @@
         "entity.name.tag.js",
         "entity.name.tag.js.jsx",
         "entity.name.tag.tsx",
-        "punctuation.definition.template-expression.begin.js",
-        "punctuation.definition.template-expression.end.js",
-        "punctuation.definition.template-expression.begin.ts",
-        "punctuation.definition.template-expression.end.ts",
-        "punctuation.definition.template-expression.begin.tsx",
-        "punctuation.definition.template-expression.end.tsx",
         "support.class.component.js",
         "support.class.component.js.jsx",
         "support.class.component.tsx",
@@ -1025,20 +1037,44 @@
       }
     },
     {
-      "scope": ["string.other.link", "string.regexp"],
+      "scope": [
+        // Escaped characters in RegExps: \/, \$
+        "constant.character.escape.backslash.regexp",
+        // Numeric escaped characters in RegExps: \u202f
+        "constant.character.numeric.regexp",
+        // Regexp flags
+        "keyword.other.ts"
+      ],
       "settings": {
-        "foreground": "#d67e76",
-        "fontStyle": ""
+        "foreground": "#9bae7e",
+        "fontStyle": "bold"
       }
     },
     {
       "scope": [
+        // RegExp negation: ^
+        "keyword.operator.negation.regexp",
+        // RegExp character classes: \n, \W, .
+        "constant.other.character-class.regexp"
+      ],
+      "settings": {
+        "foreground": "#de9e59",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": [
+        // RegExp groups: []
+        "punctuation.definition.character-class.regexp",
+        // RegExp character sets: [x]
+        "constant.other.character-class.set.regexp",
+        // RegExp character ranges: [a-z]
+        "constant.other.character-class.range.regexp",
         "constant.numeric",
         "constant.language",
         "support.constant",
         "constant.character",
         "keyword.other.unit",
-        "constant.other.character-class.regexp",
         // CSS
         "entity.other.attribute-name.placeholder.css",
         "meta.property-value.media-query.scss",
@@ -1052,6 +1088,8 @@
     },
     {
       "scope": [
+        // RegExp anchors and boundaries: ^, $, \b
+        "keyword.control.anchor.regexp",
         // CSS
         "entity.other.attribute-name.id.css",
         // Java
@@ -1068,7 +1106,7 @@
         "variable.language.self.rust"
       ],
       "settings": {
-        "foreground": "#e6c565",
+        "foreground": "#e4c158",
         "fontStyle": "bold"
       }
     },

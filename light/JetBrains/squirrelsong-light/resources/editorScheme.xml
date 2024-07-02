@@ -48,7 +48,7 @@
     <option name="HTML_TAG_TREE_LEVEL1" value="80a4be" />
     <option name="HTML_TAG_TREE_LEVEL2" value="82b9bb" />
     <option name="HTML_TAG_TREE_LEVEL3" value="9bae7e" />
-    <option name="HTML_TAG_TREE_LEVEL4" value="e6c565" />
+    <option name="HTML_TAG_TREE_LEVEL4" value="e4c158" />
     <option name="HTML_TAG_TREE_LEVEL5" value="de9e59" />
     <option name="IGNORED_ADDED_LINES_BORDER_COLOR" value="9bae7e" />
     <option name="IGNORED_DELETED_LINES_BORDER_COLOR" value="9c96a2" />
@@ -91,7 +91,7 @@
   <attributes>
     <option name="ABSTRACT_CLASS_NAME_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="e6c565" />
+        <option name="FOREGROUND" value="e4c158" />
       </value>
     </option>
     <option name="ANNOTATION_NAME_ATTRIBUTES">
@@ -295,13 +295,13 @@
     </option>
     <option name="COFFEESCRIPT.HEREDOC_ID">
       <value>
-        <option name="FOREGROUND" value="e6c565" />
+        <option name="FOREGROUND" value="e4c158" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="COFFEESCRIPT.HEREGEX_ID">
       <value>
-        <option name="FOREGROUND" value="e6c565" />
+        <option name="FOREGROUND" value="e4c158" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -375,7 +375,7 @@
     </option>
     <option name="COFFEESCRIPT.THIS">
       <value>
-        <option name="FOREGROUND" value="e6c565" />
+        <option name="FOREGROUND" value="e4c158" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -467,7 +467,7 @@
     </option>
     <option name="CONSOLE_YELLOW_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="e6c565" />
+        <option name="FOREGROUND" value="e4c158" />
       </value>
     </option>
     <option name="CPP.BLOCK_COMMENT">
@@ -506,7 +506,7 @@
     </option>
     <option name="CPP.LABEL">
       <value>
-        <option name="FOREGROUND" value="e6c565" />
+        <option name="FOREGROUND" value="e4c158" />
       </value>
     </option>
     <option name="CPP.LINE_COMMENT">
@@ -710,7 +710,7 @@
     </option>
     <option name="DEFAULT_CLASS_REFERENCE">
       <value>
-        <option name="FOREGROUND" value="e6c565" />
+        <option name="FOREGROUND" value="e4c158" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -774,7 +774,7 @@
     </option>
     <option name="DEFAULT_HIGHLIGHTED_REFERENCE">
       <value>
-        <option name="EFFECT_COLOR" value="e6c565" />
+        <option name="EFFECT_COLOR" value="e4c158" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -810,7 +810,7 @@
     </option>
     <option name="DEFAULT_LABEL">
       <value>
-        <option name="FOREGROUND" value="e6c565" />
+        <option name="FOREGROUND" value="e4c158" />
       </value>
     </option>
     <option name="DEFAULT_LINE_COMMENT">
@@ -1151,7 +1151,7 @@
     </option>
     <option name="HAML_XHTML">
       <value>
-        <option name="FOREGROUND" value="e6c565" />
+        <option name="FOREGROUND" value="e4c158" />
         <option name="FONT_TYPE" value="3" />
       </value>
     </option>
@@ -1697,7 +1697,7 @@
     </option>
     <option name="PHP_HEREDOC_ID">
       <value>
-        <option name="FOREGROUND" value="e6c565" />
+        <option name="FOREGROUND" value="e4c158" />
         <option name="FONT_TYPE" value="1" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
@@ -1860,7 +1860,7 @@
     </option>
     <option name="QL_ENTITY">
       <value>
-        <option name="FOREGROUND" value="e6c565" />
+        <option name="FOREGROUND" value="e4c158" />
       </value>
     </option>
     <option name="QL_ID_VARIABLE">
@@ -2314,7 +2314,7 @@
     </option>
     <option name="SQL_SCHEMA">
       <value>
-        <option name="FOREGROUND" value="e6c565" />
+        <option name="FOREGROUND" value="e4c158" />
       </value>
     </option>
     <option name="SQL_STRING">
@@ -2500,7 +2500,7 @@
     </option>
     <option name="TEXT_STYLE_ERROR">
       <value>
-        <option name="EFFECT_COLOR" value="e6c565" />
+        <option name="EFFECT_COLOR" value="e4c158" />
         <option name="EFFECT_TYPE" value="5" />
       </value>
     </option>
@@ -2641,7 +2641,7 @@
     </option>
     <option name="VELOCITY_REFERENCE">
       <value>
-        <option name="FOREGROUND" value="e6c565" />
+        <option name="FOREGROUND" value="e4c158" />
       </value>
     </option>
     <option name="VELOCITY_SCRIPTING_BACKGROUND">
@@ -2674,8 +2674,8 @@
     </option>
     <option name="WRONG_REFERENCES_ATTRIBUTES">
       <value>
-        <option name="EFFECT_COLOR" value="e6c565" />
-        <option name="ERROR_STRIPE_COLOR" value="e6c565" />
+        <option name="EFFECT_COLOR" value="e4c158" />
+        <option name="ERROR_STRIPE_COLOR" value="e4c158" />
         <option name="EFFECT_TYPE" value="2" />
       </value>
     </option>
@@ -2721,7 +2721,7 @@
     </option>
     <option name="XPATH.XPATH_NAME">
       <value>
-        <option name="FOREGROUND" value="e6c565" />
+        <option name="FOREGROUND" value="e4c158" />
       </value>
     </option>
     <option name="XPATH.XPATH_VARIABLE">

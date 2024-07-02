@@ -49,7 +49,7 @@ files {
 
         highlighting1 #527b98
         highlighting2 #667e44
-        highlighting3 #e6c565
+        highlighting3 #e4c158
         highlighting4 #ac9bc5
     }
 }
@@ -115,7 +115,7 @@ terminal {
 
 textEditor {
     error #d67e76
-    warning #e6c565
+    warning #e4c158
     keyword #c06159
     comment #9c96a2
     identifier #f7f0de

@@ -47,7 +47,7 @@ let s:palette = {
   \ 'orange_light':          ['#eeceac',   'NONE'],
   \ 'orange_lighter':        ['#f7e7d5',   'NONE'],
   \ 'orange_contrast':       ['#bf8240',   'NONE'],
-  \ 'yellow':                ['#e6c565',   'NONE'],
+  \ 'yellow':                ['#e4c158',   'NONE'],
   \ 'yellow_light':          ['#e9d9a8',   'NONE'],
   \ 'yellow_lighter':        ['#f7f0de',   'NONE'],
   \ 'yellow_contrast':       ['#b39119',   'NONE'],
