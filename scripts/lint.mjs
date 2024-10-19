@@ -35,6 +35,7 @@ const EXTENSIONS = [
 ].join(',');
 
 const EXTRA_LIGHT_FILES = [
+  'themes/Ice/Readme.md',
   'themes/Bartender/Readme.md',
   'themes/macOS/Readme.md',
   'themes/Slack/Readme.md',
@@ -57,6 +58,7 @@ const TRANSPARENT = [
 
 const EXCEPTIONS = {
   'themes/Bartender/Readme.md': ['#e3e3e3', '#f4effc'],
+  'themes/Ice/Readme.md': ['#e3e3e3', '#f4effc'],
   'themes/JetBrains/squirrelsong-light/resources/theme/Squirrelsong Light.theme.json':
     [
       '#1d1d1f',
