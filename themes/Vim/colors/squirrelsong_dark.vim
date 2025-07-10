@@ -1,6 +1,6 @@
 " =============================================================================
-" Name:         Squirrelsong Light
-" Description:  Low contrast light theme for web developers.
+" Name:         Squirrelsong Dark
+" Description:  Low contrast dark theme for web developers.
 " URL:          https://github.com/sapegin/squirrelsong/
 " License:      MIT
 " =============================================================================
