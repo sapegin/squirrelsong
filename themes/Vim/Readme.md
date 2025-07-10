@@ -1,4 +1,4 @@
-# Squirrelsong Light Theme for [Vim](https://www.vim.org)
+# Squirrelsong Theme for [Vim](https://www.vim.org)
 
 Also works in: [Neovim](https://neovim.io).
 
