@@ -4,6 +4,8 @@ Also works in: [Neovim](https://neovim.io).
 
 ![Squirrelsong Light theme for Neovim/Vim](screenshot-light.png)
 
+![Squirrelsong Dark theme for Neovim/Vim](screenshot-dark.png)
+
 In your Vim configuration, use `:colorscheme squirrelsong_light`.
 
 Set `g:squirrelsong_color_only` to `v:true` beforehand to disable additional styling like italic, bold, etc. This can help on some terminals and fonts that don't support them that well.
