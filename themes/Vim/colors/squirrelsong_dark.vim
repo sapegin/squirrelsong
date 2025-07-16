@@ -238,13 +238,13 @@ call extend(colors, {
 call extend(colors, {
     \ 'netrwDir': { 'link': 'Green' } ,
     \ 'netrwClassify': { 'link': 'Green' } ,
-    \ 'netrwLink': { 'link': 'Grey' } ,
+    \ 'netrwLink': { 'link': 'Gray' } ,
     \ 'netrwSymLink': { 'link': 'Fg' } ,
     \ 'netrwExe': { 'link': 'Red' } ,
-    \ 'netrwComment': { 'link': 'Grey' } ,
+    \ 'netrwComment': { 'link': 'Gray' } ,
     \ 'netrwList': { 'link': 'Yellow' } ,
     \ 'netrwHelpCmd': { 'link': 'Blue' } ,
-    \ 'netrwCmdSep': { 'link': 'Grey' } ,
+    \ 'netrwCmdSep': { 'link': 'Gray' } ,
     \ 'netrwVersion': { 'link': 'Purple' } ,
     \ })
 " }}}
