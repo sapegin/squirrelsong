@@ -46,7 +46,8 @@
     ]
   },
   "scripts": {
-    "publish": "vsce publish"
+    "publish": "vsce publish",
+    "publish:ovsx": "npx ovsx publish"
   },
   "devDependencies": {
     "vsce": "^2.9.1"

@@ -4,6 +4,8 @@ A low contrast dark theme for web developers.
 
 ![Squirrelsong Dark](https://github.com/sapegin/squirrelsong/raw/master/themes/VSCode/screenshot-dark.jpg)
 
+**Install from [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=sapegin.Theme-SquirrelsongDark) or [Open VSX Registry](https://open-vsx.org/extension/sapegin/Theme-SquirrelsongDark)**
+
 - Low contrast with great readability
 - Made for web developers
 - Monochrome Markdown styles
@@ -12,7 +14,6 @@ A low contrast dark theme for web developers.
 
 ## More information
 
-- [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=sapegin.Theme-SquirrelsongDark).
 - [GitHub repository](https://github.com/sapegin/squirrelsong).
 
 ## Sponsoring
