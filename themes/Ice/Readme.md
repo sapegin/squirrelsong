@@ -9,8 +9,8 @@
 2. Open **Ice Settings** (right click on the Ice icon in the menu bar).
 3. Select **Menu Bar Appearance**.
 4. Turn off **Use dynamic appearance**.
-4. Set **Tint** to **Solid** and click on the color box.
-5. Select the second tab (Color Sliders), and **RGB Sliders**.
-6. Put this value in the **Hex Value #** field: `#f4effc`.
-7. Close the color selection modal.
-8. Tweak other options to your liking like **Shadow** and **Border**.
+5. Set **Tint** to **Solid** and click on the color box.
+6. Select the second tab (Color Sliders), and **RGB Sliders**.
+7. Put this value in the **Hex Value #** field: `#f4effc`.
+8. Close the color selection modal.
+9. Tweak other options to your liking like **Shadow** and **Border**.
