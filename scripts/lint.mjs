@@ -15,11 +15,11 @@ import rgbHex from 'rgb-hex';
 import { cssColorNames } from './lib/cssColorNames.mjs';
 
 // TODO: Automatically switch between light/dark palette based on file name (*light* or *dark*)
-// TODO: Calculate number of colors found in each file
 // TODO: Terminal.app
 // TODO: Vivaldi (inside .zip file)
 
 let errorCount = 0;
+let fileCount = 0;
 
 const EXTENSIONS = [
   'alfredappearance',
@@ -39,15 +39,14 @@ const EXTENSIONS = [
   // 'terminal',
 ].join(',');
 
-const EXTRA_LIGHT_FILES = [
+const EXTRA_FILES = [
+  'themes/Bartender/Readme.md',
   'themes/Fzf/Readme.md',
   'themes/Ghostty/Squirrelsong Dark',
   'themes/Ice/Readme.md',
-  'themes/Bartender/Readme.md',
   'themes/macOS/Readme.md',
   'themes/Slack/Readme.md',
 ];
-const EXTRA_DARK_FILES = ['themes/Slack/Readme.md'];
 
 const IGNORES = [
   'package.json',
@@ -158,14 +157,10 @@ const EXCEPTIONS = {
       '#e7def5',
       '#ede7f6',
     ],
-  'themes/Slack/colors-light.json': [
-    // Slack system navigation: existing colors look too intense (this color isn't
-    // used as is by Slack but is "adjusted" and other colors are made based on
-    // this color)
-    '#d2ccdb',
-  ],
   'themes/Slack/Readme.md': [
-    // See comment above
+    // Slack system navigation: existing colors look too intense (this color
+    // isn't used as is by Slack but is "adjusted" and other colors are made
+    // based on this color)
     '#d2ccdb',
   ],
   'themes/WezTerm/squirrelsong-dark.toml': [
@@ -207,7 +202,9 @@ const CUSTOM_LINTERS = [
         return;
       }
 
-      for (const value of Object.values(theme)) {
+      const colors = Object.values(theme);
+
+      for (const value of colors) {
         // Each values is either [R, G, B] or `rgb(R, G, B)`
         const color = Array.isArray(value) ? value : cssRgbToValues(value);
         const [r, g, b] = color;
@@ -216,19 +213,8 @@ const CUSTOM_LINTERS = [
           achtung(`${hex} (${r}, ${g}, ${b})`);
         }
       }
-    },
-  },
-  {
-    // Slack
-    condition: (file) => file.endsWith('colors.json'),
-    lintFunction: (file, validColors, exceptions) => {
-      const theme = readJsonFile(file);
 
-      for (const color of theme) {
-        if (isValidHexColor(color, validColors, exceptions) === false) {
-          achtung(color);
-        }
-      }
+      done(colors.length);
     },
   },
   {
@@ -249,6 +235,8 @@ const CUSTOM_LINTERS = [
           achtung(`${color} (${r}, ${g}, ${b}, ${a})`);
         }
       }
+
+      done(colors.length);
     },
   },
   /*
@@ -276,6 +264,11 @@ const CUSTOM_LINTERS = [
 function achtung(value) {
   console.error(`🦀 Invalid color:`, value);
   errorCount++;
+}
+
+function done(numberOfColors) {
+  console.log(`   ${numberOfColors} colors found`);
+  fileCount++;
 }
 
 function readJsonFile(file) {
@@ -358,19 +351,19 @@ function lintJson(file, validColors, exceptions) {
     return;
   }
 
+  let numberOfColors = 0;
+
   scanObject(theme, (value) => {
-    if (isCssNamedColor(value)) {
-      // TODO: Skip named colors for now, they are only used in JetBrains
-      // achtung(value);
-      return;
-    }
     if (isHexColor(value)) {
+      numberOfColors++;
       const color = value.toLowerCase();
       if (isValidHexColor(color, validColors, exceptions) === false) {
         achtung(value);
       }
     }
   });
+
+  done(numberOfColors);
 }
 
 function lintText(file, validColors, exceptions) {
@@ -386,6 +379,8 @@ function lintText(file, validColors, exceptions) {
       achtung(color);
     }
   }
+
+  done(matches.length);
 }
 
 function lint(root, validColors, extraFiles) {
@@ -436,11 +431,11 @@ const darkPalette = readJsonFile('dark/palette.json');
 lint(
   'themes',
   [...Object.values(lightPalette), ...Object.values(darkPalette)],
-  [...EXTRA_LIGHT_FILES, ...EXTRA_DARK_FILES],
+  EXTRA_FILES,
 );
 
 console.log();
 console.log();
-console.log(`[LINT] ${errorCount} errors found 🦜`);
+console.log(`[LINT] ${errorCount} errors in ${fileCount} files found 🦜`);
 
 process.exit(errorCount === 0 ? 0 : 1);
