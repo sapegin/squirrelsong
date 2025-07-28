@@ -27,7 +27,6 @@
   },
   "dependencies": {
     "adm-zip": "^0.5.14",
-    "css-color-names": "^1.0.1",
     "glob": "^11.0.0",
     "hex-rgb": "^5.0.0",
     "lodash": "^4.17.21",
