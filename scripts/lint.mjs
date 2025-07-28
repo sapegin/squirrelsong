@@ -200,7 +200,7 @@ const CUSTOM_LINTERS = [
       const colors = Object.values(theme);
 
       for (const value of colors) {
-        // Each values is either [R, G, B] or `rgb(R, G, B)`
+        // Each value is either [R, G, B] or `rgb(R, G, B)`
         const color = Array.isArray(value) ? value : cssRgbToValues(value);
         const [r, g, b] = color;
         const hex = `#${rgbHex(r, g, b)}`;
