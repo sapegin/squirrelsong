@@ -1,8 +1,5 @@
 /**
  * Lint themes to ensure they only use colors from the palette
- *
- * NOTE: The linter doesn’t differentiate light and dark themes, and colors from
- * light themes are technically allowed in dark themes, and vice versa.
  */
 
 import fs from 'node:fs';
@@ -12,9 +9,7 @@ import { glob } from 'glob';
 import stripJsonComments from 'strip-json-comments';
 import terminalLink from 'terminal-link';
 import rgbHex from 'rgb-hex';
-import { cssColorNames } from './lib/cssColorNames.mjs';
 
-// TODO: Automatically switch between light/dark palette based on file name (*light* or *dark*)
 // TODO: Terminal.app
 // TODO: Vivaldi (inside .zip file)
 
@@ -289,13 +284,6 @@ function cssRgbToValues(input) {
     .map((x) => Number.parseFloat(x));
 }
 
-function isCssNamedColor(value) {
-  if (typeof value !== 'string') {
-    return false;
-  }
-  return cssColorNames[value.toLowerCase()] !== undefined;
-}
-
 function isHexColor(value) {
   if (typeof value !== 'string') {
     return false;
@@ -324,12 +312,30 @@ function isValidHexColor(value, validColors, exceptions) {
   return false;
 }
 
+/** Get a custom linter if available based on file name */
 function getCustomLinter(file) {
   for (const { condition, lintFunction } of CUSTOM_LINTERS) {
     if (condition(file)) {
       return lintFunction;
     }
   }
+}
+
+/**
+ * Get the appropriate palette based on file name. All available colors as a
+ * fallback.
+ */
+function getPalette(filename, lightColors, darkColors) {
+  const lowerCaseFilename = filename.toLowerCase();
+
+  if (lowerCaseFilename.includes('light')) {
+    return lightColors;
+  }
+  if (lowerCaseFilename.includes('dark')) {
+    return darkColors;
+  }
+
+  return [...lightColors, ...darkColors];
 }
 
 function scanObject(object, callback) {
@@ -383,21 +389,22 @@ function lintText(file, validColors, exceptions) {
   done(matches.length);
 }
 
-function lint(root, validColors, extraFiles) {
-  const themes = [...glob.sync(`${root}/**/*.{${EXTENSIONS}}`), ...extraFiles];
-
-  const themesSorted = themes.toSorted((a, b) => a.localeCompare(b, 'en'));
+function lint(files, lightColors, darkColors) {
+  const themesSorted = files.toSorted((a, b) => a.localeCompare(b, 'en'));
 
   for (const file of themesSorted) {
     const filename = path.basename(file);
     if (IGNORES.includes(filename) || file.includes('node_modules')) {
       continue;
     }
+
     console.log();
     console.log(
       '👉',
       terminalLink(file, `vscode://file//${process.cwd()}/${file}`),
     );
+
+    const validColors = getPalette(filename, lightColors, darkColors);
 
     const exceptions = EXCEPTIONS[file] ?? [];
 
@@ -426,13 +433,10 @@ console.log();
 console.log();
 console.log('[LINT] Linting themes... 🌞🌚');
 
+const themes = [...glob.sync(`themes/**/*.{${EXTENSIONS}}`), ...EXTRA_FILES];
 const lightPalette = readJsonFile('light/palette.json');
 const darkPalette = readJsonFile('dark/palette.json');
-lint(
-  'themes',
-  [...Object.values(lightPalette), ...Object.values(darkPalette)],
-  EXTRA_FILES,
-);
+lint(themes, Object.values(lightPalette), Object.values(darkPalette));
 
 console.log();
 console.log();
