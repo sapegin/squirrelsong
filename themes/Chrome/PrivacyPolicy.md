@@ -14,7 +14,7 @@ If there are substantive<sup>1</sup> changes made to this privacy policy, I will
 
 ## Feedback
 
-If you have questions or concerns about this privacy policy, feel free to [send me an email](mailto:artem@sapegin.ru) or [file an issue](https://github.com/sapegin/squirrelsong/issues/new/choose) to this repository.
+If you have questions or concerns about this privacy policy, feel free to [send me an email](mailto:artem@sapegin.me) or [file an issue](https://github.com/sapegin/squirrelsong/issues/new/choose) to this repository.
 
 ---
 

@@ -10,7 +10,7 @@
   <category>UI</category>
 
   <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-  <vendor email="artem@sapegin.ru" url="https://sapegin.me/">Artem Sapegin</vendor>
+  <vendor email="artem@sapegin.me" url="https://sapegin.me/">Artem Sapegin</vendor>
 
   <idea-version since-build="191"/>
 
