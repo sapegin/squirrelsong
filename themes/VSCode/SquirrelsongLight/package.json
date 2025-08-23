@@ -2,7 +2,7 @@
   "name": "Theme-SquirrelsongLight",
   "displayName": "Squirrelsong Light Theme",
   "description": "Low-contrast light color theme",
-  "version": "3.2.16",
+  "version": "3.3.0",
   "publisher": "sapegin",
   "author": {
     "name": "Artem Sapegin",
@@ -45,6 +45,11 @@
         "label": "Squirrelsong Light",
         "uiTheme": "vs",
         "path": "./SquirrelsongLight.color-theme.json"
+      },
+      {
+        "label": "Squirrelsong Light High Contrast (no italics)",
+        "uiTheme": "vs",
+        "path": "./SquirrelsongLightHighContrastNoItalics.color-theme.json"
       },
       {
         "label": "Squirrelsong Light (Dark Terminal)",

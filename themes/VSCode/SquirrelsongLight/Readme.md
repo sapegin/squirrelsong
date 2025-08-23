@@ -56,6 +56,10 @@ Here are my settings related to theming and typography:
 
 ![Squirrelsong Light: opening files](https://github.com/sapegin/squirrelsong/raw/HEAD/themes/VSCode/screenshots/screenshot-files.jpg)
 
+## High contrast version
+
+![Squirrelsong Light: opening files](https://github.com/sapegin/squirrelsong/raw/HEAD/themes/VSCode/screenshots/screenshot-high-contrast-no-italics.png)
+
 ## How to make the integrated terminal dark?
 
 To use the [Squirrelsong Dark](https://marketplace.visualstudio.com/items?itemName=sapegin.Theme-SquirrelsongDark) theme in the integrated terminal, choose the `Squirrelsong Light (Dark Terminal)` theme instead of the `Squirrelsong Light`.

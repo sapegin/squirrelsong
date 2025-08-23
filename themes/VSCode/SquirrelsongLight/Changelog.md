@@ -1,5 +1,9 @@
 # Changelog
 
+### 3.3.0
+
+- Add High Contrast theme (light, no italics)
+
 ## 3.0.16
 
 - Tweak notebook editor cell background to increase contrast.
