@@ -6,9 +6,12 @@
 
 ## Available themes
 
+- [Cursor](../themes/Cursor)
+- [Fastmail](../themes/Fastmail)
 - [Ghostty](../themes/Ghostty)
 - [iTerm2](../themes/iTerm2)
 - [Midnight Commander](../themes/Midnight%20Commander)
+- [Pearcleaner](../themes/Pearcleaner)
 - [Prism.js](../themes/PrismJs)
 - [Slack](../themes/Slack)
 - [Sublime Text](../themes/Sublime%20Text)

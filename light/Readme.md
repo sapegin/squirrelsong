@@ -6,6 +6,8 @@
 
 - [Alfred](../themes/Alfred)
 - [Bear](../themes/Bear)
+- [Cursor](../themes/Cursor)
+- [Fastmail](../themes/Fastmail)
 - [Firefox](../themes/Firefox)
 - [Google Chrome](../themes/Chrome)
 - [Google Chrome DevTools](../themes/Chrome%20DevTools)
@@ -13,6 +15,7 @@
 - [JetBrains](../themes/JetBrains)
 - [Marta File Manager](../themes/Marta)
 - [Nimble Commander](../themes/Nimble%20Commander)
+- [Pearcleaner](../themes/Pearcleaner)
 - [Peek](../themes/Peek)
 - [Prism.js](../themes/PrismJs)
 - [Slack](../themes/Slack)
