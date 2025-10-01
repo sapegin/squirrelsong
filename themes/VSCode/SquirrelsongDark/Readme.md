@@ -1,8 +1,12 @@
 # Squirrelsong Dark Theme 🐿️
 
-A low contrast dark theme for web developers.
+[![Preview in vscode.dev](https://img.shields.io/badge/Preview%20in-vscode.dev-brightgreen)](https://vscode.dev/editor/theme/sapegin.Theme-SquirrelsongDark)
 
 ![Squirrelsong Dark](https://github.com/sapegin/squirrelsong/raw/master/themes/VSCode/screenshot-dark.jpg)
+
+![Squirrelsong Deep Purple Dark](https://github.com/sapegin/squirrelsong/raw/master/themes/VSCode/screenshot-dark-dp.jpg)
+
+A low-contrast, non-distracting and neurodiverse-friendly theme that is comfortable for all-day coding without sensory overstimulation, and perfect for developers with ADHD, autism, or highly sensitive people (HSP). No bright colors, no super-high contrast, no distractions. Soft colors but still enough legibility for different part of the code and UI.
 
 **Install from [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=sapegin.Theme-SquirrelsongDark) or [Open VSX Registry](https://open-vsx.org/extension/sapegin/Theme-SquirrelsongDark)**
 
@@ -11,10 +15,62 @@ A low contrast dark theme for web developers.
 - Monochrome Markdown styles
 - Consistent highlighting for different programming languages
 - Non-distracting UI
+- Two variants: brown and purple
 
-## More information
+## Installation
 
-- [GitHub repository](https://github.com/sapegin/squirrelsong).
+1. Open **Extensions** sidebar panel in VS Code: **View** → **Extensions**.
+2. Search for `Squirrelsong Dark`.
+3. Click **Install** to install it.
+4. Choose **Code** → **Preferences** → **Color Theme** → `Squirrelsong Dark`.
+
+## Recommended settings
+
+I recommend to also install [Catppuccin Icons](https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc-icons) icons pack (I use the `Latte` variant).
+
+Here are my settings related to theming and typography:
+
+```js
+{
+  // This is all that matters
+  'workbench.colorTheme': 'Squirrelsong Dark',
+  // Monolisa (https://www.monolisa.dev) is a paid font but I love it,
+  // Hack and JetBrains Mono are good free alternatives
+  'editor.fontFamily': 'MonoLisa',
+  // Enable contextual alternative but disable ligatures
+  'editor.fontLigatures': "'calt' on, 'liga' off",
+  'editor.fontSize': 17,
+  'editor.lineHeight': 1.6,
+  'editor.cursorBlinking': 'solid',
+  'editor.cursorStyle': 'line',
+  'editor.cursorWidth': 2,
+  'editor.semanticHighlighting.enabled': true,
+  'window.zoomLevel': 0.15,
+  'workbench.fontAliasing': 'auto',
+  // If you also install Catppuccin Icons
+  'workbench.iconTheme': 'catppuccin-latte',
+  'catppuccin-icons.hidesExplorerArrows': true
+}
+```
+
+## Try Squirrelsong for other apps
+
+[Squirrelsong is also available](https://sapegin.me/squirrelsong/) for Alfred, CotEditor, Chrome, iTerm2, JetBrains, Marta File Manager, Midnight Commander, Nimble Commander, Prism, Slack, Sublime Text, Telegram, Terminal.app, Vivaldi, Warp, WezTerm, and more…
+
+## You may also like
+
+Check out my other Visual Studio Code extensions:
+
+- [Squirrelsong Dark Theme](https://marketplace.visualstudio.com/items?itemName=sapegin.Theme-SquirrelsongDark): low contrast non-distracting dark theme for web developers
+- [Emoji Console Log](https://marketplace.visualstudio.com/items?itemName=sapegin.emoji-console-log): insert `console.log()` statements with a random emoji
+- [Grim Wrapper](https://marketplace.visualstudio.com/items?itemName=sapegin.grim-wrapper): minimalist comment, Markdown, and plain text wrapping
+- [Just Blame](https://marketplace.visualstudio.com/items?itemName=sapegin.just-blame): Git Blame annotations, inspired by JetBrains editors
+- [Mini Markdown](https://marketplace.visualstudio.com/items?itemName=sapegin.mini-markdown): minimalist kit for comfortable Markdown writing
+- [New File Now](https://marketplace.visualstudio.com/items?itemName=sapegin.new-file-now): create new files from the command palette
+- [Notebox](https://marketplace.visualstudio.com/items?itemName=sapegin.notebox): take quick notes in the bottom panel
+- [Reveal in Ghostty](https://marketplace.visualstudio.com/items?itemName=sapegin.reveal-in-ghostty): reveal current project or folder in Ghostty
+- [Reveal in Nimble Commander](https://marketplace.visualstudio.com/items?itemName=sapegin.reveal-in-nimble-commander): reveal current project or folder in Nimble Commander
+- [Todo Tomorrow](marketplace.visualstudio.com/items?itemName=sapegin.todo-tomorrow): highlight `TODO`, `HACK`, `FIXME`, etc. comments
 
 ## Sponsoring
 

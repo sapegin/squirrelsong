@@ -1,0 +1,18 @@
+{
+  "black": "gray03",
+  "brightBlack": "gray06",
+  "white": "gray0c",
+  "brightWhite": "gray0e",
+  "blue": "blue",
+  "brightBlue": "blueContrast",
+  "cyan": "teal",
+  "brightCyan": "tealContrast",
+  "green": "green",
+  "brightGreen": "greenContrast",
+  "magenta": "purple",
+  "brightMagenta": "purpleContrast",
+  "red": "red",
+  "brightRed": "redContrast",
+  "yellow": "yellow",
+  "brightYellow": "yellowContrast"
+}

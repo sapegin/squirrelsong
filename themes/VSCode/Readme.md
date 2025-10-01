@@ -4,6 +4,8 @@
 
 ![Squirrelsong Dark theme for Visual Studio Code](screenshot-dark.jpg)
 
+![Squirrelsong Dark Deep Purple theme for Visual Studio Code](screenshot-dark-dp.jpg)
+
 ## Installation from Visual Studio Marketplace
 
 Follow the instructions: [light theme](https://marketplace.visualstudio.com/items?itemName=sapegin.Theme-SquirrelsongLight), [dark theme](https://marketplace.visualstudio.com/items?itemName=sapegin.Theme-SquirrelsongDark).

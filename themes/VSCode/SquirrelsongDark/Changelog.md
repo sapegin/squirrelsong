@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.1.0
+
+- Generate the dark theme from the light theme.
+- Add a new Dark Deep Purple version.
+
 ## 3.0.1
 
 - Darker find match background.

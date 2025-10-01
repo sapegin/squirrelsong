@@ -50,6 +50,11 @@
         "label": "Squirrelsong Light (Dark Terminal)",
         "uiTheme": "vs",
         "path": "./SquirrelsongLightDarkTerminal.color-theme.json"
+      },
+      {
+        "label": "Squirrelsong Light (Dark Deep Purple Terminal)",
+        "uiTheme": "vs",
+        "path": "./SquirrelsongLightDarkDeepPurpleTerminal.color-theme.json"
       }
     ]
   },

@@ -4,6 +4,7 @@
 
 - Add lots of new colors: top activity bar icons, source control graph, charts (untested – how?).
 - Add more colors: terminal, debugging.
+- Add a new version with Dark Deep Purple console.
 
 ## 3.0.16
 
