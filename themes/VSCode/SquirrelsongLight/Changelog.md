@@ -2,7 +2,8 @@
 
 ## 3.1.0
 
-- Add lots of new colors: top activity bar icons, debugging, source control graph, charts (untested – how?)
+- Add lots of new colors: top activity bar icons, source control graph, charts (untested – how?).
+- Add more colors: terminal, debugging.
 
 ## 3.0.16
 
