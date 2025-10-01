@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.0
+
+- Add lots of new colors: top activity bar icons, debugging, source control graph, charts (untested – how?)
+
 ## 3.0.16
 
 - Tweak notebook editor cell background to increase contrast.
