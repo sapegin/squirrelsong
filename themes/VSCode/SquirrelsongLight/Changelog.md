@@ -1,28 +1,28 @@
 # Changelog
 
-## 3.1.0
+## 3.3.0
 
 - Add lots of new colors: top activity bar icons, source control graph, charts (untested – how?).
 - Add more colors: terminal, debugging.
 - Add a new version with Dark Deep Purple console.
 
-## 3.0.16
+## 3.2.16
 
 - Tweak notebook editor cell background to increase contrast.
 
-## 3.0.15
+## 3.2.15
 
 - Fix missing CSS property/value styles.
 
-## 3.0.14
+## 3.2.14
 
 - Fix missing theme files and readme.
 
-## 3.0.13
+## 3.2.13
 
 - Remove unnecessary files from the package.
 
-## 3.0.12
+## 3.2.12
 
 - Revert recent find match background change because it obscures selection.
 
