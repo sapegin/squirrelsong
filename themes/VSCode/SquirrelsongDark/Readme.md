@@ -17,6 +17,8 @@ A low-contrast, non-distracting and neurodiverse-friendly theme that is comforta
 - Non-distracting UI
 - Two variants: brown and purple
 
+[![Washing your code. A book on clean code for frontend developers](https://sapegin.me/images/washing-code-github.jpg)](https://sapegin.me/book/)
+
 ## Installation
 
 1. Open **Extensions** sidebar panel in VS Code: **View** → **Extensions**.
