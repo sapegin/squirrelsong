@@ -2,7 +2,7 @@
   "name": "Theme-SquirrelsongDark",
   "displayName": "Squirrelsong Dark Theme",
   "description": "Low-contrast dark color theme",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "publisher": "sapegin",
   "author": {
     "name": "Artem Sapegin",
@@ -55,6 +55,7 @@
     ]
   },
   "scripts": {
+    "prepublish": "cd ../../../; node scripts/prepare-vscode.mjs",
     "publish": "vsce publish",
     "publish:ovsx": "npx ovsx publish"
   },
