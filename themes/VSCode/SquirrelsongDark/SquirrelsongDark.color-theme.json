@@ -161,7 +161,7 @@
     "editorBracketHighlight.foreground4": "#9672d4",
     "editorBracketHighlight.foreground5": "#ac493e",
     "editorBracketHighlight.foreground6": "#d8a851",
-    "editorBracketMatch.background": "#97576f",
+    "editorBracketMatch.background": "#4d2e3a",
     "editorBracketMatch.border": "#29201900",
     "editorCodeLens.foreground": "#755945",
     "editorCommentsWidget.rangeActiveBackground": "#57413133",
@@ -604,7 +604,7 @@
     },
     {
       "settings": {
-        "foreground": "#755945",
+        "foreground": "#6b503c",
         "fontStyle": ""
       },
       "scope": [

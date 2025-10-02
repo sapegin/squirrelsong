@@ -100,7 +100,7 @@
 |                                                                                                           | Where                             | Color        | Hex     | Style  |
 | --------------------------------------------------------------------------------------------------------- | --------------------------------- | ------------ | ------- | ------ |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=9e8e7e" width="20" height="20" alt=""> | Punctuation                       | gray09       | #9e8e7e |        |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=755945" width="20" height="20" alt=""> | Comment                           | gray07       | #755945 |        |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=6b503c" width="20" height="20" alt=""> | Comment                           | gray06       | #6b503c |        |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=7f61b3" width="20" height="20" alt=""> | Keyword, tag name                 | purple       | #7f61b3 | Bold   |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=b18433" width="20" height="20" alt=""> | Number, boolean                   | orange       | #b18433 |        |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=5993c2" width="20" height="20" alt=""> | Property, attribute name          | blue         | #5993c2 |        |

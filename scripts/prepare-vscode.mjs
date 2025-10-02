@@ -56,9 +56,9 @@ const LIGHT_TO_DARK = {
   gray0f: 'gray03',
   white: 'gray02',
   brightPinkLight: 'brightPinkDark',
-  brightPinkLighter: 'brightPinkDark', // ??
+  brightPinkLighter: 'brightPinkDarker',
   brightYellowLight: 'brightYellowDark',
-  brightYellowLighter: 'brightYellowDark', // ??
+  brightYellowLighter: 'brightYellowDark',
 };
 const LIGHT_TO_DARK_HEX = {
   '#ffffff': '#000000',
@@ -108,6 +108,14 @@ darkJson.colors['terminal.inactiveSelectionBackground'] =
   darkJson.colors['editor.inactiveSelectionBackground'];
 darkJson.colors['terminal.selectionBackground'] =
   darkJson.colors['editor.selectionBackground'];
+darkJson.tokenColors = darkJson.tokenColors.map((x) =>
+  x.scope.includes('comment')
+    ? {
+        settings: { foreground: darkPalette.gray06, fontStyle: '' },
+        scope: x.scope,
+      }
+    : x,
+);
 
 // Update terminal colors using ANSI palette (gray)
 for (const [key] of Object.entries(darkJson.colors)) {
@@ -174,6 +182,17 @@ darkDpJson.colors['terminal.inactiveSelectionBackground'] =
   darkDpJson.colors['editor.inactiveSelectionBackground'];
 darkDpJson.colors['terminal.selectionBackground'] =
   darkDpJson.colors['editor.selectionBackground'];
+darkDpJson.tokenColors = darkDpJson.tokenColors.map((x) =>
+  x.scope.includes('comment')
+    ? {
+        settings: {
+          foreground: darkPalette.purple06,
+          fontStyle: '',
+        },
+        scope: x.scope,
+      }
+    : x,
+);
 
 // Update terminal colors using ANSI palette (purple)
 for (const [key] of Object.entries(darkDpJson.colors)) {

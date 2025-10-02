@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.1.3
+
+- Darken comments a bit.
+- Fix matching bracket highlighting.
+
 ## 3.1.2
 
 - Slightly reduce saturation of bright purple shades.
