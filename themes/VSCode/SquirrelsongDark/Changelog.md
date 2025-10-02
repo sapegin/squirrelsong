@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.1.4
+
+- Add missing settings colors.
+- Tweak link and input colors.
+
 ## 3.1.3
 
 - Darken comments a bit.

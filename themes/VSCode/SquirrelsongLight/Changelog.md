@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.3.3
+
+- Add missing settings colors.
+- Tweak link and input colors.
+
 ## 3.3.2
 
 - Slightly reduce saturation of bright purple shades in dark terminal themes.

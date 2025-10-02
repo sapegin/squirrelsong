@@ -108,6 +108,10 @@ darkJson.colors['terminal.inactiveSelectionBackground'] =
   darkJson.colors['editor.inactiveSelectionBackground'];
 darkJson.colors['terminal.selectionBackground'] =
   darkJson.colors['editor.selectionBackground'];
+darkJson.colors['textLink.foreground'] = darkPalette.blue;
+darkJson.colors['textLink.activeForeground'] = darkPalette.blueContrast;
+darkJson.colors['editor.placeholder.foreground'] = darkPalette.gray07;
+darkJson.colors['input.placeholderForeground'] = darkPalette.gray07;
 darkJson.tokenColors = darkJson.tokenColors.map((x) =>
   x.scope.includes('comment')
     ? {
@@ -182,6 +186,10 @@ darkDpJson.colors['terminal.inactiveSelectionBackground'] =
   darkDpJson.colors['editor.inactiveSelectionBackground'];
 darkDpJson.colors['terminal.selectionBackground'] =
   darkDpJson.colors['editor.selectionBackground'];
+darkDpJson.colors['textLink.foreground'] = darkPalette.blue;
+darkDpJson.colors['textLink.activeForeground'] = darkPalette.blueContrast;
+darkDpJson.colors['editor.placeholder.foreground'] = darkPalette.purple07;
+darkDpJson.colors['input.placeholderForeground'] = darkPalette.purple07;
 darkDpJson.tokenColors = darkDpJson.tokenColors.map((x) =>
   x.scope.includes('comment')
     ? {
