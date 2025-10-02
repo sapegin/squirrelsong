@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.3.2
+
+- Slightly reduce saturation of bright purple shades in dark terminal themes.
+
 ## 3.3.1
 
 - Fix terminal dark terminal colors.

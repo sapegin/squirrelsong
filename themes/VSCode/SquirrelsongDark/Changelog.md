@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.2
+
+- Slightly reduce saturation of bright purple shades.
+
 ## 3.1.1
 
 - Fix terminal selection color for Dark Deep Purple version.
