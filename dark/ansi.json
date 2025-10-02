@@ -14,5 +14,8 @@
   "red": "red",
   "brightRed": "redContrast",
   "yellow": "yellow",
-  "brightYellow": "yellowContrast"
+  "brightYellow": "yellowContrast",
+  "foreground": "gray0a",
+  "background": "gray02",
+  "selection": "brightYellowDark"
 }

@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.3.1
+
+- Fix terminal dark terminal colors.
+
 ## 3.3.0
 
 - Add lots of new colors: top activity bar icons, source control graph, charts (untested – how?).

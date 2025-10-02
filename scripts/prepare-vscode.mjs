@@ -13,7 +13,7 @@ const LIGHT_DIR = 'themes/VSCode/SquirrelsongLight';
 const DARK_DIR = 'themes/VSCode/SquirrelsongDark';
 const BASE_LIGHT = `${LIGHT_DIR}/SquirrelsongLight.color-theme.json`;
 const GENERATED_DARK = `${DARK_DIR}/SquirrelsongDark.color-theme.json`;
-const GENERATED_DP_DARK = `${DARK_DIR}/SquirrelsongDeepPurpleDark.color-theme.json`;
+const GENERATED_DP_DARK = `${DARK_DIR}/SquirrelsongDarkDeepPurple.color-theme.json`;
 const LIGHT_PALETTE = `light/palette.json`;
 const DARK_PALETTE = `dark/palette.json`;
 const DARK_ANSI_PALETTE = `dark/ansi.json`;
@@ -36,9 +36,6 @@ const baseLight = readJsonFile(BASE_LIGHT);
 // ------------ 8< -- 8< ------------
 
 // Create Dark themes based on the light one
-
-console.log();
-console.log('[VSCODE] Preparing dark theme… 🌚');
 
 const LIGHT_TO_DARK = {
   gray00: 'gray0f', // Unused in light palette
@@ -67,6 +64,9 @@ const LIGHT_TO_DARK_HEX = {
   '#ffffff': '#000000',
   '#000000': '#ffffff',
 };
+
+console.log();
+console.log('[VSCODE] Preparing dark theme… 🌚');
 
 const darkText = baseLightText.replaceAll(/#[0-9a-f]{6}/gi, (hexColor) => {
   // Find the color name in light palette that matches this HEX value
@@ -103,12 +103,26 @@ const darkJson = JSON.parse(stripJsonComments(darkText));
 darkJson.name = 'Squirrelsong Dark';
 darkJson.type = 'dark';
 
+// Custom colors
+darkJson.colors['terminal.inactiveSelectionBackground'] =
+  darkJson.colors['editor.inactiveSelectionBackground'];
+darkJson.colors['terminal.selectionBackground'] =
+  darkJson.colors['editor.selectionBackground'];
+
 // Update terminal colors using ANSI palette (gray)
 for (const [key] of Object.entries(darkJson.colors)) {
   if (key.startsWith('terminal.')) {
     // Extract color name from key (e.g., 'terminal.ansiBrightBlack' -> 'brightBlack')
     const colorKey = key.replace('terminal.ansi', '').replace('terminal.', '');
     const ansiColorName = colorKey.charAt(0).toLowerCase() + colorKey.slice(1);
+
+    console.log(
+      '👉',
+      colorKey,
+      '→',
+      ansiColorName,
+      darkAnsiPalette[ansiColorName] ? '✅' : '❌',
+    );
 
     if (darkAnsiPalette[ansiColorName]) {
       const paletteColorName = darkAnsiPalette[ansiColorName];
@@ -126,14 +140,20 @@ for (const [key] of Object.entries(darkJson.colors)) {
 // Save the file
 writeJsonFile(GENERATED_DARK, darkJson);
 
+console.log();
+console.log('[VSCODE] Preparing dark deep purple theme… 🌚');
+
 const darkDpText = darkText.replaceAll(/#[0-9a-f]{6}/gi, (hexColor) => {
   // Find the color name in dark palette that matches this HEX value
   for (const [colorName, darkHex] of Object.entries(darkPalette)) {
     if (
       darkHex.toLowerCase() === hexColor.toLowerCase() &&
-      colorName.startsWith('gray')
+      (colorName.startsWith('gray') || colorName.startsWith('brightYellow'))
     ) {
-      const purpleColorName = colorName.replace('gray', 'purple');
+      const purpleColorName = colorName
+        .replace('gray', 'purple')
+        .replace(/^brightYellow$/, 'brightYellowPurple')
+        .replace(/^brightYellowDark$/, 'brightYellowDarkPurple');
       if (darkPalette[purpleColorName]) {
         return darkPalette[purpleColorName];
       }
@@ -146,23 +166,37 @@ const darkDpText = darkText.replaceAll(/#[0-9a-f]{6}/gi, (hexColor) => {
 const darkDpJson = JSON.parse(stripJsonComments(darkDpText));
 
 // Update metadata
-darkJson.name = 'Squirrelsong Dark Deep Purple';
-darkJson.type = 'dark';
+darkDpJson.name = 'Squirrelsong Dark Deep Purple';
+darkDpJson.type = 'dark';
+
+// Custom colors
+darkDpJson.colors['terminal.inactiveSelectionBackground'] =
+  darkDpJson.colors['editor.inactiveSelectionBackground'];
+darkDpJson.colors['terminal.selectionBackground'] =
+  darkDpJson.colors['editor.selectionBackground'];
 
 // Update terminal colors using ANSI palette (purple)
-for (const [key] of Object.entries(darkJson.colors)) {
+for (const [key] of Object.entries(darkDpJson.colors)) {
   if (key.startsWith('terminal.')) {
     // Extract color name from key (e.g., 'terminal.ansiBrightBlack' -> 'brightBlack')
     const colorKey = key.replace('terminal.ansi', '').replace('terminal.', '');
     const ansiColorName = colorKey.charAt(0).toLowerCase() + colorKey.slice(1);
 
     if (darkAnsiPalette[ansiColorName]) {
-      const paletteColorName = darkAnsiPalette[ansiColorName].replace(
-        'gray',
-        'purple',
+      const paletteColorName = darkAnsiPalette[ansiColorName]
+        .replace('gray', 'purple')
+        .replace(/^brightYellow$/, 'brightYellowPurple')
+        .replace(/^brightYellowDark$/, 'brightYellowDarkPurple');
+      console.log(
+        '👉',
+        colorKey,
+        '→',
+        paletteColorName,
+        darkPalette[paletteColorName] ? '✅' : '❌',
       );
+
       if (darkPalette[paletteColorName]) {
-        darkJson.colors[key] = darkPalette[paletteColorName];
+        darkDpJson.colors[key] = darkPalette[paletteColorName];
       } else {
         console.error(
           `⛔️ Color not found in the dark palette: ${paletteColorName}`,

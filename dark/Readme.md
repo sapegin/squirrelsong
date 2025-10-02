@@ -113,12 +113,12 @@
 
 ### UI colors
 
-|                                                                                                           | Where                     | Color  | Hex     | Comments |
-| --------------------------------------------------------------------------------------------------------- | ------------------------- | ------ | ------- | -------- |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ad9c8b" width="20" height="20" alt=""> | Text foreground           | gray0a | #ad9c8b |          |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=352a21" width="20" height="20" alt=""> | Text background           | gray03 | #352a21 |          |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=574131" width="20" height="20" alt=""> | Selection background      | gray05 | #574131 |          |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=453327" width="20" height="20" alt=""> | Line highlight background | gray04 | #453327 |          |
+|                                                                                                           | Where                     | Color            | Hex     | Comments |
+| --------------------------------------------------------------------------------------------------------- | ------------------------- | ---------------- | ------- | -------- |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ad9c8b" width="20" height="20" alt=""> | Text foreground           | gray0a           | #ad9c8b |          |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=292019" width="20" height="20" alt=""> | Text background           | gray02           | #292019 |          |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=41352a" width="20" height="20" alt=""> | Selection background      | brightYellowDark | #41352a |          |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=453327" width="20" height="20" alt=""> | Line highlight background | gray04           | #453327 |          |
 
 ### ANSI colors
 

@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.1
+
+- Fix terminal selection color for Dark Deep Purple version.
+
 ## 3.1.0
 
 - Generate the dark theme from the light theme.

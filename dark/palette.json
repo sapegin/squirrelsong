@@ -61,6 +61,8 @@
   "yellowContrast": "#e2c358",
   "brightPink": "#ca5a83",
   "brightPinkDark": "#97576f",
-  "brightYellow": "#574131",
-  "brightYellowDark": "#41352a"
+  "brightYellow": "#574538",
+  "brightYellowDark": "#41352a",
+  "brightYellowPurple": "#4c3c6b",
+  "brightYellowDarkPurple": "#3f3259"
 }

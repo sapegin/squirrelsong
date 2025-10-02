@@ -16,6 +16,7 @@
     "update": "node scripts/update.mjs",
     "prepare-extensions": "node scripts/prepare-extensions.mjs",
     "prepare-vscode": "node scripts/prepare-vscode.mjs",
+    "prepare-terminals": "node scripts/prepare-terminals.mjs",
     "lint": "eslint . --cache --fix",
     "lint:themes": "node scripts/lint.mjs",
     "test": "npm run lint && npm run lint:themes"
@@ -31,6 +32,7 @@
     "hex-rgb": "^5.0.0",
     "lodash": "^4.17.21",
     "rgb-hex": "^4.1.0",
+    "smpltmpl": "^1.0.2",
     "strip-json-comments": "^5.0.2",
     "terminal-link": "^4.0.0"
   }
