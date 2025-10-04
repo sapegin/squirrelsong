@@ -60,10 +60,10 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=bfd1de" width="20" height="20" alt=""> | blueLight           | #bfd1de | 191, 209, 222 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=dfe8ef" width="20" height="20" alt=""> | blueLighter         | #dfe8ef | 223, 232, 239 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=527b98" width="20" height="20" alt=""> | blueContrast        | #527b98 | 82, 123, 152  |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ac9bc5" width="20" height="20" alt=""> | purple              | #ac9bc5 | 172, 155, 197 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=d7cfe3" width="20" height="20" alt=""> | purpleLight         | #d7cfe3 | 215, 207, 227 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ebe7f1" width="20" height="20" alt=""> | purpleLighter       | #ebe7f1 | 235, 231, 241 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=806f9b" width="20" height="20" alt=""> | purpleContrast      | #806f9b | 128, 111, 155 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ac9bc5" width="20" height="20" alt=""> | magenta             | #ac9bc5 | 172, 155, 197 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=d7cfe3" width="20" height="20" alt=""> | magentaLight        | #d7cfe3 | 215, 207, 227 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ebe7f1" width="20" height="20" alt=""> | magentaLighter      | #ebe7f1 | 235, 231, 241 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=806f9b" width="20" height="20" alt=""> | magentaContrast     | #806f9b | 128, 111, 155 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=d67e76" width="20" height="20" alt=""> | red                 | #d67e76 | 214, 126, 118 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=e5ada8" width="20" height="20" alt=""> | redLight            | #e5ada8 | 229, 173, 168 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=f3dcda" width="20" height="20" alt=""> | redLighter          | #f3dcda | 243, 220, 218 |

@@ -2,7 +2,7 @@
   --black: #78737d;
   --gray: #9c96a2;
   --blue: #80a4be;
-  --purple: #ac9bc5;
+  --magenta: #ac9bc5;
   --teal: #5f9b8d;
   --tealLight: #adccc5;
   --tealLighter: #d6e6e2;
@@ -17,7 +17,7 @@
   --yellowLighter: #f7f0de;
   --yellowContrast: #b39119;
   --blueContrast: #527b98;
-  --purpleContrast: #806f9b;
+  --magentaContrast: #806f9b;
   --brightYellow: #f5da70;
   --gray04: #4c4b4e;
   --gray07: #78737d;
@@ -36,7 +36,7 @@
   --source-code-font-family: MonoLisa, Menlo, monospace;
   --source-code-font-size: 12px;
   /* Syntax highlighting */
-  --color-token-keyword: var(--purple);
+  --color-token-keyword: var(--magenta);
   --color-token-variable: var(--blue);
   --color-token-property: var(--blue);
   --color-token-definition: var(--blue);
@@ -45,7 +45,7 @@
   --color-token-atom: var(--orange);
   --color-token-comment: var(--gray);
   --js-def: var(--blue);
-  --dom-tag-name-color: var(--purple);
+  --dom-tag-name-color: var(--magenta);
   --color-syntax-1: var(--green);
   --color-syntax-3: var(--orange);
   /* Less distracting UI colors */
@@ -59,7 +59,7 @@
   --dev-tools-link-hover: var(--blueContrast);
   --accent-foreground-rest: var(--blueContrast);
   --accent-foreground-hover: var(--blueContrast);
-  --override-node-text-label-color: var(--purple);
+  --override-node-text-label-color: var(--magenta);
   --override-node-text-class-color: var(--blue);
   --override-node-text-id-color: var(--blue);
   --override-error-text-color: var(--redContrast);
@@ -92,12 +92,12 @@
   color: var(--black) !important;
 }
 .source-code .webkit-html-tag {
-  color: var(--purple) !important;
+  color: var(--magenta) !important;
 }
 .source-code .webkit-html-doctype,
 .source-code .webkit-html-tag-name,
 .source-code .webkit-html-close-tag-name {
-  color: var(--purple) !important;
+  color: var(--magenta) !important;
   font-weight: bold;
 }
 .source-code .webkit-html-attribute {
@@ -111,17 +111,17 @@
 }
 .source-code.elements-tree-outline li.selected .webkit-html-tag-name,
 .source-code.elements-tree-outline li.selected .webkit-html-close-tag-name {
-  color: var(--purpleContrast) !important;
+  color: var(--magentaContrast) !important;
 }
 
 /* CSS */
 .styles-section .selector-container .simple-selector,
 .styles-section.keyframe-key {
-  color: var(--purple) !important;
+  color: var(--magenta) !important;
 }
 .styles-section .selector-container .simple-selector.selector-matches,
 .styles-section.keyframe-key {
-  color: var(--purple) !important;
+  color: var(--magenta) !important;
   font-weight: bold;
 }
 .tree-outline > li .sidebar-pane-open-brace,
@@ -156,7 +156,7 @@
 .token-tag,
 .token-meta,
 .token-keyword {
-  color: var(--purple) !important;
+  color: var(--magenta) !important;
   font-weight: bold;
 }
 .token-attribute {
@@ -177,7 +177,7 @@
 
 /* Breadcrumbs */
 .node-label-name {
-  color: var(--purple) !important;
+  color: var(--magenta) !important;
   font-weight: bold;
 }
 .node-label-class {

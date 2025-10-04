@@ -70,10 +70,10 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=425e79" width="20" height="20" alt=""> | blueLight              | #425e79 | 66, 94, 121   |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=3f5164" width="20" height="20" alt=""> | blueLighter            | #3f5164 | 63, 81, 100   |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=63a2d6" width="20" height="20" alt=""> | blueContrast           | #63a2d6 | 99, 162, 214  |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=7f61b3" width="20" height="20" alt=""> | purple                 | #7f61b3 | 127, 97, 179  |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=57427a" width="20" height="20" alt=""> | purpleLight            | #57427a | 87, 66, 122   |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=453461" width="20" height="20" alt=""> | purpleLighter          | #453461 | 69, 52, 97    |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=9672d4" width="20" height="20" alt=""> | purpleContrast         | #9672d4 | 150, 114, 212 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=7f61b3" width="20" height="20" alt=""> | magenta                | #7f61b3 | 127, 97, 179  |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=57427a" width="20" height="20" alt=""> | magentaLight           | #57427a | 87, 66, 122   |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=453461" width="20" height="20" alt=""> | magentaLighter         | #453461 | 69, 52, 97    |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=9672d4" width="20" height="20" alt=""> | magentaContrast        | #9672d4 | 150, 114, 212 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ac493e" width="20" height="20" alt=""> | red                    | #ac493e | 172, 73, 62   |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=703a2f" width="20" height="20" alt=""> | redLight               | #703a2f | 112, 58, 47   |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=6c3b2f" width="20" height="20" alt=""> | redLighter             | #6c3b2f | 108, 59, 47   |

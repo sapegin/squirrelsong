@@ -16,10 +16,10 @@
     "blueLight": "#bfd1de",
     "blueLighter": "#dfe8ef",
     "blueContrast": "#527b98",
-    "purple": "#ac9bc5",
-    "purpleLight": "#d7cfe3",
-    "purpleLighter": "#ebe7f1",
-    "purpleContrast": "#806f9b",
+    "magenta": "#ac9bc5",
+    "magentaLight": "#d7cfe3",
+    "magentaLighter": "#ebe7f1",
+    "magentaContrast": "#806f9b",
     "red": "#d67e76",
     "redLight": "#e5ada8",
     "redLighter": "#f3dcda",
@@ -365,7 +365,7 @@
       "Orange": "orangeLighter",
       "Green": "greenLighter",
       "Rose": "redLighter",
-      "Violet": "purpleLighter"
+      "Violet": "magentaLighter"
     }
   },
   "icons": {
@@ -384,7 +384,7 @@
       "Objects.Pink": "brightPink",
       "Objects.Red": "red",
       "Objects.RedStatus": "red",
-      "Objects.Purple": "purple",
+      "Objects.Purple": "magenta",
       "Objects.Yellow": "yellow",
       "Objects.YellowDark": "orange",
       "Checkbox.Background.Default": "white",
