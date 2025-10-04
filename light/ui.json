@@ -1,0 +1,23 @@
+{
+  "title foreground": "gray04",
+  "match foreground": "gray04",
+  "active foreground": "gray04",
+  "text foreground": "gray07",
+  "secondary text foreground": "gray08",
+  "disabled foreground": "gray09",
+  "link foreground": "blueContrast",
+  "link hover foreground": "blue",
+  "text background": "white",
+  "ui background": "gray0f",
+  "button background": "gray07",
+  "active background": "gray0d",
+  "hover background": "gray0e",
+  "selection background": "brightYellowLight",
+  "line highlight background": "gray0f",
+  "border": "gray0c",
+  "light border": "gray0e",
+  "active border": "gray04",
+  "focus border": "gray07",
+  "icon": "gray08",
+  "active icon": "gray04"
+}
