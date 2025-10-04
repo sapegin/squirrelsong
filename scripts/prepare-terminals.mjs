@@ -32,7 +32,7 @@ const darkDpAnsiPalette = Object.fromEntries(
     const paletteColorName = colorName
       .replace('gray', 'purple')
       .replace(/^brightYellow$/, 'brightYellowPurple')
-      .replace(/^brightYellowDark$/, 'brightYellowDarkPurple');
+      .replace(/^brightYellowLight$/, 'brightYellowLightPurple');
     if (darkPalette[paletteColorName] === undefined) {
       console.error(
         `⛔️ Color not found in the dark palette: ${paletteColorName}`,

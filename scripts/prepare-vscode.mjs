@@ -55,10 +55,6 @@ const LIGHT_TO_DARK = {
   gray0e: 'gray04',
   gray0f: 'gray03',
   white: 'gray02',
-  brightPinkLight: 'brightPinkDark',
-  brightPinkLighter: 'brightPinkDarker',
-  brightYellowLight: 'brightYellowDark',
-  brightYellowLighter: 'brightYellowDark',
 };
 const LIGHT_TO_DARK_HEX = {
   '#ffffff': '#000000',
@@ -165,7 +161,7 @@ const darkDpText = darkText.replaceAll(/#[0-9a-f]{6}/gi, (hexColor) => {
       const purpleColorName = colorName
         .replace('gray', 'purple')
         .replace(/^brightYellow$/, 'brightYellowPurple')
-        .replace(/^brightYellowDark$/, 'brightYellowDarkPurple');
+        .replace(/^brightYellowLight$/, 'brightYellowLightPurple');
       if (darkPalette[purpleColorName]) {
         return darkPalette[purpleColorName];
       }
@@ -213,7 +209,7 @@ for (const [key] of Object.entries(darkDpJson.colors)) {
       const paletteColorName = darkAnsiPalette[ansiColorName]
         .replace('gray', 'purple')
         .replace(/^brightYellow$/, 'brightYellowPurple')
-        .replace(/^brightYellowDark$/, 'brightYellowDarkPurple');
+        .replace(/^brightYellowLight$/, 'brightYellowLightPurple');
       console.log(
         '👉',
         colorKey,

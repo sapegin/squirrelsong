@@ -17,5 +17,5 @@
   "brightYellow": "yellowContrast",
   "foreground": "gray0a",
   "background": "gray02",
-  "selection": "brightYellowDark"
+  "selection": "brightYellowLight"
 }

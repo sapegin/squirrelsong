@@ -12,7 +12,7 @@
   "button background": "gray08",
   "active background": "gray05",
   "hover background": "gray04",
-  "selection background": "brightYellowDark",
+  "selection background": "brightYellowLight",
   "line highlight background": "gray03",
   "border": "gray05",
   "light border": "gray04",

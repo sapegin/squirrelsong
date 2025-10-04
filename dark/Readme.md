@@ -87,11 +87,11 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=7d683a" width="20" height="20" alt=""> | yellowLighter          | #7d683a | 125, 104, 58  |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=e2c358" width="20" height="20" alt=""> | yellowContrast         | #e2c358 | 226, 195, 88  |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ca5a83" width="20" height="20" alt=""> | brightPink             | #ca5a83 | 202, 90, 131  |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=97576f" width="20" height="20" alt=""> | brightPinkDark         | #97576f | 151, 87, 111  |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=97576f" width="20" height="20" alt=""> | brightPinkLight         | #97576f | 151, 87, 111  |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=574538" width="20" height="20" alt=""> | brightYellow           | #574538 | 87, 69, 56    |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=41352a" width="20" height="20" alt=""> | brightYellowDark       | #41352a | 65, 53, 42    |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=41352a" width="20" height="20" alt=""> | brightYellowLight       | #41352a | 65, 53, 42    |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4c3c6b" width="20" height="20" alt=""> | brightYellowPurple     | #4c3c6b | 76, 60, 107   |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=3f3259" width="20" height="20" alt=""> | brightYellowDarkPurple | #3f3259 | 63, 50, 89    |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=3f3259" width="20" height="20" alt=""> | brightYellowLightPurple | #3f3259 | 63, 50, 89    |
 
 <!-- palette:end -->
 
@@ -119,7 +119,7 @@
 | --------------------------------------------------------------------------------------------------------- | ------------------------- | ---------------- | ------- | -------- |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ad9c8b" width="20" height="20" alt=""> | Text foreground           | gray0a           | #ad9c8b |          |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=292019" width="20" height="20" alt=""> | Text background           | gray02           | #292019 |          |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=41352a" width="20" height="20" alt=""> | Selection background      | brightYellowDark | #41352a |          |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=41352a" width="20" height="20" alt=""> | Selection background      | brightYellowLight | #41352a |          |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=453327" width="20" height="20" alt=""> | Line highlight background | gray04           | #453327 |          |
 
 ### ANSI colors
