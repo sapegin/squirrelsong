@@ -4,17 +4,17 @@
   --blue: #80a4be;
   --magenta: #ac9bc5;
   --teal: #5f9b8d;
-  --tealLight: #adccc5;
-  --tealLighter: #d6e6e2;
+  --tealDim: #adccc5;
+  --tealDimer: #d6e6e2;
   --green: #9bae7e;
   --red: #d67e76;
-  --redLight: #e5ada8;
-  --redLighter: #f3dcda;
+  --redDim: #e5ada8;
+  --redDimer: #f3dcda;
   --redContrast: #c06159;
   --orange: #de9e59;
   --yellow: #e4c158;
-  --yellowLight: #e9d9a8;
-  --yellowLighter: #f7f0de;
+  --yellowDim: #e9d9a8;
+  --yellowDimer: #f7f0de;
   --yellowContrast: #b39119;
   --blueContrast: #527b98;
   --magentaContrast: #806f9b;
@@ -63,16 +63,16 @@
   --override-node-text-class-color: var(--blue);
   --override-node-text-id-color: var(--blue);
   --override-error-text-color: var(--redContrast);
-  --override-console-error-background-color: var(--redLighter);
-  --override-error-border-color: var(--redLight);
+  --override-console-error-background-color: var(--redDimer);
+  --override-error-border-color: var(--redDim);
   --override-warning-text-color: var(--yellowContrast);
-  --override-console-warning-background-color: var(--yellowLighter);
-  --override-infobar-warning-background: var(--yellowLighter);
-  --override-warning-border-color: var(--yellowLight);
+  --override-console-warning-background-color: var(--yellowDimer);
+  --override-infobar-warning-background: var(--yellowDimer);
+  --override-warning-border-color: var(--yellowDim);
   --color-match-highlight: var(--brightYellow);
   --legacy-focus-bg-color: var(--gray0e);
-  --color-execution-line-background: var(--tealLighter);
-  --color-execution-line-outline: var(--tealLight);
+  --color-execution-line-background: var(--tealDimer);
+  --color-execution-line-outline: var(--tealDim);
   --sys-color-primary: var(--black);
   --sys-color-state-focus-ring: var(--black);
   --sys-color-divider: var(--gray0d);
@@ -196,5 +196,5 @@
 
 /* Source */
 .infobar-warning.infobar-warning {
-  --override-infobar-warning-background: var(--yellowLighter);
+  --override-infobar-warning-background: var(--yellowDimer);
 }
