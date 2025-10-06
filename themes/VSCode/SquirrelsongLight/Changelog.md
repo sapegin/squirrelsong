@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.3.1
+
+- Add a few missing colors for CSS and Shell highlighting.
+
 ## 3.3.3
 
 - Add missing settings colors.

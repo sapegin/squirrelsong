@@ -381,7 +381,7 @@
     "symbolIcon.typeParameterForeground": "#5f9b8d",
     "symbolIcon.unitForeground": "#78737d",
     "symbolIcon.variableForeground": "#80a4be",
-    "tab.activeBorder": "#ffffff00",
+    "tab.activeBorder": "#fdfdfe00",
     "tab.activeBorderTop": "#4c4b4e",
     "tab.activeForeground": "#78737d",
     "tab.inactiveBackground": "#fdfdfe",
@@ -533,6 +533,8 @@
         "punctuation.section.parens.end.bracket.round.c",
         // C++
         "punctuation.separator.delimiter.comma.cpp",
+        // CSS
+        "punctuation.section.function.begin.bracket.round.css",
         // Java
         "punctuation.bracket.square.java",
         "punctuation.definition.parameters.begin.bracket.round.java",
@@ -756,12 +758,14 @@
         "keyword.control.at-rule.include.scss",
         "entity.name.tag.reference.scss",
         // Shell
-        "punctuation.separator.statement.background.shell",
-        "punctuation.separator.statement.and.shell",
-        "keyword.operator.redirect.shell",
         "keyword.operator.heredoc.shell",
         "keyword.operator.logical.shell",
         "keyword.operator.pipe.shell",
+        "keyword.operator.redirect.shell",
+        "punctuation.definition.string.heredoc.delimiter.shell",
+        "punctuation.definition.subshell.single.shell",
+        "punctuation.separator.statement.and.shell",
+        "punctuation.separator.statement.background.shell",
         // Yaml
         "storage.type.tag-handle.yaml"
       ]
@@ -916,7 +920,9 @@
         "meta.diff.header.to-file",
         "markup.inserted.diff",
         // Sass
-        "meta.attribute-selector.scss"
+        "meta.attribute-selector.scss",
+        // Shell
+        "string.unquoted.argument.shell"
       ]
     },
     //////////
