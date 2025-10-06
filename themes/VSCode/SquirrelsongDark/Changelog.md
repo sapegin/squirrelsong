@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.2.0
+
+- Update dark gray/purple scales to better match the light palette.
+
 ## 3.1.4
 
 - Add missing settings colors.

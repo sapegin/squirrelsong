@@ -1,8 +1,9 @@
 # Changelog
 
-## 3.3.1
+## 3.4.0
 
 - Add a few missing colors for CSS and Shell highlighting.
+- Update dark gray/purple scales to better match the light palette.
 
 ## 3.3.3
 
