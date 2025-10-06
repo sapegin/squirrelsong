@@ -33,11 +33,6 @@
     "yellowDimer": "#f7f0de",
     "yellowContrast": "#b39119",
     "gray": "#9c96a2",
-    "gray00": "#4c4b4e",
-    "gray01": "#9c96a2",
-    "gray02": "#dbd7e0",
-    "gray03": "#e8e5eb",
-    "gray04": "#f7f6f9",
     "black": "#78737d",
     "white": "#fdfdfe",
     "brightPink": "#e87da4",
@@ -342,10 +337,10 @@
       "borderColor": "background"
     },
     "ProgressBar": {
-      "trackColor": "gray02",
+      "trackColor": "hoverBackground",
       "progressColor": "gray",
-      "indeterminateStartColor": "gray03",
-      "indeterminateEndColor": "gray01"
+      "indeterminateStartColor": "secondaryBackground",
+      "indeterminateEndColor": "gray"
     },
     "WelcomeScreen": {
       "borderColor": "border",
@@ -361,7 +356,7 @@
     "FileColor": {
       "Yellow": "yellowDimer",
       "Blue": "blueDimer",
-      "Gray": "gray03",
+      "Gray": "secondaryBackground",
       "Orange": "orangeDimer",
       "Green": "greenDimer",
       "Rose": "redDimer",
@@ -389,9 +384,9 @@
       "Objects.YellowDark": "orange",
       "Checkbox.Background.Default": "white",
       "Checkbox.Background.Selected": "gray",
-      "Checkbox.Background.Disabled": "gray04",
+      "Checkbox.Background.Disabled": "background",
       "Checkbox.Focus.Thin.Default": "black",
-      "Checkbox.Focus.Wide": "gray01",
+      "Checkbox.Focus.Wide": "gray",
       "Checkbox.Border.Default": "gray",
       "Checkbox.Border.Selected": "black",
       "#000000": "Grey2",

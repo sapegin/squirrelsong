@@ -1,24 +1,36 @@
 {
-  "punctuation": "gray07",
-  "comment": "gray09",
+  "punctuation": "gray090",
+  "comment": "gray110",
   "keyword": ["magenta", "bold"],
   "tag name": ["magenta", "bold"],
-  "number": "orange",
-  "boolean": "orange",
+  "tag brackets": "magenta",
+  // Numbers, booleans, CSS property values
+  "value": "orange",
+  // Object properties, JSON keys
   "property": "blue",
   "attribute name": "blue",
+  "namespace": "blue",
   "variable": ["blue", "italic"],
-  "function": ["blue", "bold"],
+  "function name": ["blue", "bold"],
+  // Strings, RegExps
   "string": "green",
-  "regexp": "green",
-  "attribute value": "green",
+  // String escape characters `\"`
+  "escape character": ["green", "bold"],
   "inserted": "green",
   "type": "teal",
-  "namespace": "teal",
-  "colon": "teal",
-  "class": ["teal", "bold"],
+  // Basic operators `=`
+  "operator": "teal",
+  "class name": ["teal", "bold"],
   "at-rule": ["teal", "bold"],
-  "operator": ["teal", "bold"],
+  // Arrow functions `=>`, interpolation `${}`
+  "control flow": ["teal", "bold"],
   "deleted": "red",
-  "important": ["red", "bold"]
+  // CSS `!important`
+  "important1": ["red", "bold"],
+  // RegExp character classes `\d`
+  "important2": ["orange", "bold"],
+  // RegExp markers `^$`
+  "important3": ["yellow", "bold"],
+  // HTML entitities `&amp;`
+  "important4": ["gray060", "bold"]
 }

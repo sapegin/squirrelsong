@@ -1,0 +1,56 @@
+{
+  "manifest_version": 3,
+  "name": "Squirrelsong Dark Deep Purple Theme",
+  "description": "A low contrast dark UI theme",
+  "version": "${version}",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "theme": {
+    "colors": {
+      "background_tab_inactive": [${magentaDim}],
+      "background_tab_incognito_inactive": [${magentaDimer}],
+      "background_tab_incognito": [${magentaDimer}],
+      "background_tab": [${magentaDim}],
+      "bookmark_text": [${purple040}],
+      "button_background": [${purple040}],
+      "button_text": [${purple040}],
+      "control_background": [${magentaDim}],
+      "frame_inactive": [${magentaDim}],
+      "frame_incognito_inactive": [${purple170}],
+      "frame_incognito": [${purple170}],
+      "frame": [${magentaDim}],
+      "ntp_background": [${magentaDimer}],
+      "ntp_header": [${purple040}],
+      "ntp_link_underline": [${purple130}],
+      "ntp_link": [${purple130}],
+      "ntp_section_link_underline": [${purple130}],
+      "ntp_section_link": [${purple130}],
+      "ntp_section_text": [${purple040}],
+      "ntp_section": [${purple040}],
+      "ntp_text": [${purple040}],
+      "omnibox_background": [${purple170}],
+      "omnibox_text": [${purple040}],
+      "tab_background_text_inactive": [${purple060}],
+      "tab_background_text_incognito_inactive": [${purple060}],
+      "tab_background_text_incognito": [${magentaDimer}],
+      "tab_background_text": [${purple060}],
+      "tab_text": [${purple040}],
+      "toolbar_button_icon": [${purple040}],
+      "toolbar_text": [${purple040}],
+      "toolbar": [${purple130}]
+    },
+    "tints": {
+      "frame": [-1.0, -1.0, -1.0],
+      "buttons": [-1.0, -1.0, -1.0],
+      "background_tab": [-1.0, -1.0, -1.0]
+    },
+    "images": {
+      "theme_frame": "images/theme_frame.png",
+      "theme_toolbar": "images/theme_toolbar_transparent.png",
+      "theme_tab_background": "images/theme_toolbar.png"
+    }
+  }
+}

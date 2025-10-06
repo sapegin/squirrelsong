@@ -2,15 +2,15 @@
 # https://sapegin.me/squirrelsong/
 
 [colors]
-foreground = '#ad9c8b'
-background = '#352a21'
+foreground = '#bfac99'
+background = '#292019'
 
-cursor_bg = '#ad9c8b'
-cursor_fg = '#352a21'
-cursor_border = '#ad9c8b'
+cursor_bg = '#bfac99'
+cursor_fg = '#292019'
+cursor_border = '#bfac99'
 
-selection_fg = '#ad9c8b'
-selection_bg = '#574131'
+selection_fg = '#bfac99'
+selection_bg = '#574538'
 
 split = '#453327'
 
@@ -24,11 +24,11 @@ ansi = [
   '#5993c2',
   '#7f61b3',
   '#4f9593',
-  '#cfbaa5',
+  '#bfac99',
 ]
 
 brights = [
-  '#6b503c',
+  '#614d3d',
   '#ce574a',
   '#709855',
   '#e2c358',
@@ -68,30 +68,30 @@ brights = [
 
 [colors.tab_bar]
 # Retro tab bar
-background = '#352a21'
+background = '#292019'
 # Fancy tab bar
-inactive_tab_edge = '#352a21'
+inactive_tab_edge = '#292019'
 
 [colors.tab_bar.active_tab]
-bg_color = '#574131'
-fg_color = '#cfbaa5'
+bg_color = '#4d3b2e'
+fg_color = '#bfac99'
 intensity = 'Bold'
 
 [colors.tab_bar.inactive_tab]
-bg_color = '#352a21'
-fg_color = '#ad9c8b'
+bg_color = '#292019'
+fg_color = '#bfac99'
 
 [colors.tab_bar.inactive_tab_hover]
 bg_color = '#453327'
-fg_color = '#ad9c8b'
+fg_color = '#bfac99'
 
 [colors.tab_bar.new_tab]
-bg_color = '#352a21'
-fg_color = '#ad9c8b'
+bg_color = '#292019'
+fg_color = '#bfac99'
 
 [colors.tab_bar.new_tab_hover]
 bg_color = '#453327'
-fg_color = '#ad9c8b'
+fg_color = '#bfac99'
 
 [metadata]
 aliases = []

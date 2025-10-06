@@ -19,13 +19,9 @@
   --blueContrast: #527b98;
   --magentaContrast: #806f9b;
   --brightYellow: #f5da70;
-  --gray04: #4c4b4e;
-  --gray07: #78737d;
-  --gray09: #9c96a2;
-  --gray0c: #9c96a2;
-  --gray0d: #dbd7e0;
-  --gray0e: #e8e5eb;
-  --gray0f: #f7f6f9;
+  --gray150: #dbd7e0;
+  --gray160: #e8e5eb;
+  --gray170: #f7f6f9;
 }
 
 .platform-mac,
@@ -51,7 +47,7 @@
   /* Less distracting UI colors */
   --neutral-foreground-rest: var(--black);
   --tabbed-pane-highlight: var(--black);
-  --tabbed-pane-tab-hover-fill: var(--gray0d);
+  --tabbed-pane-tab-hover-fill: var(--gray150);
   --color-link: var(--blueContrast);
   --color-text-primary: var(--black);
   --color-text-disabled: var(--gray);
@@ -70,21 +66,21 @@
   --override-infobar-warning-background: var(--yellowDimer);
   --override-warning-border-color: var(--yellowDim);
   --color-match-highlight: var(--brightYellow);
-  --legacy-focus-bg-color: var(--gray0e);
+  --legacy-focus-bg-color: var(--gray160);
   --color-execution-line-background: var(--tealDimer);
   --color-execution-line-outline: var(--tealDim);
   --sys-color-primary: var(--black);
   --sys-color-state-focus-ring: var(--black);
-  --sys-color-divider: var(--gray0d);
-  --sys-color-tonal-container: var(--gray0e);
+  --sys-color-divider: var(--gray150);
+  --sys-color-tonal-container: var(--gray160);
   --sys-color-tonal-outline: var(--black);
-  --neutral-fill-rest: var(--gray0d);
-  --neutral-fill-hover: var(--gray0d);
-  --neutral-fill-stealth-hover: var(--gray0d);
-  --neutral-fill-rest-l1: var(--gray0f);
-  --neutral-fill-rest-l2: var(--gray0f);
-  --neutral-layer-l2: var(--gray0f);
-  --neutral-layer-l3: var(--gray0e);
+  --neutral-fill-rest: var(--gray150);
+  --neutral-fill-hover: var(--gray150);
+  --neutral-fill-stealth-hover: var(--gray150);
+  --neutral-fill-rest-l1: var(--gray170);
+  --neutral-fill-rest-l2: var(--gray170);
+  --neutral-layer-l2: var(--gray170);
+  --neutral-layer-l3: var(--gray160);
 }
 
 /* HTML */

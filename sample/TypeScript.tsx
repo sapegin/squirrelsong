@@ -6,7 +6,7 @@ import { name, icon } from './Hola.css';
 
 const hello = () => console.log('hello');
 const varUrl = window.location.href
-  .replace(/^\s*(.*)/, '$1')
+  .replace(/^hello\s*(.*)world/, '$1')
   .concat('\u1111z\n');
 
 const Li = styled.li<{ isOvernight: boolean }>`

@@ -35,12 +35,10 @@ const EXTENSIONS = [
 ].join(',');
 
 const EXTRA_FILES = [
-  'themes/Bartender/Readme.md',
-  'themes/Fzf/Readme.md',
+  'light/palette.html',
+  'dark/palette.html',
   'themes/Ghostty/Squirrelsong Dark',
-  'themes/Ice/Readme.md',
-  'themes/macOS/Readme.md',
-  'themes/Slack/Readme.md',
+  'themes/Ghostty/Squirrelsong Dark Deep Purple',
 ];
 
 const IGNORES = [
@@ -395,7 +393,11 @@ function lint(files, lightColors, darkColors) {
 
   for (const file of themesSorted) {
     const filename = path.basename(file);
-    if (IGNORES.includes(filename) || file.includes('node_modules')) {
+    if (
+      IGNORES.includes(filename) ||
+      file.includes('node_modules') ||
+      file.includes('template')
+    ) {
       continue;
     }
 
@@ -434,7 +436,11 @@ console.log();
 console.log();
 console.log('[LINT] Linting themes... 🌞🌚');
 
-const themes = [...glob.sync(`themes/**/*.{${EXTENSIONS}}`), ...EXTRA_FILES];
+const themes = [
+  ...glob.sync(`themes/**/*.{${EXTENSIONS}}`),
+  ...glob.sync(`themes/*/Readme.md`),
+  ...EXTRA_FILES,
+];
 const lightPalette = readJsonFile('light/palette.json');
 const darkPalette = readJsonFile('dark/palette.json');
 lint(themes, Object.values(lightPalette), Object.values(darkPalette));

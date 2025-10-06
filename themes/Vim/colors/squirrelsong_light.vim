@@ -10,19 +10,11 @@ let g:squirrelsong_color_only = get(g:, 'squirrelsong_color_only', v:false)
 
 " Initialization: {{{
 let s:palette = {
-  \ 'gray04':                ['#4c4b4e',   'NONE'],
-  \ 'gray05':                ['#5c595f',   'NONE'],
-  \ 'gray06':                ['#6b676f',   'NONE'],
-  \ 'gray07':                ['#78737d',   'NONE'],
-  \ 'gray08':                ['#8c8792',   'NONE'],
-  \ 'gray09':                ['#9c96a2',   'NONE'],
-  \ 'gray0a':                ['#a8a1af',   'NONE'],
-  \ 'gray0b':                ['#b8b1be',   'NONE'],
-  \ 'gray0c':                ['#c9c4cf',   'NONE'],
-  \ 'gray0d':                ['#dbd7e0',   'NONE'],
-  \ 'gray0e':                ['#e8e5eb',   'NONE'],
-  \ 'gray0f':                ['#f7f6f9',   'NONE'],
-  \ 'white':                 ['#fdfdfe',   'NONE'],
+  \ 'gray080':               ['#6b676f',   'NONE'],
+  \ 'gray110':               ['#9c96a2',   'NONE'],
+  \ 'gray150':               ['#dbd7e0',   'NONE'],
+  \ 'gray160':               ['#e8e5eb',   'NONE'],
+  \ 'gray170':               ['#f7f6f9',   'NONE'],
   \ 'green':                 ['#9bae7e',   'NONE'],
   \ 'green_light':           ['#d1dac3',   'NONE'],
   \ 'green_lighter':         ['#e7ebe0',   'NONE'],
@@ -76,7 +68,7 @@ let s:palette = {
   \ 'fg' :                   ['#78737d',   'NONE'],
   \ 'bg' :                   ['#fdfdfe',   'NONE'],
   \
-  \ 'none':                  ['NONE',      'NONE']
+  \ 'none':                  ['NONE',        'NONE']
   \ }
 
 " Apply a highlight style
@@ -136,11 +128,11 @@ let colors = {}
 " UI {{{
 call extend(colors, {
       \ 'Normal':           { 'fg': s:palette.fg, 'bg': s:palette.bg     },
-      \ 'Statusline':       { 'fg': s:palette.fg, 'bg': s:palette.gray0e },
-      \ 'StatuslineNC':     { 'fg': s:palette.fg, 'bg': s:palette.gray0d },
+      \ 'Statusline':       { 'fg': s:palette.fg, 'bg': s:palette.gray160 },
+      \ 'StatuslineNC':     { 'fg': s:palette.fg, 'bg': s:palette.gray150 },
       \ 'IncSearch':        { 'bg': s:palette.bright_yellow_light },
       \ 'Search':           {  'bg': s:palette.bright_yellow_light },
-      \ 'Folded':           { 'fg': s:palette.fg, 'bg': s:palette.gray0e },
+      \ 'Folded':           { 'fg': s:palette.fg, 'bg': s:palette.gray160 },
       \ 'Visual':           { 'fg': s:palette.none, 'bg': s:palette.bright_yellow_light },
       \ })
 " }}}
@@ -179,9 +171,9 @@ call extend(colors, {
       \ 'Todo': { 'fg': s:palette.bg, 'bg': s:palette.blue, 'style': 'bold' },
       \ 'Comment': { 'fg': s:palette.comment, 'style': 'italic' },
       \ 'SpecialComment': { 'fg': s:palette.comment, 'style': 'italic' },
-      \ 'Ignore': { 'fg': s:palette.gray06 },
+      \ 'Ignore': { 'fg': s:palette.gray080 },
       \ 'Underlined': { 'style': 'underline' },
-      \ 'Whitespace': { 'fg': s:palette.gray0d },
+      \ 'Whitespace': { 'fg': s:palette.gray150 },
       \ })
 
 if &diff
@@ -191,8 +183,8 @@ if &diff
         \ })
 else
   call extend(colors, {
-        \ 'CursorLine': { 'bg': s:palette.gray0d},
-        \ 'ColorColumn': { 'bg': s:palette.gray0d },
+        \ 'CursorLine': { 'bg': s:palette.gray150},
+        \ 'ColorColumn': { 'bg': s:palette.gray150 },
         \ })
 endif
 " }}}
@@ -200,7 +192,7 @@ endif
 " Predefined Highlight Groups: {{{
 call extend(colors, {
       \ 'Fg': { 'fg': s:palette.fg, },
-      \ 'Gray': { 'fg': s:palette.gray09, },
+      \ 'Gray': { 'fg': s:palette.gray110, }
       \ 'Red': { 'fg': s:palette.red, },
       \ 'Orange': { 'fg': s:palette.orange, },
       \ 'Yellow': { 'fg': s:palette.yellow, },
@@ -210,7 +202,7 @@ call extend(colors, {
       \ 'Teal': { 'fg': s:palette.teal, },
       \
       \ 'RedItalic': { 'fg': s:palette.red, 'style': 'italic' },
-      \ 'GrayItalic': { 'fg': s:palette.gray09, 'style': 'italic' },
+      \ 'GrayItalic': { 'fg': s:palette.gray110, 'tyle': 'italic' },
       \ 'OrangeItalic': { 'fg': s:palette.orange, 'style': 'italic' },
       \ 'YellowItalic': { 'fg': s:palette.yellow, 'style': 'italic' },
       \ 'GreenItalic': { 'fg': s:palette.green, 'style': 'italic' },
@@ -219,7 +211,7 @@ call extend(colors, {
       \ 'TealItalic': { 'fg': s:palette.teal, 'style': 'italic' },
       \
       \ 'RedBold': { 'fg': s:palette.red, 'style': 'bold' },
-      \ 'GrayBold': { 'fg': s:palette.gray09, 'style': 'bold' },
+      \ 'GrayBold': { 'fg': s:palette.gray110, 'tyle': 'bold' },
       \ 'OrangeBold': { 'fg': s:palette.orange, 'style': 'bold' },
       \ 'YellowBold': { 'fg': s:palette.yellow, 'style': 'bold' },
       \ 'GreenBold': { 'fg': s:palette.green, 'style': 'bold' },

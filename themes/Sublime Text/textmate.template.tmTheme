@@ -3,24 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>Squirrelsong Light</string>
+	<string>Squirrelsong ${name}</string>
 	<key>settings</key>
 	<array>
 		<dict>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#fdfdfe</string>
+				<string>${textBackground}</string>
 				<key>caret</key>
-				<string>#78737d</string>
+				<string>${textForeground}</string>
 				<key>foreground</key>
-				<string>#78737d</string>
+				<string>${textForeground}</string>
 				<key>invisibles</key>
-				<string>#9c96a2</string>
+				<string>${comment}</string>
 				<key>lineHighlight</key>
-				<string>#f7f6f9</string>
+				<string>${lineHighlightBackground}</string>
 				<key>selection</key>
-				<string>#f8e7a0</string>
+				<string>${selectionBackground}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -31,9 +31,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#9c96a2</string>
+				<string>${comment}</string>
 				<key>fontStyle</key>
-				<string></string>
+				<string>${commentStyle}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -44,9 +44,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#9bae7e</string>
+				<string>${string}</string>
 				<key>fontStyle</key>
-				<string></string>
+				<string>${stringStyle}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -57,9 +57,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#de9e59</string>
+				<string>${value}</string>
 				<key>fontStyle</key>
-				<string></string>
+				<string>${valueStyle}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -70,9 +70,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#80a4be</string>
+				<string>${variable}</string>
 				<key>fontStyle</key>
-				<string>italic</string>
+				<string>${variableStyle}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -83,9 +83,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#80a4be</string>
+				<string>${property}</string>
 				<key>fontStyle</key>
-				<string></string>
+				<string>${propertyStyle}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -96,9 +96,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ac9bc5</string>
+				<string>${keyword}</string>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string>${keywordStyle}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -109,9 +109,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ac9bc5</string>
+				<string>${keyword}</string>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string>${keywordStyle}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -122,9 +122,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ac9bc5</string>
+				<string>${keyword}</string>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string>${keywordStyle}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -135,9 +135,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#5f9b8d</string>
+				<string>${className}</string>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string>${classNameStyle}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -148,9 +148,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#5f9b8d</string>
+				<string>${atRule}</string>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string>${atRuleStyle}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -161,9 +161,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#80a4be</string>
+				<string>${functionName}</string>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string>${functionNameStyle}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -174,9 +174,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#80a4be</string>
+				<string>${functionName}</string>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string>${functionNameStyle}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -187,9 +187,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#80a4be</string>
+				<string>${variable}</string>
 				<key>fontStyle</key>
-				<string>italic</string>
+				<string>${variableStyle}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -200,9 +200,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ac9bc5</string>
+				<string>${tagName}</string>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string>${tagNameStyle}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -213,9 +213,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ac9bc5</string>
+				<string>${tagBrackets}</string>
 				<key>fontStyle</key>
-				<string></string>
+				<string>${tagBracketsStyle}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -226,9 +226,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#80a4be</string>
+				<string>${attributeName}</string>
 				<key>fontStyle</key>
-				<string></string>
+				<string>${attributeNameStyle}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -239,9 +239,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#80a4be</string>
+				<string>${functionName}</string>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string>${functionNameStyle}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -252,9 +252,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#80a4be</string>
+				<string>${variable}</string>
 				<key>fontStyle</key>
-				<string>italic</string>
+				<string>${variableStyle}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -265,9 +265,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#5f9b8d</string>
+				<string>${type}</string>
 				<key>fontStyle</key>
-				<string></string>
+				<string>${typeStyle}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -278,9 +278,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#80a4be</string>
+				<string>${namespace}</string>
 				<key>fontStyle</key>
-				<string></string>
+				<string>${namespaceStyle}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -291,9 +291,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#80a4be</string>
+				<string>${variable}</string>
 				<key>fontStyle</key>
-				<string>italic</string>
+				<string>${variableStyle}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -304,9 +304,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#d67e76</string>
+				<string>${important1}</string>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string>${important1Style}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -317,9 +317,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#de9e59</string>
+				<string>${important2}</string>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string>${important2Style}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -330,9 +330,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#e4c158</string>
+				<string>${important3}</string>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string>${important3Style}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -343,9 +343,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#4c4b4e</string>
+				<string>${important4}</string>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string>${important4Style}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -356,9 +356,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#5f9b8d</string>
+				<string>${controlFlow}</string>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string>${controlFlowStyle}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -369,9 +369,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#5f9b8d</string>
+				<string>${operator}</string>
 				<key>fontStyle</key>
-				<string></string>
+				<string>${operatorStyle}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -382,9 +382,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#9bae7e</string>
+				<string>${escapeCharacter}</string>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string>${escapeCharacterStyle}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -395,9 +395,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#9bae7e</string>
+				<string>${inserted}</string>
 				<key>fontStyle</key>
-				<string></string>
+				<string>${insertedStyle}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -408,18 +408,18 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#d67e76</string>
+				<string>${deleted}</string>
 				<key>fontStyle</key>
-				<string></string>
+				<string>${deletedStyle}</string>
 			</dict>
 		</dict>
 	</array>
 	<key>uuid</key>
-	<string>506f39ff-75a5-45af-ba44-452c5244fdb4</string>
+	<string>${uuid}</string>
 	<key>colorSpaceName</key>
 	<string>sRGB</string>
 	<key>semanticClass</key>
-	<string>theme.light.squirrelsong_light</string>
+	<string>${semanticClass}</string>
 	<key>author</key>
 	<string>Artem Sapegin</string>
 	<key>comment</key>

@@ -24,10 +24,10 @@
       "frame": [87, 66, 122],
       "ntp_background": [69, 52, 97],
       "ntp_header": [213, 190, 237],
-      "ntp_link_underline": [107, 81, 150],
-      "ntp_link": [107, 81, 150],
-      "ntp_section_link_underline": [107, 81, 150],
-      "ntp_section_link": [107, 81, 150],
+      "ntp_link_underline": [108, 84, 146],
+      "ntp_link": [108, 84, 146],
+      "ntp_section_link_underline": [108, 84, 146],
+      "ntp_section_link": [108, 84, 146],
       "ntp_section_text": [213, 190, 237],
       "ntp_section": [213, 190, 237],
       "ntp_text": [213, 190, 237],
@@ -40,7 +40,7 @@
       "tab_text": [213, 190, 237],
       "toolbar_button_icon": [213, 190, 237],
       "toolbar_text": [213, 190, 237],
-      "toolbar": [107, 81, 150]
+      "toolbar": [108, 84, 146]
     },
     "tints": {
       "frame": [-1.0, -1.0, -1.0],

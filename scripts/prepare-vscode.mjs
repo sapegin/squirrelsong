@@ -37,30 +37,6 @@ const baseLight = readJsonFile(BASE_LIGHT);
 
 // Create Dark themes based on the light one
 
-const LIGHT_TO_DARK = {
-  gray00: 'gray0f', // Unused in light palette
-  gray01: 'gray0f', // Unused in light palette
-  gray02: 'gray0f', // Unused in light palette
-  gray03: 'gray0f', // Unused in light palette
-  gray04: 'gray09',
-  gray05: 'gray09',
-  gray06: 'gray08',
-  gray07: 'gray08',
-  gray08: 'gray07',
-  gray09: 'gray07',
-  gray0a: 'gray06',
-  gray0b: 'gray06',
-  gray0c: 'gray05',
-  gray0d: 'gray05',
-  gray0e: 'gray04',
-  gray0f: 'gray03',
-  white: 'gray02',
-};
-const LIGHT_TO_DARK_HEX = {
-  '#ffffff': '#000000',
-  '#000000': '#ffffff',
-};
-
 console.log();
 console.log('[VSCODE] Preparing dark theme… 🌚');
 
@@ -68,9 +44,6 @@ const darkText = baseLightText.replaceAll(/#[0-9a-f]{6}/gi, (hexColor) => {
   // Find the color name in light palette that matches this HEX value
   for (const [colorName, lightHex] of Object.entries(lightPalette)) {
     if (lightHex.toLowerCase() === hexColor.toLowerCase()) {
-      if (LIGHT_TO_DARK[colorName]) {
-        return darkPalette[LIGHT_TO_DARK[colorName]];
-      }
       if (darkPalette[colorName]) {
         return darkPalette[colorName];
       } else {
@@ -80,11 +53,6 @@ const darkText = baseLightText.replaceAll(/#[0-9a-f]{6}/gi, (hexColor) => {
         return hexColor;
       }
     }
-  }
-
-  // Try custom mapping
-  if (LIGHT_TO_DARK_HEX[hexColor]) {
-    return LIGHT_TO_DARK_HEX[hexColor];
   }
 
   // Color is missing in the palette, return the original color
@@ -106,16 +74,6 @@ darkJson.colors['terminal.selectionBackground'] =
   darkJson.colors['editor.selectionBackground'];
 darkJson.colors['textLink.foreground'] = darkPalette.blue;
 darkJson.colors['textLink.activeForeground'] = darkPalette.blueContrast;
-darkJson.colors['editor.placeholder.foreground'] = darkPalette.gray07;
-darkJson.colors['input.placeholderForeground'] = darkPalette.gray07;
-darkJson.tokenColors = darkJson.tokenColors.map((x) =>
-  x.scope.includes('comment')
-    ? {
-        settings: { foreground: darkPalette.gray06, fontStyle: '' },
-        scope: x.scope,
-      }
-    : x,
-);
 
 // Update terminal colors using ANSI palette (gray)
 for (const [key] of Object.entries(darkJson.colors)) {
@@ -184,19 +142,6 @@ darkDpJson.colors['terminal.selectionBackground'] =
   darkDpJson.colors['editor.selectionBackground'];
 darkDpJson.colors['textLink.foreground'] = darkPalette.blue;
 darkDpJson.colors['textLink.activeForeground'] = darkPalette.blueContrast;
-darkDpJson.colors['editor.placeholder.foreground'] = darkPalette.purple07;
-darkDpJson.colors['input.placeholderForeground'] = darkPalette.purple07;
-darkDpJson.tokenColors = darkDpJson.tokenColors.map((x) =>
-  x.scope.includes('comment')
-    ? {
-        settings: {
-          foreground: darkPalette.purple06,
-          fontStyle: '',
-        },
-        scope: x.scope,
-      }
-    : x,
-);
 
 // Update terminal colors using ANSI palette (purple)
 for (const [key] of Object.entries(darkDpJson.colors)) {
