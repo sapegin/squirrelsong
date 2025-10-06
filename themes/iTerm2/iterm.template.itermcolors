@@ -241,13 +241,13 @@
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>$brightWhiteB}</real>
+		<real>${brightWhiteB}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>$brightWhiteG}</real>
+		<real>${brightWhiteG}</real>
 		<key>Red Component</key>
-		<real>$brightWhiteR}</real>
+		<real>${brightWhiteR}</real>
 	</dict>
 	<key>Cursor Color</key>
 	<dict>
