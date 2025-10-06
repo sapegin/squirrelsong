@@ -8,8 +8,6 @@
  * - WezTerm
  */
 
-// TODO: Rename to something more generic as it's not just terminals
-
 import fs from 'node:fs';
 import stripJsonComments from 'strip-json-comments';
 import { templateFromFile } from 'smpltmpl';
