@@ -26,7 +26,7 @@
   "light border": "gray160",
   "active border": "gray060",
   "focus border": "gray090",
-  "accent": "gray040",
+  "accent": "brightPink",
   "icon": "gray100",
   "active icon": "gray060"
 }
