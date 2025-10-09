@@ -4,6 +4,7 @@
  * - Ghostty
  * - iTerm
  * - Sublime Text
+ * - VSCode
  * - Warp
  * - WezTerm
  */
@@ -18,7 +19,7 @@ function readJsonFile(file) {
 }
 
 const lightPalette = readJsonFile(`light/palette.json`);
-// const lightAnsiPaletteRaw = readJsonFile(`light/ansi.json`);
+const lightAnsiPaletteRaw = readJsonFile(`light/ansi.json`);
 const lightCodePaletteRaw = readJsonFile(`light/code.json`);
 const lightUiPaletteRaw = readJsonFile(`light/ui.json`);
 
@@ -42,14 +43,14 @@ function getDarkDpColorName(colorName) {
 
 // Convert ANSI color names to HEX values
 
-// const lightAnsiPalette = Object.fromEntries(
-//   Object.entries(lightAnsiPaletteRaw).map(([key, colorName]) => {
-//     if (lightPalette[colorName] === undefined) {
-//       console.error(`⛔️ Color not found in the light palette: ${colorName}`);
-//     }
-//     return [key, lightPalette[colorName]];
-//   }),
-// );
+const lightAnsiPalette = Object.fromEntries(
+  Object.entries(lightAnsiPaletteRaw).map(([key, colorName]) => {
+    if (lightPalette[colorName] === undefined) {
+      console.error(`⛔️ Color not found in the light palette: ${colorName}`);
+    }
+    return [key, lightPalette[colorName]];
+  }),
+);
 const darkAnsiPalette = Object.fromEntries(
   Object.entries(darkAnsiPaletteRaw).map(([key, colorName]) => {
     if (darkPalette[colorName] === undefined) {
@@ -257,8 +258,8 @@ fs.writeFileSync(
     semanticClass: 'theme.light.squirrelsong_light',
     uuid: '506f39ff-75a5-45af-ba44-452c5244fdb4',
     ...lightCodePalette,
-    ...lightUiPalette,
     ...lightCodeStyles,
+    ...lightUiPalette,
   }),
 );
 
@@ -269,8 +270,8 @@ fs.writeFileSync(
     semanticClass: 'theme.dark.squirrelsong_dark',
     uuid: '59024f0e-5ea0-4d89-96a7-98147144a79f',
     ...darkCodePalette,
-    ...darkUiPalette,
     ...darkCodeStyles,
+    ...darkUiPalette,
   }),
 );
 
@@ -281,8 +282,25 @@ fs.writeFileSync(
     semanticClass: 'theme.dark.squirrelsong_dark_dp',
     uuid: 'b5348c12-370a-4291-a2c6-7aee60eb66e9',
     ...darkDpCodePalette,
-    ...darkDpUiPalette,
     ...darkCodeStyles,
+    ...darkDpUiPalette,
+  }),
+);
+
+// ------------ 8< -- 8< ------------
+
+console.log();
+console.log('[TERMINAL] Preparing VSCode themes… 🌗');
+
+fs.writeFileSync(
+  'themes/VSCode/SquirrelsongLight/SquirrelsongLight.color-theme.json',
+  templateFromFile('themes/VSCode/vscode.template.json', {
+    name: 'Light',
+    mode: 'light',
+    ...lightCodePalette,
+    ...lightCodeStyles,
+    ...lightUiPalette,
+    ...lightAnsiPalette,
   }),
 );
 

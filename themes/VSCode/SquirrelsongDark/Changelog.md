@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.2.1
+
+- Tweak button colors.
+
 ## 3.2.0
 
 - Update dark gray/purple scales to better match the light palette.

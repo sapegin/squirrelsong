@@ -6,15 +6,15 @@
   "white": "gray110",
   "brightWhite": "gray140",
   "blue": "blue",
-  "brightBlue": "blueContrast",
+  "brightBlue": "blueDim",
   "cyan": "teal",
-  "brightCyan": "tealContrast",
+  "brightCyan": "tealDim",
   "green": "green",
-  "brightGreen": "greenContrast",
+  "brightGreen": "greenDim",
   "magenta": "magenta",
-  "brightMagenta": "magentaContrast",
+  "brightMagenta": "magentaDim",
   "red": "red",
-  "brightRed": "redContrast",
+  "brightRed": "redDim",
   "yellow": "yellow",
-  "brightYellow": "yellowContrast"
+  "brightYellow": "yellowDim"
 }

@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.4.1
+
+- Tweak button colors.
+
 ## 3.4.0
 
 - Add a few missing colors for CSS and Shell highlighting.
