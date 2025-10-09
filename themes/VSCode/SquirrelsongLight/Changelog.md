@@ -1,6 +1,6 @@
 # Changelog
 
-## 3.4.1
+## 3.4.2
 
 - Tweak button colors.
 

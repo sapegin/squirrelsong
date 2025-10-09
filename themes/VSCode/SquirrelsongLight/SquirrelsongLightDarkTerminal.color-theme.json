@@ -8,7 +8,7 @@
       "fontStyle": "bold"
     },
     "class": {
-      "foreground": "#80a4be",
+      "foreground": "#5f9b8d",
       "fontStyle": "bold"
     },
     "method": {
@@ -21,14 +21,14 @@
     },
     "module": {
       "foreground": "#80a4be",
-      "fontStyle": "italic"
+      "fontStyle": ""
     },
     "property": {
       "foreground": "#80a4be",
       "fontStyle": ""
     },
     "enumMember": {
-      "foreground": "#80a4be",
+      "foreground": "#5f9b8d",
       "fontStyle": ""
     },
     "type": {
@@ -61,13 +61,14 @@
     "badge.background": "#e8e5eb",
     "badge.foreground": "#78737d",
     "banner.background": "#f7f6f9",
-    "button.background": "#9c96a2",
-    "button.border": "#9c96a2",
+    "button.background": "#8c8792",
+    "button.border": "#8c879200",
     "button.foreground": "#fdfdfe",
     "button.hoverBackground": "#78737d",
-    "button.secondaryBackground": "#f7f6f9",
-    "button.secondaryForeground": "#78737d",
-    "button.secondaryHoverBackground": "#e8e5eb",
+    "button.secondaryBackground": "#e8e5eb",
+    "button.secondaryForeground": "#6b676f",
+    "button.secondaryHoverBackground": "#dbd7e0",
+    "button.separator": "#e8e5eb",
     "chart.axis": "#e8e5eb",
     "chart.guide": "#e8e5eb",
     "chart.line": "#c9c4cf",
@@ -354,7 +355,7 @@
     "search.resultsInfoForeground": "#9c96a2",
     "selection.background": "#e8e5eb",
     "settings.focusedRowBackground": "#dbd7e0",
-    "settings.focusedRowBorder": "#4c4b4e",
+    "settings.focusedRowBorder": "#78737d",
     "settings.headerBorder": "#e8e5eb",
     "settings.headerForeground": "#4c4b4e",
     "settings.modifiedItemIndicator": "#d1dac3",

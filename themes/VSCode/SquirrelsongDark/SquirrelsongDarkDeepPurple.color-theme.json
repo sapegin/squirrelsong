@@ -8,7 +8,7 @@
       "fontStyle": "bold"
     },
     "class": {
-      "foreground": "#5993c2",
+      "foreground": "#4f9593",
       "fontStyle": "bold"
     },
     "method": {
@@ -21,14 +21,14 @@
     },
     "module": {
       "foreground": "#5993c2",
-      "fontStyle": "italic"
+      "fontStyle": ""
     },
     "property": {
       "foreground": "#5993c2",
       "fontStyle": ""
     },
     "enumMember": {
-      "foreground": "#5993c2",
+      "foreground": "#4f9593",
       "fontStyle": ""
     },
     "type": {
@@ -61,13 +61,14 @@
     "badge.background": "#453461",
     "badge.foreground": "#9a7eb4",
     "banner.background": "#36294d",
-    "button.background": "#7f61b3",
-    "button.border": "#7f61b3",
+    "button.background": "#856ab4",
+    "button.border": "#856ab400",
     "button.foreground": "#271e38",
     "button.hoverBackground": "#9a7eb4",
-    "button.secondaryBackground": "#36294d",
-    "button.secondaryForeground": "#9a7eb4",
-    "button.secondaryHoverBackground": "#453461",
+    "button.secondaryBackground": "#453461",
+    "button.secondaryForeground": "#a88dc3",
+    "button.secondaryHoverBackground": "#503f6e",
+    "button.separator": "#453461",
     "chart.axis": "#453461",
     "chart.guide": "#453461",
     "chart.line": "#644e88",
@@ -354,7 +355,7 @@
     "search.resultsInfoForeground": "#7f61b3",
     "selection.background": "#453461",
     "settings.focusedRowBackground": "#503f6e",
-    "settings.focusedRowBorder": "#bea3d9",
+    "settings.focusedRowBorder": "#9a7eb4",
     "settings.headerBorder": "#453461",
     "settings.headerForeground": "#bea3d9",
     "settings.modifiedItemIndicator": "#44603b",
