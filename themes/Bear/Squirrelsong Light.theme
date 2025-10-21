@@ -8,65 +8,64 @@
     "background tertiary color": "#e8e5eb",
     "background hover color": "#e8e5eb",
     "stroke color": "#e8e5eb",
-    "accent color": "#78737d",
+    "accent color": "#4c4b4e",
     "icon color": "#8c8792",
-    "dark icon color": "#78737d",
-    "search primary color": "#e87da4",
+    "dark icon color": "#4c4b4e",
+    "search primary color": "#f0a8c2",
     "search secondary color": "#fae1ea",
-    "highlight color": "#e9d9a8",
-    "selection color": "#f5da70"
+    "selection color": "#f8e7a0"
   },
   "notes": {
-    "title color": "$base.text color",
-    "subtitle color": "$base.text secondary color",
-    "placeholder color": "$base.text secondary color",
-    "date color": "$base.text secondary color",
-    "pin color": "$base.icon color",
-    "separator color": "$base.background tertiary color",
-    "search background color": "$base.search secondary color",
-    "attachment background color": "$base.background secondary color",
-    "encrypted token color": "$base.background secondary color",
-    "selection background color": "$base.background hover color",
-    "ribbon color": "$base.icon color",
+    "title color": "#4c4b4e",
+    "subtitle color": "#78737d",
+    "placeholder color": "#78737d",
+    "date color": "#78737d",
+    "pin color": "#8c8792",
+    "separator color": "#e8e5eb",
+    "search background color": "#fae1ea",
+    "attachment background color": "#f7f6f9",
+    "encrypted token color": "#f7f6f9",
+    "selection background color": "#e8e5eb",
+    "ribbon color": "#8c8792",
     "toolbar": {
-      "background color": "$base.background color",
-      "text color": "$base.text color",
-      "icon color": "$base.icon color",
-      "hover color": "$base.background hover color"
+      "background color": "#fdfdfe",
+      "text color": "#4c4b4e",
+      "icon color": "#8c8792",
+      "hover color": "#e8e5eb"
     }
   },
   "sidebar": {
-    "text color": "$base.text color",
-    "text secondary color": "$base.text color",
-    "background color": "$base.background secondary color",
+    "text color": "#78737d",
+    "text secondary color": "#4c4b4e",
+    "background color": "#f7f6f9",
     "background secondary color": "#dbd7e0",
-    "stroke color": "$base.stroke color",
+    "stroke color": "#e8e5eb",
     "accent color": "#dbd7e0",
-    "icon color": "$base.icon color",
-    "selected icon color": "$base.dark icon color",
+    "icon color": "#8c8792",
+    "selected icon color": "#4c4b4e",
     "toolbar": {
-      "background color": "$base.background secondary color",
-      "icon color": "$base.icon color",
-      "hover color": "$base.background hover color"
+      "background color": "#f7f6f9",
+      "icon color": "#8c8792",
+      "hover color": "#e8e5eb"
     }
   },
   "placeholder": {
-    "background color": "$base.background color",
+    "background color": "#fdfdfe",
     "background stroke color": "#e8e5eb",
     "shadow color": "#f7f6f9",
     "stroke color": "#9c96a2"
   },
   "editor": {
-    "background color": "$base.background color",
-    "text color": "$base.text color",
-    "text light color": "$base.text secondary color",
-    "accent color": "$base.accent color",
-    "cursor color": "#6b676f",
+    "background color": "#fdfdfe",
+    "text color": "#4c4b4e",
+    "text light color": "#78737d",
+    "accent color": "#4c4b4e",
+    "cursor color": "#4c4b4e",
     "link color": "#527b98",
     "list marker color": "#9c96a2",
     "marker color": "#9c96a2",
-    "selection color": "$base.selection color",
-    "selection inactive color": "$base.background tertiary color",
+    "selection color": "#f8e7a0",
+    "selection inactive color": "#fdf6de",
     "text font": "BearSansUI-Regular",
     "text size": 15,
     "line height multiplier": 1.5,
@@ -82,7 +81,7 @@
     "code": {
       "text color": "#78737d",
       "border color": "transparent",
-      "background color": "$base.background secondary color",
+      "background color": "#f7f6f9",
       "font": "MonoLisa",
       "syntax highlight": {
         "comment": "#9c96a2",
@@ -96,30 +95,30 @@
       }
     },
     "task": {
-      "background color": "$base.background color",
-      "border color": "#9c96a2",
-      "check color": "#9c96a2"
+      "background color": "#fdfdfe",
+      "border color": "#c9c4cf",
+      "check color": "#c9c4cf"
     },
     "tag": {
       "background color": "#e8e5eb",
-      "text color": "#78737d",
-      "marker color": "#a8a1af"
+      "text color": "#6b676f",
+      "marker color": "#8c8792"
     },
     "highlighter": {
-      "background color": "$base.highlight color",
-      "text color": "$base.text color"
+      "background color": "#e9d9a8",
+      "text color": "#4c4b4e"
     },
     "separator": {
       "border color": "#c9c4cf"
     },
     "table": {
-      "border color": "$base.stroke color",
-      "cell background color": "$base.background color",
-      "cell alternate background color": "$base.background secondary color"
+      "border color": "#e8e5eb",
+      "cell background color": "#fdfdfe",
+      "cell alternate background color": "#f7f6f9"
     },
     "toolbar": {
-      "icon color": "$base.icon color",
-      "hover color": "$base.background hover color"
+      "icon color": "#8c8792",
+      "hover color": "#e8e5eb"
     }
   }
 }

@@ -1,5 +1,6 @@
 /**
- * Prepare terminal themes:
+ * Generate themes based on templates:
+ * - Bear
  * - Chrome
  * - Ghostty
  * - iTerm
@@ -165,6 +166,20 @@ const darkDpUiPalette = Object.fromEntries(
       );
     }
     return [toCamelCase(key), darkPalette[paletteColorName]];
+  }),
+);
+
+// ------------ 8< -- 8< ------------
+
+console.log();
+console.log('[TERMINAL] Preparing Bear themes… 🌕');
+
+fs.writeFileSync(
+  'themes/Bear/Squirrelsong Light.theme',
+  templateFromFile('themes/Bear/bear.template.theme', {
+    ...lightPalette,
+    ...lightUiPalette,
+    ...lightCodePalette,
   }),
 );
 

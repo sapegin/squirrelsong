@@ -20,13 +20,16 @@
   "active background": "gray150",
   "hover background": "gray160",
   "selection background": "brightYellowDim",
+  "secondary selection background": "brightYellowDimer",
   "match background": "brightPinkDim",
+  "secondary match background": "brightPinkDimer",
   "line highlight background": "gray170",
   "border": "gray140",
   "light border": "gray160",
   "active border": "gray060",
   "focus border": "gray090",
-  "accent": "brightPink",
+  "shy accent": "gray060",
+  "bold accent": "brightPink",
   "icon": "gray100",
   "active icon": "gray060"
 }
