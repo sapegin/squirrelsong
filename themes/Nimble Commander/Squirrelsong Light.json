@@ -1,7 +1,7 @@
 {
   "themeAppearance": "light",
   "themeName": "Squirrelsong Light",
-  "filePanelsBriefFocusedActiveItemBackgroundColor": "#dbd7e0",
+  "filePanelsBriefFocusedActiveItemBackgroundColor": "#d7cfe3",
   "filePanelsBriefFocusedInactiveItemBackgroundColor": "#e8e5eb",
   "filePanelsBriefFont": "@systemFont, 13",
   "filePanelsBriefGridColor": "#c9c4cf00",
@@ -24,7 +24,7 @@
   "filePanelsHeaderInactiveBackgroundColor": "#fdfdfe",
   "filePanelsHeaderSeparatorColor": "#c9c4cf",
   "filePanelsHeaderTextColor": "#9c96a2",
-  "filePanelsListFocusedActiveRowBackgroundColor": "#dbd7e0",
+  "filePanelsListFocusedActiveRowBackgroundColor": "#d7cfe3",
   "filePanelsListFocusedInactiveRowBackgroundColor": "#e8e5eb",
   "filePanelsListFont": "@systemFont, 13",
   "filePanelsListGridColor": "#c9c4cf00",

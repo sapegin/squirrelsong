@@ -25,6 +25,7 @@
   "match background": "brightPinkDim",
   "secondary match background": "brightPinkDimer",
   "line highlight background": "gray170",
+  "bold accent background": "magentaDim",
   "border": "gray140",
   "light border": "gray160",
   "active border": "gray060",
