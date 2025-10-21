@@ -77,9 +77,9 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Property</string>
+			<string>Property/attribute</string>
 			<key>scope</key>
-			<string>meta.property.object, meta.mapping.key, meta.mapping.key.json, support.type.property-name</string>
+			<string>meta.property.object, meta.mapping.key, meta.mapping.key.json, support.type.property-name, entity.other.attribute-name</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -135,9 +135,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{className}}</string>
+				<string>{{class}}</string>
 				<key>fontStyle</key>
-				<string>{{classNameStyle}}</string>
+				<string>{{classStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -161,9 +161,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{functionName}}</string>
+				<string>{{function}}</string>
 				<key>fontStyle</key>
-				<string>{{functionNameStyle}}</string>
+				<string>{{functionStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -174,9 +174,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{functionName}}</string>
+				<string>{{function}}</string>
 				<key>fontStyle</key>
-				<string>{{functionNameStyle}}</string>
+				<string>{{functionStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -220,28 +220,15 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Tag attribute</string>
-			<key>scope</key>
-			<string>entity.other.attribute-name</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>{{attributeName}}</string>
-				<key>fontStyle</key>
-				<string>{{attributeNameStyle}}</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>Library function</string>
 			<key>scope</key>
 			<string>support.function</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{functionName}}</string>
+				<string>{{function}}</string>
 				<key>fontStyle</key>
-				<string>{{functionNameStyle}}</string>
+				<string>{{functionStyle}}</string>
 			</dict>
 		</dict>
 		<dict>

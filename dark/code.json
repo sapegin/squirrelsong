@@ -4,23 +4,32 @@
   "keyword": ["magenta", "bold"],
   "tag name": ["magenta", "bold"],
   "tag brackets": "magenta",
+  // Numbers, booleans, CSS property values
   "value": "orange",
+  // Object properties, tag properties, JSON keys
   "property": "blue",
   "namespace": "blue",
-  "attribute name": "blue",
   "variable": ["blue", "italic"],
-  "function name": ["blue", "bold"],
+  "function": ["blue", "bold"],
+  // Strings, RegExps
   "string": "green",
+  // String escape characters `\"`
   "escape character": ["green", "bold"],
   "inserted": "green",
   "type": "teal",
+  // Basic operators `=`
   "operator": "teal",
-  "class name": ["teal", "bold"],
+  "class": ["teal", "bold"],
   "at-rule": ["teal", "bold"],
+  // Arrow functions `=>`, interpolation `${}`
   "control flow": ["teal", "bold"],
   "deleted": "red",
+  // CSS `!important`
   "important1": ["red", "bold"],
+  // RegExp character classes `\d`
   "important2": ["orange", "bold"],
+  // RegExp markers `^$`
   "important3": ["yellow", "bold"],
+  // HTML entities `&amp;`
   "important4": ["yellow", "gray060"]
 }

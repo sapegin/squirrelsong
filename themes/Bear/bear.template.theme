@@ -90,7 +90,7 @@
         "string": "{{string}}",
         "entity": "{{type}}",
         "keyword": "{{keyword}}",
-        "function": "{{functionName}}",
+        "function": "{{function}}",
         "variable": "{{variable}}"
       }
     },

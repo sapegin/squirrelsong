@@ -4,16 +4,16 @@
   "semanticHighlighting": true,
   "semanticTokenColors": {
     "function": {
-      "foreground": "{{functionName}}",
-      "fontStyle": "{{functionNameStyle}}"
+      "foreground": "{{function}}",
+      "fontStyle": "{{functionStyle}}"
     },
     "class": {
-      "foreground": "{{className}}",
-      "fontStyle": "{{classNameStyle}}"
+      "foreground": "{{class}}",
+      "fontStyle": "{{classStyle}}"
     },
     "method": {
-      "foreground": "{{functionName}}",
-      "fontStyle": "{{functionNameStyle}}"
+      "foreground": "{{function}}",
+      "fontStyle": "{{functionStyle}}"
     },
     "variable": {
       "foreground": "{{variable}}",

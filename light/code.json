@@ -6,12 +6,11 @@
   "tag brackets": "magenta",
   // Numbers, booleans, CSS property values
   "value": "orange",
-  // Object properties, JSON keys
+  // Object properties, tag properties, JSON keys
   "property": "blue",
-  "attribute name": "blue",
   "namespace": "blue",
   "variable": ["blue", "italic"],
-  "function name": ["blue", "bold"],
+  "function": ["blue", "bold"],
   // Strings, RegExps
   "string": "green",
   // String escape characters `\"`
@@ -20,7 +19,7 @@
   "type": "teal",
   // Basic operators `=`
   "operator": "teal",
-  "class name": ["teal", "bold"],
+  "class": ["teal", "bold"],
   "at-rule": ["teal", "bold"],
   // Arrow functions `=>`, interpolation `${}`
   "control flow": ["teal", "bold"],
@@ -31,6 +30,6 @@
   "important2": ["orange", "bold"],
   // RegExp markers `^$`
   "important3": ["yellow", "bold"],
-  // HTML entitities `&amp;`
+  // HTML entities `&amp;`
   "important4": ["gray060", "bold"]
 }
