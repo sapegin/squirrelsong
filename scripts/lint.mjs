@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /**
  * Lint themes to ensure they only use colors from the palette
  */
