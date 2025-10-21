@@ -38,34 +38,6 @@ brights = [
   '#edd5be',
 ]
 
-# Redefine the grayscale palette for 256-color mode
-# Hue: 30, saturation: 20
-[colors.indexed]
-232 = "#080706"
-233 = "#12100e"
-234 = "#1c1916"
-235 = "#26221f"
-236 = "#302c27"
-237 = "#3b352f"
-238 = "#453e37"
-239 = "#4f473f"
-240 = "#595047"
-241 = "#61574e"
-242 = "#6b6056"
-243 = "#756a5e"
-244 = "#807366"
-245 = "#8a7c6e"
-246 = "#948576"
-247 = "#9e8e7e"
-248 = "#a89787"
-249 = "#b3a18f"
-250 = "#bdaa97"
-251 = "#c7b39f"
-252 = "#d1bca7"
-253 = "#d9c3ad"
-254 = "#e3ccb6"
-255 = "#edd5be"
-
 [colors.tab_bar]
 # Retro tab bar
 background = '#292019'

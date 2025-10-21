@@ -159,32 +159,6 @@ const EXCEPTIONS = {
     // based on this color)
     '#d2ccdb',
   ],
-  'themes/WezTerm/squirrelsong-dark.toml': [
-    '#080706',
-    '#12100e',
-    '#1c1916',
-    '#26221f',
-    '#302c27',
-    '#3b352f',
-    '#453e37',
-    '#4f473f',
-    '#595047',
-    '#61574e',
-    '#6b6056',
-    '#756a5e',
-    '#807366',
-    '#8a7c6e',
-    '#948576',
-    '#9e8e7e',
-    '#a89787',
-    '#b3a18f',
-    '#bdaa97',
-    '#c7b39f',
-    '#d1bca7',
-    '#d9c3ad',
-    '#e3ccb6',
-    '#edd5be',
-  ],
 };
 
 const CUSTOM_LINTERS = [
