@@ -1,41 +1,41 @@
-# Squirrelsong ${name} Theme for WezTerm
+# Squirrelsong {{name}} Theme for WezTerm
 # https://sapegin.me/squirrelsong/
 
 [colors]
-foreground = '${foreground}'
-background = '${background}'
+foreground = '{{foreground}}'
+background = '{{background}}'
 
-cursor_bg = '${foreground}'
-cursor_fg = '${background}'
-cursor_border = '${foreground}'
+cursor_bg = '{{foreground}}'
+cursor_fg = '{{background}}'
+cursor_border = '{{foreground}}'
 
-selection_fg = '${foreground}'
-selection_bg = '${selectionBackground}'
+selection_fg = '{{foreground}}'
+selection_bg = '{{selectionBackground}}'
 
-split = '${lightBorder}'
+split = '{{lightBorder}}'
 
-visual_bell = "${brightRed}"
+visual_bell = "{{brightRed}}"
 
 ansi = [
-  '${black}',
-  '${red}',
-  '${green}',
-  '${yellow}',
-  '${blue}',
-  '${magenta}',
-  '${cyan}',
-  '${white}',
+  '{{black}}',
+  '{{red}}',
+  '{{green}}',
+  '{{yellow}}',
+  '{{blue}}',
+  '{{magenta}}',
+  '{{cyan}}',
+  '{{white}}',
 ]
 
 brights = [
-  '${brightBlack}',
-  '${brightRed}',
-  '${brightGreen}',
-  '${brightYellow}',
-  '${brightBlue}',
-  '${brightMagenta}',
-  '${brightCyan}',
-  '${brightWhite}',
+  '{{brightBlack}}',
+  '{{brightRed}}',
+  '{{brightGreen}}',
+  '{{brightYellow}}',
+  '{{brightBlue}}',
+  '{{brightMagenta}}',
+  '{{brightCyan}}',
+  '{{brightWhite}}',
 ]
 
 # Redefine the grayscale palette for 256-color mode
@@ -68,32 +68,32 @@ brights = [
 
 [colors.tab_bar]
 # Retro tab bar
-background = '${background}'
+background = '{{background}}'
 # Fancy tab bar
-inactive_tab_edge = '${background}'
+inactive_tab_edge = '{{background}}'
 
 [colors.tab_bar.active_tab]
-bg_color = '${activeBackground}'
-fg_color = '${activeForeground}'
+bg_color = '{{activeBackground}}'
+fg_color = '{{activeForeground}}'
 intensity = 'Bold'
 
 [colors.tab_bar.inactive_tab]
-bg_color = '${background}'
-fg_color = '${foreground}'
+bg_color = '{{background}}'
+fg_color = '{{foreground}}'
 
 [colors.tab_bar.inactive_tab_hover]
-bg_color = '${hoverBackground}'
-fg_color = '${foreground}'
+bg_color = '{{hoverBackground}}'
+fg_color = '{{foreground}}'
 
 [colors.tab_bar.new_tab]
-bg_color = '${background}'
-fg_color = '${foreground}'
+bg_color = '{{background}}'
+fg_color = '{{foreground}}'
 
 [colors.tab_bar.new_tab_hover]
-bg_color = '${hoverBackground}'
-fg_color = '${foreground}'
+bg_color = '{{hoverBackground}}'
+fg_color = '{{foreground}}'
 
 [metadata]
 aliases = []
 author = 'Artem Sapegin'
-name = 'Squirrelsong ${name}'
+name = 'Squirrelsong {{name}}'

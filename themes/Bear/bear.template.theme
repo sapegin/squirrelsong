@@ -1,76 +1,76 @@
 {
   "base": {
-    "text color": "${titleForeground}",
-    "text secondary color": "${textForeground}",
-    "text tertiary color": "${disabledForeground}",
-    "background color": "${textBackground}",
-    "background secondary color": "${uiBackground}",
-    "background tertiary color": "${secondaryButtonBackground}",
-    "background hover color": "${hoverBackground}",
-    "stroke color": "${lightBorder}",
-    "accent color": "${shyAccent}",
-    "icon color": "${icon}",
-    "dark icon color": "${activeIcon}",
-    "search primary color": "${matchBackground}",
-    "search secondary color": "${secondaryMatchBackground}",
-    "selection color": "${selectionBackground}"
+    "text color": "{{titleForeground}}",
+    "text secondary color": "{{textForeground}}",
+    "text tertiary color": "{{disabledForeground}}",
+    "background color": "{{textBackground}}",
+    "background secondary color": "{{uiBackground}}",
+    "background tertiary color": "{{secondaryButtonBackground}}",
+    "background hover color": "{{hoverBackground}}",
+    "stroke color": "{{lightBorder}}",
+    "accent color": "{{shyAccent}}",
+    "icon color": "{{icon}}",
+    "dark icon color": "{{activeIcon}}",
+    "search primary color": "{{matchBackground}}",
+    "search secondary color": "{{secondaryMatchBackground}}",
+    "selection color": "{{selectionBackground}}"
   },
   "notes": {
-    "title color": "${titleForeground}",
-    "subtitle color": "${textForeground}",
-    "placeholder color": "${textForeground}",
-    "date color": "${textForeground}",
-    "pin color": "${icon}",
-    "separator color": "${lightBorder}",
-    "search background color": "${secondaryMatchBackground}",
-    "attachment background color": "${uiBackground}",
-    "encrypted token color": "${uiBackground}",
-    "selection background color": "${hoverBackground}",
-    "ribbon color": "${icon}",
+    "title color": "{{titleForeground}}",
+    "subtitle color": "{{textForeground}}",
+    "placeholder color": "{{textForeground}}",
+    "date color": "{{textForeground}}",
+    "pin color": "{{icon}}",
+    "separator color": "{{lightBorder}}",
+    "search background color": "{{secondaryMatchBackground}}",
+    "attachment background color": "{{uiBackground}}",
+    "encrypted token color": "{{uiBackground}}",
+    "selection background color": "{{hoverBackground}}",
+    "ribbon color": "{{icon}}",
     "toolbar": {
-      "background color": "${textBackground}",
-      "text color": "${titleForeground}",
-      "icon color": "${icon}",
-      "hover color": "${hoverBackground}"
+      "background color": "{{textBackground}}",
+      "text color": "{{titleForeground}}",
+      "icon color": "{{icon}}",
+      "hover color": "{{hoverBackground}}"
     }
   },
   "sidebar": {
-    "text color": "${textForeground}",
-    "text secondary color": "${activeForeground}",
-    "background color": "${uiBackground}",
-    "background secondary color": "${activeBackground}",
-    "stroke color": "${lightBorder}",
-    "accent color": "${activeBackground}",
-    "icon color": "${icon}",
-    "selected icon color": "${activeIcon}",
+    "text color": "{{textForeground}}",
+    "text secondary color": "{{activeForeground}}",
+    "background color": "{{uiBackground}}",
+    "background secondary color": "{{activeBackground}}",
+    "stroke color": "{{lightBorder}}",
+    "accent color": "{{activeBackground}}",
+    "icon color": "{{icon}}",
+    "selected icon color": "{{activeIcon}}",
     "toolbar": {
-      "background color": "${uiBackground}",
-      "icon color": "${icon}",
-      "hover color": "${hoverBackground}"
+      "background color": "{{uiBackground}}",
+      "icon color": "{{icon}}",
+      "hover color": "{{hoverBackground}}"
     }
   },
   "placeholder": {
-    "background color": "${textBackground}",
-    "background stroke color": "${lightBorder}",
-    "shadow color": "${uiBackground}",
-    "stroke color": "${disabledForeground}"
+    "background color": "{{textBackground}}",
+    "background stroke color": "{{lightBorder}}",
+    "shadow color": "{{uiBackground}}",
+    "stroke color": "{{disabledForeground}}"
   },
   "editor": {
-    "background color": "${textBackground}",
-    "text color": "${titleForeground}",
-    "text light color": "${textForeground}",
-    "accent color": "${activeForeground}",
-    "cursor color": "${titleForeground}",
-    "link color": "${linkForeground}",
-    "list marker color": "${disabledForeground}",
-    "marker color": "${disabledForeground}",
-    "selection color": "${selectionBackground}",
-    "selection inactive color": "${secondarySelectionBackground}",
+    "background color": "{{textBackground}}",
+    "text color": "{{titleForeground}}",
+    "text light color": "{{textForeground}}",
+    "accent color": "{{activeForeground}}",
+    "cursor color": "{{titleForeground}}",
+    "link color": "{{linkForeground}}",
+    "list marker color": "{{disabledForeground}}",
+    "marker color": "{{disabledForeground}}",
+    "selection color": "{{selectionBackground}}",
+    "selection inactive color": "{{secondarySelectionBackground}}",
     "text font": "BearSansUI-Regular",
     "text size": 15,
     "line height multiplier": 1.5,
     "headers": {
-      "text color": "${titleForeground}",
+      "text color": "{{titleForeground}}",
       "font": "BearSansUIHeadline-Regular",
       "modular scale": 1.125,
       "line height multiplier": 1.3,
@@ -79,46 +79,46 @@
       "padding bottom multiplier": 0.3
     },
     "code": {
-      "text color": "${textForeground}",
+      "text color": "{{textForeground}}",
       "border color": "transparent",
-      "background color": "${uiBackground}",
+      "background color": "{{uiBackground}}",
       "font": "MonoLisa",
       "syntax highlight": {
-        "comment": "${comment}",
-        "constant": "${variable}",
-        "number": "${value}",
-        "string": "${string}",
-        "entity": "${type}",
-        "keyword": "${keyword}",
-        "function": "${functionName}",
-        "variable": "${variable}"
+        "comment": "{{comment}}",
+        "constant": "{{variable}}",
+        "number": "{{value}}",
+        "string": "{{string}}",
+        "entity": "{{type}}",
+        "keyword": "{{keyword}}",
+        "function": "{{functionName}}",
+        "variable": "{{variable}}"
       }
     },
     "task": {
-      "background color": "${textBackground}",
-      "border color": "${border}",
-      "check color": "${border}"
+      "background color": "{{textBackground}}",
+      "border color": "{{border}}",
+      "check color": "{{border}}"
     },
     "tag": {
-      "background color": "${secondaryButtonBackground}",
-      "text color": "${secondaryButtonForeground}",
-      "marker color": "${icon}"
+      "background color": "{{secondaryButtonBackground}}",
+      "text color": "{{secondaryButtonForeground}}",
+      "marker color": "{{icon}}"
     },
     "highlighter": {
-      "background color": "${yellowDim}",
-      "text color": "${titleForeground}"
+      "background color": "{{yellowDim}}",
+      "text color": "{{titleForeground}}"
     },
     "separator": {
-      "border color": "${border}"
+      "border color": "{{border}}"
     },
     "table": {
-      "border color": "${lightBorder}",
-      "cell background color": "${textBackground}",
-      "cell alternate background color": "${uiBackground}"
+      "border color": "{{lightBorder}}",
+      "cell background color": "{{textBackground}}",
+      "cell alternate background color": "{{uiBackground}}"
     },
     "toolbar": {
-      "icon color": "${icon}",
-      "hover color": "${hoverBackground}"
+      "icon color": "{{icon}}",
+      "hover color": "{{hoverBackground}}"
     }
   }
 }

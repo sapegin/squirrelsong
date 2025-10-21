@@ -12,7 +12,7 @@
 
 import fs from 'node:fs';
 import stripJsonComments from 'strip-json-comments';
-import { templateFromFile } from 'smpltmpl';
+import { processTemplate } from './util/template.mjs';
 import { hexToRgb } from './util/hexToRgb.mjs';
 
 function readJsonFile(file) {
@@ -174,13 +174,14 @@ const darkDpUiPalette = Object.fromEntries(
 console.log();
 console.log('[TERMINAL] Preparing Bear themes… 🌕');
 
-fs.writeFileSync(
+processTemplate(
+  'themes/Bear/bear.template.theme',
   'themes/Bear/Squirrelsong Light.theme',
-  templateFromFile('themes/Bear/bear.template.theme', {
+  {
     ...lightPalette,
     ...lightUiPalette,
     ...lightCodePalette,
-  }),
+  },
 );
 
 // ------------ 8< -- 8< ------------
@@ -190,22 +191,24 @@ console.log('[TERMINAL] Preparing Chrome themes… 🌗');
 
 const chromeLightManifest = 'themes/Chrome/extension-light/manifest.json';
 const chromeLight = JSON.parse(fs.readFileSync(chromeLightManifest));
-fs.writeFileSync(
+processTemplate(
+  'themes/Chrome/chrome-light.template.json',
   chromeLightManifest,
-  templateFromFile('themes/Chrome/chrome-light.template.json', {
+  {
     version: chromeLight.version,
     ...lightRgbPalette,
-  }),
+  },
 );
 
 const chromeDarkManifest = 'themes/Chrome/extension-dark/manifest.json';
 const chromeDark = JSON.parse(fs.readFileSync(chromeDarkManifest));
-fs.writeFileSync(
+processTemplate(
+  'themes/Chrome/chrome-dark.template.json',
   chromeDarkManifest,
-  templateFromFile('themes/Chrome/chrome-dark.template.json', {
+  {
     version: chromeDark.version,
     ...darkRgbPalette,
-  }),
+  },
 );
 
 // ------------ 8< -- 8< ------------
@@ -213,26 +216,28 @@ fs.writeFileSync(
 console.log();
 console.log('[TERMINAL] Preparing Ghostty themes… 🌚');
 
-fs.writeFileSync(
+processTemplate(
+  'themes/Ghostty/ghostty.template.ini',
   'themes/Ghostty/Squirrelsong Dark',
-  templateFromFile('themes/Ghostty/ghostty.template.ini', {
+  {
     name: 'Dark',
     ...darkAnsiPalette,
     ...darkUiPalette,
     iconForeground: darkPalette.purple070,
     iconBackground: darkPalette.gray140,
-  }),
+  },
 );
 
-fs.writeFileSync(
+processTemplate(
+  'themes/Ghostty/ghostty.template.ini',
   'themes/Ghostty/Squirrelsong Dark Deep Purple',
-  templateFromFile('themes/Ghostty/ghostty.template.ini', {
+  {
     name: 'Dark Deep Purple',
     ...darkDpAnsiPalette,
     ...darkDpUiPalette,
     iconForeground: darkPalette.purple070,
     iconBackground: darkPalette.purple140,
-  }),
+  },
 );
 
 // ------------ 8< -- 8< ------------
@@ -254,11 +259,12 @@ for (const [colorName, hexColor] of Object.entries(darkUiPalette)) {
   iTermDarkPalette[`${colorName}B`] = b / 255;
 }
 
-fs.writeFileSync(
+processTemplate(
+  'themes/iTerm2/iterm.template.itermcolors',
   'themes/iTerm2/Squirrelsong Dark.itermcolors',
-  templateFromFile('themes/iTerm2/iterm.template.itermcolors', {
+  {
     ...iTermDarkPalette,
-  }),
+  },
 );
 
 // ------------ 8< -- 8< ------------
@@ -266,40 +272,43 @@ fs.writeFileSync(
 console.log();
 console.log('[TERMINAL] Preparing Sublime Text themes… 🌗');
 
-fs.writeFileSync(
+processTemplate(
+  'themes/Sublime Text/textmate.template.tmTheme',
   'themes/Sublime Text/Squirrelsong Light/Squirrelsong Light.tmTheme',
-  templateFromFile('themes/Sublime Text/textmate.template.tmTheme', {
+  {
     name: 'Light',
     semanticClass: 'theme.light.squirrelsong_light',
     uuid: '506f39ff-75a5-45af-ba44-452c5244fdb4',
     ...lightCodePalette,
     ...lightCodeStyles,
     ...lightUiPalette,
-  }),
+  },
 );
 
-fs.writeFileSync(
+processTemplate(
+  'themes/Sublime Text/textmate.template.tmTheme',
   'themes/Sublime Text/Squirrelsong Dark/Squirrelsong Dark.tmTheme',
-  templateFromFile('themes/Sublime Text/textmate.template.tmTheme', {
+  {
     name: 'Dark',
     semanticClass: 'theme.dark.squirrelsong_dark',
     uuid: '59024f0e-5ea0-4d89-96a7-98147144a79f',
     ...darkCodePalette,
     ...darkCodeStyles,
     ...darkUiPalette,
-  }),
+  },
 );
 
-fs.writeFileSync(
+processTemplate(
+  'themes/Sublime Text/textmate.template.tmTheme',
   'themes/Sublime Text/Squirrelsong Dark Deep Purple/Squirrelsong Dark Deep Purple.tmTheme',
-  templateFromFile('themes/Sublime Text/textmate.template.tmTheme', {
+  {
     name: 'Dark Deep Purple',
     semanticClass: 'theme.dark.squirrelsong_dark_dp',
     uuid: 'b5348c12-370a-4291-a2c6-7aee60eb66e9',
     ...darkDpCodePalette,
     ...darkCodeStyles,
     ...darkDpUiPalette,
-  }),
+  },
 );
 
 // ------------ 8< -- 8< ------------
@@ -307,16 +316,17 @@ fs.writeFileSync(
 console.log();
 console.log('[TERMINAL] Preparing VSCode themes… 🌗');
 
-fs.writeFileSync(
+processTemplate(
+  'themes/VSCode/vscode.template.json',
   'themes/VSCode/SquirrelsongLight/SquirrelsongLight.color-theme.json',
-  templateFromFile('themes/VSCode/vscode.template.json', {
+  {
     name: 'Light',
     mode: 'light',
     ...lightCodePalette,
     ...lightCodeStyles,
     ...lightUiPalette,
     ...lightAnsiPalette,
-  }),
+  },
 );
 
 // ------------ 8< -- 8< ------------
@@ -324,13 +334,14 @@ fs.writeFileSync(
 console.log();
 console.log('[TERMINAL] Preparing Warp themes… 🌚');
 
-fs.writeFileSync(
+processTemplate(
+  'themes/Warp/warp.template.yaml',
   'themes/Warp/squirrelsong_dark.yaml',
-  templateFromFile('themes/Warp/warp.template.yaml', {
+  {
     name: 'Dark',
     ...darkPalette,
     ...darkAnsiPalette,
-  }),
+  },
 );
 
 // ------------ 8< -- 8< ------------
@@ -338,11 +349,12 @@ fs.writeFileSync(
 console.log();
 console.log('[TERMINAL] Preparing WezTerm themes… 🌚');
 
-fs.writeFileSync(
+processTemplate(
+  'themes/WezTerm/wezterm.template.toml',
   'themes/WezTerm/squirrelsong-dark.toml',
-  templateFromFile('themes/WezTerm/wezterm.template.toml', {
+  {
     name: 'Dark',
     ...darkAnsiPalette,
     ...darkUiPalette,
-  }),
+  },
 );
