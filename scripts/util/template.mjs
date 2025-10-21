@@ -61,3 +61,62 @@ export function renderTemplate(template, context, templatePath) {
     return context[key];
   });
 }
+
+/**
+ * Apply a template from a Markdown file and update a specific code block.
+ *
+ * Searches for a template definition in HTML comments and applies it to a code
+ * block marked with a specific apply marker.
+ *
+ * The file should contain:
+ * - A template definition: `<!-- template\n...\n-->`
+ * - An apply marker: `<!-- apply:name -->`
+ * - A code block immediately after the marker
+ *
+ * @param {string} filepath - Path to the markdown file to process
+ * @param {string} name - Name of the apply marker to find (used in <!-- apply:name -->)
+ * @param {Object} context - Object with key-value pairs for template substitution
+ */
+export function applyReadmeTemplate(filepath, name, context) {
+  const content = fs.readFileSync(filepath, 'utf8');
+
+  // Read the template
+  const templateMatch = content.match(/<!--\s*template\s*\n([\s\S]*?)\n-->/);
+  if (templateMatch === false) {
+    throw new Error(`No template comment found in ${filepath}`);
+  }
+  const template = templateMatch[1];
+
+  // Find the apply marker
+  const marker = `<!-- apply:${name} -->`;
+  const markerIndex = content.indexOf(marker);
+  if (markerIndex === -1) {
+    throw new Error(`Marker "${marker}" not found in ${filepath}`);
+  }
+
+  // Find the code block after the marker
+  const afterMarker = content.slice(markerIndex + marker.length);
+  const codeBlockStart = afterMarker.search(/```(\w+)?/);
+  if (codeBlockStart === -1) {
+    throw new Error(`No code block found after "${marker}" in ${filepath}`);
+  }
+
+  // Find the end of the code block (skip opening ```, find closing ```)
+  const codeBlockContentStart = afterMarker.indexOf('\n', codeBlockStart) + 1;
+  const codeBlockEnd = afterMarker.indexOf('```', codeBlockContentStart);
+  if (codeBlockEnd === -1) {
+    throw new Error(`Unclosed code block after "${marker}" in ${filepath}`);
+  }
+
+  const rendered = renderTemplate(template, context, filepath);
+
+  // Reconstruct the file with the new content
+  const before = content.slice(
+    0,
+    markerIndex + marker.length + codeBlockStart + codeBlockContentStart,
+  );
+  const after = content.slice(markerIndex + marker.length + codeBlockEnd);
+  const newContent = before + rendered + '\n' + after;
+
+  fs.writeFileSync(filepath, newContent);
+}

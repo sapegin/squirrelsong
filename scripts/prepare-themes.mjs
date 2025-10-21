@@ -2,6 +2,7 @@
  * Generate themes based on templates:
  * - Bear
  * - Chrome
+ * - fzf
  * - Ghostty
  * - iTerm
  * - Nimble Commander
@@ -13,7 +14,7 @@
 
 import fs from 'node:fs';
 import stripJsonComments from 'strip-json-comments';
-import { processTemplate } from './util/template.mjs';
+import { processTemplate, applyReadmeTemplate } from './util/template.mjs';
 import { hexToRgb } from './util/hexToRgb.mjs';
 
 function readJsonFile(file) {
@@ -206,6 +207,23 @@ const chromeDark = JSON.parse(fs.readFileSync(chromeDarkManifest));
 processTemplate('themes/Chrome/chrome-dark.template.json', chromeDarkManifest, {
   version: chromeDark.version,
   ...darkRgbPalette,
+});
+
+// ------------ 8< -- 8< ------------
+
+console.log();
+console.log('[TERMINAL] Preparing fzf themes… 🌚');
+
+applyReadmeTemplate('themes/Fzf/Readme.md', 'dark', {
+  ...darkPalette,
+  ...darkAnsiPalette,
+  ...darkUiPalette,
+});
+
+applyReadmeTemplate('themes/Fzf/Readme.md', 'dark-dp', {
+  ...darkPalette,
+  ...darkDpAnsiPalette,
+  ...darkDpUiPalette,
 });
 
 // ------------ 8< -- 8< ------------
