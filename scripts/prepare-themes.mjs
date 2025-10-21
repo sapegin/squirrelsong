@@ -4,6 +4,7 @@
  * - Chrome
  * - Ghostty
  * - iTerm
+ * - Nimble Commander
  * - Sublime Text
  * - VSCode
  * - Warp
@@ -202,14 +203,10 @@ processTemplate(
 
 const chromeDarkManifest = 'themes/Chrome/extension-dark/manifest.json';
 const chromeDark = JSON.parse(fs.readFileSync(chromeDarkManifest));
-processTemplate(
-  'themes/Chrome/chrome-dark.template.json',
-  chromeDarkManifest,
-  {
-    version: chromeDark.version,
-    ...darkRgbPalette,
-  },
-);
+processTemplate('themes/Chrome/chrome-dark.template.json', chromeDarkManifest, {
+  version: chromeDark.version,
+  ...darkRgbPalette,
+});
 
 // ------------ 8< -- 8< ------------
 
@@ -264,6 +261,22 @@ processTemplate(
   'themes/iTerm2/Squirrelsong Dark.itermcolors',
   {
     ...iTermDarkPalette,
+  },
+);
+
+// ------------ 8< -- 8< ------------
+
+console.log();
+console.log('[TERMINAL] Preparing Nimble Commander themes… 🌕');
+
+processTemplate(
+  'themes/Nimble Commander/nimble-commander.template.json',
+  'themes/Nimble Commander/Squirrelsong Light.json',
+  {
+    ...lightPalette,
+    ...lightAnsiPalette,
+    ...lightCodePalette,
+    ...lightUiPalette,
   },
 );
 

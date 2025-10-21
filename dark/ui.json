@@ -12,6 +12,7 @@
   "link hover foreground": "blueContrast",
   "text background": "gray180",
   "ui background": "gray170",
+  "secondary ui background": "gray160",
   "button background": "gray110",
   "button hover background": "gray090",
   "secondary button background": "gray140",
