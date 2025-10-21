@@ -1,7 +1,7 @@
 {
   "themeAppearance": "light",
   "themeName": "Squirrelsong Light",
-  "filePanelsBriefFocusedActiveItemBackgroundColor": "{{boldAccentBackground}}",
+  "filePanelsBriefFocusedActiveItemBackgroundColor": "{{boldAccent}}",
   "filePanelsBriefFocusedInactiveItemBackgroundColor": "{{hoverBackground}}",
   "filePanelsBriefFont": "@systemFont, 13",
   "filePanelsBriefGridColor": "{{border}}00",
@@ -24,7 +24,7 @@
   "filePanelsHeaderInactiveBackgroundColor": "{{textBackground}}",
   "filePanelsHeaderSeparatorColor": "{{border}}",
   "filePanelsHeaderTextColor": "{{disabledForeground}}",
-  "filePanelsListFocusedActiveRowBackgroundColor": "{{boldAccentBackground}}",
+  "filePanelsListFocusedActiveRowBackgroundColor": "{{boldAccent}}",
   "filePanelsListFocusedInactiveRowBackgroundColor": "{{secondaryUiBackground}}",
   "filePanelsListFont": "@systemFont, 13",
   "filePanelsListGridColor": "{{border}}00",
@@ -49,7 +49,7 @@
     {
       "name": "selected",
       "regular": "{{brightPink}}",
-      "focused": "{{brightPink}}",
+      "focused": "{{brightPinkDimer}}",
       "filter": {
         "selected": true
       }
@@ -57,7 +57,7 @@
     {
       "name": "hidden",
       "regular": "{{disabledForeground}}",
-      "focused": "{{activeForeground}}",
+      "focused": "{{textBackground}}",
       "filter": {
         "hidden": true
       }
@@ -65,7 +65,7 @@
     {
       "name": "other",
       "regular": "{{textForeground}}",
-      "focused": "{{activeForeground}}"
+      "focused": "{{textBackground}}"
     }
   ],
   "terminalFont": "MonoLisa, 15",

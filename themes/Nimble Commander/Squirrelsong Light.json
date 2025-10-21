@@ -1,7 +1,7 @@
 {
   "themeAppearance": "light",
   "themeName": "Squirrelsong Light",
-  "filePanelsBriefFocusedActiveItemBackgroundColor": "#d7cfe3",
+  "filePanelsBriefFocusedActiveItemBackgroundColor": "#ac9bc5",
   "filePanelsBriefFocusedInactiveItemBackgroundColor": "#e8e5eb",
   "filePanelsBriefFont": "@systemFont, 13",
   "filePanelsBriefGridColor": "#c9c4cf00",
@@ -24,7 +24,7 @@
   "filePanelsHeaderInactiveBackgroundColor": "#fdfdfe",
   "filePanelsHeaderSeparatorColor": "#c9c4cf",
   "filePanelsHeaderTextColor": "#9c96a2",
-  "filePanelsListFocusedActiveRowBackgroundColor": "#d7cfe3",
+  "filePanelsListFocusedActiveRowBackgroundColor": "#ac9bc5",
   "filePanelsListFocusedInactiveRowBackgroundColor": "#e8e5eb",
   "filePanelsListFont": "@systemFont, 13",
   "filePanelsListGridColor": "#c9c4cf00",
@@ -49,7 +49,7 @@
     {
       "name": "selected",
       "regular": "#e87da4",
-      "focused": "#e87da4",
+      "focused": "#fae1ea",
       "filter": {
         "selected": true
       }
@@ -57,7 +57,7 @@
     {
       "name": "hidden",
       "regular": "#9c96a2",
-      "focused": "#4c4b4e",
+      "focused": "#fdfdfe",
       "filter": {
         "hidden": true
       }
@@ -65,7 +65,7 @@
     {
       "name": "other",
       "regular": "#78737d",
-      "focused": "#4c4b4e"
+      "focused": "#fdfdfe"
     }
   ],
   "terminalFont": "MonoLisa, 15",
