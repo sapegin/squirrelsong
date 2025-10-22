@@ -1,5 +1,7 @@
 # Squirrelsong Dark Theme for [fzf](https://github.com/junegunn/fzf)
 
+![Squirrelsong dark deep purple theme for fzf](screenshot-dark-dp.jpg)
+
 ## Installing from GitHub
 
 1. Add the following to your `~/.bashrc`, `~/.zshrc`, or any other file that your shell loads on startup.
