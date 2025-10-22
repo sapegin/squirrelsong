@@ -175,7 +175,7 @@ const darkDpUiPalette = Object.fromEntries(
 // ------------ 8< -- 8< ------------
 
 console.log();
-console.log('[TERMINAL] Preparing Alfred themes… 🌕');
+console.log('[THEME] Preparing Alfred themes… 🌕');
 
 processTemplate(
   'themes/Alfred/alfred.template.alfredappearance',
@@ -190,7 +190,7 @@ processTemplate(
 // ------------ 8< -- 8< ------------
 
 console.log();
-console.log('[TERMINAL] Preparing Bear themes… 🌕');
+console.log('[THEME] Preparing Bear themes… 🌕');
 
 processTemplate(
   'themes/Bear/bear.template.theme',
@@ -205,7 +205,7 @@ processTemplate(
 // ------------ 8< -- 8< ------------
 
 console.log();
-console.log('[TERMINAL] Preparing Chrome themes… 🌗');
+console.log('[THEME] Preparing Chrome themes… 🌗');
 
 const chromeLightManifest = 'themes/Chrome/extension-light/manifest.json';
 const chromeLight = JSON.parse(fs.readFileSync(chromeLightManifest));
@@ -228,7 +228,7 @@ processTemplate('themes/Chrome/chrome-dark.template.json', chromeDarkManifest, {
 // ------------ 8< -- 8< ------------
 
 console.log();
-console.log('[TERMINAL] Preparing fzf themes… 🌚');
+console.log('[THEME] Preparing fzf themes… 🌚');
 
 applyReadmeTemplate('themes/Fzf/Readme.md', 'dark', {
   ...darkPalette,
@@ -245,7 +245,7 @@ applyReadmeTemplate('themes/Fzf/Readme.md', 'dark-dp', {
 // ------------ 8< -- 8< ------------
 
 console.log();
-console.log('[TERMINAL] Preparing Ghostty themes… 🌚');
+console.log('[THEME] Preparing Ghostty themes… 🌚');
 
 processTemplate(
   'themes/Ghostty/ghostty.template.ini',
@@ -274,7 +274,7 @@ processTemplate(
 // ------------ 8< -- 8< ------------
 
 console.log();
-console.log('[TERMINAL] Preparing iTerm themes… 🌚');
+console.log('[THEME] Preparing iTerm themes… 🌚');
 
 const iTermDarkPalette = {};
 for (const [colorName, hexColor] of Object.entries(darkAnsiPalette)) {
@@ -301,7 +301,7 @@ processTemplate(
 // ------------ 8< -- 8< ------------
 
 console.log();
-console.log('[TERMINAL] Preparing Nimble Commander themes… 🌕');
+console.log('[THEME] Preparing Nimble Commander themes… 🌕');
 
 processTemplate(
   'themes/Nimble Commander/nimble-commander.template.json',
@@ -317,7 +317,7 @@ processTemplate(
 // ------------ 8< -- 8< ------------
 
 console.log();
-console.log('[TERMINAL] Preparing Sublime Text themes… 🌗');
+console.log('[THEME] Preparing Sublime Text themes… 🌗');
 
 processTemplate(
   'themes/Sublime Text/textmate.template.tmTheme',
@@ -361,7 +361,7 @@ processTemplate(
 // ------------ 8< -- 8< ------------
 
 console.log();
-console.log('[TERMINAL] Preparing VSCode themes… 🌗');
+console.log('[THEME] Preparing VSCode themes… 🌗');
 
 processTemplate(
   'themes/VSCode/vscode.template.json',
@@ -379,7 +379,7 @@ processTemplate(
 // ------------ 8< -- 8< ------------
 
 console.log();
-console.log('[TERMINAL] Preparing Warp themes… 🌚');
+console.log('[THEME] Preparing Warp themes… 🌚');
 
 processTemplate(
   'themes/Warp/warp.template.yaml',
@@ -394,7 +394,7 @@ processTemplate(
 // ------------ 8< -- 8< ------------
 
 console.log();
-console.log('[TERMINAL] Preparing WezTerm themes… 🌚');
+console.log('[THEME] Preparing WezTerm themes… 🌚');
 
 processTemplate(
   'themes/WezTerm/wezterm.template.toml',
