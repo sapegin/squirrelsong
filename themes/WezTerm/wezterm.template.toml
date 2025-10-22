@@ -2,47 +2,47 @@
 # https://sapegin.me/squirrelsong/
 
 [colors]
-foreground = '{{foreground}}'
-background = '{{background}}'
+foreground = '{{terminalForeground}}'
+background = '{{terminalBackground}}'
 
-cursor_bg = '{{foreground}}'
-cursor_fg = '{{background}}'
-cursor_border = '{{foreground}}'
+cursor_bg = '{{terminalForeground}}'
+cursor_fg = '{{terminalBackground}}'
+cursor_border = '{{terminalForeground}}'
 
-selection_fg = '{{foreground}}'
+selection_fg = '{{terminalForeground}}'
 selection_bg = '{{selectionBackground}}'
 
 split = '{{lightBorder}}'
 
-visual_bell = "{{brightRed}}"
+visual_bell = "{{terminalBrightRed}}"
 
 ansi = [
-  '{{black}}',
-  '{{red}}',
-  '{{green}}',
-  '{{yellow}}',
-  '{{blue}}',
-  '{{magenta}}',
-  '{{cyan}}',
-  '{{white}}',
+  '{{terminalBlack}}',
+  '{{terminalRed}}',
+  '{{terminalGreen}}',
+  '{{terminalYellow}}',
+  '{{terminalBlue}}',
+  '{{terminalMagenta}}',
+  '{{terminalCyan}}',
+  '{{terminalWhite}}',
 ]
 
 brights = [
-  '{{brightBlack}}',
-  '{{brightRed}}',
-  '{{brightGreen}}',
-  '{{brightYellow}}',
-  '{{brightBlue}}',
-  '{{brightMagenta}}',
-  '{{brightCyan}}',
-  '{{brightWhite}}',
+  '{{terminalBrightBlack}}',
+  '{{terminalBrightRed}}',
+  '{{terminalBrightGreen}}',
+  '{{terminalBrightYellow}}',
+  '{{terminalBrightBlue}}',
+  '{{terminalBrightMagenta}}',
+  '{{terminalBrightCyan}}',
+  '{{terminalBrightWhite}}',
 ]
 
 [colors.tab_bar]
 # Retro tab bar
-background = '{{background}}'
+background = '{{terminalBackground}}'
 # Fancy tab bar
-inactive_tab_edge = '{{background}}'
+inactive_tab_edge = '{{terminalBackground}}'
 
 [colors.tab_bar.active_tab]
 bg_color = '{{activeBackground}}'
@@ -50,20 +50,20 @@ fg_color = '{{activeForeground}}'
 intensity = 'Bold'
 
 [colors.tab_bar.inactive_tab]
-bg_color = '{{background}}'
-fg_color = '{{foreground}}'
+bg_color = '{{terminalBackground}}'
+fg_color = '{{terminalForeground}}'
 
 [colors.tab_bar.inactive_tab_hover]
 bg_color = '{{hoverBackground}}'
-fg_color = '{{foreground}}'
+fg_color = '{{terminalForeground}}'
 
 [colors.tab_bar.new_tab]
-bg_color = '{{background}}'
-fg_color = '{{foreground}}'
+bg_color = '{{terminalBackground}}'
+fg_color = '{{terminalForeground}}'
 
 [colors.tab_bar.new_tab_hover]
 bg_color = '{{hoverBackground}}'
-fg_color = '{{foreground}}'
+fg_color = '{{terminalForeground}}'
 
 [metadata]
 aliases = []

@@ -2,8 +2,8 @@
   "punctuation": "gray060",
   "comment": "gray120",
   "keyword": ["magenta", "bold"],
-  "tag name": ["magenta", "bold"],
-  "tag brackets": "magenta",
+  "tagName": ["magenta", "bold"],
+  "tagBrackets": "magenta",
   // Numbers, booleans, CSS property values
   "value": "orange",
   // Object properties, tag properties, JSON keys
@@ -14,15 +14,16 @@
   // Strings, RegExps
   "string": "green",
   // String escape characters `\"`
-  "escape character": ["green", "bold"],
+  "escapeCharacter": ["green", "bold"],
   "inserted": "green",
   "type": "teal",
   // Basic operators `=`
   "operator": "teal",
   "class": ["teal", "bold"],
-  "at-rule": ["teal", "bold"],
+  // TODO: Change to preprocessor or something?
+  "atRule": ["teal", "bold"],
   // Arrow functions `=>`, interpolation `${}`
-  "control flow": ["teal", "bold"],
+  "controlFlow": ["teal", "bold"],
   "deleted": "red",
   // CSS `!important`
   "important1": ["red", "bold"],

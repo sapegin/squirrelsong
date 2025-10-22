@@ -37,10 +37,10 @@ exexport FZF_DEFAULT_OPTS='
 
 <!-- template
 export FZF_DEFAULT_OPTS='
-  --color=fg:-1,fg+:{{foreground}},bg:-1,bg+:{{shyAccent}}
-  --color=hl:{{boldAccent}},hl+:{{brightPinkDim}},info:{{brightBlack}},marker:{{yellow}}
-  --color=prompt:{{brightBlack}},spinner:{{shyAccent}},pointer:{{foreground}},header:{{brightWhite}}
-  --color=border:{{border}},label:{{shyAccent}},query:{{brightWhite}},disabled:{{brightBlack}}
+  --color=fg:-1,fg+:{{terminalForeground}},bg:-1,bg+:{{shyAccent}}
+  --color=hl:{{boldAccent}},hl+:{{brightPinkDim}},info:{{terminalBrightBlack}},marker:{{terminalYellow}}
+  --color=prompt:{{terminalBrightBlack}},spinner:{{shyAccent}},pointer:{{terminalForeground}},header:{{terminalBrightWhite}}
+  --color=border:{{border}},label:{{shyAccent}},query:{{terminalBrightWhite}},disabled:{{terminalBrightBlack}}
   --border="rounded" --border-label="" --preview-window="border-rounded" --prompt="> "
   --marker=">" --pointer="▪︎" --separator="─" --scrollbar="│"
   --info="right"'
