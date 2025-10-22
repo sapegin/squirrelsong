@@ -6,22 +6,22 @@
       "textSpacing": 5,
       "subtext": {
         "size": 12,
-        "colorSelected": "#8c8792ff",
+        "colorSelected": "{{secondaryTextForeground}}ff",
         "font": "System Light",
-        "color": "#8c8792ff"
+        "color": "{{secondaryTextForeground}}ff"
       },
       "shortcut": {
         "size": 16,
-        "colorSelected": "#8c8792ff",
+        "colorSelected": "{{secondaryTextForeground}}ff",
         "font": "System Light",
-        "color": "#8c8792ff"
+        "color": "{{secondaryTextForeground}}ff"
       },
-      "backgroundSelected": "#dbd7e0ff",
+      "backgroundSelected": "{{activeBackground}}ff",
       "text": {
         "size": 18,
-        "colorSelected": "#4c4b4eff",
+        "colorSelected": "{{activeForeground}}ff",
         "font": "System Light",
-        "color": "#78737dff"
+        "color": "{{textForeground}}ff"
       },
       "iconPaddingHorizontal": 4,
       "roundness": 0,
@@ -29,36 +29,36 @@
       "iconSize": 40
     },
     "search": {
-      "backgroundSelected": "#f8e7a0ff",
+      "backgroundSelected": "{{selectionBackground}}ff",
       "paddingHorizontal": 8,
       "spacing": 4,
       "text": {
         "size": 34,
-        "colorSelected": "#78737dff",
+        "colorSelected": "{{textForeground}}ff",
         "font": "System Light",
-        "color": "#78737dff"
+        "color": "{{textForeground}}ff"
       },
-      "background": "#fdfdfe00",
+      "background": "{{textBackground}}00",
       "roundness": 0,
       "paddingVertical": 4
     },
     "window": {
-      "color": "#f7f6f9ff",
+      "color": "{{uiBackground}}ff",
       "paddingHorizontal": 0,
       "width": 559,
       "borderPadding": 0,
-      "borderColor": "#c9c4cfff",
+      "borderColor": "{{border}}ff",
       "blur": 0,
       "roundness": 4,
       "paddingVertical": 4
     },
     "visualEffectMode": 1,
     "separator": {
-      "color": "#c9c4cfff",
+      "color": "{{border}}ff",
       "thickness": 0
     },
     "scrollbar": {
-      "color": "#8c8792ff",
+      "color": "{{icon}}ff",
       "thickness": 4
     }
   }

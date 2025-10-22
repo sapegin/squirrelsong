@@ -1,5 +1,6 @@
 /**
  * Generate themes based on templates:
+ * - Alfred
  * - Bear
  * - Chrome
  * - fzf
@@ -169,6 +170,21 @@ const darkDpUiPalette = Object.fromEntries(
     }
     return [toCamelCase(key), darkPalette[paletteColorName]];
   }),
+);
+
+// ------------ 8< -- 8< ------------
+
+console.log();
+console.log('[TERMINAL] Preparing Alfred themes… 🌕');
+
+processTemplate(
+  'themes/Alfred/alfred.template.alfredappearance',
+  'themes/Alfred/Squirrelsong Light.alfredappearance',
+  {
+    ...lightPalette,
+    ...lightUiPalette,
+    ...lightCodePalette,
+  },
 );
 
 // ------------ 8< -- 8< ------------
