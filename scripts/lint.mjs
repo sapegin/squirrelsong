@@ -16,7 +16,6 @@ import stripJsonComments from 'strip-json-comments';
 import terminalLink from 'terminal-link';
 import rgbHex from 'rgb-hex';
 
-// TODO: Stray RGB colors: --colors=match:bg:72,42,71
 // TODO: Terminal.app
 // TODO: Vivaldi (inside .zip file)
 
@@ -183,6 +182,27 @@ const EXCEPTIONS = {
     '#f6f2ef',
     '#ebe4dc',
     '#b0a59d',
+  ],
+  'dotfiles/bin/sync-vscode-icons': [
+    // Original Catppuccin colors that are replaced with Squirrelsong palette
+    '#179299',
+    '#04a5e5',
+    '#1e66f5',
+    '#209fb5',
+    '#3700ff',
+    '#40a02b',
+    '#4c4f69',
+    '#7287fd',
+    '#8839ef',
+    '#8c8fa1',
+    '#d20f39',
+    '#dc8a78',
+    '#dd7878',
+    '#df8e1d',
+    '#e64553',
+    '#ea76cb',
+    '#fe640b',
+    '#fff',
   ],
 };
 
@@ -379,18 +399,28 @@ function lintJson(file, validColors, exceptions) {
 function lintText(file, validColors, exceptions) {
   const text = fs.readFileSync(file, 'utf8');
 
-  const matches = text.match(/#[\da-f]{3,8}\b/gi);
-  if (matches === null) {
-    return;
-  }
+  let numberOfColors = 0;
 
-  for (const color of matches) {
+  // Lint HEX colors
+  const hexMatches = text.matchAll(/#[\da-f]{3,8}\b/gi);
+  for (const [color] of hexMatches) {
+    numberOfColors++;
     if (isValidHexColor(color, validColors, exceptions) === false) {
       achtung(color);
     }
   }
 
-  done(matches.length);
+  // Lint RGB colors: 255,0,255
+  const rgbMatches = text.matchAll(/(\d{1,3}),\s*(\d{1,3}),\s*(\d{1,3})/g);
+  for (const value of rgbMatches) {
+    numberOfColors++;
+    const hex = `#${rgbHex(Number(value[1]), Number(value[2]), Number(value[3]))}`;
+    if (isValidHexColor(hex, validColors, exceptions) === false) {
+      achtung(`${hex} (${value[0]})`);
+    }
+  }
+
+  done(numberOfColors);
 }
 
 function lint(files, lightColors, darkColors) {
@@ -463,12 +493,22 @@ if (fs.existsSync(DOTFILES_ROOT)) {
   const dotfiles = [
     ...glob.sync(`${DOTFILES_ROOT}/**/*.{${EXTENSIONS}}`),
     ...glob.sync(`${DOTFILES_ROOT}/**/.{${EXTENSIONS}}`),
-  ].filter(
-    (file) =>
-      file.includes('vscode/User') === false &&
-      file.includes('-master/') === false &&
-      file.includes('dotfiles/brain/') === false,
-  );
+    ...glob.sync(`${DOTFILES_ROOT}/bin/**/*`),
+  ]
+
+    .filter((file) => fs.statSync(file).isFile())
+    .filter(
+      (file) =>
+        // VS Code and Cursor internal files
+        file.includes('workspaceStorage/') === false &&
+        file.includes('globalStorage/') === false &&
+        file.includes('globalStorage/') === false &&
+        file.includes('History/') === false &&
+        // Cloned repositories
+        file.includes('-master/') === false &&
+        // Custom themes
+        file.includes('dotfiles/brain/') === false,
+    );
 
   lint(dotfiles, Object.values(lightPalette), Object.values(darkPalette));
 }
