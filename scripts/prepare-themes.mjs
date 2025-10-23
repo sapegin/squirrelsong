@@ -137,6 +137,17 @@ const darkUiPalette = Object.fromEntries(
 
 // Create Dark Deep Purple palettes
 
+const darkDpPalette = Object.fromEntries(
+  Object.entries(darkPalette).map(([colorName]) => {
+    const paletteColorName = getDarkDpColorName(colorName);
+    if (darkPalette[paletteColorName] === undefined) {
+      console.error(
+        `⛔️ Color not found in the dark palette: ${paletteColorName}`,
+      );
+    }
+    return [colorName, darkPalette[paletteColorName]];
+  }),
+);
 const darkDpAnsiPalette = Object.fromEntries(
   Object.entries(darkAnsiPaletteRaw).map(([key, colorName]) => {
     const paletteColorName = getDarkDpColorName(colorName);
@@ -363,16 +374,94 @@ processTemplate(
 console.log();
 console.log('[THEME] Preparing VSCode themes… 🌗');
 
+const lightCodeBase = {
+  ...lightPalette,
+  ...lightCodePalette,
+  ...lightCodeStyles,
+  ...lightUiPalette,
+};
+const darkCodeBase = {
+  ...darkPalette,
+  ...darkCodePalette,
+  ...darkCodeStyles,
+  ...darkUiPalette,
+};
+const darkDpCodeBase = {
+  ...darkDpPalette,
+  ...darkDpCodePalette,
+  ...darkCodeStyles,
+  ...darkDpUiPalette,
+};
+const lightCodeTerminal = {
+  ...lightAnsiPalette,
+  terminalBorder: lightUiPalette.border,
+  terminalMatchBackground: lightUiPalette.matchBackground,
+  terminalMatchBase: lightUiPalette.matchBase,
+  terminalSelectionBase: lightUiPalette.selectionBase,
+};
+const darkCodeTerminal = {
+  ...darkAnsiPalette,
+  terminalBorder: darkUiPalette.border,
+  terminalMatchBackground: darkUiPalette.matchBackground,
+  terminalMatchBase: darkUiPalette.matchBase,
+  terminalSelectionBase: darkUiPalette.selectionBase,
+};
+const darkDpCodeTerminal = {
+  ...darkDpAnsiPalette,
+  terminalBorder: darkDpUiPalette.border,
+  terminalMatchBackground: darkDpUiPalette.matchBackground,
+  terminalMatchBase: darkDpUiPalette.matchBase,
+  terminalSelectionBase: darkDpUiPalette.selectionBase,
+};
+
 processTemplate(
   'themes/VSCode/vscode.template.json',
   'themes/VSCode/SquirrelsongLight/SquirrelsongLight.color-theme.json',
   {
     name: 'Light',
     mode: 'light',
-    ...lightCodePalette,
-    ...lightCodeStyles,
-    ...lightUiPalette,
-    ...lightAnsiPalette,
+    ...lightCodeBase,
+    ...lightCodeTerminal,
+  },
+);
+processTemplate(
+  'themes/VSCode/vscode.template.json',
+  'themes/VSCode/SquirrelsongLight/SquirrelsongLightDarkTerminal.color-theme.json',
+  {
+    name: 'Light (Dark Terminal)',
+    mode: 'light',
+    ...lightCodeBase,
+    ...darkCodeTerminal,
+  },
+);
+processTemplate(
+  'themes/VSCode/vscode.template.json',
+  'themes/VSCode/SquirrelsongLight/SquirrelsongLightDarkDeepPurpleTerminal.color-theme.json',
+  {
+    name: 'Light (Dark Deep Purple Terminal)',
+    mode: 'light',
+    ...lightCodeBase,
+    ...darkDpCodeTerminal,
+  },
+);
+processTemplate(
+  'themes/VSCode/vscode.template.json',
+  'themes/VSCode/SquirrelsongDark/SquirrelsongDark.color-theme.json',
+  {
+    name: 'Dark',
+    mode: 'dark',
+    ...darkCodeBase,
+    ...darkCodeTerminal,
+  },
+);
+processTemplate(
+  'themes/VSCode/vscode.template.json',
+  'themes/VSCode/SquirrelsongDark/SquirrelsongDarkDeepPurple.color-theme.json',
+  {
+    name: 'Dark Deep Purple',
+    mode: 'dark',
+    ...darkDpCodeBase,
+    ...darkDpCodeTerminal,
   },
 );
 
