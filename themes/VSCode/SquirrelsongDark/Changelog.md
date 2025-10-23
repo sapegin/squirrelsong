@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.3.1
+
+- Tweak bracket highlight colors to avoid using red/orange colors.
+
 ## 3.3.0
 
 - Generate all themes using templates.
