@@ -1,9 +1,13 @@
 #!/usr/bin/env node
 
 /**
- * Lint themes to ensure they only use colors from the palette
+ * Lint themes to ensure they only use colors from the palette.
+ *
+ * Additionally, lints ~/dotfiles folder if present, as I use many colors in my
+ * setup.
  */
 
+import os from 'node:os';
 import fs from 'node:fs';
 import path from 'node:path';
 import _ from 'lodash';
@@ -12,11 +16,14 @@ import stripJsonComments from 'strip-json-comments';
 import terminalLink from 'terminal-link';
 import rgbHex from 'rgb-hex';
 
+// TODO: Stray RGB colors: --colors=match:bg:72,42,71
 // TODO: Terminal.app
 // TODO: Vivaldi (inside .zip file)
 
 let errorCount = 0;
 let fileCount = 0;
+
+const DOTFILES_ROOT = path.join(os.homedir(), 'dotfiles');
 
 const EXTENSIONS = [
   'alfredappearance',
@@ -31,7 +38,20 @@ const EXTENSIONS = [
   'tmTheme',
   'toml',
   'vim',
+  'yml',
   'yaml',
+  // Extra extensions that appear in dotfiles
+  'ackrc',
+  'cjs',
+  'gitconfig',
+  'js',
+  'mjs',
+  'ripgreprc',
+  'sh',
+  'toml',
+  'ts',
+  'zsh',
+  'zshrc',
   // TODO: Not supported yet
   // 'terminal',
 ].join(',');
@@ -44,6 +64,7 @@ const EXTRA_FILES = [
 const IGNORES = [
   'package.json',
   'package-lock.json',
+  'Brewfile.lock.json',
   // Mixed light/dark files
   'SquirrelsongLightDarkTerminal.color-theme.json',
   'SquirrelsongLightDarkDeepPurpleTerminal.color-theme.json',
@@ -157,6 +178,12 @@ const EXCEPTIONS = {
     // based on this color)
     '#d2ccdb',
   ],
+  'dotfiles/firefox/chrome/userContent.css': [
+    // Custom sepia theme colors
+    '#f6f2ef',
+    '#ebe4dc',
+    '#b0a59d',
+  ],
 };
 
 const CUSTOM_LINTERS = [
@@ -261,7 +288,11 @@ function isHexColor(value) {
   if (typeof value !== 'string') {
     return false;
   }
-  return /^#[\da-f]{3,8}$/i.test(value);
+  return (
+    /^#[\da-f]+$/i.test(value) &&
+    // #fff, #ff00ff, #ff00ff88
+    (value.length === 4 || value.length === 7 || value.length === 9)
+  );
 }
 
 function isValidHexColor(value, validColors, exceptions) {
@@ -367,6 +398,11 @@ function lint(files, lightColors, darkColors) {
 
   for (const file of themesSorted) {
     const filename = path.basename(file);
+    const relativePath = file.replace(DOTFILES_ROOT, 'dotfiles');
+    const absolutePath = file.startsWith('/')
+      ? file
+      : path.join(process.cwd(), file);
+
     if (
       IGNORES.includes(filename) ||
       file.includes('node_modules') ||
@@ -378,12 +414,12 @@ function lint(files, lightColors, darkColors) {
     console.log();
     console.log(
       '👉',
-      terminalLink(file, `vscode://file//${process.cwd()}/${file}`),
+      terminalLink(relativePath, `vscode://file//${absolutePath}`),
     );
 
     const validColors = getPalette(filename, lightColors, darkColors);
 
-    const exceptions = EXCEPTIONS[file] ?? [];
+    const exceptions = EXCEPTIONS[relativePath] ?? [];
 
     const lintFunction = getCustomLinter(file);
     if (lintFunction) {
@@ -406,18 +442,36 @@ function lint(files, lightColors, darkColors) {
   }
 }
 
+const lightPalette = readJsonFile('light/palette.json');
+const darkPalette = readJsonFile('dark/palette.json');
+
 console.log();
 console.log();
-console.log('[LINT] Linting themes... 🌞🌚');
+console.log('[LINT] Linting themes... 🌗');
 
 const themes = [
   ...glob.sync(`themes/**/*.{${EXTENSIONS}}`),
   ...glob.sync(`themes/*/Readme.md`),
   ...EXTRA_FILES,
 ];
-const lightPalette = readJsonFile('light/palette.json');
-const darkPalette = readJsonFile('dark/palette.json');
 lint(themes, Object.values(lightPalette), Object.values(darkPalette));
+
+if (fs.existsSync(DOTFILES_ROOT)) {
+  console.log();
+  console.log('[LINT] Linting dotfiles... 🌗');
+
+  const dotfiles = [
+    ...glob.sync(`${DOTFILES_ROOT}/**/*.{${EXTENSIONS}}`),
+    ...glob.sync(`${DOTFILES_ROOT}/**/.{${EXTENSIONS}}`),
+  ].filter(
+    (file) =>
+      file.includes('vscode/User') === false &&
+      file.includes('-master/') === false &&
+      file.includes('dotfiles/brain/') === false,
+  );
+
+  lint(dotfiles, Object.values(lightPalette), Object.values(darkPalette));
+}
 
 console.log();
 console.log();
