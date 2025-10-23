@@ -1,8 +1,8 @@
 {
   "terminalForeground": "gray060",
   "terminalBackground": "gray180",
-  "terminalBlack": "gray170",
-  "terminalBrightBlack": "gray130",
+  "terminalBlack": "gray140",
+  "terminalBrightBlack": "gray120",
   "terminalWhite": "gray060",
   "terminalBrightWhite": "gray030",
   "terminalBlue": "blue",

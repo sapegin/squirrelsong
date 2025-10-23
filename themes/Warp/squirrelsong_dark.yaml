@@ -7,7 +7,7 @@ details: darker # Whether the theme is lighter or darker
 foreground: '#bfac99'
 terminal_colors:
   bright:
-    black: '#614d3d'
+    black: '#695444'
     blue: '#63a2d6'
     cyan: '#72aaa8'
     green: '#709855'
@@ -17,7 +17,7 @@ terminal_colors:
     yellow: '#e2c358'
 
   normal:
-    black: '#352a21'
+    black: '#5b4839'
     blue: '#5993c2'
     cyan: '#4f9593'
     green: '#558240'
