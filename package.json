@@ -15,7 +15,6 @@
     "format": "prettier --log-level warn --write --ignore-unknown \"**/*.*\"",
     "update": "node scripts/update.mjs",
     "prepare-extensions": "node scripts/prepare-extensions.mjs",
-    "prepare-vscode": "node scripts/prepare-vscode.mjs",
     "prepare-themes": "node scripts/prepare-themes.mjs",
     "lint": "eslint . --cache --fix",
     "lint:themes": "node scripts/lint.mjs",

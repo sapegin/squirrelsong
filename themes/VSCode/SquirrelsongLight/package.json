@@ -59,7 +59,7 @@
     ]
   },
   "scripts": {
-    "prepublish": "cd ../../../; node scripts/prepare-vscode.mjs",
+    "prepublish": "cd ../../../; node scripts/prepare-themes.mjs",
     "publish": "vsce publish",
     "publish:ovsx": "npx ovsx publish"
   },
