@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.3.0
+
+- Generate all themes using templates.
+- Tweak terminal colors to improve readability.
+
 ## 3.2.1
 
 - Tweak button colors.
