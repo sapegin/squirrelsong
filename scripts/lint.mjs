@@ -37,8 +37,6 @@ const EXTENSIONS = [
 ].join(',');
 
 const EXTRA_FILES = [
-  'light/palette.html',
-  'dark/palette.html',
   'themes/Ghostty/Squirrelsong Dark',
   'themes/Ghostty/Squirrelsong Dark Deep Purple',
 ];
