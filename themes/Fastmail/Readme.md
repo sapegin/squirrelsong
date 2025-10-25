@@ -8,9 +8,17 @@
 
 1. Copy the values below:
 
-   ```
-   #f7f6f9,#527b98,#36294d,#63a2d6
-   ```
+<!-- apply:theme -->
+
+```
+#f7f6f9,#ac9bc5,#36294d,#ca5a83
+```
 
 2. Open **Settings → Display options** in Fastmail.
 3. Paste the colors you copied from the previous step in the text field under **Copy these colors to save or share your theme. Paste to restore.**.
+
+<!-- Colors: Light mode header, light mode accent, dark mode header, dark mode accent -->
+
+<!-- template
+{{light:uiBackground}},{{light:boldAccent}},{{darkDp:uiBackground}},{{darkDp:boldAccent}}
+-->

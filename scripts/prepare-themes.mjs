@@ -4,6 +4,7 @@
  * - Bear
  * - Chrome
  * - CotEditor
+ * - Fastmail
  * - fzf
  * - Ghostty
  * - iTerm
@@ -250,6 +251,18 @@ processTemplate(
     ...lightUiPalette,
   },
 );
+
+// ------------ 8< -- 8< ------------
+
+console.log();
+console.log('[THEME] Preparing Fastmail themes… 🌗');
+
+applyReadmeTemplate('themes/Fastmail/Readme.md', 'theme', {
+  'light:uiBackground': lightUiPalette.uiBackground,
+  'light:boldAccent': lightUiPalette.boldAccent,
+  'darkDp:uiBackground': darkDpUiPalette.uiBackground,
+  'darkDp:boldAccent': darkDpUiPalette.boldAccent,
+});
 
 // ------------ 8< -- 8< ------------
 
