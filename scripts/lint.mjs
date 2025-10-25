@@ -14,6 +14,7 @@ import _ from 'lodash';
 import { glob } from 'glob';
 import stripJsonComments from 'strip-json-comments';
 import terminalLink from 'terminal-link';
+import { hexToRgb } from './util/hexToRgb.mjs';
 import { rgbToHex } from './util/rgbToHex.mjs';
 
 // TODO: Vivaldi (inside .zip file)
@@ -29,6 +30,7 @@ const EXTENSIONS = [
   'cottheme',
   'css',
   'ettyTheme',
+  'ini',
   'itermcolors',
   'json',
   'lua',
@@ -55,6 +57,7 @@ const EXTENSIONS = [
 ].join(',');
 
 const EXTRA_FILES = [
+  // Files without extension
   'themes/Ghostty/Squirrelsong Dark',
   'themes/Ghostty/Squirrelsong Dark Deep Purple',
 ];
@@ -100,7 +103,7 @@ const CUSTOM_LINTERS = [
     // XML themes where each color consists of four <real></real> tags with
     // float RGBA values the following order: ABGR.
     condition: (file) => file.endsWith('.itermcolors'),
-    lintFunction: (file, validColors, exceptions) => {
+    lintFunction: (file, validColors) => {
       const text = fs.readFileSync(file, 'utf8');
 
       const matches = text.match(/<real>[^<]*<\/real>/gi);
@@ -109,10 +112,10 @@ const CUSTOM_LINTERS = [
       );
       const colors = _.chunk(numbers, 4);
 
-      for (const [a, b, g, r] of colors) {
-        const color = `#${rgbToHex(r * 255, g * 255, b * 255, a)}`;
-        if (isValidHexColor(color, validColors, exceptions) === false) {
-          achtung(`${color} (${r}, ${g}, ${b}, ${a})`);
+      for (const [a, bRaw, gRaw, rRaw] of colors) {
+        const [r, g, b] = [rRaw * 255, gRaw * 255, bRaw * 255];
+        if (isValidRgbColor(r, g, b, validColors) === false) {
+          achtung(`${rgbToHex(r, g, b, a)} (${r}, ${g}, ${b}, ${a})`);
         }
       }
 
@@ -126,7 +129,7 @@ const CUSTOM_LINTERS = [
     // NSKeyedArchiver data. Each color is represented as RGB float values
     // (0.0-1.0) within the decoded data structure.
     condition: (file) => file.endsWith('.terminal'),
-    lintFunction: (file, validColors, exceptions) => {
+    lintFunction: (file, validColors) => {
       const text = fs.readFileSync(file, 'utf8');
 
       let numberOfColors = 0;
@@ -139,16 +142,19 @@ const CUSTOM_LINTERS = [
         const decoded = Buffer.from(base64, 'base64').toString('utf8');
 
         // Extract RGB values from the decoded plist:
-        // - "0.20784313730000001 0.16470588240000001 0.12941176470000001"
+        // - "0.2078431373 0.1647058824 0.1294117647"
         const rgbMatch = decoded.match(/(\d+\.\d+)\s+(\d+\.\d+)\s+(\d+\.\d+)/);
 
         if (rgbMatch) {
           numberOfColors++;
 
-          const [, r, g, b] = rgbMatch;
-          const color = `#${rgbToHex(Number(r) * 255, Number(g) * 255, Number(b) * 255)}`;
-          if (isValidHexColor(color, validColors, exceptions) === false) {
-            achtung(`${color} (${r}, ${g}, ${b})`);
+          const [r, g, b] = [
+            rgbMatch[1] * 255,
+            rgbMatch[2] * 255,
+            rgbMatch[3] * 255,
+          ];
+          if (isValidRgbColor(r, g, b, validColors) === false) {
+            achtung(`${rgbToHex(r, g, b)} (${r}, ${g}, ${b})`);
           }
         }
       }
@@ -212,26 +218,6 @@ const CUSTOM_LINTERS = [
       done(numberOfColors);
     },
   },
-  /*
-  {
-    // Terminal
-    condition: (file) => file.endsWith('.terminal'),
-    lintFunction: (file, validColors, exceptions) => {
-      const text = fs.readFileSync(file, 'utf8');
-
-      const matches = text.match(/<data>[^<]*<\/data>/gim);
-      const base64s = matches.map((x) =>
-        x
-          .replaceAll(/<\/?data>/gi, '')
-          .replaceAll('\n', '')
-          .trim(),
-      );
-      const values = base64s.map((x) => Buffer.from(x, 'base64').toString());
-
-      // TODO: There are colors somewhere but it needs more work
-    },
-  },
-  */
 ];
 
 function achtung(value) {
@@ -247,20 +233,6 @@ function done(numberOfColors) {
 
 function readJsonFile(file) {
   return JSON.parse(stripJsonComments(fs.readFileSync(file, 'utf8')));
-}
-
-/**
- * Extracts numeric RGB(A) values from a CSS rgb() or rgba() string.
- *
- * rgb(255, 0, 0) → [255, 0, 0]
- * rgba(255, 0, 0, 0.5) → [255, 0, 0, 0.5]
- */
-function cssRgbToValues(input) {
-  return input
-    .replace(/rgba?\(([^)]+)\)/, '$1')
-    .split(/[\s,/]+/)
-    .filter(Boolean)
-    .map((x) => Number.parseFloat(x));
 }
 
 function isHexColor(value) {
@@ -295,6 +267,20 @@ function isValidHexColor(value, validColors, exceptions) {
   return false;
 }
 
+function isValidRgbColor(r, g, b, validColors) {
+  for (const validHex of validColors) {
+    const [validR, validG, validB] = hexToRgb(validHex);
+    if (
+      validR === Math.round(r) &&
+      validG === Math.round(g) &&
+      validB === Math.round(b)
+    ) {
+      return true;
+    }
+  }
+  return false;
+}
+
 /** Get a custom linter if available based on file name */
 function getCustomLinter(file) {
   for (const { condition, lintFunction } of CUSTOM_LINTERS) {
@@ -321,22 +307,6 @@ function getPalette(filename, lightColors, darkColors) {
   return [...lightColors, ...darkColors];
 }
 
-function lintJsonValues(object, validColors, exceptions) {
-  let numberOfColors = 0;
-
-  for (const value of Object.values(object)) {
-    if (isHexColor(value)) {
-      numberOfColors++;
-      const color = value.toLowerCase();
-      if (isValidHexColor(color, validColors, exceptions) === false) {
-        achtung(value);
-      }
-    }
-  }
-
-  done(numberOfColors);
-}
-
 function lintText(file, validColors, exceptions) {
   const text = fs.readFileSync(file, 'utf8');
 
@@ -355,9 +325,9 @@ function lintText(file, validColors, exceptions) {
   const rgbMatches = text.matchAll(/(\d{1,3}),\s*(\d{1,3}),\s*(\d{1,3})/g);
   for (const value of rgbMatches) {
     numberOfColors++;
-    const hex = `#${rgbToHex(Number(value[1]), Number(value[2]), Number(value[3]))}`;
-    if (isValidHexColor(hex, validColors, exceptions) === false) {
-      achtung(`${hex} (${value[0]})`);
+    const [r, g, b] = [Number(value[1]), Number(value[2]), Number(value[3])];
+    if (isValidRgbColor(r, g, b, validColors) === false) {
+      achtung(`${rgbToHex(r, g, b)} (${value[0]})`);
     }
   }
 
