@@ -5,6 +5,7 @@
  * - Chrome
  * - CotEditor
  * - Fastmail
+ * - Firefox
  * - fzf
  * - Ghostty
  * - iTerm
@@ -63,19 +64,6 @@ const darkAnsiPalette = Object.fromEntries(
       console.error(`⛔️ Color not found in the dark palette: ${colorName}`);
     }
     return [key, darkPalette[colorName]];
-  }),
-);
-
-// Convert HEX values to RGB
-
-const lightRgbPalette = Object.fromEntries(
-  Object.entries(lightPalette).map(([key, color]) => {
-    return [key, hexToRgb(color).join(', ')];
-  }),
-);
-const darkRgbPalette = Object.fromEntries(
-  Object.entries(darkPalette).map(([key, color]) => {
-    return [key, hexToRgb(color).join(', ')];
   }),
 );
 
@@ -185,6 +173,29 @@ const darkDpUiPalette = Object.fromEntries(
   }),
 );
 
+// Convert HEX values to RGB
+
+const lightRgbPalette = Object.fromEntries(
+  Object.entries(lightPalette).map(([key, color]) => {
+    return [key, hexToRgb(color).join(', ')];
+  }),
+);
+const lightUiRgbPalette = Object.fromEntries(
+  Object.entries(lightUiPalette).map(([key, color]) => {
+    return [key, hexToRgb(color).join(', ')];
+  }),
+);
+const darkRgbPalette = Object.fromEntries(
+  Object.entries(darkPalette).map(([key, color]) => {
+    return [key, hexToRgb(color).join(', ')];
+  }),
+);
+const darkUiRgbPalette = Object.fromEntries(
+  Object.entries(darkUiPalette).map(([key, color]) => {
+    return [key, hexToRgb(color).join(', ')];
+  }),
+);
+
 // ------------ 8< -- 8< ------------
 
 console.log();
@@ -228,6 +239,7 @@ processTemplate(
   {
     version: chromeLight.version,
     ...lightRgbPalette,
+    ...lightUiRgbPalette,
   },
 );
 
@@ -236,6 +248,7 @@ const chromeDark = JSON.parse(fs.readFileSync(chromeDarkManifest));
 processTemplate('themes/Chrome/chrome-dark.template.json', chromeDarkManifest, {
   version: chromeDark.version,
   ...darkRgbPalette,
+  ...darkUiRgbPalette,
 });
 
 // ------------ 8< -- 8< ------------
@@ -262,6 +275,19 @@ applyReadmeTemplate('themes/Fastmail/Readme.md', 'theme', {
   'light:boldAccent': lightUiPalette.boldAccent,
   'darkDp:uiBackground': darkDpUiPalette.uiBackground,
   'darkDp:boldAccent': darkDpUiPalette.boldAccent,
+});
+
+// ------------ 8< -- 8< ------------
+
+console.log();
+console.log('[THEME] Preparing Firefox themes… 🌕');
+
+const firefoxLightManifest = 'themes/Firefox/extension/manifest.json';
+const firefoxLight = JSON.parse(fs.readFileSync(firefoxLightManifest));
+processTemplate('themes/Firefox/firefox.template.json', firefoxLightManifest, {
+  version: firefoxLight.version,
+  ...lightRgbPalette,
+  ...lightUiRgbPalette,
 });
 
 // ------------ 8< -- 8< ------------

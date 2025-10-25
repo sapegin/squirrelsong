@@ -1,0 +1,52 @@
+{
+  "manifest_version": 2,
+  "version": "1.1",
+  "name": "Squirrelsong Light",
+  "theme": {
+    "images": {},
+    "properties": {
+      "color_scheme": "light",
+      "content_color_scheme": "light"
+    },
+    "colors": {
+      "bookmark_text": "rgb({{titleForeground}})",
+      "button_background_active": "rgb({{secondaryButtonHoverBackground}})",
+      "button_background_hover": "rgb({{secondaryButtonHoverBackground}})",
+      "frame_inactive": "rgb({{secondaryUiBackground}})",
+      "frame": "rgb({{secondaryUiBackground}})",
+      "icons_attention": "rgb({{activeIcon}})",
+      "icons": "rgb({{icon}})",
+      "ntp_background": "rgb({{textBackground}})",
+      "ntp_card_background": "rgb({{uiBackground}})",
+      "ntp_text": "rgb({{textForeground}})",
+      "popup_border": "rgb({{border}})",
+      "popup_highlight_text": "rgb({{activeForeground}})",
+      "popup_highlight": "rgb({{activeBackground}})",
+      "popup_text": "rgb({{textForeground}})",
+      "popup": "rgb({{uiBackground}})",
+      "sidebar_border": "rgb({{border}})",
+      "sidebar_highlight_text": "rgb({{activeForeground}})",
+      "sidebar_highlight": "rgb({{activeBackground}})",
+      "sidebar_text": "rgb({{textForeground}})",
+      "sidebar": "rgb({{uiBackground}})",
+      "tab_background_text": "rgb({{titleForeground}})",
+      "tab_line": "rgb({{lightBorder}})",
+      "tab_loading": "rgb({{activeIcon}})",
+      "tab_selected": "rgb({{uiBackground}})",
+      "tab_text": "rgb({{titleForeground}})",
+      "toolbar_bottom_separator": "rgb({{border}})",
+      "toolbar_field_border_focus": "rgb({{focusBorder}})",
+      "toolbar_field_border": "rgb({{border}})",
+      "toolbar_field_focus": "rgb({{textBackground}})",
+      "toolbar_field_highlight_text": "rgb({{activeForeground}})",
+      "toolbar_field_highlight": "rgb({{selectionBackground}})",
+      "toolbar_field_text_focus": "rgb({{titleForeground}})",
+      "toolbar_field_text": "rgb({{titleForeground}})",
+      "toolbar_field": "rgb({{textBackground}})",
+      "toolbar_text": "rgb({{icon}})",
+      "toolbar_top_separator": "rgb({{border}})",
+      "toolbar_vertical_separator": "rgb({{border}})",
+      "toolbar": "rgb({{uiBackground}})"
+    }
+  }
+}
