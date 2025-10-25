@@ -19,6 +19,7 @@ import { rgbToHex } from './util/rgbToHex.mjs';
 // TODO: Terminal.app
 // TODO: Vivaldi (inside .zip file)
 
+let colorCount = 0;
 let errorCount = 0;
 let fileCount = 0;
 
@@ -80,97 +81,6 @@ const TRANSPARENT = [
 const EXCEPTIONS = {
   'themes/Bartender/Readme.md': ['#e3e3e3', '#f4effc'],
   'themes/Ice/Readme.md': ['#e3e3e3', '#f4effc'],
-  'themes/JetBrains/squirrelsong-light/resources/theme/Squirrelsong Light.theme.json':
-    [
-      '#1d1d1f',
-      '#272629',
-      '#373538',
-      '#49474a',
-      '#5b595e',
-      '#78737d',
-      '#87868a',
-      '#a2a1a6',
-      '#9c96a2',
-      '#d2cfd4',
-      '#dbd7e0',
-      '#e8e5eb',
-      '#f7f6f9',
-      '#fdfdfe',
-      '#61778c',
-      '#678499',
-      '#6f90a6',
-      '#789ab3',
-      '#80a4be',
-      '#8db2cc',
-      '#9ec0d9',
-      '#b7d3e8',
-      '#c9ddec',
-      '#d7e8f5',
-      '#e2edf5',
-      '#e9f1f7',
-      '#f3f9fc',
-      '#77805d',
-      '#838c66',
-      '#8f9970',
-      '#9ba679',
-      '#9bae7e',
-      '#b5bf8a',
-      '#becc99',
-      '#ced9a3',
-      '#d6e6ac',
-      '#e4f2d5',
-      '#f2fae1',
-      '#b6932c',
-      '#c49f37',
-      '#cba63b',
-      '#d9b754',
-      '#e6c565',
-      '#fcdfa5',
-      '#ffebbf',
-      '#faebcc',
-      '#fff8e9',
-      '#fdfbf5',
-      '#99453d',
-      '#a64b42',
-      '#b35047',
-      '#bf564c',
-      '#d67e76',
-      '#d9756c',
-      '#e6938a',
-      '#f2b4aa',
-      '#ebbfbc',
-      '#f7d5d2',
-      '#f5e5e4',
-      '#fcf6f5',
-      '#a67642',
-      '#b37f47',
-      '#bf884c',
-      '#cc9152',
-      '#de9e59',
-      '#d9ab79',
-      '#edcda8',
-      '#f2dec9',
-      '#fcf1e6',
-      '#3c665c',
-      '#457367',
-      '#4f8076',
-      '#538c7f',
-      '#5f9b8d',
-      '#6ca899',
-      '#81b6a9',
-      '#a9d5cb',
-      '#ceece5',
-      '#877a99',
-      '#9085a6',
-      '#9d8fb3',
-      '#a899bf',
-      '#ac9bc5',
-      '#bfadd9',
-      '#d1c3e7',
-      '#dfd2f3',
-      '#e7def5',
-      '#ede7f6',
-    ],
   'themes/Slack/Readme.md': [
     // Slack system navigation: existing colors look too intense (this color
     // isn't used as is by Slack but is "adjusted" and other colors are made
@@ -183,57 +93,14 @@ const EXCEPTIONS = {
     '#ebe4dc',
     '#b0a59d',
   ],
-  'dotfiles/bin/sync-vscode-icons': [
-    // Original Catppuccin colors that are replaced with Squirrelsong palette
-    '#179299',
-    '#04a5e5',
-    '#1e66f5',
-    '#209fb5',
-    '#3700ff',
-    '#40a02b',
-    '#4c4f69',
-    '#7287fd',
-    '#8839ef',
-    '#8c8fa1',
-    '#d20f39',
-    '#dc8a78',
-    '#dd7878',
-    '#df8e1d',
-    '#e64553',
-    '#ea76cb',
-    '#fe640b',
-    '#fff',
-  ],
 };
 
 const CUSTOM_LINTERS = [
   {
-    // Chrome extension
-    condition: (file) => file.endsWith('manifest.json'),
-    lintFunction: (file, validColors, exceptions) => {
-      const json = readJsonFile(file);
-      const theme = json?.theme?.colors;
-      if (theme === undefined) {
-        return;
-      }
-
-      const colors = Object.values(theme);
-
-      for (const value of colors) {
-        // Each value is either [R, G, B] or `rgb(R, G, B)`
-        const color = Array.isArray(value) ? value : cssRgbToValues(value);
-        const [r, g, b] = color;
-        const hex = `#${rgbToHex(r, g, b)}`;
-        if (isValidHexColor(hex, validColors, exceptions) === false) {
-          achtung(`${hex} (${r}, ${g}, ${b})`);
-        }
-      }
-
-      done(colors.length);
-    },
-  },
-  {
     // iTerm
+    //
+    // XML themes where each color consists of four <real></real> tags with
+    // float RGBA values the following order: ABGR.
     condition: (file) => file.endsWith('.itermcolors'),
     lintFunction: (file, validColors, exceptions) => {
       const text = fs.readFileSync(file, 'utf8');
@@ -252,6 +119,62 @@ const CUSTOM_LINTERS = [
       }
 
       done(colors.length);
+    },
+  },
+  {
+    // JetBrains
+    //
+    // JetBrains theme has a huge chunk of custom colors (Grey1, Blue1...) that
+    // aren't from Squirrelsong, so we need to skip them.
+    condition: (file) =>
+      file.includes('JetBrains') && file.endsWith('.theme.json'),
+    lintFunction: (file, validColors, exceptions) => {
+      const theme = readJsonFile(file);
+
+      let numberOfColors = 0;
+
+      for (const [name, value] of Object.entries(theme.colors)) {
+        if (name[0] === name[0].toUpperCase()) {
+          // Skip custom palette: Grey1, Blue1...
+          continue;
+        }
+        if (isHexColor(value)) {
+          numberOfColors++;
+          const color = value.toLowerCase();
+          if (isValidHexColor(color, validColors, exceptions) === false) {
+            achtung(value);
+          }
+        }
+      }
+
+      done(numberOfColors);
+    },
+  },
+  {
+    // Visual Studio Code icons script
+    //
+    // Matches all lines in the palette object ('#04a5e5': '#80a4be'), but
+    // validate only the right color, as the left is the original color in the
+    // Catppuccin theme.
+    condition: (file) => file.endsWith('sync-vscode-icons'),
+    lintFunction: (file, validColors, exceptions) => {
+      const text = fs.readFileSync(file, 'utf8');
+
+      const matches = text.matchAll(/'#[\da-f]{6}':\s*'(#[\da-f]{6})'/gi);
+
+      let numberOfColors = 0;
+
+      for (const value of matches) {
+        if (isHexColor(value[1])) {
+          numberOfColors++;
+          const color = value[1].toLowerCase();
+          if (isValidHexColor(color, validColors, exceptions) === false) {
+            achtung(value);
+          }
+        }
+      }
+
+      done(numberOfColors);
     },
   },
   /*
@@ -283,6 +206,7 @@ function achtung(value) {
 
 function done(numberOfColors) {
   console.log(`   ${numberOfColors} colors found`);
+  colorCount += numberOfColors;
   fileCount++;
 }
 
@@ -362,28 +286,10 @@ function getPalette(filename, lightColors, darkColors) {
   return [...lightColors, ...darkColors];
 }
 
-function scanObject(object, callback) {
-  for (const value of Object.values(object)) {
-    if (typeof value === 'object') {
-      scanObject(value, callback);
-    } else {
-      callback(value);
-    }
-  }
-}
-
-function lintJson(file, validColors, exceptions) {
-  let theme;
-  try {
-    theme = readJsonFile(file);
-  } catch {
-    lintText(file, validColors, exceptions);
-    return;
-  }
-
+function lintJsonValues(object, validColors, exceptions) {
   let numberOfColors = 0;
 
-  scanObject(theme, (value) => {
+  for (const value of Object.values(object)) {
     if (isHexColor(value)) {
       numberOfColors++;
       const color = value.toLowerCase();
@@ -391,7 +297,7 @@ function lintJson(file, validColors, exceptions) {
         achtung(value);
       }
     }
-  });
+  }
 
   done(numberOfColors);
 }
@@ -459,12 +365,6 @@ function lint(files, lightColors, darkColors) {
 
     const extension = path.extname(file);
     switch (extension) {
-      case '.json':
-      case '.theme':
-      case '.alfredappearance': {
-        lintJson(file, validColors, exceptions);
-        break;
-      }
       default: {
         lintText(file, validColors, exceptions);
       }
@@ -515,6 +415,8 @@ if (fs.existsSync(DOTFILES_ROOT)) {
 
 console.log();
 console.log();
-console.log(`[LINT] ${errorCount} errors in ${fileCount} files found 🦜`);
+console.log(
+  `[LINT] ${errorCount} errors found, ${colorCount} colors in ${fileCount} files checked 🦜`,
+);
 
 process.exit(errorCount === 0 ? 0 : 1);
