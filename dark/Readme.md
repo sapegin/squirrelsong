@@ -22,6 +22,8 @@
 
 ## Colors
 
+[Check out the theme spec](https://sapegin.me/squirrelsong/spec/).
+
 <!-- palette:begin -->
 
 | | Name | Hex | RGB |
@@ -53,8 +55,8 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ae95c7" width="20" height="20" alt=""> | purple070 | #ae95c7 | 174, 149, 199 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=a88dc3" width="20" height="20" alt=""> | purple080 | #a88dc3 | 168, 141, 195 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=9a7eb4" width="20" height="20" alt=""> | purple090 | #9a7eb4 | 154, 126, 180 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=856ab4" width="20" height="20" alt=""> | purple100 | #856ab4 | 133, 106, 180 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=7f61b3" width="20" height="20" alt=""> | purple110 | #7f61b3 | 127, 97, 179 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=866db0" width="20" height="20" alt=""> | purple100 | #866db0 | 134, 109, 176 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=8067ad" width="20" height="20" alt=""> | purple110 | #8067ad | 128, 103, 173 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=7254a6" width="20" height="20" alt=""> | purple120 | #7254a6 | 114, 84, 166 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=6c5492" width="20" height="20" alt=""> | purple130 | #6c5492 | 108, 84, 146 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=644e88" width="20" height="20" alt=""> | purple140 | #644e88 | 100, 78, 136 |
@@ -64,7 +66,7 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=271e38" width="20" height="20" alt=""> | purple180 | #271e38 | 39, 30, 56 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=558240" width="20" height="20" alt=""> | green | #558240 | 85, 130, 64 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=44603b" width="20" height="20" alt=""> | greenDim | #44603b | 68, 96, 59 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=445536" width="20" height="20" alt=""> | greenDimer | #445536 | 68, 85, 54 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=37442c" width="20" height="20" alt=""> | greenDimer | #37442c | 55, 68, 44 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=709855" width="20" height="20" alt=""> | greenContrast | #709855 | 112, 152, 85 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4f9593" width="20" height="20" alt=""> | teal | #4f9593 | 79, 149, 147 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=41635f" width="20" height="20" alt=""> | tealDim | #41635f | 65, 99, 95 |
@@ -80,11 +82,11 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=9672d4" width="20" height="20" alt=""> | magentaContrast | #9672d4 | 150, 114, 212 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ac493e" width="20" height="20" alt=""> | red | #ac493e | 172, 73, 62 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=703a2f" width="20" height="20" alt=""> | redDim | #703a2f | 112, 58, 47 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=6c3b2f" width="20" height="20" alt=""> | redDimer | #6c3b2f | 108, 59, 47 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=552f25" width="20" height="20" alt=""> | redDimer | #552f25 | 85, 47, 37 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ce574a" width="20" height="20" alt=""> | redContrast | #ce574a | 206, 87, 74 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=b18433" width="20" height="20" alt=""> | orange | #b18433 | 177, 132, 51 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=73572a" width="20" height="20" alt=""> | orangeDim | #73572a | 115, 87, 42 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=644c28" width="20" height="20" alt=""> | orangeDimer | #644c28 | 100, 76, 40 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=503d20" width="20" height="20" alt=""> | orangeDimer | #503d20 | 80, 61, 32 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=d8a851" width="20" height="20" alt=""> | orangeContrast | #d8a851 | 216, 168, 81 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ceb250" width="20" height="20" alt=""> | yellow | #ceb250 | 206, 178, 80 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=87753d" width="20" height="20" alt=""> | yellowDim | #87753d | 135, 117, 61 |
@@ -92,7 +94,7 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=e2c358" width="20" height="20" alt=""> | yellowContrast | #e2c358 | 226, 195, 88 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ca5a83" width="20" height="20" alt=""> | brightPink | #ca5a83 | 202, 90, 131 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=97576f" width="20" height="20" alt=""> | brightPinkDim | #97576f | 151, 87, 111 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4d2e3a" width="20" height="20" alt=""> | brightPinkDimer | #4d2e3a | 77, 46, 58 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=482a47" width="20" height="20" alt=""> | brightPinkDimer | #482a47 | 72, 42, 71 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=6a5444" width="20" height="20" alt=""> | brightYellow | #6a5444 | 106, 84, 68 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=574538" width="20" height="20" alt=""> | brightYellowDim | #574538 | 87, 69, 56 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=41352a" width="20" height="20" alt=""> | brightYellowDimer | #41352a | 65, 53, 42 |
@@ -101,54 +103,6 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=3f3259" width="20" height="20" alt=""> | brightYellowDimerPurple | #3f3259 | 63, 50, 89 |
 
 <!-- palette:end -->
-
-### Code colors
-
-|                                                                                                           | Where                             | Color        | Hex     | Style  |
-| --------------------------------------------------------------------------------------------------------- | --------------------------------- | ------------ | ------- | ------ |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=9e8e7e" width="20" height="20" alt=""> | Punctuation                       | gray09       | #9e8e7e |        |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=6b503c" width="20" height="20" alt=""> | Comment                           | gray06       | #6b503c |        |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=7f61b3" width="20" height="20" alt=""> | Keyword, tag name                 | purple       | #7f61b3 | Bold   |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=b18433" width="20" height="20" alt=""> | Number, boolean                   | orange       | #b18433 |        |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=5993c2" width="20" height="20" alt=""> | Property, attribute name          | blue         | #5993c2 |        |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=5993c2" width="20" height="20" alt=""> | Variable                          | blue         | #5993c2 | Italic |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=5993c2" width="20" height="20" alt=""> | Function                          | blue         | #5993c2 | Bold   |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=558240" width="20" height="20" alt=""> | String, attribute value, inserted | green        | #558240 |        |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4f9593" width="20" height="20" alt=""> | Type, namespace, colon            | teal         | #4f9593 |        |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4f9593" width="20" height="20" alt=""> | Class, at-rule, operator          | teal         | #4f9593 | Bold   |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ac493e" width="20" height="20" alt=""> | Regexp, deleted                   | red          | #ac493e |        |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ac493e" width="20" height="20" alt=""> | Important                         | red          | #ac493e | Bold   |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=63a2d6" width="20" height="20" alt=""> | URL                               | blueContrast | #63a2d6 |        |
-
-### UI colors
-
-|                                                                                                           | Where                     | Color            | Hex     | Comments |
-| --------------------------------------------------------------------------------------------------------- | ------------------------- | ---------------- | ------- | -------- |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ad9c8b" width="20" height="20" alt=""> | Text foreground           | gray0a           | #ad9c8b |          |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=292019" width="20" height="20" alt=""> | Text background           | gray02           | #292019 |          |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=41352a" width="20" height="20" alt=""> | Selection background      | brightYellowDim | #41352a |          |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=453327" width="20" height="20" alt=""> | Line highlight background | gray04           | #453327 |          |
-
-### ANSI colors
-
-|                                                                                                           | Name           | Color          | Hex     |
-| --------------------------------------------------------------------------------------------------------- | -------------- | -------------- | ------- |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=352a21" width="20" height="20" alt=""> | Black          | gray03         | #352a21 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=6b503c" width="20" height="20" alt=""> | Black bright   | gray06         | #6b503c |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=cfbaa5" width="20" height="20" alt=""> | White          | gray0c         | #cfbaa5 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=dec8b1" width="20" height="20" alt=""> | White bright   | gray0d         | #dec8b1 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=5993c2" width="20" height="20" alt=""> | Blue           | blue           | #5993c2 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=63a2d6" width="20" height="20" alt=""> | Blue bright    | blueContrast   | #63a2d6 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4f9593" width="20" height="20" alt=""> | Cyan           | teal           | #4f9593 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=72aaa8" width="20" height="20" alt=""> | Cyan bright    | tealContrast   | #72aaa8 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=558240" width="20" height="20" alt=""> | Green          | green          | #558240 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=709855" width="20" height="20" alt=""> | Green bright   | greenContrast  | #709855 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=7f61b3" width="20" height="20" alt=""> | Magenta        | purple         | #7f61b3 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ae95c7" width="20" height="20" alt=""> | Magenta bright | purpleContrast | #ae95c7 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ac493e" width="20" height="20" alt=""> | Red            | red            | #ac493e |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ce574a" width="20" height="20" alt=""> | Red bright     | redContrast    | #ce574a |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ceb250" width="20" height="20" alt=""> | Yellow         | yellow         | #ceb250 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=e2c358" width="20" height="20" alt=""> | Yellow bright  | yellowContrast | #e2c358 |
 
 ---
 
