@@ -10,7 +10,7 @@
 <!-- apply:dark -->
 
 ```shell
-exexport FZF_DEFAULT_OPTS='
+export FZF_DEFAULT_OPTS='
   --color=fg:-1,fg+:#bfac99,bg:-1,bg+:#bfac99
   --color=hl:#ca5a83,hl+:#97576f,info:#695444,marker:#ceb250
   --color=prompt:#695444,spinner:#bfac99,pointer:#bfac99,header:#edd5be
@@ -25,7 +25,7 @@ b. For Squirrelsong Dark Deep Purple theme:
 <!-- apply:dark-dp -->
 
 ```shell
-exexport FZF_DEFAULT_OPTS='
+export FZF_DEFAULT_OPTS='
   --color=fg:-1,fg+:#bea3d9,bg:-1,bg+:#bea3d9
   --color=hl:#ca5a83,hl+:#97576f,info:#7254a6,marker:#ceb250
   --color=prompt:#7254a6,spinner:#bea3d9,pointer:#bea3d9,header:#e9d6fa

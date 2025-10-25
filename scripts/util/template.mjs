@@ -23,7 +23,7 @@ export function processTemplate(templatePath, destPath, context) {
  * @returns {string} Rendered template
  */
 export function renderTemplate(template, context, templatePath) {
-  return template.replaceAll(/\{\{(\w+)\}\}/g, (match, key, offset) => {
+  return template.replaceAll(/\{\{([:\w]+)\}\}/g, (match, key, offset) => {
     if (key in context === false) {
       // Key not found
       const lines = template.slice(0, Math.max(0, offset)).split('\n');
@@ -85,7 +85,7 @@ export function applyReadmeTemplate(filepath, name, context) {
   if (templateMatch === false) {
     throw new Error(`No template comment found in ${filepath}`);
   }
-  const template = templateMatch[1];
+  const template = templateMatch[1].trim();
 
   // Find the apply marker
   const marker = `<!-- apply:${name} -->`;
@@ -102,7 +102,7 @@ export function applyReadmeTemplate(filepath, name, context) {
   }
 
   // Find the end of the code block (skip opening ```, find closing ```)
-  const codeBlockContentStart = afterMarker.indexOf('\n', codeBlockStart) + 1;
+  const codeBlockContentStart = afterMarker.indexOf('\n', codeBlockStart) - 1;
   const codeBlockEnd = afterMarker.indexOf('```', codeBlockContentStart);
   if (codeBlockEnd === -1) {
     throw new Error(`Unclosed code block after "${marker}" in ${filepath}`);
@@ -115,6 +115,7 @@ export function applyReadmeTemplate(filepath, name, context) {
     0,
     markerIndex + marker.length + codeBlockStart + codeBlockContentStart,
   );
+
   const after = content.slice(markerIndex + marker.length + codeBlockEnd);
   const newContent = before + rendered + '\n' + after;
 
