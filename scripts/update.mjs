@@ -4,7 +4,7 @@
 
 import fs from 'node:fs';
 import stripJsonComments from 'strip-json-comments';
-import hexRgb from 'hex-rgb';
+import { hexToRgb } from './util/hexToRgb.mjs';
 
 const SWATCH_SIZE = 20;
 
@@ -15,17 +15,12 @@ const swatch = (hex) =>
     hex,
   )}" width="${SWATCH_SIZE}" height="${SWATCH_SIZE}" alt="">`;
 
-const hexToRgb = (hex) => {
-  const rgb = hexRgb(hex);
-  return `${rgb.red}, ${rgb.green}, ${rgb.blue}`;
-};
-
 function generateMarkdownTable(palette) {
   const header = `| | Name | Hex | RGB |\n| --- | --- | --- | --- |`;
 
   const rows = Object.entries(palette).map(
     ([name, hex]) =>
-      `| ${swatch(hex, name)} | ${name} | ${hex} | ${hexToRgb(hex)} |`,
+      `| ${swatch(hex, name)} | ${name} | ${hex} | ${hexToRgb(hex).join(', ')} |`,
   );
 
   return [header, ...rows].join('\n');

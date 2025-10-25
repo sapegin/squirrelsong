@@ -14,7 +14,7 @@ import _ from 'lodash';
 import { glob } from 'glob';
 import stripJsonComments from 'strip-json-comments';
 import terminalLink from 'terminal-link';
-import rgbHex from 'rgb-hex';
+import { rgbToHex } from './util/rgbToHex.mjs';
 
 // TODO: Terminal.app
 // TODO: Vivaldi (inside .zip file)
@@ -223,7 +223,7 @@ const CUSTOM_LINTERS = [
         // Each value is either [R, G, B] or `rgb(R, G, B)`
         const color = Array.isArray(value) ? value : cssRgbToValues(value);
         const [r, g, b] = color;
-        const hex = `#${rgbHex(r, g, b)}`;
+        const hex = `#${rgbToHex(r, g, b)}`;
         if (isValidHexColor(hex, validColors, exceptions) === false) {
           achtung(`${hex} (${r}, ${g}, ${b})`);
         }
@@ -245,7 +245,7 @@ const CUSTOM_LINTERS = [
       const colors = _.chunk(numbers, 4);
 
       for (const [a, b, g, r] of colors) {
-        const color = `#${rgbHex(r * 255, g * 255, b * 255, a)}`;
+        const color = `#${rgbToHex(r * 255, g * 255, b * 255, a)}`;
         if (isValidHexColor(color, validColors, exceptions) === false) {
           achtung(`${color} (${r}, ${g}, ${b}, ${a})`);
         }
@@ -414,7 +414,7 @@ function lintText(file, validColors, exceptions) {
   const rgbMatches = text.matchAll(/(\d{1,3}),\s*(\d{1,3}),\s*(\d{1,3})/g);
   for (const value of rgbMatches) {
     numberOfColors++;
-    const hex = `#${rgbHex(Number(value[1]), Number(value[2]), Number(value[3]))}`;
+    const hex = `#${rgbToHex(Number(value[1]), Number(value[2]), Number(value[3]))}`;
     if (isValidHexColor(hex, validColors, exceptions) === false) {
       achtung(`${hex} (${value[0]})`);
     }
