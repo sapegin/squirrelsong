@@ -2,6 +2,11 @@
 
 ![Squirrelsong Dark theme for Terminal.app](screenshot-dark.jpg)
 
+![Squirrelsong Dark Deep Purple theme for Terminal.app](screenshot-dark-dp.jpg)
+
+> [!NOTE]
+> Colors in Terminal.app looks brighter than they should because Terminal.app does color conversion that you cannot disable.
+
 ## Installation from GitHub
 
 1. Download [`Squirrelsong Dark.terminal`](Squirrelsong%20Dark.terminal).

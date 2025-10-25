@@ -16,7 +16,6 @@ import stripJsonComments from 'strip-json-comments';
 import terminalLink from 'terminal-link';
 import { rgbToHex } from './util/rgbToHex.mjs';
 
-// TODO: Terminal.app
 // TODO: Vivaldi (inside .zip file)
 
 let colorCount = 0;
@@ -34,12 +33,13 @@ const EXTENSIONS = [
   'json',
   'lua',
   'palette',
+  'terminal',
   'theme',
   'tmTheme',
   'toml',
   'vim',
-  'yml',
   'yaml',
+  'yml',
   // Extra extensions that appear in dotfiles
   'ackrc',
   'cjs',
@@ -52,8 +52,6 @@ const EXTENSIONS = [
   'ts',
   'zsh',
   'zshrc',
-  // TODO: Not supported yet
-  // 'terminal',
 ].join(',');
 
 const EXTRA_FILES = [
@@ -119,6 +117,43 @@ const CUSTOM_LINTERS = [
       }
 
       done(colors.length);
+    },
+  },
+  {
+    // Terminal.app
+    //
+    // XML plist themes where colors are stored as base64-encoded
+    // NSKeyedArchiver data. Each color is represented as RGB float values
+    // (0.0-1.0) within the decoded data structure.
+    condition: (file) => file.endsWith('.terminal'),
+    lintFunction: (file, validColors, exceptions) => {
+      const text = fs.readFileSync(file, 'utf8');
+
+      let numberOfColors = 0;
+
+      // Parse base64 encoded NSKeyedArchiver plist data
+      const matches = text.matchAll(/<data>\s*([^<]+)\s*<\/data>/gi);
+
+      for (const match of matches) {
+        const base64 = match[1].replaceAll(/\s+/g, '');
+        const decoded = Buffer.from(base64, 'base64').toString('utf8');
+
+        // Extract RGB values from the decoded plist:
+        // - "0.20784313730000001 0.16470588240000001 0.12941176470000001"
+        const rgbMatch = decoded.match(/(\d+\.\d+)\s+(\d+\.\d+)\s+(\d+\.\d+)/);
+
+        if (rgbMatch) {
+          numberOfColors++;
+
+          const [, r, g, b] = rgbMatch;
+          const color = `#${rgbToHex(Number(r) * 255, Number(g) * 255, Number(b) * 255)}`;
+          if (isValidHexColor(color, validColors, exceptions) === false) {
+            achtung(`${color} (${r}, ${g}, ${b})`);
+          }
+        }
+      }
+
+      done(numberOfColors);
     },
   },
   {
