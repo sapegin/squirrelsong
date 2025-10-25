@@ -10,7 +10,7 @@
     "color" : "#80a4be"
   },
   "commands" : {
-    "color" : "#ac9bc5"
+    "color" : "#80a4be"
   },
   "comments" : {
     "color" : "#9c96a2"
@@ -32,7 +32,7 @@
     "color" : "#de9e59"
   },
   "selection" : {
-    "color" : "#f5da70",
+    "color" : "#f8e7a0",
     "usesSystemSetting" : false
   },
   "strings" : {

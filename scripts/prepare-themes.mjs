@@ -3,6 +3,7 @@
  * - Alfred
  * - Bear
  * - Chrome
+ * - CotEditor
  * - fzf
  * - Ghostty
  * - iTerm
@@ -235,6 +236,20 @@ processTemplate('themes/Chrome/chrome-dark.template.json', chromeDarkManifest, {
   version: chromeDark.version,
   ...darkRgbPalette,
 });
+
+// ------------ 8< -- 8< ------------
+
+console.log();
+console.log('[THEME] Preparing CotEditor themes… 🌕');
+
+processTemplate(
+  'themes/CotEditor/coteditor.template.cottheme',
+  'themes/CotEditor/Squirrelsong Light.cottheme',
+  {
+    ...lightCodePalette,
+    ...lightUiPalette,
+  },
+);
 
 // ------------ 8< -- 8< ------------
 

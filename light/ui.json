@@ -4,6 +4,7 @@
   "textForeground": "gray090",
   "secondaryTextForeground": "gray100",
   "disabledForeground": "gray110",
+  "hiddenForeground": "gray140",
   "linkForeground": "blueContrast",
   "linkHoverForeground": "blue",
   "buttonBackground": "gray100",

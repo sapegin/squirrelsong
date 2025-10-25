@@ -4,6 +4,7 @@
   "textForeground": "gray090",
   "secondaryTextForeground": "gray100",
   "disabledForeground": "gray110",
+  "hiddenForeground": "gray140",
   "buttonBackground": "gray110",
   "buttonForeground": "gray180",
   "buttonHoverBackground": "gray090",

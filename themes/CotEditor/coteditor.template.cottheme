@@ -1,0 +1,53 @@
+{
+  "name" : "Squirrelsong Light",
+  "attributes" : {
+    "color" : "{{property}}"
+  },
+  "background" : {
+    "color" : "{{textBackground}}"
+  },
+  "characters" : {
+    "color" : "{{property}}"
+  },
+  "commands" : {
+    "color" : "{{function}}"
+  },
+  "comments" : {
+    "color" : "{{comment}}"
+  },
+  "insertionPoint" : {
+    "color" : "{{punctuation}}",
+    "usesSystemSetting" : false
+  },
+  "invisibles" : {
+    "color" : "{{hiddenForeground}}"
+  },
+  "keywords" : {
+    "color" : "{{keyword}}"
+  },
+  "lineHighlight" : {
+    "color" : "{{lineHighlightBackground}}"
+  },
+  "numbers" : {
+    "color" : "{{value}}"
+  },
+  "selection" : {
+    "color" : "{{selectionBackground}}",
+    "usesSystemSetting" : false
+  },
+  "strings" : {
+    "color" : "{{string}}"
+  },
+  "text" : {
+    "color" : "{{textForeground}}"
+  },
+  "types" : {
+    "color" : "{{type}}"
+  },
+  "values" : {
+    "color" : "{{value}}"
+  },
+  "variables" : {
+    "color" : "{{variable}}"
+  }
+}
