@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "version": "{{version}}",
+  "version": "1.3",
   "name": "Squirrelsong Light",
   "theme": {
     "images": {},
@@ -10,8 +10,8 @@
     },
     "colors": {
       "bookmark_text": "rgb({{titleForeground}})",
-      "button_background_active": "rgb({{secondaryButtonHoverBackground}})",
-      "button_background_hover": "rgb({{secondaryButtonHoverBackground}})",
+      "button_background_active": "rgb({{hoverBackground}})",
+      "button_background_hover": "rgb({{hoverBackground}})",
       "frame_inactive": "rgb({{secondaryUiBackground}})",
       "frame": "rgb({{secondaryUiBackground}})",
       "icons_attention": "rgb({{activeIcon}})",
@@ -39,7 +39,7 @@
       "toolbar_field_border": "rgb({{border}})",
       "toolbar_field_focus": "rgb({{textBackground}})",
       "toolbar_field_highlight_text": "rgb({{activeForeground}})",
-      "toolbar_field_highlight": "rgb({{selectionBackground}})",
+      "toolbar_field_highlight": "rgb({{hoverBackground}})",
       "toolbar_field_text_focus": "rgb({{titleForeground}})",
       "toolbar_field_text": "rgb({{titleForeground}})",
       "toolbar_field": "rgb({{textBackground}})",

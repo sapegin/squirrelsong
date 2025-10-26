@@ -283,13 +283,14 @@ applyReadmeTemplate('themes/Fastmail/Readme.md', 'theme', {
 console.log();
 console.log('[THEME] Preparing Firefox themes… 🌕');
 
-const firefoxLightManifest = 'themes/Firefox/extension/manifest.json';
-const firefoxLight = JSON.parse(fs.readFileSync(firefoxLightManifest));
-processTemplate('themes/Firefox/firefox.template.json', firefoxLightManifest, {
-  version: firefoxLight.version,
-  ...lightRgbPalette,
-  ...lightUiRgbPalette,
-});
+processTemplate(
+  'themes/Firefox/firefox.template.json',
+  'themes/Firefox/extension/manifest.json',
+  {
+    ...lightRgbPalette,
+    ...lightUiRgbPalette,
+  },
+);
 
 // ------------ 8< -- 8< ------------
 
