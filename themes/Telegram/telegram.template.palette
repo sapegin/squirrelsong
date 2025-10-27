@@ -1,0 +1,145 @@
+// Description: Squirrelsong {{name}} Theme
+// Version: v3.0.0
+// Repository: https://github.com/sapegin/squirrelsong
+
+name = Squirrelsong {{name}}
+shortname = {{shortName}}
+isDark = {{isDark}}
+tinted = 0
+parent = {{parent}}
+copyright = Artem Sapegin
+basicAccent = {{accent2}}
+background = {{textBackground}}
+text = {{titleForeground}}
+grayText = {{secondaryTextForeground}}
+link = {{accent3}}
+// Links, button links, my reactions background
+accent = {{accent3}}
+// Number of unread messages in the list, dangerous links
+redUI = {{errorForeground}}
+greenUI = {{successForeground}}
+blackTransparent = {{titleForeground}}:0.60
+grayTransparent = {{textForeground}}:0.60
+grayUI = {{uiBackground}}
+darkGrayText = {{secondaryTextForeground}}
+// Selected items in the sidebar, selected items in settings
+accentSelect = {{accent2}}
+selectText = {{selectionBackground}}
+border = {{lightBorder}}
+// Window title, search field, etc.
+grayBackground = {{uiBackground}}
+grayForeground = {{textForeground}}
+// Inactive toolbar icon
+grayIcon = {{icon}}
+// Active toolbar icon, read indicator checkboxes
+accentIcon = {{accent2}}
+badgeMuted = {{icon}}
+// Number of unread messages in the list
+badge = {{accent2}}
+indicatorColor = {{accent2}}
+selectMessage = {{activeBackground}}
+monospacedPre = {{textForeground}}
+monospacedCode = {{textForeground}}
+monospacedPreBubble_incoming = {{textForeground}}
+monospacedPreBubble_outgoing = {{uiBackground}}
+monospacedCodeBubble_incoming = {{textForeground}}
+monospacedCodeBubble_outgoing = {{uiBackground}}
+// Selected text in the incoming message bubbles
+selectTextBubble_incoming = {{selectionBackground}}
+// Selected text in the outgoing message bubbles
+selectTextBubble_outgoing = {{selectionBackground}}
+bubbleBackground_incoming = {{uiBackground}}
+bubbleBorder_incoming = {{lightBorder}}
+bubbleBorder_outgoing = {{border}}
+grayTextBubble_incoming = {{secondaryUiBackground}}
+grayTextBubble_outgoing = {{uiBackground}}
+grayIconBubble_incoming = {{secondaryUiBackground}}
+grayIconBubble_outgoing = {{uiBackground}}
+accentIconBubble_incoming = {{secondaryUiBackground}}
+accentIconBubble_outgoing = {{uiBackground}}
+linkBubble_incoming = {{blueDimer}}
+linkBubble_outgoing = {{secondaryUiBackground}}
+textBubble_incoming = {{titleForeground}}
+textBubble_outgoing = {{uiBackground}}
+selectMessageBubble = {{activeBackground}}
+fileActivityBackground = {{buttonBackground}}
+fileActivityForeground = {{buttonForeground}}
+fileActivityBackgroundBubble_incoming = {{secondaryUiBackground}}
+fileActivityBackgroundBubble_outgoing = {{secondaryUiBackground}}
+fileActivityForegroundBubble_incoming = {{textForeground}}
+fileActivityForegroundBubble_outgoing = {{textForeground}}
+waveformBackground = {{secondaryUiBackground}}
+waveformForeground = {{textForeground}}
+waveformBackgroundBubble_incoming = {{secondaryUiBackground}}
+waveformBackgroundBubble_outgoing = {{secondaryUiBackground}}
+waveformForegroundBubble_incoming = {{textForeground}}
+waveformForegroundBubble_outgoing = {{textForeground}}
+webPreviewActivity = {{textForeground}}
+webPreviewActivityBubble_incoming = {{secondaryUiBackground}}
+webPreviewActivityBubble_outgoing = {{uiBackground}}
+redBubble_incoming = {{redDim}}
+redBubble_outgoing = {{redDim}}
+greenBubble_incoming = {{greenDim}}
+greenBubble_outgoing = {{greenDim}}
+chatReplyTitle = {{titleForeground}}
+chatReplyTextEnabled = {{titleForeground}}
+chatReplyTextDisabled = {{disabledForeground}}
+chatReplyTitleBubble_incoming = {{titleForeground}}
+chatReplyTitleBubble_outgoing = {{uiBackground}}
+chatReplyTextEnabledBubble_incoming = {{titleForeground}}
+chatReplyTextEnabledBubble_outgoing = {{uiBackground}}
+chatReplyTextDisabledBubble_incoming = {{disabledForeground}}
+chatReplyTextDisabledBubble_outgoing = {{uiBackground}}
+groupPeerNameRed = {{redContrast}}
+groupPeerNameOrange = {{orangeContrast}}
+groupPeerNameViolet = {{magentaContrast}}
+groupPeerNameGreen = {{greenContrast}}
+groupPeerNameCyan = {{tealContrast}}
+groupPeerNameLightBlue = {{blue}}
+groupPeerNameBlue = {{blueContrast}}
+peerAvatarRedTop = {{redDimer}}
+peerAvatarRedBottom = {{red}}
+peerAvatarOrangeTop = {{orangeDimer}}
+peerAvatarOrangeBottom = {{orange}}
+peerAvatarVioletTop = {{magentaDimer}}
+peerAvatarVioletBottom = {{magenta}}
+peerAvatarGreenTop = {{greenDimer}}
+peerAvatarGreenBottom = {{green}}
+peerAvatarCyanTop = {{tealDimer}}
+peerAvatarCyanBottom = {{teal}}
+peerAvatarBlueTop = {{blueDimer}}
+peerAvatarBlueBottom = {{blue}}
+peerAvatarPinkTop = {{brightPinkDimer}}
+peerAvatarPinkBottom = {{brightPink}}
+bubbleBackgroundHighlight_incoming = {{uiBackground}}
+bubbleBackgroundHighlight_outgoing = {{accent2}}
+chatDateActive = {{secondaryTextForeground}}
+chatDateText = {{secondaryTextForeground}}
+revealAction_neutral1_background = {{accent2}}
+revealAction_neutral1_foreground = {{secondaryUiBackground}}
+revealAction_neutral2_background = {{orangeDim}}
+revealAction_neutral2_foreground = {{secondaryUiBackground}}
+revealAction_destructive_background = {{redDim}}
+revealAction_destructive_foreground = {{secondaryUiBackground}}
+revealAction_constructive_background = {{greenDim}}
+revealAction_constructive_foreground = {{secondaryUiBackground}}
+revealAction_accent_background = {{accent2}}
+revealAction_accent_foreground = {{secondaryUiBackground}}
+revealAction_warning_background = {{orangeDim}}
+revealAction_warning_foreground = {{secondaryUiBackground}}
+revealAction_inactive_background = {{secondaryUiBackground}}
+revealAction_inactive_foreground = {{secondaryUiBackground}}
+// Parameter is usually used for minimalistic chat mode, but also works as
+// fallback for bubbles if wallpaper is not installed
+chatBackground = {{textBackground}}
+listBackground = {{textBackground}}
+listGrayText = {{textForeground}}
+// Background on some clicked items
+grayHighlight = {{activeBackground}}
+focusAnimationColor = {{accent2}}
+// Background in emoji search field and selected emoji in emoji picker
+vibrant = {{secondaryUiBackground}}
+premium = {{disabledForeground}}
+// Parameter only affects bubble chat mode. Available values: none, builtin,
+// hexColor or URL to a cloud background, like t.me/bg/%slug%
+wallpaper = none

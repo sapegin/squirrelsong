@@ -18,7 +18,10 @@
  */
 
 import fs from 'node:fs';
+import path from 'node:path';
 import stripJsonComments from 'strip-json-comments';
+import terminalLink from 'terminal-link';
+import { globSync } from 'glob';
 import { processTemplate, applyReadmeTemplate } from './util/template.mjs';
 import { hexToRgb } from './util/hexToRgb.mjs';
 
@@ -200,7 +203,69 @@ const darkUiRgbPalette = Object.fromEntries(
 // ------------ 8< -- 8< ------------
 
 console.log();
-console.log('[THEME] Preparing Alfred themes… 🌕');
+console.log('[THEME] Preparing themes… 🌕');
+
+const basePalettes = {
+  light: {
+    ...lightPalette,
+    ...lightUiPalette,
+    ...lightAnsiPalette,
+    ...lightCodePalette,
+  },
+  dark: {
+    ...darkPalette,
+    ...darkUiPalette,
+    ...darkAnsiPalette,
+    ...darkCodePalette,
+  },
+  darkDp: {
+    ...darkDpPalette,
+    ...darkDpUiPalette,
+    ...darkDpAnsiPalette,
+    ...darkDpCodePalette,
+  },
+};
+
+const configs = globSync('themes/*/config.json');
+
+for (const configFile of configs) {
+  const folder = path.dirname(configFile);
+  console.log('👉', terminalLink(folder, `vscode://file//${configFile}`));
+  const config = readJsonFile(configFile);
+
+  if (Array.isArray(config.themes) === false) {
+    console.error(`   🦀 The 'themes' array is missing`);
+    continue;
+  }
+
+  // Find a template: any file that has `.template.` in its name
+  const templateFile = globSync(path.join(folder, '*.template.*'))[0];
+  if (templateFile === undefined) {
+    console.error(`   🦀 Template file not found`);
+    continue;
+  }
+
+  for (const theme of config.themes) {
+    if (Array.isArray(config.themes) === false) {
+      console.error(`   🦀 The 'file' field is missing`);
+      continue;
+    }
+    console.log(`   ${theme.file}`);
+
+    // Prepare the context: base palette + custom values
+    const context = basePalettes[theme.scheme];
+    for (const [key, value] of Object.entries(theme.context ?? {})) {
+      context[key] = context[value] ?? value;
+    }
+
+    processTemplate(templateFile, path.join(folder, theme.file), context);
+  }
+}
+
+// ------------ 8< -- 8< ------------
+
+console.log();
+console.log('[THEME] Preparing Alfred themes… 🌗');
 
 processTemplate(
   'themes/Alfred/alfred.template.alfredappearance',
@@ -273,9 +338,9 @@ console.log('[THEME] Preparing Fastmail themes… 🌗');
 
 applyReadmeTemplate('themes/Fastmail/Readme.md', 'theme', {
   'light:uiBackground': lightUiPalette.uiBackground,
-  'light:boldAccent': lightUiPalette.boldAccent,
+  'light:accent2': lightUiPalette.accent2,
   'darkDp:uiBackground': darkDpUiPalette.uiBackground,
-  'darkDp:boldAccent': darkDpUiPalette.boldAccent,
+  'darkDp:accent2': darkDpUiPalette.accent2,
 });
 
 // ------------ 8< -- 8< ------------

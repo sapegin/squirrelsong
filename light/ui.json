@@ -44,8 +44,9 @@
   "lightBorder": "gray160",
   "activeBorder": "gray060",
   "focusBorder": "gray090",
-  "shyAccent": "gray060",
-  "boldAccent": "magenta",
   "icon": "gray100",
-  "activeIcon": "gray060"
+  "activeIcon": "gray060",
+  "accent1": "gray060",
+  "accent2": "magenta",
+  "accent3": "magentaContrast"
 }

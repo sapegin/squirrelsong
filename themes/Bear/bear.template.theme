@@ -8,7 +8,7 @@
     "background tertiary color": "{{secondaryButtonBackground}}",
     "background hover color": "{{hoverBackground}}",
     "stroke color": "{{lightBorder}}",
-    "accent color": "{{shyAccent}}",
+    "accent color": "{{accent1}}",
     "icon color": "{{icon}}",
     "dark icon color": "{{activeIcon}}",
     "search primary color": "{{matchBackground}}",

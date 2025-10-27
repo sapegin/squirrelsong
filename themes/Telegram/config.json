@@ -1,0 +1,15 @@
+{
+  "themes": [
+    {
+      "file": "Squirrelsong Light.palette",
+      "scheme": "light",
+      "context": {
+        "name": "Light",
+        "shortName": "squirrelsonglight",
+        "isDark": "0",
+        // Fallback for undefined parameters: day, dayClassic, dark, nightAccent
+        "parent": "day"
+      }
+    }
+  ]
+}

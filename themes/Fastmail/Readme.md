@@ -20,5 +20,5 @@
 <!-- Colors: Light mode header, light mode accent, dark mode header, dark mode accent -->
 
 <!-- template
-{{light:uiBackground}},{{light:boldAccent}},{{darkDp:uiBackground}},{{darkDp:boldAccent}}
+{{light:uiBackground}},{{light:accent2}},{{darkDp:uiBackground}},{{darkDp:accent2}}
 -->

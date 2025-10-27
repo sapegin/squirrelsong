@@ -1,7 +1,7 @@
 {
   "themeAppearance": "light",
   "themeName": "Squirrelsong Light",
-  "filePanelsBriefFocusedActiveItemBackgroundColor": "{{boldAccent}}",
+  "filePanelsBriefFocusedActiveItemBackgroundColor": "{{accent2}}",
   "filePanelsBriefFocusedInactiveItemBackgroundColor": "{{hoverBackground}}",
   "filePanelsBriefFont": "@systemFont, 13",
   "filePanelsBriefGridColor": "{{border}}00",
@@ -24,7 +24,7 @@
   "filePanelsHeaderInactiveBackgroundColor": "{{textBackground}}",
   "filePanelsHeaderSeparatorColor": "{{border}}",
   "filePanelsHeaderTextColor": "{{disabledForeground}}",
-  "filePanelsListFocusedActiveRowBackgroundColor": "{{boldAccent}}",
+  "filePanelsListFocusedActiveRowBackgroundColor": "{{accent2}}",
   "filePanelsListFocusedInactiveRowBackgroundColor": "{{secondaryUiBackground}}",
   "filePanelsListFont": "@systemFont, 13",
   "filePanelsListGridColor": "{{border}}00",
