@@ -79,7 +79,7 @@ searchBar {
 statusBar {
     background #e8e5eb
     text #78737d
-    quickSelectNoResultsHighlighting #e5ada8
+    quickSelectNoResultsHighlighting #e5aba8
     separator #9c96a2
 }
 
@@ -118,7 +118,7 @@ textEditor {
     warning #e4c158
     keyword #c06159
     comment #9c96a2
-    identifier #f7f0de
+    identifier #f7f0da
 
     literal {
         string #9bae7e
@@ -128,7 +128,7 @@ textEditor {
 
     gutter {
         background #e8e5eb
-        text #e5ada866
+        text #e5aba866
     }
 }
 
