@@ -1,20 +1,5 @@
 /**
- * Generate themes based on templates:
- * - Alfred
- * - Bear
- * - Chrome
- * - CotEditor
- * - Fastmail
- * - Firefox
- * - fzf
- * - Ghostty
- * - iTerm
- * - Nimble Commander
- * - Sublime Text
- * - Terminal.app
- * - VSCode
- * - Warp
- * - WezTerm
+ * Generate themes based on templates.
  */
 
 import fs from 'node:fs';
@@ -211,22 +196,25 @@ const basePalettes = {
     ...lightUiPalette,
     ...lightAnsiPalette,
     ...lightCodePalette,
+    ...lightCodeStyles,
   },
   dark: {
     ...darkPalette,
     ...darkUiPalette,
     ...darkAnsiPalette,
     ...darkCodePalette,
+    ...darkCodeStyles,
   },
-  darkDp: {
+  'dark-dp': {
     ...darkDpPalette,
     ...darkDpUiPalette,
     ...darkDpAnsiPalette,
     ...darkDpCodePalette,
+    ...darkCodeStyles,
   },
 };
 
-const configs = globSync('themes/*/config.json');
+const configs = globSync('themes/*/config.json').toSorted();
 
 for (const configFile of configs) {
   const folder = path.dirname(configFile);
@@ -265,36 +253,6 @@ for (const configFile of configs) {
 // ------------ 8< -- 8< ------------
 
 console.log();
-console.log('[THEME] Preparing Alfred themes… 🌗');
-
-processTemplate(
-  'themes/Alfred/alfred.template.alfredappearance',
-  'themes/Alfred/Squirrelsong Light.alfredappearance',
-  {
-    ...lightPalette,
-    ...lightUiPalette,
-    ...lightCodePalette,
-  },
-);
-
-// ------------ 8< -- 8< ------------
-
-console.log();
-console.log('[THEME] Preparing Bear themes… 🌕');
-
-processTemplate(
-  'themes/Bear/bear.template.theme',
-  'themes/Bear/Squirrelsong Light.theme',
-  {
-    ...lightPalette,
-    ...lightUiPalette,
-    ...lightCodePalette,
-  },
-);
-
-// ------------ 8< -- 8< ------------
-
-console.log();
 console.log('[THEME] Preparing Chrome themes… 🌗');
 
 const chromeLightManifest = 'themes/Chrome/extension-light/manifest.json';
@@ -316,20 +274,6 @@ processTemplate('themes/Chrome/chrome-dark.template.json', chromeDarkManifest, {
   ...darkRgbPalette,
   ...darkUiRgbPalette,
 });
-
-// ------------ 8< -- 8< ------------
-
-console.log();
-console.log('[THEME] Preparing CotEditor themes… 🌕');
-
-processTemplate(
-  'themes/CotEditor/coteditor.template.cottheme',
-  'themes/CotEditor/Squirrelsong Light.cottheme',
-  {
-    ...lightCodePalette,
-    ...lightUiPalette,
-  },
-);
 
 // ------------ 8< -- 8< ------------
 
@@ -377,35 +321,6 @@ applyReadmeTemplate('themes/Fzf/Readme.md', 'dark-dp', {
 // ------------ 8< -- 8< ------------
 
 console.log();
-console.log('[THEME] Preparing Ghostty themes… 🌚');
-
-processTemplate(
-  'themes/Ghostty/ghostty.template.ini',
-  'themes/Ghostty/Squirrelsong Dark',
-  {
-    name: 'Dark',
-    ...darkAnsiPalette,
-    ...darkUiPalette,
-    iconForeground: darkPalette.purple070,
-    iconBackground: darkPalette.gray140,
-  },
-);
-
-processTemplate(
-  'themes/Ghostty/ghostty.template.ini',
-  'themes/Ghostty/Squirrelsong Dark Deep Purple',
-  {
-    name: 'Dark Deep Purple',
-    ...darkDpAnsiPalette,
-    ...darkDpUiPalette,
-    iconForeground: darkPalette.purple070,
-    iconBackground: darkPalette.purple140,
-  },
-);
-
-// ------------ 8< -- 8< ------------
-
-console.log();
 console.log('[THEME] Preparing iTerm themes… 🌚');
 
 const iTermDarkPalette = {};
@@ -427,66 +342,6 @@ processTemplate(
   'themes/iTerm2/Squirrelsong Dark.itermcolors',
   {
     ...iTermDarkPalette,
-  },
-);
-
-// ------------ 8< -- 8< ------------
-
-console.log();
-console.log('[THEME] Preparing Nimble Commander themes… 🌕');
-
-processTemplate(
-  'themes/Nimble Commander/nimble-commander.template.json',
-  'themes/Nimble Commander/Squirrelsong Light.json',
-  {
-    ...lightPalette,
-    ...lightAnsiPalette,
-    ...lightCodePalette,
-    ...lightUiPalette,
-  },
-);
-
-// ------------ 8< -- 8< ------------
-
-console.log();
-console.log('[THEME] Preparing Sublime Text themes… 🌗');
-
-processTemplate(
-  'themes/Sublime Text/textmate.template.tmTheme',
-  'themes/Sublime Text/Squirrelsong Light/Squirrelsong Light.tmTheme',
-  {
-    name: 'Light',
-    semanticClass: 'theme.light.squirrelsong_light',
-    uuid: '506f39ff-75a5-45af-ba44-452c5244fdb4',
-    ...lightCodePalette,
-    ...lightCodeStyles,
-    ...lightUiPalette,
-  },
-);
-
-processTemplate(
-  'themes/Sublime Text/textmate.template.tmTheme',
-  'themes/Sublime Text/Squirrelsong Dark/Squirrelsong Dark.tmTheme',
-  {
-    name: 'Dark',
-    semanticClass: 'theme.dark.squirrelsong_dark',
-    uuid: '59024f0e-5ea0-4d89-96a7-98147144a79f',
-    ...darkCodePalette,
-    ...darkCodeStyles,
-    ...darkUiPalette,
-  },
-);
-
-processTemplate(
-  'themes/Sublime Text/textmate.template.tmTheme',
-  'themes/Sublime Text/Squirrelsong Dark Deep Purple/Squirrelsong Dark Deep Purple.tmTheme',
-  {
-    name: 'Dark Deep Purple',
-    semanticClass: 'theme.dark.squirrelsong_dark_dp',
-    uuid: 'b5348c12-370a-4291-a2c6-7aee60eb66e9',
-    ...darkDpCodePalette,
-    ...darkCodeStyles,
-    ...darkDpUiPalette,
   },
 );
 
@@ -671,35 +526,5 @@ processTemplate(
     mode: 'dark',
     ...darkDpCodeBase,
     ...darkDpCodeTerminal,
-  },
-);
-
-// ------------ 8< -- 8< ------------
-
-console.log();
-console.log('[THEME] Preparing Warp themes… 🌚');
-
-processTemplate(
-  'themes/Warp/warp.template.yaml',
-  'themes/Warp/squirrelsong_dark.yaml',
-  {
-    name: 'Dark',
-    ...darkPalette,
-    ...darkAnsiPalette,
-  },
-);
-
-// ------------ 8< -- 8< ------------
-
-console.log();
-console.log('[THEME] Preparing WezTerm themes… 🌚');
-
-processTemplate(
-  'themes/WezTerm/wezterm.template.toml',
-  'themes/WezTerm/squirrelsong-dark.toml',
-  {
-    name: 'Dark',
-    ...darkAnsiPalette,
-    ...darkUiPalette,
   },
 );

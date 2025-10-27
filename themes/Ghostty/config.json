@@ -1,0 +1,22 @@
+{
+  "themes": [
+    {
+      "file": "Squirrelsong Dark",
+      "scheme": "dark",
+      "context": {
+        "name": "Dark",
+        "iconForeground": "purple070",
+        "iconBackground": "gray140"
+      }
+    },
+    {
+      "file": "Squirrelsong Dark Deep Purple",
+      "scheme": "dark-dp",
+      "context": {
+        "name": "Dark Deep Purple",
+        "iconForeground": "purple070",
+        "iconBackground": "purple140"
+      }
+    }
+  ]
+}
