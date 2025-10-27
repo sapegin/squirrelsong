@@ -188,9 +188,9 @@ const darkUiRgbPalette = Object.fromEntries(
 // ------------ 8< -- 8< ------------
 
 console.log();
-console.log('[THEME] Preparing themes… 🌕');
+console.log('[THEME] Preparing themes… 🌗');
 
-const basePalettes = {
+const schemes = {
   light: {
     ...lightPalette,
     ...lightUiPalette,
@@ -211,6 +211,30 @@ const basePalettes = {
     ...darkDpAnsiPalette,
     ...darkDpCodePalette,
     ...darkCodeStyles,
+  },
+};
+
+const mixins = {
+  'terminal-light': {
+    ...lightAnsiPalette,
+    terminalBorder: lightUiPalette.border,
+    terminalMatchBackground: lightUiPalette.matchBackground,
+    terminalMatchBase: lightUiPalette.matchBase,
+    terminalSelectionBase: lightUiPalette.selectionBase,
+  },
+  'terminal-dark': {
+    ...darkAnsiPalette,
+    terminalBorder: darkUiPalette.border,
+    terminalMatchBackground: darkUiPalette.matchBackground,
+    terminalMatchBase: darkUiPalette.matchBase,
+    terminalSelectionBase: darkUiPalette.selectionBase,
+  },
+  'terminal-dark-dp': {
+    ...darkDpAnsiPalette,
+    terminalBorder: darkDpUiPalette.border,
+    terminalMatchBackground: darkDpUiPalette.matchBackground,
+    terminalMatchBase: darkDpUiPalette.matchBase,
+    terminalSelectionBase: darkDpUiPalette.selectionBase,
   },
 };
 
@@ -240,8 +264,24 @@ for (const configFile of configs) {
     }
     console.log(`   ${theme.file}`);
 
-    // Prepare the context: base palette + custom values
-    const context = basePalettes[theme.scheme];
+    if (theme.scheme && schemes[theme.scheme] === undefined) {
+      console.error(
+        `   🦀 Scheme '${theme.scheme}' not found, possible values: ${Object.keys(schemes)}`,
+      );
+      continue;
+    }
+    if (theme.mixin && mixins[theme.mixin] === undefined) {
+      console.error(
+        `   🦀 Mixin '${theme.mixin}' not found, possible values: ${Object.keys(mixins)}`,
+      );
+      continue;
+    }
+
+    // Prepare the context: base palette + mixin + custom values
+    const context = {
+      ...schemes[theme.scheme],
+      ...(theme.mixin ? mixins[theme.mixin] : {}),
+    };
     for (const [key, value] of Object.entries(theme.context ?? {})) {
       context[key] = context[value] ?? value;
     }
@@ -430,101 +470,5 @@ processTemplate(
   {
     name: 'Dark Deep Purple',
     ...terminalDarkDpColors,
-  },
-);
-
-// ------------ 8< -- 8< ------------
-
-console.log();
-console.log('[THEME] Preparing VSCode themes… 🌗');
-
-const lightCodeBase = {
-  ...lightPalette,
-  ...lightCodePalette,
-  ...lightCodeStyles,
-  ...lightUiPalette,
-};
-const darkCodeBase = {
-  ...darkPalette,
-  ...darkCodePalette,
-  ...darkCodeStyles,
-  ...darkUiPalette,
-};
-const darkDpCodeBase = {
-  ...darkDpPalette,
-  ...darkDpCodePalette,
-  ...darkCodeStyles,
-  ...darkDpUiPalette,
-};
-const lightCodeTerminal = {
-  ...lightAnsiPalette,
-  terminalBorder: lightUiPalette.border,
-  terminalMatchBackground: lightUiPalette.matchBackground,
-  terminalMatchBase: lightUiPalette.matchBase,
-  terminalSelectionBase: lightUiPalette.selectionBase,
-};
-const darkCodeTerminal = {
-  ...darkAnsiPalette,
-  terminalBorder: darkUiPalette.border,
-  terminalMatchBackground: darkUiPalette.matchBackground,
-  terminalMatchBase: darkUiPalette.matchBase,
-  terminalSelectionBase: darkUiPalette.selectionBase,
-};
-const darkDpCodeTerminal = {
-  ...darkDpAnsiPalette,
-  terminalBorder: darkDpUiPalette.border,
-  terminalMatchBackground: darkDpUiPalette.matchBackground,
-  terminalMatchBase: darkDpUiPalette.matchBase,
-  terminalSelectionBase: darkDpUiPalette.selectionBase,
-};
-
-processTemplate(
-  'themes/VSCode/vscode.template.json',
-  'themes/VSCode/SquirrelsongLight/SquirrelsongLight.color-theme.json',
-  {
-    name: 'Light',
-    mode: 'light',
-    ...lightCodeBase,
-    ...lightCodeTerminal,
-  },
-);
-processTemplate(
-  'themes/VSCode/vscode.template.json',
-  'themes/VSCode/SquirrelsongLight/SquirrelsongLightDarkTerminal.color-theme.json',
-  {
-    name: 'Light (Dark Terminal)',
-    mode: 'light',
-    ...lightCodeBase,
-    ...darkCodeTerminal,
-  },
-);
-processTemplate(
-  'themes/VSCode/vscode.template.json',
-  'themes/VSCode/SquirrelsongLight/SquirrelsongLightDarkDeepPurpleTerminal.color-theme.json',
-  {
-    name: 'Light (Dark Deep Purple Terminal)',
-    mode: 'light',
-    ...lightCodeBase,
-    ...darkDpCodeTerminal,
-  },
-);
-processTemplate(
-  'themes/VSCode/vscode.template.json',
-  'themes/VSCode/SquirrelsongDark/SquirrelsongDark.color-theme.json',
-  {
-    name: 'Dark',
-    mode: 'dark',
-    ...darkCodeBase,
-    ...darkCodeTerminal,
-  },
-);
-processTemplate(
-  'themes/VSCode/vscode.template.json',
-  'themes/VSCode/SquirrelsongDark/SquirrelsongDarkDeepPurple.color-theme.json',
-  {
-    name: 'Dark Deep Purple',
-    mode: 'dark',
-    ...darkDpCodeBase,
-    ...darkDpCodeTerminal,
   },
 );

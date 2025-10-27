@@ -2,7 +2,10 @@
   "themes": [
     {
       "file": "squirrelsong-dark.toml",
-      "scheme": "dark"
+      "scheme": "dark",
+      "context": {
+        "name": "Dark"
+      }
     }
   ]
 }
