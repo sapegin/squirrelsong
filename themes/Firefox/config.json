@@ -1,0 +1,12 @@
+{
+  "themes": [
+    {
+      "file": "extension/manifest.json",
+      "scheme": "light",
+      "context": {
+        "name": "Light",
+        "kind": "light"
+      }
+    }
+  ]
+}

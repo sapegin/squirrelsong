@@ -299,20 +299,6 @@ for (const configFile of configs) {
 // ------------ 8< -- 8< ------------
 
 console.log();
-console.log('[THEME] Preparing Firefox themes… 🌕');
-
-processTemplate(
-  'themes/Firefox/firefox.template.json',
-  'themes/Firefox/extension/manifest.json',
-  {
-    ...lightRgbPalette,
-    ...lightUiRgbPalette,
-  },
-);
-
-// ------------ 8< -- 8< ------------
-
-console.log();
 console.log('[THEME] Preparing fzf themes… 🌚');
 
 applyReadmeTemplate('themes/Fzf/Readme.md', 'dark', {
