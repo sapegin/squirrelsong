@@ -3,7 +3,7 @@
     {
       "file": "SquirrelsongLight/SquirrelsongLight.color-theme.json",
       "scheme": "light",
-      "mixin": "terminal-light",
+      "mixin": "terminalLight",
       "context": {
         "name": "Light",
         "mode": "light"
@@ -12,7 +12,7 @@
     {
       "file": "SquirrelsongLight/SquirrelsongLightDarkTerminal.color-theme.json",
       "scheme": "light",
-      "mixin": "terminal-dark",
+      "mixin": "terminalDark",
       "context": {
         "name": "Light (Dark Terminal)",
         "mode": "light"
@@ -21,7 +21,7 @@
     {
       "file": "SquirrelsongLight/SquirrelsongLightDarkDeepPurpleTerminal.color-theme.json",
       "scheme": "light",
-      "mixin": "terminal-dark-dp",
+      "mixin": "terminalDarkDp",
       "context": {
         "name": "Light (Dark Deep Purple Terminal)",
         "mode": "light"
@@ -30,7 +30,7 @@
     {
       "file": "SquirrelsongDark/SquirrelsongDark.color-theme.json",
       "scheme": "dark",
-      "mixin": "terminal-dark",
+      "mixin": "terminalDark",
       "context": {
         "name": "Dark",
         "mode": "dark"
@@ -38,8 +38,8 @@
     },
     {
       "file": "SquirrelsongDark/SquirrelsongDarkDeepPurple.color-theme.json",
-      "scheme": "dark-dp",
-      "mixin": "terminal-dark-dp",
+      "scheme": "darkDp",
+      "mixin": "terminalDarkDp",
       "context": {
         "name": "Dark Deep Purple",
         "mode": "dark"

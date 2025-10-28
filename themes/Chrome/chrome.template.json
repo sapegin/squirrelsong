@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "Squirrelsong {{name}} Theme",
+  "description": "A low contrast {{kind}} UI theme",
+  "version": "4.0.0",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "theme": {
+    "colors": {
+      "background_tab_inactive": [{{secondaryUiBackground|rgb}}],
+      "background_tab": [{{secondaryUiBackground|rgb}}],
+      "bookmark_text": [{{titleForeground|rgb}}],
+      "button_background": [{{secondaryButtonBackground|rgb}}],
+      "button_text": [{{secondaryButtonForeground|rgb}}],
+      "control_background": [{{secondaryUiBackground|rgb}}],
+      "frame_inactive": [{{secondaryUiBackground|rgb}}],
+      "frame": [{{secondaryUiBackground|rgb}}],
+      "ntp_background": [{{textBackground|rgb}}],
+      "ntp_header": [{{titleForeground|rgb}}],
+      "ntp_link_underline": [{{linkForeground|rgb}}],
+      "ntp_link": [{{linkForeground|rgb}}],
+      "ntp_section_link_underline": [{{linkForeground|rgb}}],
+      "ntp_section_link": [{{linkForeground|rgb}}],
+      "ntp_section_text": [{{titleForeground|rgb}}],
+      "ntp_section": [{{titleForeground|rgb}}],
+      "ntp_text": [{{titleForeground|rgb}}],
+      "omnibox_background": [{{textBackground|rgb}}],
+      "omnibox_text": [{{titleForeground|rgb}}],
+      "tab_background_text_inactive": [{{textForeground|rgb}}],
+      "tab_background_text": [{{titleForeground|rgb}}],
+      "tab_text": [{{titleForeground|rgb}}],
+      "toolbar_button_icon": [{{icon|rgb}}],
+      "toolbar_text": [{{titleForeground|rgb}}],
+      "toolbar": [{{uiBackground|rgb}}]
+    },
+    "tints": {
+      "frame": [-1.0, -1.0, -1.0],
+      "buttons": [-1.0, -1.0, -1.0],
+      "background_tab": [-1.0, -1.0, -1.0]
+    },
+    "images": {
+      "theme_frame": "images/theme_frame.png",
+      "theme_toolbar": "images/theme_toolbar_transparent.png",
+      "theme_tab_background": "images/theme_toolbar.png"
+    }
+  }
+}

@@ -174,16 +174,6 @@ const lightUiRgbPalette = Object.fromEntries(
     return [key, hexToRgb(color).join(', ')];
   }),
 );
-const darkRgbPalette = Object.fromEntries(
-  Object.entries(darkPalette).map(([key, color]) => {
-    return [key, hexToRgb(color).join(', ')];
-  }),
-);
-const darkUiRgbPalette = Object.fromEntries(
-  Object.entries(darkUiPalette).map(([key, color]) => {
-    return [key, hexToRgb(color).join(', ')];
-  }),
-);
 
 // ------------ 8< -- 8< ------------
 
@@ -205,7 +195,7 @@ const schemes = {
     ...darkCodePalette,
     ...darkCodeStyles,
   },
-  'dark-dp': {
+  darkDp: {
     ...darkDpPalette,
     ...darkDpUiPalette,
     ...darkDpAnsiPalette,
@@ -215,21 +205,21 @@ const schemes = {
 };
 
 const mixins = {
-  'terminal-light': {
+  terminalLight: {
     ...lightAnsiPalette,
     terminalBorder: lightUiPalette.border,
     terminalMatchBackground: lightUiPalette.matchBackground,
     terminalMatchBase: lightUiPalette.matchBase,
     terminalSelectionBase: lightUiPalette.selectionBase,
   },
-  'terminal-dark': {
+  terminalDark: {
     ...darkAnsiPalette,
     terminalBorder: darkUiPalette.border,
     terminalMatchBackground: darkUiPalette.matchBackground,
     terminalMatchBase: darkUiPalette.matchBase,
     terminalSelectionBase: darkUiPalette.selectionBase,
   },
-  'terminal-dark-dp': {
+  terminalDarkDp: {
     ...darkDpAnsiPalette,
     terminalBorder: darkDpUiPalette.border,
     terminalMatchBackground: darkDpUiPalette.matchBackground,
@@ -237,6 +227,13 @@ const mixins = {
     terminalSelectionBase: darkDpUiPalette.selectionBase,
   },
 };
+
+const sharedScheme = {};
+for (const [key] of Object.entries(schemes.light)) {
+  sharedScheme[`light:${key}`] = schemes.light[key];
+  sharedScheme[`dark:${key}`] = schemes.dark[key];
+  sharedScheme[`darkDp:${key}`] = schemes.darkDp[key];
+}
 
 const configs = globSync('themes/*/config.json').toSorted();
 
@@ -252,7 +249,10 @@ for (const configFile of configs) {
 
   // Find a template: any file that has `.template.` in its name
   const templateFile = globSync(path.join(folder, '*.template.*'))[0];
-  if (templateFile === undefined) {
+  if (
+    templateFile === undefined &&
+    config.themes.some((x) => x.file !== 'Readme.md')
+  ) {
     console.error(`   🦀 Template file not found`);
     continue;
   }
@@ -279,53 +279,22 @@ for (const configFile of configs) {
 
     // Prepare the context: base palette + mixin + custom values
     const context = {
-      ...schemes[theme.scheme],
+      ...(theme.scheme ? schemes[theme.scheme] : sharedScheme),
       ...(theme.mixin ? mixins[theme.mixin] : {}),
     };
     for (const [key, value] of Object.entries(theme.context ?? {})) {
       context[key] = context[value] ?? value;
     }
 
-    processTemplate(templateFile, path.join(folder, theme.file), context);
+    const destFile = path.join(folder, theme.file);
+
+    if (theme.file === 'Readme.md') {
+      applyReadmeTemplate(destFile, theme.scheme ?? 'theme', context);
+    } else {
+      processTemplate(templateFile, destFile, context);
+    }
   }
 }
-
-// ------------ 8< -- 8< ------------
-
-console.log();
-console.log('[THEME] Preparing Chrome themes… 🌗');
-
-const chromeLightManifest = 'themes/Chrome/extension-light/manifest.json';
-const chromeLight = JSON.parse(fs.readFileSync(chromeLightManifest));
-processTemplate(
-  'themes/Chrome/chrome-light.template.json',
-  chromeLightManifest,
-  {
-    version: chromeLight.version,
-    ...lightRgbPalette,
-    ...lightUiRgbPalette,
-  },
-);
-
-const chromeDarkManifest = 'themes/Chrome/extension-dark/manifest.json';
-const chromeDark = JSON.parse(fs.readFileSync(chromeDarkManifest));
-processTemplate('themes/Chrome/chrome-dark.template.json', chromeDarkManifest, {
-  version: chromeDark.version,
-  ...darkRgbPalette,
-  ...darkUiRgbPalette,
-});
-
-// ------------ 8< -- 8< ------------
-
-console.log();
-console.log('[THEME] Preparing Fastmail themes… 🌗');
-
-applyReadmeTemplate('themes/Fastmail/Readme.md', 'theme', {
-  'light:uiBackground': lightUiPalette.uiBackground,
-  'light:accent2': lightUiPalette.accent2,
-  'darkDp:uiBackground': darkDpUiPalette.uiBackground,
-  'darkDp:accent2': darkDpUiPalette.accent2,
-});
 
 // ------------ 8< -- 8< ------------
 

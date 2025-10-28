@@ -20,7 +20,7 @@
     },
     {
       "file": "Squirrelsong Dark Deep Purple/Squirrelsong Dark Deep Purple.tmTheme",
-      "scheme": "dark-dp",
+      "scheme": "darkDp",
       "context": {
         "name": "Dark Deep Purple",
         "semanticClass": "theme.dark.squirrelsong_dark_dp",

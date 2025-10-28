@@ -1,0 +1,20 @@
+{
+  "themes": [
+    {
+      "file": "extension-light/manifest.json",
+      "scheme": "light",
+      "context": {
+        "name": "Light",
+        "kind": "light"
+      }
+    },
+    {
+      "file": "extension-dark/manifest.json",
+      "scheme": "darkDp",
+      "context": {
+        "name": "Dark Deep Purple",
+        "kind": "dark"
+      }
+    }
+  ]
+}
