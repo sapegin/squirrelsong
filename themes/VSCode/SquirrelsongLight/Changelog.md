@@ -5,6 +5,7 @@
 - Tweak bracket highlight colors to avoid using red/orange colors.
 - Tweak UI selection background to match the editor.
 - Fix CSS closing bracket color.
+- Nicer color for find matches in dark theme.
 
 ## 3.5.0
 

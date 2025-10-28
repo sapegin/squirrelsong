@@ -360,7 +360,7 @@
     "scrollbarSlider.background": "#8c879222",
     "scrollbarSlider.hoverBackground": "#8c879244",
     "search.resultsInfoForeground": "#78737d",
-    "selection.background": "#f8e7a0",
+    "selection.background": "#f5da7088",
     "settings.focusedRowBackground": "#dbd7e0",
     "settings.focusedRowBorder": "#78737d",
     "settings.headerBorder": "#e8e5eb",
@@ -576,6 +576,7 @@
         "punctuation.separator.delimiter.comma.cpp",
         // CSS
         "punctuation.section.function.begin.bracket.round.css",
+        "punctuation.section.function.end.bracket.round.css",
         // Java
         "punctuation.bracket.square.java",
         "punctuation.definition.parameters.begin.bracket.round.java",
