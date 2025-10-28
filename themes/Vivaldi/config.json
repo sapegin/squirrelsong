@@ -1,0 +1,8 @@
+{
+  "themes": [
+    {
+      "file": "theme-light/settings.json",
+      "scheme": "light"
+    }
+  ]
+}

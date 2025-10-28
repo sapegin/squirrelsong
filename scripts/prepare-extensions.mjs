@@ -5,9 +5,10 @@
 import fs from 'node:fs';
 import ADMZip from 'adm-zip';
 
-console.log(`[BUILD] Building Chrome Light extension...`);
+// ------------ 8< -- 8< ------------
 
-fs.mkdirSync('./dist', { recursive: true });
+console.log();
+console.log(`[BUILD] Building Chrome Light extension… 🌕`);
 
 // Chrome Light
 fs.mkdirSync('./dist/chrome-light', { recursive: true });
@@ -27,7 +28,10 @@ const chromeLightDotZip = new ADMZip();
 chromeLightDotZip.addLocalFolder('./dist/chrome-light');
 chromeLightDotZip.writeZip(`./dist/chrome-light.zip`);
 
-console.log(`[BUILD] Building Chrome Dark Deep Purple extension...`);
+// ------------ 8< -- 8< ------------
+
+console.log();
+console.log(`[BUILD] Building Chrome Dark Deep Purple extension… 🌑`);
 
 // Chrome Dark Deep Purple
 fs.mkdirSync('./dist/chrome-dark-dp', { recursive: true });
@@ -47,7 +51,10 @@ const chromeDarkDpDotZip = new ADMZip();
 chromeDarkDpDotZip.addLocalFolder('./dist/chrome-dark-dp');
 chromeDarkDpDotZip.writeZip(`./dist/chrome-dark-dp.zip`);
 
-console.log(`[BUILD] Building Chrome DevTools Light extension...`);
+// ------------ 8< -- 8< ------------
+
+console.log();
+console.log(`[BUILD] Building Chrome DevTools Light extension… 🌕`);
 
 // Chrome DevTools
 fs.mkdirSync('./dist/chrome-devtools-light', { recursive: true });
@@ -79,9 +86,10 @@ const chromeDevtoolsDotZip = new ADMZip();
 chromeDevtoolsDotZip.addLocalFolder('./dist/chrome-devtools-light');
 chromeDevtoolsDotZip.writeZip(`./dist/chrome-devtools-light.zip`);
 
-console.log(`[BUILD] Building Firefox Light extension...`);
+// ------------ 8< -- 8< ------------
 
-fs.mkdirSync('./dist', { recursive: true });
+console.log();
+console.log(`[BUILD] Building Firefox Light extension… 🌕`);
 
 // Firefox Light
 fs.mkdirSync('./dist/firefox-light', { recursive: true });
@@ -93,5 +101,14 @@ fs.copyFileSync(
 const firefoxLightDotZip = new ADMZip();
 firefoxLightDotZip.addLocalFolder('./dist/firefox-light');
 firefoxLightDotZip.writeZip(`./dist/firefox-light.zip`);
+
+// ------------ 8< -- 8< ------------
+
+console.log();
+console.log(`[BUILD] Building Vivaldi theme… 🌕`);
+
+const vivaldiLightDotZip = new ADMZip();
+vivaldiLightDotZip.addLocalFolder('./themes/Vivaldi/theme-light');
+vivaldiLightDotZip.writeZip(`./themes/Vivaldi/Squirrelsong Light.zip`);
 
 console.log('[BUILD] Done 🦜');
