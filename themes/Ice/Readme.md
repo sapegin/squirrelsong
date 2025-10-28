@@ -1,7 +1,7 @@
 # Squirrelsong Light Theme for [Ice](https://icemenubar.app)
 
 > [!WARNING]
-> The actual color never goes brighter than `#e3e3e3` instead of `#f7f6f9`, and this color is the closest I could get to the theme colors.
+> The actual color never goes brighter than `#e3e3e3` instead of `#f7f6f9` (`gray170`/`uiBackground`), and this color is the closest I could get to the theme colors.
 
 ## Installation
 
