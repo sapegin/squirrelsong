@@ -8,17 +8,27 @@
 
 1. Copy the values below for the light theme:
 
-   ```
-   #D2CCDB,#D7CFE3,#527B98,#AC9BC5
-   ```
+<!-- apply:light -->
 
-   Or these values for the dark theme:
+```
+#ebe7f1,#d7cfe3,#5f9b8d,#806f9b
+```
 
-   ```
-   #57427a,#453461,#41635F,#CA5A83
-   ```
+Or these values for the dark theme:
+
+<!-- apply:darkDp -->
+
+```
+#36294d,#503f6e,#4f9593,#ca5a83
+```
 
 2. Open **Preferences → Themes** in Slack.
 3. Select **Light** or **Dark** at the top **Color Mode** section.
 4. Under the **Custom theme** tab, in **Theme colors** section, click on **↑ Import**.
 5. Paste the colors you copied from the previous step in the text field.
+
+<!-- Colors: system navigation, selected items, presence indication, notifications -->
+
+<!-- template
+{{systemNavigation}},{{selectedItems}},{{presenceIndication}},{{notifications}}
+-->

@@ -82,12 +82,6 @@ const TRANSPARENT = [
 const EXCEPTIONS = {
   'themes/Bartender/Readme.md': ['#e3e3e3', '#f4effc'],
   'themes/Ice/Readme.md': ['#e3e3e3', '#f4effc'],
-  'themes/Slack/Readme.md': [
-    // Slack system navigation: existing colors look too intense (this color
-    // isn't used as is by Slack but is "adjusted" and other colors are made
-    // based on this color)
-    '#d2ccdb',
-  ],
   'dotfiles/firefox/chrome/userContent.css': [
     // Custom sepia theme colors
     '#f6f2ef',

@@ -1,0 +1,24 @@
+{
+  "themes": [
+    {
+      "file": "Readme.md",
+      "scheme": "light",
+      "context": {
+        "systemNavigation": "magentaDimer",
+        "selectedItems": "magentaDim",
+        "presenceIndication": "teal",
+        "notifications": "accent3"
+      }
+    },
+    {
+      "file": "Readme.md",
+      "scheme": "darkDp",
+      "context": {
+        "systemNavigation": "uiBackground",
+        "selectedItems": "activeBackground",
+        "presenceIndication": "teal",
+        "notifications": "accent3"
+      }
+    }
+  ]
+}
