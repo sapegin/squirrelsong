@@ -1,5 +1,8 @@
 /**
- * Generate themes based on templates.
+ * Generate themes based on templates:
+ *
+ * 1. Config-based templates.
+ * 2. Custom templates, such as iTerm or Terminal.app.
  */
 
 import fs from 'node:fs';
@@ -23,12 +26,6 @@ const darkPalette = readJsonFile(`dark/palette.json`);
 const darkAnsiPaletteRaw = readJsonFile(`dark/ansi.json`);
 const darkCodePaletteRaw = readJsonFile(`dark/code.json`);
 const darkUiPaletteRaw = readJsonFile(`dark/ui.json`);
-
-function toCamelCase(str) {
-  return str.replaceAll(/[-_\s]+(.)?/g, (_, char) =>
-    char ? char.toUpperCase() : '',
-  );
-}
 
 function getDarkDpColorName(colorName) {
   return colorName
@@ -64,7 +61,7 @@ const lightCodePalette = Object.fromEntries(
     if (lightPalette[colorName] === undefined) {
       console.error(`⛔️ Color not found in the light palette: ${colorName}`);
     }
-    return [toCamelCase(key), lightPalette[colorName]];
+    return [key, lightPalette[colorName]];
   }),
 );
 const darkCodePalette = Object.fromEntries(
@@ -73,7 +70,7 @@ const darkCodePalette = Object.fromEntries(
     if (darkPalette[colorName] === undefined) {
       console.error(`⛔️ Color not found in the dark palette: ${colorName}`);
     }
-    return [toCamelCase(key), darkPalette[colorName]];
+    return [key, darkPalette[colorName]];
   }),
 );
 
@@ -82,14 +79,14 @@ const darkCodePalette = Object.fromEntries(
 const lightCodeStyles = Object.fromEntries(
   Object.entries(lightCodePaletteRaw).map(([key, colorInfo]) => {
     const style = Array.isArray(colorInfo) ? colorInfo[1] : '';
-    return [`${toCamelCase(key)}Style`, style];
+    return [`${key}Style`, style];
   }),
 );
 
 const darkCodeStyles = Object.fromEntries(
   Object.entries(darkCodePaletteRaw).map(([key, colorInfo]) => {
     const style = Array.isArray(colorInfo) ? colorInfo[1] : '';
-    return [`${toCamelCase(key)}Style`, style];
+    return [`${key}Style`, style];
   }),
 );
 
@@ -101,7 +98,7 @@ const lightUiPalette = Object.fromEntries(
     if (lightPalette[colorName] === undefined) {
       console.error(`⛔️ Color not found in the light palette: ${colorName}`);
     }
-    return [toCamelCase(key), lightPalette[colorName]];
+    return [key, lightPalette[colorName]];
   }),
 );
 const darkUiPalette = Object.fromEntries(
@@ -110,7 +107,7 @@ const darkUiPalette = Object.fromEntries(
     if (darkPalette[colorName] === undefined) {
       console.error(`⛔️ Color not found in the dark palette: ${colorName}`);
     }
-    return [toCamelCase(key), darkPalette[colorName]];
+    return [key, darkPalette[colorName]];
   }),
 );
 
@@ -147,7 +144,7 @@ const darkDpCodePalette = Object.fromEntries(
         `⛔️ Color not found in the dark palette: ${paletteColorName}`,
       );
     }
-    return [toCamelCase(key), darkPalette[paletteColorName]];
+    return [key, darkPalette[paletteColorName]];
   }),
 );
 const darkDpUiPalette = Object.fromEntries(
@@ -158,20 +155,7 @@ const darkDpUiPalette = Object.fromEntries(
         `⛔️ Color not found in the dark palette: ${paletteColorName}`,
       );
     }
-    return [toCamelCase(key), darkPalette[paletteColorName]];
-  }),
-);
-
-// Convert HEX values to RGB
-
-const lightRgbPalette = Object.fromEntries(
-  Object.entries(lightPalette).map(([key, color]) => {
-    return [key, hexToRgb(color).join(', ')];
-  }),
-);
-const lightUiRgbPalette = Object.fromEntries(
-  Object.entries(lightUiPalette).map(([key, color]) => {
-    return [key, hexToRgb(color).join(', ')];
+    return [key, darkPalette[paletteColorName]];
   }),
 );
 
