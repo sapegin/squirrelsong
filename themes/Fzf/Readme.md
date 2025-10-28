@@ -22,7 +22,7 @@ export FZF_DEFAULT_OPTS='
 
 b. For Squirrelsong Dark Deep Purple theme:
 
-<!-- apply:dark-dp -->
+<!-- apply:darkDp -->
 
 ```shell
 export FZF_DEFAULT_OPTS='

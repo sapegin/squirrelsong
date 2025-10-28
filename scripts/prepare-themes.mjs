@@ -299,23 +299,6 @@ for (const configFile of configs) {
 // ------------ 8< -- 8< ------------
 
 console.log();
-console.log('[THEME] Preparing fzf themes… 🌚');
-
-applyReadmeTemplate('themes/Fzf/Readme.md', 'dark', {
-  ...darkPalette,
-  ...darkAnsiPalette,
-  ...darkUiPalette,
-});
-
-applyReadmeTemplate('themes/Fzf/Readme.md', 'dark-dp', {
-  ...darkPalette,
-  ...darkDpAnsiPalette,
-  ...darkDpUiPalette,
-});
-
-// ------------ 8< -- 8< ------------
-
-console.log();
 console.log('[THEME] Preparing iTerm themes… 🌚');
 
 const iTermDarkPalette = {};

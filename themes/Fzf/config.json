@@ -1,0 +1,12 @@
+{
+  "themes": [
+    {
+      "file": "Readme.md",
+      "scheme": "dark"
+    },
+    {
+      "file": "Readme.md",
+      "scheme": "darkDp"
+    }
+  ]
+}
