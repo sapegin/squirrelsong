@@ -3,6 +3,7 @@
 ## 3.3.1
 
 - Tweak bracket highlight colors to avoid using red/orange colors.
+- Tweak UI selection background to match the editor.
 
 ## 3.3.0
 

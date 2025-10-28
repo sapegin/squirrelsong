@@ -360,7 +360,7 @@
     "scrollbarSlider.background": "{{icon}}22",
     "scrollbarSlider.hoverBackground": "{{icon}}44",
     "search.resultsInfoForeground": "{{infoForeground}}",
-    "selection.background": "{{selectionBackground}}",
+    "selection.background": "{{selectionBase}}88",
     "settings.focusedRowBackground": "{{activeBackground}}",
     "settings.focusedRowBorder": "{{focusBorder}}",
     "settings.headerBorder": "{{lightBorder}}",
