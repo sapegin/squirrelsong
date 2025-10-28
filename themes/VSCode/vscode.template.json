@@ -576,6 +576,7 @@
         "punctuation.separator.delimiter.comma.cpp",
         // CSS
         "punctuation.section.function.begin.bracket.round.css",
+        "punctuation.section.function.end.bracket.round.css",
         // Java
         "punctuation.bracket.square.java",
         "punctuation.definition.parameters.begin.bracket.round.java",
