@@ -2,7 +2,7 @@
  * Generate themes based on templates:
  *
  * 1. Config-based templates.
- * 2. Custom templates, such as iTerm or Terminal.app.
+ * 2. Custom templates, such as Terminal.app.
  */
 
 import fs from 'node:fs';
@@ -279,33 +279,6 @@ for (const configFile of configs) {
     }
   }
 }
-
-// ------------ 8< -- 8< ------------
-
-console.log();
-console.log('[THEME] Preparing iTerm themes… 🌚');
-
-const iTermDarkPalette = {};
-for (const [colorName, hexColor] of Object.entries(darkAnsiPalette)) {
-  const [r, g, b] = hexToRgb(hexColor);
-  iTermDarkPalette[`${colorName}R`] = r / 255;
-  iTermDarkPalette[`${colorName}G`] = g / 255;
-  iTermDarkPalette[`${colorName}B`] = b / 255;
-}
-for (const [colorName, hexColor] of Object.entries(darkUiPalette)) {
-  const [r, g, b] = hexToRgb(hexColor);
-  iTermDarkPalette[`${colorName}R`] = r / 255;
-  iTermDarkPalette[`${colorName}G`] = g / 255;
-  iTermDarkPalette[`${colorName}B`] = b / 255;
-}
-
-processTemplate(
-  'themes/iTerm2/iterm.template.itermcolors',
-  'themes/iTerm2/Squirrelsong Dark.itermcolors',
-  {
-    ...iTermDarkPalette,
-  },
-);
 
 // ------------ 8< -- 8< ------------
 

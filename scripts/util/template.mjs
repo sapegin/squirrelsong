@@ -69,11 +69,23 @@ export function renderTemplate(template, context, templatePath) {
       const color = context[key];
 
       if (func) {
-        if (func === 'rgb') {
-          return hexToRgb(color).join(', ');
-        } else {
-          console.error(`🦀 Unknown function '${func}'`);
-          return '';
+        switch (func) {
+          case 'rgb': {
+            return hexToRgb(color).join(', ');
+          }
+          case 'r': {
+            return hexToRgb(color)[0] / 255;
+          }
+          case 'g': {
+            return hexToRgb(color)[1] / 255;
+          }
+          case 'b': {
+            return hexToRgb(color)[2] / 255;
+          }
+          default: {
+            console.error(`🦀 Unknown function '${func}'`);
+            return '';
+          }
         }
       }
 

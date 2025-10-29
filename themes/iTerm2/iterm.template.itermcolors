@@ -7,351 +7,351 @@
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{terminalBlackB}}</real>
+		<real>{{terminalBlack|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{terminalBlackG}}</real>
+		<real>{{terminalBlack|g}}</real>
 		<key>Red Component</key>
-		<real>{{terminalBlackR}}</real>
+		<real>{{terminalBlack|r}}</real>
 	</dict>
 	<key>Ansi 1 Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{terminalRedB}}</real>
+		<real>{{terminalRed|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{terminalRedG}}</real>
+		<real>{{terminalRed|g}}</real>
 		<key>Red Component</key>
-		<real>{{terminalRedR}}</real>
+		<real>{{terminalRed|r}}</real>
 	</dict>
 	<key>Ansi 10 Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{terminalBrightGreenB}}</real>
+		<real>{{terminalBrightGreen|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{terminalBrightGreenG}}</real>
+		<real>{{terminalBrightGreen|g}}</real>
 		<key>Red Component</key>
-		<real>{{terminalBrightGreenR}}</real>
+		<real>{{terminalBrightGreen|r}}</real>
 	</dict>
 	<key>Ansi 11 Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{terminalBrightYellowB}}</real>
+		<real>{{terminalBrightYellow|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{terminalBrightYellowG}}</real>
+		<real>{{terminalBrightYellow|g}}</real>
 		<key>Red Component</key>
-		<real>{{terminalBrightYellowR}}</real>
+		<real>{{terminalBrightYellow|r}}</real>
 	</dict>
 	<key>Ansi 12 Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{terminalBrightBlueB}}</real>
+		<real>{{terminalBrightBlue|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{terminalBrightBlueG}}</real>
+		<real>{{terminalBrightBlue|g}}</real>
 		<key>Red Component</key>
-		<real>{{terminalBrightBlueR}}</real>
+		<real>{{terminalBrightBlue|r}}</real>
 	</dict>
 	<key>Ansi 13 Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{terminalBrightMagentaB}}</real>
+		<real>{{terminalBrightMagenta|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{terminalBrightMagentaG}}</real>
+		<real>{{terminalBrightMagenta|g}}</real>
 		<key>Red Component</key>
-		<real>{{terminalBrightMagentaR}}</real>
+		<real>{{terminalBrightMagenta|r}}</real>
 	</dict>
 	<key>Ansi 14 Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{terminalBrightCyanB}}</real>
+		<real>{{terminalBrightCyan|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{terminalBrightCyanG}}</real>
+		<real>{{terminalBrightCyan|g}}</real>
 		<key>Red Component</key>
-		<real>{{terminalBrightCyanR}}</real>
+		<real>{{terminalBrightCyan|r}}</real>
 	</dict>
 	<key>Ansi 15 Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{terminalBrightWhiteB}}</real>
+		<real>{{terminalBrightWhite|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{terminalBrightWhiteG}}</real>
+		<real>{{terminalBrightWhite|g}}</real>
 		<key>Red Component</key>
-		<real>{{terminalBrightWhiteR}}</real>
+		<real>{{terminalBrightWhite|r}}</real>
 	</dict>
 	<key>Ansi 2 Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{terminalGreenB}}</real>
+		<real>{{terminalGreen|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{terminalGreenG}}</real>
+		<real>{{terminalGreen|g}}</real>
 		<key>Red Component</key>
-		<real>{{terminalGreenR}}</real>
+		<real>{{terminalGreen|r}}</real>
 	</dict>
 	<key>Ansi 3 Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{terminalYellowB}}</real>
+		<real>{{terminalYellow|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{terminalYellowG}}</real>
+		<real>{{terminalYellow|g}}</real>
 		<key>Red Component</key>
-		<real>{{terminalYellowR}}</real>
+		<real>{{terminalYellow|r}}</real>
 	</dict>
 	<key>Ansi 4 Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{terminalBlueB}}</real>
+		<real>{{terminalBlue|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{terminalBlueG}}</real>
+		<real>{{terminalBlue|g}}</real>
 		<key>Red Component</key>
-		<real>{{terminalBlueR}}</real>
+		<real>{{terminalBlue|r}}</real>
 	</dict>
 	<key>Ansi 5 Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{terminalMagentaB}}</real>
+		<real>{{terminalMagenta|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{terminalMagentaG}}</real>
+		<real>{{terminalMagenta|g}}</real>
 		<key>Red Component</key>
-		<real>{{terminalMagentaR}}</real>
+		<real>{{terminalMagenta|r}}</real>
 	</dict>
 	<key>Ansi 6 Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{terminalCyanB}}</real>
+		<real>{{terminalCyan|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{terminalCyanG}}</real>
+		<real>{{terminalCyan|g}}</real>
 		<key>Red Component</key>
-		<real>{{terminalCyanR}}</real>
+		<real>{{terminalCyan|r}}</real>
 	</dict>
 	<key>Ansi 7 Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{terminalWhiteB}}</real>
+		<real>{{terminalWhite|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{terminalWhiteG}}</real>
+		<real>{{terminalWhite|g}}</real>
 		<key>Red Component</key>
-		<real>{{terminalWhiteR}}</real>
+		<real>{{terminalWhite|r}}</real>
 	</dict>
 	<key>Ansi 8 Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{terminalBrightBlackB}}</real>
+		<real>{{terminalBrightBlack|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{terminalBrightBlackG}}</real>
+		<real>{{terminalBrightBlack|g}}</real>
 		<key>Red Component</key>
-		<real>{{terminalBrightBlackR}}</real>
+		<real>{{terminalBrightBlack|r}}</real>
 	</dict>
 	<key>Ansi 9 Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{terminalBrightRedB}}</real>
+		<real>{{terminalBrightRed|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{terminalBrightRedG}}</real>
+		<real>{{terminalBrightRed|g}}</real>
 		<key>Red Component</key>
-		<real>{{terminalBrightRedR}}</real>
+		<real>{{terminalBrightRed|r}}</real>
 	</dict>
 	<key>Background Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{terminalBackgroundB}}</real>
+		<real>{{terminalBackground|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{terminalBackgroundG}}</real>
+		<real>{{terminalBackground|g}}</real>
 		<key>Red Component</key>
-		<real>{{terminalBackgroundR}}</real>
+		<real>{{terminalBackground|r}}</real>
 	</dict>
 	<key>Badge Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>0.5</real>
 		<key>Blue Component</key>
-		<real>{{terminalRedB}}</real>
+		<real>{{terminalRed|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{terminalRedG}}</real>
+		<real>{{terminalRed|g}}</real>
 		<key>Red Component</key>
-		<real>{{terminalRedR}}</real>
+		<real>{{terminalRed|r}}</real>
 	</dict>
 	<key>Bold Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{terminalBrightWhiteB}}</real>
+		<real>{{terminalBrightWhite|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{terminalBrightWhiteG}}</real>
+		<real>{{terminalBrightWhite|g}}</real>
 		<key>Red Component</key>
-		<real>{{terminalBrightWhiteR}}</real>
+		<real>{{terminalBrightWhite|r}}</real>
 	</dict>
 	<key>Cursor Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{terminalForegroundB}}</real>
+		<real>{{terminalForeground|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{terminalForegroundG}}</real>
+		<real>{{terminalForeground|g}}</real>
 		<key>Red Component</key>
-		<real>{{terminalForegroundR}}</real>
+		<real>{{terminalForeground|r}}</real>
 	</dict>
 	<key>Cursor Guide Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{lightBorderB}}</real>
+		<real>{{lightBorder|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{lightBorderG}}</real>
+		<real>{{lightBorder|g}}</real>
 		<key>Red Component</key>
-		<real>{{lightBorderR}}</real>
+		<real>{{lightBorder|r}}</real>
 	</dict>
 	<key>Cursor Text Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{terminalBackgroundB}}</real>
+		<real>{{terminalBackground|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{terminalBackgroundG}}</real>
+		<real>{{terminalBackground|g}}</real>
 		<key>Red Component</key>
-		<real>{{terminalBackgroundR}}</real>
+		<real>{{terminalBackground|r}}</real>
 	</dict>
 	<key>Foreground Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{terminalForegroundB}}</real>
+		<real>{{terminalForeground|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{terminalForegroundG}}</real>
+		<real>{{terminalForeground|g}}</real>
 		<key>Red Component</key>
-		<real>{{terminalForegroundR}}</real>
+		<real>{{terminalForeground|r}}</real>
 	</dict>
 	<key>Link Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{linkForegroundB}}</real>
+		<real>{{linkForeground|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{linkForegroundG}}</real>
+		<real>{{linkForeground|g}}</real>
 		<key>Red Component</key>
-		<real>{{linkForegroundR}}</real>
+		<real>{{linkForeground|r}}</real>
 	</dict>
 	<key>Match Background Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{matchBackgroundB}}</real>
+		<real>{{matchBackground|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{matchBackgroundG}}</real>
+		<real>{{matchBackground|g}}</real>
 		<key>Red Component</key>
-		<real>{{matchBackgroundR}}</real>
+		<real>{{matchBackground|r}}</real>
 	</dict>
 	<key>Selected Text Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{selectionBackgroundB}}</real>
+		<real>{{selectionBackground|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{selectionBackgroundG}}</real>
+		<real>{{selectionBackground|g}}</real>
 		<key>Red Component</key>
-		<real>{{selectionBackgroundR}}</real>
+		<real>{{selectionBackground|r}}</real>
 	</dict>
 	<key>Selection Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>{{terminalForegroundB}}</real>
+		<real>{{terminalForeground|b}}</real>
 		<key>Color Space</key>
 		<string>P3</string>
 		<key>Green Component</key>
-		<real>{{terminalForegroundG}}</real>
+		<real>{{terminalForeground|g}}</real>
 		<key>Red Component</key>
-		<real>{{terminalForegroundR}}</real>
+		<real>{{terminalForeground|r}}</real>
 	</dict>
 </dict>
 </plist>
