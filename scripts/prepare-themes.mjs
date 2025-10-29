@@ -4,9 +4,8 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import stripJsonComments from 'strip-json-comments';
 import terminalLink from 'terminal-link';
-import { globSync } from 'glob';
+import { stripJsonComments } from './util/stripJsonComments.mjs';
 import { processTemplate, applyReadmeTemplate } from './util/template.mjs';
 
 function readJsonFile(file) {
@@ -215,7 +214,7 @@ for (const [key] of Object.entries(schemes.light)) {
   sharedScheme[`darkDp:${key}`] = schemes.darkDp[key];
 }
 
-const configs = globSync('themes/*/config.json').toSorted();
+const configs = fs.globSync('themes/*/config.json').toSorted();
 
 for (const configFile of configs) {
   const folder = path.dirname(configFile);
@@ -228,7 +227,7 @@ for (const configFile of configs) {
   }
 
   // Find a template: any file that has `.template.` in its name
-  const templateFile = globSync(path.join(folder, '*.template.*'))[0];
+  const templateFile = fs.globSync(path.join(folder, '*.template.*'))[0];
   if (
     templateFile === undefined &&
     config.themes.some((x) => x.file !== 'Readme.md')

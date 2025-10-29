@@ -10,14 +10,10 @@
 import os from 'node:os';
 import fs from 'node:fs';
 import path from 'node:path';
-import _ from 'lodash';
-import { glob } from 'glob';
-import stripJsonComments from 'strip-json-comments';
 import terminalLink from 'terminal-link';
+import { stripJsonComments } from './util/stripJsonComments.mjs';
 import { hexToRgb } from './util/hexToRgb.mjs';
 import { rgbToHex } from './util/rgbToHex.mjs';
-
-// TODO: Vivaldi (inside .zip file)
 
 let colorCount = 0;
 let errorCount = 0;
@@ -104,7 +100,12 @@ const CUSTOM_LINTERS = [
       const numbers = matches.map((x) =>
         Number(x.replaceAll(/<\/?real>/gi, '')),
       );
-      const colors = _.chunk(numbers, 4);
+
+      // Group colors into chunks of 4: [[A, B, G, R], ...]
+      const colors = [];
+      for (let i = 0; i < numbers.length; i += 4) {
+        colors.push(numbers.slice(i, i + 4));
+      }
 
       for (const [a, bRaw, gRaw, rRaw] of colors) {
         const [r, g, b] = [rRaw * 255, gRaw * 255, bRaw * 255];
@@ -236,7 +237,7 @@ function isHexColor(value) {
   return (
     /^#[\da-f]+$/i.test(value) &&
     // #fff, #ff00ff, #ff00ff88
-    (value.length === 4 || value.length === 7 || value.length === 9)
+    [4, 7, 9].includes(value.length)
   );
 }
 
@@ -379,8 +380,8 @@ console.log();
 console.log('[LINT] Linting themes... 🌗');
 
 const themes = [
-  ...glob.sync(`themes/**/*.{${EXTENSIONS}}`),
-  ...glob.sync(`themes/*/Readme.md`),
+  ...fs.globSync(`themes/**/*.{${EXTENSIONS}}`),
+  ...fs.globSync(`themes/*/Readme.md`),
   ...EXTRA_FILES,
 ];
 lint(themes, Object.values(lightPalette), Object.values(darkPalette));
@@ -390,9 +391,9 @@ if (fs.existsSync(DOTFILES_ROOT)) {
   console.log('[LINT] Linting dotfiles... 🌗');
 
   const dotfiles = [
-    ...glob.sync(`${DOTFILES_ROOT}/**/*.{${EXTENSIONS}}`),
-    ...glob.sync(`${DOTFILES_ROOT}/**/.{${EXTENSIONS}}`),
-    ...glob.sync(`${DOTFILES_ROOT}/bin/**/*`),
+    ...fs.globSync(`${DOTFILES_ROOT}/**/*.{${EXTENSIONS}}`),
+    ...fs.globSync(`${DOTFILES_ROOT}/tilde/.*`),
+    ...fs.globSync(`${DOTFILES_ROOT}/bin/**/*`),
   ]
 
     .filter((file) => fs.statSync(file).isFile())

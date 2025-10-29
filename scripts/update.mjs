@@ -3,7 +3,7 @@
  */
 
 import fs from 'node:fs';
-import stripJsonComments from 'strip-json-comments';
+import { stripJsonComments } from './util/stripJsonComments.mjs';
 import { hexToRgb } from './util/hexToRgb.mjs';
 
 const SWATCH_SIZE = 20;
