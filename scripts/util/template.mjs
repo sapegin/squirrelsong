@@ -1,7 +1,13 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { hexToRgb } from './hexToRgb.mjs';
+import { stripJsonComments } from './stripJsonComments.mjs';
 import { createNSKeyedArchiverColor } from './terminal-app.mjs';
+
+/** Minimalistic check is a given string is a JSON object. */
+function isJson(string) {
+  return string.startsWith('{');
+}
 
 /**
  * Process a template file with Mustache-style placeholders and write the result
@@ -30,7 +36,12 @@ export function processTemplate(templatePath, destPath, context) {
  * @returns {string} Rendered template
  */
 export function renderTemplate(template, context, templatePath) {
-  return template.replaceAll(
+  // Strip JSON comments if a template is JSON
+  const cleanTemplate = isJson(template)
+    ? stripJsonComments(template)
+    : template;
+
+  return cleanTemplate.replaceAll(
     /\{\{([:\w]+)(?:\s*\|\s*(\w+))?\}\}/g,
     (match, key, func, offset) => {
       if (key in context === false) {

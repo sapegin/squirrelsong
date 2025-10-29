@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.5.2
+
+- Publish themes without JSON comments, so they can be easily imported in Node.js.
+
 ## 3.5.1
 
 - Tweak bracket highlight colors to avoid using red/orange colors.

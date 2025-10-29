@@ -62,8 +62,8 @@
     "badge.foreground": "#6b676f",
     "banner.background": "#f7f6f9",
     "button.background": "#8c8792",
-    // Remove the border from primary and secondary buttons, as secondary button
-    // border cannot be configured
+    
+    
     "button.border": "#8c879200",
     "button.foreground": "#fdfdfe",
     "button.hoverBackground": "#78737d",
@@ -491,15 +491,15 @@
     "widget.shadow": "#4c4b4e11"
   },
   "tokenColors": [
-    /////////////////
-    // FONT STYLES //
-    /////////////////
+    
+    
+    
     {
       "settings": {
         "fontStyle": "bold"
       },
       "scope": [
-        // Markdown
+        
         "markup.bold"
       ]
     },
@@ -508,49 +508,49 @@
         "fontStyle": "italic"
       },
       "scope": [
-        // Markdown
+        
         "markup.italic",
-        // Shell
+        
         "string.unquoted.heredoc.no-indent"
       ]
     },
-    ///////////
-    // BLACK //
-    ///////////
+    
+    
+    
     {
       "settings": {
         "foreground": "#4c4b4e",
         "fontStyle": "bold"
       },
       "scope": [
-        // Markdown headings: #, ##, etc.
+        
         "entity.name.section.markdown",
         "entity.name.section.mdx"
       ]
     },
-    ///////////////
-    // DARK GRAY //
-    ///////////////
+    
+    
+    
     {
       "settings": {
         "foreground": "#78737d",
         "fontStyle": "bold"
       },
       "scope": [
-        // JavaScript / TypeScript
+        
         "storage.type.class.jsdoc",
-        // HTML entities: &amp;
+        
         "constant.character",
-        // Markdown
+        
         "meta.separator.markdown",
         "markup.heading",
         "markup.heading.markdown",
         "markup.heading.setext.1",
         "markup.heading.setext.2",
         "string.other.strong.asterisk.mdx",
-        // Rust
+        
         "meta.attribute.rust",
-        // Shell
+        
         "meta.shebang.shell"
       ]
     },
@@ -564,26 +564,26 @@
         "meta.brace.square.js",
         "meta.brace.square.ts",
         "meta.brace.square.tsx",
-        // Astro
+        
         "punctuation.section.embedded.begin.astro",
         "punctuation.section.embedded.end.astro",
-        // C
+        
         "punctuation.section.arguments.begin.bracket.round.c",
         "punctuation.section.arguments.end.bracket.round.c",
         "punctuation.section.parens.begin.bracket.round.c",
         "punctuation.section.parens.end.bracket.round.c",
-        // C++
+        
         "punctuation.separator.delimiter.comma.cpp",
-        // CSS
+        
         "punctuation.section.function.begin.bracket.round.css",
         "punctuation.section.function.end.bracket.round.css",
-        // Java
+        
         "punctuation.bracket.square.java",
         "punctuation.definition.parameters.begin.bracket.round.java",
         "punctuation.definition.parameters.end.bracket.round.java",
         "punctuation.section.array-initializer.begin.bracket.curly.java",
         "punctuation.section.array-initializer.end.bracket.curly.java",
-        // JavaScript / TypeScript
+        
         "meta.brace.round.js",
         "meta.brace.round.ts",
         "meta.brace.round.tsx",
@@ -604,11 +604,11 @@
         "punctuation.separator.comma.js",
         "punctuation.separator.comma.ts",
         "punctuation.separator.comma.tsx",
-        // JSON
+        
         "punctuation.separator.dictionary.pair.json",
         "punctuation.separator.array.json.comments",
         "punctuation.separator.array.json",
-        // Markdown
+        
         "punctuation.definition.heading.markdown",
         "punctuation.definition.heading.mdx",
         "string.other.emphasis.underscore.mdx",
@@ -616,7 +616,7 @@
         "string.other.link.description.title.markdown",
         "string.other.link.title.markdown",
         "text.html.markdown",
-        // Python
+        
         "punctuation.definition.arguments.begin.python",
         "punctuation.definition.arguments.end.python",
         "punctuation.definition.dict.begin.python",
@@ -624,9 +624,9 @@
         "punctuation.definition.list.begin.python",
         "punctuation.definition.list.end.python",
         "punctuation.separator.arguments.python",
-        // Shell
+        
         "string.unquoted.argument.shell",
-        // Swift
+        
         "punctuation.definition.arguments.begin.swift",
         "punctuation.definition.arguments.end.swift",
         "meta.function-call.swift",
@@ -634,13 +634,13 @@
         "punctuation.definition.parameters.end.swift",
         "punctuation.section.collection-type.begin.swift",
         "punctuation.section.collection-type.end.swift",
-        // Search results
+        
         "meta.resultLinePrefix.matchLinePrefix.search"
       ]
     },
-    ////////////////
-    // LIGHT GRAY //
-    ////////////////
+    
+    
+    
     {
       "settings": {
         "foreground": "#9c96a2",
@@ -648,7 +648,7 @@
       },
       "scope": [
         "invalid.deprecated",
-        // Markdown
+        
         "markup.strikethrough"
       ]
     },
@@ -659,9 +659,9 @@
       },
       "scope": [
         "comment",
-        // Diff
+        
         "meta.diff.range.unified",
-        // Markdown
+        
         "constant.other.reference.link.markdown",
         "fenced_code.block.language.markdown",
         "markup.inline.raw.string",
@@ -691,60 +691,60 @@
         "string.other.number.mdx",
         "variable.ordered.list.mdx",
         "variable.unordered.list.mdx",
-        // Search results
+        
         "meta.resultLinePrefix.search"
       ]
     },
-    //////////
-    // TEAL //
-    //////////
+    
+    
+    
     {
       "settings": {
         "foreground": "#5f9b8d",
         "fontStyle": "bold"
       },
       "scope": [
-        // RegExp quantifiers: .+, .?, .{1,2}
+        
         "keyword.operator.quantifier.regexp",
-        // RegExp back references: \1, \2, etc.
+        
         "keyword.other.back-reference.regexp",
-        // RegExp no capture group: (?:xxx)
+        
         "punctuation.definition.group.no-capture.regexp",
-        // RegExp look aheads and look behinds
+        
         "meta.assertion.look-ahead.regexp",
         "meta.assertion.negative-look-ahead.regexp",
         "meta.assertion.look-behind.regexp",
         "meta.assertion.negative-look-behind.regexp",
-        // Template expression embeds: `... ${foo} ...`
+        
         "punctuation.definition.template-expression.begin.js",
         "punctuation.definition.template-expression.end.js",
         "punctuation.definition.template-expression.begin.ts",
         "punctuation.definition.template-expression.end.ts",
         "punctuation.definition.template-expression.begin.tsx",
         "punctuation.definition.template-expression.end.tsx",
-        // C
+        
         "keyword.operator.c",
-        // C#
+        
         "keyword.operator.null-conditional.cs",
         "keyword.operator.relational.cs",
         "keyword.operator.increment.cs",
         "keyword.operator.conditional.question-mark.cs",
         "keyword.operator.conditional.colon.cs",
         "keyword.operator.arrow.cs",
-        // C++
+        
         "entity.name.scope-resolution.cpp",
         "entity.name.scope-resolution.parameter.cpp",
         "entity.name.scope-resolution.template.call.cpp",
-        // CSS
+        
         "entity.other.attribute-name.pseudo-class.css",
         "keyword.control.at-rule.font-face.css",
         "keyword.control.at-rule.css",
         "keyword.control.at-rule.media.css",
         "keyword.operator.combinator.css",
         "keyword.operator.arithmetic.css",
-        // Go
+        
         "keyword.operator.address.go",
-        // JavaScript / TypeScript
+        
         "storage.type.function.arrow.js",
         "storage.type.function.arrow.ts",
         "storage.type.function.arrow.tsx",
@@ -779,29 +779,29 @@
         "punctuation.accessor.optional.js",
         "punctuation.accessor.optional.ts",
         "punctuation.accessor.optional.tsx",
-        // PHP
+        
         "keyword.operator.arithmetic.php",
         "keyword.operator.logical.php",
         "keyword.operator.comparison.php",
-        // Python
+        
         "keyword.operator.arithmetic.python",
         "keyword.operator.logical.python",
         "keyword.operator.comparison.python",
         "punctuation.separator.slice.python",
-        // Ruby
+        
         "keyword.operator.arithmetic.ruby",
         "keyword.operator.logical.ruby",
         "keyword.operator.comparison.ruby",
-        // Rust
+        
         "keyword.operator.borrow.and.rust",
-        // Sass
+        
         "keyword.operator.css",
         "keyword.control.at-rule.fontface.scss",
         "keyword.control.at-rule.use.scss",
         "keyword.control.at-rule.mixin.scss",
         "keyword.control.at-rule.include.scss",
         "entity.name.tag.reference.scss",
-        // Shell
+        
         "keyword.operator.heredoc.shell",
         "keyword.operator.logical.shell",
         "keyword.operator.pipe.shell",
@@ -810,7 +810,7 @@
         "punctuation.definition.subshell.single.shell",
         "punctuation.separator.statement.and.shell",
         "punctuation.separator.statement.background.shell",
-        // Yaml
+        
         "storage.type.tag-handle.yaml"
       ]
     },
@@ -825,43 +825,43 @@
         "constant.other",
         "keyword.operator",
         "keyword.operator.class",
-        // RegExp group: (xxx)
+        
         "punctuation.definition.group.regexp",
-        // C
+        
         "storage.type.built-in.primitive.c",
         "storage.type.struct.c",
         "punctuation.separator.dot-access.c",
         "punctuation.separator.pointer-access.c",
-        // C#
+        
         "keyword.type.cs",
         "entity.name.variable.property.cs",
         "entity.name.type.cs",
         "entity.name.type.namespace.cs",
         "punctuation.accessor.cs",
-        // C++
+        
         "entity.name.type.parameter.cpp",
         "entity.name.type.cpp",
         "punctuation.separator.namespace.access.cpp",
         "punctuation.separator.colon.cs",
         "punctuation.separator.initializers.cpp",
-        // CSS
+        
         "punctuation.separator.key-value.css",
         "entity.other.attribute-name.pseudo-element.css",
-        // Go
+        
         "storage.type.numeric.go",
         "storage.type.string.go",
-        // EditorConfig
+        
         "punctuation.separator.key-value.editorconfig",
-        // Go
+        
         "entity.name.type.go",
         "entity.name.package.go",
-        // INI
+        
         "punctuation.separator.key-value.ini",
-        // Java
+        
         "storage.type.java",
         "storage.type.primitive.java",
         "storage.type.object.array.java",
-        // JavaScript / TypeScript
+        
         "support.type.primitive.ts",
         "support.type.primitive.tsx",
         "entity.name.type.ts",
@@ -883,27 +883,27 @@
         "punctuation.accessor.ts",
         "punctuation.accessor.tsx",
         "punctuation.accessor.js.jsx",
-        // JSON
+        
         "punctuation.separator.dictionary.key-value.json",
-        // PHP
+        
         "source.php.embedded.line",
         "keyword.other.type.php",
         "punctuation.section.embedded.begin.php",
         "punctuation.section.embedded.end.php",
-        // Python
+        
         "punctuation.separator.colon.python",
         "punctuation.separator.dict.python",
         "punctuation.separator.annotation.python",
         "punctuation.separator.period.python",
         "punctuation.section.class.begin.python",
         "punctuation.section.function.begin.python",
-        // Ruby
+        
         "punctuation.separator.namespace.ruby",
         "punctuation.separator.method.ruby",
         "punctuation.separator.other.ruby",
         "punctuation.definition.constant.hashkey.ruby",
         "entity.name.type.module.ruby",
-        // Rust
+        
         "entity.name.type.rust",
         "entity.name.type.numeric.rust",
         "entity.name.type.lifetime.rust",
@@ -912,38 +912,38 @@
         "entity.name.type.declaration.rust",
         "entity.name.namespace.rust",
         "punctuation.definition.lifetime.rust",
-        // Sass
+        
         "punctuation.separator.key-value.scss",
-        // Swift
+        
         "support.type.swift",
         "punctuation.separator.argument-label.swift",
         "meta.parameter-clause.swift",
-        // Yaml
+        
         "entity.name.type.anchor.yaml",
         "punctuation.definition.anchor.yaml",
         "punctuation.separator.key-value.mapping.yaml"
       ]
     },
-    ///////////
-    // GREEN //
-    ///////////
+    
+    
+    
     {
       "settings": {
         "foreground": "#9bae7e",
         "fontStyle": "bold"
       },
       "scope": [
-        // Escaped characters in RegExps: \/, \$
+        
         "constant.character.escape.backslash.regexp",
-        // Numeric escaped characters in RegExps: \u202f
+        
         "constant.character.numeric.regexp",
-        // Regexp flags
+        
         "keyword.other.ts",
-        // JavaScript / TypeScript
+        
         "constant.character.escape.js",
         "constant.character.escape.ts",
         "constant.character.escape.tsx",
-        // JSON
+        
         "constant.character.escape.json"
       ]
     },
@@ -956,22 +956,22 @@
         "string",
         "constant.other.symbol",
         "entity.other.inherited-class",
-        // Clojure
+        
         "constant.keyword.clojure",
-        // CSS
+        
         "variable.parameter.url.css",
-        // Diff
+        
         "meta.diff.header.to-file",
         "markup.inserted.diff",
-        // Sass
+        
         "meta.attribute-selector.scss",
-        // Shell
+        
         "string.unquoted.argument.shell"
       ]
     },
-    //////////
-    // BLUE //
-    //////////
+    
+    
+    
     {
       "settings": {
         "foreground": "#80a4be",
@@ -981,27 +981,27 @@
         "entity.name.function",
         "entity.name.class",
         "entity.name.type.class",
-        // CSS
+        
         "support.function.calc.css",
         "support.function.url.css",
         "support.function.misc.css",
         "support.function.shape.css",
-        // PHP
+        
         "support.class.php",
-        // Python
+        
         "support.function.builtin.python",
         "meta.function-call.python",
         "meta.function-call.generic.python",
-        // Ruby
+        
         "support.function.kernel.ruby",
         "keyword.other.special-method.ruby",
-        // Sass
+        
         "entity.name.function.scss",
         "support.function.calc.scss",
         "support.function.url.scss",
         "support.function.misc.scss",
         "support.function.shape.scss",
-        // Shell
+        
         "support.function.builtin.shell"
       ]
     },
@@ -1013,17 +1013,17 @@
       "scope": [
         "variable",
         "variable.parameter",
-        // CSS
+        
         "variable.argument.css",
         "variable.css",
         "entity.other.attribute-name.class.css",
-        // C#
+        
         "entity.name.variable.parameter.cs",
         "entity.name.variable.field.cs",
         "variable.other.readwrite.cs",
-        // Clojure
+        
         "meta.symbol.clojure",
-        // JavaScript / TypeScript
+        
         "variable.other.constant.js",
         "variable.other.constant.js.jsx",
         "variable.other.constant.ts",
@@ -1045,21 +1045,21 @@
         "variable.parameter.js.jsx",
         "variable.parameter.ts",
         "variable.parameter.tsx",
-        // PHP
+        
         "variable.other.php",
-        // Python
+        
         "constant.other.caps.python",
         "meta.function-call.arguments.python",
         "variable.legacy.builtin.python",
-        // Ruby
+        
         "variable.other.ruby",
         "variable.other.constant.ruby",
         "variable.other.block.ruby",
         "variable.other.readwrite.global.ruby",
-        // Shell
+        
         "variable.other.normal.shell",
         "variable.other.assignment.shell",
-        // Swift
+        
         "variable.parameter.function.swift"
       ]
     },
@@ -1075,25 +1075,25 @@
         "support.function",
         "support.other.variable",
         "entity.other.attribute-name",
-        // Astro
+        
         "entity.other.attribute-name.astro",
-        // C
+        
         "variable.other.member.c",
-        // CSS
+        
         "meta.at-rule.media.header.css",
         "support.type.property-name.css",
-        // C#
+        
         "entity.name.variable.local.cs",
-        // Clojure
+        
         "entity.global.clojure",
-        // CSS
+        
         "support.constant.language-range.css",
         "support.type.vendored.property-name.css",
         "support.type.property-name.media.css",
         "entity.other.attribute-name.css",
         "meta.property-name.css",
         "meta.property-name.media-query.scss",
-        // EditorConfig
+        
         "keyword.other.definition.indent_style.editorconfig",
         "keyword.other.definition.end_of_line.editorconfig",
         "keyword.other.definition.charset.editorconfig",
@@ -1101,13 +1101,13 @@
         "keyword.other.definition.insert_final_newline.editorconfig",
         "keyword.other.definition.indent_size.editorconfig",
         "keyword.other.definition.root.editorconfig",
-        // HTML
+        
         "entity.other.attribute-name.html",
-        // INI
+        
         "keyword.other.definition.ini",
-        // Java
+        
         "variable.other.object.property.java",
-        // JavaScript / TypeScript
+        
         "meta.object-literal.key.js",
         "meta.object-literal.key.ts",
         "meta.object-literal.key.tsx",
@@ -1122,25 +1122,25 @@
         "variable.other.property.js",
         "variable.other.property.ts",
         "variable.other.property.tsx",
-        // JSON
+        
         "support.type.property-name.json",
-        // PHP
+        
         "variable.other.property.php",
-        // Python
+        
         "meta.attribute.python",
         "meta.indexed-name.python",
-        // Ruby
+        
         "constant.other.symbol.hashkey.ruby",
         "constant.language.symbol.hashkey.ruby",
-        // XML
+        
         "entity.other.attribute-name.localname.xml",
-        // Yaml
+        
         "entity.name.tag.yaml"
       ]
     },
-    ////////////
-    // MAGENTA //
-    ////////////
+    
+    
+    
     {
       "settings": {
         "foreground": "#ac9bc5",
@@ -1150,23 +1150,23 @@
         "keyword",
         "storage",
         "storage.type",
-        // Astro
+        
         "entity.name.tag.astro",
         "support.class.component.astro",
-        // C#
+        
         "entity.name.tag.localname.cs",
-        // CSS
+        
         "entity.name.tag.css",
-        // Diff
+        
         "meta.diff.header.git",
-        // EditorConfig
+        
         "meta.section.header.editorconfig",
         "keyword.operator.glob.wildcard.editorconfig",
-        // HTML
+        
         "entity.name.tag.html",
-        // INI
+        
         "entity.name.section.group-title.ini",
-        // JavaScript / TypeScript
+        
         "entity.name.tag.js",
         "entity.name.tag.jsx",
         "entity.name.tag.tsx",
@@ -1185,17 +1185,17 @@
         "support.class.component.js",
         "support.class.component.jsx",
         "support.class.component.tsx",
-        // Python
+        
         "constant.character.format.placeholder.other.python",
-        // Ruby
+        
         "punctuation.section.embedded.begin.ruby",
         "punctuation.section.embedded.end.ruby",
-        // Shell
+        
         "punctuation.definition.variable.shell",
         "punctuation.definition.evaluation.parens.begin.shell",
         "punctuation.definition.evaluation.parens.end.shell",
         "punctuation.definition.string.heredoc.shell",
-        // XML
+        
         "entity.name.tag.localname.xml"
       ]
     },
@@ -1208,7 +1208,7 @@
         "entity.name.tag",
         "meta.tag",
         "declaration.tag",
-        // JavaScript / TypeScript
+        
         "punctuation.definition.tag.closing.jsx",
         "punctuation.definition.tag.end.jsx",
         "punctuation.definition.tag.self-closing.jsx",
@@ -1220,13 +1220,13 @@
         "punctuation.section.embedded.end.js",
         "punctuation.section.embedded.end.ts",
         "punctuation.section.embedded.end.tsx",
-        // Swift
+        
         "variable.language.swift"
       ]
     },
     {
       "scope": [
-        // CSS
+        
         "keyword.other.important.css"
       ],
       "settings": {
@@ -1234,18 +1234,18 @@
         "fontStyle": "bold"
       }
     },
-    ////////////
-    // ORANGE //
-    ////////////
+    
+    
+    
     {
       "settings": {
         "foreground": "#de9e59",
         "fontStyle": "bold"
       },
       "scope": [
-        // RegExp negation: ^
+        
         "keyword.operator.negation.regexp",
-        // RegExp character classes: \n, \W, .
+        
         "constant.other.character-class.regexp"
       ]
     },
@@ -1255,75 +1255,75 @@
         "fontStyle": ""
       },
       "scope": [
-        // RegExp groups: []
+        
         "punctuation.definition.character-class.regexp",
-        // RegExp character sets: [x]
+        
         "constant.other.character-class.set.regexp",
-        // RegExp character ranges: [a-z]
+        
         "constant.other.character-class.range.regexp",
         "constant.numeric",
         "constant.language",
         "support.constant",
         "keyword.other.unit",
-        // CSS
+        
         "entity.other.attribute-name.placeholder.css",
         "meta.property-value.css",
         "meta.property-value.media-query.scss",
-        // JSON
+        
         "constant.language.json"
       ]
     },
-    ////////////
-    // YELLOW //
-    ////////////
+    
+    
+    
     {
       "settings": {
         "foreground": "#e4c158",
         "fontStyle": "bold"
       },
       "scope": [
-        // RegExp anchors and boundaries: ^, $, \b
+        
         "keyword.control.anchor.regexp",
-        // CSS
+        
         "entity.other.attribute-name.id.css",
-        // Java
+        
         "variable.language.this.java",
-        // JavaScript / TypeScript
+        
         "variable.language.this.js",
         "variable.language.this.ts",
         "variable.language.this.tsx",
-        // PHP
+        
         "variable.language.this.php",
-        // Python
+        
         "variable.language.special.self.python",
-        // Rust
+        
         "variable.language.self.rust"
       ]
     },
-    /////////
-    // RED //
-    /////////
+    
+    
+    
     {
       "settings": {
         "foreground": "#d67e76"
       },
       "scope": [
         "invalid.illegal",
-        // Diff
+        
         "meta.diff.header.from-file",
         "markup.deleted.diff"
       ]
     },
-    ///////////////////
-    // BLUE CONTRAST //
-    ///////////////////
+    
+    
+    
     {
       "settings": {
         "foreground": "#527b98",
         "fontStyle": "underline"
       },
       "scope": [
-        // Search results
+        
         "meta.path.search"
       ]
     },
@@ -1333,7 +1333,7 @@
         "fontStyle": "bold underline"
       },
       "scope": [
-        // Search results
+        
         "meta.path.basename.search"
       ]
     }

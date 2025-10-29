@@ -3,7 +3,7 @@ export function stripJsonComments(json) {
     json
       // Remove /* */ comments
       .replaceAll(/\/\*[\s\S]*?\*\//g, '')
-      // Remove // comments
-      .replaceAll(/\/\/.*/g, '')
+      // Remove // comments (but not in URLs)
+      .replaceAll(/(?<!:)\/\/.*/g, '')
   );
 }
