@@ -4,73 +4,73 @@
 <dict>
 	<key>ANSIBlackColor</key>
 	<data>
-	{{terminalBlack}}
+	{{terminalBlack|nskeyed}}
 	</data>
 	<key>ANSIBlueColor</key>
 	<data>
-	{{terminalBlue}}
+	{{terminalBlue|nskeyed}}
 	</data>
 	<key>ANSIBrightBlackColor</key>
 	<data>
-	{{terminalBrightBlack}}
+	{{terminalBrightBlack|nskeyed}}
 	</data>
 	<key>ANSIBrightBlueColor</key>
 	<data>
-	{{terminalBrightBlue}}
+	{{terminalBrightBlue|nskeyed}}
 	</data>
 	<key>ANSIBrightCyanColor</key>
 	<data>
-	{{terminalBrightCyan}}
+	{{terminalBrightCyan|nskeyed}}
 	</data>
 	<key>ANSIBrightGreenColor</key>
 	<data>
-	{{terminalBrightGreen}}
+	{{terminalBrightGreen|nskeyed}}
 	</data>
 	<key>ANSIBrightMagentaColor</key>
 	<data>
-	{{terminalBrightMagenta}}
+	{{terminalBrightMagenta|nskeyed}}
 	</data>
 	<key>ANSIBrightRedColor</key>
 	<data>
-	{{terminalBrightRed}}
+	{{terminalBrightRed|nskeyed}}
 	</data>
 	<key>ANSIBrightWhiteColor</key>
 	<data>
-	{{terminalBrightWhite}}
+	{{terminalBrightWhite|nskeyed}}
 	</data>
 	<key>ANSIBrightYellowColor</key>
 	<data>
-	{{terminalBrightYellow}}
+	{{terminalBrightYellow|nskeyed}}
 	</data>
 	<key>ANSICyanColor</key>
 	<data>
-	{{terminalCyan}}
+	{{terminalCyan|nskeyed}}
 	</data>
 	<key>ANSIGreenColor</key>
 	<data>
-	{{terminalGreen}}
+	{{terminalGreen|nskeyed}}
 	</data>
 	<key>ANSIMagentaColor</key>
 	<data>
-	{{terminalMagenta}}
+	{{terminalMagenta|nskeyed}}
 	</data>
 	<key>ANSIRedColor</key>
 	<data>
-	{{terminalRed}}
+	{{terminalRed|nskeyed}}
 	</data>
 	<key>ANSIWhiteColor</key>
 	<data>
-	{{terminalWhite}}
+	{{terminalWhite|nskeyed}}
 	</data>
 	<key>ANSIYellowColor</key>
 	<data>
-	{{terminalYellow}}
+	{{terminalYellow|nskeyed}}
 	</data>
 	<key>BackgroundBlur</key>
 	<real>0.0</real>
 	<key>BackgroundColor</key>
 	<data>
-	{{terminalBackground}}
+	{{terminalBackground|nskeyed}}
 	</data>
 	<key>Bell</key>
 	<false/>
@@ -80,7 +80,7 @@
 	<false/>
 	<key>CursorColor</key>
 	<data>
-	{{terminalForeground}}
+	{{terminalForeground|nskeyed}}
 	</data>
 	<key>CursorType</key>
 	<integer>2</integer>
@@ -101,7 +101,7 @@
 	<real>2.0699999999999998</real>
 	<key>SelectionColor</key>
 	<data>
-	{{selectionBackground}}
+	{{selectionBackground|nskeyed}}
 	</data>
 	<key>ShowDimensionsInTitle</key>
 	<false/>
@@ -111,11 +111,11 @@
 	<string>ansi</string>
 	<key>TextBoldColor</key>
 	<data>
-	{{terminalForeground}}
+	{{terminalForeground|nskeyed}}
 	</data>
 	<key>TextColor</key>
 	<data>
-	{{terminalForeground}}
+	{{terminalForeground|nskeyed}}
 	</data>
 	<key>UseBoldFonts</key>
 	<true/>

@@ -1,0 +1,18 @@
+{
+  "themes": [
+    {
+      "file": "Squirrelsong Dark.terminal",
+      "scheme": "dark",
+      "context": {
+        "name": "Dark"
+      }
+    },
+    {
+      "file": "Squirrelsong Dark Deep Purple.terminal",
+      "scheme": "darkDp",
+      "context": {
+        "name": "Dark Deep Purple"
+      }
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { hexToRgb } from './hexToRgb.mjs';
+import { createNSKeyedArchiverColor } from './terminal-app.mjs';
 
 /**
  * Process a template file with Mustache-style placeholders and write the result
@@ -81,6 +82,9 @@ export function renderTemplate(template, context, templatePath) {
           }
           case 'b': {
             return hexToRgb(color)[2] / 255;
+          }
+          case 'nskeyed': {
+            return createNSKeyedArchiverColor(color);
           }
           default: {
             console.error(`🦀 Unknown function '${func}'`);
