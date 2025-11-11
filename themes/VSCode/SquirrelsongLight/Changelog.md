@@ -2,6 +2,7 @@
 
 ## 3.5.2
 
+- Add chat colors.
 - Publish themes without JSON comments, so they can be easily imported in Node.js.
 
 ## 3.5.1
