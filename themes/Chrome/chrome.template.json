@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Squirrelsong {{name}} Theme",
   "description": "A low contrast {{kind}} UI theme",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "icons": {
     "16": "images/icon16.png",
     "48": "images/icon48.png",
@@ -38,6 +38,7 @@
     },
     "tints": {
       "frame": [-1.0, -1.0, -1.0],
+      "frame_inactive": [-1.0, -1.0, -1.0],
       "buttons": [-1.0, -1.0, -1.0],
       "background_tab": [-1.0, -1.0, -1.0]
     },
