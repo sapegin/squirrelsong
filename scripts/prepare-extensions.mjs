@@ -54,41 +54,6 @@ chromeDarkDpDotZip.writeZip(`./dist/chrome-dark-dp.zip`);
 // ------------ 8< -- 8< ------------
 
 console.log();
-console.log(`[BUILD] Building Chrome DevTools Light extension… 🌕`);
-
-// Chrome DevTools
-fs.mkdirSync('./dist/chrome-devtools-light', { recursive: true });
-fs.copyFileSync(
-  './themes/Chrome DevTools/extension-light/manifest.json',
-  './dist/chrome-devtools-light/manifest.json',
-);
-fs.copyFileSync(
-  './themes/Chrome DevTools/extension-light/devtools.html',
-  './dist/chrome-devtools-light/devtools.html',
-);
-fs.copyFileSync(
-  './themes/Chrome DevTools/extension-light/devtools.js',
-  './dist/chrome-devtools-light/devtools.js',
-);
-fs.copyFileSync(
-  './themes/Chrome DevTools/extension-light/devtools.css',
-  './dist/chrome-devtools-light/devtools.css',
-);
-fs.cpSync(
-  './themes/Chrome DevTools/extension-light/images',
-  './dist/chrome-devtools-light/images',
-  {
-    recursive: true,
-  },
-);
-
-const chromeDevtoolsDotZip = new ADMZip();
-chromeDevtoolsDotZip.addLocalFolder('./dist/chrome-devtools-light');
-chromeDevtoolsDotZip.writeZip(`./dist/chrome-devtools-light.zip`);
-
-// ------------ 8< -- 8< ------------
-
-console.log();
 console.log(`[BUILD] Building Firefox Light extension… 🌕`);
 
 // Firefox Light

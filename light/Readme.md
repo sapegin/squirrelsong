@@ -10,7 +10,6 @@
 - [Fastmail](../themes/Fastmail)
 - [Firefox](../themes/Firefox)
 - [Google Chrome](../themes/Chrome)
-- [Google Chrome DevTools](../themes/Chrome%20DevTools)
 - [CotEditor](../themes/CotEditor)
 - [JetBrains](../themes/JetBrains)
 - [Marta File Manager](../themes/Marta)
