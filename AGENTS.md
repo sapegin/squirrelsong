@@ -14,6 +14,8 @@ Each has a set of JSON files with palettes and semantic tokens:
 - `code.json`: colors for code syntax highlighting
 - `ui.json`: UI colors
 
+Only use these colors for all themes. Occasional transparency is okay (`{{selectionBase}}33`).
+
 Dark themes comes in two variants:
 
 - `Dark` (uses `gray*` colors from `palette.json`)
