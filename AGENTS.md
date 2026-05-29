@@ -1,4 +1,4 @@
-Monorepo of UX/color themes for various apps. One workspace per extension under `extensions/<id>/`.
+Monorepo of UX/color themes for various apps. One folder per extension under `themes/<app>/`.
 
 ## Specs
 
