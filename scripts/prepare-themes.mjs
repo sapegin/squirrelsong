@@ -37,7 +37,7 @@ const lightAnsiPalette = Object.fromEntries(
       console.error(`⛔️ Color not found in the light palette: ${colorName}`);
     }
     return [key, lightPalette[colorName]];
-  }),
+  })
 );
 const darkAnsiPalette = Object.fromEntries(
   Object.entries(darkAnsiPaletteRaw).map(([key, colorName]) => {
@@ -45,7 +45,7 @@ const darkAnsiPalette = Object.fromEntries(
       console.error(`⛔️ Color not found in the dark palette: ${colorName}`);
     }
     return [key, darkPalette[colorName]];
-  }),
+  })
 );
 
 // Convert code color names to HEX values
@@ -57,7 +57,7 @@ const lightCodePalette = Object.fromEntries(
       console.error(`⛔️ Color not found in the light palette: ${colorName}`);
     }
     return [key, lightPalette[colorName]];
-  }),
+  })
 );
 const darkCodePalette = Object.fromEntries(
   Object.entries(darkCodePaletteRaw).map(([key, colorInfo]) => {
@@ -66,7 +66,7 @@ const darkCodePalette = Object.fromEntries(
       console.error(`⛔️ Color not found in the dark palette: ${colorName}`);
     }
     return [key, darkPalette[colorName]];
-  }),
+  })
 );
 
 // Extract code styles
@@ -75,14 +75,14 @@ const lightCodeStyles = Object.fromEntries(
   Object.entries(lightCodePaletteRaw).map(([key, colorInfo]) => {
     const style = Array.isArray(colorInfo) ? colorInfo[1] : '';
     return [`${key}Style`, style];
-  }),
+  })
 );
 
 const darkCodeStyles = Object.fromEntries(
   Object.entries(darkCodePaletteRaw).map(([key, colorInfo]) => {
     const style = Array.isArray(colorInfo) ? colorInfo[1] : '';
     return [`${key}Style`, style];
-  }),
+  })
 );
 
 // Convert UI color names to HEX values
@@ -94,7 +94,7 @@ const lightUiPalette = Object.fromEntries(
       console.error(`⛔️ Color not found in the light palette: ${colorName}`);
     }
     return [key, lightPalette[colorName]];
-  }),
+  })
 );
 const darkUiPalette = Object.fromEntries(
   Object.entries(darkUiPaletteRaw).map(([key, colorInfo]) => {
@@ -103,7 +103,7 @@ const darkUiPalette = Object.fromEntries(
       console.error(`⛔️ Color not found in the dark palette: ${colorName}`);
     }
     return [key, darkPalette[colorName]];
-  }),
+  })
 );
 
 // Create Dark Deep Purple palettes
@@ -113,22 +113,22 @@ const darkDpPalette = Object.fromEntries(
     const paletteColorName = getDarkDpColorName(colorName);
     if (darkPalette[paletteColorName] === undefined) {
       console.error(
-        `⛔️ Color not found in the dark palette: ${paletteColorName}`,
+        `⛔️ Color not found in the dark palette: ${paletteColorName}`
       );
     }
     return [colorName, darkPalette[paletteColorName]];
-  }),
+  })
 );
 const darkDpAnsiPalette = Object.fromEntries(
   Object.entries(darkAnsiPaletteRaw).map(([key, colorName]) => {
     const paletteColorName = getDarkDpColorName(colorName);
     if (darkPalette[paletteColorName] === undefined) {
       console.error(
-        `⛔️ Color not found in the dark palette: ${paletteColorName}`,
+        `⛔️ Color not found in the dark palette: ${paletteColorName}`
       );
     }
     return [key, darkPalette[paletteColorName]];
-  }),
+  })
 );
 const darkDpCodePalette = Object.fromEntries(
   Object.entries(darkCodePaletteRaw).map(([key, colorInfo]) => {
@@ -136,22 +136,22 @@ const darkDpCodePalette = Object.fromEntries(
     const paletteColorName = getDarkDpColorName(colorName);
     if (darkPalette[paletteColorName] === undefined) {
       console.error(
-        `⛔️ Color not found in the dark palette: ${paletteColorName}`,
+        `⛔️ Color not found in the dark palette: ${paletteColorName}`
       );
     }
     return [key, darkPalette[paletteColorName]];
-  }),
+  })
 );
 const darkDpUiPalette = Object.fromEntries(
   Object.entries(darkUiPaletteRaw).map(([key, colorName]) => {
     const paletteColorName = getDarkDpColorName(colorName);
     if (darkPalette[paletteColorName] === undefined) {
       console.error(
-        `⛔️ Color not found in the dark palette: ${paletteColorName}`,
+        `⛔️ Color not found in the dark palette: ${paletteColorName}`
       );
     }
     return [key, darkPalette[paletteColorName]];
-  }),
+  })
 );
 
 // ------------ 8< -- 8< ------------
@@ -245,13 +245,13 @@ for (const configFile of configs) {
 
     if (theme.scheme && schemes[theme.scheme] === undefined) {
       console.error(
-        `   🦀 Scheme '${theme.scheme}' not found, possible values: ${Object.keys(schemes)}`,
+        `   🦀 Scheme '${theme.scheme}' not found, possible values: ${Object.keys(schemes)}`
       );
       continue;
     }
     if (theme.mixin && mixins[theme.mixin] === undefined) {
       console.error(
-        `   🦀 Mixin '${theme.mixin}' not found, possible values: ${Object.keys(mixins)}`,
+        `   🦀 Mixin '${theme.mixin}' not found, possible values: ${Object.keys(mixins)}`
       );
       continue;
     }

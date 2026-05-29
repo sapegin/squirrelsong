@@ -74,7 +74,7 @@ export function renderTemplate(template, context, templatePath) {
         throw new Error(
           `Template error in ${templatePath}:${lineNumber}:${columnNumber}\n` +
             `Missing key '${key}'\n\n` +
-            `${snippet}\n`,
+            `${snippet}\n`
         );
       }
 
@@ -105,7 +105,7 @@ export function renderTemplate(template, context, templatePath) {
       }
 
       return color;
-    },
+    }
   );
 }
 
@@ -116,13 +116,16 @@ export function renderTemplate(template, context, templatePath) {
  * block marked with a specific apply marker.
  *
  * The file should contain:
+ *
  * - A template definition: `<!-- template\n...\n-->`
  * - An apply marker: `<!-- apply:name -->`
  * - A code block immediately after the marker
  *
  * @param {string} filepath - Path to the markdown file to process
- * @param {string} name - Name of the apply marker to find (used in <!-- apply:name -->)
- * @param {Object} context - Object with key-value pairs for template substitution
+ * @param {string} name - Name of the apply marker to find (used in <!--
+ *   apply:name -->)
+ * @param {Object} context - Object with key-value pairs for template
+ *   substitution
  */
 export function applyReadmeTemplate(filepath, name, context) {
   const content = fs.readFileSync(filepath, 'utf8');
@@ -160,7 +163,7 @@ export function applyReadmeTemplate(filepath, name, context) {
   // Reconstruct the file with the new content
   const before = content.slice(
     0,
-    markerIndex + marker.length + codeBlockStart + codeBlockContentStart,
+    markerIndex + marker.length + codeBlockStart + codeBlockContentStart
   );
 
   const after = content.slice(markerIndex + marker.length + codeBlockEnd);

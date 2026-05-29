@@ -1,34 +1,29 @@
 {
   "name": "Theme-SquirrelsongDark",
   "displayName": "Squirrelsong Dark Theme",
-  "description": "Low-contrast dark color theme",
   "version": "3.3.3",
-  "publisher": "sapegin",
-  "author": {
-    "name": "Artem Sapegin",
-    "url": "https://sapegin.me/"
-  },
-  "engines": {
-    "vscode": "^1.42.0"
-  },
-  "license": "MIT",
+  "description": "Low-contrast dark color theme",
   "categories": [
     "Themes"
   ],
   "keywords": [
-    "theme",
-    "dark theme",
-    "squirrelsong",
-    "low-contrast theme",
-    "scheme",
-    "non-distracting",
-    "cyberpunk",
-    "vaporwave",
     "brown theme",
-    "purple theme"
+    "cyberpunk",
+    "dark theme",
+    "low-contrast theme",
+    "non-distracting",
+    "purple theme",
+    "scheme",
+    "squirrelsong",
+    "theme",
+    "vaporwave"
   ],
-  "icon": "icon.png",
   "homepage": "https://sapegin.me/squirrelsong/",
+  "license": "MIT",
+  "author": {
+    "name": "Artem Sapegin",
+    "url": "https://sapegin.me/"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/sapegin/squirrelsong.git"
@@ -36,9 +31,14 @@
   "sponsor": {
     "url": "https://www.buymeacoffee.com/sapegin"
   },
-  "galleryBanner": {
-    "color": "#352a21",
-    "theme": "dark"
+  "publisher": "sapegin",
+  "scripts": {
+    "prepublish": "cd ../../../; node scripts/prepare-themes.mjs",
+    "publish": "vsce publish",
+    "publish:ovsx": "npx ovsx publish"
+  },
+  "devDependencies": {
+    "vsce": "^2.9.1"
   },
   "contributes": {
     "themes": [
@@ -54,12 +54,12 @@
       }
     ]
   },
-  "scripts": {
-    "prepublish": "cd ../../../; node scripts/prepare-themes.mjs",
-    "publish": "vsce publish",
-    "publish:ovsx": "npx ovsx publish"
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#352a21",
+    "theme": "dark"
   },
-  "devDependencies": {
-    "vsce": "^2.9.1"
+  "engines": {
+    "vscode": "^1.42.0"
   }
 }

@@ -1,32 +1,33 @@
 {
   "name": "squirrelsong",
   "private": true,
+  "license": "MIT",
   "author": {
     "name": "Artem Sapegin",
     "url": "https://sapegin.me/"
   },
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/sapegin/squirrelsong.git"
   },
   "type": "module",
   "scripts": {
-    "format": "prettier --log-level warn --write --ignore-unknown \"**/*.*\"",
+    "format": "oxfmt",
     "update": "node scripts/update.mjs",
     "prepare-extensions": "node scripts/prepare-extensions.mjs",
     "prepare-themes": "node scripts/prepare-themes.mjs",
-    "lint": "eslint . --cache --fix",
+    "lint": "oxlint --fix",
     "lint:themes": "node scripts/lint.mjs",
     "test": "npm run lint && npm run lint:themes"
-  },
-  "devDependencies": {
-    "eslint": "^9.38.0",
-    "eslint-config-tamia": "^9.7.0",
-    "prettier": "^3.6.2"
   },
   "dependencies": {
     "adm-zip": "^0.5.16",
     "terminal-link": "^5.0.0"
+  },
+  "devDependencies": {
+    "oxfmt": "0.51.0",
+    "oxlint": "1.66.0",
+    "oxlint-config-raccoon": "10.1.0",
+    "oxlint-tsgolint": "0.23.0"
   }
 }

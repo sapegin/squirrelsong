@@ -7,13 +7,13 @@
  * setup.
  */
 
-import os from 'node:os';
 import fs from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
 import terminalLink from 'terminal-link';
-import { stripJsonComments } from './util/stripJsonComments.mjs';
 import { hexToRgb } from './util/hexToRgb.mjs';
 import { rgbToHex } from './util/rgbToHex.mjs';
+import { stripJsonComments } from './util/stripJsonComments.mjs';
 
 let colorCount = 0;
 let errorCount = 0;
@@ -98,7 +98,7 @@ const CUSTOM_LINTERS = [
 
       const matches = text.match(/<real>[^<]*<\/real>/gi);
       const numbers = matches.map((x) =>
-        Number(x.replaceAll(/<\/?real>/gi, '')),
+        Number(x.replaceAll(/<\/?real>/gi, ''))
       );
 
       // Group colors into chunks of 4: [[A, B, G, R], ...]
@@ -350,7 +350,7 @@ function lint(files, lightColors, darkColors) {
     console.log();
     console.log(
       '👉',
-      terminalLink(relativePath, `vscode://file//${absolutePath}`),
+      terminalLink(relativePath, `vscode://file//${absolutePath}`)
     );
 
     const validColors = getPalette(filename, lightColors, darkColors);
@@ -407,7 +407,7 @@ if (fs.existsSync(DOTFILES_ROOT)) {
         // Cloned repositories
         file.includes('-master/') === false &&
         // Custom themes
-        file.includes('dotfiles/brain/') === false,
+        file.includes('dotfiles/brain/') === false
     );
 
   lint(dotfiles, Object.values(lightPalette), Object.values(darkPalette));
@@ -416,7 +416,7 @@ if (fs.existsSync(DOTFILES_ROOT)) {
 console.log();
 console.log();
 console.log(
-  `[LINT] ${errorCount} errors found, ${colorCount} colors in ${fileCount} files checked 🦜`,
+  `[LINT] ${errorCount} errors found, ${colorCount} colors in ${fileCount} files checked 🦜`
 );
 
 process.exit(errorCount === 0 ? 0 : 1);

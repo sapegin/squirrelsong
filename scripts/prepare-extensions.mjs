@@ -14,14 +14,14 @@ console.log(`[BUILD] Building Chrome Light extension… 🌕`);
 fs.mkdirSync('./dist/chrome-light', { recursive: true });
 fs.copyFileSync(
   './themes/Chrome/extension-light/manifest.json',
-  './dist/chrome-light/manifest.json',
+  './dist/chrome-light/manifest.json'
 );
 fs.cpSync(
   './themes/Chrome/extension-light/images',
   './dist/chrome-light/images',
   {
     recursive: true,
-  },
+  }
 );
 
 const chromeLightDotZip = new ADMZip();
@@ -37,14 +37,14 @@ console.log(`[BUILD] Building Chrome Dark Deep Purple extension… 🌑`);
 fs.mkdirSync('./dist/chrome-dark-dp', { recursive: true });
 fs.copyFileSync(
   './themes/Chrome/extension-dark/manifest.json',
-  './dist/chrome-dark-dp/manifest.json',
+  './dist/chrome-dark-dp/manifest.json'
 );
 fs.cpSync(
   './themes/Chrome/extension-dark/images',
   './dist/chrome-dark-dp/images',
   {
     recursive: true,
-  },
+  }
 );
 
 const chromeDarkDpDotZip = new ADMZip();
@@ -60,7 +60,7 @@ console.log(`[BUILD] Building Firefox Light extension… 🌕`);
 fs.mkdirSync('./dist/firefox-light', { recursive: true });
 fs.copyFileSync(
   './themes/Firefox/extension/manifest.json',
-  './dist/firefox-light/manifest.json',
+  './dist/firefox-light/manifest.json'
 );
 
 const firefoxLightDotZip = new ADMZip();
