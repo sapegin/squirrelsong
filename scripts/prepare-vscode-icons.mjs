@@ -38,13 +38,25 @@ const KNOWN_COLORS = new Set([
   ...Object.values(PALETTE),
 ]);
 
-const UPSTREAM_ZIP = `${`https://codeload.github.com/catppuccin/vscode-icons/zip/refs/`}heads/main`;
+const UPSTREAM_BASE = `https://codeload.github.com/catppuccin/vscode-icons`;
+const UPSTREAM_ZIP = `${UPSTREAM_BASE}/zip/refs/heads/main`;
 const EXTENSION_DIR = path.resolve('themes/VSCode/SquirrelppuccinIconsLight');
 const ICONS_OUT_DIR = path.join(EXTENSION_DIR, 'icons');
+const PACKAGE_JSON = path.join(EXTENSION_DIR, 'package.json');
 const THEME_JSON_OUT = path.join(
   EXTENSION_DIR,
   'squirrelppuccin-icons-light.icon-theme.json'
 );
+
+function readVersion(packageFile) {
+  return JSON.parse(fs.readFileSync(packageFile, 'utf8')).version;
+}
+
+function updateLocalVersion(version) {
+  const pkg = JSON.parse(fs.readFileSync(PACKAGE_JSON, 'utf8'));
+  pkg.version = version;
+  fs.writeFileSync(PACKAGE_JSON, `${JSON.stringify(pkg, null, 2)}\n`);
+}
 
 async function downloadUpstream() {
   console.log(`[ICONS] Downloading catppuccin/vscode-icons@main…`);
@@ -164,9 +176,20 @@ console.log('[ICONS] Building Squirrelppuccin Icons Light…');
 const buffer = await downloadUpstream();
 const upstreamRoot = extract(buffer);
 try {
+  const upstreamVersion = readVersion(path.join(upstreamRoot, 'package.json'));
+  const localVersion = readVersion(PACKAGE_JSON);
+  if (upstreamVersion === localVersion) {
+    console.log(
+      `[ICONS] Already at upstream version ${localVersion}, skipping`
+    );
+    process.exit(0);
+  }
+
+  console.log(`[ICONS] Updating ${localVersion} → ${upstreamVersion}`);
   const mappings = await loadMappings(upstreamRoot);
   const iconNames = copyAndRecolorIcons(upstreamRoot);
   writeThemeManifest(mappings, iconNames);
+  updateLocalVersion(upstreamVersion);
 } finally {
   // Clean up temp directory
   fs.rmSync(path.dirname(upstreamRoot), { recursive: true, force: true });
