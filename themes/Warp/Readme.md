@@ -6,7 +6,7 @@
 
 1. To start, create the following directory: `mkdir -p ~/.warp/themes/`.
 
-> [!NOTE]
+> [!NOTE]  
 > It may take several minutes for Warp to initially discover the new themes directory. You can either wait or restart Warp.
 
 2. Copy the [`squirrelsong_dark.yaml`](squirrelsong_dark.yaml) to this directory.

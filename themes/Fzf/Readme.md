@@ -5,8 +5,7 @@
 ## Installing from GitHub
 
 1. Add the following to your `~/.bashrc`, `~/.zshrc`, or any other file that your shell loads on startup.
-
- a. For Squirrelsong Dark theme:
+   1. For Squirrelsong Dark theme:
 
 <!-- apply:dark -->
 

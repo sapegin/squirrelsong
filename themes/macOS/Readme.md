@@ -1,6 +1,6 @@
 # Squirrelsong Light Theme for macOS
 
-> [!WARNING]
+> [!WARNING]  
 > This isn’t an actual theme, just a few colors — macOS doesn’t let us customize many things…
 
 ## Installation

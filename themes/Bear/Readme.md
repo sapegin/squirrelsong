@@ -2,7 +2,7 @@
 
 ![Squirrelsong Light theme for Bear](screenshot-light.png)
 
-> [!WARNING]
+> [!WARNING]  
 > There’s no official support for custom themes in Bear, apply the following instructions at your own risk.
 
 ## Installation from GitHub

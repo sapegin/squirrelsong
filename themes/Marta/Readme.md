@@ -24,5 +24,5 @@
 
 4. Restart the app for the changes to take effect.
 
-> [!NOTE]
+> [!NOTE]  
 > Please note that the embedded terminal doesn’t seem to take some of the configuration colors into effect for some reason and uses system accent color instead of the configured one.

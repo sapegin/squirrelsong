@@ -1,6 +1,6 @@
 # Squirrelsong Light Theme for [Bartender](https://www.macbartender.com)
 
-> [!WARNING]
+> [!WARNING]  
 > The actual color never goes brighter than `#e3e3e3` instead of `#f7f6f9`, and this color is the closest I could get to the theme colors.
 
 ## Installation
