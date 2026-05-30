@@ -16,6 +16,7 @@
     "update": "node scripts/update.mjs",
     "prepare-extensions": "node scripts/prepare-extensions.mjs",
     "prepare-themes": "node scripts/prepare-themes.mjs",
+    "prepare-vscode-icons": "node scripts/prepare-vscode-icons.mjs",
     "lint": "oxlint --fix",
     "lint:themes": "node scripts/lint.mjs",
     "test": "npm run lint && npm run lint:themes"

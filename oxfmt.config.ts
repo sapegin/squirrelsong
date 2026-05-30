@@ -6,10 +6,7 @@ export default defineConfig({
   ignorePatterns: [
     'dist/**',
     'themes/Chrome/chrome.template.json',
-    'themes/VSCode/SquirrelsongDark/SquirrelsongDark.color-theme.json',
-    'themes/VSCode/SquirrelsongDark/SquirrelsongDarkDeepPurple.color-theme.json',
-    'themes/VSCode/SquirrelsongLight/SquirrelsongLight.color-theme.json',
-    'themes/VSCode/SquirrelsongLight/SquirrelsongLightDarkDeepPurpleTerminal.color-theme.json',
-    'themes/VSCode/SquirrelsongLight/SquirrelsongLightDarkTerminal.color-theme.json',
+    'themes/VSCode/*/*.color-theme.json',
+    'themes/VSCode/*/*.icon-theme.json',
   ],
 });

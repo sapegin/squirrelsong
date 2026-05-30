@@ -1,0 +1,58 @@
+{
+  "name": "Icons-SquirrelppuccinLight",
+  "displayName": "Squirrelppuccin Icons Light",
+  "version": "0.1.0",
+  "description": "Catppuccin file icons recolored with the Squirrelsong Light palette",
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "catppuccin",
+    "file icons",
+    "icon theme",
+    "icons",
+    "light theme",
+    "squirrelsong"
+  ],
+  "homepage": "https://sapegin.me/squirrelsong/",
+  "bugs": {
+    "url": "https://github.com/sapegin/squirrelsong/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Artem Sapegin",
+    "url": "https://sapegin.me/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sapegin/squirrelsong.git"
+  },
+  "sponsor": {
+    "url": "https://www.buymeacoffee.com/sapegin"
+  },
+  "publisher": "sapegin",
+  "scripts": {
+    "prepublish": "cd ../../../; node scripts/prepare-vscode-icons.mjs",
+    "publish": "vsce publish",
+    "publish:ovsx": "npx ovsx publish"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "3.9.1"
+  },
+  "contributes": {
+    "iconThemes": [
+      {
+        "id": "squirrelppuccin-icons-light",
+        "label": "Squirrelppuccin Icons Light",
+        "path": "./squirrelppuccin-icons-light.icon-theme.json"
+      }
+    ]
+  },
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#ebe7f1"
+  },
+  "engines": {
+    "vscode": "^1.75.0"
+  }
+}
