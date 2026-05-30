@@ -4,9 +4,9 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import terminalLink from 'terminal-link';
 import { stripJsonComments } from './util/stripJsonComments.mjs';
 import { processTemplate, applyReadmeTemplate } from './util/template.mjs';
+import { terminalLink } from './util/terminalLink.mjs';
 
 function readJsonFile(file) {
   return JSON.parse(stripJsonComments(fs.readFileSync(file, 'utf8')));
@@ -218,7 +218,10 @@ const configs = fs.globSync('themes/*/config.json').toSorted();
 
 for (const configFile of configs) {
   const folder = path.dirname(configFile);
-  console.log('👉', terminalLink(folder, `vscode://file//${configFile}`));
+  console.log(
+    '👉',
+    terminalLink(folder, `vscode://file//${path.resolve(configFile)}`)
+  );
   const config = readJsonFile(configFile);
 
   if (Array.isArray(config.themes) === false) {

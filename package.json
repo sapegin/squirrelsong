@@ -22,8 +22,7 @@
     "test": "npm run lint && npm run lint:themes"
   },
   "dependencies": {
-    "adm-zip": "^0.5.16",
-    "terminal-link": "^5.0.0"
+    "adm-zip": "^0.5.16"
   },
   "devDependencies": {
     "oxfmt": "0.52.0",

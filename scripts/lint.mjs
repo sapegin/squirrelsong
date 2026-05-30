@@ -10,10 +10,10 @@
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import terminalLink from 'terminal-link';
 import { hexToRgb } from './util/hexToRgb.mjs';
 import { rgbToHex } from './util/rgbToHex.mjs';
 import { stripJsonComments } from './util/stripJsonComments.mjs';
+import { terminalLink } from './util/terminalLink.mjs';
 
 let colorCount = 0;
 let errorCount = 0;
@@ -335,9 +335,7 @@ function lint(files, lightColors, darkColors) {
   for (const file of themesSorted) {
     const filename = path.basename(file);
     const relativePath = file.replace(DOTFILES_ROOT, 'dotfiles');
-    const absolutePath = file.startsWith('/')
-      ? file
-      : path.join(process.cwd(), file);
+    const absolutePath = file.startsWith('/') ? file : path.resolve(file);
 
     if (
       IGNORES.includes(filename) ||
