@@ -2,7 +2,7 @@
 
 ![Squirrelsong Light theme for Obsidian](screenshot-light.png)
 
-![Squirrelsong Dark Deep Purple theme for Obsidian](screenshot-dark.png)
+![Squirrelsong Dark Deep Purple theme for Obsidian](screenshot-dark-dp.png)
 
 ## Installation from GitHub
 
