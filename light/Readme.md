@@ -14,6 +14,7 @@
 - [JetBrains](../themes/JetBrains)
 - [Marta File Manager](../themes/Marta)
 - [Nimble Commander](../themes/Nimble%20Commander)
+- [Obsidian](../themes/Obsidian)
 - [Pearcleaner](../themes/Pearcleaner)
 - [Peek](../themes/Peek)
 - [Prism.js](../themes/PrismJs)

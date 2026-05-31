@@ -11,6 +11,7 @@
 - [Ghostty](../themes/Ghostty)
 - [iTerm2](../themes/iTerm2)
 - [Midnight Commander](../themes/Midnight%20Commander)
+- [Obsidian](../themes/Obsidian)
 - [Pearcleaner](../themes/Pearcleaner)
 - [Prism.js](../themes/PrismJs)
 - [Slack](../themes/Slack)
