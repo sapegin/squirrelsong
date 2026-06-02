@@ -17,6 +17,15 @@
         "iconForeground": "purple070",
         "iconBackground": "purple140"
       }
+    },
+    {
+      "file": "Squirrelsong Light",
+      "scheme": "light",
+      "context": {
+        "name": "Light",
+        "iconForeground": "gray070",
+        "iconBackground": "gray140"
+      }
     }
   ]
 }
