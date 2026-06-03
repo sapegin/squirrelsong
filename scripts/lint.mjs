@@ -19,6 +19,10 @@ let colorCount = 0;
 let errorCount = 0;
 let fileCount = 0;
 
+let currentGroup = 'themes';
+let currentFile = '';
+const errorsByGroup = { themes: [], dotfiles: [] };
+
 const DOTFILES_ROOT = path.join(os.homedir(), 'dotfiles');
 
 const EXTENSIONS = [
@@ -218,6 +222,7 @@ const CUSTOM_LINTERS = [
 function achtung(value) {
   console.error(`🦀 Invalid color:`, value);
   errorCount++;
+  errorsByGroup[currentGroup].push({ file: currentFile, value });
 }
 
 function done(numberOfColors) {
@@ -329,7 +334,9 @@ function lintText(file, validColors, exceptions) {
   done(numberOfColors);
 }
 
-function lint(files, lightColors, darkColors) {
+function lint(files, lightColors, darkColors, group) {
+  currentGroup = group;
+
   const themesSorted = files.toSorted((a, b) => a.localeCompare(b, 'en'));
 
   for (const file of themesSorted) {
@@ -345,11 +352,10 @@ function lint(files, lightColors, darkColors) {
       continue;
     }
 
+    currentFile = terminalLink(relativePath, `vscode://file//${absolutePath}`);
+
     console.log();
-    console.log(
-      '👉',
-      terminalLink(relativePath, `vscode://file//${absolutePath}`)
-    );
+    console.log('👉', currentFile);
 
     const validColors = getPalette(filename, lightColors, darkColors);
 
@@ -382,7 +388,7 @@ const themes = [
   ...fs.globSync(`themes/*/Readme.md`),
   ...EXTRA_FILES,
 ];
-lint(themes, Object.values(lightPalette), Object.values(darkPalette));
+lint(themes, Object.values(lightPalette), Object.values(darkPalette), 'themes');
 
 if (fs.existsSync(DOTFILES_ROOT)) {
   console.log();
@@ -408,8 +414,36 @@ if (fs.existsSync(DOTFILES_ROOT)) {
         file.includes('dotfiles/brain/') === false
     );
 
-  lint(dotfiles, Object.values(lightPalette), Object.values(darkPalette));
+  lint(
+    dotfiles,
+    Object.values(lightPalette),
+    Object.values(darkPalette),
+    'dotfiles'
+  );
 }
+
+function printErrorSummary(group, label) {
+  const errors = errorsByGroup[group];
+  if (errors.length === 0) {
+    return;
+  }
+
+  console.log();
+  console.log(`[LINT] ${errors.length} errors in ${label}:`);
+
+  let lastFile = '';
+  for (const { file, value } of errors) {
+    if (file !== lastFile) {
+      console.log();
+      console.log(`🦀 ${file}:`);
+      lastFile = file;
+    }
+    console.error(`   Invalid color: ${value}`);
+  }
+}
+
+printErrorSummary('themes', 'themes');
+printErrorSummary('dotfiles', 'dotfiles');
 
 console.log();
 console.log();

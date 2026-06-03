@@ -2,7 +2,7 @@
 	<g fill="none">
 		<g clip-path="url(#a)">
 			<mask id="b" width="14" height="14" x="1" y="1" maskUnits="userSpaceOnUse" style="mask-type:alpha">
-				<circle cx="8" cy="8" r="7" fill="#527b98" />
+				<circle cx="8" cy="8" r="7" fill="#4b7b97" />
 			</mask>
 			<g mask="url(#b)">
 				<path stroke="#de9e59" stroke-linecap="round" stroke-linejoin="round" d="M5 3c-.5.5-.5 1.5-1.5 2m2 5c-.167-.167-.5-.5-.5 0m0 0c-.5.5-1.5 0-1.5-1m0 0s.5-.2.5-1m-.5-3C2 7.5 4 7.205 4 8m6.295 0C9.5 10 7.5 10.5 5.5 10m6-.5c0 .4.333.833.5 1 .136.136.317.31.515.49C13.047 11.47 14.71 13 15 13m-9 3c-.5 0-.167-2.333 0-3 .333-.833.5-2.5-.5-3" />

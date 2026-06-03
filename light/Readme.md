@@ -62,7 +62,7 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=80a4be" width="20" height="20" alt=""> | blue | #80a4be | 128, 164, 190 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=bfd1de" width="20" height="20" alt=""> | blueDim | #bfd1de | 191, 209, 222 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=dfe8ef" width="20" height="20" alt=""> | blueDimer | #dfe8ef | 223, 232, 239 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=527b98" width="20" height="20" alt=""> | blueContrast | #527b98 | 82, 123, 152 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4b7b97" width="20" height="20" alt=""> | blueContrast | #4b7b97 | 82, 123, 152 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ac9bc5" width="20" height="20" alt=""> | magenta | #ac9bc5 | 172, 155, 197 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=d7cfe3" width="20" height="20" alt=""> | magentaDim | #d7cfe3 | 215, 207, 227 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ebe7f1" width="20" height="20" alt=""> | magentaDimer | #ebe7f1 | 235, 231, 241 |

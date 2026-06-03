@@ -17,7 +17,7 @@ const PALETTE = {
   '#179299': '#5f9b8d', // teal     → teal
   '#1e66f5': '#80a4be', // blue     → blue
   '#209fb5': '#5f9b8d', // sapphire → teal
-  '#3700ff': '#527b98', // (one-off) → blueContrast
+  '#3700ff': '#4b7b97', // (one-off) → blueContrast
   '#40a02b': '#9bae7e', // green    → green
   '#4c4f69': '#78737d', // text     → gray090
   '#7287fd': '#ac9bc5', // lavender → magenta

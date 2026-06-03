@@ -34,7 +34,7 @@ let s:palette = {
   \ 'type' :                 ['#5f9b8d',   'NONE'],
   \ 'class' :                ['#5f9b8d',   'NONE'],
   \ 'regexp' :               ['#9bae7e',   'NONE'],
-  \ 'url' :                  ['#527b98',   'NONE'],
+  \ 'url' :                  ['#4b7b97',   'NONE'],
   \ 'fg' :                   ['#78737d',   'NONE'],
   \ 'bg' :                   ['#fdfdfe',   'NONE'],
   \

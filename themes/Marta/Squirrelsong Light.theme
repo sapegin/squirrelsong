@@ -47,7 +47,7 @@ files {
         matched #e87da4
         selected #e87da4
 
-        highlighting1 #527b98
+        highlighting1 #4b7b97
         highlighting2 #657d38
         highlighting3 #e4c158
         highlighting4 #ac9bc5
@@ -122,7 +122,7 @@ textEditor {
 
     literal {
         string #9bae7e
-        number #527b98
+        number #4b7b97
         color #bfd1de
     }
 
