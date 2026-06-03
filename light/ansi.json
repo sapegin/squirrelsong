@@ -3,8 +3,8 @@
   "terminalBackground": "gray180",
   "terminalBlack": "gray060",
   "terminalBrightBlack": "gray090",
-  "terminalWhite": "gray110",
-  "terminalBrightWhite": "gray130",
+  "terminalWhite": "gray100",
+  "terminalBrightWhite": "gray110",
   "terminalBlue": "blueContrast",
   "terminalBrightBlue": "blue",
   "terminalCyan": "tealContrast",
@@ -15,6 +15,6 @@
   "terminalBrightMagenta": "magenta",
   "terminalRed": "redContrast",
   "terminalBrightRed": "red",
-  "terminalYellow": "yellowContrast",
-  "terminalBrightYellow": "yellow"
+  "terminalYellow": "orangeContrast",
+  "terminalBrightYellow": "orange"
 }

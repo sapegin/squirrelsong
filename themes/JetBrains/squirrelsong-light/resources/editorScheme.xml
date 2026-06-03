@@ -19,7 +19,7 @@
     <option name="DOC_COMMENT_GUIDE" value="e8e5eb" />
     <option name="DOC_COMMENT_LINK" value="527b98" />
     <option name="ERROR_HINT" value="fae1ea" />
-    <option name="FILESTATUS_ADDED" value="667e44"/>
+    <option name="FILESTATUS_ADDED" value="657d38"/>
     <option name="FILESTATUS_COPIED" value=""/>
     <option name="FILESTATUS_DELETED" value="9c96a2"/>
     <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="9c96a2"/>
@@ -34,7 +34,7 @@
     <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value=""/>
     <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value=""/>
     <option name="FILESTATUS_UNKNOWN" value=""/>
-    <option name="FILESTATUS_addedOutside" value="667e44"/>
+    <option name="FILESTATUS_addedOutside" value="657d38"/>
     <option name="FILESTATUS_changelistConflict" value=""/>
     <option name="FILESTATUS_modifiedOutside" value="527b98"/>
     <option name="FILESTATUS_HIJACKED" value=""/>
@@ -396,7 +396,7 @@
     </option>
     <option name="CONSOLE_CYAN_BRIGHT_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="468173" />
+        <option name="FOREGROUND" value="3e816e" />
       </value>
     </option>
     <option name="CONSOLE_CYAN_OUTPUT">
@@ -462,7 +462,7 @@
     </option>
     <option name="CONSOLE_YELLOW_BRIGHT_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="b39119" />
+        <option name="FOREGROUND" value="c88539" />
       </value>
     </option>
     <option name="CONSOLE_YELLOW_OUTPUT">
@@ -1487,7 +1487,7 @@
     </option>
     <option name="LOG_WARNING_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="bf8240" />
+        <option name="FOREGROUND" value="c88539" />
       </value>
     </option>
     <option name="MARKDOWN_AUTO_LINK">

@@ -54,11 +54,11 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=9bae7e" width="20" height="20" alt=""> | green | #9bae7e | 155, 174, 126 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=cbd9c1" width="20" height="20" alt=""> | greenDim | #cbd9c1 | 203, 217, 193 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=dde2d7" width="20" height="20" alt=""> | greenDimer | #dde2d7 | 226, 235, 223 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=667e44" width="20" height="20" alt=""> | greenContrast | #667e44 | 102, 126, 68 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=657d38" width="20" height="20" alt=""> | greenContrast | #657d38 | 102, 126, 68 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=5f9b8d" width="20" height="20" alt=""> | teal | #5f9b8d | 95, 155, 141 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=adccc5" width="20" height="20" alt=""> | tealDim | #adccc5 | 173, 204, 197 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=d6e6e2" width="20" height="20" alt=""> | tealDimer | #d6e6e2 | 214, 230, 226 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=468173" width="20" height="20" alt=""> | tealContrast | #468173 | 70, 129, 115 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=3e816e" width="20" height="20" alt=""> | tealContrast | #3e816e | 70, 129, 115 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=80a4be" width="20" height="20" alt=""> | blue | #80a4be | 128, 164, 190 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=bfd1de" width="20" height="20" alt=""> | blueDim | #bfd1de | 191, 209, 222 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=dfe8ef" width="20" height="20" alt=""> | blueDimer | #dfe8ef | 223, 232, 239 |
@@ -74,11 +74,11 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=de9e59" width="20" height="20" alt=""> | orange | #de9e59 | 222, 158, 89 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=eeceac" width="20" height="20" alt=""> | orangeDim | #eeceac | 238, 206, 172 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=f7e7d5" width="20" height="20" alt=""> | orangeDimer | #f7e7d5 | 247, 231, 213 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=bf8240" width="20" height="20" alt=""> | orangeContrast | #bf8240 | 191, 130, 64 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=c88539" width="20" height="20" alt=""> | orangeContrast | #c88539 | 191, 130, 64 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=e4c158" width="20" height="20" alt=""> | yellow | #e4c158 | 228, 193, 88 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=e8d8a5" width="20" height="20" alt=""> | yellowDim | #e8d8a5 | 232, 216, 165 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=f7f0da" width="20" height="20" alt=""> | yellowDimer | #f7f0da | 247, 240, 218 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=b39119" width="20" height="20" alt=""> | yellowContrast | #b39119 | 179, 145, 25 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=bf8a18" width="20" height="20" alt=""> | yellowContrast | #bf8a18 | 179, 145, 25 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=e87da4" width="20" height="20" alt=""> | brightPink | #e87da4 | 232, 125, 164 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=f0a8c2" width="20" height="20" alt=""> | brightPinkDim | #f0a8c2 | 240, 168, 194 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=fae1ea" width="20" height="20" alt=""> | brightPinkDimer | #fae1ea | 250, 225, 234 |
