@@ -53,7 +53,7 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=fdfdfe" width="20" height="20" alt=""> | gray180 | #fdfdfe | 253, 253, 254 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=9bae7e" width="20" height="20" alt=""> | green | #9bae7e | 155, 174, 126 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=cbd9c1" width="20" height="20" alt=""> | greenDim | #cbd9c1 | 203, 217, 193 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=e2ebdf" width="20" height="20" alt=""> | greenDimer | #e2ebdf | 226, 235, 223 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=dde2d7" width="20" height="20" alt=""> | greenDimer | #dde2d7 | 226, 235, 223 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=667e44" width="20" height="20" alt=""> | greenContrast | #667e44 | 102, 126, 68 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=5f9b8d" width="20" height="20" alt=""> | teal | #5f9b8d | 95, 155, 141 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=adccc5" width="20" height="20" alt=""> | tealDim | #adccc5 | 173, 204, 197 |
@@ -69,7 +69,7 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=806f9b" width="20" height="20" alt=""> | magentaContrast | #806f9b | 128, 111, 155 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=d67e76" width="20" height="20" alt=""> | red | #d67e76 | 214, 126, 118 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=e5aba8" width="20" height="20" alt=""> | redDim | #e5aba8 | 229, 171, 168 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=f2dbda" width="20" height="20" alt=""> | redDimer | #f2dbda | 242, 219, 218 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=f5e5e4" width="20" height="20" alt=""> | redDimer | #f5e5e4 | 242, 219, 218 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=c06159" width="20" height="20" alt=""> | redContrast | #c06159 | 192, 97, 89 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=de9e59" width="20" height="20" alt=""> | orange | #de9e59 | 222, 158, 89 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=eeceac" width="20" height="20" alt=""> | orangeDim | #eeceac | 238, 206, 172 |

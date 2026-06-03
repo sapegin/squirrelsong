@@ -5,7 +5,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { stripJsonComments } from './util/stripJsonComments.mjs';
-import { processTemplate, applyReadmeTemplate } from './util/template.mjs';
+import {
+  processTemplate,
+  applyReadmeTemplate,
+  renderTemplate,
+} from './util/template.mjs';
 import { terminalLink } from './util/terminalLink.mjs';
 
 function readJsonFile(file) {
@@ -265,7 +269,12 @@ for (const configFile of configs) {
       ...(theme.mixin ? mixins[theme.mixin] : {}),
     };
     for (const [key, value] of Object.entries(theme.context ?? {})) {
-      context[key] = context[value] ?? value;
+      if (typeof value === 'string' && value.includes('{{')) {
+        // Expand {{...}} placeholders against the current context
+        context[key] = renderTemplate(value, context, configFile);
+      } else {
+        context[key] = context[value] ?? value;
+      }
     }
 
     const destFile = path.join(folder, theme.file);

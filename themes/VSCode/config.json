@@ -6,7 +6,11 @@
       "mixin": "terminalLight",
       "context": {
         "name": "Light",
-        "mode": "light"
+        "mode": "light",
+        "insertedBackground": "{{green}}14",
+        "deletedBackground": "{{red}}26",
+        "insertedWordBackground": "{{green}}14",
+        "deletedWordBackground": "{{red}}26"
       }
     },
     {
@@ -15,7 +19,11 @@
       "mixin": "terminalDark",
       "context": {
         "name": "Light (Dark Terminal)",
-        "mode": "light"
+        "mode": "light",
+        "insertedBackground": "{{green}}14",
+        "deletedBackground": "{{red}}26",
+        "insertedWordBackground": "{{green}}14",
+        "deletedWordBackground": "{{red}}26"
       }
     },
     {
@@ -24,7 +32,11 @@
       "mixin": "terminalDarkDp",
       "context": {
         "name": "Light (Dark Deep Purple Terminal)",
-        "mode": "light"
+        "mode": "light",
+        "insertedBackground": "{{green}}14",
+        "deletedBackground": "{{red}}26",
+        "insertedWordBackground": "{{green}}14",
+        "deletedWordBackground": "{{red}}26"
       }
     },
     {
@@ -33,7 +45,11 @@
       "mixin": "terminalDark",
       "context": {
         "name": "Dark",
-        "mode": "dark"
+        "mode": "dark",
+        "insertedBackground": "{{green}}20",
+        "deletedBackground": "{{red}}18",
+        "insertedWordBackground": "{{green}}22",
+        "deletedWordBackground": "{{red}}24"
       }
     },
     {
@@ -42,7 +58,11 @@
       "mixin": "terminalDarkDp",
       "context": {
         "name": "Dark Deep Purple",
-        "mode": "dark"
+        "mode": "dark",
+        "insertedBackground": "{{green}}20",
+        "deletedBackground": "{{red}}18",
+        "insertedWordBackground": "{{green}}22",
+        "deletedWordBackground": "{{red}}24"
       }
     }
   ]

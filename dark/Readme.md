@@ -67,7 +67,7 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=271e38" width="20" height="20" alt=""> | purple180 | #271e38 | 39, 30, 56 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=558240" width="20" height="20" alt=""> | green | #558240 | 85, 130, 64 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=44603b" width="20" height="20" alt=""> | greenDim | #44603b | 68, 96, 59 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=37442c" width="20" height="20" alt=""> | greenDimer | #37442c | 55, 68, 44 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=32363a" width="20" height="20" alt=""> | greenDimer | #32363a | 55, 68, 44 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=709855" width="20" height="20" alt=""> | greenContrast | #709855 | 112, 152, 85 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4f9593" width="20" height="20" alt=""> | teal | #4f9593 | 79, 149, 147 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=41635f" width="20" height="20" alt=""> | tealDim | #41635f | 65, 99, 95 |
@@ -83,7 +83,7 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=9672d4" width="20" height="20" alt=""> | magentaContrast | #9672d4 | 150, 114, 212 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ac493e" width="20" height="20" alt=""> | red | #ac493e | 172, 73, 62 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=703a2f" width="20" height="20" alt=""> | redDim | #703a2f | 112, 58, 47 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=552f25" width="20" height="20" alt=""> | redDimer | #552f25 | 85, 47, 37 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=44283a" width="20" height="20" alt=""> | redDimer | #44283a | 85, 47, 37 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ce574a" width="20" height="20" alt=""> | redContrast | #ce574a | 206, 87, 74 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=b18433" width="20" height="20" alt=""> | orange | #b18433 | 177, 132, 51 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=73572a" width="20" height="20" alt=""> | orangeDim | #73572a | 115, 87, 42 |

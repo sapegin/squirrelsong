@@ -6,7 +6,7 @@
   "colors": {
     "green": "#9bae7e",
     "greenDim": "#cbd9c1",
-    "greenDimer": "#e2ebdf",
+    "greenDimer": "#dde2d7",
     "greenContrast": "#667e44",
     "teal": "#5f9b8d",
     "tealDim": "#adccc5",
@@ -22,7 +22,7 @@
     "magentaContrast": "#806f9b",
     "red": "#d67e76",
     "redDim": "#e5aba8",
-    "redDimer": "#f2dbda",
+    "redDimer": "#f5e5e4",
     "redContrast": "#c06159",
     "orange": "#de9e59",
     "orangeDim": "#eeceac",
