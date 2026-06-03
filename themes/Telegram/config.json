@@ -10,6 +10,17 @@
         // Fallback for undefined parameters: day, dayClassic, dark, nightAccent
         "parent": "day"
       }
+    },
+    {
+      "file": "Squirrelsong Dark Deep Purple.palette",
+      "scheme": "darkDp",
+      "context": {
+        "name": "Dark Deep Purple",
+        "shortName": "squirrelsongdarkdp",
+        "isDark": "1",
+        // Fallback for undefined parameters: day, dayClassic, dark, nightAccent
+        "parent": "nightAccent"
+      }
     }
   ]
 }

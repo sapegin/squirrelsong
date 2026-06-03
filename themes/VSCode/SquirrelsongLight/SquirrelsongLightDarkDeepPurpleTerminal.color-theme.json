@@ -460,7 +460,7 @@
     "terminal.ansiYellow": "#ceb250",
     "terminal.background": "#271e38",
     "terminal.border": "#644e88",
-    "terminal.findMatchBackground": "#97576f88",
+    "terminal.findMatchBackground": "#a6547288",
     "terminal.findMatchBorder": "#ca5a83",
     "terminal.findMatchHighlightBackground": "#ca5a8366",
     "terminal.findMatchHighlightBorder": "#ca5a83",
