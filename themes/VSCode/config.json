@@ -8,8 +8,8 @@
         "name": "Light",
         "mode": "light",
         "insertedBackground": "{{green}}14",
-        "deletedBackground": "{{red}}26",
-        "insertedWordBackground": "{{green}}14",
+        "deletedBackground": "{{red}}14",
+        "insertedWordBackground": "{{green}}26",
         "deletedWordBackground": "{{red}}26"
       }
     },
@@ -21,8 +21,8 @@
         "name": "Light (Dark Terminal)",
         "mode": "light",
         "insertedBackground": "{{green}}14",
-        "deletedBackground": "{{red}}26",
-        "insertedWordBackground": "{{green}}14",
+        "deletedBackground": "{{red}}14",
+        "insertedWordBackground": "{{green}}26",
         "deletedWordBackground": "{{red}}26"
       }
     },
@@ -34,8 +34,8 @@
         "name": "Light (Dark Deep Purple Terminal)",
         "mode": "light",
         "insertedBackground": "{{green}}14",
-        "deletedBackground": "{{red}}26",
-        "insertedWordBackground": "{{green}}14",
+        "deletedBackground": "{{red}}14",
+        "insertedWordBackground": "{{green}}26",
         "deletedWordBackground": "{{red}}26"
       }
     },
