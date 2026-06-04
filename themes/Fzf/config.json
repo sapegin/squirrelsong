@@ -1,12 +1,18 @@
 {
   "themes": [
     {
-      "file": "Readme.md",
-      "scheme": "dark"
+      "file": "fzf-squirrelsong-dark.sh",
+      "scheme": "dark",
+      "context": {
+        "name": "Dark"
+      }
     },
     {
-      "file": "Readme.md",
-      "scheme": "darkDp"
+      "file": "fzf-squirrelsong-dark-dp.sh",
+      "scheme": "darkDp",
+      "context": {
+        "name": "Dark Deep Purple"
+      }
     }
   ]
 }
