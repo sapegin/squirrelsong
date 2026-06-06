@@ -1,43 +1,43 @@
-Description="Squirrelsong Light"
+Description="Squirrelsong {{name}}"
 
-Categories = {"light"}
+Categories = {"{{category}}"}
 
-Default = { Colour="#78737d" }
-Canvas = { Colour="#fdfdfe" }
-Number = { Colour="#de9e59" }
-String = { Colour="#9bae7e" }
-Escape = { Colour="#9bae7e", Bold=true }
-PreProcessor = { Colour="#9bae7e" }
-StringPreProc = { Colour="#9bae7e" }
-BlockComment = { Colour="#9c96a2" }
-LineComment = { Colour="#9c96a2" }
-LineNum = { Colour="#9c96a2" }
-Operator = { Colour="#5f9b8d" }
-Interpolation = { Colour="#9bae7e", Bold=true }
+Default = { Colour="{{textForeground}}" }
+Canvas = { Colour="{{textBackground}}" }
+Number = { Colour="{{value}}" }
+String = { Colour="{{string}}" }
+Escape = { Colour="{{escapeCharacter}}", Bold=true }
+PreProcessor = { Colour="{{string}}" }
+StringPreProc = { Colour="{{string}}" }
+BlockComment = { Colour="{{comment}}" }
+LineComment = { Colour="{{comment}}" }
+LineNum = { Colour="{{secondaryTextForeground}}" }
+Operator = { Colour="{{operator}}" }
+Interpolation = { Colour="{{escapeCharacter}}", Bold=true }
 Hover = { Colour="", Custom = { { Format = "html", Style = "cursor:help;", Override = false } } }
-Error = { Colour="#d67e76" }
-ErrorMessage = { Colour="#bc5248", Custom = { { Format = "html", Style = "border:solid 1px red; margin-left: 3em;", Override = false } } }
+Error = { Colour="{{deleted}}" }
+ErrorMessage = { Colour="{{errorForeground}}", Custom = { { Format = "html", Style = "border:solid 1px red; margin-left: 3em;", Override = false } } }
 
 Keywords = {
-	{ Colour="#ac9bc5", Bold=true },
-	{ Colour="#5f9b8d" },
-	{ Colour="#ac9bc5" },
-	{ Colour="#80a3be" },
-	{ Colour="#5f9b8d" },
-	{ Colour="#d67e76" }
+	{ Colour="{{keyword}}", Bold=true },
+	{ Colour="{{type}}" },
+	{ Colour="{{keyword}}" },
+	{ Colour="{{function}}" },
+	{ Colour="{{type}}" },
+	{ Colour="{{deleted}}" }
 }
 
 
 SemanticTokenTypes = {
-	{ Type = 'keyword', Style = { Colour="#ac9bc5", Bold=true } },
-	{ Type = 'type', Style = { Colour="#5f9b8d" } },
-	{ Type = 'function', Style = { Colour="#80a4be", Bold=true } },
-	{ Type = 'method', Style = { Colour="#80a4be" } },
-	{ Type = 'class', Style = { Colour="#80a4be", Bold=true } },
-	{ Type = 'struct', Style = { Colour="#5f9b8d" } },
-	{ Type = 'parameter', Style = { Colour="#80a4be" } },
-	{ Type = 'variable', Style = { Colour="#80a4be", Italic=true } },
-	{ Type = 'number', Style = { Colour="#de9e59" } },
-	{ Type = 'regexp', Style = { Colour="#d67e76" } },
-	{ Type = 'operator', Style = { Colour="#5f9b8d" } },
+	{ Type = 'keyword', Style = { Colour="{{keyword}}", Bold=true } },
+	{ Type = 'type', Style = { Colour="{{type}}" } },
+	{ Type = 'function', Style = { Colour="{{function}}", Bold=true } },
+	{ Type = 'method', Style = { Colour="{{function}}" } },
+	{ Type = 'class', Style = { Colour="{{function}}", Bold=true } },
+	{ Type = 'struct', Style = { Colour="{{type}}" } },
+	{ Type = 'parameter', Style = { Colour="{{property}}" } },
+	{ Type = 'variable', Style = { Colour="{{variable}}", Italic=true } },
+	{ Type = 'number', Style = { Colour="{{value}}" } },
+	{ Type = 'regexp', Style = { Colour="{{string}}" } },
+	{ Type = 'operator', Style = { Colour="{{operator}}" } },
 }
