@@ -1,0 +1,12 @@
+{
+  "themes": [
+    {
+      "file": "Squirrelsong Light.theme",
+      "scheme": "light",
+      "context": {
+        "name": "Light",
+        "category": "light"
+      }
+    }
+  ]
+}
