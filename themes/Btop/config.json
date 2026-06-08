@@ -1,0 +1,25 @@
+{
+  "themes": [
+    {
+      "file": "squirrelsong-light.theme",
+      "scheme": "light",
+      "context": {
+        "name": "Light"
+      }
+    },
+    {
+      "file": "squirrelsong-dark.theme",
+      "scheme": "dark",
+      "context": {
+        "name": "Dark"
+      }
+    },
+    {
+      "file": "squirrelsong-dark-deep-purple.theme",
+      "scheme": "darkDp",
+      "context": {
+        "name": "Dark Deep Purple"
+      }
+    }
+  ]
+}

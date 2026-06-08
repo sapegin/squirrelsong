@@ -1,0 +1,102 @@
+# Squirrelsong {{name}} Theme for btop
+# https://sapegin.me/squirrelsong/
+
+# Main background, empty for terminal default, need to be empty if you want transparent background
+theme[main_bg]="{{terminalBackground}}"
+
+# Main text color
+theme[main_fg]="{{terminalForeground}}"
+
+# Title color for boxes
+theme[title]="{{titleForeground}}"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="{{linkForeground}}"
+
+# Background color of selected item in processes box
+theme[selected_bg]="{{selectionBackground}}"
+
+# Foreground color of selected item in processes box
+theme[selected_fg]="{{matchForeground}}"
+
+# Color of inactive/disabled text
+theme[inactive_fg]="{{disabledForeground}}"
+
+# Color of text appearing on top of graphs, i.e uptime and current network graph scaling
+theme[graph_text]="{{textForeground}}"
+
+# Background color of the percentage meters
+theme[meter_bg]="{{secondaryUiBackground}}"
+
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="{{magentaContrast}}"
+
+# Cpu box outline color
+theme[cpu_box]="{{blueContrast}}"
+
+# Memory/disks box outline color
+theme[mem_box]="{{greenContrast}}"
+
+# Net up/down box outline color
+theme[net_box]="{{tealContrast}}"
+
+# Processes box outline color
+theme[proc_box]="{{magentaContrast}}"
+
+# Box divider line and small boxes line color
+theme[div_line]="{{border}}"
+
+# Temperature graph colors
+theme[temp_start]="{{blue}}"
+theme[temp_mid]="{{yellow}}"
+theme[temp_end]="{{redContrast}}"
+
+# CPU graph colors
+theme[cpu_start]="{{blue}}"
+theme[cpu_mid]="{{magenta}}"
+theme[cpu_end]="{{magentaContrast}}"
+
+# Mem/Disk free meter
+theme[free_start]="{{greenDim}}"
+theme[free_mid]="{{green}}"
+theme[free_end]="{{greenContrast}}"
+
+# Mem/Disk cached meter
+theme[cached_start]="{{tealDim}}"
+theme[cached_mid]="{{teal}}"
+theme[cached_end]="{{tealContrast}}"
+
+# Mem/Disk available meter
+theme[available_start]="{{blueDim}}"
+theme[available_mid]="{{blue}}"
+theme[available_end]="{{blueContrast}}"
+
+# Mem/Disk used meter
+theme[used_start]="{{yellowDim}}"
+theme[used_mid]="{{orange}}"
+theme[used_end]="{{orangeContrast}}"
+
+# Download graph colors
+theme[download_start]="{{tealDim}}"
+theme[download_mid]="{{teal}}"
+theme[download_end]="{{tealContrast}}"
+
+# Upload graph colors
+theme[upload_start]="{{blueDim}}"
+theme[upload_mid]="{{blue}}"
+theme[upload_end]="{{blueContrast}}"
+
+# Process box color gradient for threads, mem and cpu usage
+theme[process_start]="{{yellowDim}}"
+theme[process_mid]="{{yellow}}"
+theme[process_end]="{{yellowContrast}}"
+
+# Process list pausing and process following banner colors
+theme[proc_pause_bg]="{{warningBackground}}"
+theme[proc_follow_bg]="{{infoBackground}}"
+theme[proc_banner_bg]="{{selectionBackground}}"
+theme[proc_banner_fg]="{{titleForeground}}"
+
+# Followed process row colors
+theme[followed_bg]="{{infoBackground}}"
+theme[followed_fg]="{{titleForeground}}"
