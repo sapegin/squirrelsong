@@ -1,7 +1,5 @@
 # Squirrelsong Theme for [btop](https://github.com/aristocratos/btop)
 
-Comes in light and dark (and dark deep purple) variants.
-
 ![Squirrelsong Dark Deep Purple theme for Btop](screenshot-dark.png)
 
 ## Installation from GitHub
