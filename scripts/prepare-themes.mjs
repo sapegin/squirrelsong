@@ -218,9 +218,13 @@ for (const [key] of Object.entries(schemes.light)) {
   sharedScheme[`darkDp:${key}`] = schemes.darkDp[key];
 }
 
-const configs = fs.globSync('themes/*/config.json').toSorted();
+const configs = fs.globSync('themes/**/config.json').toSorted();
 
 for (const configFile of configs) {
+  if (configFile.includes('node_modules')) {
+    continue;
+  }
+
   const folder = path.dirname(configFile);
   console.log(
     '👉',
