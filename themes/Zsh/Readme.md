@@ -6,7 +6,7 @@
 
 ### Installing from GitHub
 
-1. Copy [fzf-squirrelsong-dark.sh](./fzf-squirrelsong-dark.sh) or [fzf-squirrelsong-dark-dp.sh](./fzf-squirrelsong-dark-dp.sh) to your dotfiles.
+1. Copy [fzf-squirrelsong-dark.sh](./fzf/fzf-squirrelsong-dark.sh) or [fzf-squirrelsong-dark-dp.sh](./fzf/fzf-squirrelsong-dark-dp.sh) to your dotfiles.
 2. Add the following to your `~/.bashrc`, `~/.zshrc`, or any other file that your shell loads on startup.
 
 ```shell
@@ -17,7 +17,7 @@ source fzf-squirrelsong-dark.sh
 
 ### Installing from GitHub
 
-1. Copy [fast-syntax-highlighting-squirrelsong.ini](./fast-syntax-highlighting-squirrelsong.ini) to your dotfiles.
+1. Copy [fast-syntax-highlighting-squirrelsong.ini](./fast-syntax-highlighting/fast-syntax-highlighting-squirrelsong.ini) to your dotfiles.
 2. Load the plugin, then apply the theme:
 
 ```shell
