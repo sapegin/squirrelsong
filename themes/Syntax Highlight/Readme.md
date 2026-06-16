@@ -7,4 +7,4 @@
 3. Open **Add** dropdown at the bottom, and choose **Import**.
 4. Select `Squirrelsong Light.theme`.
 5. Go to **General** tab.
-5. Select **Squirrelsong Light** in the **Color scheme/Light** menu.
+6. Select **Squirrelsong Light** in the **Color scheme/Light** menu.
