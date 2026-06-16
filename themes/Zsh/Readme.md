@@ -9,15 +9,15 @@
 1. Copy [fzf-squirrelsong-dark.sh](./fzf/fzf-squirrelsong-dark.sh) or [fzf-squirrelsong-dark-dp.sh](./fzf/fzf-squirrelsong-dark-dp.sh) to your dotfiles.
 2. Add the following to your `~/.bashrc`, `~/.zshrc`, or any other file that your shell loads on startup.
 
-```shell
-source fzf-squirrelsong-dark.sh
-```
+   ```shell
+   source fzf-squirrelsong-dark.sh
+   ```
 
-1. Reference in your `FZF_DEFAULT_OPTS` setup
+3. Reference in your `FZF_DEFAULT_OPTS` setup:
 
-```shell
-export FZF_DEFAULT_OPTS="--color '$FZF_COLORS'"
-```
+   ```shell
+   export FZF_DEFAULT_OPTS="--color '$FZF_COLORS'"
+   ```
 
 ## [zsh-fast-syntax-highlighting](https://github.com/zdharma-continuum/fast-syntax-highlighting)
 
