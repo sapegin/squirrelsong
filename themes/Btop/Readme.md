@@ -5,13 +5,11 @@
 ## Installation from GitHub
 
 1. Copy the theme you want to your btop themes directory:
-
    - [`squirrelsong-light.theme`](./squirrelsong-light.theme)
    - [`squirrelsong-dark.theme`](./squirrelsong-dark.theme)
    - [`squirrelsong-dark-deep-purple.theme`](./squirrelsong-dark-deep-purple.theme)
 
    The btop themes directory is:
-
    - `$XDG_CONFIG_HOME/btop/themes`, if `$XDG_CONFIG_HOME` is set
    - `~/.config/btop/themes`, otherwise
 

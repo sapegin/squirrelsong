@@ -13,6 +13,12 @@
 source fzf-squirrelsong-dark.sh
 ```
 
+1. Reference in your `FZF_DEFAULT_OPTS` setup
+
+```shell
+export FZF_DEFAULT_OPTS="--color '$FZF_COLORS'"
+```
+
 ## [zsh-fast-syntax-highlighting](https://github.com/zdharma-continuum/fast-syntax-highlighting)
 
 ### Installing from GitHub
