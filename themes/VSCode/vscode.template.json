@@ -278,6 +278,7 @@
     "list.activeSelectionBackground": "{{activeBackground}}",
     "list.activeSelectionForeground": "{{activeForeground}}",
     "list.activeSelectionIconForeground": "{{activeIcon}}",
+    "list.dropBackground": "{{hoverBackground}}",
     "list.errorForeground": "{{errorForeground}}",
     "list.focusAndSelectionOutline": "{{border}}",
     "list.focusBackground": "{{activeBackground}}",

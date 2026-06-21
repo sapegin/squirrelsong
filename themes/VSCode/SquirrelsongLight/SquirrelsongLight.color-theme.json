@@ -278,6 +278,7 @@
     "list.activeSelectionBackground": "#dbd7e0",
     "list.activeSelectionForeground": "#4c4b4e",
     "list.activeSelectionIconForeground": "#4c4b4e",
+    "list.dropBackground": "#e8e5eb",
     "list.errorForeground": "#c06159",
     "list.focusAndSelectionOutline": "#c9c4cf",
     "list.focusBackground": "#dbd7e0",
