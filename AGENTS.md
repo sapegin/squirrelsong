@@ -26,7 +26,7 @@ Dark themes comes in two variants:
 ```sh
 npm install                # install deps
 npm run prepare-extensions # generate browser extensions
-npm prepare-themes         # generate theme files based on templates
+npm run prepare-themes     # generate theme files based on templates
 npm test                   # lint code and colors
 npm run format             # format code
 ```
