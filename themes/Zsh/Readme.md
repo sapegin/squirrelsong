@@ -2,6 +2,8 @@
 
 ![Squirrelsong dark deep purple theme for fzf](screenshot-dark-dp.jpg)
 
+![Squirrelsong light theme for fzf](screenshot-light.jpg)
+
 ## [fzf](https://github.com/junegunn/fzf)
 
 ### Installing from GitHub
