@@ -48,7 +48,7 @@
   "filePanelsColoringRules_v1": [
     {
       "name": "selected",
-      "regular": "#e87da4",
+      "regular": "#db7097",
       "focused": "#fae1ea",
       "filter": {
         "selected": true
@@ -83,7 +83,7 @@
   "terminalAnsiColor6": "#3e816e",
   "terminalAnsiColor7": "#78737d",
   "terminalAnsiColor8": "#8c8792",
-  "terminalAnsiColor9": "#e87da4",
+  "terminalAnsiColor9": "#db7097",
   "terminalAnsiColorA": "#9bae7e",
   "terminalAnsiColorB": "#de9e59",
   "terminalAnsiColorC": "#80a4be",

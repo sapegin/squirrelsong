@@ -28,7 +28,7 @@ const PALETTE = {
   '#dd7878': '#d67e76', // flamingo → red
   '#df8e1d': '#de9e59', // yellow   → orange
   '#e64553': '#c06159', // maroon   → redContrast
-  '#ea76cb': '#e87da4', // pink     → brightPink
+  '#ea76cb': '#db7097', // pink     → brightPink
   '#fe640b': '#e4c158', // peach    → yellow
   '#fff': '#fff', // white
 };

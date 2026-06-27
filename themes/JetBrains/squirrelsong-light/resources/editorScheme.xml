@@ -60,7 +60,7 @@
     <option name="INLINE_REFACTORING_SETTINGS_HOVERED" value="9c96a2" />
     <option name="LINE_NUMBERS_COLOR" value="9c96a2" />
     <option name="LOOKUP_COLOR" value="f7f6f9" />
-    <option name="MATCHED_BRACES_INDENT_GUIDE_COLOR" value="e87da4" />
+    <option name="MATCHED_BRACES_INDENT_GUIDE_COLOR" value="db7097" />
     <option name="METHOD_SEPARATORS_COLOR" value="5f9b8d" />
     <option name="MODIFIED_LINES_COLOR" value="bfd1de" />
     <option name="MODIFIED_TAB_ICON" value="80a4be" />
@@ -1620,7 +1620,7 @@
     </option>
     <option name="MATCHED_BRACE_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="e87da4" />
+        <option name="FOREGROUND" value="db7097" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -2237,7 +2237,7 @@
     <option name="SEARCH_RESULT_ATTRIBUTES">
       <value>
         <option name="BACKGROUND" value="fae1ea" />
-        <option name="EFFECT_COLOR" value="e87da4" />
+        <option name="EFFECT_COLOR" value="db7097" />
       </value>
     </option>
     <option name="SMARTY_BAD_CHARACTER">

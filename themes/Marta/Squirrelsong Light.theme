@@ -44,8 +44,8 @@ files {
         current #f7f6f9
         currentSelected #fae1ea
         hidden #78737d
-        matched #e87da4
-        selected #e87da4
+        matched #db7097
+        selected #db7097
 
         highlighting1 #4b7b97
         highlighting2 #657d38

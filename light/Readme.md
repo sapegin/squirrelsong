@@ -79,8 +79,8 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=e8d8a5" width="20" height="20" alt=""> | yellowDim | #e8d8a5 | 232, 216, 165 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=f7f0da" width="20" height="20" alt=""> | yellowDimer | #f7f0da | 247, 240, 218 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=bf8a18" width="20" height="20" alt=""> | yellowContrast | #bf8a18 | 179, 145, 25 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=e87da4" width="20" height="20" alt=""> | brightPink | #e87da4 | 232, 125, 164 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=f0a8c2" width="20" height="20" alt=""> | brightPinkDim | #f0a8c2 | 240, 168, 194 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=db7097" width="20" height="20" alt=""> | brightPink | #db7097 | 232, 125, 164 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=e698b5" width="20" height="20" alt=""> | brightPinkDim | #e698b5 | 240, 168, 194 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=fae1ea" width="20" height="20" alt=""> | brightPinkDimer | #fae1ea | 250, 225, 234 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=f5da70" width="20" height="20" alt=""> | brightYellow | #f5da70 | 245, 218, 112 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=f8e7a0" width="20" height="20" alt=""> | brightYellowDim | #f8e7a0 | 248, 231, 160 |
