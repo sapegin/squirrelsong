@@ -14,7 +14,7 @@ selection_bg = '#574538'
 
 split = '#453327'
 
-visual_bell = "#ce574a"
+visual_bell = "#ca5a83"
 
 ansi = [
   '#5b4839',
@@ -29,7 +29,7 @@ ansi = [
 
 brights = [
   '#695444',
-  '#ce574a',
+  '#ca5a83',
   '#709855',
   '#e2c358',
   '#63a2d6',

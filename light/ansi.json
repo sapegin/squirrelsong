@@ -14,7 +14,7 @@
   "terminalMagenta": "magentaContrast",
   "terminalBrightMagenta": "magenta",
   "terminalRed": "redContrast",
-  "terminalBrightRed": "red",
+  "terminalBrightRed": "brightPink",
   "terminalYellow": "orangeContrast",
   "terminalBrightYellow": "orange"
 }

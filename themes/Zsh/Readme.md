@@ -6,11 +6,11 @@
 
 ### Installing from GitHub
 
-1. Copy [fzf-squirrelsong-dark.sh](./fzf/fzf-squirrelsong-dark.sh) or [fzf-squirrelsong-dark-dp.sh](./fzf/fzf-squirrelsong-dark-dp.sh) to your dotfiles.
+1. Copy [fzf-squirrelsong.sh](./fzf/fzf-squirrelsong.sh) or [fzf-squirrelsong-dp.sh](./fzf/fzf-squirrelsong-dp.sh) to your dotfiles.
 2. Add the following to your `~/.bashrc`, `~/.zshrc`, or any other file that your shell loads on startup.
 
    ```shell
-   source fzf-squirrelsong-dark.sh
+   source fzf-squirrelsong.sh
    ```
 
 3. Reference in your `FZF_DEFAULT_OPTS` setup:
