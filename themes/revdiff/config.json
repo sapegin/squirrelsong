@@ -1,0 +1,34 @@
+{
+  "themes": [
+    {
+      "file": "squirrelsong-dark-deep-purple",
+      "scheme": "darkDp",
+      "context": {
+        "name": "squirrelsong-dark-deep-purple",
+        "description": "warm, muted deep purple theme with transparent chrome and a lavender accent",
+        "accent": "purple070",
+        "insertedBackground": "greenDim",
+        "deletedBackground": "redDim",
+        "insertedWordBackground": "green",
+        "deletedWordBackground": "red",
+        "cursorBackground": "",
+        "treeBackground": "",
+        "statusColors": "color-status-fg = {{accent}}",
+        "chromaStyle": "rose-pine-moon"
+      }
+    },
+    {
+      "file": "squirrelsong-light",
+      "scheme": "light",
+      "context": {
+        "name": "squirrelsong-light",
+        "description": "warm, muted light theme with white panes and a yellow accent",
+        "accent": "yellowContrast",
+        "cursorBackground": "",
+        "treeBackground": "color-tree-bg = {{textBackground}}",
+        "statusColors": "color-status-fg = {{terminalForeground}}\ncolor-status-bg = {{textBackground}}",
+        "chromaStyle": "rose-pine-dawn"
+      }
+    }
+  ]
+}

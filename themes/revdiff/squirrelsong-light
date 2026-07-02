@@ -1,0 +1,28 @@
+# name: squirrelsong-light
+# description: warm, muted light theme with white panes and a yellow accent
+# author: Artem Sapegin
+
+chroma-style = rose-pine-dawn
+color-accent = #bf8a18
+color-border = #c9c4cf
+color-normal = #4c4b4e
+color-muted = #8c8792
+color-selected-fg = #4c4b4e
+color-selected-bg = #f8e7a0
+color-annotation = #c88539
+color-cursor-fg = #bf8a18
+
+color-add-fg = #657d38
+color-add-bg = #f2f4f1
+color-remove-fg = #c06159
+color-remove-bg = #faf4f4
+color-word-add-bg = #dde2d7
+color-word-remove-bg = #f5e5e4
+color-modify-fg = #c88539
+color-modify-bg = #f7e7d5
+color-tree-bg = #fdfdfe
+color-diff-bg = #fdfdfe
+color-status-fg = #4c4b4e
+color-status-bg = #fdfdfe
+color-search-fg = #4c4b4e
+color-search-bg = #e698b5

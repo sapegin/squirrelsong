@@ -60,6 +60,8 @@ const EXTRA_FILES = [
   // Files without extension
   'themes/Ghostty/Squirrelsong Dark',
   'themes/Ghostty/Squirrelsong Dark Deep Purple',
+  'themes/revdiff/squirrelsong-light',
+  'themes/revdiff/squirrelsong-dark-deep-purple',
 ];
 
 const IGNORES = [

@@ -1,0 +1,27 @@
+# name: squirrelsong-dark-deep-purple
+# description: warm, muted deep purple theme with transparent chrome and a lavender accent
+# author: Artem Sapegin
+
+chroma-style = rose-pine-moon
+color-accent = #ae95c7
+color-border = #644e88
+color-normal = #bea3d9
+color-muted = #866db0
+color-selected-fg = #bea3d9
+color-selected-bg = #4c3c6b
+color-annotation = #d8a851
+color-cursor-fg = #ae95c7
+
+color-add-fg = #709855
+color-add-bg = #44603b
+color-remove-fg = #ce574a
+color-remove-bg = #703a2f
+color-word-add-bg = #558240
+color-word-remove-bg = #ac493e
+color-modify-fg = #d8a851
+color-modify-bg = #503d20
+
+color-diff-bg = #271e38
+color-status-fg = #ae95c7
+color-search-fg = #cbb5e3
+color-search-bg = #a65472
