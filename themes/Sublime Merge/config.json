@@ -1,0 +1,41 @@
+{
+  "themes": [
+    {
+      "file": "Squirrelsong Light/Squirrelsong Light.sublime-theme",
+      "template": "sublime-merge.template.sublime-theme",
+      "scheme": "light"
+    },
+    {
+      "file": "Squirrelsong Light/Squirrelsong Light.sublime-color-scheme",
+      "template": "sublime-merge-color-scheme.template.sublime-color-scheme",
+      "scheme": "light",
+      "context": {
+        "name": "Light"
+      }
+    },
+    {
+      "file": "Squirrelsong Light/Commit Message - Squirrelsong Light.sublime-settings",
+      "template": "sublime-merge-settings.template.sublime-settings",
+      "scheme": "light",
+      "context": {
+        "colorSchemeFile": "Squirrelsong Light.sublime-color-scheme"
+      }
+    },
+    {
+      "file": "Squirrelsong Light/File Mode - Squirrelsong Light.sublime-settings",
+      "template": "sublime-merge-settings.template.sublime-settings",
+      "scheme": "light",
+      "context": {
+        "colorSchemeFile": "Squirrelsong Light.sublime-color-scheme"
+      }
+    },
+    {
+      "file": "Squirrelsong Light/Git Output - Squirrelsong Light.sublime-settings",
+      "template": "sublime-merge-settings.template.sublime-settings",
+      "scheme": "light",
+      "context": {
+        "colorSchemeFile": "Squirrelsong Light.sublime-color-scheme"
+      }
+    }
+  ]
+}

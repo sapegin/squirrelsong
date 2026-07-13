@@ -1,0 +1,214 @@
+{
+  "name": "Squirrelsong Light",
+  "author": "Artem Sapegin",
+  "variables": {
+    "foreground": "#78737d",
+    "background": "#fdfdfe",
+    "comment": "#9c96a2",
+    "selection": "#f8e7a0",
+    "selection_border": "#f5da70",
+    "find_highlight": "#f0a8c2",
+    "find_highlight_foreground": "#4c4b4e",
+    "accent": "#78737d"
+  },
+  "globals": {
+    "foreground": "var(foreground)",
+    "background": "var(background)",
+    "accent": "var(accent)",
+    "caret": "#78737d",
+    "block_caret": "#f8e7a0",
+    "line_highlight": "#f7f6f9",
+    "selection": "var(selection)",
+    "selection_border": "var(selection_border)",
+    "inactive_selection": "#fdf6de",
+    "misspelling": "#c06159",
+    "shadow": "#c9c4cf",
+    "active_guide": "#c9c4cf",
+    "stack_guide": "#4c4b4e",
+    "highlight": "#e87da4",
+    "find_highlight_foreground": "var(find_highlight_foreground)",
+    "find_highlight": "var(find_highlight)",
+    "brackets_options": "underline",
+    "brackets_foreground": "#5f9b8d",
+    "bracket_contents_options": "underline",
+    "bracket_contents_foreground": "#5f9b8d",
+    "tags_options": "stippled_underline",
+    "tags_foreground": "#ac9bc5"
+  },
+  "rules": [
+    {
+      "name": "Comment",
+      "scope": "comment, invalid.deprecated",
+      "foreground": "#9c96a2",
+      "font_style": ""
+    },
+    {
+      "name": "String",
+      "scope": "string",
+      "foreground": "#9bae7e",
+      "font_style": ""
+    },
+    {
+      "name": "Values",
+      "scope": "constant.numeric, constant.language.null, support.constant.property-value",
+      "foreground": "#de9e59",
+      "font_style": ""
+    },
+    {
+      "name": "Variable",
+      "scope": "variable, constant.character, constant.other, constant.language, entity.other.custom-property",
+      "foreground": "#80a4be",
+      "font_style": "italic"
+    },
+    {
+      "name": "Property/attribute",
+      "scope": "meta.property.object, meta.mapping.key, meta.mapping.key.json, support.type.property-name, entity.other.attribute-name",
+      "foreground": "#80a4be",
+      "font_style": ""
+    },
+    {
+      "name": "Keyword",
+      "scope": "keyword",
+      "foreground": "#ac9bc5",
+      "font_style": "bold"
+    },
+    {
+      "name": "Storage type",
+      "scope": "storage.type",
+      "foreground": "#ac9bc5",
+      "font_style": "bold"
+    },
+    {
+      "name": "Storage modifier",
+      "scope": "storage.modifier",
+      "foreground": "#ac9bc5",
+      "font_style": "bold"
+    },
+    {
+      "name": "Class name",
+      "scope": "entity.name.class, entity.other.inherited-class, entity.other.pseudo-class",
+      "foreground": "#5f9b8d",
+      "font_style": "bold"
+    },
+    {
+      "name": "At-rule",
+      "scope": "keyword.control.directive",
+      "foreground": "#5f9b8d",
+      "font_style": "bold"
+    },
+    {
+      "name": "Function name",
+      "scope": "entity.name.function",
+      "foreground": "#80a4be",
+      "font_style": "bold"
+    },
+    {
+      "name": "Function variable",
+      "scope": "variable.function",
+      "foreground": "#80a4be",
+      "font_style": "bold"
+    },
+    {
+      "name": "Function argument",
+      "scope": "variable.parameter",
+      "foreground": "#80a4be",
+      "font_style": "italic"
+    },
+    {
+      "name": "Tag name",
+      "scope": "entity.name.tag",
+      "foreground": "#ac9bc5",
+      "font_style": "bold"
+    },
+    {
+      "name": "Tag brackets",
+      "scope": "punctuation.definition.tag",
+      "foreground": "#ac9bc5",
+      "font_style": ""
+    },
+    {
+      "name": "Library function",
+      "scope": "support.function",
+      "foreground": "#80a4be",
+      "font_style": "bold"
+    },
+    {
+      "name": "Library constant",
+      "scope": "support.constant",
+      "foreground": "#80a4be",
+      "font_style": "italic"
+    },
+    {
+      "name": "Type",
+      "scope": "support.class, support.type, entity.name.type, entity.name.interface",
+      "foreground": "#5f9b8d",
+      "font_style": ""
+    },
+    {
+      "name": "Library type object",
+      "scope": "support.type.object",
+      "foreground": "#80a4be",
+      "font_style": ""
+    },
+    {
+      "name": "Library variable",
+      "scope": "support.other.variable",
+      "foreground": "#80a4be",
+      "font_style": "italic"
+    },
+    {
+      "name": "Important 1",
+      "scope": "keyword.other.important",
+      "foreground": "#d67e76",
+      "font_style": "bold"
+    },
+    {
+      "name": "Important 2",
+      "scope": "constant.other.character-class.escape",
+      "foreground": "#de9e59",
+      "font_style": "bold"
+    },
+    {
+      "name": "Important 3",
+      "scope": "keyword.control.anchor, variable.language.this, entity.other.attribute-name.id",
+      "foreground": "#e4c158",
+      "font_style": "bold"
+    },
+    {
+      "name": "Important 4",
+      "scope": "constant.character.entity",
+      "foreground": "#4c4b4e",
+      "font_style": "bold"
+    },
+    {
+      "name": "Control flow",
+      "scope": "keyword.declaration.function.arrow, punctuation.section.interpolation, keyword.operator.combinator",
+      "foreground": "#5f9b8d",
+      "font_style": "bold"
+    },
+    {
+      "name": "Operator",
+      "scope": "punctuation.definition.group, keyword.operator.quantifier, keyword.operator.assignment",
+      "foreground": "#5f9b8d",
+      "font_style": ""
+    },
+    {
+      "name": "Escape character",
+      "scope": "constant.character.escape",
+      "foreground": "#9bae7e",
+      "font_style": "bold"
+    },
+    {
+      "name": "Inserted",
+      "scope": "markup.inserted.diff, markup.inserted",
+      "foreground": "#9bae7e",
+      "font_style": ""
+    },
+    {
+      "name": "Deleted",
+      "scope": "invalid, markup.deleted.diff, markup.deleted",
+      "foreground": "#d67e76",
+      "font_style": ""
+    }
+  ]
+}

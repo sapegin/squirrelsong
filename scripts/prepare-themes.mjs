@@ -237,7 +237,8 @@ for (const configFile of configs) {
     continue;
   }
 
-  // Find a template: any file that has `.template.` in its name
+  // Find a template: any file that has `.template.` in its name. Apps with
+  // multiple generated file formats may override this per theme below.
   const templateFile = fs.globSync(path.join(folder, '*.template.*'))[0];
   if (
     templateFile === undefined &&
@@ -286,7 +287,16 @@ for (const configFile of configs) {
     if (theme.file === 'Readme.md') {
       applyReadmeTemplate(destFile, theme.scheme ?? 'theme', context);
     } else {
-      processTemplate(templateFile, destFile, context);
+      const currentTemplateFile = theme.template
+        ? path.join(folder, theme.template)
+        : templateFile;
+
+      if (fs.existsSync(currentTemplateFile) === false) {
+        console.error(`   🦀 Template file not found: ${currentTemplateFile}`);
+        continue;
+      }
+
+      processTemplate(currentTemplateFile, destFile, context);
     }
   }
 }

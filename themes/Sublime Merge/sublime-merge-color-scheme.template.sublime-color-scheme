@@ -1,0 +1,214 @@
+{
+  "name": "Squirrelsong {{name}}",
+  "author": "Artem Sapegin",
+  "variables": {
+    "foreground": "{{textForeground}}",
+    "background": "{{textBackground}}",
+    "comment": "{{comment}}",
+    "selection": "{{selectionBackground}}",
+    "selection_border": "{{selectionBase}}",
+    "find_highlight": "{{matchBackground}}",
+    "find_highlight_foreground": "{{matchForeground}}",
+    "accent": "{{focusBorder}}"
+  },
+  "globals": {
+    "foreground": "var(foreground)",
+    "background": "var(background)",
+    "accent": "var(accent)",
+    "caret": "{{textForeground}}",
+    "block_caret": "{{selectionBackground}}",
+    "line_highlight": "{{lineHighlightBackground}}",
+    "selection": "var(selection)",
+    "selection_border": "var(selection_border)",
+    "inactive_selection": "{{secondarySelectionBackground}}",
+    "misspelling": "{{errorForeground}}",
+    "shadow": "{{border}}",
+    "active_guide": "{{border}}",
+    "stack_guide": "{{activeBorder}}",
+    "highlight": "{{matchBase}}",
+    "find_highlight_foreground": "var(find_highlight_foreground)",
+    "find_highlight": "var(find_highlight)",
+    "brackets_options": "underline",
+    "brackets_foreground": "{{operator}}",
+    "bracket_contents_options": "underline",
+    "bracket_contents_foreground": "{{operator}}",
+    "tags_options": "stippled_underline",
+    "tags_foreground": "{{tagName}}"
+  },
+  "rules": [
+    {
+      "name": "Comment",
+      "scope": "comment, invalid.deprecated",
+      "foreground": "{{comment}}",
+      "font_style": "{{commentStyle}}"
+    },
+    {
+      "name": "String",
+      "scope": "string",
+      "foreground": "{{string}}",
+      "font_style": "{{stringStyle}}"
+    },
+    {
+      "name": "Values",
+      "scope": "constant.numeric, constant.language.null, support.constant.property-value",
+      "foreground": "{{value}}",
+      "font_style": "{{valueStyle}}"
+    },
+    {
+      "name": "Variable",
+      "scope": "variable, constant.character, constant.other, constant.language, entity.other.custom-property",
+      "foreground": "{{variable}}",
+      "font_style": "{{variableStyle}}"
+    },
+    {
+      "name": "Property/attribute",
+      "scope": "meta.property.object, meta.mapping.key, meta.mapping.key.json, support.type.property-name, entity.other.attribute-name",
+      "foreground": "{{property}}",
+      "font_style": "{{propertyStyle}}"
+    },
+    {
+      "name": "Keyword",
+      "scope": "keyword",
+      "foreground": "{{keyword}}",
+      "font_style": "{{keywordStyle}}"
+    },
+    {
+      "name": "Storage type",
+      "scope": "storage.type",
+      "foreground": "{{keyword}}",
+      "font_style": "{{keywordStyle}}"
+    },
+    {
+      "name": "Storage modifier",
+      "scope": "storage.modifier",
+      "foreground": "{{keyword}}",
+      "font_style": "{{keywordStyle}}"
+    },
+    {
+      "name": "Class name",
+      "scope": "entity.name.class, entity.other.inherited-class, entity.other.pseudo-class",
+      "foreground": "{{class}}",
+      "font_style": "{{classStyle}}"
+    },
+    {
+      "name": "At-rule",
+      "scope": "keyword.control.directive",
+      "foreground": "{{atRule}}",
+      "font_style": "{{atRuleStyle}}"
+    },
+    {
+      "name": "Function name",
+      "scope": "entity.name.function",
+      "foreground": "{{function}}",
+      "font_style": "{{functionStyle}}"
+    },
+    {
+      "name": "Function variable",
+      "scope": "variable.function",
+      "foreground": "{{function}}",
+      "font_style": "{{functionStyle}}"
+    },
+    {
+      "name": "Function argument",
+      "scope": "variable.parameter",
+      "foreground": "{{variable}}",
+      "font_style": "{{variableStyle}}"
+    },
+    {
+      "name": "Tag name",
+      "scope": "entity.name.tag",
+      "foreground": "{{tagName}}",
+      "font_style": "{{tagNameStyle}}"
+    },
+    {
+      "name": "Tag brackets",
+      "scope": "punctuation.definition.tag",
+      "foreground": "{{tagBrackets}}",
+      "font_style": "{{tagBracketsStyle}}"
+    },
+    {
+      "name": "Library function",
+      "scope": "support.function",
+      "foreground": "{{function}}",
+      "font_style": "{{functionStyle}}"
+    },
+    {
+      "name": "Library constant",
+      "scope": "support.constant",
+      "foreground": "{{variable}}",
+      "font_style": "{{variableStyle}}"
+    },
+    {
+      "name": "Type",
+      "scope": "support.class, support.type, entity.name.type, entity.name.interface",
+      "foreground": "{{type}}",
+      "font_style": "{{typeStyle}}"
+    },
+    {
+      "name": "Library type object",
+      "scope": "support.type.object",
+      "foreground": "{{namespace}}",
+      "font_style": "{{namespaceStyle}}"
+    },
+    {
+      "name": "Library variable",
+      "scope": "support.other.variable",
+      "foreground": "{{variable}}",
+      "font_style": "{{variableStyle}}"
+    },
+    {
+      "name": "Important 1",
+      "scope": "keyword.other.important",
+      "foreground": "{{important1}}",
+      "font_style": "{{important1Style}}"
+    },
+    {
+      "name": "Important 2",
+      "scope": "constant.other.character-class.escape",
+      "foreground": "{{important2}}",
+      "font_style": "{{important2Style}}"
+    },
+    {
+      "name": "Important 3",
+      "scope": "keyword.control.anchor, variable.language.this, entity.other.attribute-name.id",
+      "foreground": "{{important3}}",
+      "font_style": "{{important3Style}}"
+    },
+    {
+      "name": "Important 4",
+      "scope": "constant.character.entity",
+      "foreground": "{{important4}}",
+      "font_style": "{{important4Style}}"
+    },
+    {
+      "name": "Control flow",
+      "scope": "keyword.declaration.function.arrow, punctuation.section.interpolation, keyword.operator.combinator",
+      "foreground": "{{controlFlow}}",
+      "font_style": "{{controlFlowStyle}}"
+    },
+    {
+      "name": "Operator",
+      "scope": "punctuation.definition.group, keyword.operator.quantifier, keyword.operator.assignment",
+      "foreground": "{{operator}}",
+      "font_style": "{{operatorStyle}}"
+    },
+    {
+      "name": "Escape character",
+      "scope": "constant.character.escape",
+      "foreground": "{{escapeCharacter}}",
+      "font_style": "{{escapeCharacterStyle}}"
+    },
+    {
+      "name": "Inserted",
+      "scope": "markup.inserted.diff, markup.inserted",
+      "foreground": "{{inserted}}",
+      "font_style": "{{insertedStyle}}"
+    },
+    {
+      "name": "Deleted",
+      "scope": "invalid, markup.deleted.diff, markup.deleted",
+      "foreground": "{{deleted}}",
+      "font_style": "{{deletedStyle}}"
+    }
+  ]
+}
