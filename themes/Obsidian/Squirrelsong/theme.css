@@ -28,6 +28,7 @@ body,
   --touch-radius-s: 12px;
   --touch-radius-m: 12px;
 
+  --tab-outline-width: 0.5px;
   --input-border-width: 1px;
   --callout-border-width: 1px;
   --callout-title-weight: var(--sqrl-heading-weight);
@@ -236,7 +237,7 @@ body,
   --tab-text-color-focused-active-current: var(--sqrl-gray060);
   --tab-background-active: var(--sqrl-gray170);
   --tab-divider-color: var(--color-border-light);
-  --tab-outline-color: var(--sqrl-gray150);
+  --tab-outline-color: var(--sqrl-gray140);
   --tab-curve: 0;
 
   --blockquote-border-thickness: 4px;
