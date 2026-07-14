@@ -32,7 +32,7 @@
   },
   "publisher": "sapegin",
   "scripts": {
-    "prepublish": "cd ../../../; node scripts/prepare-vscode-icons.mjs",
+    "prepublish": "cd ../../../; node scripts/prepare-vscode-icons.ts",
     "publish": "vsce publish",
     "publish:ovsx": "npx ovsx publish"
   },

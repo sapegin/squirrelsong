@@ -1,4 +1,4 @@
-import { hexToRgb } from './hexToRgb.mjs';
+import { hexToRgb } from './hexToRgb.ts';
 
 // We use the original binary base64 data string created by Terminal.app and
 // patch the RGB float color values
@@ -12,7 +12,7 @@ AAAZAAAAAAAAAAAAAAAAAAAA2Q==
 `.trim();
 
 /** Returns base64 binary string for Terminal.app theme */
-export function createNSKeyedArchiverColor(hexColor) {
+export function createNSKeyedArchiverColor(hexColor: string): string {
   const [r, g, b] = hexToRgb(hexColor);
 
   // Decode the base64 template to a binary buffer
@@ -45,7 +45,7 @@ export function createNSKeyedArchiverColor(hexColor) {
 
   // Encode back to base64 and format with proper line breaks
   const encoded = newBuffer.toString('base64');
-  const formatted = encoded.match(/.{1,68}/g).join('\n\t');
+  const formatted = encoded.match(/.{1,68}/g)?.join('\n\t') ?? encoded;
 
   return formatted;
 }

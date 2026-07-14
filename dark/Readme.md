@@ -67,7 +67,8 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=271e38" width="20" height="20" alt=""> | purple180 | #271e38 | 39, 30, 56 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=558240" width="20" height="20" alt=""> | green | #558240 | 85, 130, 64 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=44603b" width="20" height="20" alt=""> | greenDim | #44603b | 68, 96, 59 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=32363a" width="20" height="20" alt=""> | greenDimer | #32363a | 55, 68, 44 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=32363a" width="20" height="20" alt=""> | greenDimer | #32363a | 50, 54, 58 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=2d2b39" width="20" height="20" alt=""> | greenDimmest | #2d2b39 | 45, 43, 57 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=709855" width="20" height="20" alt=""> | greenContrast | #709855 | 112, 152, 85 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4f9593" width="20" height="20" alt=""> | teal | #4f9593 | 79, 149, 147 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=41635f" width="20" height="20" alt=""> | tealDim | #41635f | 65, 99, 95 |
@@ -83,7 +84,8 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=9672d4" width="20" height="20" alt=""> | magentaContrast | #9672d4 | 150, 114, 212 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ac493e" width="20" height="20" alt=""> | red | #ac493e | 172, 73, 62 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=703a2f" width="20" height="20" alt=""> | redDim | #703a2f | 112, 58, 47 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=44283a" width="20" height="20" alt=""> | redDimer | #44283a | 85, 47, 37 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=44283a" width="20" height="20" alt=""> | redDimer | #44283a | 68, 40, 58 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=332239" width="20" height="20" alt=""> | redDimmest | #332239 | 51, 34, 57 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ce574a" width="20" height="20" alt=""> | redContrast | #ce574a | 206, 87, 74 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=b18433" width="20" height="20" alt=""> | orange | #b18433 | 177, 132, 51 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=73572a" width="20" height="20" alt=""> | orangeDim | #73572a | 115, 87, 42 |
@@ -94,8 +96,8 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=7d683a" width="20" height="20" alt=""> | yellowDimer | #7d683a | 125, 104, 58 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=e2c358" width="20" height="20" alt=""> | yellowContrast | #e2c358 | 226, 195, 88 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=ca5a83" width="20" height="20" alt=""> | brightPink | #ca5a83 | 202, 90, 131 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=97576f" width="20" height="20" alt=""> | brightPinkDim | #97576f | 151, 87, 111 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=482a47" width="20" height="20" alt=""> | brightPinkDimer | #482a47 | 72, 42, 71 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=a65472" width="20" height="20" alt=""> | brightPinkDim | #a65472 | 166, 84, 114 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=5e375c" width="20" height="20" alt=""> | brightPinkDimer | #5e375c | 94, 55, 92 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=6a5444" width="20" height="20" alt=""> | brightYellow | #6a5444 | 106, 84, 68 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=574538" width="20" height="20" alt=""> | brightYellowDim | #574538 | 87, 69, 56 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=41352a" width="20" height="20" alt=""> | brightYellowDimer | #41352a | 65, 53, 42 |

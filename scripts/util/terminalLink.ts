@@ -5,7 +5,7 @@ const SEP = ';';
 /**
  * Create a clickable link in the terminal.
  */
-export function terminalLink(text, url) {
+export function terminalLink(text: string, url: string): string {
   const openLink = `${OSC}8${SEP}${SEP}${url}${BEL}`;
   const closeLink = `${OSC}8${SEP}${SEP}${BEL}`;
   return openLink + text + closeLink;

@@ -37,4 +37,4 @@ npm run format             # format code
 2. Create a generic template that is using semantic colors tokens (example: `themes/Ghostty/ghostty.template.ini`).
 3. Create `config.json` file with a list of generated from template theme files (example: `themes/Ghostty/config.json`)..
 4. Create `Readme.md` with installation instructions
-5. Update `scripts/prepare-themes.mjs` to generate each requested theme (`Light`, `Dark`, `Dark Deep Purple`)
+5. Update `scripts/prepare-themes.ts` to generate each requested theme (`Light`, `Dark`, `Dark Deep Purple`)

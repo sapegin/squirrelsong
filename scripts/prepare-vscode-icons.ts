@@ -8,11 +8,11 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
-import ADMZip from 'adm-zip';
+import { unzipArchive } from './util/zip.ts';
 
 // Catppuccin Latte hex → Squirrelsong Light hex.
 // Covers every color that appears in the upstream `icons/latte/*.svg` files.
-const PALETTE = {
+const PALETTE: Record<string, string> = {
   '#04a5e5': '#80a4be', // sky      → blue
   '#179299': '#5f9b8d', // teal     → teal
   '#1e66f5': '#80a4be', // blue     → blue
@@ -48,17 +48,25 @@ const THEME_JSON_OUT = path.join(
   'squirrelppuccin-icons-light.icon-theme.json'
 );
 
-function readVersion(packageFile) {
-  return JSON.parse(fs.readFileSync(packageFile, 'utf8')).version;
+interface IconMappings {
+  languageIds: Record<string, string>;
+  fileExtensions: Record<string, string>;
+  fileNames: Record<string, string>;
 }
 
-function updateLocalVersion(version) {
-  const pkg = JSON.parse(fs.readFileSync(PACKAGE_JSON, 'utf8'));
+function readVersion(packageFile: string): string {
+  return JSON.parse(fs.readFileSync(packageFile, 'utf8')).version as string;
+}
+
+function updateLocalVersion(version: string): void {
+  const pkg = JSON.parse(fs.readFileSync(PACKAGE_JSON, 'utf8')) as {
+    version: string;
+  };
   pkg.version = version;
   fs.writeFileSync(PACKAGE_JSON, `${JSON.stringify(pkg, null, 2)}\n`);
 }
 
-async function downloadUpstream() {
+async function downloadUpstream(): Promise<Buffer> {
   console.log(`[ICONS] Downloading catppuccin/vscode-icons@main…`);
 
   const response = await fetch(UPSTREAM_ZIP, { redirect: 'follow' });
@@ -70,34 +78,32 @@ async function downloadUpstream() {
   throw new Error(`Could not download catppuccin/vscode-icons at ref "main"`);
 }
 
-function extract(buffer) {
+function extract(buffer: Buffer): string {
   const tempRoot = fs.mkdtempSync(
     path.join(os.tmpdir(), 'squirrelppuccin-icons-')
   );
-  const zip = new ADMZip(buffer);
-  zip.extractAllTo(tempRoot, true);
+  const zipPath = path.join(tempRoot, 'upstream.zip');
+  fs.writeFileSync(zipPath, buffer);
+  unzipArchive(zipPath, tempRoot);
 
-  const [rootEntry] = fs.readdirSync(tempRoot);
+  const rootEntry = fs
+    .readdirSync(tempRoot)
+    .find((entry) => entry !== 'upstream.zip');
   if (!rootEntry) {
     throw new Error('Upstream zip appears empty');
   }
   return path.join(tempRoot, rootEntry);
 }
 
-async function loadMappings(upstreamRoot) {
-  const fileIconsModule = await import(
+async function loadMappings(upstreamRoot: string): Promise<IconMappings> {
+  const { languageIds, fileExtensions, fileNames } = (await import(
     pathToFileURL(path.join(upstreamRoot, 'src/defaults/fileIcons.ts')).href
-  );
+  )) as IconMappings;
 
-  return {
-    fileIcons: fileIconsModule.fileIcons,
-    languageIds: fileIconsModule.languageIds,
-    fileExtensions: fileIconsModule.fileExtensions,
-    fileNames: fileIconsModule.fileNames,
-  };
+  return { languageIds, fileExtensions, fileNames };
 }
 
-function recolorSvg(svg, unknownColors) {
+function recolorSvg(svg: string, unknownColors: Set<string>): string {
   return svg.replaceAll(/#[0-9a-fA-F]{3,8}/g, (match) => {
     const color = match.toLowerCase();
     if (!KNOWN_COLORS.has(color)) {
@@ -107,7 +113,7 @@ function recolorSvg(svg, unknownColors) {
   });
 }
 
-function copyAndRecolorIcons(upstreamRoot) {
+function copyAndRecolorIcons(upstreamRoot: string): string[] {
   const sourceDir = path.join(upstreamRoot, 'icons/latte');
   fs.rmSync(ICONS_OUT_DIR, { recursive: true, force: true });
   fs.mkdirSync(ICONS_OUT_DIR, { recursive: true });
@@ -121,8 +127,8 @@ function copyAndRecolorIcons(upstreamRoot) {
       (name) => name.endsWith('.svg') && name.startsWith('folder_') === false
     );
 
-  const unknownColors = new Set();
-  const iconNames = [];
+  const unknownColors = new Set<string>();
+  const iconNames: string[] = [];
 
   for (const fileName of svgFiles) {
     const svg = fs.readFileSync(path.join(sourceDir, fileName), 'utf8');
@@ -144,7 +150,7 @@ function copyAndRecolorIcons(upstreamRoot) {
   return iconNames;
 }
 
-function buildIconDefinitions(iconNames) {
+function buildIconDefinitions(iconNames: string[]) {
   return Object.fromEntries(
     iconNames
       .toSorted()
@@ -152,7 +158,7 @@ function buildIconDefinitions(iconNames) {
   );
 }
 
-function writeThemeManifest(mappings, iconNames) {
+function writeThemeManifest(mappings: IconMappings, iconNames: string[]): void {
   const manifest = {
     hidesExplorerArrows: false,
     file: '_file',

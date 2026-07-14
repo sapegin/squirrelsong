@@ -3,7 +3,7 @@
  */
 
 import fs from 'node:fs';
-import ADMZip from 'adm-zip';
+import { zipDirectory } from './util/zip.ts';
 
 // ------------ 8< -- 8< ------------
 
@@ -24,9 +24,7 @@ fs.cpSync(
   }
 );
 
-const chromeLightDotZip = new ADMZip();
-chromeLightDotZip.addLocalFolder('./dist/chrome-light');
-chromeLightDotZip.writeZip(`./dist/chrome-light.zip`);
+zipDirectory('./dist/chrome-light', './dist/chrome-light.zip');
 
 // ------------ 8< -- 8< ------------
 
@@ -47,9 +45,7 @@ fs.cpSync(
   }
 );
 
-const chromeDarkDpDotZip = new ADMZip();
-chromeDarkDpDotZip.addLocalFolder('./dist/chrome-dark-dp');
-chromeDarkDpDotZip.writeZip(`./dist/chrome-dark-dp.zip`);
+zipDirectory('./dist/chrome-dark-dp', './dist/chrome-dark-dp.zip');
 
 // ------------ 8< -- 8< ------------
 
@@ -63,17 +59,16 @@ fs.copyFileSync(
   './dist/firefox-light/manifest.json'
 );
 
-const firefoxLightDotZip = new ADMZip();
-firefoxLightDotZip.addLocalFolder('./dist/firefox-light');
-firefoxLightDotZip.writeZip(`./dist/firefox-light.zip`);
+zipDirectory('./dist/firefox-light', './dist/firefox-light.zip');
 
 // ------------ 8< -- 8< ------------
 
 console.log();
 console.log(`[BUILD] Building Vivaldi theme… 🌕`);
 
-const vivaldiLightDotZip = new ADMZip();
-vivaldiLightDotZip.addLocalFolder('./themes/Vivaldi/theme-light');
-vivaldiLightDotZip.writeZip(`./themes/Vivaldi/Squirrelsong Light.zip`);
+zipDirectory(
+  './themes/Vivaldi/theme-light',
+  './themes/Vivaldi/Squirrelsong Light.zip'
+);
 
 console.log('[BUILD] Done 🦜');

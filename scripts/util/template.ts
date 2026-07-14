@@ -1,23 +1,25 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { hexToRgb } from './hexToRgb.mjs';
-import { stripJsonComments } from './stripJsonComments.mjs';
-import { createNSKeyedArchiverColor } from './terminal-app.mjs';
+import { hexToRgb } from './hexToRgb.ts';
+import { stripJsonComments } from './stripJsonComments.ts';
+import { createNSKeyedArchiverColor } from './terminal-app.ts';
+
+export type TemplateContext = Record<string, string>;
 
 /** Minimalistic check is a given string is a JSON object. */
-function isJson(string) {
+function isJson(string: string): boolean {
   return string.startsWith('{');
 }
 
 /**
  * Process a template file with Mustache-style placeholders and write the result
  * to destination file.
- *
- * @param {string} templatePath - Path to the template file
- * @param {string} destPath - Path to the destination file
- * @param {Object} context - Object with key-value pairs for substitution
  */
-export function processTemplate(templatePath, destPath, context) {
+export function processTemplate(
+  templatePath: string,
+  destPath: string,
+  context: TemplateContext
+): void {
   const template = fs.readFileSync(templatePath, 'utf8');
   const result = renderTemplate(template, context, templatePath);
   fs.mkdirSync(path.dirname(destPath), { recursive: true });
@@ -29,13 +31,12 @@ export function processTemplate(templatePath, destPath, context) {
  *
  * Supports basic transformation functions:
  * - rgb: returns color as RGB instead of HEX (`{{icon | rgb}}`)
- *
- * @param {string} template - Template string
- * @param {Object} context - Object with key-value pairs for substitution
- * @param {string} templatePath - Path to template file (for error messages)
- * @returns {string} Rendered template
  */
-export function renderTemplate(template, context, templatePath) {
+export function renderTemplate(
+  template: string,
+  context: TemplateContext,
+  templatePath: string
+): string {
   // Strip JSON comments if a template is JSON
   const cleanTemplate = isJson(template)
     ? stripJsonComments(template)
@@ -43,12 +44,12 @@ export function renderTemplate(template, context, templatePath) {
 
   return cleanTemplate.replaceAll(
     /\{\{([:\w]+)(?:\s*\|\s*(\w+))?\}\}/g,
-    (match, key, func, offset) => {
+    (match, key: string, func: string | undefined, offset: number) => {
       if (key in context === false) {
         // Key not found
         const lines = template.slice(0, Math.max(0, offset)).split('\n');
         const lineNumber = lines.length;
-        const columnNumber = lines.at(-1).length + 1;
+        const columnNumber = (lines.at(-1)?.length ?? 0) + 1;
 
         // Get surrounding context (3 lines before and after)
         const allLines = template.split('\n');
@@ -86,13 +87,13 @@ export function renderTemplate(template, context, templatePath) {
             return hexToRgb(color).join(', ');
           }
           case 'r': {
-            return hexToRgb(color)[0] / 255;
+            return String(hexToRgb(color)[0] / 255);
           }
           case 'g': {
-            return hexToRgb(color)[1] / 255;
+            return String(hexToRgb(color)[1] / 255);
           }
           case 'b': {
-            return hexToRgb(color)[2] / 255;
+            return String(hexToRgb(color)[2] / 255);
           }
           case 'nskeyed': {
             return createNSKeyedArchiverColor(color);
@@ -120,19 +121,17 @@ export function renderTemplate(template, context, templatePath) {
  * - A template definition: `<!-- template\n...\n-->`
  * - An apply marker: `<!-- apply:name -->`
  * - A code block immediately after the marker
- *
- * @param {string} filepath - Path to the markdown file to process
- * @param {string} name - Name of the apply marker to find (used in <!--
- *   apply:name -->)
- * @param {Object} context - Object with key-value pairs for template
- *   substitution
  */
-export function applyReadmeTemplate(filepath, name, context) {
+export function applyReadmeTemplate(
+  filepath: string,
+  name: string,
+  context: TemplateContext
+): void {
   const content = fs.readFileSync(filepath, 'utf8');
 
   // Read the template
   const templateMatch = content.match(/<!--\s*template\s*\n([\s\S]*?)\n-->/);
-  if (templateMatch === false) {
+  if (!templateMatch) {
     throw new Error(`No template comment found in ${filepath}`);
   }
   const template = templateMatch[1].trim();

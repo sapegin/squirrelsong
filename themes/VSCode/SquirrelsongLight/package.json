@@ -33,7 +33,7 @@
   },
   "publisher": "sapegin",
   "scripts": {
-    "prepublish": "cd ../../../; node scripts/prepare-themes.mjs",
+    "prepublish": "cd ../../../; node scripts/prepare-themes.ts",
     "publish": "vsce publish",
     "publish:ovsx": "npx ovsx publish"
   },

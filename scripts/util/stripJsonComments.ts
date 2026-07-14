@@ -1,4 +1,4 @@
-export function stripJsonComments(json) {
+export function stripJsonComments(json: string): string {
   return (
     json
       // Remove /* */ comments

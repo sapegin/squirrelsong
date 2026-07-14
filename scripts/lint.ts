@@ -10,18 +10,23 @@
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import { hexToRgb } from './util/hexToRgb.mjs';
-import { rgbToHex } from './util/rgbToHex.mjs';
-import { stripJsonComments } from './util/stripJsonComments.mjs';
-import { terminalLink } from './util/terminalLink.mjs';
+import { hexToRgb } from './util/hexToRgb.ts';
+import { rgbToHex } from './util/rgbToHex.ts';
+import { stripJsonComments } from './util/stripJsonComments.ts';
+import { terminalLink } from './util/terminalLink.ts';
+
+type LintGroup = 'themes' | 'dotfiles';
 
 let colorCount = 0;
 let errorCount = 0;
 let fileCount = 0;
 
-let currentGroup = 'themes';
+let currentGroup: LintGroup = 'themes';
 let currentFile = '';
-const errorsByGroup = { themes: [], dotfiles: [] };
+const errorsByGroup: Record<LintGroup, { file: string; value: string }[]> = {
+  themes: [],
+  dotfiles: [],
+};
 
 const DOTFILES_ROOT = path.join(os.homedir(), 'dotfiles');
 
@@ -79,7 +84,7 @@ const TRANSPARENT = [
   '#000000ff',
 ];
 
-const EXCEPTIONS = {
+const EXCEPTIONS: Record<string, string[]> = {
   'themes/Bartender/Readme.md': ['#e3e3e3', '#f4effc'],
   'themes/Ice/Readme.md': ['#e3e3e3', '#f4effc'],
   'dotfiles/firefox/chrome/userContent.css': [
@@ -100,13 +105,13 @@ const CUSTOM_LINTERS = [
     lintFunction: (file, validColors) => {
       const text = fs.readFileSync(file, 'utf8');
 
-      const matches = text.match(/<real>[^<]*<\/real>/gi);
-      const numbers = matches.map((x) =>
-        Number(x.replaceAll(/<\/?real>/gi, ''))
+      const matches = text.match(/<real>[^<]*<\/real>/gi) ?? [];
+      const numbers = matches.map((match) =>
+        Number(match.replaceAll(/<\/?real>/gi, ''))
       );
 
       // Group colors into chunks of 4: [[A, B, G, R], ...]
-      const colors = [];
+      const colors: number[][] = [];
       for (let i = 0; i < numbers.length; i += 4) {
         colors.push(numbers.slice(i, i + 4));
       }
@@ -148,9 +153,9 @@ const CUSTOM_LINTERS = [
           numberOfColors++;
 
           const [r, g, b] = [
-            rgbMatch[1] * 255,
-            rgbMatch[2] * 255,
-            rgbMatch[3] * 255,
+            Number(rgbMatch[1]) * 255,
+            Number(rgbMatch[2]) * 255,
+            Number(rgbMatch[3]) * 255,
           ];
           if (isValidRgbColor(r, g, b, validColors) === false) {
             achtung(`${rgbToHex(r, g, b)} (${r}, ${g}, ${b})`);
@@ -169,7 +174,7 @@ const CUSTOM_LINTERS = [
     condition: (file) =>
       file.includes('JetBrains') && file.endsWith('.theme.json'),
     lintFunction: (file, validColors, exceptions) => {
-      const theme = readJsonFile(file);
+      const theme = readJsonFile<{ colors: Record<string, string> }>(file);
 
       let numberOfColors = 0;
 
@@ -196,7 +201,7 @@ const CUSTOM_LINTERS = [
     // Matches all lines in the palette object ('#04a5e5': '#80a4be'), but
     // validate only the right color, as the left is the original color in the
     // Catppuccin theme.
-    condition: (file) => file.endsWith('sync-vscode-icons'),
+    condition: (file) => file.endsWith('prepare-vscode-icons.ts'),
     lintFunction: (file, validColors, exceptions) => {
       const text = fs.readFileSync(file, 'utf8');
 
@@ -209,7 +214,7 @@ const CUSTOM_LINTERS = [
           numberOfColors++;
           const color = value[1].toLowerCase();
           if (isValidHexColor(color, validColors, exceptions) === false) {
-            achtung(value);
+            achtung(value[1]);
           }
         }
       }
@@ -217,25 +222,32 @@ const CUSTOM_LINTERS = [
       done(numberOfColors);
     },
   },
-];
+] satisfies {
+  condition: (file: string) => boolean;
+  lintFunction: (
+    file: string,
+    validColors: string[],
+    exceptions: string[]
+  ) => void;
+}[];
 
-function achtung(value) {
+function achtung(value: string): void {
   console.error(`🦀 Invalid color:`, value);
   errorCount++;
   errorsByGroup[currentGroup].push({ file: currentFile, value });
 }
 
-function done(numberOfColors) {
+function done(numberOfColors: number): void {
   console.log(`   ${numberOfColors} colors found`);
   colorCount += numberOfColors;
   fileCount++;
 }
 
-function readJsonFile(file) {
-  return JSON.parse(stripJsonComments(fs.readFileSync(file, 'utf8')));
+function readJsonFile<T>(file: string): T {
+  return JSON.parse(stripJsonComments(fs.readFileSync(file, 'utf8'))) as T;
 }
 
-function isHexColor(value) {
+function isHexColor(value: unknown): value is string {
   if (typeof value !== 'string') {
     return false;
   }
@@ -246,7 +258,11 @@ function isHexColor(value) {
   );
 }
 
-function isValidHexColor(value, validColors, exceptions) {
+function isValidHexColor(
+  value: string,
+  validColors: string[],
+  exceptions: string[]
+): boolean {
   const color = value.toLowerCase();
 
   if (TRANSPARENT.includes(color)) {
@@ -267,7 +283,12 @@ function isValidHexColor(value, validColors, exceptions) {
   return false;
 }
 
-function isValidRgbColor(r, g, b, validColors) {
+function isValidRgbColor(
+  r: number,
+  g: number,
+  b: number,
+  validColors: string[]
+): boolean {
   for (const validHex of validColors) {
     const [validR, validG, validB] = hexToRgb(validHex);
     if (
@@ -282,7 +303,7 @@ function isValidRgbColor(r, g, b, validColors) {
 }
 
 /** Get a custom linter if available based on file name */
-function getCustomLinter(file) {
+function getCustomLinter(file: string) {
   for (const { condition, lintFunction } of CUSTOM_LINTERS) {
     if (condition(file)) {
       return lintFunction;
@@ -294,7 +315,11 @@ function getCustomLinter(file) {
  * Get the appropriate palette based on file name. All available colors as a
  * fallback.
  */
-function getPalette(filename, lightColors, darkColors) {
+function getPalette(
+  filename: string,
+  lightColors: string[],
+  darkColors: string[]
+): string[] {
   const lowerCaseFilename = filename.toLowerCase();
 
   if (lowerCaseFilename.includes('light')) {
@@ -307,7 +332,11 @@ function getPalette(filename, lightColors, darkColors) {
   return [...lightColors, ...darkColors];
 }
 
-function lintText(file, validColors, exceptions) {
+function lintText(
+  file: string,
+  validColors: string[],
+  exceptions: string[]
+): void {
   const text = fs.readFileSync(file, 'utf8');
 
   let numberOfColors = 0;
@@ -334,7 +363,12 @@ function lintText(file, validColors, exceptions) {
   done(numberOfColors);
 }
 
-function lint(files, lightColors, darkColors, group) {
+function lint(
+  files: string[],
+  lightColors: string[],
+  darkColors: string[],
+  group: LintGroup
+): void {
   currentGroup = group;
 
   const themesSorted = files.toSorted((a, b) => a.localeCompare(b, 'en'));
@@ -367,17 +401,12 @@ function lint(files, lightColors, darkColors, group) {
       continue;
     }
 
-    const extension = path.extname(file);
-    switch (extension) {
-      default: {
-        lintText(file, validColors, exceptions);
-      }
-    }
+    lintText(file, validColors, exceptions);
   }
 }
 
-const lightPalette = readJsonFile('light/palette.json');
-const darkPalette = readJsonFile('dark/palette.json');
+const lightPalette = readJsonFile<Record<string, string>>('light/palette.json');
+const darkPalette = readJsonFile<Record<string, string>>('dark/palette.json');
 
 console.log();
 console.log();
@@ -422,7 +451,7 @@ if (fs.existsSync(DOTFILES_ROOT)) {
   );
 }
 
-function printErrorSummary(group, label) {
+function printErrorSummary(group: LintGroup, label: string): void {
   const errors = errorsByGroup[group];
   if (errors.length === 0) {
     return;
