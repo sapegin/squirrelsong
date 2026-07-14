@@ -194,6 +194,7 @@ body,
   --background-modifier-success-rgb: var(--color-green-rgb);
   --background-modifier-message: var(--sqrl-gray120);
   --background-modifier-form-field: var(--sqrl-gray180);
+  --background-modifier-form-field-hover: var(--sqrl-gray180);
 
   /* Disable translucent blurred backgrounds */
   --blur-background: var(--background-primary);
@@ -456,7 +457,7 @@ body,
 
 /* Additional styles */
 
-/* All interactive elements should have pointer cursor and transition */
+/* All interactive elements should have transition */
 .tappable,
 .is-clickable,
 .clickable-icon,
@@ -466,19 +467,18 @@ input,
 button {
   transition: var(--transition);
 }
-.tappable,
-.is-clickable,
-.clickable-icon,
-.view-header-breadcrumb,
-button,
-input[type='checkbox'] {
-  cursor: var(--cursor);
-}
 
 /* Reduce insanity of new Liquid Glass style elements */
 .is-mobile .mod-raised {
   background-clip: initial;
   border: 1px solid var(--color-border-light);
+}
+
+/* Clickable icons */
+.is-mobile .clickable-icon,
+.is-mobile .view-action {
+  width: 2rem;
+  height: 2rem;
 }
 
 /* Button styles inspired by https://primary-theme.github.io */
@@ -730,7 +730,9 @@ body:not(.is-mobile)
 }
 .mobile-navbar-action .clickable-icon,
 .mobile-navbar-action button {
-  border-radius: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-l);
 }
 .is-floating-nav .mobile-navbar {
   height: calc(
@@ -775,6 +777,9 @@ body:not(.is-mobile)
   padding-inline: 0.5rem;
   border-radius: 0;
   overflow: hidden;
+  box-shadow: none;
+  border-top: 1px solid var(--color-border-base);
+  border-bottom: 1px solid var(--color-border-base);
 }
 .metadata-properties {
   margin-inline: 0.25rem;
@@ -852,6 +857,13 @@ input.prompt-input:focus-visible {
 
 .is-phone .prompt-input-container {
   margin-bottom: 0;
+}
+
+.prompt-input-container.mod-raised {
+  background: transparent;
+}
+.is-phone .prompt-input[type='text'] {
+  background: var(--background-modifier-form-field);
 }
 
 /* Search */
