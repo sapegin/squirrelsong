@@ -1,0 +1,29 @@
+name = "Squirrelsong Light"
+mode = "light"
+
+[colors]
+background = "#fdfdfe"
+foreground = "#4c4b4e"
+primary = "#4c4b4e"
+secondary = "#8c8792"
+accent = "#80a4be"
+success = "#657d38"
+warning = "#c88539"
+info = "#80a4be"
+destructive = "#c06159"
+
+[ui]
+cursor = "#4c4b4e"
+border = "#9c96a2"
+selection = "#f8e7a0"
+muted_foreground = "#9c96a2"
+
+[syntax]
+keyword = "#806f9b"
+string = "#657d38"
+number = "#c88539"
+comment = "#8c8792"
+function = "#4b7b97"
+variable = "#4b7b97"
+type = "#3e816e"
+operator = "#3e816e"

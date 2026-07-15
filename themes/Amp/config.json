@@ -1,0 +1,22 @@
+{
+  "themes": [
+    {
+      "file": "squirrelsong-light/colors.toml",
+      "scheme": "light",
+      "context": {
+        "displayName": "Light",
+        "mode": "light",
+        "selectionColor": "selectionBackground"
+      }
+    },
+    {
+      "file": "squirrelsong-dark-dp/colors.toml",
+      "scheme": "darkDp",
+      "context": {
+        "displayName": "Dark Deep Purple",
+        "mode": "dark",
+        "selectionColor": "terminalBlack"
+      }
+    }
+  ]
+}

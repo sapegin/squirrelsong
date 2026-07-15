@@ -1,0 +1,29 @@
+name = "Squirrelsong {{displayName}}"
+mode = "{{mode}}"
+
+[colors]
+background = "{{terminalBackground}}"
+foreground = "{{terminalForeground}}"
+primary = "{{terminalForeground}}"
+secondary = "{{terminalBrightBlack}}"
+accent = "{{terminalBrightBlue}}"
+success = "{{terminalGreen}}"
+warning = "{{terminalYellow}}"
+info = "{{terminalBrightBlue}}"
+destructive = "{{terminalRed}}"
+
+[ui]
+cursor = "{{terminalForeground}}"
+border = "{{terminalBlack}}"
+selection = "{{selectionColor}}"
+muted_foreground = "{{terminalBlack}}"
+
+[syntax]
+keyword = "{{terminalMagenta}}"
+string = "{{terminalGreen}}"
+number = "{{terminalYellow}}"
+comment = "{{terminalBrightBlack}}"
+function = "{{terminalBlue}}"
+variable = "{{terminalBlue}}"
+type = "{{terminalCyan}}"
+operator = "{{terminalCyan}}"

@@ -1,0 +1,29 @@
+name = "Squirrelsong Dark Deep Purple"
+mode = "dark"
+
+[colors]
+background = "#271e38"
+foreground = "#bea3d9"
+primary = "#bea3d9"
+secondary = "#7254a6"
+accent = "#63a2d6"
+success = "#558240"
+warning = "#ceb250"
+info = "#63a2d6"
+destructive = "#ac493e"
+
+[ui]
+cursor = "#bea3d9"
+border = "#644e88"
+selection = "#644e88"
+muted_foreground = "#644e88"
+
+[syntax]
+keyword = "#7f61b3"
+string = "#558240"
+number = "#ceb250"
+comment = "#7254a6"
+function = "#5993c2"
+variable = "#5993c2"
+type = "#4f9593"
+operator = "#4f9593"
