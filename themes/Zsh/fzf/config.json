@@ -1,0 +1,20 @@
+{
+  "themes": [
+    {
+      "file": "fzf-squirrelsong-light.sh",
+      "scheme": "light",
+      "mixin": "terminalLight",
+      "context": {
+        "name": "Light"
+      }
+    },
+    {
+      "file": "fzf-squirrelsong-dark-dp.sh",
+      "scheme": "darkDp",
+      "mixin": "terminalDarkDp",
+      "context": {
+        "name": "Dark Deep Purple"
+      }
+    }
+  ]
+}

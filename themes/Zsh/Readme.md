@@ -8,11 +8,14 @@
 
 ### Installing from GitHub
 
-1. Copy [fzf-squirrelsong.sh](./fzf/fzf-squirrelsong.sh) or [fzf-squirrelsong-dp.sh](./fzf/fzf-squirrelsong-dp.sh) to your dotfiles.
+1. Copy [fzf-squirrelsong-light.sh](./fzf/fzf-squirrelsong-light.sh) or [fzf-squirrelsong-dark-dp.sh](./fzf/fzf-squirrelsong-dark-dp.sh) to your dotfiles.
 2. Add the following to your `~/.bashrc`, `~/.zshrc`, or any other file that your shell loads on startup.
 
    ```shell
-   source fzf-squirrelsong.sh
+   case $TERM_THEME in
+   light) source fzf-squirrelsong-light.sh ;;
+   *) source fzf-squirrelsong-dark-dp.sh ;;
+   esac
    ```
 
 3. Reference in your `FZF_DEFAULT_OPTS` setup:
@@ -21,14 +24,25 @@
    export FZF_DEFAULT_OPTS="--color '$FZF_COLORS'"
    ```
 
-## [zsh-fast-syntax-highlighting](https://github.com/zdharma-continuum/fast-syntax-highlighting)
+## [zsh-patina](https://github.com/michel-kraemer/zsh-patina)
+
+ANSI theme that follows the terminal palette in light and dark Squirrelsong themes:
+
+- [patina-squirrelsong.toml](./patina/patina-squirrelsong.toml)
 
 ### Installing from GitHub
 
-1. Copy [fast-syntax-highlighting-squirrelsong.ini](./fast-syntax-highlighting/fast-syntax-highlighting-squirrelsong.ini) to your dotfiles.
-2. Load the plugin, then apply the theme:
+1. Install zsh-patina (`brew tap michel-kraemer/zsh-patina && brew install zsh-patina`).
+2. Copy the theme file to your dotfiles.
+3. Point zsh-patina at it in `~/.config/zsh-patina/config.toml`:
+
+```toml
+[highlighting]
+theme = "file:~/dotfiles/colors/patina-squirrelsong-dark-dp.toml"
+```
+
+4. Activate at the end of `.zshrc`:
 
 ```shell
-source $(brew --prefix zsh-fast-syntax-highlighting)/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
-fast-theme /path/to/fast-syntax-highlighting-squirrelsong.ini
+eval "$(zsh-patina activate)"
 ```
