@@ -12,11 +12,11 @@
       }
     },
     {
-      "file": "Squirrelsong Dark Deep Purple.palette",
-      "scheme": "darkDp",
+      "file": "Squirrelsong Dark.palette",
+      "scheme": "dark",
       "context": {
-        "name": "Dark Deep Purple",
-        "shortName": "squirrelsongdarkdp",
+        "name": "Dark",
+        "shortName": "squirrelsongdark",
         "isDark": "1",
         // Fallback for undefined parameters: day, dayClassic, dark, nightAccent
         "parent": "nightAccent"

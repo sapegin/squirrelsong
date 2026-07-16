@@ -1,27 +1,27 @@
 # Squirrelsong Dark Theme for Warp
 # https://sapegin.me/squirrelsong/
 
-accent: '#bfac99' # Accent color for UI elements
-background: '#292019'
+accent: '#bea3d9' # Accent color for UI elements
+background: '#271e38'
 details: darker # Whether the theme is lighter or darker
-foreground: '#bfac99'
+foreground: '#bea3d9'
 terminal_colors:
   bright:
-    black: '#695444'
+    black: '#7254a6'
     blue: '#63a2d6'
     cyan: '#72aaa8'
     green: '#709855'
     magenta: '#9672d4'
     red: '#ca5a83'
-    white: '#edd5be'
+    white: '#e9d6fa'
     yellow: '#e2c358'
 
   normal:
-    black: '#5b4839'
+    black: '#644e88'
     blue: '#5993c2'
     cyan: '#4f9593'
     green: '#558240'
     magenta: '#7f61b3'
     red: '#ac493e'
-    white: '#bfac99'
+    white: '#bea3d9'
     yellow: '#ceb250'

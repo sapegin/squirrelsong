@@ -16,8 +16,8 @@ import { terminalLink } from './util/terminalLink.ts';
 type Palette = Record<string, string>;
 type ColorRef = string | [string, string];
 type ColorMap = Record<string, ColorRef>;
-type SchemeName = 'light' | 'dark' | 'darkDp';
-type MixinName = 'terminalLight' | 'terminalDark' | 'terminalDarkDp';
+type SchemeName = 'light' | 'dark';
+type MixinName = 'terminalLight' | 'terminalDark';
 
 interface ThemeEntry {
   file: string;
@@ -63,13 +63,6 @@ const darkAnsiPaletteRaw =
   readJsonFile<Record<string, string>>(`dark/ansi.json`);
 const darkCodePaletteRaw = readJsonFile<ColorMap>(`dark/code.json`);
 const darkUiPaletteRaw = readJsonFile<ColorMap>(`dark/ui.json`);
-
-function getDarkDpColorName(colorName: string): string {
-  return colorName
-    .replace('gray', 'purple')
-    .replace(/^brightYellow$/, 'brightYellowPurple')
-    .replace(/^brightYellowDim$/, 'brightYellowDimPurple');
-}
 
 // Convert ANSI color names to HEX values
 
@@ -132,33 +125,6 @@ const darkUiPalette = Object.fromEntries(
   ])
 );
 
-// Create Dark Deep Purple palettes
-
-const darkDpPalette = Object.fromEntries(
-  Object.entries(darkPalette).map(([colorName]) => {
-    const paletteColorName = getDarkDpColorName(colorName);
-    return [colorName, getPaletteColor(darkPalette, paletteColorName, 'dark')];
-  })
-);
-const darkDpAnsiPalette = Object.fromEntries(
-  Object.entries(darkAnsiPaletteRaw).map(([key, colorName]) => {
-    const paletteColorName = getDarkDpColorName(colorName);
-    return [key, getPaletteColor(darkPalette, paletteColorName, 'dark')];
-  })
-);
-const darkDpCodePalette = Object.fromEntries(
-  Object.entries(darkCodePaletteRaw).map(([key, colorInfo]) => {
-    const paletteColorName = getDarkDpColorName(resolveColorName(colorInfo));
-    return [key, getPaletteColor(darkPalette, paletteColorName, 'dark')];
-  })
-);
-const darkDpUiPalette = Object.fromEntries(
-  Object.entries(darkUiPaletteRaw).map(([key, colorInfo]) => {
-    const paletteColorName = getDarkDpColorName(resolveColorName(colorInfo));
-    return [key, getPaletteColor(darkPalette, paletteColorName, 'dark')];
-  })
-);
-
 // ------------ 8< -- 8< ------------
 
 console.log();
@@ -179,13 +145,6 @@ const schemes: Record<SchemeName, TemplateContext> = {
     ...darkCodePalette,
     ...darkCodeStyles,
   },
-  darkDp: {
-    ...darkDpPalette,
-    ...darkDpUiPalette,
-    ...darkDpAnsiPalette,
-    ...darkDpCodePalette,
-    ...darkCodeStyles,
-  },
 };
 
 const mixins: Record<MixinName, TemplateContext> = {
@@ -203,20 +162,12 @@ const mixins: Record<MixinName, TemplateContext> = {
     terminalMatchBase: darkUiPalette.matchBase,
     terminalSelectionBase: darkUiPalette.selectionBase,
   },
-  terminalDarkDp: {
-    ...darkDpAnsiPalette,
-    terminalBorder: darkDpUiPalette.border,
-    terminalMatchBackground: darkDpUiPalette.matchBackground,
-    terminalMatchBase: darkDpUiPalette.matchBase,
-    terminalSelectionBase: darkDpUiPalette.selectionBase,
-  },
 };
 
 const sharedScheme: TemplateContext = {};
 for (const [key] of Object.entries(schemes.light)) {
   sharedScheme[`light:${key}`] = schemes.light[key];
   sharedScheme[`dark:${key}`] = schemes.dark[key];
-  sharedScheme[`darkDp:${key}`] = schemes.darkDp[key];
 }
 
 function isSchemeName(value: string): value is SchemeName {

@@ -64,7 +64,6 @@ const EXTENSIONS = [
 const EXTRA_FILES = [
   // Files without extension
   'themes/Ghostty/Squirrelsong Dark',
-  'themes/Ghostty/Squirrelsong Dark Deep Purple',
 ];
 
 const IGNORES = [
@@ -73,7 +72,6 @@ const IGNORES = [
   'Brewfile.lock.json',
   // Mixed light/dark files
   'SquirrelsongLightDarkTerminal.color-theme.json',
-  'SquirrelsongLightDarkDeepPurpleTerminal.color-theme.json',
 ];
 
 const TRANSPARENT = [

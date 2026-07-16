@@ -18,7 +18,7 @@
      export DELTA_LIGHT=true
      ;;
    *)
-     export DELTA_FEATURES=squirrelsong-dark-dp
+     export DELTA_FEATURES=squirrelsong-dark
      export DELTA_LIGHT=false
      ;;
    esac

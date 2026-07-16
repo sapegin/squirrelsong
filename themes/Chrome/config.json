@@ -10,9 +10,9 @@
     },
     {
       "file": "extension-dark/manifest.json",
-      "scheme": "darkDp",
+      "scheme": "dark",
       "context": {
-        "name": "Dark Deep Purple",
+        "name": "Dark",
         "kind": "dark"
       }
     }

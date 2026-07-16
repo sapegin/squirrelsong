@@ -17,13 +17,13 @@ config.color_scheme = 'Squirrelsong Dark'
 
 config.window_frame = {
 	-- Fancy tab bar
-	active_titlebar_bg = '#4d3b2e',
-	inactive_titlebar_bg = '#292019',
+	active_titlebar_bg = '#503f6e',
+	inactive_titlebar_bg = '#271e38',
 }
 
 -- Command Palette
-config.command_palette_bg_color = "#4d3b2e"
-config.command_palette_fg_color = "#bfac99"
+config.command_palette_bg_color = "#503f6e"
+config.command_palette_fg_color = "#bea3d9"
 
 return config
 ```

@@ -10,17 +10,17 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#292019</string>
+				<string>#271e38</string>
 				<key>caret</key>
-				<string>#988571</string>
+				<string>#9a7eb4</string>
 				<key>foreground</key>
-				<string>#988571</string>
+				<string>#9a7eb4</string>
 				<key>invisibles</key>
-				<string>#695444</string>
+				<string>#7254a6</string>
 				<key>lineHighlight</key>
-				<string>#352a21</string>
+				<string>#36294d</string>
 				<key>selection</key>
-				<string>#574538</string>
+				<string>#4c3c6b</string>
 			</dict>
 		</dict>
 		<dict>
@@ -31,7 +31,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#695444</string>
+				<string>#7254a6</string>
 				<key>fontStyle</key>
 				<string></string>
 			</dict>
@@ -402,7 +402,7 @@
 		</dict>
 	</array>
 	<key>uuid</key>
-	<string>59024f0e-5ea0-4d89-96a7-98147144a79f</string>
+	<string>b5348c12-370a-4291-a2c6-7aee60eb66e9</string>
 	<key>colorSpaceName</key>
 	<string>sRGB</string>
 	<key>semanticClass</key>

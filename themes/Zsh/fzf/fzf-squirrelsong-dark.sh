@@ -1,4 +1,4 @@
-# Squirrelsong Dark Deep Purple for fzf
+# Squirrelsong Dark for fzf
 export FZF_COLORS="fg:-1,\
 fg+:-1,\
 bg:-1,\

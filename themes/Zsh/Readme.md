@@ -1,20 +1,20 @@
 # Squirrelsong themes for Zsh
 
-![Squirrelsong dark deep purple theme for fzf](screenshot-dark-dp.jpg)
-
 ![Squirrelsong light theme for fzf](screenshot-light.jpg)
+
+![Squirrelsong dark theme for fzf](screenshot-dark.jpg)
 
 ## [fzf](https://github.com/junegunn/fzf)
 
 ### Installing from GitHub
 
-1. Copy [fzf-squirrelsong-light.sh](./fzf/fzf-squirrelsong-light.sh) or [fzf-squirrelsong-dark-dp.sh](./fzf/fzf-squirrelsong-dark-dp.sh) to your dotfiles.
+1. Copy [fzf-squirrelsong-light.sh](./fzf/fzf-squirrelsong-light.sh) or [fzf-squirrelsong-dark.sh](./fzf/fzf-squirrelsong-dark.sh) to your dotfiles.
 2. Add the following to your `~/.bashrc`, `~/.zshrc`, or any other file that your shell loads on startup.
 
    ```shell
    case $TERM_THEME in
    light) source fzf-squirrelsong-light.sh ;;
-   *) source fzf-squirrelsong-dark-dp.sh ;;
+   *) source fzf-squirrelsong-dark.sh ;;
    esac
    ```
 
@@ -38,7 +38,7 @@ ANSI theme that follows the terminal palette in light and dark Squirrelsong them
 
 ```toml
 [highlighting]
-theme = "file:~/dotfiles/colors/patina-squirrelsong-dark-dp.toml"
+theme = "file:~/dotfiles/colors/patina-squirrelsong.toml"
 ```
 
 4. Activate at the end of `.zshrc`:

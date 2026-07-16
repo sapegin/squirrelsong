@@ -27,37 +27,11 @@
       }
     },
     {
-      "file": "SquirrelsongLight/SquirrelsongLightDarkDeepPurpleTerminal.color-theme.json",
-      "scheme": "light",
-      "mixin": "terminalDarkDp",
-      "context": {
-        "name": "Light (Dark Deep Purple Terminal)",
-        "mode": "light",
-        "insertedBackground": "{{green}}14",
-        "deletedBackground": "{{red}}14",
-        "insertedWordBackground": "{{green}}26",
-        "deletedWordBackground": "{{red}}26"
-      }
-    },
-    {
       "file": "SquirrelsongDark/SquirrelsongDark.color-theme.json",
       "scheme": "dark",
       "mixin": "terminalDark",
       "context": {
         "name": "Dark",
-        "mode": "dark",
-        "insertedBackground": "{{green}}20",
-        "deletedBackground": "{{red}}18",
-        "insertedWordBackground": "{{green}}22",
-        "deletedWordBackground": "{{red}}24"
-      }
-    },
-    {
-      "file": "SquirrelsongDark/SquirrelsongDarkDeepPurple.color-theme.json",
-      "scheme": "darkDp",
-      "mixin": "terminalDarkDp",
-      "context": {
-        "name": "Dark Deep Purple",
         "mode": "dark",
         "insertedBackground": "{{green}}20",
         "deletedBackground": "{{red}}18",

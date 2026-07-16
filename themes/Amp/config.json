@@ -10,10 +10,10 @@
       }
     },
     {
-      "file": "squirrelsong-dark-dp/colors.toml",
-      "scheme": "darkDp",
+      "file": "squirrelsong-dark/colors.toml",
+      "scheme": "dark",
       "context": {
-        "displayName": "Dark Deep Purple",
+        "displayName": "Dark",
         "mode": "dark",
         "selectionColor": "terminalBlack"
       }

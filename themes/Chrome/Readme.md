@@ -4,7 +4,7 @@ Also works in other Chromium-based browsers: Microsoft Edge, Brave.
 
 ![Squirrelsong Light theme for Google Chrome](screenshot-light.jpg)
 
-![Squirrelsong Dark Deep Purple theme for Google Chrome](screenshot-dark.jpg)
+![Squirrelsong Dark theme for Google Chrome](screenshot-dark.jpg)
 
 ## Installation from Chrome Web Store
 

@@ -29,23 +29,23 @@ zipDirectory('./dist/chrome-light', './dist/chrome-light.zip');
 // ------------ 8< -- 8< ------------
 
 console.log();
-console.log(`[BUILD] Building Chrome Dark Deep Purple extension… 🌑`);
+console.log(`[BUILD] Building Chrome Dark extension… 🌑`);
 
-// Chrome Dark Deep Purple
-fs.mkdirSync('./dist/chrome-dark-dp', { recursive: true });
+// Chrome Dark
+fs.mkdirSync('./dist/chrome-dark', { recursive: true });
 fs.copyFileSync(
   './themes/Chrome/extension-dark/manifest.json',
-  './dist/chrome-dark-dp/manifest.json'
+  './dist/chrome-dark/manifest.json'
 );
 fs.cpSync(
   './themes/Chrome/extension-dark/images',
-  './dist/chrome-dark-dp/images',
+  './dist/chrome-dark/images',
   {
     recursive: true,
   }
 );
 
-zipDirectory('./dist/chrome-dark-dp', './dist/chrome-dark-dp.zip');
+zipDirectory('./dist/chrome-dark', './dist/chrome-dark.zip');
 
 // ------------ 8< -- 8< ------------
 

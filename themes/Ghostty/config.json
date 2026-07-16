@@ -5,17 +5,8 @@
       "scheme": "dark",
       "context": {
         "name": "Dark",
-        "iconForeground": "purple070",
+        "iconForeground": "gray070",
         "iconBackground": "gray140"
-      }
-    },
-    {
-      "file": "Squirrelsong Dark Deep Purple",
-      "scheme": "darkDp",
-      "context": {
-        "name": "Dark Deep Purple",
-        "iconForeground": "purple070",
-        "iconBackground": "purple140"
       }
     },
     {

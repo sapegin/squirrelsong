@@ -7,7 +7,6 @@
     "Themes"
   ],
   "keywords": [
-    "brown theme",
     "cyberpunk",
     "dark theme",
     "low-contrast theme",
@@ -46,17 +45,12 @@
         "label": "Squirrelsong Dark",
         "uiTheme": "vs-dark",
         "path": "./SquirrelsongDark.color-theme.json"
-      },
-      {
-        "label": "Squirrelsong Dark Deep Purple",
-        "uiTheme": "vs-dark",
-        "path": "./SquirrelsongDarkDeepPurple.color-theme.json"
       }
     ]
   },
   "icon": "icon.png",
   "galleryBanner": {
-    "color": "#352a21",
+    "color": "#36294d",
     "theme": "dark"
   },
   "engines": {

@@ -9,11 +9,11 @@
       }
     },
     {
-      "file": "fzf-squirrelsong-dark-dp.sh",
-      "scheme": "darkDp",
-      "mixin": "terminalDarkDp",
+      "file": "fzf-squirrelsong-dark.sh",
+      "scheme": "dark",
+      "mixin": "terminalDark",
       "context": {
-        "name": "Dark Deep Purple"
+        "name": "Dark"
       }
     }
   ]

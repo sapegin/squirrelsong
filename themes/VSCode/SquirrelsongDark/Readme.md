@@ -4,8 +4,6 @@
 
 ![Squirrelsong Dark](https://github.com/sapegin/squirrelsong/raw/master/themes/VSCode/screenshot-dark.jpg)
 
-![Squirrelsong Deep Purple Dark](https://github.com/sapegin/squirrelsong/raw/master/themes/VSCode/screenshot-dark-dp.jpg)
-
 A low-contrast, non-distracting and neurodiverse-friendly theme that is comfortable for all-day coding without sensory overstimulation, and perfect for developers with ADHD, autism, or highly sensitive people (HSP). No bright colors, no super-high contrast, no distractions. Soft colors but still enough legibility for different part of the code and UI.
 
 **Install from [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=sapegin.Theme-SquirrelsongDark) or [Open VSX Registry](https://open-vsx.org/extension/sapegin/Theme-SquirrelsongDark)**
@@ -15,7 +13,6 @@ A low-contrast, non-distracting and neurodiverse-friendly theme that is comforta
 - Monochrome Markdown styles
 - Consistent highlighting for different programming languages
 - Non-distracting UI
-- Two variants: brown and purple
 
 [![Washing your code. A book on clean code for frontend developers](https://sapegin.me/images/washing-code-github.jpg)](https://sapegin.me/book/)
 

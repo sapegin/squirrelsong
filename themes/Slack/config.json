@@ -12,7 +12,7 @@
     },
     {
       "file": "Readme.md",
-      "scheme": "darkDp",
+      "scheme": "dark",
       "context": {
         "systemNavigation": "uiBackground",
         "selectedItems": "activeBackground",

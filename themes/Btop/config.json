@@ -13,13 +13,6 @@
       "context": {
         "name": "Dark"
       }
-    },
-    {
-      "file": "squirrelsong-dark-deep-purple.theme",
-      "scheme": "darkDp",
-      "context": {
-        "name": "Dark Deep Purple"
-      }
     }
   ]
 }

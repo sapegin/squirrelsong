@@ -1,8 +1,8 @@
-# Squirrelsong Light and Dark Deep Purple Themes for [Pearcleaner](https://itsalin.com/appInfo/?id=pearcleaner)
+# Squirrelsong Light and Dark Themes for [Pearcleaner](https://itsalin.com/appInfo/?id=pearcleaner)
 
 ![Squirrelsong Light theme for Pearcleaner](screenshot-light.jpg)
 
-![Squirrelsong Dark Deep Purple theme for Pearcleaner](screenshot-dark.jpg)
+![Squirrelsong Dark theme for Pearcleaner](screenshot-dark.jpg)
 
 <!-- template: ${textBackground}, ${uiBackground}, ${titleForeground}, ${textForeground}, ${accent} -->
 

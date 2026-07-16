@@ -1,8 +1,8 @@
-# Squirrelsong Light and Dark Deep Purple Themes for [Fastmail](https://fastmail.com/)
+# Squirrelsong Light and Dark Themes for [Fastmail](https://fastmail.com/)
 
 ![Squirrelsong Light theme for Fastmail](screenshot-light.png)
 
-![Squirrelsong Dark Deep Purple theme for Fastmail](screenshot-dark.png)
+![Squirrelsong Dark theme for Fastmail](screenshot-dark.png)
 
 ## Installation
 
@@ -20,5 +20,5 @@
 <!-- Colors: Light mode header, light mode accent, dark mode header, dark mode accent -->
 
 <!-- template
-{{light:uiBackground}},{{light:accent2}},{{darkDp:uiBackground}},{{darkDp:accent2}}
+{{light:uiBackground}},{{light:accent2}},{{dark:uiBackground}},{{dark:accent2}}
 -->

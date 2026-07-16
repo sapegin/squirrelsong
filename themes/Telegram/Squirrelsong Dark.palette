@@ -1,9 +1,9 @@
-// Description: Squirrelsong Dark Deep Purple Theme
+// Description: Squirrelsong Dark Theme
 // Version: v3.0.0
 // Repository: https://github.com/sapegin/squirrelsong
 
-name = Squirrelsong Dark Deep Purple
-shortname = squirrelsongdarkdp
+name = Squirrelsong Dark
+shortname = squirrelsongdark
 isDark = 1
 tinted = 0
 parent = nightAccent

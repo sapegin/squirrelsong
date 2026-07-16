@@ -16,11 +16,6 @@ Each has a set of JSON files with palettes and semantic tokens:
 
 Only use these colors for all themes. Occasional transparency is okay (`{{selectionBase}}33`).
 
-Dark themes comes in two variants:
-
-- `Dark` (uses `gray*` colors from `palette.json`)
-- `Dark Deep Purple` (uses `purple*` colors from `palette.json`)
-
 ## Commands
 
 ```sh
@@ -34,7 +29,22 @@ npm run format             # format code
 ## When adding a new theme
 
 1. `mkdir themes/<app>`.
-2. Create a generic template that is using semantic colors tokens (example: `themes/Ghostty/ghostty.template.ini`).
-3. Create `config.json` file with a list of generated from template theme files (example: `themes/Ghostty/config.json`)..
-4. Create `Readme.md` with installation instructions
-5. Update `scripts/prepare-themes.ts` to generate each requested theme (`Light`, `Dark`, `Dark Deep Purple`)
+2. Create a template that uses semantic color tokens (example: `themes/Ghostty/ghostty.template.ini`).
+3. Create `config.json` listing generated theme files (example: `themes/Ghostty/config.json`).
+4. Create `Readme.md` with installation instructions.
+5. Run `npm run prepare-themes` and commit the generated theme files.
+
+Each entry in `config.json` can specify:
+
+- `scheme`: `light` or `dark` — palette and UI/code tokens for that theme
+- `mixin`: `terminalLight` or `terminalDark` — terminal ANSI colors (optional)
+- `context`: extra template variables (optional)
+
+For files that combine both schemes in one output (example: `themes/Git/delta.template.gitconfig`), omit `scheme` and use `{{light:token}}` / `{{dark:token}}` placeholders.
+
+Edit `scripts/prepare-themes.ts` only when adding a new scheme or mixin type.
+
+## Rules
+
+- All new themes should be made using templates.
+- Don’t mention templates in individual theme Readmes.

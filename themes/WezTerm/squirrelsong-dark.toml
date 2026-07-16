@@ -2,68 +2,68 @@
 # https://sapegin.me/squirrelsong/
 
 [colors]
-foreground = '#bfac99'
-background = '#292019'
+foreground = '#bea3d9'
+background = '#271e38'
 
-cursor_bg = '#bfac99'
-cursor_fg = '#292019'
-cursor_border = '#bfac99'
+cursor_bg = '#bea3d9'
+cursor_fg = '#271e38'
+cursor_border = '#bea3d9'
 
-selection_fg = '#bfac99'
-selection_bg = '#574538'
+selection_fg = '#bea3d9'
+selection_bg = '#4c3c6b'
 
-split = '#453327'
+split = '#453461'
 
 visual_bell = "#ca5a83"
 
 ansi = [
-  '#5b4839',
+  '#644e88',
   '#ac493e',
   '#558240',
   '#ceb250',
   '#5993c2',
   '#7f61b3',
   '#4f9593',
-  '#bfac99',
+  '#bea3d9',
 ]
 
 brights = [
-  '#695444',
+  '#7254a6',
   '#ca5a83',
   '#709855',
   '#e2c358',
   '#63a2d6',
   '#9672d4',
   '#72aaa8',
-  '#edd5be',
+  '#e9d6fa',
 ]
 
 [colors.tab_bar]
 # Retro tab bar
-background = '#292019'
+background = '#271e38'
 # Fancy tab bar
-inactive_tab_edge = '#292019'
+inactive_tab_edge = '#271e38'
 
 [colors.tab_bar.active_tab]
-bg_color = '#4d3b2e'
-fg_color = '#bfac99'
+bg_color = '#503f6e'
+fg_color = '#bea3d9'
 intensity = 'Bold'
 
 [colors.tab_bar.inactive_tab]
-bg_color = '#292019'
-fg_color = '#bfac99'
+bg_color = '#271e38'
+fg_color = '#bea3d9'
 
 [colors.tab_bar.inactive_tab_hover]
-bg_color = '#453327'
-fg_color = '#bfac99'
+bg_color = '#453461'
+fg_color = '#bea3d9'
 
 [colors.tab_bar.new_tab]
-bg_color = '#292019'
-fg_color = '#bfac99'
+bg_color = '#271e38'
+fg_color = '#bea3d9'
 
 [colors.tab_bar.new_tab_hover]
-bg_color = '#453327'
-fg_color = '#bfac99'
+bg_color = '#453461'
+fg_color = '#bea3d9'
 
 [metadata]
 aliases = []

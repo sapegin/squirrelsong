@@ -15,15 +15,6 @@
       "context": {
         "name": "Dark",
         "semanticClass": "theme.dark.squirrelsong_dark",
-        "uuid": "59024f0e-5ea0-4d89-96a7-98147144a79f"
-      }
-    },
-    {
-      "file": "Squirrelsong Dark Deep Purple/Squirrelsong Dark Deep Purple.tmTheme",
-      "scheme": "darkDp",
-      "context": {
-        "name": "Dark Deep Purple",
-        "semanticClass": "theme.dark.squirrelsong_dark_dp",
         "uuid": "b5348c12-370a-4291-a2c6-7aee60eb66e9"
       }
     }
