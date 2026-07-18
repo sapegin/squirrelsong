@@ -1,7 +1,7 @@
 {
   "name": "Theme-SquirrelsongLight",
   "displayName": "Squirrelsong Light Theme",
-  "version": "3.5.3",
+  "version": "3.6.0",
   "description": "Low-contrast light color theme",
   "categories": [
     "Themes"
@@ -38,7 +38,7 @@
     "publish:ovsx": "npx ovsx publish"
   },
   "devDependencies": {
-    "@vscode/vsce": "^3.6.2"
+    "@vscode/vsce": "3.9.2"
   },
   "contributes": {
     "themes": [

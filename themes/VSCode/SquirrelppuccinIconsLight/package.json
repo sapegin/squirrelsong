@@ -37,7 +37,7 @@
     "publish:ovsx": "npx ovsx publish"
   },
   "devDependencies": {
-    "@vscode/vsce": "3.9.1"
+    "@vscode/vsce": "3.9.2"
   },
   "contributes": {
     "iconThemes": [
