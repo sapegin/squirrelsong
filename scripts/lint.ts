@@ -12,8 +12,8 @@ import os from 'node:os';
 import path from 'node:path';
 import { hexToRgb } from './util/hexToRgb.ts';
 import { rgbToHex } from './util/rgbToHex.ts';
-import { readJsonFile, readPalettes } from './util/theme.ts';
 import { terminalLink } from './util/terminalLink.ts';
+import { readJsonFile, readPalettes, readThemeSpecs } from './util/theme.ts';
 
 type LintGroup = 'themes' | 'dotfiles';
 
@@ -403,8 +403,76 @@ const { light, dark } = readPalettes();
 const lightColors = Object.values(light);
 const darkColors = Object.values(dark);
 
+function lintThemeSpecSymmetry(): void {
+  currentGroup = 'themes';
+  const specs = readThemeSpecs();
+  const colorMaps: {
+    lightFile: string;
+    darkFile: string;
+    light: Record<string, unknown>;
+    dark: Record<string, unknown>;
+  }[] = [
+    {
+      lightFile: 'light/palette.json',
+      darkFile: 'dark/palette.json',
+      light: specs.light.palette,
+      dark: specs.dark.palette,
+    },
+    {
+      lightFile: 'light/ui.json',
+      darkFile: 'dark/ui.json',
+      light: specs.light.ui,
+      dark: specs.dark.ui,
+    },
+    {
+      lightFile: 'light/code.json',
+      darkFile: 'dark/code.json',
+      light: specs.light.code,
+      dark: specs.dark.code,
+    },
+    {
+      lightFile: 'light/ansi.json',
+      darkFile: 'dark/ansi.json',
+      light: specs.light.ansi,
+      dark: specs.dark.ansi,
+    },
+  ];
+
+  console.log();
+  console.log('[LINT] Checking light/dark spec symmetry... 🌗');
+
+  for (const {
+    lightFile,
+    darkFile,
+    light: lightMap,
+    dark: darkMap,
+  } of colorMaps) {
+    currentFile = terminalLink(
+      `${lightFile} ↔ ${darkFile}`,
+      `vscode://file//${path.resolve(lightFile)}`
+    );
+    console.log();
+    console.log('👉', currentFile);
+
+    for (const key of Object.keys(lightMap)) {
+      if (Object.hasOwn(darkMap, key) === false) {
+        achtung(`Missing in ${darkFile}: ${key}`);
+      }
+    }
+    for (const key of Object.keys(darkMap)) {
+      if (Object.hasOwn(lightMap, key) === false) {
+        achtung(`Missing in ${lightFile}: ${key}`);
+      }
+    }
+
+    console.log(`   ${Object.keys(lightMap).length} keys`);
+    fileCount++;
+  }
+}
+
 console.log();
 console.log();
+lintThemeSpecSymmetry();
 console.log('[LINT] Linting themes... 🌗');
 
 const themes = [
