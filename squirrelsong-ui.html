@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Squirrelsong UI preview</title>
+    <link rel="stylesheet" href="themes/CSS/squirrelsong.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font:
+          14px/1.5 system-ui,
+          sans-serif;
+        min-height: 100vh;
+        background-color: var(--text-background);
+      }
+      button,
+      input {
+        font: inherit;
+      }
+      a {
+        color: var(--link-foreground);
+      }
+      a:hover {
+        color: var(--link-hover-foreground);
+      }
+
+      .app {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      .toolbar {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.25rem 1rem;
+        border-bottom: 0.5px solid var(--border);
+        background: var(--secondary-ui-background);
+      }
+      .toolbar-title {
+        width: 10.5rem;
+        font-weight: bold;
+        color: var(--title-foreground);
+      }
+      .toolbar-tabs {
+        /* TODO: add semantic tab colors to the spec and map them here (active/inactive/hover). */
+        display: flex;
+        padding: 4px 0;
+        margin-left: 0.5rem;
+      }
+      .toolbar-tab {
+        padding: 2px 4px;
+        cursor: default;
+      }
+      .toolbar-tab-inner {
+        padding: 0.35rem 0.75rem;
+        border-radius: 4px;
+        color: var(--text-foreground);
+      }
+      .toolbar-tab.is-active .toolbar-tab-inner {
+        background: var(--ui-background);
+        color: var(--title-foreground);
+        box-shadow:
+          0 0 0 0.5px var(--border),
+          0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+      .toolbar-actions {
+        display: flex;
+        gap: 0.25rem;
+        align-items: center;
+        margin-left: auto;
+      }
+      .icon-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.25rem;
+        height: 2.25rem;
+        padding: 0;
+        border: none;
+        border-radius: 0.25rem;
+        background: transparent;
+        color: var(--icon);
+        font-size: 1.25rem;
+        line-height: 1;
+      }
+      .icon-btn:hover,
+      .icon-btn.active {
+        color: var(--active-icon);
+      }
+      .icon-btn svg {
+        width: 1.25rem;
+        height: 1.25rem;
+        fill: currentColor;
+      }
+
+      .btn {
+        padding: 0.35rem 0.75rem;
+        border-radius: 0.25rem;
+        border: 1px solid transparent;
+      }
+      .btn-primary {
+        background: var(--button-background);
+        color: var(--button-foreground);
+      }
+      .btn-primary:hover {
+        background: var(--button-hover-background);
+      }
+      .btn-secondary {
+        background: var(--secondary-button-background);
+        color: var(--secondary-button-foreground);
+        border-color: var(--border);
+      }
+      .btn-secondary:hover {
+        background: var(--secondary-button-hover-background);
+      }
+      .btn:disabled,
+      .btn:disabled:hover {
+        background: var(--disabled-button-background);
+        color: var(--disabled-button-foreground);
+      }
+
+      .layout {
+        flex: 1;
+        min-height: 0;
+        display: grid;
+        grid-template-columns: 12rem 1fr;
+      }
+      .sidebar {
+        padding: 1rem;
+        border-right: 1px solid var(--light-border);
+        background: var(--ui-background);
+      }
+      .sidebar-item {
+        padding: 0.4rem 0.5rem;
+        border-radius: 0.25rem;
+        color: var(--text-foreground);
+        cursor: default;
+      }
+      .sidebar-item:hover {
+        background: var(--hover-background);
+      }
+      .sidebar-item.active {
+        background: var(--active-background);
+        color: var(--active-foreground);
+        font-weight: bold;
+      }
+
+      .main {
+        padding: 1.5rem;
+        background: var(--text-background);
+        overflow: auto;
+      }
+      .section {
+        margin-bottom: 1.5rem;
+      }
+      .section h2 {
+        margin: 0 0 0.75rem;
+        color: var(--title-foreground);
+        font-size: 1rem;
+      }
+      .text-title {
+        color: var(--title-foreground);
+        font-weight: bold;
+      }
+      .text-regular {
+        color: var(--text-foreground);
+      }
+      .text-secondary {
+        color: var(--secondary-text-foreground);
+      }
+      .text-disabled {
+        color: var(--disabled-foreground);
+      }
+      .text-hidden {
+        color: var(--hidden-foreground);
+      }
+
+      .alert {
+        padding: 0.75rem 1rem;
+        border-radius: 0.25rem;
+        border: 1px solid;
+        margin-bottom: 0.5rem;
+      }
+      .alert-success {
+        color: var(--success-foreground);
+        background: var(--success-background);
+        border-color: var(--success-border);
+      }
+      .alert-error {
+        color: var(--error-foreground);
+        background: var(--error-background);
+        border-color: var(--error-border);
+      }
+      .alert-warning {
+        color: var(--warning-foreground);
+        background: var(--warning-background);
+        border-color: var(--warning-border);
+      }
+      .alert-info {
+        color: var(--info-foreground);
+        background: var(--info-background);
+        border-color: var(--info-border);
+      }
+
+      .selection-demo {
+        padding: 0.75rem;
+        border-radius: 0.25rem;
+        background: var(--line-highlight-background);
+        border: 1px solid var(--light-border);
+      }
+      .selection-demo ::selection {
+        background: var(--selection-background);
+        color: var(--text-foreground);
+      }
+      .match {
+        background: var(--match-background);
+        color: var(--match-foreground);
+        padding: 0 0.15rem;
+        border-radius: 0.15rem;
+      }
+      .match-secondary {
+        background: var(--secondary-match-background);
+        padding: 0 0.15rem;
+        border-radius: 0.15rem;
+      }
+
+      .diff {
+        font-family: ui-monospace, monospace;
+        font-size: 13px;
+        border: 1px solid var(--border);
+        border-radius: 0.25rem;
+        overflow: hidden;
+      }
+      .diff-line {
+        padding: 0.15rem 0.75rem;
+      }
+      .diff-inserted {
+        background: var(--inserted-background);
+      }
+      .diff-deleted {
+        background: var(--deleted-background);
+      }
+      .diff-inserted-word {
+        background: var(--inserted-word-background);
+      }
+      .diff-deleted-word {
+        background: var(--deleted-word-background);
+      }
+
+      .code {
+        font-family: ui-monospace, monospace;
+        font-size: 13px;
+        padding: 0.75rem 1rem;
+        border: 1px solid var(--border);
+        border-radius: 0.25rem;
+        background: var(--ui-background);
+      }
+      .code .comment {
+        color: var(--code-comment);
+      }
+      .code .keyword {
+        color: var(--code-keyword);
+        font-weight: bold;
+      }
+      .code .string {
+        color: var(--code-string);
+      }
+      .code .function {
+        color: var(--code-function);
+        font-weight: bold;
+      }
+      .code .variable {
+        color: var(--code-variable);
+        font-style: italic;
+      }
+      .code .type {
+        color: var(--code-type);
+      }
+      .code .operator {
+        color: var(--code-operator);
+      }
+      .code .punctuation {
+        color: var(--code-punctuation);
+      }
+
+      .terminal {
+        font-family: ui-monospace, monospace;
+        font-size: 13px;
+        padding: 0.75rem 1rem;
+        border: 1px solid var(--border);
+        border-radius: 0.25rem;
+        background: var(--terminal-background);
+        color: var(--terminal-foreground);
+      }
+      .terminal .red {
+        color: var(--terminal-red);
+      }
+      .terminal .green {
+        color: var(--terminal-green);
+      }
+      .terminal .blue {
+        color: var(--terminal-blue);
+      }
+      .terminal .yellow {
+        color: var(--terminal-yellow);
+      }
+      .terminal .magenta {
+        color: var(--terminal-magenta);
+      }
+      .terminal .cyan {
+        color: var(--terminal-cyan);
+      }
+      .terminal .bright {
+        color: var(--terminal-bright-white);
+        font-weight: bold;
+      }
+
+      .popup {
+        /* TODO: add semantic popup colors to the spec and map them here (background, border). */
+        max-width: 30rem;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background: var(--ui-background);
+        border: 1px solid var(--border);
+        /* TODO: add semantic shadow tokens to the spec; color-mix is a stand-in for now. */
+        box-shadow: 0 0.5rem 1.5rem
+          color-mix(in srgb, var(--text-foreground) 15%, transparent);
+      }
+      .popup h3 {
+        margin: 0 0 0.5rem;
+        color: var(--title-foreground);
+        font-size: 0.95rem;
+      }
+      .popup-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 0.75rem;
+      }
+
+      .field {
+        margin-bottom: 0.75rem;
+      }
+      .field label {
+        display: block;
+        margin-bottom: 0.25rem;
+        color: var(--secondary-text-foreground);
+        font-size: 0.85rem;
+      }
+      .field input {
+        width: 100%;
+        padding: 0.35rem 0.5rem;
+        border-radius: 0.25rem;
+        border: 1px solid var(--border);
+        background: var(--text-background);
+        color: var(--text-foreground);
+      }
+      .field input:focus {
+        outline: none;
+        border-color: var(--focus-border);
+      }
+
+      .accents {
+        display: flex;
+        gap: 0.5rem;
+      }
+      .accent {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 0.25rem;
+        border: 1px solid var(--border);
+      }
+      .accent-1 {
+        background: var(--accent1);
+      }
+      .accent-2 {
+        background: var(--accent2);
+      }
+      .accent-3 {
+        background: var(--accent3);
+      }
+    </style>
+  </head>
+  <body class="light">
+    <div class="app">
+      <header class="toolbar">
+        <div class="toolbar-title">Squirrelsong</div>
+        <div class="toolbar-tabs">
+          <div class="toolbar-tab is-active">
+            <div class="toolbar-tab-inner">Preview</div>
+          </div>
+          <div class="toolbar-tab">
+            <div class="toolbar-tab-inner">Editor</div>
+          </div>
+          <div class="toolbar-tab">
+            <div class="toolbar-tab-inner">Terminal</div>
+          </div>
+        </div>
+        <div class="toolbar-actions">
+          <button
+            class="icon-btn active"
+            id="theme-light"
+            type="button"
+            aria-label="Light theme"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 19a7 7 0 1 1 0-14 7 7 0 0 1 0 14Zm0-1.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 1 0 0 11Zm-5.657.157a.75.75 0 0 1 0 1.06l-1.768 1.768a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l1.767-1.768a.75.75 0 0 1 1.061 0ZM3.515 3.515a.75.75 0 0 1 1.06 0l1.768 1.768a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L3.515 4.575a.75.75 0 0 1 0-1.06ZM12 0a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 1-1.5 0V.75A.75.75 0 0 1 12 0ZM4 12a.75.75 0 0 1-.75.75H.75a.75.75 0 0 1 0-1.5h2.5A.75.75 0 0 1 4 12Zm8 8a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 1-1.5 0v-2.5A.75.75 0 0 1 12 20Zm12-8a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h2.5A.75.75 0 0 1 24 12Zm-6.343 5.657a.75.75 0 0 1 1.06 0l1.768 1.768a.751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018l-1.768-1.767a.75.75 0 0 1 0-1.061Zm2.828-14.142a.75.75 0 0 1 0 1.06l-1.768 1.768a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l1.767-1.768a.75.75 0 0 1 1.061 0Z"
+              />
+            </svg>
+          </button>
+          <button
+            class="icon-btn"
+            id="theme-dark"
+            type="button"
+            aria-label="Dark theme"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M14.768 3.96v.001l-.002-.005a9.08 9.08 0 0 0-.218-.779c-.13-.394.21-.8.602-.67.29.096.575.205.855.328l.01.005A10.002 10.002 0 0 1 12 22a10.002 10.002 0 0 1-9.162-5.985l-.004-.01a9.722 9.722 0 0 1-.329-.855c-.13-.392.277-.732.67-.602.257.084.517.157.78.218l.004.002A9 9 0 0 0 14.999 6a9.09 9.09 0 0 0-.231-2.04ZM16.5 6c0 5.799-4.701 10.5-10.5 10.5-.426 0-.847-.026-1.26-.075A8.5 8.5 0 1 0 16.425 4.74c.05.413.075.833.075 1.259Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </header>
+      <div class="layout">
+        <nav class="sidebar">
+          <div class="sidebar-item active">Dashboard</div>
+          <div class="sidebar-item">Projects</div>
+          <div class="sidebar-item">Settings</div>
+        </nav>
+        <main class="main">
+          <section class="section">
+            <h2>Popup</h2>
+            <div class="popup">
+              <h3>Confirm action</h3>
+              <p class="text-secondary">
+                Confirm your changes before continuing.
+              </p>
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" type="text" value="Squirrelsong" />
+              </div>
+              <div class="popup-actions">
+                <button class="btn btn-primary" type="button">Primary</button>
+                <button class="btn btn-secondary" type="button">
+                  Secondary
+                </button>
+                <button class="btn btn-primary" type="button" disabled>
+                  Disabled
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Text</h2>
+            <p class="text-title">Title foreground</p>
+            <p class="text-regular">
+              Regular text foreground with a <a href="#">link</a> and a
+              <span class="match">match</span>.
+            </p>
+            <p class="text-secondary">Secondary text foreground</p>
+            <p class="text-disabled">Disabled text foreground</p>
+            <p class="text-hidden">Hidden text foreground</p>
+          </section>
+
+          <section class="section">
+            <h2>Alerts</h2>
+            <div class="alert alert-success">Success message</div>
+            <div class="alert alert-error">Error message</div>
+            <div class="alert alert-warning">Warning message</div>
+            <div class="alert alert-info">Info message</div>
+          </section>
+
+          <section class="section">
+            <h2>Selection &amp; match</h2>
+            <div class="selection-demo">
+              Select this text to preview
+              <span class="match">primary match</span> and
+              <span class="match-secondary">secondary match</span> backgrounds.
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Diff</h2>
+            <div class="diff">
+              <div class="diff-line diff-deleted">
+                - const old = <span class="diff-deleted-word">removed</span>;
+              </div>
+              <div class="diff-line diff-inserted">
+                + const next = <span class="diff-inserted-word">added</span>;
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Code</h2>
+            <pre class="code"><span class="comment">// Example</span>
+<span class="keyword">const</span> <span class="function">greet</span><span class="punctuation">(</span><span class="variable">name</span><span class="punctuation">)</span> <span class="operator">=&gt;</span> <span class="string">'Hello, '</span> <span class="operator">+</span> <span class="variable">name</span><span class="punctuation">;</span>
+<span class="keyword">type</span> <span class="type">User</span> <span class="operator">=</span> <span class="punctuation">{</span> <span class="variable">name</span><span class="punctuation">:</span> <span class="type">string</span> <span class="punctuation">};</span></pre>
+          </section>
+
+          <section class="section">
+            <h2>Terminal</h2>
+            <pre class="terminal">$ git status
+<span class="green">modified:</span>   src/app.ts
+<span class="red">error:</span>      build failed
+<span class="blue">info:</span>       3 files changed
+<span class="yellow">warning:</span>   lint issues found
+<span class="magenta">branch:</span>     main
+<span class="cyan">path:</span>       ./themes/CSS
+<span class="bright">done</span></pre>
+          </section>
+
+          <section class="section">
+            <h2>Accents</h2>
+            <div class="accents">
+              <div class="accent accent-1" title="accent1"></div>
+              <div class="accent accent-2" title="accent2"></div>
+              <div class="accent accent-3" title="accent3"></div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script>
+      const lightButton = document.querySelector('#theme-light');
+      const darkButton = document.querySelector('#theme-dark');
+
+      function setTheme(theme) {
+        document.body.classList.toggle('light', theme === 'light');
+        document.body.classList.toggle('dark', theme === 'dark');
+        lightButton.classList.toggle('active', theme === 'light');
+        darkButton.classList.toggle('active', theme === 'dark');
+      }
+
+      lightButton.addEventListener('click', () => setTheme('light'));
+      darkButton.addEventListener('click', () => setTheme('dark'));
+    </script>
+  </body>
+</html>
