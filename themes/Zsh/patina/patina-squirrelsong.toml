@@ -24,6 +24,11 @@
 "variable" = "blue"
 "variable.parameter" = "blue"
 
+# CLI flags (-D, --file) — cyan, matching fast-syntax-highlighting
+"variable.parameter.option" = "cyan"
+"variable.parameter.switch" = "cyan"
+"punctuation.definition.parameter" = "cyan"
+
 # Environment variables
 "variable.other.readwrite.shell" = "blue"
 "punctuation.definition.variable" = "blue"
@@ -69,7 +74,7 @@
 "dynamic.callable.builtin" = { foreground = "blue", bold = true }
 "dynamic.callable.command" = { foreground = "blue", bold = true }
 "dynamic.callable.function" = { foreground = "blue", bold = true }
-"dynamic.callable.missing" = { foreground = "red", bold = true }
+"dynamic.callable.missing" = { foreground = "black", bold = true }
 "dynamic.path" = { foreground = "blue", underline = true }
 "dynamic.path.file" = { foreground = "blue", underline = true }
 "dynamic.path.directory" = { foreground = "blue", underline = true }
