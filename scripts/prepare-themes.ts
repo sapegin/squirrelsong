@@ -4,7 +4,6 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { stripJsonComments } from './util/stripJsonComments.ts';
 import {
   processTemplate,
   applyReadmeTemplate,
@@ -12,11 +11,13 @@ import {
   type TemplateContext,
 } from './util/template.ts';
 import { terminalLink } from './util/terminalLink.ts';
+import {
+  readJsonFile,
+  readThemeSpecs,
+  resolveThemeSpec,
+  type SchemeName,
+} from './util/theme.ts';
 
-type Palette = Record<string, string>;
-type ColorRef = string | [string, string];
-type ColorMap = Record<string, ColorRef>;
-type SchemeName = 'light' | 'dark';
 type MixinName = 'terminalLight' | 'terminalDark';
 
 interface ThemeEntry {
@@ -30,137 +31,32 @@ interface ThemeConfig {
   themes?: ThemeEntry[];
 }
 
-function readJsonFile<T>(file: string): T {
-  return JSON.parse(stripJsonComments(fs.readFileSync(file, 'utf8'))) as T;
-}
-
-function resolveColorName(colorInfo: ColorRef): string {
-  return Array.isArray(colorInfo) ? colorInfo[0] : colorInfo;
-}
-
-function getPaletteColor(
-  palette: Palette,
-  colorName: string,
-  paletteLabel: string
-): string {
-  if (Object.hasOwn(palette, colorName) === false) {
-    console.error(
-      `⛔️ Color not found in the ${paletteLabel} palette: ${colorName}`
-    );
-    return '';
-  }
-  return palette[colorName];
-}
-
-const lightPalette = readJsonFile<Palette>(`light/palette.json`);
-const lightAnsiPaletteRaw =
-  readJsonFile<Record<string, string>>(`light/ansi.json`);
-const lightCodePaletteRaw = readJsonFile<ColorMap>(`light/code.json`);
-const lightUiPaletteRaw = readJsonFile<ColorMap>(`light/ui.json`);
-
-const darkPalette = readJsonFile<Palette>(`dark/palette.json`);
-const darkAnsiPaletteRaw =
-  readJsonFile<Record<string, string>>(`dark/ansi.json`);
-const darkCodePaletteRaw = readJsonFile<ColorMap>(`dark/code.json`);
-const darkUiPaletteRaw = readJsonFile<ColorMap>(`dark/ui.json`);
-
-// Convert ANSI color names to HEX values
-
-const lightAnsiPalette = Object.fromEntries(
-  Object.entries(lightAnsiPaletteRaw).map(([key, colorName]) => [
-    key,
-    getPaletteColor(lightPalette, colorName, 'light'),
-  ])
-);
-const darkAnsiPalette = Object.fromEntries(
-  Object.entries(darkAnsiPaletteRaw).map(([key, colorName]) => [
-    key,
-    getPaletteColor(darkPalette, colorName, 'dark'),
-  ])
-);
-
-// Convert code color names to HEX values
-
-const lightCodePalette = Object.fromEntries(
-  Object.entries(lightCodePaletteRaw).map(([key, colorInfo]) => [
-    key,
-    getPaletteColor(lightPalette, resolveColorName(colorInfo), 'light'),
-  ])
-);
-const darkCodePalette = Object.fromEntries(
-  Object.entries(darkCodePaletteRaw).map(([key, colorInfo]) => [
-    key,
-    getPaletteColor(darkPalette, resolveColorName(colorInfo), 'dark'),
-  ])
-);
-
-// Extract code styles
-
-const lightCodeStyles = Object.fromEntries(
-  Object.entries(lightCodePaletteRaw).map(([key, colorInfo]) => {
-    const style = Array.isArray(colorInfo) ? colorInfo[1] : '';
-    return [`${key}Style`, style];
-  })
-);
-
-const darkCodeStyles = Object.fromEntries(
-  Object.entries(darkCodePaletteRaw).map(([key, colorInfo]) => {
-    const style = Array.isArray(colorInfo) ? colorInfo[1] : '';
-    return [`${key}Style`, style];
-  })
-);
-
-// Convert UI color names to HEX values
-
-const lightUiPalette = Object.fromEntries(
-  Object.entries(lightUiPaletteRaw).map(([key, colorInfo]) => [
-    key,
-    getPaletteColor(lightPalette, resolveColorName(colorInfo), 'light'),
-  ])
-);
-const darkUiPalette = Object.fromEntries(
-  Object.entries(darkUiPaletteRaw).map(([key, colorInfo]) => [
-    key,
-    getPaletteColor(darkPalette, resolveColorName(colorInfo), 'dark'),
-  ])
-);
-
-// ------------ 8< -- 8< ------------
+const { light, dark } = readThemeSpecs();
+const lightTheme = resolveThemeSpec(light, 'light');
+const darkTheme = resolveThemeSpec(dark, 'dark');
 
 console.log();
 console.log('[THEME] Preparing themes… 🌗');
 
 const schemes: Record<SchemeName, TemplateContext> = {
-  light: {
-    ...lightPalette,
-    ...lightUiPalette,
-    ...lightAnsiPalette,
-    ...lightCodePalette,
-    ...lightCodeStyles,
-  },
-  dark: {
-    ...darkPalette,
-    ...darkUiPalette,
-    ...darkAnsiPalette,
-    ...darkCodePalette,
-    ...darkCodeStyles,
-  },
+  light: lightTheme.context,
+  dark: darkTheme.context,
 };
 
 const mixins: Record<MixinName, TemplateContext> = {
   terminalLight: {
-    ...lightAnsiPalette,
-    terminalBorder: lightUiPalette.border,
-    terminalMatchBackground: lightUiPalette.matchBackground,
-    terminalMatchBase: lightUiPalette.matchBase,
-    terminalSelectionBase: lightUiPalette.selectionBase,
+    ...lightTheme.ansi,
+    terminalBorder: lightTheme.ui.border,
+    terminalMatchBackground: lightTheme.ui.matchBackground,
+    terminalMatchBase: lightTheme.ui.matchBase,
+    terminalSelectionBase: lightTheme.ui.selectionBase,
   },
   terminalDark: {
-    ...darkAnsiPalette,
-    terminalBorder: darkUiPalette.border,
-    terminalMatchBackground: darkUiPalette.matchBackground,
-    terminalMatchBase: darkUiPalette.matchBase,
-    terminalSelectionBase: darkUiPalette.selectionBase,
+    ...darkTheme.ansi,
+    terminalBorder: darkTheme.ui.border,
+    terminalMatchBackground: darkTheme.ui.matchBackground,
+    terminalMatchBase: darkTheme.ui.matchBase,
+    terminalSelectionBase: darkTheme.ui.selectionBase,
   },
 };
 

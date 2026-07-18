@@ -12,7 +12,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { hexToRgb } from './util/hexToRgb.ts';
 import { rgbToHex } from './util/rgbToHex.ts';
-import { stripJsonComments } from './util/stripJsonComments.ts';
+import { readJsonFile, readPalettes } from './util/theme.ts';
 import { terminalLink } from './util/terminalLink.ts';
 
 type LintGroup = 'themes' | 'dotfiles';
@@ -241,10 +241,6 @@ function done(numberOfColors: number): void {
   fileCount++;
 }
 
-function readJsonFile<T>(file: string): T {
-  return JSON.parse(stripJsonComments(fs.readFileSync(file, 'utf8'))) as T;
-}
-
 function isHexColor(value: unknown): value is string {
   if (typeof value !== 'string') {
     return false;
@@ -403,8 +399,9 @@ function lint(
   }
 }
 
-const lightPalette = readJsonFile<Record<string, string>>('light/palette.json');
-const darkPalette = readJsonFile<Record<string, string>>('dark/palette.json');
+const { light, dark } = readPalettes();
+const lightColors = Object.values(light);
+const darkColors = Object.values(dark);
 
 console.log();
 console.log();
@@ -415,7 +412,7 @@ const themes = [
   ...fs.globSync(`themes/*/Readme.md`),
   ...EXTRA_FILES,
 ];
-lint(themes, Object.values(lightPalette), Object.values(darkPalette), 'themes');
+lint(themes, lightColors, darkColors, 'themes');
 
 if (fs.existsSync(DOTFILES_ROOT)) {
   console.log();
@@ -441,12 +438,7 @@ if (fs.existsSync(DOTFILES_ROOT)) {
         file.includes('dotfiles/brain/') === false
     );
 
-  lint(
-    dotfiles,
-    Object.values(lightPalette),
-    Object.values(darkPalette),
-    'dotfiles'
-  );
+  lint(dotfiles, lightColors, darkColors, 'dotfiles');
 }
 
 function printErrorSummary(group: LintGroup, label: string): void {

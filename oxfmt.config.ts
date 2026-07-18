@@ -8,5 +8,6 @@ export default defineConfig({
     'themes/Chrome/chrome.template.json',
     'themes/VSCode/*/*.color-theme.json',
     'themes/VSCode/*/*.icon-theme.json',
+    'squirrelsong.html',
   ],
 });
