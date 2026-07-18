@@ -46,5 +46,6 @@ Edit `scripts/prepare-themes.ts` only when adding a new scheme or mixin type.
 
 ## Rules
 
+- When working on CSS themes, refer to @themes/CSS/squirrelsong.css and @squirrelsong-ui.html for correct styles.
 - All new themes should be made using templates.
 - Don’t mention templates in individual theme Readmes.
