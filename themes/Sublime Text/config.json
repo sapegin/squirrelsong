@@ -17,6 +17,16 @@
         "semanticClass": "theme.dark.squirrelsong_dark",
         "uuid": "b5348c12-370a-4291-a2c6-7aee60eb66e9"
       }
+    },
+    // Syntax highlighting theme for tuicr, which reads TextMate themes
+    {
+      "file": "../tuicr/squirrelsong-light-syntax.tmTheme",
+      "scheme": "light",
+      "context": {
+        "name": "Light",
+        "semanticClass": "theme.light.squirrelsong_light",
+        "uuid": "148478c0-ae07-41fa-8fcc-d9d6055dec35"
+      }
     }
   ]
 }

@@ -1,0 +1,58 @@
+# Squirrelsong {{name}} theme for tuicr
+# https://sapegin.me/squirrelsong/
+#
+# tuicr requires a flat file: all keys are top level, and every color key is
+# required.
+
+panel_bg = "{{textBackground}}"
+bg_highlight = "{{selectionBackground}}"
+fg_primary = "{{titleForeground}}"
+fg_secondary = "{{secondaryTextForeground}}"
+fg_dim = "{{disabledForeground}}"
+
+diff_add = "{{successForeground}}"
+diff_add_bg = "{{insertedBackground}}"
+diff_del = "{{errorForeground}}"
+diff_del_bg = "{{deletedBackground}}"
+diff_context = "{{textForeground}}"
+diff_hunk_header = "{{linkForeground}}"
+expanded_context_fg = "{{disabledForeground}}"
+
+# Backgrounds of syntax highlighted diff lines, the same as the plain diff line
+# backgrounds
+syntax_add_bg = "{{insertedBackground}}"
+syntax_del_bg = "{{deletedBackground}}"
+syntax_theme = "{{syntaxTheme}}"
+
+file_added = "{{successForeground}}"
+file_modified = "{{warningForeground}}"
+file_deleted = "{{errorForeground}}"
+file_renamed = "{{accent3}}"
+
+reviewed = "{{successForeground}}"
+pending = "{{warningForeground}}"
+
+comment_note = "{{linkForeground}}"
+comment_suggestion = "{{tealContrast}}"
+comment_issue = "{{errorForeground}}"
+comment_praise = "{{successForeground}}"
+
+border_focused = "{{focusBorder}}"
+border_unfocused = "{{border}}"
+status_bar_bg = "{{secondaryUiBackground}}"
+cursor_color = "{{accent}}"
+cursor_line_bg = "{{lineHighlightBackground}}"
+branch_name = "{{accent3}}"
+help_indicator = "{{secondaryTextForeground}}"
+
+message_info_fg = "{{infoForeground}}"
+message_info_bg = "{{infoBackground}}"
+message_warning_fg = "{{warningForeground}}"
+message_warning_bg = "{{warningBackground}}"
+message_error_fg = "{{errorForeground}}"
+message_error_bg = "{{errorBackground}}"
+update_badge_fg = "{{warningForeground}}"
+update_badge_bg = "{{warningBackground}}"
+
+mode_fg = "{{buttonForeground}}"
+mode_bg = "{{accent3}}"

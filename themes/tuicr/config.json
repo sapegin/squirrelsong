@@ -1,0 +1,13 @@
+{
+  "themes": [
+    {
+      "file": "squirrelsong-light.toml",
+      "scheme": "light",
+      "context": {
+        "name": "Light",
+        "accent": "yellowContrast",
+        "syntaxTheme": "squirrelsong-light-syntax.tmTheme"
+      }
+    }
+  ]
+}

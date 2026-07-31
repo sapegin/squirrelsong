@@ -1,0 +1,58 @@
+# Squirrelsong Light theme for tuicr
+# https://sapegin.me/squirrelsong/
+#
+# tuicr requires a flat file: all keys are top level, and every color key is
+# required.
+
+panel_bg = "#fdfdfe"
+bg_highlight = "#f8e7a0"
+fg_primary = "#4c4b4e"
+fg_secondary = "#8c8792"
+fg_dim = "#9c96a2"
+
+diff_add = "#657d38"
+diff_add_bg = "#f2f4f1"
+diff_del = "#c06159"
+diff_del_bg = "#faf4f4"
+diff_context = "#78737d"
+diff_hunk_header = "#4b7b97"
+expanded_context_fg = "#9c96a2"
+
+# Backgrounds of syntax highlighted diff lines, the same as the plain diff line
+# backgrounds
+syntax_add_bg = "#f2f4f1"
+syntax_del_bg = "#faf4f4"
+syntax_theme = "squirrelsong-light-syntax.tmTheme"
+
+file_added = "#657d38"
+file_modified = "#c88539"
+file_deleted = "#c06159"
+file_renamed = "#806f9b"
+
+reviewed = "#657d38"
+pending = "#c88539"
+
+comment_note = "#4b7b97"
+comment_suggestion = "#3e816e"
+comment_issue = "#c06159"
+comment_praise = "#657d38"
+
+border_focused = "#78737d"
+border_unfocused = "#c9c4cf"
+status_bar_bg = "#e8e5eb"
+cursor_color = "#bf8a18"
+cursor_line_bg = "#f7f6f9"
+branch_name = "#806f9b"
+help_indicator = "#8c8792"
+
+message_info_fg = "#78737d"
+message_info_bg = "#f7f6f9"
+message_warning_fg = "#c88539"
+message_warning_bg = "#f7e7d5"
+message_error_fg = "#c06159"
+message_error_bg = "#f5e5e4"
+update_badge_fg = "#c88539"
+update_badge_bg = "#f7e7d5"
+
+mode_fg = "#fdfdfe"
+mode_bg = "#806f9b"
