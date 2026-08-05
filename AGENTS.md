@@ -1,3 +1,5 @@
+Ecosystem context: read `~/dotfiles/ai/raccoonarium.md`.
+
 Monorepo of UX/color themes for various apps. One folder per extension under `themes/<app>/`.
 
 ## Specs
