@@ -17,6 +17,7 @@
 - [Slack](../themes/Slack)
 - [Sublime Text](../themes/Sublime%20Text)
 - [Terminal.app](../themes/Terminal)
+- [Vim](../themes/Vim)
 - [Visual Studio Code](../themes/VSCode)
 - [Warp](../themes/Warp)
 - [WezTerm](../themes/WezTerm)
