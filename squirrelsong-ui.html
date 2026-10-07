@@ -40,7 +40,7 @@
         gap: 1rem;
         padding: 0.25rem 1rem;
         border-bottom: 0.5px solid var(--border);
-        background: var(--secondary-ui-background);
+        background: var(--titlebar-background);
       }
       .toolbar-title {
         width: 10.5rem;
@@ -48,7 +48,6 @@
         color: var(--title-foreground);
       }
       .toolbar-tabs {
-        /* TODO: add semantic tab colors to the spec and map them here (active/inactive/hover). */
         display: flex;
         padding: 4px 0;
         margin-left: 0.5rem;
@@ -58,16 +57,54 @@
         cursor: default;
       }
       .toolbar-tab-inner {
-        padding: 0.35rem 0.75rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        padding: 0.35rem 0.5rem 0.35rem 0.75rem;
         border-radius: 4px;
-        color: var(--text-foreground);
+        color: var(--tab-inactive-foreground);
+        background: transparent;
+      }
+      .toolbar-tab:not(.is-active) .toolbar-tab-inner {
+        transition: color 0.15s ease-in;
+      }
+      .toolbar-tab:not(.is-active):hover .toolbar-tab-inner {
+        background: var(--tab-inactive-hover-background);
       }
       .toolbar-tab.is-active .toolbar-tab-inner {
-        background: var(--ui-background);
-        color: var(--title-foreground);
+        color: var(--tab-active-foreground);
+        background: var(--tab-active-background);
         box-shadow:
-          0 0 0 0.5px var(--border),
+          0 0 0 0.5px var(--tab-border),
           0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+      .toolbar-tab-close {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.25rem;
+        height: 1.25rem;
+        padding: 0;
+        border: none;
+        border-radius: 4px;
+        background: transparent;
+        color: var(--icon);
+        font-size: 1rem;
+        line-height: 1;
+        opacity: 0;
+        pointer-events: none;
+        transition:
+          opacity 0.15s ease-in,
+          background-color 0.15s ease-in,
+          color 0.15s ease-in;
+      }
+      .toolbar-tab:hover .toolbar-tab-close {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .toolbar-tab-close:hover {
+        background: var(--tab-inactive-hover-background);
+        color: var(--active-icon);
       }
       .toolbar-actions {
         display: flex;
@@ -393,13 +430,40 @@
         <div class="toolbar-title">Squirrelsong</div>
         <div class="toolbar-tabs">
           <div class="toolbar-tab is-active">
-            <div class="toolbar-tab-inner">Preview</div>
+            <div class="toolbar-tab-inner">
+              <span class="toolbar-tab-label">Preview</span>
+              <button
+                type="button"
+                class="toolbar-tab-close"
+                aria-label="Close Preview tab"
+              >
+                ×
+              </button>
+            </div>
           </div>
           <div class="toolbar-tab">
-            <div class="toolbar-tab-inner">Editor</div>
+            <div class="toolbar-tab-inner">
+              <span class="toolbar-tab-label">Editor</span>
+              <button
+                type="button"
+                class="toolbar-tab-close"
+                aria-label="Close Editor tab"
+              >
+                ×
+              </button>
+            </div>
           </div>
           <div class="toolbar-tab">
-            <div class="toolbar-tab-inner">Terminal</div>
+            <div class="toolbar-tab-inner">
+              <span class="toolbar-tab-label">Terminal</span>
+              <button
+                type="button"
+                class="toolbar-tab-close"
+                aria-label="Close Terminal tab"
+              >
+                ×
+              </button>
+            </div>
           </div>
         </div>
         <div class="toolbar-actions">

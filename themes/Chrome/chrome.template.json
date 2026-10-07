@@ -10,14 +10,14 @@
   },
   "theme": {
     "colors": {
-      "background_tab_inactive": [{{secondaryUiBackground|rgb}}],
-      "background_tab": [{{secondaryUiBackground|rgb}}],
+      "background_tab_inactive": [{{titlebarBackground|rgb}}],
+      "background_tab": [{{titlebarBackground|rgb}}],
       "bookmark_text": [{{titleForeground|rgb}}],
       "button_background": [{{secondaryButtonBackground|rgb}}],
       "button_text": [{{secondaryButtonForeground|rgb}}],
       "control_background": [{{secondaryUiBackground|rgb}}],
-      "frame_inactive": [{{secondaryUiBackground|rgb}}],
-      "frame": [{{secondaryUiBackground|rgb}}],
+      "frame_inactive": [{{titlebarBackground|rgb}}],
+      "frame": [{{titlebarBackground|rgb}}],
       "ntp_background": [{{textBackground|rgb}}],
       "ntp_header": [{{titleForeground|rgb}}],
       "ntp_link_underline": [{{linkForeground|rgb}}],

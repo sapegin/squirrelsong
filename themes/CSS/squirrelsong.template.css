@@ -33,6 +33,12 @@
   --text-background: {{light:textBackground}};
   --ui-background: {{light:uiBackground}};
   --secondary-ui-background: {{light:secondaryUiBackground}};
+  --titlebar-background: {{light:titlebarBackground}};
+  --tab-inactive-foreground: {{light:tabInactiveForeground}};
+  --tab-active-foreground: {{light:tabActiveForeground}};
+  --tab-inactive-hover-background: {{light:tabInactiveHoverBackground}};
+  --tab-active-background: {{light:tabActiveBackground}};
+  --tab-border: {{light:tabBorder}};
   --active-background: {{light:activeBackground}};
   --hover-background: {{light:hoverBackground}};
   --line-highlight-background: {{light:lineHighlightBackground}};
@@ -136,6 +142,12 @@
   --text-background: {{dark:textBackground}};
   --ui-background: {{dark:uiBackground}};
   --secondary-ui-background: {{dark:secondaryUiBackground}};
+  --titlebar-background: {{dark:titlebarBackground}};
+  --tab-inactive-foreground: {{dark:tabInactiveForeground}};
+  --tab-active-foreground: {{dark:tabActiveForeground}};
+  --tab-inactive-hover-background: {{dark:tabInactiveHoverBackground}};
+  --tab-active-background: {{dark:tabActiveBackground}};
+  --tab-border: {{dark:tabBorder}};
   --active-background: {{dark:activeBackground}};
   --hover-background: {{dark:hoverBackground}};
   --line-highlight-background: {{dark:lineHighlightBackground}};

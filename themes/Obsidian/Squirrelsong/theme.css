@@ -76,6 +76,14 @@ body,
   --sqrl-brightYellowDim: #f8e7a0;
   --sqrl-brightYellowDimer: #fdf6de;
 
+  /* Title bar / tabs */
+  --sqrl-titlebar-background: var(--sqrl-gray160);
+  --sqrl-tab-inactive-hover-background: var(--sqrl-gray150);
+  --sqrl-tab-active-background: var(--sqrl-gray170);
+  --sqrl-tab-inactive-foreground: var(--sqrl-gray090);
+  --sqrl-tab-active-foreground: var(--sqrl-gray060);
+  --sqrl-tab-border: var(--sqrl-gray140);
+
   /* Custom variables */
   --textfield-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.05);
   --textfield-shadow-focus:
@@ -230,15 +238,15 @@ body,
 
   --indentation-guide-color: var(--color-border-light);
 
-  --tab-text-color: var(--sqrl-gray090);
-  --tab-text-color-active: var(--sqrl-gray060);
+  --tab-text-color: var(--sqrl-tab-inactive-foreground);
+  --tab-text-color-active: var(--sqrl-tab-active-foreground);
   --tab-text-color-focused: var(--sqrl-gray090);
   --tab-text-color-focused-active: var(--sqrl-gray060);
   --tab-text-color-focused-highlighted: var(--sqrl-gray060);
   --tab-text-color-focused-active-current: var(--sqrl-gray060);
-  --tab-background-active: var(--sqrl-gray170);
+  --tab-background-active: var(--sqrl-tab-active-background);
   --tab-divider-color: var(--color-border-light);
-  --tab-outline-color: var(--sqrl-gray140);
+  --tab-outline-color: var(--sqrl-tab-border);
   --tab-curve: 0;
 
   --blockquote-border-thickness: 4px;
@@ -314,8 +322,8 @@ body,
   --divider-color-hover: var(--sqrl-gray060);
   --divider-width-hover: 2px;
 
-  --titlebar-background: var(--sqrl-gray160);
-  --titlebar-background-focused: var(--sqrl-gray160);
+  --titlebar-background: var(--sqrl-titlebar-background);
+  --titlebar-background-focused: var(--sqrl-titlebar-background);
   --titlebar-border-color: var(--color-border-base);
 
   --icon-color: var(--sqrl-gray100);
@@ -601,7 +609,6 @@ input[type='range']:focus-visible::-webkit-slider-thumb {
 
 /* Horizontal tabs */
 
-.workspace-tab-header-inner,
 .workspace-tab-header-inner-icon,
 .workspace-tab-header-inner-close-button {
   transition: var(--transition);
@@ -633,13 +640,21 @@ body:not(.is-mobile)
   .workspace-tab-header-container
   .workspace-tab-header:not(.is-active):hover
   .workspace-tab-header-inner {
-  background: var(--background-modifier-hover-strong);
+  background: var(--sqrl-tab-inactive-hover-background);
 }
 body:not(.is-mobile)
   .workspace
   .mod-root
   .workspace-tabs:not(.mod-stacked)
-  .workspace-tab-header:not(.is-active)
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner {
+  background: transparent;
+}
+body:not(.is-mobile)
+  .workspace
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header
   .workspace-tab-header-inner-close-button {
   display: flex;
   opacity: 0;
@@ -648,9 +663,23 @@ body:not(.is-mobile)
   .workspace
   .mod-root
   .workspace-tabs:not(.mod-stacked)
-  .workspace-tab-header:hover
+  .workspace-tab-header:not(.is-active):hover
+  .workspace-tab-header-inner-close-button,
+body:not(.is-mobile)
+  .workspace
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header.is-active:hover
   .workspace-tab-header-inner-close-button {
   opacity: 1;
+}
+body:not(.is-mobile)
+  .workspace
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-inner-close-button:hover {
+  background: var(--sqrl-tab-inactive-hover-background);
+  border-radius: var(--tab-radius-active);
 }
 
 /* Drawers */

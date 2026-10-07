@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "version": "1.2.3",
+  "version": "1.2.4",
   "name": "Squirrelsong {{name}}",
   "browser_specific_settings": {
     "gecko": {
@@ -17,8 +17,8 @@
       "bookmark_text": "rgb({{titleForeground|rgb}})",
       "button_background_active": "rgb({{hoverBackground|rgb}})",
       "button_background_hover": "rgb({{hoverBackground|rgb}})",
-      "frame_inactive": "rgb({{secondaryUiBackground|rgb}})",
-      "frame": "rgb({{secondaryUiBackground|rgb}})",
+      "frame_inactive": "rgb({{titlebarBackground|rgb}})",
+      "frame": "rgb({{titlebarBackground|rgb}})",
       "icons_attention": "rgb({{activeIcon|rgb}})",
       "icons": "rgb({{icon|rgb}})",
       "ntp_background": "rgb({{textBackground|rgb}})",
@@ -34,11 +34,11 @@
       "sidebar_highlight": "rgb({{activeBackground|rgb}})",
       "sidebar_text": "rgb({{textForeground|rgb}})",
       "sidebar": "rgb({{uiBackground|rgb}})",
-      "tab_background_text": "rgb({{titleForeground|rgb}})",
+      "tab_background_text": "rgb({{tabActiveForeground|rgb}})",
       "tab_line": "rgb({{lightBorder|rgb}})",
       "tab_loading": "rgb({{activeIcon|rgb}})",
-      "tab_selected": "rgb({{uiBackground|rgb}})",
-      "tab_text": "rgb({{titleForeground|rgb}})",
+      "tab_selected": "rgb({{tabActiveBackground|rgb}})",
+      "tab_text": "rgb({{tabInactiveForeground|rgb}})",
       "toolbar_bottom_separator": "rgb({{border|rgb}})",
       "toolbar_field_border_focus": "rgb({{focusBorder|rgb}})",
       "toolbar_field_border": "rgb({{border|rgb}})",
