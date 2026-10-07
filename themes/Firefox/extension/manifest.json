@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "version": "1.2.1",
+  "version": "1.2.2",
   "name": "Squirrelsong Light",
   "theme": {
     "images": {},
@@ -9,6 +9,8 @@
       "content_color_scheme": "light"
     },
     "colors": {
+      "accentcolor": "rgb(247, 246, 249)",
+      "textcolor": "rgb(76, 75, 78)",
       "bookmark_text": "rgb(76, 75, 78)",
       "button_background_active": "rgb(232, 229, 235)",
       "button_background_hover": "rgb(232, 229, 235)",

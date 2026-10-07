@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "version": "1.2.1",
+  "version": "1.2.2",
   "name": "Squirrelsong {{name}}",
   "theme": {
     "images": {},
@@ -9,6 +9,8 @@
       "content_color_scheme": "{{kind}}"
     },
     "colors": {
+      "accentcolor": "rgb({{uiBackground|rgb}})",
+      "textcolor": "rgb({{titleForeground|rgb}})",
       "bookmark_text": "rgb({{titleForeground|rgb}})",
       "button_background_active": "rgb({{hoverBackground|rgb}})",
       "button_background_hover": "rgb({{hoverBackground|rgb}})",
