@@ -32,6 +32,8 @@ body,
   --input-border-width: 1px;
   --callout-border-width: 1px;
   --callout-title-weight: var(--sqrl-heading-weight);
+
+  --file-header-justify: center;
 }
 
 .theme-light,
