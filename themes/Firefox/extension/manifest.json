@@ -1,7 +1,12 @@
 {
   "manifest_version": 2,
-  "version": "1.2.2",
+  "version": "1.2.3",
   "name": "Squirrelsong Light",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{75eff860-d366-4dbe-8625-f30fc12fe0e8}"
+    }
+  },
   "theme": {
     "images": {},
     "properties": {
@@ -9,8 +14,6 @@
       "content_color_scheme": "light"
     },
     "colors": {
-      "accentcolor": "rgb(247, 246, 249)",
-      "textcolor": "rgb(76, 75, 78)",
       "bookmark_text": "rgb(76, 75, 78)",
       "button_background_active": "rgb(232, 229, 235)",
       "button_background_hover": "rgb(232, 229, 235)",

@@ -1,7 +1,12 @@
 {
   "manifest_version": 2,
-  "version": "1.2.2",
+  "version": "1.2.3",
   "name": "Squirrelsong {{name}}",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{75eff860-d366-4dbe-8625-f30fc12fe0e8}"
+    }
+  },
   "theme": {
     "images": {},
     "properties": {
@@ -9,8 +14,6 @@
       "content_color_scheme": "{{kind}}"
     },
     "colors": {
-      "accentcolor": "rgb({{uiBackground|rgb}})",
-      "textcolor": "rgb({{titleForeground|rgb}})",
       "bookmark_text": "rgb({{titleForeground|rgb}})",
       "button_background_active": "rgb({{hoverBackground|rgb}})",
       "button_background_hover": "rgb({{hoverBackground|rgb}})",
