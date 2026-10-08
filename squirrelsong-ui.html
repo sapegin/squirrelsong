@@ -144,22 +144,23 @@
       .btn-primary {
         background: var(--button-background);
         color: var(--button-foreground);
+        border-color: var(--button-border);
       }
-      .btn-primary:hover {
+      .btn-primary:not(:disabled):hover {
         background: var(--button-hover-background);
       }
       .btn-secondary {
         background: var(--secondary-button-background);
         color: var(--secondary-button-foreground);
-        border-color: var(--border);
+        border-color: var(--secondary-button-border);
       }
-      .btn-secondary:hover {
+      .btn-secondary:not(:disabled):hover {
         background: var(--secondary-button-hover-background);
       }
       .btn:disabled,
       .btn:disabled:hover {
-        background: var(--disabled-button-background);
-        color: var(--disabled-button-foreground);
+        opacity: 0.5;
+        cursor: default;
       }
 
       .layout {
@@ -517,6 +518,9 @@
                   Secondary
                 </button>
                 <button class="btn btn-primary" type="button" disabled>
+                  Disabled
+                </button>
+                <button class="btn btn-secondary" type="button" disabled>
                   Disabled
                 </button>
               </div>

@@ -23,10 +23,10 @@ body,
   --toggle-thumb-radius: 16px;
   --slider-thumb-radius: 12px;
   --modal-radius: 12px;
-  --touch-radius-xxs: 12px;
-  --touch-radius-xs: 12px;
-  --touch-radius-s: 12px;
-  --touch-radius-m: 12px;
+  --touch-radius-xxs: 4px;
+  --touch-radius-xs: 4px;
+  --touch-radius-s: 4px;
+  --touch-radius-m: 4px;
 
   --tab-outline-width: 0.5px;
   --input-border-width: 1px;
@@ -78,13 +78,21 @@ body,
   --sqrl-brightYellowDim: #f8e7a0;
   --sqrl-brightYellowDimer: #fdf6de;
 
-  /* Title bar / tabs */
+  /* Semantic variables */
   --sqrl-titlebar-background: var(--sqrl-gray160);
   --sqrl-tab-inactive-hover-background: var(--sqrl-gray150);
   --sqrl-tab-active-background: var(--sqrl-gray170);
   --sqrl-tab-inactive-foreground: var(--sqrl-gray090);
   --sqrl-tab-active-foreground: var(--sqrl-gray060);
   --sqrl-tab-border: var(--sqrl-gray140);
+  --sqrl-button-border: var(--sqrl-gray100);
+  --sqrl-button-background: var(--sqrl-gray100);
+  --sqrl-button-hover-background: var(--sqrl-gray090);
+  --sqrl-button-foreground: var(--sqrl-gray180);
+  --sqrl-secondary-button-border: var(--sqrl-gray140);
+  --sqrl-secondary-button-background: var(--sqrl-gray160);
+  --sqrl-secondary-button-hover-background: var(--sqrl-gray150);
+  --sqrl-secondary-button-foreground: var(--sqrl-gray080);
 
   /* Custom variables */
   --textfield-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.05);
@@ -142,6 +150,7 @@ body,
 
   --dropdown-background: var(--sqrl-gray170);
   --dropdown-background-hover: var(--sqrl-gray160);
+  --dropdown-icon-background: transparent;
 
   --transition:
     text-shadow 0.15s ease-in, box-shadow 0.15s ease-in,
@@ -218,14 +227,14 @@ body,
 
   --interactive-normal: var(--sqrl-gray180);
   --interactive-hover: var(--sqrl-gray160);
-  --interactive-accent: var(--sqrl-gray100);
+  --interactive-accent: var(--sqrl-button-background);
   --interactive-accent-hsl: 267, 5%, 55%;
-  --interactive-accent-hover: var(--sqrl-gray090);
+  --interactive-accent-hover: var(--sqrl-button-hover-background);
 
   --text-normal: var(--sqrl-gray060);
   --text-muted: var(--sqrl-gray100);
   --text-faint: var(--sqrl-gray110);
-  --text-on-accent: var(--sqrl-gray180);
+  --text-on-accent: var(--sqrl-button-foreground);
   --text-on-accent-inverted: var(--sqrl-gray060);
   --text-success: var(--sqrl-greenContrast);
   --text-warning: var(--sqrl-orangeContrast);
@@ -340,8 +349,6 @@ body,
 
   --input-shadow: var(--textfield-shadow);
 
-  --dropdown-background-position: right 0.5em top 55%, 0 0;
-
   --raised-shadow:
     0 1px 3px rgba(0, 0, 0, 0.015), 0 0 8px rgba(0, 0, 0, 0.065),
     var(--shadow-edges);
@@ -403,6 +410,15 @@ body,
   --sqrl-brightPinkDimer: #5e375c;
   --sqrl-brightYellowDim: #4c3c6b;
   --sqrl-brightYellowDimer: #3f3259;
+
+  --sqrl-button-border: var(--sqrl-gray110);
+  --sqrl-button-background: var(--sqrl-gray110);
+  --sqrl-button-hover-background: var(--sqrl-gray090);
+  --sqrl-button-foreground: var(--sqrl-gray180);
+  --sqrl-secondary-button-border: var(--sqrl-gray140);
+  --sqrl-secondary-button-background: var(--sqrl-gray150);
+  --sqrl-secondary-button-hover-background: var(--sqrl-gray130);
+  --sqrl-secondary-button-foreground: var(--sqrl-gray080);
 
   --color-base-00: var(--sqrl-gray040);
   --color-base-05: var(--sqrl-gray060);
@@ -495,26 +511,28 @@ button {
 
 button:not(.clickable-icon) {
   padding-block-end: 6px;
-  color: var(--sqrl-gray080);
-  background-color: var(--sqrl-gray160);
+  color: var(--sqrl-secondary-button-foreground);
+  background-color: var(--sqrl-secondary-button-background);
+  border-color: var(--sqrl-secondary-button-border);
   box-shadow: var(--button-shadow);
   text-shadow: var(--button-text-shadow);
   transition: var(--transition);
 }
 button:not(.clickable-icon):hover {
-  background-color: var(--background-modifier-hover-strong);
+  background-color: var(--sqrl-secondary-button-hover-background);
 }
 button:not(.clickable-icon):active {
   padding-block-end: 5px;
   box-shadow: var(--button-shadow-active);
 }
 button.mod-cta {
-  color: var(--sqrl-gray180);
-  background-color: var(--sqrl-gray100);
+  color: var(--sqrl-button-foreground);
+  background-color: var(--sqrl-button-background);
+  border-color: var(--sqrl-button-border);
   text-shadow: var(--button-accent-text-shadow);
 }
 button.mod-cta:hover {
-  background-color: var(--sqrl-gray090);
+  background-color: var(--sqrl-button-hover-background);
 }
 
 /* Clickable icons */
@@ -557,6 +575,11 @@ input[type='number']:focus-visible {
 }
 
 /* Dropdowns */
+
+/* Settings (macOS) turns the chevron halo back on in app.css */
+body.mod-macos:not(.is-mobile) .mod-settings {
+  --dropdown-icon-background: transparent;
+}
 
 .dropdown {
   border: 0;
@@ -682,6 +705,23 @@ body:not(.is-mobile)
   .workspace-tab-header-inner-close-button:hover {
   background: var(--sqrl-tab-inactive-hover-background);
   border-radius: var(--tab-radius-active);
+}
+
+/* Empty tab (new note, new base, go to file) */
+
+.empty-state-action-list > .text-icon-button.empty-state-action {
+  border-radius: var(--tab-radius-active);
+  color: var(--sqrl-secondary-button-foreground);
+  border-color: var(--sqrl-secondary-button-border);
+  background-color: var(--sqrl-secondary-button-background);
+}
+.empty-state-action-list > .text-icon-button.empty-state-action:hover {
+  background-color: var(--sqrl-secondary-button-hover-background);
+}
+.empty-state-action-list
+  > .text-icon-button.empty-state-action
+  .empty-state-hotkey {
+  background-color: transparent;
 }
 
 /* Drawers */
