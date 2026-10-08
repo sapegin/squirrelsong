@@ -48,7 +48,8 @@ Edit `scripts/prepare-themes.ts` only when adding a new scheme or mixin type.
 
 ## Rules
 
-- **Disabled buttons:** The canonical pattern is the enabled primary or secondary button at **50% opacity** (see `squirrelsong-ui.html`). Use `disabledButtonBackground`, `disabledButtonForeground`, and `disabledButtonBorder` from `ui.json` only when opacity is not supported.
+- **Hairline separators:** For header and footer chrome (toolbars, nav bars, title bars), prefer a **0.5px** solid edge using the standard border token (`border`).
+- **Disabled buttons:** The canonical pattern is the enabled primary or secondary button at 50% opacity (see `squirrelsong-ui.html`). Use `disabledButtonBackground`, `disabledButtonForeground`, and `disabledButtonBorder` from `ui.json` only when opacity is not supported.
 - When working on CSS themes, refer to @themes/CSS/squirrelsong.css and @squirrelsong-ui.html for correct styles.
 - All new themes should be made using templates.
 - Don’t mention templates in individual theme Readmes.

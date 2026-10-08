@@ -36,6 +36,10 @@ body,
   --file-header-justify: center;
 }
 
+body.is-phone {
+  --file-header-justify: left;
+}
+
 .theme-light,
 .theme-dark {
   /* Squirrelsong Light palette */
@@ -735,7 +739,6 @@ body:not(.is-mobile)
 }
 
 .workspace-drawer-header {
-  border-top: 1px solid var(--color-border-light);
   box-shadow: var(--bottom-toolbar-shadow);
 }
 
@@ -776,12 +779,21 @@ body:not(.is-mobile)
   --view-bottom-fade-mask: none;
 }
 
+/* Remove Liquid Glass effects (only visible in `.is-ios`) */
+.is-mobile.is-floating-nav.is-ios {
+  --shadow-edges: none;
+}
+.is-mobile.is-floating-nav.is-ios .mod-raised {
+  --raised: none;
+  backdrop-filter: none;
+}
+
 .is-mobile.is-floating-nav.is-phone .view-header {
   background-color: var(--background-primary);
   border: 0;
-  border-bottom: 1px solid var(--color-border-light);
+  border-bottom: none;
   border-radius: 0;
-  box-shadow: var(--top-toolbar-shadow);
+  box-shadow: none;
   margin-top: 0;
   padding-top: var(--view-header-top-offset);
 }
@@ -798,6 +810,7 @@ body:not(.is-mobile)
   width: 100vw;
   border-radius: 0;
   justify-content: center;
+  box-shadow: none;
 }
 .mobile-navbar-action .clickable-icon,
 .mobile-navbar-action button {
@@ -834,8 +847,7 @@ body:not(.is-mobile)
   display: flex;
   width: 100%;
   justify-content: center;
-  border-top: 1px solid var(--color-border-light);
-  box-shadow: var(--bottom-toolbar-shadow);
+  box-shadow: none;
 }
 
 /* Metadata (properties) section */
@@ -953,6 +965,11 @@ input.prompt-input:focus-visible {
 
 .workspace-drawer .search-input-container input {
   border-width: var(--input-border-width);
+}
+
+.search-results-info .search-results-result-count {
+  width: auto;
+  height: auto;
 }
 
 /* Editor */
