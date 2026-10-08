@@ -951,6 +951,10 @@ input.prompt-input:focus-visible {
 
 /* Search */
 
+.workspace-drawer .search-input-container {
+  --search-input-radius: 100px;
+}
+
 @media (hover: hover) {
   .search-result-file-match:hover {
     /* Use correct hover colors instead of yellow background */
@@ -965,6 +969,7 @@ input.prompt-input:focus-visible {
 
 .workspace-drawer .search-input-container input {
   border-width: var(--input-border-width);
+  /* border-radius: var(--input-radius); */
 }
 
 .search-results-info .search-results-result-count {
