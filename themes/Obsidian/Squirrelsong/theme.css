@@ -17,15 +17,12 @@ body,
   --radius-xl: 12px;
   --input-radius: 4px;
   --button-radius: 8px;
+  --hotkey-radius: var(--button-radius);
   --tab-radius-active: 4px;
   --checkbox-radius: 4px;
   --toggle-radius: 20px;
   --toggle-thumb-radius: 16px;
-  --toggle-thumb-width: 16px;
-  --toggle-thumb-height: 16px;
-  --slider-thumb-radius: var(--toggle-thumb-radius);
-  --slider-thumb-width: var(--toggle-thumb-width);
-  --slider-thumb-height: var(--toggle-thumb-height);
+  --slider-thumb-radius: 12px;
   --modal-radius: 12px;
   --touch-radius-xxs: 4px;
   --touch-radius-xs: 4px;
@@ -141,11 +138,18 @@ body.is-phone {
   --slider-track-shadow:
     inset 0px 0px 0px 1px rgba(0, 0, 0, 0.05),
     0px 0px 0px 1px rgba(253, 253, 254, 0.05);
+  --slider-thumb-shadow:
+    inset 0px 1px 0px 1px rgba(253, 253, 254, 1),
+    inset 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.25);
+  --slider-thumb-shadow-hover:
+    inset 0px 1px 0px 1px rgba(253, 253, 254, 1),
+    inset 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.3);
   --top-toolbar-shadow: 0 5px 25px rgba(0, 0, 0, 0.01);
   --bottom-toolbar-shadow: 0 -5px 25px rgba(0, 0, 0, 0.01);
   --tab-active-shadow:
     0 0 0 var(--tab-outline-width) var(--tab-outline-color),
     0 1px 3px rgba(0, 0, 0, 0.1);
+  --hotkey-shadow: inset 0 -1px 0 #4c4b4e11;
 
   --color-border-base: var(--sqrl-gray140);
   --color-border-light: var(--sqrl-gray160);
@@ -320,9 +324,7 @@ body.is-phone {
 
   --toggle-thumb-color: var(--sqrl-gray170);
 
-  --slider-thumb-color: var(--toggle-thumb-color);
-  --slider-thumb-shadow: var(--toggle-thumb-shadow);
-  --slider-thumb-shadow-hover: var(--toggle-thumb-shadow);
+  --slider-thumb-color: var(--sqrl-gray080);
 
   --table-row-alt-background: var(--sqrl-gray170);
   --table-row-alt-background-hover: var(--sqrl-gray170);
@@ -332,6 +334,9 @@ body.is-phone {
 
   --modal-border-color: var(--color-border-light);
   --prompt-border-color: var(--color-border-light);
+
+  --hotkey-background: var(--sqrl-gray170);
+  --hotkey-radius: var(--button-radius);
 
   --divider-color: var(--color-border-light);
   --divider-color-hover: var(--sqrl-gray060);
@@ -467,10 +472,18 @@ body.is-phone {
   --toggle-thumb-shadow:
     inset 0px 1px 0px 1px rgba(0, 0, 0, 0.1),
     inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.1);
+  --slider-thumb-shadow:
+    inset 0px 1px 0px 1px rgba(0, 0, 0, 0.1),
+    inset 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+  --slider-thumb-shadow-hover:
+    inset 0px 1px 0px 1px rgba(0, 0, 0, 0.1),
+    inset 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.1);
 
   --button-text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5);
   --button-accent-text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.15);
   --active-text-shadow: var(--button-accent-text-shadow);
+
+  --hotkey-shadow: inset 0 -1px 0 #bea3d911;
 }
 
 .zen-mode-supreme-active.theme-light {
@@ -604,8 +617,6 @@ input[type='range']:focus {
 }
 
 input[type='range']::-webkit-slider-thumb {
-  width: var(--slider-thumb-width);
-  height: var(--slider-thumb-height);
   background-color: var(--slider-thumb-color);
   transition: var(--transition);
   box-shadow: var(--slider-thumb-shadow);
@@ -718,10 +729,17 @@ body:not(.is-mobile)
 .empty-state-action-list > .text-icon-button.empty-state-action:hover {
   background-color: var(--sqrl-secondary-button-hover-background);
 }
-.empty-state-action-list
-  > .text-icon-button.empty-state-action
-  .empty-state-hotkey {
-  background-color: transparent;
+
+/* Hotkey badges */
+
+.empty-state-hotkey,
+.setting-hotkey,
+.suggestion-item.mod-complex .suggestion-hotkey {
+  color: var(--sqrl-gray090);
+  background-color: var(--hotkey-background);
+  border: 1px solid var(--color-border-base);
+  border-bottom-color: var(--color-border-base);
+  box-shadow: var(--hotkey-shadow);
 }
 
 /* Drawers */
@@ -911,15 +929,6 @@ input.metadata-input:focus-visible {
   --pill-color: var(--sqrl-gray080);
   --pill-background-hover: var(--background-modifier-hover-strong);
   --pill-color-hover: var(--sqrl-gray080);
-}
-
-/* Settings */
-.modal.mod-settings {
-  --settings-background: var(--sqrl-gray180);
-  --modal-background: var(--sqrl-gray180);
-  --modal-sidebar-background: var(--sqrl-gray180);
-  --background-primary: var(--sqrl-gray170);
-  --setting-items-background: var(--sqrl-gray180);
 }
 
 /* Prompt modals (quick switcher, command palette) */
