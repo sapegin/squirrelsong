@@ -10,6 +10,7 @@ import {
   getPaletteColor,
   readThemeSpecs,
   resolveColorMap,
+  resolveColorMapSrgb,
   resolveColorRef,
   type AnsiMap,
   type ColorMap,
@@ -240,5 +241,24 @@ console.log('[UPDATE] Updating theme preview...');
 const previewSections = buildPreviewSections(themeSpecs);
 fs.writeFileSync(PREVIEW_FILE, generateThemePreviewHtml(previewSections));
 console.log(`[UPDATE] 👉 ${PREVIEW_FILE}`);
+
+const macOSThemePath = 'themes/macOS/squirrelsong-macos.json';
+console.log('[UPDATE] Updating macOS theme...');
+fs.mkdirSync('themes/macOS', { recursive: true });
+fs.writeFileSync(
+  macOSThemePath,
+  `${JSON.stringify(
+    {
+      version: 1,
+      ui: {
+        light: resolveColorMapSrgb(themeSpecs.light, themeSpecs.light.ui, 'light'),
+        dark: resolveColorMapSrgb(themeSpecs.dark, themeSpecs.dark.ui, 'dark'),
+      },
+    },
+    null,
+    2
+  )}\n`
+);
+console.log(`[UPDATE] 👉 ${macOSThemePath}`);
 
 console.log('[UPDATE] Done 🦜');

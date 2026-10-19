@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import { hexToRgb } from './hexToRgb.ts';
 import { stripJsonComments } from './stripJsonComments.ts';
 
 export type Palette = Record<string, string>;
@@ -87,6 +88,30 @@ export function resolveColorMap(
       key,
       getPaletteColor(spec.palette, resolveColorName(colorInfo), scheme),
     ])
+  );
+}
+
+/** sRGB 0–1 components for AppKit `NSColor(srgbRed:green:blue:alpha:)`. */
+export interface SrgbColor {
+  red: number;
+  green: number;
+  blue: number;
+  alpha: number;
+}
+
+export function hexToSrgb(hex: string): SrgbColor {
+  const [r, g, b] = hexToRgb(hex);
+  return { red: r / 255, green: g / 255, blue: b / 255, alpha: 1 };
+}
+
+export function resolveColorMapSrgb(
+  spec: ThemeSpec,
+  colorMap: ColorMap | AnsiMap,
+  scheme: SchemeName
+): Record<string, SrgbColor> {
+  const resolved = resolveColorMap(spec, colorMap, scheme);
+  return Object.fromEntries(
+    Object.entries(resolved).map(([key, hex]) => [key, hexToSrgb(hex)])
   );
 }
 
