@@ -310,8 +310,8 @@
       },
       "deletedBackground": {
         "red": 0.9803921568627451,
-        "green": 0.9568627450980393,
-        "blue": 0.9568627450980393,
+        "green": 0.9529411764705882,
+        "blue": 0.9529411764705882,
         "alpha": 1
       },
       "insertedWordBackground": {

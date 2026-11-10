@@ -20,7 +20,7 @@
     line-numbers-right-style = "#8c8792"
     line-numbers-zero-style = "#8c8792"
     minus-emph-style = normal "#f5e5e4"
-    minus-style = normal "#faf4f4"
+    minus-style = normal "#faf3f3"
     plus-emph-style = syntax bold "#dde2d7"
     plus-style = syntax "#f2f4f1"
     whitespace-error-style = red reverse
