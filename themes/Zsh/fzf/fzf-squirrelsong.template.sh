@@ -11,7 +11,7 @@ prompt:{{disabledForeground}},\
 spinner:{{terminalBlack}},\
 pointer:{{matchBase}},\
 header:{{terminalBrightWhite}},\
-border:{{terminalBorder}},\
+border:{{border}},\
 label:{{yellow}},\
 query:{{terminalBrightWhite}},\
 disabled:{{terminalBrightBlack}}"

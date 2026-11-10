@@ -3,7 +3,6 @@
     {
       "file": "fzf-squirrelsong-light.sh",
       "scheme": "light",
-      "mixin": "terminalLight",
       "context": {
         "name": "Light"
       }
@@ -11,7 +10,6 @@
     {
       "file": "fzf-squirrelsong-dark.sh",
       "scheme": "dark",
-      "mixin": "terminalDark",
       "context": {
         "name": "Dark"
       }

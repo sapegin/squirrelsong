@@ -18,12 +18,9 @@ import {
   type SchemeName,
 } from './util/theme.ts';
 
-type MixinName = 'terminalLight' | 'terminalDark';
-
 interface ThemeEntry {
   file: string;
   scheme?: string;
-  mixin?: string;
   context?: Record<string, string>;
 }
 
@@ -43,23 +40,6 @@ const schemes: Record<SchemeName, TemplateContext> = {
   dark: darkTheme.context,
 };
 
-const mixins: Record<MixinName, TemplateContext> = {
-  terminalLight: {
-    ...lightTheme.ansi,
-    terminalBorder: lightTheme.ui.border,
-    terminalMatchBackground: lightTheme.ui.matchBackground,
-    terminalMatchBase: lightTheme.ui.matchBase,
-    terminalSelectionBase: lightTheme.ui.selectionBase,
-  },
-  terminalDark: {
-    ...darkTheme.ansi,
-    terminalBorder: darkTheme.ui.border,
-    terminalMatchBackground: darkTheme.ui.matchBackground,
-    terminalMatchBase: darkTheme.ui.matchBase,
-    terminalSelectionBase: darkTheme.ui.selectionBase,
-  },
-};
-
 const sharedScheme: TemplateContext = {};
 for (const [key] of Object.entries(schemes.light)) {
   sharedScheme[`light:${key}`] = schemes.light[key];
@@ -68,10 +48,6 @@ for (const [key] of Object.entries(schemes.light)) {
 
 function isSchemeName(value: string): value is SchemeName {
   return value in schemes;
-}
-
-function isMixinName(value: string): value is MixinName {
-  return value in mixins;
 }
 
 const configs = fs.globSync('themes/**/config.json').toSorted();
@@ -119,22 +95,9 @@ for (const configFile of configs) {
       schemeContext = schemes[scheme];
     }
 
-    const mixin = theme.mixin;
-    let mixinContext: TemplateContext = {};
-    if (mixin !== undefined) {
-      if (!isMixinName(mixin)) {
-        console.error(
-          `   🦀 Mixin '${mixin}' not found, possible values: ${Object.keys(mixins).join(', ')}`
-        );
-        continue;
-      }
-      mixinContext = mixins[mixin];
-    }
-
-    // Prepare the context: base palette + mixin + custom values
+    // Prepare the context: base palette + custom values
     const context: TemplateContext = {
       ...schemeContext,
-      ...mixinContext,
     };
     for (const [key, value] of Object.entries(theme.context ?? {})) {
       if (typeof value === 'string' && value.includes('{{')) {

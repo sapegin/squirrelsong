@@ -3,7 +3,6 @@
     {
       "file": "SquirrelsongLight/SquirrelsongLight.color-theme.json",
       "scheme": "light",
-      "mixin": "terminalLight",
       "context": {
         "name": "Light",
         "mode": "light",
@@ -14,22 +13,8 @@
       }
     },
     {
-      "file": "SquirrelsongLight/SquirrelsongLightDarkTerminal.color-theme.json",
-      "scheme": "light",
-      "mixin": "terminalDark",
-      "context": {
-        "name": "Light (Dark Terminal)",
-        "mode": "light",
-        "insertedBackground": "{{green}}14",
-        "deletedBackground": "{{red}}14",
-        "insertedWordBackground": "{{green}}26",
-        "deletedWordBackground": "{{red}}26"
-      }
-    },
-    {
       "file": "SquirrelsongDark/SquirrelsongDark.color-theme.json",
       "scheme": "dark",
-      "mixin": "terminalDark",
       "context": {
         "name": "Dark",
         "mode": "dark",

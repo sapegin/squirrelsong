@@ -70,8 +70,6 @@ const IGNORES = [
   'package.json',
   'package-lock.json',
   'Brewfile.lock.json',
-  // Mixed light/dark files
-  'SquirrelsongLightDarkTerminal.color-theme.json',
 ];
 
 const TRANSPARENT = [

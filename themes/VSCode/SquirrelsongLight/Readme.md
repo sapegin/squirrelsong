@@ -58,11 +58,9 @@ Here are my settings related to theming and typography:
 
 ![Squirrelsong Light: opening files](https://github.com/sapegin/squirrelsong/raw/HEAD/themes/VSCode/screenshots/screenshot-files.jpg)
 
-## How to make the integrated terminal dark?
+## Recommended terminal settings
 
-To use the [Squirrelsong Dark](https://marketplace.visualstudio.com/items?itemName=sapegin.Theme-SquirrelsongDark) theme in the integrated terminal, choose the `Squirrelsong Light (Dark Terminal)` theme instead of the `Squirrelsong Light`.
-
-Also, add these two options to your config:
+Add these options to your config for accurate terminal colors:
 
 ```js
 {
@@ -72,8 +70,6 @@ Also, add these two options to your config:
   'terminal.integrated.drawBoldTextInBrightColors': false
 }
 ```
-
-![Squirrelsong Light with dark terminal](https://github.com/sapegin/squirrelsong/raw/HEAD/themes/VSCode/screenshots/screenshot-terminal.jpg)
 
 ## Try Squirrelsong for other apps
 

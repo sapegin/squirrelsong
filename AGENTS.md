@@ -39,12 +39,11 @@ npm run format             # format code
 Each entry in `config.json` can specify:
 
 - `scheme`: `light` or `dark` — palette and UI/code tokens for that theme
-- `mixin`: `terminalLight` or `terminalDark` — terminal ANSI colors (optional)
 - `context`: extra template variables (optional)
 
 For files that combine both schemes in one output (example: `themes/Git/delta.template.gitconfig`), omit `scheme` and use `{{light:token}}` / `{{dark:token}}` placeholders.
 
-Edit `scripts/prepare-themes.ts` only when adding a new scheme or mixin type.
+Edit `scripts/prepare-themes.ts` only when adding a new scheme type.
 
 ## Rules
 
