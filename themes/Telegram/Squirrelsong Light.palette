@@ -16,8 +16,8 @@ link = #806f9b
 // Links, button links, my reactions background
 accent = #806f9b
 // Number of unread messages in the list, dangerous links
-redUI = #c06159
-greenUI = #657d38
+redUI = #bb3c33
+greenUI = #38701e
 blackTransparent = #4c4b4e:0.60
 grayTransparent = #78737d:0.60
 grayUI = #f7f6f9

@@ -192,6 +192,7 @@
       .main {
         padding: 1.5rem;
         background: var(--text-background);
+        color: var(--text-foreground);
         overflow: auto;
       }
       .section {
@@ -244,6 +245,10 @@
         color: var(--info-foreground);
         background: var(--info-background);
         border-color: var(--info-border);
+      }
+      .text-attention {
+        font-weight: bold;
+        color: var(--attention-foreground);
       }
 
       .selection-demo {
@@ -545,6 +550,7 @@
             <div class="alert alert-error">Error message</div>
             <div class="alert alert-warning">Warning message</div>
             <div class="alert alert-info">Info message</div>
+            <p class="text-attention">Attention foreground</p>
           </section>
 
           <section class="section">

@@ -30,6 +30,7 @@
   --warning-foreground: {{light:warningForeground}};
   --warning-background: {{light:warningBackground}};
   --warning-border: {{light:warningBorder}};
+  --attention-foreground: {{light:attentionForeground}};
   --info-foreground: {{light:infoForeground}};
   --info-background: {{light:infoBackground}};
   --info-border: {{light:infoBorder}};
@@ -142,6 +143,7 @@
   --warning-foreground: {{dark:warningForeground}};
   --warning-background: {{dark:warningBackground}};
   --warning-border: {{dark:warningBorder}};
+  --attention-foreground: {{dark:attentionForeground}};
   --info-foreground: {{dark:infoForeground}};
   --info-background: {{dark:infoBackground}};
   --info-border: {{dark:infoBorder}};

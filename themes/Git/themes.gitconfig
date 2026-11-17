@@ -52,9 +52,9 @@
     line-numbers-right-format = " {np:>1}┊"
     line-numbers-right-style = "#866db0"
     line-numbers-zero-style = "#866db0"
-    minus-emph-style = normal "#44283a"
+    minus-emph-style = normal "#432834"
     minus-style = normal "#332239"
-    plus-emph-style = syntax bold "#32363a"
+    plus-emph-style = syntax bold "#333b33"
     plus-style = syntax "#2d2b39"
     whitespace-error-style = red reverse
     zero-style = syntax

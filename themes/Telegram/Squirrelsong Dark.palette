@@ -16,8 +16,8 @@ link = #ca5a83
 // Links, button links, my reactions background
 accent = #ca5a83
 // Number of unread messages in the list, dangerous links
-redUI = #ce574a
-greenUI = #709855
+redUI = #f56c57
+greenUI = #5eb551
 blackTransparent = #bea3d9:0.60
 grayTransparent = #9a7eb4:0.60
 grayUI = #36294d
@@ -97,13 +97,13 @@ groupPeerNameGreen = #709855
 groupPeerNameCyan = #72aaa8
 groupPeerNameLightBlue = #5993c2
 groupPeerNameBlue = #63a2d6
-peerAvatarRedTop = #44283a
+peerAvatarRedTop = #432834
 peerAvatarRedBottom = #ac493e
 peerAvatarOrangeTop = #503d20
 peerAvatarOrangeBottom = #b18433
 peerAvatarVioletTop = #453461
 peerAvatarVioletBottom = #7f61b3
-peerAvatarGreenTop = #32363a
+peerAvatarGreenTop = #333b33
 peerAvatarGreenBottom = #558240
 peerAvatarCyanTop = #3e5550
 peerAvatarCyanBottom = #4f9593
