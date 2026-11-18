@@ -68,33 +68,35 @@
   --accent3: {{light:accent3}};
 
   /* Code */
-  --code-punctuation: {{light:punctuation}};
-  --code-comment: {{light:comment}};
-  --code-keyword: {{light:keyword}};
-  --code-tag-name: {{light:tagName}};
-  --code-tag-brackets: {{light:tagBrackets}};
-  --code-value: {{light:value}};
-  --code-property: {{light:property}};
-  --code-namespace: {{light:namespace}};
-  --code-variable: {{light:variable}};
-  --code-function: {{light:function}};
-  --code-string: {{light:string}};
-  --code-escape-character: {{light:escapeCharacter}};
-  --code-inserted: {{light:inserted}};
-  --code-type: {{light:type}};
-  --code-operator: {{light:operator}};
-  --code-class: {{light:class}};
-  --code-at-rule: {{light:atRule}};
-  --code-control-flow: {{light:controlFlow}};
-  --code-deleted: {{light:deleted}};
-  --code-important1: {{light:important1}};
-  --code-important2: {{light:important2}};
-  --code-important3: {{light:important3}};
-  --code-important4: {{light:important4}};
+  --code-punctuation: {{light:codePunctuation}};
+  --code-comment: {{light:codeComment}};
+  --code-keyword: {{light:codeKeyword}};
+  --code-tag-name: {{light:codeTagName}};
+  --code-tag-brackets: {{light:codeTagBrackets}};
+  --code-value: {{light:codeValue}};
+  --code-property: {{light:codeProperty}};
+  --code-namespace: {{light:codeNamespace}};
+  --code-variable: {{light:codeVariable}};
+  --code-function: {{light:codeFunction}};
+  --code-string: {{light:codeString}};
+  --code-escape-character: {{light:codeEscapeCharacter}};
+  --code-inserted: {{light:codeInserted}};
+  --code-type: {{light:codeType}};
+  --code-operator: {{light:codeOperator}};
+  --code-class: {{light:codeClass}};
+  --code-at-rule: {{light:codeAtRule}};
+  --code-control-flow: {{light:codeControlFlow}};
+  --code-deleted: {{light:codeDeleted}};
+  --code-important1: {{light:codeImportant1}};
+  --code-important2: {{light:codeImportant2}};
+  --code-important3: {{light:codeImportant3}};
+  --code-important4: {{light:codeImportant4}};
 
-  /* ANSI */
+  /* Terminal */
   --terminal-foreground: {{light:terminalForeground}};
   --terminal-background: {{light:terminalBackground}};
+  --terminal-secondary-foreground: {{light:terminalSecondaryForeground}};
+  --terminal-border: {{light:terminalBorder}};
   --terminal-white: {{light:terminalWhite}};
   --terminal-bright-white: {{light:terminalBrightWhite}};
   --terminal-black: {{light:terminalBlack}};
@@ -181,33 +183,35 @@
   --accent3: {{dark:accent3}};
 
   /* Code */
-  --code-punctuation: {{dark:punctuation}};
-  --code-comment: {{dark:comment}};
-  --code-keyword: {{dark:keyword}};
-  --code-tag-name: {{dark:tagName}};
-  --code-tag-brackets: {{dark:tagBrackets}};
-  --code-value: {{dark:value}};
-  --code-property: {{dark:property}};
-  --code-namespace: {{dark:namespace}};
-  --code-variable: {{dark:variable}};
-  --code-function: {{dark:function}};
-  --code-string: {{dark:string}};
-  --code-escape-character: {{dark:escapeCharacter}};
-  --code-inserted: {{dark:inserted}};
-  --code-type: {{dark:type}};
-  --code-operator: {{dark:operator}};
-  --code-class: {{dark:class}};
-  --code-at-rule: {{dark:atRule}};
-  --code-control-flow: {{dark:controlFlow}};
-  --code-deleted: {{dark:deleted}};
-  --code-important1: {{dark:important1}};
-  --code-important2: {{dark:important2}};
-  --code-important3: {{dark:important3}};
-  --code-important4: {{dark:important4}};
+  --code-punctuation: {{dark:codePunctuation}};
+  --code-comment: {{dark:codeComment}};
+  --code-keyword: {{dark:codeKeyword}};
+  --code-tag-name: {{dark:codeTagName}};
+  --code-tag-brackets: {{dark:codeTagBrackets}};
+  --code-value: {{dark:codeValue}};
+  --code-property: {{dark:codeProperty}};
+  --code-namespace: {{dark:codeNamespace}};
+  --code-variable: {{dark:codeVariable}};
+  --code-function: {{dark:codeFunction}};
+  --code-string: {{dark:codeString}};
+  --code-escape-character: {{dark:codeEscapeCharacter}};
+  --code-inserted: {{dark:codeInserted}};
+  --code-type: {{dark:codeType}};
+  --code-operator: {{dark:codeOperator}};
+  --code-class: {{dark:codeClass}};
+  --code-at-rule: {{dark:codeAtRule}};
+  --code-control-flow: {{dark:codeControlFlow}};
+  --code-deleted: {{dark:codeDeleted}};
+  --code-important1: {{dark:codeImportant1}};
+  --code-important2: {{dark:codeImportant2}};
+  --code-important3: {{dark:codeImportant3}};
+  --code-important4: {{dark:codeImportant4}};
 
-  /* ANSI */
+  /* Terminal */
   --terminal-foreground: {{dark:terminalForeground}};
   --terminal-background: {{dark:terminalBackground}};
+  --terminal-secondary-foreground: {{dark:terminalSecondaryForeground}};
+  --terminal-border: {{dark:terminalBorder}};
   --terminal-white: {{dark:terminalWhite}};
   --terminal-bright-white: {{dark:terminalBrightWhite}};
   --terminal-black: {{dark:terminalBlack}};

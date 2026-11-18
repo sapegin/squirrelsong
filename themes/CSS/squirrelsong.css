@@ -92,13 +92,15 @@
   --code-important3: #e4c158;
   --code-important4: #4c4b4e;
 
-  /* ANSI */
+  /* Terminal */
   --terminal-foreground: #4c4b4e;
   --terminal-background: #fdfdfe;
+  --terminal-secondary-foreground: #9c96a2;
+  --terminal-border: #c9c4cf;
   --terminal-white: #78737d;
   --terminal-bright-white: #4c4b4e;
-  --terminal-black: #9c96a2;
-  --terminal-bright-black: #8c8792;
+  --terminal-black: #262527;
+  --terminal-bright-black: #9c96a2;
   --terminal-blue: #4b7b97;
   --terminal-bright-blue: #80a4be;
   --terminal-cyan: #3e816e;
@@ -205,13 +207,15 @@
   --code-important3: #ceb250;
   --code-important4: #ceb250;
 
-  /* ANSI */
+  /* Terminal */
   --terminal-foreground: #bea3d9;
   --terminal-background: #271e38;
+  --terminal-secondary-foreground: #644e88;
+  --terminal-border: #644e88;
   --terminal-white: #bea3d9;
   --terminal-bright-white: #e9d6fa;
-  --terminal-black: #644e88;
-  --terminal-bright-black: #7254a6;
+  --terminal-black: #453461;
+  --terminal-bright-black: #644e88;
   --terminal-blue: #5993c2;
   --terminal-bright-blue: #63a2d6;
   --terminal-cyan: #4f9593;

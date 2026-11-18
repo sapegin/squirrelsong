@@ -16,7 +16,7 @@
 				<key>foreground</key>
 				<string>{{textForeground}}</string>
 				<key>invisibles</key>
-				<string>{{comment}}</string>
+				<string>{{codeComment}}</string>
 				<key>lineHighlight</key>
 				<string>{{lineHighlightBackground}}</string>
 				<key>selection</key>
@@ -31,9 +31,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{comment}}</string>
+				<string>{{codeComment}}</string>
 				<key>fontStyle</key>
-				<string>{{commentStyle}}</string>
+				<string>{{codeCommentStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -44,9 +44,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{string}}</string>
+				<string>{{codeString}}</string>
 				<key>fontStyle</key>
-				<string>{{stringStyle}}</string>
+				<string>{{codeStringStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -57,9 +57,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{value}}</string>
+				<string>{{codeValue}}</string>
 				<key>fontStyle</key>
-				<string>{{valueStyle}}</string>
+				<string>{{codeValueStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -70,9 +70,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{variable}}</string>
+				<string>{{codeVariable}}</string>
 				<key>fontStyle</key>
-				<string>{{variableStyle}}</string>
+				<string>{{codeVariableStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -83,9 +83,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{property}}</string>
+				<string>{{codeProperty}}</string>
 				<key>fontStyle</key>
-				<string>{{propertyStyle}}</string>
+				<string>{{codePropertyStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -96,9 +96,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{keyword}}</string>
+				<string>{{codeKeyword}}</string>
 				<key>fontStyle</key>
-				<string>{{keywordStyle}}</string>
+				<string>{{codeKeywordStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -109,9 +109,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{keyword}}</string>
+				<string>{{codeKeyword}}</string>
 				<key>fontStyle</key>
-				<string>{{keywordStyle}}</string>
+				<string>{{codeKeywordStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -122,9 +122,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{keyword}}</string>
+				<string>{{codeKeyword}}</string>
 				<key>fontStyle</key>
-				<string>{{keywordStyle}}</string>
+				<string>{{codeKeywordStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -135,9 +135,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{class}}</string>
+				<string>{{codeClass}}</string>
 				<key>fontStyle</key>
-				<string>{{classStyle}}</string>
+				<string>{{codeClassStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -148,9 +148,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{atRule}}</string>
+				<string>{{codeAtRule}}</string>
 				<key>fontStyle</key>
-				<string>{{atRuleStyle}}</string>
+				<string>{{codeAtRuleStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -161,9 +161,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{function}}</string>
+				<string>{{codeFunction}}</string>
 				<key>fontStyle</key>
-				<string>{{functionStyle}}</string>
+				<string>{{codeFunctionStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -174,9 +174,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{function}}</string>
+				<string>{{codeFunction}}</string>
 				<key>fontStyle</key>
-				<string>{{functionStyle}}</string>
+				<string>{{codeFunctionStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -187,9 +187,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{variable}}</string>
+				<string>{{codeVariable}}</string>
 				<key>fontStyle</key>
-				<string>{{variableStyle}}</string>
+				<string>{{codeVariableStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -200,9 +200,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{tagName}}</string>
+				<string>{{codeTagName}}</string>
 				<key>fontStyle</key>
-				<string>{{tagNameStyle}}</string>
+				<string>{{codeTagNameStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -213,9 +213,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{tagBrackets}}</string>
+				<string>{{codeTagBrackets}}</string>
 				<key>fontStyle</key>
-				<string>{{tagBracketsStyle}}</string>
+				<string>{{codeTagBracketsStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -226,9 +226,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{function}}</string>
+				<string>{{codeFunction}}</string>
 				<key>fontStyle</key>
-				<string>{{functionStyle}}</string>
+				<string>{{codeFunctionStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -239,9 +239,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{variable}}</string>
+				<string>{{codeVariable}}</string>
 				<key>fontStyle</key>
-				<string>{{variableStyle}}</string>
+				<string>{{codeVariableStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -252,9 +252,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{type}}</string>
+				<string>{{codeType}}</string>
 				<key>fontStyle</key>
-				<string>{{typeStyle}}</string>
+				<string>{{codeTypeStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -265,9 +265,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{namespace}}</string>
+				<string>{{codeNamespace}}</string>
 				<key>fontStyle</key>
-				<string>{{namespaceStyle}}</string>
+				<string>{{codeNamespaceStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -278,9 +278,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{variable}}</string>
+				<string>{{codeVariable}}</string>
 				<key>fontStyle</key>
-				<string>{{variableStyle}}</string>
+				<string>{{codeVariableStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -291,9 +291,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{important1}}</string>
+				<string>{{codeImportant1}}</string>
 				<key>fontStyle</key>
-				<string>{{important1Style}}</string>
+				<string>{{codeImportant1Style}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -304,9 +304,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{important2}}</string>
+				<string>{{codeImportant2}}</string>
 				<key>fontStyle</key>
-				<string>{{important2Style}}</string>
+				<string>{{codeImportant2Style}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -317,9 +317,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{important3}}</string>
+				<string>{{codeImportant3}}</string>
 				<key>fontStyle</key>
-				<string>{{important3Style}}</string>
+				<string>{{codeImportant3Style}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -330,9 +330,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{important4}}</string>
+				<string>{{codeImportant4}}</string>
 				<key>fontStyle</key>
-				<string>{{important4Style}}</string>
+				<string>{{codeImportant4Style}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -343,9 +343,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{controlFlow}}</string>
+				<string>{{codeControlFlow}}</string>
 				<key>fontStyle</key>
-				<string>{{controlFlowStyle}}</string>
+				<string>{{codeControlFlowStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -356,9 +356,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{operator}}</string>
+				<string>{{codeOperator}}</string>
 				<key>fontStyle</key>
-				<string>{{operatorStyle}}</string>
+				<string>{{codeOperatorStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -369,9 +369,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{escapeCharacter}}</string>
+				<string>{{codeEscapeCharacter}}</string>
 				<key>fontStyle</key>
-				<string>{{escapeCharacterStyle}}</string>
+				<string>{{codeEscapeCharacterStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -382,9 +382,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{inserted}}</string>
+				<string>{{codeInserted}}</string>
 				<key>fontStyle</key>
-				<string>{{insertedStyle}}</string>
+				<string>{{codeInsertedStyle}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -395,9 +395,9 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{deleted}}</string>
+				<string>{{codeDeleted}}</string>
 				<key>fontStyle</key>
-				<string>{{deletedStyle}}</string>
+				<string>{{codeDeletedStyle}}</string>
 			</dict>
 		</dict>
 	</array>

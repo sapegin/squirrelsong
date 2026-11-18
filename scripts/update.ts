@@ -7,12 +7,14 @@ import fs from 'node:fs';
 import { getContrastingTextColor } from './util/getContrastingTextColor.ts';
 import { hexToRgb } from './util/hexToRgb.ts';
 import {
+  filterColorMap,
   getPaletteColor,
+  isCodeColorKey,
+  isTerminalColorKey,
   readThemeSpecs,
   resolveColorMap,
   resolveColorMapSrgb,
   resolveColorRef,
-  type AnsiMap,
   type ColorMap,
   type Palette,
   type ThemeSpec,
@@ -138,7 +140,7 @@ function buildColorMapSection(
   title: string,
   light: ThemeSpec,
   dark: ThemeSpec,
-  getColorMap: (spec: ThemeSpec) => ColorMap | AnsiMap
+  getColorMap: (spec: ThemeSpec) => ColorMap
 ): ComparisonSection {
   const lightColorMap = getColorMap(light);
   const darkColorMap = getColorMap(dark);
@@ -170,7 +172,10 @@ function buildColorMapSection(
   };
 }
 
-function buildPreviewSections({ light, dark }: ThemeSpecs): ComparisonSection[] {
+function buildPreviewSections({
+  light,
+  dark,
+}: ThemeSpecs): ComparisonSection[] {
   return [
     {
       id: 'palette',
@@ -186,9 +191,19 @@ function buildPreviewSections({ light, dark }: ThemeSpecs): ComparisonSection[] 
         },
       })),
     },
-    buildColorMapSection('ui', 'UI colors', light, dark, (spec) => spec.ui),
-    buildColorMapSection('code', 'Code colors', light, dark, (spec) => spec.code),
-    buildColorMapSection('ansi', 'ANSI colors', light, dark, (spec) => spec.ansi),
+    buildColorMapSection('ui', 'UI colors', light, dark, (spec) =>
+      filterColorMap(
+        spec.theme,
+        (key) =>
+          isCodeColorKey(key) === false && isTerminalColorKey(key) === false
+      )
+    ),
+    buildColorMapSection('code', 'Code colors', light, dark, (spec) =>
+      filterColorMap(spec.theme, isCodeColorKey)
+    ),
+    buildColorMapSection('ansi', 'ANSI colors', light, dark, (spec) =>
+      filterColorMap(spec.theme, isTerminalColorKey)
+    ),
   ];
 }
 
@@ -251,8 +266,24 @@ fs.writeFileSync(
     {
       version: 1,
       ui: {
-        light: resolveColorMapSrgb(themeSpecs.light, themeSpecs.light.ui, 'light'),
-        dark: resolveColorMapSrgb(themeSpecs.dark, themeSpecs.dark.ui, 'dark'),
+        light: resolveColorMapSrgb(
+          themeSpecs.light,
+          filterColorMap(
+            themeSpecs.light.theme,
+            (key) =>
+              isCodeColorKey(key) === false && isTerminalColorKey(key) === false
+          ),
+          'light'
+        ),
+        dark: resolveColorMapSrgb(
+          themeSpecs.dark,
+          filterColorMap(
+            themeSpecs.dark.theme,
+            (key) =>
+              isCodeColorKey(key) === false && isTerminalColorKey(key) === false
+          ),
+          'dark'
+        ),
       },
     },
     null,

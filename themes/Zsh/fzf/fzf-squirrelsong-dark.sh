@@ -14,4 +14,4 @@ header:#e9d6fa,\
 border:#644e88,\
 label:#ceb250,\
 query:#e9d6fa,\
-disabled:#7254a6"
+disabled:#644e88"

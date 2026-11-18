@@ -12,9 +12,7 @@ Before making any color changes or creating new extensions, inspect specs:
 Each has a set of JSON files with palettes and semantic tokens:
 
 - `palette.json`: base palette
-- `ansi.json`: colors for terminal emulators
-- `code.json`: colors for code syntax highlighting
-- `ui.json`: UI colors
+- `theme.json`: UI, code (`code*` keys), and terminal (`terminal*` keys) colors
 
 Only use these colors for all themes. Occasional transparency is okay (`{{selectionBase}}33`).
 
@@ -48,7 +46,9 @@ Edit `scripts/prepare-themes.ts` only when adding a new scheme type.
 ## Rules
 
 - **Hairline separators:** For header and footer chrome (toolbars, nav bars, title bars), prefer a **0.5px** solid edge using the standard border token (`border`).
-- **Disabled buttons:** The canonical pattern is the enabled primary or secondary button at 50% opacity (see `squirrelsong-ui.html`). Use `disabledButtonBackground`, `disabledButtonForeground`, and `disabledButtonBorder` from `ui.json` only when opacity is not supported.
+- **Disabled buttons:** The canonical pattern is the enabled primary or secondary button at 50% opacity (see `squirrelsong-ui.html`). Use `disabledButtonBackground`, `disabledButtonForeground`, and `disabledButtonBorder` from `theme.json` only when opacity is not supported.
 - When working on CSS themes, refer to @themes/CSS/squirrelsong.css and @squirrelsong-ui.html for correct styles.
+- When working on terminal/ANSI colors, refer to @squirrelsong-cli.html for badge and TUI contrast.
+- Keep `terminalBlack` as dark ink for `bgYellow.black`-style badges. For muted terminal chrome (dim text, borders, spinners), use `terminalSecondaryForeground` and `terminalBorder` — not ANSI black/brightBlack.
 - All new themes should be made using templates.
 - Don’t mention templates in individual theme Readmes.

@@ -5,14 +5,11 @@ import { stripJsonComments } from './stripJsonComments.ts';
 export type Palette = Record<string, string>;
 export type ColorRef = string | [string, string];
 export type ColorMap = Record<string, ColorRef>;
-export type AnsiMap = Record<string, string>;
 export type SchemeName = 'light' | 'dark';
 
 export interface ThemeSpec {
   palette: Palette;
-  ui: ColorMap;
-  code: ColorMap;
-  ansi: AnsiMap;
+  theme: ColorMap;
 }
 
 export interface ThemeSpecs {
@@ -27,9 +24,7 @@ export function readJsonFile<T>(file: string): T {
 export function readThemeSpec(scheme: SchemeName): ThemeSpec {
   return {
     palette: readJsonFile<Palette>(`${scheme}/palette.json`),
-    ui: readJsonFile<ColorMap>(`${scheme}/ui.json`),
-    code: readJsonFile<ColorMap>(`${scheme}/code.json`),
-    ansi: readJsonFile<AnsiMap>(`${scheme}/ansi.json`),
+    theme: readJsonFile<ColorMap>(`${scheme}/theme.json`),
   };
 }
 
@@ -73,14 +68,13 @@ export function getPaletteColor(
 }
 
 export interface ResolvedThemeSpec {
-  ui: Record<string, string>;
-  ansi: Record<string, string>;
+  theme: Record<string, string>;
   context: Record<string, string>;
 }
 
 export function resolveColorMap(
   spec: ThemeSpec,
-  colorMap: ColorMap | AnsiMap,
+  colorMap: ColorMap,
   scheme: SchemeName
 ): Record<string, string> {
   return Object.fromEntries(
@@ -91,7 +85,7 @@ export function resolveColorMap(
   );
 }
 
-/** sRGB 0–1 components for AppKit `NSColor(srgbRed:green:blue:alpha:)`. */
+/** SRGB 0–1 components for AppKit `NSColor(srgbRed:green:blue:alpha:)`. */
 export interface SrgbColor {
   red: number;
   green: number;
@@ -106,7 +100,7 @@ export function hexToSrgb(hex: string): SrgbColor {
 
 export function resolveColorMapSrgb(
   spec: ThemeSpec,
-  colorMap: ColorMap | AnsiMap,
+  colorMap: ColorMap,
   scheme: SchemeName
 ): Record<string, SrgbColor> {
   const resolved = resolveColorMap(spec, colorMap, scheme);
@@ -115,12 +109,31 @@ export function resolveColorMapSrgb(
   );
 }
 
+export function isCodeColorKey(key: string): boolean {
+  return key.startsWith('code');
+}
+
+export function isTerminalColorKey(key: string): boolean {
+  return key.startsWith('terminal');
+}
+
+export function filterColorMap(
+  colorMap: ColorMap,
+  predicate: (key: string) => boolean
+): ColorMap {
+  return Object.fromEntries(
+    Object.entries(colorMap).filter(([key]) => predicate(key))
+  );
+}
+
 export function resolveCodeStyles(colorMap: ColorMap): Record<string, string> {
   return Object.fromEntries(
-    Object.entries(colorMap).map(([key, colorInfo]) => [
-      `${key}Style`,
-      resolveColorRef(colorInfo).style ?? '',
-    ])
+    Object.entries(filterColorMap(colorMap, isCodeColorKey)).map(
+      ([key, colorInfo]) => [
+        `${key}Style`,
+        resolveColorRef(colorInfo).style ?? '',
+      ]
+    )
   );
 }
 
@@ -128,19 +141,14 @@ export function resolveThemeSpec(
   spec: ThemeSpec,
   scheme: SchemeName
 ): ResolvedThemeSpec {
-  const ui = resolveColorMap(spec, spec.ui, scheme);
-  const ansi = resolveColorMap(spec, spec.ansi, scheme);
-  const code = resolveColorMap(spec, spec.code, scheme);
-  const codeStyles = resolveCodeStyles(spec.code);
+  const theme = resolveColorMap(spec, spec.theme, scheme);
+  const codeStyles = resolveCodeStyles(spec.theme);
 
   return {
-    ui,
-    ansi,
+    theme,
     context: {
       ...spec.palette,
-      ...ui,
-      ...ansi,
-      ...code,
+      ...theme,
       ...codeStyles,
     },
   };

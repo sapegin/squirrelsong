@@ -70,6 +70,7 @@ const IGNORES = [
   'package.json',
   'package-lock.json',
   'Brewfile.lock.json',
+  'mermaid.min.js',
 ];
 
 const TRANSPARENT = [
@@ -342,9 +343,35 @@ function lintText(
     }
   }
 
-  // Lint RGB colors: 255,0,255
-  const rgbMatches = text.matchAll(/(\d{1,3}),\s*(\d{1,3}),\s*(\d{1,3})/g);
+  // Lint RGB colors: 255,0,255 (not Date(2026, 8, 1, 10, 0) or matrix lists)
+  const rgbMatches = text.matchAll(
+    /(?<!\d)(\d{1,3}),\s*(\d{1,3}),\s*(\d{1,3})(?!\d)/g
+  );
   for (const value of rgbMatches) {
+    const index = value.index;
+    const before = text.slice(0, index);
+    const after = text.slice(index + value[0].length);
+
+    // Skip triples inside longer comma-separated number lists
+    if (/\d\s*,\s*$/.test(before)) {
+      continue;
+    }
+    const trailing = after.match(/^\s*,\s*(\d+(?:\.\d+)?)/);
+    if (trailing) {
+      const rest = after.slice(trailing[0].length);
+      const isIntegerAlpha =
+        /^\d+$/.test(trailing[1]) &&
+        (trailing[1] === '0' || trailing[1] === '1');
+      const isFloatAlpha = trailing[1].includes('.');
+      // Allow a single rgba/hsla alpha; reject 4th integers from dates, etc.
+      if (
+        (isIntegerAlpha || isFloatAlpha) === false ||
+        /^\s*,\s*-?\d/.test(rest)
+      ) {
+        continue;
+      }
+    }
+
     numberOfColors++;
     const [r, g, b] = [Number(value[1]), Number(value[2]), Number(value[3])];
     if (isValidRgbColor(r, g, b, validColors) === false) {
@@ -417,22 +444,10 @@ function lintThemeSpecSymmetry(): void {
       dark: specs.dark.palette,
     },
     {
-      lightFile: 'light/ui.json',
-      darkFile: 'dark/ui.json',
-      light: specs.light.ui,
-      dark: specs.dark.ui,
-    },
-    {
-      lightFile: 'light/code.json',
-      darkFile: 'dark/code.json',
-      light: specs.light.code,
-      dark: specs.dark.code,
-    },
-    {
-      lightFile: 'light/ansi.json',
-      darkFile: 'dark/ansi.json',
-      light: specs.light.ansi,
-      dark: specs.dark.ansi,
+      lightFile: 'light/theme.json',
+      darkFile: 'dark/theme.json',
+      light: specs.light.theme,
+      dark: specs.dark.theme,
     },
   ];
 

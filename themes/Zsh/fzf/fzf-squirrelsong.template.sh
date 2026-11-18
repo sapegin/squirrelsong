@@ -8,10 +8,10 @@ hl+:{{matchBase}},\
 info:{{secondaryTextForeground}},\
 marker:{{matchBase}},\
 prompt:{{disabledForeground}},\
-spinner:{{terminalBlack}},\
+spinner:{{terminalBorder}},\
 pointer:{{matchBase}},\
 header:{{terminalBrightWhite}},\
-border:{{border}},\
+border:{{terminalBorder}},\
 label:{{yellow}},\
 query:{{terminalBrightWhite}},\
-disabled:{{terminalBrightBlack}}"
+disabled:{{terminalSecondaryForeground}}"

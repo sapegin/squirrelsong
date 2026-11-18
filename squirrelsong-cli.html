@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Squirrelsong CLI preview</title>
+    <link rel="stylesheet" href="themes/CSS/squirrelsong.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font:
+          14px/1.5 system-ui,
+          sans-serif;
+        min-height: 100vh;
+        background-color: var(--text-background);
+        color: var(--text-foreground);
+      }
+      button {
+        font: inherit;
+      }
+
+      .app {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      .toolbar {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.25rem 1rem;
+        border-bottom: 0.5px solid var(--border);
+        background: var(--titlebar-background);
+      }
+      .toolbar-title {
+        font-weight: bold;
+        color: var(--title-foreground);
+      }
+      .toolbar-actions {
+        display: flex;
+        gap: 0.25rem;
+        align-items: center;
+        margin-left: auto;
+      }
+      .icon-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.25rem;
+        height: 2.25rem;
+        padding: 0;
+        border: none;
+        border-radius: 0.25rem;
+        background: transparent;
+        color: var(--icon);
+        font-size: 1.25rem;
+        line-height: 1;
+      }
+      .icon-btn:hover,
+      .icon-btn.active {
+        color: var(--active-icon);
+      }
+      .icon-btn svg {
+        width: 1.25rem;
+        height: 1.25rem;
+        fill: currentColor;
+      }
+
+      .main {
+        flex: 1;
+        min-height: 0;
+        overflow: auto;
+        padding: 1.5rem;
+        background: var(--text-background);
+      }
+      .section {
+        margin-bottom: 2rem;
+        max-width: 56rem;
+      }
+      .section h2 {
+        margin: 0 0 0.75rem;
+        color: var(--title-foreground);
+        font-size: 1rem;
+      }
+      .section p {
+        margin: 0 0 0.75rem;
+        color: var(--secondary-text-foreground);
+      }
+
+      .swatches {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+        gap: 0.5rem;
+      }
+      .swatch {
+        border: 1px solid var(--border);
+        border-radius: 0.25rem;
+        overflow: hidden;
+      }
+      .swatch-chip {
+        height: 2.5rem;
+      }
+      .swatch-meta {
+        padding: 0.35rem 0.5rem;
+        background: var(--ui-background);
+        color: var(--text-foreground);
+        font-family: ui-monospace, monospace;
+        font-size: 11px;
+        line-height: 1.35;
+      }
+      .swatch-meta strong {
+        display: block;
+        color: var(--title-foreground);
+      }
+
+      .pair-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+        gap: 0.5rem;
+      }
+      .pair {
+        padding: 0.5rem 0.65rem;
+        border-radius: 0.25rem;
+        font-family: ui-monospace, monospace;
+        font-size: 12px;
+        border: 1px solid var(--border);
+      }
+      .pair-label {
+        opacity: 0.85;
+        font-size: 10px;
+        margin-bottom: 0.15rem;
+      }
+
+      .term {
+        font-family: ui-monospace, monospace;
+        font-size: 13px;
+        line-height: 1.45;
+        padding: 0.85rem 1rem;
+        border: 1px solid var(--border);
+        border-radius: 0.25rem;
+        background: var(--terminal-background);
+        color: var(--terminal-foreground);
+        overflow-x: auto;
+      }
+      .term + .term {
+        margin-top: 0.75rem;
+      }
+      .term .dim {
+        color: var(--terminal-secondary-foreground);
+      }
+      .term .black {
+        color: var(--terminal-black);
+      }
+      .term .red {
+        color: var(--terminal-red);
+      }
+      .term .green {
+        color: var(--terminal-green);
+      }
+      .term .yellow {
+        color: var(--terminal-yellow);
+      }
+      .term .blue {
+        color: var(--terminal-blue);
+      }
+      .term .magenta {
+        color: var(--terminal-magenta);
+      }
+      .term .cyan {
+        color: var(--terminal-cyan);
+      }
+      .term .white {
+        color: var(--terminal-white);
+      }
+      .term .bright-black {
+        color: var(--terminal-bright-black);
+      }
+      .term .bright-red {
+        color: var(--terminal-bright-red);
+      }
+      .term .bright-green {
+        color: var(--terminal-bright-green);
+      }
+      .term .bright-yellow {
+        color: var(--terminal-bright-yellow);
+      }
+      .term .bright-blue {
+        color: var(--terminal-bright-blue);
+      }
+      .term .bright-magenta {
+        color: var(--terminal-bright-magenta);
+      }
+      .term .bright-cyan {
+        color: var(--terminal-bright-cyan);
+      }
+      .term .bright-white {
+        color: var(--terminal-bright-white);
+        font-weight: bold;
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 0 0.35rem;
+        border-radius: 0.1rem;
+        font-weight: bold;
+      }
+      .badge-warn {
+        background: var(--terminal-yellow);
+        color: var(--terminal-black);
+      }
+      .badge-warn-bright {
+        background: var(--terminal-bright-yellow);
+        color: var(--terminal-black);
+      }
+      .badge-error {
+        background: var(--terminal-red);
+        color: var(--terminal-bright-white);
+      }
+      .badge-error-black {
+        background: var(--terminal-red);
+        color: var(--terminal-black);
+      }
+      .badge-info {
+        background: var(--terminal-blue);
+        color: var(--terminal-bright-white);
+      }
+      .badge-success {
+        background: var(--terminal-green);
+        color: var(--terminal-black);
+      }
+      .badge-success-bright {
+        background: var(--terminal-bright-green);
+        color: var(--terminal-black);
+      }
+
+      .tui-box {
+        border: 1px solid var(--terminal-border);
+        border-radius: 0.15rem;
+        padding: 0.5rem 0.75rem;
+        margin: 0.5rem 0;
+      }
+      .tui-box-title {
+        color: var(--terminal-bright-white);
+        font-weight: bold;
+        margin-bottom: 0.35rem;
+      }
+      .tui-bar {
+        display: flex;
+        height: 0.65rem;
+        margin: 0.35rem 0;
+        border: 1px solid var(--terminal-border);
+        border-radius: 0.1rem;
+        overflow: hidden;
+      }
+      .tui-bar-fill {
+        width: 62%;
+        background: var(--terminal-cyan);
+      }
+      .tui-bar-rest {
+        flex: 1;
+        background: var(--terminal-black);
+        opacity: 0.35;
+      }
+      .tui-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0.35rem 0;
+      }
+      .tui-table th,
+      .tui-table td {
+        text-align: left;
+        padding: 0.15rem 0.5rem;
+        border-bottom: 1px solid var(--terminal-border);
+      }
+      .tui-table th {
+        color: var(--terminal-bright-white);
+      }
+      .tui-selected {
+        background: var(--terminal-blue);
+        color: var(--terminal-bright-white);
+      }
+      .tui-prompt {
+        color: var(--terminal-green);
+      }
+      .tui-prompt-path {
+        color: var(--terminal-cyan);
+      }
+    </style>
+  </head>
+  <body class="light">
+    <div class="app">
+      <header class="toolbar">
+        <div class="toolbar-title">Squirrelsong CLI</div>
+        <div class="toolbar-actions">
+          <button
+            class="icon-btn active"
+            id="theme-light"
+            type="button"
+            aria-label="Light theme"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 19a7 7 0 1 1 0-14 7 7 0 0 1 0 14Zm0-1.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 1 0 0 11Zm-5.657.157a.75.75 0 0 1 0 1.06l-1.768 1.768a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l1.767-1.768a.75.75 0 0 1 1.061 0ZM3.515 3.515a.75.75 0 0 1 1.06 0l1.768 1.768a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L3.515 4.575a.75.75 0 0 1 0-1.06ZM12 0a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 1-1.5 0V.75A.75.75 0 0 1 12 0ZM4 12a.75.75 0 0 1-.75.75H.75a.75.75 0 0 1 0-1.5h2.5A.75.75 0 0 1 4 12Zm8 8a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 1-1.5 0v-2.5A.75.75 0 0 1 12 20Zm12-8a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h2.5A.75.75 0 0 1 24 12Zm-6.343 5.657a.75.75 0 0 1 1.06 0l1.768 1.768a.751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018l-1.768-1.767a.75.75 0 0 1 0-1.061Zm2.828-14.142a.75.75 0 0 1 0 1.06l-1.768 1.768a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l1.767-1.768a.75.75 0 0 1 1.061 0Z"
+              />
+            </svg>
+          </button>
+          <button
+            class="icon-btn"
+            id="theme-dark"
+            type="button"
+            aria-label="Dark theme"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M14.768 3.96v.001l-.002-.005a9.08 9.08 0 0 0-.218-.779c-.13-.394.21-.8.602-.67.29.096.575.205.855.328l.01.005A10.002 10.002 0 0 1 12 22a10.002 10.002 0 0 1-9.162-5.985l-.004-.01a9.722 9.722 0 0 1-.329-.855c-.13-.392.277-.732.67-.602.257.084.517.157.78.218l.004.002A9 9 0 0 0 14.999 6a9.09 9.09 0 0 0-.231-2.04ZM16.5 6c0 5.799-4.701 10.5-10.5 10.5-.426 0-.847-.026-1.26-.075A8.5 8.5 0 1 0 16.425 4.74c.05.413.075.833.075 1.259Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="section">
+          <h2>ANSI palette</h2>
+          <p>
+            Sixteen terminal colors plus default foreground / background from
+            <code>theme.json</code> terminal tokens.
+          </p>
+          <div class="swatches" id="ansi-swatches"></div>
+        </section>
+
+        <section class="section">
+          <h2>Text on terminal background</h2>
+          <div class="term" id="text-on-bg"></div>
+        </section>
+
+        <section class="section">
+          <h2>Useful combinations</h2>
+          <p>
+            Common chalk pairs: ink on accent backgrounds (badges), accent text
+            on terminal background, and bright variants.
+          </p>
+          <div class="pair-grid" id="pairs"></div>
+        </section>
+
+        <section class="section">
+          <h2>TUI elements</h2>
+          <div class="term">
+            <div>
+              <span class="tui-prompt">➜</span>
+              <span class="tui-prompt-path">~/squirrelsong</span>
+              <span class="bright-white"> git status</span>
+            </div>
+            <div class="dim">On branch main</div>
+            <div><span class="green">modified:</span> light/theme.json</div>
+            <div><span class="red">deleted:</span>&nbsp; stale.lock</div>
+            <div style="margin-top: 0.65rem">
+              <span class="badge badge-warn"> WARN </span>
+              Unsupported engine: wanted: {"node":"^24"} (current:
+              {"node":"v26.10.0"})
+            </div>
+            <div>
+              <span class="badge badge-warn-bright"> WARN </span>
+              Same badge on bright yellow
+            </div>
+            <div>
+              <span class="badge badge-error"> ERR_PNPM_PEER_DEP </span>
+              Missing peer dependency
+            </div>
+            <div>
+              <span class="badge badge-error-black"> ERROR </span>
+              Black ink on red (alternate)
+            </div>
+            <div>
+              <span class="badge badge-info"> INFO </span>
+              Using store at ~/.local/share/pnpm
+            </div>
+            <div>
+              <span class="badge badge-success"> DONE </span>
+              Installed 128 packages
+            </div>
+            <div>
+              <span class="badge badge-success-bright"> OK </span>
+              Bright green variant
+            </div>
+
+            <div class="tui-box">
+              <div class="tui-box-title">Install progress</div>
+              <div class="dim">packages/components</div>
+              <div class="tui-bar">
+                <div class="tui-bar-fill"></div>
+                <div class="tui-bar-rest"></div>
+              </div>
+              <div>
+                <span class="cyan">62%</span>
+                <span class="dim"> · 41/66 · </span>
+                <span class="yellow">resolving peer deps</span>
+              </div>
+            </div>
+
+            <table class="tui-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Version</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="tui-selected">
+                  <td>designsystem</td>
+                  <td class="bright-yellow">2.4.1</td>
+                  <td class="bright-green">updated</td>
+                </tr>
+                <tr>
+                  <td class="dim">components</td>
+                  <td>1.9.0</td>
+                  <td class="dim">unchanged</td>
+                </tr>
+                <tr>
+                  <td>web</td>
+                  <td class="bright-magenta">0.3.0-beta</td>
+                  <td class="bright-red">failed</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div style="margin-top: 0.5rem">
+              <span class="magenta">?</span> Continue?
+              <span class="dim">(Y/n)</span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script>
+      const lightButton = document.querySelector('#theme-light');
+      const darkButton = document.querySelector('#theme-dark');
+
+      const ansiColors = [
+        ['foreground', '--terminal-foreground'],
+        ['secondaryForeground', '--terminal-secondary-foreground'],
+        ['background', '--terminal-background'],
+        ['border', '--terminal-border'],
+        ['black', '--terminal-black'],
+        ['red', '--terminal-red'],
+        ['green', '--terminal-green'],
+        ['yellow', '--terminal-yellow'],
+        ['blue', '--terminal-blue'],
+        ['magenta', '--terminal-magenta'],
+        ['cyan', '--terminal-cyan'],
+        ['white', '--terminal-white'],
+        ['brightBlack', '--terminal-bright-black'],
+        ['brightRed', '--terminal-bright-red'],
+        ['brightGreen', '--terminal-bright-green'],
+        ['brightYellow', '--terminal-bright-yellow'],
+        ['brightBlue', '--terminal-bright-blue'],
+        ['brightMagenta', '--terminal-bright-magenta'],
+        ['brightCyan', '--terminal-bright-cyan'],
+        ['brightWhite', '--terminal-bright-white'],
+      ];
+
+      const pairs = [
+        {
+          label: 'black on yellow',
+          color: '--terminal-black',
+          background: '--terminal-yellow',
+          sample: ' WARN ',
+        },
+        {
+          label: 'black on brightYellow',
+          color: '--terminal-black',
+          background: '--terminal-bright-yellow',
+          sample: ' WARN ',
+        },
+        {
+          label: 'black on red',
+          color: '--terminal-black',
+          background: '--terminal-red',
+          sample: ' ERROR ',
+        },
+        {
+          label: 'brightWhite on red',
+          color: '--terminal-bright-white',
+          background: '--terminal-red',
+          sample: ' ERROR ',
+        },
+        {
+          label: 'brightWhite on blue',
+          color: '--terminal-bright-white',
+          background: '--terminal-blue',
+          sample: ' INFO ',
+        },
+        {
+          label: 'black on green',
+          color: '--terminal-black',
+          background: '--terminal-green',
+          sample: ' DONE ',
+        },
+        {
+          label: 'black on brightGreen',
+          color: '--terminal-black',
+          background: '--terminal-bright-green',
+          sample: ' OK ',
+        },
+        {
+          label: 'brightWhite on magenta',
+          color: '--terminal-bright-white',
+          background: '--terminal-magenta',
+          sample: ' NOTE ',
+        },
+        {
+          label: 'brightWhite on black',
+          color: '--terminal-bright-white',
+          background: '--terminal-black',
+          sample: ' panel ',
+        },
+        {
+          label: 'white on black',
+          color: '--terminal-white',
+          background: '--terminal-black',
+          sample: ' panel ',
+        },
+        {
+          label: 'yellow on background',
+          color: '--terminal-yellow',
+          background: '--terminal-background',
+          sample: 'warning text',
+        },
+        {
+          label: 'secondary on background',
+          color: '--terminal-secondary-foreground',
+          background: '--terminal-background',
+          sample: 'dim text',
+        },
+        {
+          label: 'border on background',
+          color: '--terminal-border',
+          background: '--terminal-background',
+          sample: 'border',
+        },
+        {
+          label: 'red on background',
+          color: '--terminal-red',
+          background: '--terminal-background',
+          sample: 'error text',
+        },
+        {
+          label: 'green on background',
+          color: '--terminal-green',
+          background: '--terminal-background',
+          sample: 'success text',
+        },
+        {
+          label: 'cyan on background',
+          color: '--terminal-cyan',
+          background: '--terminal-background',
+          sample: 'path text',
+        },
+        {
+          label: 'brightWhite on background',
+          color: '--terminal-bright-white',
+          background: '--terminal-background',
+          sample: 'bold text',
+        },
+      ];
+
+      function cssVar(name) {
+        return getComputedStyle(document.body).getPropertyValue(name).trim();
+      }
+
+      function renderSwatches() {
+        const root = document.querySelector('#ansi-swatches');
+        root.innerHTML = ansiColors
+          .map(
+            ([name, variable]) => `
+          <div class="swatch">
+            <div class="swatch-chip" style="background: var(${variable})"></div>
+            <div class="swatch-meta">
+              <strong>${name}</strong>
+              <span data-hex-for="${variable}"></span>
+            </div>
+          </div>`
+          )
+          .join('');
+        for (const span of root.querySelectorAll('[data-hex-for]')) {
+          span.textContent = cssVar(span.dataset.hexFor);
+        }
+      }
+
+      function renderTextOnBackground() {
+        const root = document.querySelector('#text-on-bg');
+        root.innerHTML = ansiColors
+          .filter(([name]) => name !== 'background')
+          .map(([name, variable]) => {
+            const label = name === 'foreground' ? 'foreground (default)' : name;
+            return `<div style="color: var(${variable})">${label} — The quick brown fox</div>`;
+          })
+          .join('');
+      }
+
+      function renderPairs() {
+        const root = document.querySelector('#pairs');
+        root.innerHTML = pairs
+          .map(
+            (pair) => `
+          <div class="pair" style="color: var(${pair.color}); background: var(${pair.background})">
+            <div class="pair-label">${pair.label}</div>
+            <div>${pair.sample}</div>
+          </div>`
+          )
+          .join('');
+      }
+
+      function refresh() {
+        renderSwatches();
+        renderTextOnBackground();
+        renderPairs();
+      }
+
+      function setTheme(theme) {
+        document.body.classList.toggle('light', theme === 'light');
+        document.body.classList.toggle('dark', theme === 'dark');
+        lightButton.classList.toggle('active', theme === 'light');
+        darkButton.classList.toggle('active', theme === 'dark');
+        refresh();
+      }
+
+      lightButton.addEventListener('click', () => setTheme('light'));
+      darkButton.addEventListener('click', () => setTheme('dark'));
+      refresh();
+    </script>
+  </body>
+</html>

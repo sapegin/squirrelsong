@@ -8,10 +8,10 @@ hl+:#db7097,\
 info:#8c8792,\
 marker:#db7097,\
 prompt:#9c96a2,\
-spinner:#9c96a2,\
+spinner:#c9c4cf,\
 pointer:#db7097,\
 header:#4c4b4e,\
 border:#c9c4cf,\
 label:#e4c158,\
 query:#4c4b4e,\
-disabled:#8c8792"
+disabled:#9c96a2"

@@ -74,7 +74,7 @@
 "dynamic.callable.builtin" = { foreground = "blue", bold = true }
 "dynamic.callable.command" = { foreground = "blue", bold = true }
 "dynamic.callable.function" = { foreground = "blue", bold = true }
-"dynamic.callable.missing" = { foreground = "black", bold = true }
+"dynamic.callable.missing" = { foreground = "white", bold = false }
 "dynamic.path" = { foreground = "blue", underline = true }
 "dynamic.path.file" = { foreground = "blue", underline = true }
 "dynamic.path.directory" = { foreground = "blue", underline = true }

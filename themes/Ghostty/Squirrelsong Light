@@ -13,8 +13,8 @@ search-selected-foreground = #4c4b4e
 search-selected-background = #e698b5
 
 # Black
-palette = 0=#9c96a2
-palette = 8=#8c8792
+palette = 0=#262527
+palette = 8=#9c96a2
 
 # Red
 palette = 1=#c06159

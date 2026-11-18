@@ -4,48 +4,48 @@
   "semanticHighlighting": true,
   "semanticTokenColors": {
     "function": {
-      "foreground": "{{function}}",
-      "fontStyle": "{{functionStyle}}"
+      "foreground": "{{codeFunction}}",
+      "fontStyle": "{{codeFunctionStyle}}"
     },
     "class": {
-      "foreground": "{{class}}",
-      "fontStyle": "{{classStyle}}"
+      "foreground": "{{codeClass}}",
+      "fontStyle": "{{codeClassStyle}}"
     },
     "method": {
-      "foreground": "{{function}}",
-      "fontStyle": "{{functionStyle}}"
+      "foreground": "{{codeFunction}}",
+      "fontStyle": "{{codeFunctionStyle}}"
     },
     "variable": {
-      "foreground": "{{variable}}",
-      "fontStyle": "{{variableStyle}}"
+      "foreground": "{{codeVariable}}",
+      "fontStyle": "{{codeVariableStyle}}"
     },
     "module": {
-      "foreground": "{{namespace}}",
-      "fontStyle": "{{namespaceStyle}}"
+      "foreground": "{{codeNamespace}}",
+      "fontStyle": "{{codeNamespaceStyle}}"
     },
     "property": {
-      "foreground": "{{property}}",
-      "fontStyle": "{{propertyStyle}}"
+      "foreground": "{{codeProperty}}",
+      "fontStyle": "{{codePropertyStyle}}"
     },
     "enumMember": {
-      "foreground": "{{type}}",
-      "fontStyle": "{{typeStyle}}"
+      "foreground": "{{codeType}}",
+      "fontStyle": "{{codeTypeStyle}}"
     },
     "type": {
-      "foreground": "{{type}}",
-      "fontStyle": "{{typeStyle}}"
+      "foreground": "{{codeType}}",
+      "fontStyle": "{{codeTypeStyle}}"
     },
     "interface": {
-      "foreground": "{{type}}",
-      "fontStyle": "{{typeStyle}}"
+      "foreground": "{{codeType}}",
+      "fontStyle": "{{codeTypeStyle}}"
     },
     "enum": {
-      "foreground": "{{type}}",
-      "fontStyle": "{{typeStyle}}"
+      "foreground": "{{codeType}}",
+      "fontStyle": "{{codeTypeStyle}}"
     },
     "operator": {
-      "foreground": "{{operator}}",
-      "fontStyle": "{{operatorStyle}}"
+      "foreground": "{{codeOperator}}",
+      "fontStyle": "{{codeOperatorStyle}}"
     }
   },
   "colors": {
@@ -147,8 +147,8 @@
     "diffEditor.moveActive.border": "{{blue}}",
     "diffEditor.removedLineBackground": "{{deletedBackground}}",
     "diffEditor.removedTextBackground": "{{deletedWordBackground}}",
-    "diffEditorOverview.insertedForeground": "{{inserted}}66",
-    "diffEditorOverview.removedForeground": "{{deleted}}66",
+    "diffEditorOverview.insertedForeground": "{{codeInserted}}66",
+    "diffEditorOverview.removedForeground": "{{codeDeleted}}66",
     "disabledForeground": "{{disabledForeground}}",
     "dropdown.background": "{{textBackground}}",
     "dropdown.border": "{{lightBorder}}",
@@ -412,38 +412,38 @@
     "statusBarItem.remoteBackground": "{{secondaryUiBackground}}",
     "statusBarItem.remoteForeground": "{{textForeground}}",
     "statusBarItem.warningForeground": "{{warningForeground}}",
-    "symbolIcon.arrayForeground": "{{variable}}",
-    "symbolIcon.booleanForeground": "{{variable}}",
-    "symbolIcon.classForeground": "{{class}}",
+    "symbolIcon.arrayForeground": "{{codeVariable}}",
+    "symbolIcon.booleanForeground": "{{codeVariable}}",
+    "symbolIcon.classForeground": "{{codeClass}}",
     "symbolIcon.colorForeground": "{{textForeground}}",
-    "symbolIcon.constantForeground": "{{variable}}",
-    "symbolIcon.constructorForeground": "{{function}}",
-    "symbolIcon.enumeratorForeground": "{{variable}}",
-    "symbolIcon.enumeratorMemberForeground": "{{property}}",
+    "symbolIcon.constantForeground": "{{codeVariable}}",
+    "symbolIcon.constructorForeground": "{{codeFunction}}",
+    "symbolIcon.enumeratorForeground": "{{codeVariable}}",
+    "symbolIcon.enumeratorMemberForeground": "{{codeProperty}}",
     "symbolIcon.eventForeground": "{{textForeground}}",
-    "symbolIcon.fieldForeground": "{{property}}",
+    "symbolIcon.fieldForeground": "{{codeProperty}}",
     "symbolIcon.fileForeground": "{{textForeground}}",
     "symbolIcon.folderForeground": "{{textForeground}}",
-    "symbolIcon.functionForeground": "{{function}}",
-    "symbolIcon.interfaceForeground": "{{type}}",
-    "symbolIcon.keyForeground": "{{property}}",
-    "symbolIcon.keywordForeground": "{{keyword}}",
-    "symbolIcon.methodForeground": "{{function}}",
-    "symbolIcon.moduleForeground": "{{variable}}",
-    "symbolIcon.namespaceForeground": "{{variable}}",
-    "symbolIcon.nullForeground": "{{value}}",
-    "symbolIcon.numberForeground": "{{value}}",
-    "symbolIcon.objectForeground": "{{variable}}",
-    "symbolIcon.operatorForeground": "{{operator}}",
-    "symbolIcon.packageForeground": "{{variable}}",
-    "symbolIcon.propertyForeground": "{{property}}",
-    "symbolIcon.referenceForeground": "{{type}}",
-    "symbolIcon.stringForeground": "{{string}}",
-    "symbolIcon.structForeground": "{{variable}}",
+    "symbolIcon.functionForeground": "{{codeFunction}}",
+    "symbolIcon.interfaceForeground": "{{codeType}}",
+    "symbolIcon.keyForeground": "{{codeProperty}}",
+    "symbolIcon.keywordForeground": "{{codeKeyword}}",
+    "symbolIcon.methodForeground": "{{codeFunction}}",
+    "symbolIcon.moduleForeground": "{{codeVariable}}",
+    "symbolIcon.namespaceForeground": "{{codeVariable}}",
+    "symbolIcon.nullForeground": "{{codeValue}}",
+    "symbolIcon.numberForeground": "{{codeValue}}",
+    "symbolIcon.objectForeground": "{{codeVariable}}",
+    "symbolIcon.operatorForeground": "{{codeOperator}}",
+    "symbolIcon.packageForeground": "{{codeVariable}}",
+    "symbolIcon.propertyForeground": "{{codeProperty}}",
+    "symbolIcon.referenceForeground": "{{codeType}}",
+    "symbolIcon.stringForeground": "{{codeString}}",
+    "symbolIcon.structForeground": "{{codeVariable}}",
     "symbolIcon.textForeground": "{{textForeground}}",
-    "symbolIcon.typeParameterForeground": "{{type}}",
+    "symbolIcon.typeParameterForeground": "{{codeType}}",
     "symbolIcon.unitForeground": "{{textForeground}}",
-    "symbolIcon.variableForeground": "{{variable}}",
+    "symbolIcon.variableForeground": "{{codeVariable}}",
     "tab.activeBorder": "{{textBackground}}00",
     "tab.activeBorderTop": "{{activeBorder}}",
     "tab.activeForeground": "{{activeForeground}}",
@@ -467,7 +467,7 @@
     "terminal.ansiWhite": "{{terminalWhite}}",
     "terminal.ansiYellow": "{{terminalYellow}}",
     "terminal.background": "{{terminalBackground}}",
-    "terminal.border": "{{border}}",
+    "terminal.border": "{{terminalBorder}}",
     "terminal.findMatchBackground": "{{matchBackground}}88",
     "terminal.findMatchBorder": "{{matchBase}}",
     "terminal.findMatchHighlightBackground": "{{matchBase}}66",
@@ -555,7 +555,7 @@
     ///////////////
     {
       "settings": {
-        "foreground": "{{punctuation}}",
+        "foreground": "{{codePunctuation}}",
         "fontStyle": "bold"
       },
       "scope": [
@@ -578,7 +578,7 @@
     },
     {
       "settings": {
-        "foreground": "{{punctuation}}",
+        "foreground": "{{codePunctuation}}",
         "fontStyle": ""
       },
       "scope": [
@@ -665,7 +665,7 @@
     ////////////////
     {
       "settings": {
-        "foreground": "{{comment}}",
+        "foreground": "{{codeComment}}",
         "fontStyle": "strikethrough"
       },
       "scope": [
@@ -676,8 +676,8 @@
     },
     {
       "settings": {
-        "foreground": "{{comment}}",
-        "fontStyle": "{{commentStyle}}"
+        "foreground": "{{codeComment}}",
+        "fontStyle": "{{codeCommentStyle}}"
       },
       "scope": [
         "comment",
@@ -722,8 +722,8 @@
     //////////
     {
       "settings": {
-        "foreground": "{{class}}",
-        "fontStyle": "{{classStyle}}"
+        "foreground": "{{codeClass}}",
+        "fontStyle": "{{codeClassStyle}}"
       },
       "scope": [
         // RegExp quantifiers: .+, .?, .{1,2}
@@ -838,8 +838,8 @@
     },
     {
       "settings": {
-        "foreground": "{{type}}",
-        "fontStyle": "{{typeStyle}}"
+        "foreground": "{{codeType}}",
+        "fontStyle": "{{codeTypeStyle}}"
       },
       "scope": [
         "support.type",
@@ -951,8 +951,8 @@
     ///////////
     {
       "settings": {
-        "foreground": "{{escapeCharacter}}",
-        "fontStyle": "{{escapeCharacterStyle}}"
+        "foreground": "{{codeEscapeCharacter}}",
+        "fontStyle": "{{codeEscapeCharacterStyle}}"
       },
       "scope": [
         // Escaped characters in RegExps: \/, \$
@@ -971,8 +971,8 @@
     },
     {
       "settings": {
-        "foreground": "{{string}}",
-        "fontStyle": "{{stringStyle}}"
+        "foreground": "{{codeString}}",
+        "fontStyle": "{{codeStringStyle}}"
       },
       "scope": [
         "string",
@@ -996,8 +996,8 @@
     //////////
     {
       "settings": {
-        "foreground": "{{function}}",
-        "fontStyle": "{{functionStyle}}"
+        "foreground": "{{codeFunction}}",
+        "fontStyle": "{{codeFunctionStyle}}"
       },
       "scope": [
         "entity.name.function",
@@ -1029,8 +1029,8 @@
     },
     {
       "settings": {
-        "foreground": "{{variable}}",
-        "fontStyle": "{{variableStyle}}"
+        "foreground": "{{codeVariable}}",
+        "fontStyle": "{{codeVariableStyle}}"
       },
       "scope": [
         "variable",
@@ -1087,8 +1087,8 @@
     },
     {
       "settings": {
-        "foreground": "{{property}}",
-        "fontStyle": "{{propertyStyle}}"
+        "foreground": "{{codeProperty}}",
+        "fontStyle": "{{codePropertyStyle}}"
       },
       "scope": [
         "keyword.other.special-method",
@@ -1165,8 +1165,8 @@
     ////////////
     {
       "settings": {
-        "foreground": "{{keyword}}",
-        "fontStyle": "{{keywordStyle}}"
+        "foreground": "{{codeKeyword}}",
+        "fontStyle": "{{codeKeywordStyle}}"
       },
       "scope": [
         "keyword",
@@ -1223,8 +1223,8 @@
     },
     {
       "settings": {
-        "foreground": "{{tagBrackets}}",
-        "fontStyle": "{{tagBracketsStyle}}"
+        "foreground": "{{codeTagBrackets}}",
+        "fontStyle": "{{codeTagBracketsStyle}}"
       },
       "scope": [
         "entity.name.tag",
@@ -1252,8 +1252,8 @@
         "keyword.other.important.css"
       ],
       "settings": {
-        "foreground": "{{important1}}",
-        "fontStyle": "{{important1Style}}"
+        "foreground": "{{codeImportant1}}",
+        "fontStyle": "{{codeImportant1Style}}"
       }
     },
     ////////////
@@ -1261,8 +1261,8 @@
     ////////////
     {
       "settings": {
-        "foreground": "{{important2}}",
-        "fontStyle": "{{important2Style}}"
+        "foreground": "{{codeImportant2}}",
+        "fontStyle": "{{codeImportant2Style}}"
       },
       "scope": [
         // RegExp negation: ^
@@ -1273,7 +1273,7 @@
     },
     {
       "settings": {
-        "foreground": "{{important2}}",
+        "foreground": "{{codeImportant2}}",
         "fontStyle": ""
       },
       "scope": [
@@ -1300,8 +1300,8 @@
     ////////////
     {
       "settings": {
-        "foreground": "{{important3}}",
-        "fontStyle": "{{important3Style}}"
+        "foreground": "{{codeImportant3}}",
+        "fontStyle": "{{codeImportant3Style}}"
       },
       "scope": [
         // RegExp anchors and boundaries: ^, $, \b
@@ -1327,7 +1327,7 @@
     /////////
     {
       "settings": {
-        "foreground": "{{deleted}}"
+        "foreground": "{{codeDeleted}}"
       },
       "scope": [
         "invalid.illegal",

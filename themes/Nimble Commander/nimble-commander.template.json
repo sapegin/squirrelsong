@@ -96,11 +96,11 @@
   "viewerOverlayColor": "{{uiBackground}}",
   "viewerSelectionColor": "{{selectionBackground}}",
   "viewerTextColor": "{{titleForeground}}",
-  "viewerTextSyntaxCommentColor": "{{comment}}",
-  "viewerTextSyntaxIdentifierColor": "{{variable}}",
-  "viewerTextSyntaxKeywordColor": "{{keyword}}",
-  "viewerTextSyntaxNumberColor": "{{value}}",
-  "viewerTextSyntaxOperatorColor": "{{operator}}",
-  "viewerTextSyntaxPreprocessorColor": "{{class}}",
-  "viewerTextSyntaxStringColor": "{{string}}"
+  "viewerTextSyntaxCommentColor": "{{codeComment}}",
+  "viewerTextSyntaxIdentifierColor": "{{codeVariable}}",
+  "viewerTextSyntaxKeywordColor": "{{codeKeyword}}",
+  "viewerTextSyntaxNumberColor": "{{codeValue}}",
+  "viewerTextSyntaxOperatorColor": "{{codeOperator}}",
+  "viewerTextSyntaxPreprocessorColor": "{{codeClass}}",
+  "viewerTextSyntaxStringColor": "{{codeString}}"
 }
