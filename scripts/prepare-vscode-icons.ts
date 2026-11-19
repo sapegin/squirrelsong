@@ -23,11 +23,11 @@ const PALETTE: Record<string, string> = {
   '#7287fd': '#9d81c6', // lavender → magentaVivid
   '#8839ef': '#9d81c6', // mauve    → magentaVivid
   '#8c8fa1': '#a8a1af', // overlay1 → gray120
-  '#d20f39': '#e76960', // red      → redVivid
+  '#d20f39': '#e3685f', // red      → redVivid
   '#dc8a78': '#ea6a84', // rosewater → roseVivid
-  '#dd7878': '#e76960', // flamingo → redVivid
+  '#dd7878': '#e3685f', // flamingo → redVivid
   '#df8e1d': '#d58000', // yellow   → orangeVivid
-  '#e64553': '#e76960', // maroon   → redVivid
+  '#e64553': '#e3685f', // maroon   → redVivid
   '#ea76cb': '#ea6a84', // pink     → roseVivid
   '#fe640b': '#d8a612', // peach    → yellowVivid
   '#fff': '#fff', // white

@@ -77,7 +77,7 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=f5e5e4" width="20" height="20" alt=""> | redDimer | #f5e5e4 | 245, 229, 228 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=faf3f3" width="20" height="20" alt=""> | redDimmest | #faf3f3 | 250, 243, 243 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=c3524a" width="20" height="20" alt=""> | redContrast | #c3524a | 195, 82, 74 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=e76960" width="20" height="20" alt=""> | redVivid | #e76960 | 231, 105, 96 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=e3685f" width="20" height="20" alt=""> | redVivid | #e3685f | 227, 104, 95 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=de9e59" width="20" height="20" alt=""> | orange | #de9e59 | 222, 158, 89 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=eeceac" width="20" height="20" alt=""> | orangeDim | #eeceac | 238, 206, 172 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=f7e7d5" width="20" height="20" alt=""> | orangeDimer | #f7e7d5 | 247, 231, 213 |
