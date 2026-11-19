@@ -89,6 +89,19 @@ const EXCEPTIONS: Record<string, string[]> = {
     '#f6f2ef',
     '#ebe4dc',
     '#b0a59d',
+    '#5b4839',
+    '#9e8e7e',
+  ],
+  'dotfiles/src/photo-album/_assets/album.css': [
+    // Neutral photography colors
+    '#fff',
+    '#111',
+  ],
+  'dotfiles/src/bin/obsidian-stats.ts': [
+    // Heat chart colors
+    '#3b82f6',
+    '#faaf23',
+    '#ef4444',
   ],
 };
 
