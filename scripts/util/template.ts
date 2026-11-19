@@ -30,7 +30,8 @@ export function processTemplate(
  * Render a template string with Mustache-style placeholders.
  *
  * Supports basic transformation functions:
- * - rgb: returns color as RGB instead of HEX (`{{icon | rgb}}`)
+ *
+ * - `rgb` returns color as RGB instead of HEX (`{{icon | rgb}}`)
  */
 export function renderTemplate(
   template: string,

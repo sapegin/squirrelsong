@@ -1,5 +1,6 @@
 /**
  * Convert HEX color to RGB array
+ *
  * - 'ff0000' → [255, 0, 0]
  */
 export function hexToRgb(hex: string): [number, number, number] {

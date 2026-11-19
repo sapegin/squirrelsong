@@ -1,7 +1,8 @@
 /**
  * Convert RGB/RGBA color to HEX color string
- * - 255, 0, 0  → 'ff0000'
- * - 255, 0, 0, 0.5  → 'ff000080'
+ *
+ * - 255, 0, 0 → 'ff0000'
+ * - 255, 0, 0, 0.5 → 'ff000080'
  */
 export function rgbToHex(r: number, g: number, b: number, a?: number): string {
   const rgb = ((r << 16) | (g << 8) | b).toString(16).padStart(6, '0');
