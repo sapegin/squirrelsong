@@ -251,6 +251,55 @@
         color: var(--attention-foreground);
       }
 
+      .icon-row {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+        margin-bottom: 0.75rem;
+      }
+      .icon-swatch {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.75rem;
+        height: 1.75rem;
+      }
+      .icon-swatch svg {
+        width: 1.25rem;
+        height: 1.25rem;
+        fill: currentColor;
+      }
+      .icon-swatch-standard {
+        color: var(--icon);
+      }
+      .icon-swatch-active {
+        color: var(--active-icon);
+      }
+      .icon-swatch-green {
+        color: var(--green-vivid);
+      }
+      .icon-swatch-teal {
+        color: var(--teal-vivid);
+      }
+      .icon-swatch-blue {
+        color: var(--blue-vivid);
+      }
+      .icon-swatch-magenta {
+        color: var(--magenta-vivid);
+      }
+      .icon-swatch-red {
+        color: var(--red-vivid);
+      }
+      .icon-swatch-orange {
+        color: var(--orange-vivid);
+      }
+      .icon-swatch-yellow {
+        color: var(--yellow-vivid);
+      }
+      .icon-swatch-rose {
+        color: var(--rose-vivid);
+      }
+
       .selection-demo {
         padding: 0.75rem;
         border-radius: 0.25rem;
@@ -330,38 +379,6 @@
       }
       .code .punctuation {
         color: var(--code-punctuation);
-      }
-
-      .terminal {
-        font-family: ui-monospace, monospace;
-        font-size: 13px;
-        padding: 0.75rem 1rem;
-        border: 1px solid var(--border);
-        border-radius: 0.25rem;
-        background: var(--terminal-background);
-        color: var(--terminal-foreground);
-      }
-      .terminal .red {
-        color: var(--terminal-red);
-      }
-      .terminal .green {
-        color: var(--terminal-green);
-      }
-      .terminal .blue {
-        color: var(--terminal-blue);
-      }
-      .terminal .yellow {
-        color: var(--terminal-yellow);
-      }
-      .terminal .magenta {
-        color: var(--terminal-magenta);
-      }
-      .terminal .cyan {
-        color: var(--terminal-cyan);
-      }
-      .terminal .bright {
-        color: var(--terminal-bright-white);
-        font-weight: bold;
       }
 
       .popup {
@@ -545,6 +562,52 @@
           </section>
 
           <section class="section">
+            <h2>Icons</h2>
+            <svg width="0" height="0" aria-hidden="true">
+              <symbol id="icon-check" viewBox="0 0 24 24">
+                <path
+                  d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.3 7.3-5 5a1 1 0 0 1-1.4 0l-2.2-2.2a1 1 0 1 1 1.4-1.4l1.5 1.5 4.3-4.3a1 1 0 1 1 1.4 1.4Z"
+                />
+              </symbol>
+            </svg>
+            <div class="icon-row" aria-label="Icon colors">
+              <span class="icon-swatch icon-swatch-standard" title="icon">
+                <svg aria-hidden="true"><use href="#icon-check" /></svg>
+              </span>
+              <span class="icon-swatch icon-swatch-active" title="activeIcon">
+                <svg aria-hidden="true"><use href="#icon-check" /></svg>
+              </span>
+              <span class="icon-swatch icon-swatch-green" title="greenVivid">
+                <svg aria-hidden="true"><use href="#icon-check" /></svg>
+              </span>
+              <span class="icon-swatch icon-swatch-teal" title="tealVivid">
+                <svg aria-hidden="true"><use href="#icon-check" /></svg>
+              </span>
+              <span class="icon-swatch icon-swatch-blue" title="blueVivid">
+                <svg aria-hidden="true"><use href="#icon-check" /></svg>
+              </span>
+              <span
+                class="icon-swatch icon-swatch-magenta"
+                title="magentaVivid"
+              >
+                <svg aria-hidden="true"><use href="#icon-check" /></svg>
+              </span>
+              <span class="icon-swatch icon-swatch-red" title="redVivid">
+                <svg aria-hidden="true"><use href="#icon-check" /></svg>
+              </span>
+              <span class="icon-swatch icon-swatch-orange" title="orangeVivid">
+                <svg aria-hidden="true"><use href="#icon-check" /></svg>
+              </span>
+              <span class="icon-swatch icon-swatch-yellow" title="yellowVivid">
+                <svg aria-hidden="true"><use href="#icon-check" /></svg>
+              </span>
+              <span class="icon-swatch icon-swatch-rose" title="roseVivid">
+                <svg aria-hidden="true"><use href="#icon-check" /></svg>
+              </span>
+            </div>
+          </section>
+
+          <section class="section">
             <h2>Alerts</h2>
             <div class="alert alert-success">Success message</div>
             <div class="alert alert-error">Error message</div>
@@ -579,18 +642,6 @@
             <pre class="code"><span class="comment">// Example</span>
 <span class="keyword">const</span> <span class="function">greet</span><span class="punctuation">(</span><span class="variable">name</span><span class="punctuation">)</span> <span class="operator">=&gt;</span> <span class="string">'Hello, '</span> <span class="operator">+</span> <span class="variable">name</span><span class="punctuation">;</span>
 <span class="keyword">type</span> <span class="type">User</span> <span class="operator">=</span> <span class="punctuation">{</span> <span class="variable">name</span><span class="punctuation">:</span> <span class="type">string</span> <span class="punctuation">};</span></pre>
-          </section>
-
-          <section class="section">
-            <h2>Terminal</h2>
-            <pre class="terminal">$ git status
-<span class="green">modified:</span>   src/app.ts
-<span class="red">error:</span>      build failed
-<span class="blue">info:</span>       3 files changed
-<span class="yellow">warning:</span>   lint issues found
-<span class="magenta">branch:</span>     main
-<span class="cyan">path:</span>       ./themes/CSS
-<span class="bright">done</span></pre>
           </section>
 
           <section class="section">

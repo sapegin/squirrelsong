@@ -5,10 +5,10 @@ export default defineConfig({
   extends: [typescript],
   options: { typeAware: true, typeCheck: true },
   ignorePatterns: [
+    'dist/**',
+    'sample/**',
     'scripts/lib/cssColorNames.mjs',
     'themes/VSCode/*/*.color-theme.json',
     'themes/VSCode/*/*.icon-theme.json',
-    'sample/**',
-    'dist/**',
   ],
 });

@@ -61,22 +61,27 @@ body.is-phone {
   --sqrl-red: #d67e76;
   --sqrl-redDim: #e5aba8;
   --sqrl-redDimer: #f5e5e4;
-  --sqrl-redContrast: #c06159;
+  --sqrl-redContrast: #c3524a;
+  --sqrl-redVivid: #e76960;
   --sqrl-orange: #de9e59;
   --sqrl-orangeDim: #eeceac;
   --sqrl-orangeDimer: #f7e7d5;
-  --sqrl-orangeContrast: #c88539;
+  --sqrl-orangeContrast: #b66e01;
+  --sqrl-orangeVivid: #d58000;
   --sqrl-yellow: #e4c158;
   --sqrl-green: #9bae7e;
   --sqrl-greenDim: #cbd9c1;
   --sqrl-greenDimer: #dde2d7;
-  --sqrl-greenContrast: #657d38;
+  --sqrl-greenContrast: #49842c;
+  --sqrl-greenVivid: #56a334;
   --sqrl-teal: #5f9b8d;
   --sqrl-blue: #80a4be;
   --sqrl-blueDim: #bfd1de;
   --sqrl-blueDimer: #dfe8ef;
   --sqrl-blueContrast: #4b7b97;
+  --sqrl-blueVivid: #488fb2;
   --sqrl-magenta: #ac9bc5;
+  --sqrl-rose: #df4c5f;
   --sqrl-brightPink: #db7097;
   --sqrl-brightPinkDim: #e698b5;
   --sqrl-brightPinkDimer: #fae1ea;
@@ -186,7 +191,7 @@ body.is-phone {
   --accent-l: 52%;
 
   --color-red: var(--sqrl-red);
-  --color-red-rgb: 192, 97, 89;
+  --color-red-rgb: 214, 126, 118;
   --color-orange: var(--sqrl-orange);
   --color-orange-rgb: 222, 158, 89;
   --color-yellow: var(--sqrl-yellow);
@@ -199,8 +204,8 @@ body.is-phone {
   --color-blue-rgb: 128, 164, 190;
   --color-purple: var(--sqrl-magenta);
   --color-purple-rgb: 172, 155, 197;
-  --color-pink: var(--sqrl-brightPink);
-  --color-pink-rgb: 219, 112, 151;
+  --color-pink: var(--sqrl-rose);
+  --color-pink-rgb: 223, 76, 95;
 
   --background-primary: var(--sqrl-gray180);
   --background-primary-alt: var(--sqrl-gray170);
@@ -399,21 +404,26 @@ body.is-phone {
   --sqrl-redDim: #703a2f;
   --sqrl-redDimer: #432834;
   --sqrl-redContrast: #ce574a;
+  --sqrl-redVivid: #ed6a55;
   --sqrl-orange: #b18433;
   --sqrl-orangeDim: #73572a;
   --sqrl-orangeDimer: #503d20;
   --sqrl-orangeContrast: #d8a851;
+  --sqrl-orangeVivid: #ec9a20;
   --sqrl-yellow: #ceb250;
   --sqrl-green: #558240;
   --sqrl-greenDim: #44603b;
   --sqrl-greenDimer: #333b33;
   --sqrl-greenContrast: #709855;
+  --sqrl-greenVivid: #5eb551;
   --sqrl-teal: #4f9593;
   --sqrl-blue: #5993c2;
   --sqrl-blueDim: #425e79;
   --sqrl-blueDimer: #3f5164;
   --sqrl-blueContrast: #63a2d6;
+  --sqrl-blueVivid: #67aee1;
   --sqrl-magenta: #7f61b3;
+  --sqrl-rose: #ce4a73;
   --sqrl-brightPink: #ca5a83;
   --sqrl-brightPinkDim: #a65472;
   --sqrl-brightPinkDimer: #5e375c;
@@ -442,10 +452,10 @@ body.is-phone {
   --color-base-70: var(--sqrl-gray180);
   --color-base-100: var(--sqrl-gray180);
 
-  /* magentaContrast: #9672d4 */
-  --accent-h: 262;
-  --accent-s: 53%;
-  --accent-l: 64%;
+  /* rose (accent3): #ce4a73 */
+  --accent-h: 341;
+  --accent-s: 57%;
+  --accent-l: 55%;
 
   --color-red-rgb: 172, 73, 62;
   --color-orange-rgb: 177, 132, 51;
@@ -454,7 +464,8 @@ body.is-phone {
   --color-cyan-rgb: 79, 149, 147;
   --color-blue-rgb: 89, 147, 194;
   --color-purple-rgb: 127, 97, 179;
-  --color-pink-rgb: 202, 90, 131;
+  --color-pink: var(--sqrl-rose);
+  --color-pink-rgb: 206, 74, 115;
 
   /* Custom variables */
 
@@ -1155,10 +1166,12 @@ mjx-merror {
   bottom: -0.065rem;
 }
 
-.callout-title,
-.callout-icon .svg-icon {
+.callout-title {
   /* Set color as HEX, not RGB */
   color: var(--callout-color);
+}
+.callout-icon .svg-icon {
+  color: var(--callout-icon-color, var(--callout-color));
 }
 
 /* Reduce spacing on first/last paragraph */
@@ -1182,6 +1195,7 @@ mjx-merror {
 .callout[data-callout='quote'],
 .callout[data-callout='cite'] {
   --callout-color: var(--sqrl-blueContrast);
+  --callout-icon-color: var(--sqrl-blueVivid);
   border-color: var(--sqrl-blueDim);
   background-color: var(--sqrl-blueDimer);
 }
@@ -1190,6 +1204,7 @@ mjx-merror {
 .callout[data-callout='check'],
 .callout[data-callout='done'] {
   --callout-color: var(--sqrl-greenContrast);
+  --callout-icon-color: var(--sqrl-greenVivid);
   border-color: var(--sqrl-greenDim);
   background-color: var(--sqrl-greenDimer);
 }
@@ -1201,6 +1216,7 @@ mjx-merror {
 .callout[data-callout='caution'],
 .callout[data-callout='attention'] {
   --callout-color: var(--sqrl-orangeContrast);
+  --callout-icon-color: var(--sqrl-orangeVivid);
   border-color: var(--sqrl-orangeDim);
   background-color: var(--sqrl-orangeDimer);
 }
@@ -1212,6 +1228,7 @@ mjx-merror {
 .callout[data-callout='error'],
 .callout[data-callout='bug'] {
   --callout-color: var(--sqrl-redContrast);
+  --callout-icon-color: var(--sqrl-redVivid);
   border-color: var(--sqrl-redDim);
   background-color: var(--sqrl-redDimer);
 }

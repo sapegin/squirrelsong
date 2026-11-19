@@ -17,15 +17,15 @@ palette = 0=#262527
 palette = 8=#9c96a2
 
 # Red
-palette = 1=#c06159
+palette = 1=#c3524a
 palette = 9=#db7097
 
 # Green
-palette = 2=#657d38
+palette = 2=#49842c
 palette = 10=#9bae7e
 
 # Yellow
-palette = 3=#c88539
+palette = 3=#b66e01
 palette = 11=#de9e59
 
 # Blue

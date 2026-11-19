@@ -13,23 +13,23 @@ import { unzipArchive } from './util/zip.ts';
 // Catppuccin Latte hex → Squirrelsong Light hex.
 // Covers every color that appears in the upstream `icons/latte/*.svg` files.
 const PALETTE: Record<string, string> = {
-  '#04a5e5': '#80a4be', // sky      → blue
-  '#179299': '#5f9b8d', // teal     → teal
-  '#1e66f5': '#80a4be', // blue     → blue
-  '#209fb5': '#5f9b8d', // sapphire → teal
-  '#3700ff': '#4b7b97', // (one-off) → blueContrast
-  '#40a02b': '#9bae7e', // green    → green
+  '#04a5e5': '#488fb2', // sky      → blueVivid
+  '#179299': '#42a487', // teal     → tealVivid
+  '#1e66f5': '#488fb2', // blue     → blueVivid
+  '#209fb5': '#42a487', // sapphire → tealVivid
+  '#3700ff': '#488fb2', // (one-off) → blueVivid
+  '#40a02b': '#56a334', // green    → greenVivid
   '#4c4f69': '#78737d', // text     → gray090
-  '#7287fd': '#ac9bc5', // lavender → magenta
-  '#8839ef': '#806f9b', // mauve    → magentaContrast
+  '#7287fd': '#9d81c6', // lavender → magentaVivid
+  '#8839ef': '#9d81c6', // mauve    → magentaVivid
   '#8c8fa1': '#a8a1af', // overlay1 → gray120
-  '#d20f39': '#c06159', // red      → redContrast
-  '#dc8a78': '#d67e76', // rosewater → red
-  '#dd7878': '#d67e76', // flamingo → red
-  '#df8e1d': '#de9e59', // yellow   → orange
-  '#e64553': '#c06159', // maroon   → redContrast
-  '#ea76cb': '#db7097', // pink     → brightPink
-  '#fe640b': '#e4c158', // peach    → yellow
+  '#d20f39': '#e76960', // red      → redVivid
+  '#dc8a78': '#ea6a84', // rosewater → roseVivid
+  '#dd7878': '#e76960', // flamingo → redVivid
+  '#df8e1d': '#d58000', // yellow   → orangeVivid
+  '#e64553': '#e76960', // maroon   → redVivid
+  '#ea76cb': '#ea6a84', // pink     → roseVivid
+  '#fe640b': '#d8a612', // peach    → yellowVivid
   '#fff': '#fff', // white
 };
 

@@ -11,7 +11,7 @@
 <!-- apply:theme -->
 
 ```
-#f7f6f9,#ac9bc5,#36294d,#a65472
+#f7f6f9,#ac9bc5,#36294d,#a8486f
 ```
 
 2. Open **Settings → Display options** in Fastmail.

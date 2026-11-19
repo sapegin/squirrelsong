@@ -4,6 +4,7 @@ import oxfmt from 'oxlint-config-raccoon/oxfmt';
 export default defineConfig({
   ...oxfmt,
   ignorePatterns: [
+    '**/*.template.css',
     'dist/**',
     'themes/Chrome/chrome.template.json',
     'themes/VSCode/*/*.color-theme.json',

@@ -19,7 +19,7 @@ Or these values for the dark theme:
 <!-- apply:dark -->
 
 ```
-#36294d,#503f6e,#4f9593,#ca5a83
+#36294d,#503f6e,#4f9593,#ce4a73
 ```
 
 2. Open **Preferences → Themes** in Slack.

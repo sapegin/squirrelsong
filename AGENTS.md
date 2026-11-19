@@ -16,6 +16,12 @@ Each has a set of JSON files with palettes and semantic tokens:
 
 Only use these colors for all themes. Occasional transparency is okay (`{{selectionBase}}33`).
 
+Palette roles:
+
+- Base colors (`green`, `blue`, …): code highlighting (`code*` keys) and syntax-adjacent UI.
+- `*Contrast`: readable text (alerts, links, terminal ANSI, status labels).
+- `*Vivid`: colored icons and icon-like indicators (file icons, problems, git decorations, debug controls).
+
 ## Commands
 
 ```sh

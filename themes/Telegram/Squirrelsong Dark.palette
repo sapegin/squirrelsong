@@ -8,22 +8,22 @@ isDark = 1
 tinted = 0
 parent = nightAccent
 copyright = Artem Sapegin
-basicAccent = #a65472
+basicAccent = #a8486f
 background = #271e38
 text = #bea3d9
 grayText = #866db0
-link = #ca5a83
+link = #ce4a73
 // Links, button links, my reactions background
-accent = #ca5a83
+accent = #ce4a73
 // Number of unread messages in the list, dangerous links
-redUI = #f56c57
-greenUI = #5eb551
+redUI = #ce574a
+greenUI = #709855
 blackTransparent = #bea3d9:0.60
 grayTransparent = #9a7eb4:0.60
 grayUI = #36294d
 darkGrayText = #866db0
 // Selected items in the sidebar, selected items in settings
-accentSelect = #a65472
+accentSelect = #a8486f
 selectText = #4c3c6b
 border = #453461
 // Window title, search field, etc.
@@ -32,11 +32,11 @@ grayForeground = #9a7eb4
 // Inactive toolbar icon
 grayIcon = #866db0
 // Active toolbar icon, read indicator checkboxes
-accentIcon = #a65472
+accentIcon = #a8486f
 badgeMuted = #866db0
 // Number of unread messages in the list
-badge = #a65472
-indicatorColor = #a65472
+badge = #a8486f
+indicatorColor = #a8486f
 selectMessage = #503f6e
 monospacedPre = #9a7eb4
 monospacedCode = #9a7eb4
@@ -109,13 +109,13 @@ peerAvatarCyanTop = #3e5550
 peerAvatarCyanBottom = #4f9593
 peerAvatarBlueTop = #3f5164
 peerAvatarBlueBottom = #5993c2
-peerAvatarPinkTop = #5e375c
-peerAvatarPinkBottom = #ca5a83
+peerAvatarPinkTop = #a8486f
+peerAvatarPinkBottom = #ce4a73
 bubbleBackgroundHighlight_incoming = #36294d
-bubbleBackgroundHighlight_outgoing = #a65472
+bubbleBackgroundHighlight_outgoing = #a8486f
 chatDateActive = #866db0
 chatDateText = #866db0
-revealAction_neutral1_background = #a65472
+revealAction_neutral1_background = #a8486f
 revealAction_neutral1_foreground = #453461
 revealAction_neutral2_background = #73572a
 revealAction_neutral2_foreground = #453461
@@ -123,7 +123,7 @@ revealAction_destructive_background = #703a2f
 revealAction_destructive_foreground = #453461
 revealAction_constructive_background = #44603b
 revealAction_constructive_foreground = #453461
-revealAction_accent_background = #a65472
+revealAction_accent_background = #a8486f
 revealAction_accent_foreground = #453461
 revealAction_warning_background = #73572a
 revealAction_warning_foreground = #453461
@@ -136,7 +136,7 @@ listBackground = #271e38
 listGrayText = #9a7eb4
 // Background on some clicked items
 grayHighlight = #503f6e
-focusAnimationColor = #a65472
+focusAnimationColor = #a8486f
 // Background in emoji search field and selected emoji in emoji picker
 vibrant = #453461
 premium = #8067ad
