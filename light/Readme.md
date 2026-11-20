@@ -55,7 +55,7 @@
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=cbd9c1" width="20" height="20" alt=""> | greenDim | #cbd9c1 | 203, 217, 193 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=dde2d7" width="20" height="20" alt=""> | greenDimer | #dde2d7 | 221, 226, 215 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=f2f4f1" width="20" height="20" alt=""> | greenDimmest | #f2f4f1 | 242, 244, 241 |
-| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=49842c" width="20" height="20" alt=""> | greenContrast | #49842c | 73, 132, 44 |
+| <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=4d8432" width="20" height="20" alt=""> | greenContrast | #4d8432 | 73, 132, 44 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=56a334" width="20" height="20" alt=""> | greenVivid | #56a334 | 86, 163, 52 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=5f9b8d" width="20" height="20" alt=""> | teal | #5f9b8d | 95, 155, 141 |
 | <img src="http://www.thecolorapi.com/id?format=svg&named=false&hex=adccc5" width="20" height="20" alt=""> | tealDim | #adccc5 | 173, 204, 197 |

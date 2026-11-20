@@ -21,7 +21,7 @@
   --disabled-button-background: #dbd7e0;
   --disabled-button-foreground: #f7f6f9;
   --disabled-button-border: #dbd7e0;
-  --success-foreground: #49842c;
+  --success-foreground: #4d8432;
   --success-icon: #56a334;
   --success-background: #dde2d7;
   --success-border: #9bae7e;
@@ -118,7 +118,7 @@
   --terminal-bright-blue: #80a4be;
   --terminal-cyan: #3e816e;
   --terminal-bright-cyan: #5f9b8d;
-  --terminal-green: #49842c;
+  --terminal-green: #4d8432;
   --terminal-bright-green: #9bae7e;
   --terminal-magenta: #806f9b;
   --terminal-bright-magenta: #ac9bc5;

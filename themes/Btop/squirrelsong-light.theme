@@ -35,7 +35,7 @@ theme[proc_misc]="#806f9b"
 theme[cpu_box]="#4b7b97"
 
 # Memory/disks box outline color
-theme[mem_box]="#49842c"
+theme[mem_box]="#4d8432"
 
 # Net up/down box outline color
 theme[net_box]="#3e816e"
@@ -59,7 +59,7 @@ theme[cpu_end]="#806f9b"
 # Mem/Disk free meter
 theme[free_start]="#cbd9c1"
 theme[free_mid]="#9bae7e"
-theme[free_end]="#49842c"
+theme[free_end]="#4d8432"
 
 # Mem/Disk cached meter
 theme[cached_start]="#adccc5"

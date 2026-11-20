@@ -17,7 +17,7 @@ link = #806f9b
 accent = #806f9b
 // Number of unread messages in the list, dangerous links
 redUI = #c3524a
-greenUI = #49842c
+greenUI = #4d8432
 blackTransparent = #4c4b4e:0.60
 grayTransparent = #78737d:0.60
 grayUI = #f7f6f9
@@ -93,7 +93,7 @@ chatReplyTextDisabledBubble_outgoing = #f7f6f9
 groupPeerNameRed = #c3524a
 groupPeerNameOrange = #b66e01
 groupPeerNameViolet = #806f9b
-groupPeerNameGreen = #49842c
+groupPeerNameGreen = #4d8432
 groupPeerNameCyan = #3e816e
 groupPeerNameLightBlue = #80a4be
 groupPeerNameBlue = #4b7b97
