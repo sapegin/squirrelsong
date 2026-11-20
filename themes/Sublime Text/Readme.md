@@ -6,7 +6,7 @@
 
 ## Installation from GitHub
 
-1. Clone the repository or [download as a ZIP archive](https://github.com/sapegin/squirrelsong/archive/refs/heads/master.zip).
+1. Clone the repository or [download as a ZIP archive](https://github.com/sapegin/squirrelsong/archive/refs/heads/main.zip).
 2. Unzip the files.
 3. Select **Preferences → Browse Packages** to open your Sublime Text packages directory.
 4. Copy the `themes/Sublime Text/Squirrelsong Light` or `themes/Sublime Text/Squirrelsong Dark` folder into your Sublime Text packages directory.

@@ -12,7 +12,7 @@ Follow the instructions: [light theme](https://chrome.google.com/webstore/detail
 
 ## Installation from GitHub
 
-1. Clone the repository or [download as a ZIP archive](https://github.com/sapegin/squirrelsong/archive/refs/heads/master.zip).
+1. Clone the repository or [download as a ZIP archive](https://github.com/sapegin/squirrelsong/archive/refs/heads/main.zip).
 2. Unzip the files.
 3. Go to [chrome://extensions](chrome://extensions) in your browser.
 4. Turn on **Developer mode**.

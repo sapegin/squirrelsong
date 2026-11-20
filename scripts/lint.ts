@@ -527,6 +527,7 @@ if (fs.existsSync(DOTFILES_ROOT)) {
         file.includes('globalStorage/') === false &&
         file.includes('History/') === false &&
         // Cloned repositories
+        file.includes('-main/') === false &&
         file.includes('-master/') === false &&
         // Custom themes
         file.includes('dotfiles/brain/') === false

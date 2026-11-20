@@ -2,7 +2,7 @@
 
 [![Preview in vscode.dev](https://img.shields.io/badge/Preview%20in-vscode.dev-brightgreen)](https://vscode.dev/editor/theme/sapegin.Theme-SquirrelsongDark)
 
-![Squirrelsong Dark](https://github.com/sapegin/squirrelsong/raw/master/themes/VSCode/screenshot-dark.jpg)
+![Squirrelsong Dark](https://github.com/sapegin/squirrelsong/raw/main/themes/VSCode/screenshot-dark.jpg)
 
 A low-contrast, non-distracting and neurodiverse-friendly theme that is comfortable for all-day coding without sensory overstimulation, and perfect for developers with ADHD, autism, or highly sensitive people (HSP). No bright colors, no super-high contrast, no distractions. Soft colors but still enough legibility for different part of the code and UI.
 

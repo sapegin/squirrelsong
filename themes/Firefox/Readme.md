@@ -8,7 +8,7 @@
 
 ## Installation from GitHub
 
-1. Clone the repository or [download as a ZIP archive](https://github.com/sapegin/squirrelsong/archive/refs/heads/master.zip).
+1. Clone the repository or [download as a ZIP archive](https://github.com/sapegin/squirrelsong/archive/refs/heads/main.zip).
 2. Install dependencies: `npm install`.
 3. Build extensions: `npm run prepare-extensions`.
 4. Unzip the files.
