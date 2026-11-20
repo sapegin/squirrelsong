@@ -1,8 +1,10 @@
-# Squirrelsong Light Theme for [Vim](https://www.vim.org)
+# Squirrelsong Theme for [Vim](https://www.vim.org)
 
 Also works in: [Neovim](https://neovim.io).
 
 ![Squirrelsong Light theme for Neovim/Vim](screenshot-light.png)
+
+![Squirrelsong Dark theme for Neovim/Vim](screenshot-dark.png)
 
 In your Vim configuration, use `:colorscheme squirrelsong_light`.
 
