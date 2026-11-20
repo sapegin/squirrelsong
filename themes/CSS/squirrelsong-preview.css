@@ -1,0 +1,74 @@
+/* Preview page shell for squirrelsong.html, squirrelsong-ui.html, and
+ * squirrelsong-cli.html. Pair with squirrelsong.css + squirrelsong-ui.css. */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  font:
+    14px/1.5 system-ui,
+    sans-serif;
+  background-color: var(--text-background);
+  color: var(--text-foreground);
+}
+
+/* Theme toggles follow body scheme so active state is correct before JS inits. */
+body.light #theme-light,
+body.dark #theme-dark {
+  color: var(--active-icon);
+  background: var(--hover-background);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.layout {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 12rem 1fr;
+}
+
+.main {
+  padding: 1.5rem;
+  background: var(--text-background);
+  color: var(--text-foreground);
+  overflow: auto;
+}
+
+.section {
+  margin-bottom: 2rem;
+  scroll-margin-top: 1rem;
+}
+
+.section h2 {
+  margin: 0 0 0.75rem;
+  color: var(--title-foreground);
+  font-size: 1rem;
+}
+
+.section-note {
+  margin: 0 0 0.75rem;
+  color: var(--secondary-text-foreground);
+  font-size: 0.85rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}

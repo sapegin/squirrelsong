@@ -53,7 +53,7 @@ Edit `scripts/prepare-themes.ts` only when adding a new scheme type.
 
 - **Hairline separators:** For header and footer chrome (toolbars, nav bars, title bars), prefer a **0.5px** solid edge using the standard border token (`border`).
 - **Disabled buttons:** The canonical pattern is the enabled primary or secondary button at 50% opacity (see `squirrelsong-ui.html`). Use `disabledButtonBackground`, `disabledButtonForeground`, and `disabledButtonBorder` from `theme.json` only when opacity is not supported.
-- When working on CSS themes, refer to @themes/CSS/squirrelsong.css and @squirrelsong-ui.html for correct styles.
+- When working on CSS themes, refer to @themes/CSS/squirrelsong.css, @themes/CSS/squirrelsong-ui.css, and @squirrelsong-ui.html for correct styles.
 - When working on terminal/ANSI colors, refer to @squirrelsong-cli.html for badge and TUI contrast.
 - Keep `terminalBlack` as dark ink for `bgYellow.black`-style badges. For muted terminal chrome (dim text, borders, spinners), use `terminalSecondaryForeground` and `terminalBorder` — not ANSI black/brightBlack.
 - All new themes should be made using templates.

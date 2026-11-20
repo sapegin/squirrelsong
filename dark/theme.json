@@ -17,7 +17,7 @@
   "disabledButtonForeground": "gray170",
   "disabledButtonBorder": "gray160",
   "linkForeground": "blue",
-  "linkHoverForeground": "blueContrast",
+  "linkHoverForeground": "blueVivid",
   "successForeground": "greenContrast",
   "successIcon": "greenVivid",
   "successBackground": "greenDimer",

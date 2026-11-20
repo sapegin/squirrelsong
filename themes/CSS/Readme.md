@@ -33,3 +33,7 @@ document.body.classList.add('dark');
 ```
 
 Use tokens in your CSS, for example `var(--text-foreground)` and `var(--ui-background)`.
+
+## Component reference
+
+[`squirrelsong-ui.css`](squirrelsong-ui.css) maps those tokens onto canonical UI patterns (buttons, tabs, toolbar, sidebar, alerts, and so on). Open [`../../squirrelsong-ui.html`](../../squirrelsong-ui.html) for the live gallery.

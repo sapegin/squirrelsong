@@ -110,16 +110,16 @@ function renderSwatch(swatch: Swatch): string {
 function renderComparisonSection(section: ComparisonSection): string {
   const rows = section.rows
     .map(
-      (row) => `<div class="row">
+      (row) => `<div class="compare-row">
 ${renderSwatch(row.light)}
 ${renderSwatch(row.dark)}
 </div>`
     )
     .join('\n');
-  return `<section id="${section.id}">
+  return `<section class="section" id="${section.id}">
 <h2>${section.title}</h2>
 <div class="compare">
-<div class="row row-header">
+<div class="compare-row row-header">
 <div>Light</div>
 <div>Dark</div>
 </div>
@@ -128,11 +128,16 @@ ${rows}
 </section>`;
 }
 
-function renderNav(sections: ComparisonSection[]): string {
-  const links = sections
-    .map((section) => `<a href="#${section.id}">${section.title}</a>`)
-    .join('\n');
-  return `<nav class="nav">${links}</nav>`;
+function renderSidebar(sections: ComparisonSection[]): string {
+  const items = sections
+    .map(
+      (section, index) =>
+        `<a class="sidebar-item${index === 0 ? ' active' : ''}" href="#${section.id}">${section.title}</a>`
+    )
+    .join('\n          ');
+  return `<nav class="sidebar" aria-label="Sections">
+          ${items}
+        </nav>`;
 }
 
 function buildColorMapSection(
@@ -208,30 +213,98 @@ function buildPreviewSections({
 }
 
 function generateThemePreviewHtml(sections: ComparisonSection[]): string {
-  return `<!DOCTYPE html>
+  const defaultSectionId = sections[0]?.id ?? 'palette';
+  return `<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Squirrelsong theme</title>
-<style>
-body { font: 16px/1.5 system-ui, sans-serif; margin: 0.5rem 2rem 2rem; }
-h1, h2 { font-weight: bold; }
-.nav { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1rem 0 2rem; }
-.nav a { color: inherit; }
-section + section { margin-top: 3rem; }
-.compare { display: grid; gap: 1.5rem; }
-.row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: stretch; }
-.row-header { font-weight: bold; }
-.swatch { padding: 0.5rem 1rem; border-radius: 0.25rem; }
-.swatch div:first-child { font-weight: bold; opacity: 1; }
-</style>
-</head>
-<body>
-<h1>Squirrelsong theme</h1>
-${renderNav(sections)}
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Squirrelsong theme</title>
+    <link rel="stylesheet" href="themes/CSS/squirrelsong.css" />
+    <link rel="stylesheet" href="themes/CSS/squirrelsong-ui.css" />
+    <link rel="stylesheet" href="themes/CSS/squirrelsong-preview.css" />
+    <style>
+      .compare {
+        display: grid;
+        gap: 1.5rem;
+      }
+      .compare-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        align-items: stretch;
+      }
+      .compare-row.row-header {
+        font-weight: bold;
+        color: var(--title-foreground);
+      }
+      .swatch {
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+      }
+      .swatch div:first-child {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body class="light" data-default-section="${defaultSectionId}">
+    <script src="themes/CSS/squirrelsong-preview.js"></script>
+    <svg class="icon-sprite" aria-hidden="true">
+      <symbol id="icon-sun" viewBox="0 0 24 24">
+        <path
+          d="M12 19a7 7 0 1 1 0-14 7 7 0 0 1 0 14Zm0-1.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 1 0 0 11Zm-5.657.157a.75.75 0 0 1 0 1.06l-1.768 1.768a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l1.767-1.768a.75.75 0 0 1 1.061 0ZM3.515 3.515a.75.75 0 0 1 1.06 0l1.768 1.768a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L3.515 4.575a.75.75 0 0 1 0-1.06ZM12 0a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 1-1.5 0V.75A.75.75 0 0 1 12 0ZM4 12a.75.75 0 0 1-.75.75H.75a.75.75 0 0 1 0-1.5h2.5A.75.75 0 0 1 4 12Zm8 8a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 1-1.5 0v-2.5A.75.75 0 0 1 12 20Zm12-8a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h2.5A.75.75 0 0 1 24 12Zm-6.343 5.657a.75.75 0 0 1 1.06 0l1.768 1.768a.751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018l-1.768-1.767a.75.75 0 0 1 0-1.061Zm2.828-14.142a.75.75 0 0 1 0 1.06l-1.768 1.768a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l1.767-1.768a.75.75 0 0 1 1.061 0Z"
+        />
+      </symbol>
+      <symbol id="icon-moon" viewBox="0 0 24 24">
+        <path
+          d="M14.768 3.96v.001l-.002-.005a9.08 9.08 0 0 0-.218-.779c-.13-.394.21-.8.602-.67.29.096.575.205.855.328l.01.005A10.002 10.002 0 0 1 12 22a10.002 10.002 0 0 1-9.162-5.985l-.004-.01a9.722 9.722 0 0 1-.329-.855c-.13-.392.277-.732.67-.602.257.084.517.157.78.218l.004.002A9 9 0 0 0 14.999 6a9.09 9.09 0 0 0-.231-2.04ZM16.5 6c0 5.799-4.701 10.5-10.5 10.5-.426 0-.847-.026-1.26-.075A8.5 8.5 0 1 0 16.425 4.74c.05.413.075.833.075 1.259Z"
+        />
+      </symbol>
+    </svg>
+
+    <div class="app">
+      <header class="toolbar">
+        <div class="toolbar-title">Squirrelsong</div>
+        <nav class="tabs toolbar-tabs" aria-label="Pages">
+          <a class="tab is-active" href="squirrelsong.html">
+            <span class="tab-inner">Theme</span>
+          </a>
+          <a class="tab" href="squirrelsong-ui.html">
+            <span class="tab-inner">UI</span>
+          </a>
+          <a class="tab" href="squirrelsong-cli.html">
+            <span class="tab-inner">CLI</span>
+          </a>
+        </nav>
+        <div class="toolbar-actions">
+          <button
+            class="icon-btn"
+            id="theme-light"
+            type="button"
+            aria-label="Light theme"
+          >
+            <svg aria-hidden="true"><use href="#icon-sun" /></svg>
+          </button>
+          <button
+            class="icon-btn"
+            id="theme-dark"
+            type="button"
+            aria-label="Dark theme"
+          >
+            <svg aria-hidden="true"><use href="#icon-moon" /></svg>
+          </button>
+        </div>
+      </header>
+
+      <div class="layout">
+        ${renderSidebar(sections)}
+
+        <main class="main">
 ${sections.map(renderComparisonSection).join('\n')}
-</body>
+        </main>
+      </div>
+    </div>
+  </body>
 </html>
 `;
 }

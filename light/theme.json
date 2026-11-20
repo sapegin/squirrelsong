@@ -6,7 +6,7 @@
   "disabledForeground": "gray110",
   "hiddenForeground": "gray140",
   "linkForeground": "blueContrast",
-  "linkHoverForeground": "blue",
+  "linkHoverForeground": "blueVivid",
   "buttonBackground": "gray100",
   "buttonForeground": "gray180",
   "buttonHoverBackground": "gray090",
